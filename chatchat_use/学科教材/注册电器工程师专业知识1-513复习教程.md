@@ -1,0 +1,20585 @@
+## 复习内容
+
+## 1 电路的基本概念和基本定律
+
+### 1 理想电路元件
+
+1. 线性电阻
+
+定义: 线性电阻是一个理想电路元件,在元件上电压 $u$ 与电流 $i$ 方向为关联关系时 (见图 1. 1-1), 将 $u$ 与 $i$ 的比值称为电阻, 即 $R=u / i$ 。单位为 $\Omega$ (欧姆)。电阻的倒数为电导 $G$, 单位 为 $\mathrm{S}$ (西门子)。
+
+性质：(1)伏安关系符合欧姆定律 $u=R i($ 或 $U=R I) 。$ 特性曲线见图 1.1-2。
+
+(2)是无源性耗能元件。消耗的功率
+
+$$
+P=U I=I^{2} R=\frac{U^{2}}{R}
+$$
+
+单位为 $\mathrm{W}$ (瓦)。在 $t$ 时间内消耗的电能为
+
+$$
+W=U I=I^{2} R t=\frac{U^{2}}{R} t
+$$
+
+单位为 $\mathrm{J}$(焦耳)。
+
+(3)无记忆性。
+
+(4)双向性。
+
+【例 1.1-1】某电阻上的电压 $U=10 \mathrm{~V} 、 I=5 \mathrm{~A}$ 。求该电阻值、电导值、消耗的电功率和在 1 分钟内消耗的电能。
+
+$$
+\text { 解: } \begin{aligned}
+R & =\frac{U}{I}=\frac{10}{5}=2 \Omega, & G=\frac{I}{U}=\frac{5}{10}=0.5 \mathrm{~S} \\
+P & =U I=10 \times 5=50 \mathrm{~W}, & W=U I t=10 \times 5 \times 60=3000 \mathrm{~J}
+\end{aligned}
+$$
+
+## 2. 独立电压源
+
+定义:是一个理想电路元件,见图 1.1-3,元件两端的电压与通过它的电流无关。 性质: (1)伏安约束关系为
+
+$$
+\left\{\begin{array}{l}
+u=u_{\mathrm{S}} \\
+i=\text { 任意值 }
+\end{array}\right.
+$$
+
+其特性曲线见图 1.14。
+
+(2)端电压为常数的电压源是直流电压源, 用 $U_{\mathrm{s}}$ 表示; 随时间周期变化
+
+(3)是电路中的激励源, 其电流 $I_{I S}$ 决定于与它相连接的外电路。
+
+(4)电压源的功率计算式为 $P=U_{\mathrm{s}} I_{u \mathrm{~S}}$, 当 $U_{\mathrm{S}}$ 与 $I_{u \mathrm{~S}}$ 符合非关联方向 时, 两者乘积为正值, 电压源供出功率, 为负值时电压源吸收功率。
+
+【例 1.1-2】在图 1.1-5 电路中, $U_{\mathrm{s}}=10 \mathrm{~V}$, 求该独立电压源供出 的功率。
+
+解: 依非关联方向设定电压源中的电流 $I_{U S}$, 得
+
+$$
+I_{U S}=\frac{U_{\mathrm{S}}}{2+\frac{4}{2}}=\frac{10}{4}=2.5 \mathrm{~A}
+$$
+
+$$
+P_{U \mathrm{~S}}=U_{\mathrm{S}} I_{U \mathrm{~S}}=10 \times 2.5=25 \mathrm{~W}
+$$
+
+## 3. 独立电流源
+
+定义: 是一个理想电路元件, 见图 1.1-6, 元件中的电流与它两端的电压无关。 性质:(1)伏安约束关系为
+
+$$
+\left\{\begin{array}{l}
+i=i_{\mathrm{S}} \\
+u=\text { 任意值 }
+\end{array}\right.
+$$
+
+其特性曲线见图 1.1-7。
+
+(2)电流为常数的电流源是直流电流源, 用 $I_{\mathrm{S}}$ 表示; 随时间周期变化的电流源为交流电流 源, 用 $i_{\mathrm{s}}$ 表示。
+
+(3) 是电路中的激励源, 其端电压 $U_{\text {s }}$ 决定于与它相连接的外电路。
+
+(4) 电流源的功率计算式为 $P_{I S}=I_{\mathrm{S}} U_{I \mathrm{~S}}$ 。当 $I_{\mathrm{S}}$ 与 $U_{I S}$ 符合非关联方向时, 两者乘积为正值, 电 流源供出功率, 为负值时电流源吸收功率。
+
+【例 1.1-3】在图 1.1-8 电路中, $I_{\mathrm{S}}=2 \mathrm{~A}$, 求该独立电流源供出的功率。
+
+解: 依非关联方向设定电流源两端电压 $U_{I S}$, 得
+
+$$
+U_{\mathrm{IS}}=I_{\mathrm{s}} \frac{8(4+4)}{8+(4+4)}=2 \times 4=8 \mathrm{~V}
+$$
+
+最后得独立电流源供出的功率为
+
+$$
+P_{I S}=I_{\mathrm{S}} U_{\text {IS }}=2 \times 8=16 \mathrm{~W}
+$$
+
+## 4. 受控电压源
+
+定义:受电路中某处电压或电流控制的电压源称为受控电压源。其中, 受电压控制的电压 源称为电压控制的电压源 (VCVS), 见图 1.1-9; 受电流控制的电压源称为电流控制的电压源 (CCVS)，见图 1.1-10。受控电压源两端的电压与通过它的电流无关。
+
+性质:(1)VCVS 的端口约束关系为
+
+$$
+\left\{\begin{array}{l}
+u_{2}=u_{\mathrm{cs}}=\mu u_{1} \\
+i_{2}=\text { 任意值 }
+\end{array}\right.
+$$
+
+CCVS 的端口约束关系为
+
+$$
+\left\{\begin{array}{l}
+u_{2}=u_{\mathrm{cs}}=r i_{1} \\
+i_{2}=\text { 任意值 }
+\end{array}\right.
+$$
+
+受控电压源中的电流决定于与其相连接的外电路。两约束关系式中的 $\mu$ 和 $r$ 称为控制系数。 在 VCVS 中, $\mu=u_{2} / u_{1}$ 称为电压比, 为无量纲的常数。在 CCVS 中, $r=u_{2} / i_{1}$ 称为转移电阻, 单位 为 $\Omega$ 。
+
+(2)不是电路中的激励源, 在电路中起参数堣合作用。
+
+(3)受控电压源可以吸收功率, 也可以供出功率。功率的计算方法与独立电压源相同。
+
+(4)当控制变量 $u_{1}$ 或 $i_{1}$ 消失时, 受控电压源随之消失, 即在去掉受控电压源后原处短路。当 控制变量存在时, 受控电压源不允许短路。
+
+## 5. 受控电流源
+
+定义:受控电路中某处电压或电流控制的电流源称为受控电流源。其中, 受电压控制的电 流源称为电压控制的电流源 (VCCS), 见图 1.1-11; 受电流控制的电流源称为电流控制的电流 源 (CCCS), 见图 1.1-12。受控电流源中的电流与它两端的电压无关。
+
+性质:(1)VCCS 的端口约束关系为
+
+$$
+\left\{\begin{array}{l}
+i_{2}=i_{\mathrm{CS}}=g u_{1} \\
+u_{2}=\text { 任意值 }
+\end{array}\right.
+$$
+
+$\operatorname{CCCS}$ 的端口约束关系为
+
+$$
+\left\{\begin{array}{l}
+i_{2}=i_{\mathrm{cs}}=\beta i_{1} \\
+u_{2}=\text { 任意值 }
+\end{array}\right.
+$$
+
+受控电流源两端的电压决定于与其相连接的外电路。两约束关系式中的 $g$ 和 $\beta$ 称为控制系 数。在 VCCS 中, $g=i_{2} / u_{1}$ 称为转移电导, 单位为 $\mathrm{S}$ 。在 $\operatorname{CCCS}$ 中, $\beta=i_{2} / i_{1}$ 称为电流比, 为无量 纲的常数。
+
+(2)不是电路中的激励源, 在电路中起参数耦合作用。
+
+(3)受控电流源可以吸收功率, 也可以供出功率。功率的计算方法与独立电流源相同。
+
+(4)当控制变量 $u_{1}$ 或 $i_{1}$ 消失时，受控电流源随之消失，即在去掉受控电流源后原处开路。当 控制变量存在时,受控电流源不允许开路。
+
+【例 1.1-4】在图 1.1-13 电路中, 已知 $U_{\mathrm{S}}=8 \mathrm{~V}, \mathrm{VCVS}$ 的控制系数 $\mu=0.5$ 。求受控电压源的电压 $U_{\mathrm{CS}}$ 和供出的功率 $P_{u c s}$ 。
+
+$$
+\text { 解: } U_{\mathrm{cs}}=\mu U_{1}=\mu U_{\mathrm{s}}=0.5 \times 8=4 \mathrm{~V} \text { 。 }
+$$
+
+在图中设支路电流为 $I$,并依非关联方向设定受控电压源
+
+$$
+I=\frac{U_{\mathrm{S}}}{4}=\frac{8}{4}=2 \mathrm{~A}
+$$
+
+$$
+\begin{aligned}
+& I_{U \mathrm{CS}}=\frac{U_{\mathrm{cS}}-U_{\mathrm{S}}}{2}=\frac{4-8}{2}=-2 \mathrm{~A} \\
+& P_{U \mathrm{CS}}=U_{\mathrm{CS}} I_{U \mathrm{CSS}}=8 \times(-2)=-16 \mathrm{~W}
+\end{aligned}
+$$
+
+结果中的负号说明该受控电压源吸收功率。
+
+【例 1.1-5】在图 1.1-14 电路中, 已知 $R_{1}=R_{2}=2 \Omega, I_{\mathrm{S}}=2 \mathrm{~A}$,
+
+$I_{\mathrm{CS}}=g U_{1}=4 \mathrm{~A}_{\text {。 }}$ 求转移电导 $g$ 和受控电流源供出的功率 $P_{/ \mathrm{cS}}$ 。
+
+解: $U_{1}=R_{1} I_{\mathrm{S}}=2 \times 2=4 \mathrm{~V}, g=\frac{I_{\mathrm{CS}}}{U_{1}}=\frac{4}{4}=1 \mathrm{~S}$
+
+$U_{\mathrm{ICS}}=R_{2}\left(I_{\mathrm{S}}+I_{\mathrm{CS}}\right)=2 \times(2+4)=12 \mathrm{~V}$
+
+在电路中依非关联方向设受控电流源两端电压 $U_{I C \mathrm{~S}}$, 得
+
+$$
+P_{\mathrm{rSS}}=I_{\mathrm{CS}} U_{\mathrm{ISS}}=4 \times 12=48 \mathrm{~W}
+$$
+
+## 6. 线性电容
+
+定义: 是一个理想电路元件, 见图 1.1-15, 在图中给出的电荷 $q$ 和电压 $u_{c}$ 的方向下, 将 $q$ 与 $u_{c}$ 之比定义为电容 $C$, 即 $C=q / u_{C}$, 单位为 $\mathrm{F}$ (法 拉)。
+
+性质:(1)线性电容的特性曲线为在 $q-u_{c}$ 坐标系下过原点的斜直线,
+
+(2)当两端电压 $u_{c}$ 和电流 $i_{c}$ 的参考方向符合图 1.1-15 中的关联方向时,两变量的约束关系 为
+
+$$
+i_{c}=C \frac{\mathrm{d} u_{c}}{\mathrm{~d} t}
+$$
+
+(3)记忆元件。在任何时刻 $t$, 电容两端的电压 $u_{c}(t)$ 与初始电压 $u_{C}(0)$ 和从 0 时刻到 $t$ 所有电流值有关, 即
+
+$$
+u_{C}(t)=\frac{1}{C} \int_{-\infty}^{t} i_{C} \mathrm{~d} \tau=u_{C}(0)+\frac{1}{C} \int_{0}^{t} i_{C} \mathrm{~d} \tau
+$$
+
+(4)储能元件。在任何时刻 $t$ 电容储存的电场能量为
+
+$$
+W_{c}(t)=\frac{1}{2} C u_{c}^{2}(t)
+$$
+
+(5)隔直作用。电容在直流电压 $U_{c}$ 作用下无电流, 相当于开路。
+
+## 7. 线性电感
+
+定义: 是一个理想电路元件, 见图 1.1-17, 当磁链 $\psi$ 和电流 $i_{L}$ 的方向 符合右手定则时, 将 $\psi$ 与 $i_{L}$ 之比定义为电感 $L$, 即 $L=\psi / i_{L}$ 。单位为 $H$ (亨 利)。
+
+性质：(1)线性电感的特性曲线为在 $\psi-i_{L}$ 坐标系下过原点的斜直线，见图 1.1-18。
+
+(2)当两端电压 $u_{L}$ 和电流 $i_{L}$ 的参考方向符合图 1.1-17 中的关联方向时,两变量的约束关系 为
+
+$$
+u_{L}=L \frac{\mathrm{d} i_{L}}{\mathrm{~d} t}
+$$
+
+(3)记忆元件。在任何时刻 $t$, 电感中的电流 $i_{L}(t)$ 与初始电流 $i_{L}(0)$ 和从 0 时刻到 $t$ 所有电压值有关, 即
+
+$$
+i_{L}=\frac{1}{L} \int_{-\infty}^{t} u_{L} \mathrm{~d} \tau=i_{L}(0)+\frac{1}{L} \int_{0}^{l} u_{L} \mathrm{~d} \tau
+$$
+
+(4)储能元件。在任何时刻 $t$ 电感储存的磁场能量为
+
+$$
+W_{L}(t)=\frac{1}{2} L i_{L}^{2}(t)
+$$
+
+## 8. 耦合电感
+
+定义: - - 对具有磁耦合关系电感的整体称为耦合电感,其图形和符号见图 1.1-19。
+
+所谓磁耦合关系, 是指由一个电感线圈中电流 $i_{L 1}$ 所产生的自感磁通 $\Phi_{11}$ 的一部分或全部 穿过另一个线圈的现象 (见图 1.1-20)。穿过另一个线圈的磁通 $\Phi_{12}$ 称为互感磁通。
+
+性质:(1)耦合系数 $k$ :用来表示两线圈磁耦合关系紧密程度的参数。 $k=\sqrt{L_{1} / L_{2}} \leqslant 1$, 当 $k$ $=1$ 时称为全耦合。
+
+(2)互感系数 $M$ : 以图 1.1-20 为例, 穿过第二个线圈的磁链 $\psi_{12}=N_{2} \Phi_{12}$ 与产生此磁链的电 流 $i_{L 1}$ 的比为互感系数 $M_{2}$ ，即 $M_{2}=\psi_{12} / i_{L 1}$ ；同样可有 $M_{1}=\psi_{21} / i_{L 2}$ 。可以证明 $M_{1}=M_{2}=M_{\text {。 }}$
+
+(3)互感的标记端:由于分析互感现象时直接与线圈的绕向有关,所以用“*”或“.”表示 两线圈的绕向关系; 两标记端或两非标记端之间称为同名端, 两线圈标记端与非标记端之间称 为异名端; 标记的原则是, 若两线圈都由同名端流进电流, 则此两电流产生的磁通是相互增强 的。
+
+(4)互感电压: 由交变的互感磁通所产生的电压称为互感电压, 在图 1.1-20 中的, 由 $\Phi_{12}$ 产 生的互感电压为
+
+$$
+u_{M 12}=\frac{\mathrm{d} \psi_{12}}{\mathrm{~d} t}=M \frac{\mathrm{d} i_{L 1}}{\mathrm{~d} t}
+$$
+
+互感电压方向的判断方法是同名端一致原则。所谓同名端一致原则是,一个线圈上的互 感电压的方向与在另一个线圈中产生此互感电压的电流保持同名端一致。也就是说, 若产生 互感电压的电流由标记端流向非标记端,则在另一个线圈中产生的互感电压也必然由标记端 指向非标记端。或电流由非标记端流人,互感电压也必然由非标记端指向标记端。
+
+【例 1.1-6】 在图 1.1-21 的 4 个耦合电感中, 哪个互感电压方向的标注是完全正确的?
+
+解 : 根据同名端一致原则, 只有图 (d) 是正确的。图 (a) 电路中 $u_{m 21}$ 的方向不对。图 (b) 电 路中 $u_{M 12}$ 的方向不对。图 (c) 电路中 $u_{M 21}$ 和 $u_{M 12}$ 的方向皆标反了。
+
+## 9. 理想变压器
+
+定义:是由实际变压器经过理想化后的二端口器件,见图 1.1-22, 即满足无损耗、全耦合且 自感和互感均无限大的理想耦合电感为理想变压器。
+
+性质:(1)理想变压器两线圈的匝数比 $n=N_{1} / N_{2}$ 称为变比;
+
+(2)耦合系数 $k=1$;
+
+(3) $u_{1} / u_{2}=N_{1} / N_{2}=n$;
+
+(4) $i_{1} / i_{2}=-1 / n_{\text {。 }}$
+
+### 2电流、电压的参考方向
+
+## 1. 参考方向
+
+电流的实际方向为正电荷移动的方向。电压的实际方向为电位降的方向。在分析和计算 电路之前往往不知它们的实际方向, 但电路的定律都是依据电流、电压的实际方向而确定的, 这就需要在分析计算电路之前先假设一个电流、电压的实际方向, 见图
+
+## 2. 关联方向
+
+因为正电荷在电场力的作用下, 总是从高电位移向低电位, 即电流的实际方向指向电位降 的方向,也就是说和电压的方向是一致的。按照这样的规律同时设定电流和电压的参考方向 时, 电流和电压的方向关系称为关联方向，见图 1.1-23。反之为非关联方向。
+
+【例 1.1-7】在图 1.1-24 电路中,写出 $u_{R}-i 、 u_{L}-i$ 和 $u_{c}-i$ 的约束关系式。
+
+解: 因为 $u_{R}$ 与 $i, u_{L}$ 与 $i$ 皆为非关联方向, 则有
+
+$$
+u_{R}=-R i, \quad u_{L}=-L \frac{\mathrm{d} i}{\mathrm{~d} t}
+$$
+
+$u_{c}$ 与 $i$ 符合关联方向, 则有
+
+$$
+i=C \frac{\mathrm{d} u_{C}}{\mathrm{~d} t}
+$$
+
+## 1 .3 基尔霍夫定律
+
+## 1. 基尔霍夫电流定律 $(\mathrm{KCL})$
+
+在集中参数电路中, 对任何一个节点, 在任何时刻流人 (流出) 该节点的电流的代数和恒 等于零。其表达式为 $\sum i=0$ 或 $\sum i_{\text {人 }}=\sum i_{\text {出 }}$
+
+【例 1.1-8】在图 1.1-25 电路中, 已知 $I_{1}=I_{2}=2 \mathrm{~A}, I_{\mathrm{s}}=4 \mathrm{~A}$ 。求受控电流源的电流 $I_{\mathrm{cs}}$ 及 其控制系数 $\boldsymbol{\beta}$ 。
+
+解: 根据 KCL, 对节点 $\mathrm{c}$ 有
+
+$$
+I_{\mathrm{S}}-I_{2}-I_{\mathrm{CS}}+I_{1}=0
+$$
+
+得
+
+$$
+\begin{aligned}
+& I_{\mathrm{CS}}=I_{\mathrm{S}}-I_{2}+I_{1}=4-2+2=4 \mathrm{~A} \\
+& \beta=\frac{I_{\mathrm{CS}}}{I_{2}}=\frac{4}{2}=2
+\end{aligned}
+$$
+
+## 2. 基尔霍夫电压定律 $(\mathrm{KVL})$
+
+在集总参数电路中, 对任何一个闭合回路,在任何时刻沿该 回路循行时, 所有支路电压的代数和恒等于零。其表达式为 $\sum u$ $=0$ 或 $\Sigma R i=\sum u_{\mathrm{s} \text { 开 }}$ 。
+
+【例 1.1-9】在图 1.1-26 电路中,已知 $R_{1}=R_{2}=1 \Omega, U_{\mathrm{s1}}=2$
+
+$$
+\mathrm{V}, U_{\mathrm{s} 2}=4 \mathrm{~V}, U_{\mathrm{s} 3}=10 \mathrm{~V} \text { 。求开路电压 } U_{\mathrm{ab}} \text { 。 }
+$$
+
+解: 因为 $\mathrm{ab}$ 两端开路, 所以可以设回路中的电流 I(见图 1.126），根据 KVL 有
+
+可得
+
+$$
+\left(R_{1}+R_{2}\right) I+U_{\mathrm{s} 2}-U_{\mathrm{st}}=0
+$$
+
+$$
+I=\frac{U_{\mathrm{S} 1}-U_{\mathrm{S} 2}}{R_{1}+R_{2}}=\frac{2-4}{1+1}=-1 \mathrm{~A}
+$$
+
+S. KVL 得
+
+$$
+U_{\mathrm{ab}}=-U_{\mathrm{S3}}+R_{2}{ }^{\prime}, t_{2}=-10+1 \times(-1)+4=-7 \mathrm{~V}
+$$
+
+## 2 电路的分析方法
+
+### 1常用的电路等效变换方法
+
+## 1. 非理想独立电源间的等效变换
+
+由非理想独立电压源等效变换成非理想独立电流源的变换 关系为 (见图 1.2-1)
+
+$$
+I_{\mathrm{S}}=\frac{U_{\mathrm{s}}}{R_{\text {in }}}, G_{\text {in }}=\frac{1}{R_{\text {in }}}
+$$
+
+由非理想独立电流源等效变换成非理想独立电压源的变换
+
+$$
+U_{\mathrm{s}}=\frac{I_{\mathrm{S}}}{G_{\mathrm{in}}}, R_{\mathrm{in}}=\frac{1}{G_{\text {in }}}
+$$
+
+当非理想独立电流源的并联电导用电阻表示时, 两组变换关系式中等效变换前后该电阻 值不变。
+
+【例 1.2-1】将图 1.2-2(a)中的两个非理想电压源并联电路化简为一个非理想电压源。
+
+解: (1)将图 (a)中的两个非理想电压源等效变换成两个非理想电流源, 如图 (b);
+
+(2) 将图 (b) 中的两电阻并联为一个电阻, 两理想电流源合并为一个电流源, 如图 (c);
+
+(3)将图 (c)中的非理想电流源等效变换成非理想电压源, 如图 (d)。
+
+## 2. 非理想受控电源间的等效变换
+
+在 4 种受控电源中只有 VCVS $\Leftrightarrow$ VCCS 和 CCVS $\Leftrightarrow$ CCCS 两对受控电源之间能够进行等效 变换。两对受控电源之间的等效变换关系见图 1.2-3。
+
+在图 1.2-3 中,当非理想受控电流源的并联电导用电阻表示时,4 组变换关系式中等效变 换前后该电阻值不变。
+
+【例 1.2-2】利用等效变换求图 1.2-4(a) 中的电流 $I$ 。
+
+解: (1)利用等效变换关系将图 (a) 中的非理想独立电流源和非理想受控电流源变换成非 理想独立电压源和非理想受控电压源, 得图 $(\mathbf{b})$;
+
+(2)在图 (b) 电路中, 因为受控电压源受本身电流控制且符合关联方向, 则该受控电压源为 一个电阻, 此电阻即为控制系数, 即 $R=4 I / I=4 \Omega$, 见图 (c)，最后得
+
+$$
+I=\frac{8}{2+2+4}=1 \mathrm{~A}
+$$
+
+## 3. 星接 ( $Y$ 接) 和角接 ( $\Delta$ 接) 电阻间的等效变换
+
+由 $\Delta$ 接等效变换成 $Y$ 接时 (见图 1.2-5), $Y$ 接的各电阻为一分数, 分母为 $\Delta$ 接三电阻之 和, 分子为与所求 $Y$ 接电阻的外接节点相联的两个 $\Delta$ 接电阻之积, 即
+
+$$
+\begin{aligned}
+& R_{1}=\frac{R_{12} R_{31}}{R_{12}+R_{23}+R_{31}} \\
+& R_{2}=\frac{R_{12} R_{23}}{R_{12}+R_{23}+R_{31}} \\
+& R_{3}=\frac{R_{23} R_{31}}{R_{12}+R_{23}+R_{31}}
+\end{aligned}
+$$
+
+由 $\mathrm{Y}$ 接等效变换成 $\Delta$ 接时 (见图 1.2-5), $\Delta$ 接的各电阻为所求 $\Delta$ 接电阻的 两个外接节点相联的两 $Y$ 接电阻之和再加上此两电阻的乘积与另一电阻之比, 即
+
+$$
+\begin{aligned}
+& R_{12}=R_{1}+R_{2}+\frac{R_{1} R_{2}}{R_{3}} \\
+& R_{23}=R_{2}+R_{3}+\frac{R_{2} R_{3}}{R_{1}} \\
+& R_{31}=R_{3}+R_{1}+\frac{R_{3} R_{1}}{R_{2}}
+\end{aligned}
+$$
+
+在对称情况下,有 $R_{\mathrm{Y}}=R_{\Delta} / 3$ 或 $R_{\Delta}=3 R_{\mathrm{Y}}$ 。
+
+【例 1.2-3】求图 1.2-6(a) 中的电流 $I$ 。
+
+解: 在图 (a) 电路中左上角接三个电阻的连接点分别为 $1 、 2$ 和 3 , 即 $R_{12}=6 \Omega 、 R_{23}=2 \Omega$ 和 $R_{31}=2 \Omega$ 。根据 $\Delta \Rightarrow \mathrm{Y}$ 变换关系, 将其变换成等效的 $\mathrm{Y}$ 接电路, 变换后的电路为图 $(\mathrm{b})$, 则有
+
+$$
+\begin{aligned}
+& R_{1}=\frac{R_{12} R_{31}}{R_{12}+R_{23}+R_{31}}=\frac{6 \times 2}{6+2+2}=1.2 \Omega \\
+& R_{2}=\frac{R_{12} R_{23}}{R_{12}+R_{23}+R_{31}}=\frac{6 \times 2}{6+2+2}=1.2 \Omega \\
+& R_{3}=\frac{R_{23} R_{31}}{R_{12}+R_{23}+R_{31}}=\frac{2 \times 2}{6+2+2}=0.4 \Omega
+\end{aligned}
+$$
+
+应用电阻串并联关系, 再将图 (b) 变换成图 $(c)$, 最后转换成图 $(d)$, 可得
+
+$$
+l=\frac{3}{3}=1 \mathrm{~A}
+$$
+
+【例 1.2-4】求图 1.2-7(a)中 $a$ 和 $b$ 两点间的等效电阻。
+
+解: 利用对称情况下的 $\mathrm{Y} \Rightarrow \Delta$ 得图(b), 再用串、并联关系分别得图 (c) 和图(d), 即 $R_{\mathrm{ab}}=3 \Omega$ 。
+
+### 2 节点方程的列写方法及其求解电路
+
+## 1. 节点方程的一般列写方法
+
+有效自导 $\times$ 本节点电压 - 有效互导 $\times$ 相邻节点电压 $=$ 流入本节点电源电流的代数和 有效自导指本节点与所有相邻节点支路中除电流源支路电导的所有电导之和。有效互导 指本节点与相邻节点之间的电导 (电流源支路电导为 0 )。
+
+在含有电压源支路中, 流人本节点的电流为支路中的电压源与其所在支路中的等效电阻 之比。电压源正极性靠近本节点时取正, 负极性靠近本节点时取负。
+
+【例 1.2-5】 在图 1.2-8 电路中, $U_{\mathrm{S} 1 、} 、 U_{\mathrm{S} 2} 、 I_{\mathrm{S}}$ 和 $R_{1} \sim R_{6}$ 均为 已知, 列写此电路的节点电压方程。
+
+$$
+\text { 解: }\left\{\begin{array}{l}
+\left(\frac{1}{R_{1}}+\frac{1}{R_{3}}+\frac{1}{R_{5}}\right) U_{\mathrm{a}}-\frac{1}{R_{3}} U_{\mathrm{b}}-\frac{1}{R_{\mathrm{t}}} U_{\mathrm{c}}=\frac{U_{\mathrm{S} 1}}{R_{1}} \\
+\left(\frac{1}{R_{2}}+\frac{1}{R_{3}}+\frac{1}{R_{4}}\right) U_{\mathrm{b}}-\frac{1}{R_{3}} U_{\mathrm{a}}-\frac{1}{R_{4}} U_{\mathrm{c}}=\frac{U_{\mathrm{S} 2}}{R_{2}} \\
+\left(\frac{1}{R_{1}}+\frac{1}{R_{4}}\right) U_{\mathrm{c}}-\frac{1}{R_{1}} U_{\mathrm{a}}-\frac{1}{R_{4}} U_{\mathrm{b}}=I_{S}-\frac{U_{\mathrm{S} 1}}{R_{1}}
+\end{array}\right.
+$$
+
+在此方程中没有出现 $1 / R_{6}$, 因为它在电流源支路是无效电 导。
+
+## 2. 含无伴电压源支路节点方程的列写方法
+
+所谓含无伴电压源支路, 是指在电路中某支路内只含独立电压源或只含受控电压源。对 这种电路在列写节点方程时, 优先选取独立电压源或受控电压源的负极性端为参考点。这样 可以减少方程的个数(见下面的例 1.2-6)。如果电路中含有两个或两个以上无伴电压源支 路,除优先选取独立电压源或受控电压源的负极性端为参考点外, 还应该相应地增加不与参考 点相连电压源中的电流为末知变量, 并相应地增加补充方程。
+
+【例 1.2-6】 在图 1.2-9 电路中, 已知 $U_{\mathrm{S} 1}=3 \mathrm{~V}, U_{\mathrm{S} 2}=6 \mathrm{~V}, I_{\mathrm{S}}=1 \mathrm{~A}$, 各电阻 $R=3 \Omega_{\text {。求各 }}$ 独立电源供出的功率。
+
+解: 因为此电路只含一个无伴电压源 $U_{\mathrm{S} 1}$ 支路, 所以选取该电压源的负极性端为参考点。 这样, $U_{\mathrm{a}}=U_{\mathrm{S} 1}=3 \mathrm{~V}$ 为已知量, 无须对节点 $\mathrm{a}$ 列写方程。此电路的节点电压方程组为
+
+$$
+\left\{\begin{array}{l}
+\left(\frac{1}{R}+\frac{1}{R}+\frac{1}{R}\right) U_{\mathrm{b}}-\frac{1}{R} U_{\mathrm{a}}-\frac{1}{R} U_{\mathrm{c}}=\frac{U_{\mathrm{S} 2}}{R} \\
+\left(\frac{1}{R}+\frac{1}{R}\right) U_{\mathrm{c}}-\frac{1}{R} U_{\mathrm{b}}=I_{\mathrm{S}}
+\end{array}\right.
+$$
+
+代人已知数据整理后的方程组为
+
+$$
+\left\{\begin{array}{l}
+U_{\mathrm{b}}-\frac{1}{3} U_{\mathrm{c}}=3 \\
+\frac{2}{3} U_{\mathrm{c}}-\frac{1}{3} U_{\mathrm{b}}=1
+\end{array}\right.
+$$
+
+解得 $U_{\mathrm{b}}=4.2 \mathrm{~V}, U_{\mathrm{c}}=3.6 \mathrm{~V}$
+
+为求各独立电源供出的功率, 设定两独立电压源中的电流和独立电流源两端的电压分别 为 $I_{U \mathrm{~S} 1} 、 I_{U \mathrm{SS} 2}$ 和 $U_{I \mathrm{~S}}$ (见图 1.2-9), 可得
+
+$$
+\begin{aligned}
+& I_{U S 1}=\frac{U_{\mathrm{b}}}{R}+\frac{U_{\mathrm{c}}}{R}=\frac{4.2}{3}+\frac{3.6}{3}=2.6 \mathrm{~A} \\
+& I_{U \mathrm{~S} 2}=\frac{U_{\mathrm{b}}-U_{\mathrm{b}}+U_{52}}{R}=\frac{3-4.2+6}{3}=1.6 \mathrm{~A} \\
+& U_{5 \mathrm{~s}}=R I_{\mathrm{S}}+U_{\mathrm{c}}-U_{\mathrm{a}}=3 \times 1+3.6-3=3.6 \mathrm{~V}
+\end{aligned}
+$$
+
+最后得各独立电源供出的功率分别为
+
+$$
+\begin{aligned}
+& P_{U S 1}=U_{S 1} I_{U S 1}=3 \times 2.6=7.8 \mathrm{~W} \\
+& P_{U S 2}=U_{S 2} I_{U S 2}=6 \times 1.6=9.6 \mathrm{~W} \\
+& P_{S S}=I_{\mathrm{S}} U_{S \mathrm{~S}}=1 \times 3.6=3.6 \mathrm{~W}
+\end{aligned}
+$$
+
+## 3. 含受控电源电路节点方程的列写方法
+
+在电路中含有受控电源时,列写节点方程应遵循以下两原则:
+
+(1)将受控电源按独立电源对待;
+
+(2)找出控制变量与未知变量的关系作为补充方程。
+
+【例 1.2-7】在图 1.2-10 电路中, 两独立电源 $U_{\mathrm{s}}$ 和 $I_{\mathrm{s}}$, 两受控电源的控制系数 $\mu$ 和 $\beta$ 以 及各电阻 $R_{1} \sim R_{4}$ 均为已知,列写求解此电路的节点电压方程。
+
+解: 解此电路同样可以优先选取受控电压源 $\mu U$ 的负极性端为参考点, 方程组为
+
+$$
+\left\{\begin{array}{l}
+\frac{1}{R_{1}} U_{\mathrm{a}}-\frac{1}{R_{1}} U_{\mathrm{c}}=I_{\mathrm{S}}-\beta I \\
+\left(\frac{1}{R_{2}}+\frac{1}{R_{3}}\right) U_{\mathrm{b}}-\frac{1}{R_{2}} U_{\mathrm{c}}=-\frac{U_{\mathrm{S}}}{R_{3}}-I_{\mathrm{S}} \\
+U_{\mathrm{c}}=\mu U \\
+U=U_{\mathrm{a}}-U_{\mathrm{c}} \\
+I=\frac{U_{\mathrm{b}}-U_{\mathrm{c}}}{R_{2}}
+\end{array}\right.
+$$
+
+在此方程组中, 前三个为节点方程, 后两个为补充方程。
+
+## 4. 用节点电压法求解电路
+
+用节点电压法求解电路时可依照下述步骤计算：
+
+(1)选好参考点,并将各独立节点命名;
+
+(2)根据电路的不同结构, 按方程的规律性列写节点方程和所需的补充方程;
+
+(3)解出所需的节点电压;
+
+(4)设定所需求解其他变量的参考方向后, 求得所需变量。 为熟悉以上步骤可参看前面的例 1.2-6。
+
+### 3回路方程的列写方法
+
+## 1. 回路方程的一般列写方法
+
+自阻 $\times$ 本回路电流 $+\Sigma$ 共阻 $\times$ 相邻回路电流 $=$ 本回路电源电位升的代数和
+
+应用上式时, 应以本独立回路电流的方向为循行方向。式中的“ $\Sigma$ 共阻 $\times$ 相邻回路电流” 是以在循行过程中, 相邻独立回路电流方向与循行方向一致时取正, 反之取负。等式右侧的 “本回路电源电位升的代数和”为沿本回路独立电流方向循行时, 遇电位升取正, 反之取负。 当遇有电流源时, 必须设定其两端电压为末知变量, 并相应地增加补充方程。
+
+## 2. 网孔方程的列写方法
+
+当选择自然网孔为独立回路时,并将各网孔电流的方向设成一致,当沿网孔电流方向循行 时, 可直接按下列规律列写网孔电流方程。
+
+自阻 $\times$ 本网孔电流 - 共阻 $\times$ 相邻网孔电流 $=$ 本网孔电源电位升的代数和
+
+## 3. 含电流源电路的回路方程
+
+对含有独立电流源和受控电流源的电路, 可优先选取包含电流源支路在内的回路为独立 回路,其他的独立回路不再包含此支路。此独立回路电流即为已知, 不再对此回路列写回路电 流方程。
+
+## 4. 含受控电源电路的回路方程
+
+对含有受控电源的电路,列写回路电流方程所遵循的原则, 仍然是将受控电源按独立电源 对待,并找出控制变量与未知变量的关系作为补充方程。
+
+【例 1.2-8】在图 1.2-11 电路中, 两独立电源 $U_{\mathrm{S}} 、 I_{\mathrm{S}}$, 受控电源的控制系数 $r$ 以及电阻 $R_{1}$ $\sim R_{4}$ 均为已知, 列写求解此电路的回路电流方程。
+
+解: 选自然网孔为独立回路,并将网孔电流皆按顺时针方向设定, 其中 $I_{\mathrm{a}}=I_{\mathrm{S}}$ 不必再对此 网孔列写方程, 只需列写两个网孔电流方程和一个补充方程。求解此电路的回路电流方程为
+
+$$
+\left\{\begin{array}{l}
+\left(R_{2}+R_{3}\right) I_{\mathrm{b}}-R_{3} I_{\mathrm{S}}-R_{2} I_{\mathrm{c}}=r I-U_{\mathrm{S}} \\
+\left(R_{1}+R_{2}+R_{4}\right) I_{\mathrm{c}}-R_{1} I_{\mathrm{S}}-R_{2} I_{\mathrm{b}}=0 \\
+I=-I_{\mathrm{c}}
+\end{array}\right.
+$$
+
+### 4 叠加定理、戴维南定理和诺顿定理
+
+## 1. 叠加定理
+
+定理内容: 在多个激励源的线性电路中, 任何一处的电压、 电流响应为各激励源单独作用下, 在该处的电压、电流响应的代 数和。 在应用叠加定理时, 为实现某激励源单独作用, 需将其他不起作用的激励源置零, 即将其 中的独立电压源去掉后在原处短路; 将独立电流源去掉后在原处开路。
+
+【例 1.2-9】电路如图 1.2-12(a), 求电路中两独立电源供出的功率。
+
+解: 根据叠加定理可得两独立电源单独作用下的两个分电路图 (b) 和图 (c)。 在图 (b) 电路中, 根据 KCL 和 KVL 可有如下方程组:
+
+$$
+\left\{\begin{array}{l}
+2 U_{I \mathrm{~s}}^{(1)}=-I_{u \mathrm{~s}}^{(1)} \\
+U_{\mathrm{IS}}^{(1)}=-I_{u \mathrm{~s}}^{(1)}+2
+\end{array}\right.
+$$
+
+解得 $U_{I S}^{(1)}=-2 \mathrm{~V}, I_{U S}^{(1)}=4 \mathrm{~A}$
+
+$$
+I_{U S}=I_{U \mathrm{~S}}^{(1)}-I_{I S}^{(2)}=4-(-6)=10 \mathrm{~A}, U_{I S}=U_{I S}^{(1)}+U_{\mathrm{sS}}^{(2)}=-2-4=-6 \mathrm{~V}
+$$
+
+在图(c) 电路中, 根据 KCL 和 KVL 可有如下方程组 :
+
+$$
+\left\{\begin{array}{l}
+2 U_{\mathrm{s}}^{(2)}=I_{U \mathrm{~s}}^{(2)}-2 \\
+U_{\mathrm{sS}}^{(2)}=2+I_{l \mathrm{~S}}^{(2)}
+\end{array}\right.
+$$
+
+解得 $U_{\mathrm{SS}}^{(2)}=-4 \mathrm{~V}, I_{U \mathrm{SS}}^{(2)}=-6 \mathrm{~A}$
+
+$$
+I_{l \mathrm{~S}}=I_{U \mathrm{~S}}^{(1)}-I_{U \mathrm{~S}}^{(2)}=4-(-6)=10 \mathrm{~A}, U_{I \mathrm{~S}}=U_{\mathrm{IS}}^{(1)}+U_{\mathrm{sS}}^{(2)}=-2-4=-6 \mathrm{~V}
+$$
+
+最后得
+
+$$
+P_{U \mathrm{~S}}=U_{\mathrm{S}} I_{U \mathrm{~S}}=2 \times 10=20 \mathrm{~W}, P_{I \mathrm{~S}}=I_{\mathrm{S}} U_{I \mathrm{~S}}=2 \times(-6)=-12 \mathrm{~W}
+$$
+
+解题步骤:
+
+(1)画出与原电路中独立电源个数相同的分电路, 并在各分电路中设定需求的电压、电流响 应的参考方向;
+
+(2)求解各分电路中所需电压、电流响应;
+
+(3)以原电路中所需求解电压、电流响应的参考方向为准, 求各分电路中需求的电压、电流 响应的代数和。
+
+注意事项：
+
+(1)叠加定理只适用于线性电路;
+
+(2)受控电源不是激励源, 不能构成单独作用的分电路;
+
+(3)各分电路中应包含原电路中的全部受控电源和控制变量;
+
+(4)取代数和时, 应遵循以原电路中的电压、电流响应的参考方向为准的原则, 即分电路中 的电压、电流响应的参考方向与原电路一致者取正, 反之取负;
+
+(5)叠加原理只适用于电压、电流响应，一般情况下不适用于功率响应。
+
+## 2. 线性关系
+
+线性关系是齐次性原理和叠加定理综合表现形式, 即在线性电路中既满足齐次性原理又 满足叠加定理, 两定理合称为线性关系。
+
+线性关系特别适用于求解黑箱电路。线性关系有如下两种表达形式。
+
+(1)对一个不含独立电源的图 1.2-13 黑箱电路 $N_{0}$, 某处电压响应 $u_{x}$ 、电流响应 $i_{x}$ 的线性关 系式为
+
+$$
+\begin{aligned}
+& \left.\begin{array}{c}
+u_{x} \\
+i_{x}
+\end{array}\right\}=K_{u 1} u_{\mathrm{S} 1}+K_{i 1} i_{\mathrm{S} 1}+K_{u 2} u_{\mathrm{S} 2}+K_{i 2} i_{\mathrm{S} 2}+\cdots+K_{u n} u_{\mathrm{S} n}+K_{i n} i_{\mathrm{S} n} \\
+& =\sum_{j=1}^{n}\left(K_{u j} u_{\mathrm{Sj}}+K_{i j} i_{\mathrm{Sj}}\right)
+\end{aligned}
+$$
+
+式中, $K_{\mathrm{u} 1}, K_{i 1}, K_{\mathrm{u} 2}, K_{i 2}, \cdots, K_{u n}, K_{i n}$ 称为线性系数。
+
+(2)对一个含有独立电源的图 1.2-14 黑箱电路 $N_{\mathrm{s}}$, 某处电压响应 $u_{x}$ 、电流响应 $i_{x}$ 的线性关 系式为
+
+$$
+\begin{aligned}
+& \left.\begin{array}{l}
+u_{x} \\
+i_{x}
+\end{array}\right\}=K_{u 1} u_{\mathrm{S} 1}+K_{i 1} i_{\mathrm{S} 1}+K_{u 2} u_{\mathrm{S} 2}+K_{i 2} i_{\mathrm{S} 2}+\cdots+K_{u n} u_{\mathrm{Sn}}+K_{i n} i_{\mathrm{Sn}}+C \\
+& =\sum_{j=1}^{n}\left(K_{u j} u_{\mathrm{Sj}}+K_{i j} i_{\mathrm{S} j}\right)+C
+\end{aligned}
+$$
+
+式中: $\sum_{j=1}^{n}\left(K_{u j} u_{\mathrm{S} j}+K_{i j} i_{\mathrm{S} j}\right)$ 为黑箱电路中全部电源置零时, 电路中某处的电压、电流响应; 常数 $C$ 为黑箱电路外部所有独立电源置零后, 其内部全部独立电源共同作用下, 电路中某处的电压、 电流响应。
+
+【例 1.2-10】在图 1.2-15 电路中, 黑箱电路 $N_{0}$ 为无独立电源的线性电路。当三个独立 电源共同作用时 $U=8 \mathrm{~V}$; 当 $4 \mathrm{~V}$ 电压源置零后 $U=4 \mathrm{~V}$; 当两个电压源同时置零后 $U=2 \mathrm{~V}$ 。求 当两个电压源同时反接后,三个电源共同作用下 $1 \Omega$ 电阻中消耗的功率。
+
+解: 设 $1 \Omega$ 电阻的两端电压为 $U$, 根据线性关系有
+
+$$
+U=K_{1} U_{\mathrm{S} 1}+K_{2} U_{\mathrm{S} 2}+K_{3} I_{\mathrm{S}}
+$$
+
+将已知数据代人此关系式有
+
+$$
+\left\{\begin{array}{l}
+4 K_{1}+2 K_{2}+2 K_{3}=8 \\
+2 K_{2}+2 K_{3}=4 \\
+2 K_{3}=2
+\end{array}\right.
+$$
+
+解得线性系数
+
+$$
+K_{1}=K_{2}=K_{3}=1
+$$
+
+由此可得当两个电压源同时反接后, 三个电源共同作用下 1 $\Omega$ 电阻上的电压为
+
+$$
+U=-K_{1} U_{\mathrm{S} 1}-K_{2} U_{\mathrm{S} 2}+K_{3} I_{\mathrm{S}}=-4-2+2=-4 \mathrm{~V}
+$$
+
+最后得 $1 \Omega$ 电阻中消耗的功率为
+
+$$
+P=\frac{U^{2}}{R}=\frac{(-4)^{2}}{1}=16 \mathrm{~W}
+$$
+
+【例 1.2-11】在图 1.2-16 电路中, 黑箱电路 $N_{\mathrm{s}}$ 为含独立电源的线性电路。已知: 当 $U_{\mathrm{s}}=$ $4 \mathrm{~V}, I_{\mathrm{s}}=1 \mathrm{~A}$ 时, $I=4 \mathrm{~A}$; 当 $U_{\mathrm{s}}$ 置零后有 $I_{\mathrm{s}}$ 作用时, $I=2 \mathrm{~A}$; 当 $I_{\mathrm{s}}$ 置零后有 $U_{\mathrm{s}}$ 作用时, $I=1 \mathrm{~A}$ 。求 当 $N_{\mathrm{s}}$ 外部的两个独立电源同时增加一倍后共同作用下，电压源 $U_{\mathrm{s}}$ 供出的功率。
+
+解 : 根据线性关系有
+
+$$
+I=K_{1} U_{\mathrm{s}}+K_{2} I_{\mathrm{S}}+C
+$$
+
+代人三个已知条件,可有如下方程组:
+
+$$
+\left\{\begin{array}{l}
+4 K_{1}+K_{2}+C=4 \\
+K_{2}+C=2 \\
+4 K_{1}+C=1
+\end{array}\right.
+$$
+
+解得三个线性系数分别为
+
+$$
+K_{1}=0.5, K_{2}=3, C=-1
+$$
+
+将三个线性系数和所需求解的工作条件代人上述线性关系式得
+
+$$
+I=2 K_{1} U_{\mathrm{s}}+2 K_{2} I_{\mathrm{s}}+C=2 \times 0.5 \times 4+2 \times 3 \times 1-1=9 \mathrm{~A}
+$$
+
+最后得电压源 $U_{\mathrm{s}}$ 供出的功率为
+
+$$
+P_{u \mathrm{~s}}=-2 U_{\mathrm{s}} I=-2 \times 4 \times 9=-72 \mathrm{~W}
+$$
+
+说明电压源 $U_{\mathrm{s}}$ 在所需求解的条件下吸收功率。
+
+## 3. 戴维南定理
+
+定理内容: 任何一个含有独立电源的线性一端口电阻电路, 对外电路而言可以用一个独立 电压源和一个线性电阻相串联的电路等效替代; 其独立电压源的电压为该含源一端口电路在 端口处的开路电压 $u_{\mathrm{OC}}$; 其串联电阻为该含源一端口电路中所有独立电源置零后, 端口处的人 端电阻 $\boldsymbol{R}_{\text {in }}$ 。
+
+人端电阻 $R_{\text {in }}$ 的定义是 : 对一个不含独立电压源的一端口电路, 在端口处的电压 $u_{\text {in }}$ 和端口 处的电流 $i_{\text {in }}$ 在关联方向下的比值, 即
+
+$$
+R_{\text {in }}=\frac{u_{\text {in }}}{i_{\text {in }}}
+$$
+
+效电路。
+
+用戴维南定理等效后的电压源 $u_{\mathrm{oc}}$ 和电阻 $R_{\mathrm{in}}$ 串联电路称为原含源一端口电路的戴维南等
+
+戴维南定理可以用图 1.2-17 帮助理解和记忆。
+
+应用戴维南定理求解电路的解题步骤:
+
+(1)选好开路;
+
+(2)求开路电压$u_{\mathrm{oc}}$;
+
+(3)求入端电阻$R_{\mathrm{in}}$;
+
+(4)画出原电路的等效电路;
+
+(5)在等效电路中求所需响应。
+
+使用戴维南定理的注意事项:
+
+(1) 将含独立电源的一端口电路用戴维南定 理等效是指对外电路等效;
+
+(2)戴维南等效电路的独立电压源 $u_{\mathrm{OC}}$ 应与
+
+所求得的开路电压方向保持一致;
+
+(3)所求的开路电压 $u_{\mathrm{OC}}$ 和入端电阻 $R_{\mathrm{in}}$ 都有可能为负值。
+
+【例 1.2-12】将图 1.2-18(a) 电路化简为戴维南等效电路。
+
+(I)
+
+解法 1 : 应用非理想电源间的等效变换可以得到戴维南等效电路。
+
+在图 (a) 电路中, 左侧第一条支路对端口 ab 等效为 $3 \mathrm{~A}$ 电流源, 即 $10 \Omega$ 电阻不起作用。 将左数第 2 条支路中的非理想电压源等效变换成由 $3 \mathrm{~A}$ 电流源和 $3 \Omega$ 电阻并联的非理想的电 流源, 即图 (a) 电路等效成图 (b) 电路。然后用电流源的并联关系和电阻的并联关系得图 (c) 的等效电路。最后将图 (c) 的非理想电流源等效变换成图 (d) 的戴维南等效电路。
+
+解法 2 : 先用节点电压法求图 (a) 含源一端口电路的开路电压, 可得
+
+$$
+U_{\mathrm{oc}}=U_{\mathrm{ab}}=\frac{(9 / 3)+3}{\frac{1}{3}+\frac{1}{6}+\frac{1}{2}}=6 \mathrm{~V}
+$$
+
+再将图 (a) 的两个独立电源置零后得图 (e) 所示的不含独立电源的一端口电路。用并联关系 对此电路求得端口处的等效电阻 $R_{\mathrm{ab}}=1 \Omega$, 即为人端电阻 $R_{\mathrm{in}}$ 。
+
+最后根据戴维南定理得图(f) 所示的戴维南等效电路。
+
+【例 1.2-13】在图 1.2-19(a) 电路中, 已知 $R_{1}=2 \Omega, R_{2}=5 \Omega, R_{\mathrm{I}}=2.5 \Omega, U_{\mathrm{s}}=10 \mathrm{~V}$, 控 制系数 $r=3 \Omega$ 。求负载电阻 $R_{\mathrm{I}}$ 中的电流 $I_{R \mathrm{~L} \text { 。 }}$ 。
+
+解: 此题为求单一响应的电路, 最适合用戴维南定理求解。现按戴维南定理的解题步骤求 解此电路。
+
+(1)首先选取负载电阻 $R_{1}$ 两端开路, 在 $R_{1}$, 左侧形成一个含源一端口电路, 如图 (b)。
+
+(2)求开路电压 $U_{O C}$ 。根据 KVL 有
+
+$$
+U_{\mathrm{S}}+r I_{1}+\left(R_{1}+R_{2}\right) I_{1}=0
+$$
+
+则
+
+得
+
+$$
+I_{1}=\frac{-U_{\mathrm{S}}}{R_{1}+R_{2}+r}=\frac{-10}{2+5+3}=-1 \mathrm{~A}
+$$
+
+$$
+U_{\text {OC }}=-I_{1} R_{2}=-(-1) \times 5=5 \mathrm{~V}
+$$
+
+(3)求人端电阻 $R_{\text {in。 }}$ 将图 (b) 电路中的 独立电源去掉后在原处短路为图 (c)。下面 介绍 4 种求人端电阻 $R_{\mathrm{in}}$ 的方法。
+
+方法 1一比例法
+
+根据人端电阻的定义, 在图 (c) 电路的 端口处依关联方向设端口电压 $U_{\mathrm{in}}$ 和端口电 流 $I_{\text {in }}$, 并设电阻 $R_{2}$ 支路电流 $I_{2}$, 见图 $(\mathrm{d})$ 。 则有
+
+可得
+
+$$
+R_{\text {in }}=\frac{U_{\text {in }}}{l_{\text {in }}}=\frac{5}{2}=2.5 \Omega
+$$
+
+方法 2- 等效法
+
+此方法的原理是利用等效变换关系,求
+
+$$
+R_{\mathrm{in}}=R_{\mathrm{eq}}=\frac{(2+3) \times 5}{2+3+5}=2.5 \Omega
+$$
+
+方法 3一齐次法
+
+根据齐次性原理, 可以在不含独立电源的一端口电路的端口处加一个 $1 \mathrm{~A}$ 电流源求其端 口处的电压响应, 此电压值即为入端电阻 $R_{\mathrm{in}}$ 值; 也可以在端口处加一个 $1 \mathrm{~V}$ 电压源求其端口 处的电流响应, 此电流值的倒数即为人端电阻 $R_{\mathrm{in}}$ 值。现将原电路图 (a) 中的独立电源置零后 的一端口电路的端口处加一个 $1 \mathrm{~A}$ 电流源, 见图(f), 根据 KVL 有
+
+$$
+U_{\text {in }}=2 I_{1}+3 I_{1}
+$$
+
+得.
+
+$$
+I_{1}=\frac{U_{\text {in }}}{5}
+$$
+
+又因为 $U_{\mathrm{in}}=5\left(1-I_{1}\right)=5\left(1-\frac{U_{\mathrm{in}}}{5}\right)$
+
+解得 $U_{\mathrm{in}}=2.5 \mathrm{~V}$
+
+即 $R_{\text {in }}=\frac{U_{\text {in }}}{1}=\frac{2.5}{1}=2.5 \Omega$
+
+当端口处加 $1 \mathrm{~V}$ 电压源时的电路为图 $(\mathrm{g})$, 可有
+
+$$
+I_{2}=\frac{1}{5} \mathrm{~A}, 2 I_{1}+3 I_{1}=1
+$$
+
+即 $\quad l_{1}=\frac{1}{5} \mathrm{~A}$
+
+$$
+I_{\text {in }}=I_{1}+I_{2}=\frac{1}{5}+\frac{1}{5}=\frac{2}{5} \mathrm{~A}
+$$
+
+得 $\quad R_{\text {in }}=\frac{1}{l_{\text {in }}}=\frac{5}{2}=2.5 \Omega$
+
+在此方法中也可以根据替代定理, 将控制变量设定成 $1 \mathrm{~A}$, 如图 $(\mathrm{h})$, 求端口处的电压与电 流之比为人端电阻 $R_{\mathrm{in}}$ 。由图 $(\mathrm{h})$ 可得
+
+$$
+U_{\text {in }}=2 \times 1+3 \times 1=5 \mathrm{~V}, I_{\text {in }}=1+\frac{5}{5}=2 \mathrm{~A}
+$$
+
+得
+
+$$
+R_{\text {in }}=\frac{U_{\text {in }}}{I_{\text {in }}}=\frac{5}{2}=2.5 \Omega
+$$
+
+方法 4一一开路短路法
+
+此方法是根据戴维南定理, 若同时求出含源一端口的开路电压 $U_{\mathrm{oc}}$ 和短路电流 $I_{\mathrm{sc}}$ 后, 两者
+
+有
+
+$$
+2 I_{1}+10+3 I_{1}=0
+$$
+
+由于 $5 \Omega$ 电阻被短路, 则 $I_{1}=-I_{\mathrm{SC}}$ 。根据 KVL 有
+
+$$
+-2 I_{\mathrm{sc}}+10-3 I_{\mathrm{sc}}=0
+$$
+
+解得 $I_{\mathrm{SC}}=\frac{10}{2+3}=2 \mathrm{~A}$ 可得 $R_{\mathrm{in}}=\frac{U_{\mathrm{OC}}}{I_{\mathrm{SC}}}=\frac{5}{2}=2.5 \Omega$
+
+(4)原电路的等效电路为图 $(\mathrm{j})$ 。
+
+(5)所需求解的电流响应为
+
+$$
+I_{R 1 .}=\frac{U_{\text {oC }}}{R_{\text {in }}+R_{\mathrm{l}}}=\frac{5}{2.5+2.5}=1 \mathrm{~A}
+$$
+
+## 4. 最大功率传输条件
+
+最大功率传输条件是, 当负载电阻等于去掉负载电阻后的戴维南等效电路中的内阻 $R_{\text {in }}$ 时, 在负载中可获得最大功率。即当 $R_{\mathrm{L}}=R_{\mathrm{in}}$ 时, $P_{\mathrm{L}}=P_{\mathrm{L}, \text { max }}$ 。当满足最大功率传输条件时, 负 载中获得的最大功率可用下式直接计算
+
+$$
+P_{\mathrm{L}, \max }=\frac{U_{\mathrm{oC}}^{2}}{4 R_{\mathrm{l}}}
+$$
+
+例如在上述例 1.2-13 中, 因为 $R_{\mathrm{I}}=R_{\mathrm{in}}=2.5 \Omega$, 所以负载电阻中所获得的最大功率为
+
+$$
+P_{\mathrm{l}, \text { max }}=\frac{U_{\mathrm{OC}}^{2}}{4 R_{\mathrm{l}} .}=\frac{5^{2}}{4 \times 2.5}=2.5 \mathrm{~W}
+$$
+
+## 5. 诺顿定理
+
+定理内容: 任何一个含有独立电源的线性一端口电阻电路, 对外电路而言可以用一个独立 电流源和一个线性电导相并联的电路等效替代; 其独立电流源的电流为该含源一端口电路在 端口处的短路电流 $i_{\mathrm{SC}}$; 其并联电导为该含源一端口电路中所有独立电源置零后, 端口处的人 端电导 $G_{\text {in。 }}$ 。
+
+人端电阻 $R_{\text {in }}$ 的倒数为人端电导 $G_{\text {in }}$ 。其定义是: 对一个不含独立电源的一端口电路, 在端 口处的电流 $i_{\mathrm{in}}$ 和端口处的电压 $u_{\mathrm{in}}$ 在关联方向下的比值, 即
+
+$$
+G_{\text {in }}=\frac{1}{R_{\text {in }}}=\frac{i_{\text {in }}}{u_{\text {in }}}
+$$
+
+用诺顿定理等效后的电流源 $i_{\mathrm{SC}}$ 和电导 $G_{\mathrm{in}}$ 并联电路称为原含源一端口电路的诺顿等效电 路。
+
+诺顿定理可以用图 1.2-20 帮助理解和记 忆。
+
+对同一个线性一端口电阻电路的诺顿等 效电路与戴维南等效电路之间可进行等效变 换。
+
+【例1.2-14】用诺顿定理求解例 1.2-13 电路中的电流 $I_{\text {RI.。 }}$
+
+解: 在例 1.2-13 中已求得短路电流 $I_{\mathrm{SC}}=2$ $\mathrm{A}, R_{\mathrm{in}}=2.5 \Omega$, 可得
+
+$$
+G_{\text {in }}=\frac{1}{R_{\text {in }}}=\frac{1}{2.5}=0.4 \mathrm{~S}
+$$
+
+也可以直接从例 1.2-13 所得戴维南运用非理想电源间的等效变换关系得
+
+$$
+I_{\mathrm{sc}}=\frac{U_{\mathrm{oC}}}{R_{\mathrm{in}}}=\frac{5}{2.5}=2 \mathrm{~A}
+$$
+
+$$
+G_{\text {in }}=\frac{1}{R_{\text {in }}}=\frac{1}{2.5}=0.4 \mathrm{~S}
+$$
+
+应用诺顿定理得此例题的等效电路为图 1.2-21, 最后得
+
+$$
+I_{R I .}=I_{\mathrm{SC}} \frac{1 / G_{\text {in }}}{\left(1 / G_{\text {in }}\right)+R_{1}}=2 \times \frac{1 / 0.4}{1 / 0.4+2.5}=1 \mathrm{~A}
+$$
+
+## 3 正弦电流电路
+
+### 1 正弦量的三要素和有效值
+
+## 1. 正弦量的三要素
+
+正弦量的幅值 (振幅、最大值)、频率 (角频率) 和相位 (相角) 称为正弦量的三要素。正弦 电流、电压的表达式为
+
+$$
+\begin{aligned}
+& i=I_{\mathrm{m}} \sin \left(\omega t+\psi_{i}\right) \\
+& u=U_{\mathrm{m}} \sin \left(\omega t+\psi_{u}\right)
+\end{aligned}
+$$
+
+式中: $I_{\mathrm{m}} 、 U_{\mathrm{m}}$ 为正弦电流、电压的最大值 (幅值); $\omega$ 为正弦电流、电压的角频率, 它与频率 $f$ 的关 系为
+
+$$
+\omega=2 \pi f
+$$
+
+因为正弦量的周期 $T=2 \pi$, 所以 $\omega 、 T$ 和 $f$ 三者有如下两关系式:
+
+$$
+f=\frac{1}{T}, \quad \omega=\frac{2 \pi}{T}
+$$
+
+$\left(\omega t+\psi_{i}\right)$ 和 $\left(\omega t+\psi_{u}\right)$ 分别称为电流和电压的相位。 $t=0$ 的相位称为初相位, 简称初相, 即 $\psi_{i}$ 和 $\psi_{u}$ 分别称为电流和电压的初相。
+
+电压和电流的相位之差称为相位差,用 $\varphi$ 表示, 即
+
+$$
+\varphi=\left(\omega t+\psi_{u}\right)-\left(\omega t+\psi_{i}\right)
+$$
+
+在同频率的情况下相位差称为初相差, 即
+
+$$
+\varphi=\psi_{u}-\psi_{i}
+$$
+
+## 2. 有效值
+
+在正弦交流电中根据热等效原理,定义电流和电压的有效值为其瞬时值在一个周期内的 方均根值,分别用 $I$ 和 $U$ 表示, 即
+
+$$
+I=\sqrt{\frac{1}{T} \int_{0}^{T} i^{2} \mathrm{~d} t}=\frac{I_{\mathrm{m}}}{\sqrt{2}} \quad, \quad U=\sqrt{\frac{1}{T} \int_{0}^{T} u^{2} \mathrm{~d} t}=\frac{U_{\mathrm{m}}}{\sqrt{2}}
+$$
+
+为多少?
+
+【例 1.3-1】一个周期为 $50 \mathrm{~Hz}$, 有效值为 $380 \mathrm{~V}$ 的正弦电压, 其角频率 $\omega$ 和最大值 $U_{\mathrm{m}}$ 各
+
+解: $\omega=2 \pi f=2 \pi \times 50=314 \mathrm{rad} / \mathrm{s}$
+
+$$
+U_{\mathrm{m}}=\sqrt{2} U=380 \sqrt{2}=537 \mathrm{~V}
+$$
+
+【例 1.3-2】现有电压 $u=220 \sqrt{2} \sin 314 t(\mathrm{~V})$ 和电流 $i=2 \sqrt{2} \sin \left(314 t+\frac{\pi}{2}\right)(\mathrm{A})$ 的两正弦 量, 它们的相位差 $\varphi$ 为多少?
+解: $\varphi=\psi_{u}-\psi_{i}=0-\frac{\pi}{2}=-\frac{\pi}{2}$
+
+1.3 .2 电感、电容元件电流、电压关系的相量形式及基尔霍夫定律的相量形式
+
+## 1. 电感元件电流、电压关系的相典形式
+
+在图 1. 3-1 的关联方向下电感电流相量 $I_{L}$ 和电感电压相量 $U_{L}$ 之间的关系为
+
+$$
+\begin{aligned}
+& U_{L}=\mathrm{j} X_{L} I_{L} \\
+& U_{L} \angle \psi_{u L}=X_{L} I_{L} \angle \psi_{i L}+\frac{\pi}{2} \\
+& I_{L}=-\mathrm{j} B_{L} \dot{U}_{L} \\
+& I_{L} \angle \psi_{i}=B_{L} U_{L} \angle \psi_{u L}-\frac{\pi}{2}
+\end{aligned}
+$$
+
+式中的 $X_{L}=\omega L$ 称为电感的电抗, 简称感抗, 是电感元件的交流参数。它的定义是电感上的电 压有效值 (或最大值) 和电流有效值 (或最大值) 之比; $B_{L}=1 / \omega L$ 称为电感的电纳, 简称感纳, 也是电感元件的交流参数。它的定义是电感上的电流有效值 (或最大值) 和电压有效值 (或最 大值)之比, 即电感元件的交流参数有如下两个表达式:
+
+$$
+X_{L}=\frac{U_{L}}{I_{L}}=\frac{U_{L \mathrm{~m}}}{I_{L \mathrm{~m}}}, B_{L}=\frac{I_{L}}{U_{L}}=\frac{I_{L \mathrm{~m}}}{U_{L \mathrm{~m}}}
+$$
+
+电感元件上的相量图为图 1.3-2, 即电感两端电压相量超前于电流相量 $\pi / 2$ 。
+
+## 2. 电容元件电流、电压关系的相量形式
+
+在图 1.3-3 的关联方向下电容电流相量 $I_{c}$ 和电感电压相量 $U_{c}$ 之间的关系为
+
+$$
+\begin{aligned}
+& U_{c}=-\mathrm{j} X_{c} \dot{I}_{c} \\
+& U_{c} \angle \psi_{u c}=X_{C} I_{c} \angle \psi_{i c}-\frac{\pi}{2} \\
+& \dot{I}_{c}=\mathrm{j} B_{c} \dot{U}_{c} \\
+& I_{c} \angle \psi_{i c}=B_{c} U_{c} \angle \psi_{u C}+\frac{\pi}{2}
+\end{aligned}
+$$
+
+式中的 $X_{C}=1 / \omega C$ 称为电容的电抗, 简称容抗, 是电容元件的交流参数。它的定义是电容上的 电压有效值 (或最大值) 和电流有效值 (或最大值) 之比; $B_{C}=\omega C$ 称为电容的电纳, 简称容纳, 也是电容元件的交流参数。它的定义是电容上的电流有效值 (或最大值) 和电压有效值 (或最 大值)之比, 即电容元件的交流参数有如下两个表达式:
+
+$$
+X_{C}=\frac{U_{C}}{I_{C}}=\frac{U_{C \mathrm{~m}}}{I_{C \mathrm{~m}}}, B_{C}=\frac{I_{C}}{U_{c}}=\frac{I_{C \mathrm{~m}}}{U_{C \mathrm{~m}}}
+$$
+
+电容元件上的相量图为图 1.3-4, 即电容两端电流相量超前于电压相量 $\pi / 2$ 。
+
+## 3. 基尔霍夫定律的相形式
+
+$\mathrm{KCL}$ 的相量形式为 $\sum \dot{I}=0$, 即在同频率的正弦电路中, 对任意节点, 在 任何时刻流人 (流出) 该节点的电流相量的代数和恒等于零。
+
+$\mathrm{KVL}$ 的相量形式为 $\sum U=0$, 即在同频率的正弦电路中, 对任意闭合回路, 在任何时刻沿 回路循行时总的电压降相量的代数和恒等于零。 【例 1.3-3】在图 1.3-5 电路中, 已知: $R=3 \Omega, X_{L}=8 \Omega, X_{C}=4 \Omega, i=1 \angle 0^{\circ} \mathrm{A}$, 求电阻电 压相量 $U_{R}$ 、电感电压相量 $U_{L}$ 、电容电压相量 $U_{C}$ 和电源电压相量 $U_{\mathrm{S}}$ 。
+
+解: 根据电阻、电感和电容元件电流、电压关系的相量形式得
+
+$$
+\begin{aligned}
+& U_{R}=R \dot{I}=3 \times 1 \angle 0^{\circ}=3 \angle 0^{\circ} \mathrm{V} \\
+& U_{L}=\mathrm{j} X_{L} \dot{I}=\mathrm{j} 8 \times 1 \angle 0^{\circ}=\mathrm{j} 8=8 \angle 90^{\circ} \mathrm{V} \\
+& U_{C}=-\mathrm{j} X_{\mathrm{C}} \dot{I}=-\mathrm{j} 4 \times 1 \angle 0^{\circ}=-\mathrm{j} 4=4 \angle-90^{\circ} \mathrm{V}
+\end{aligned}
+$$
+
+根据 KVL 的相量形式得
+
+$$
+\vec{U}_{\mathrm{S}}=\dot{U}_{R}+\dot{U}_{L}+\dot{U}_{C}=3+\mathrm{j} 8-\mathrm{j} 4=3+\mathrm{j} 4=5 \angle 53.1^{\circ} \mathrm{V}
+$$
+
+量 $i$ 。
+
+【例 1.3-4】在图 1.3-6 电路中, 已知: $U_{\mathrm{S}}=10 \angle 0^{\circ} \mathrm{V}, X_{L}=5 \Omega, X_{C}=10 \Omega$, 求电源电流相
+
+解: 在电路中设电感和电容中的电流相量分别为 $i_{L}$ 和 $i_{C}$, 根据电 感和电容元件电流、电压关系的相量形式得
+
+$$
+\begin{aligned}
+& i_{L}=\frac{U_{\mathrm{S}}}{\mathrm{j} X_{L}}=\frac{10 \angle 0^{\circ}}{5 \angle 90^{\circ}}=2 \angle-90^{\circ}=-\mathrm{j} 2 \mathrm{~A} \\
+& i_{C}=\frac{U_{\mathrm{S}}}{-\mathrm{j} X_{C}}=\frac{10 \angle 0^{\circ}}{-\mathrm{j} 10}=1 \angle 90^{\circ}=\mathrm{j} 1 \mathrm{~A}
+\end{aligned}
+$$
+
+根据 KCL 的相量形式得
+
+$$
+i=i_{L}+i_{c}=-\mathrm{j} 2+\mathrm{j} 1=-\mathrm{j} 1=1 \angle-90^{\circ} \mathrm{A}
+$$
+
+### 3 阻抗、导纳、有功功率、无功功率、视在功率和功率因数
+
+## 1. 阻抗和导纳
+
+对图 1.3-7(a) 不含独立电源的正弦交流一端口电路 $N_{0}$, 端口处的电压相量 $U\left(U_{\mathrm{m}}\right)$ 与电 流相量 $I\left(I_{\mathrm{m}}\right)$ 在关联方向下之比为该电路的复阻抗 $Z$, 即
+
+$$
+Z=\frac{U}{I}=\frac{U_{\mathrm{m}}}{I_{\mathrm{m}}}=|Z| \angle \varphi_{Z}
+$$
+
+(a) (b)
+
+式中:复阻抗的模 $|Z|$ 称为电路的阻抗; 幅角 $\varphi_{Z}$ 称为阻抗角。
+
+若不含独立电源的正弦交流一端口电路 $N_{0}$ 为 $R 、 L 、 C$ 串联电路, 见 1.3-7 (b), 则
+
+$$
+Z=R+\mathrm{j} X=R+\mathrm{j}\left(X_{L}-X_{C}\right)=R+\mathrm{j}\left(\omega L-\frac{1}{\omega C}\right)=|Z| \angle \psi_{Z}
+$$
+
+式中 $X=X_{L}-X_{C}$ 称为电路中的电抗。当 $X_{L}>X_{C}$ 时电路为感性, 当 $X_{C}>X_{L}$ 时电路为容性。电 路的阻抗 $|Z|$ 和阻抗角 $\varphi_{Z}$ 与串联电路中的参数关系为
+
+$$
+\begin{aligned}
+& |Z|=\sqrt{R^{2}+X^{2}} \\
+& \varphi_{Z}=\arctan \frac{X}{R}
+\end{aligned}
+$$
+
+当 $\varphi_{Z}>0$ 时电路为感性, 当 $\varphi_{Z}<0$ 时电路为容性。
+
+电阻 $R$ 、电抗 $X$ 、阻抗 $|Z|$ 和阻抗角 $\varphi_{Z}$ 构成阻抗三角形, 见图 1.3-7 (c)。
+
+对图 1.3-7 (a) 不含独立电源的正弦交流一端口电路 $N_{0}$, 端口处的电流相量 $I\left(I_{\mathrm{m}}\right)$ 与电压 相量 $U\left(U_{\mathrm{m}}\right)$ 在关联方向下之比为该电路的复导纳 $Y$, 即
+
+$$
+Y=\frac{i}{U}=\frac{i_{\mathrm{m}}}{U_{\mathrm{m}}}=|Y| \angle \varphi_{Y}
+$$
+
+式中:复导纳的模 $|Y|$ 称为电路的导纳; 幅角 $\varphi_{Y}$ 称为导纳角。
+
+若不含独立电源的正弦交流一端口电路 $N_{0}$ 为 $R 、 L 、 C$ 并联电路 (见 1.3-7 (d)) , 则
+
+$$
+Y=G+\mathrm{j} B=G+\mathrm{j}\left(B_{C}-B_{L}\right)=|Y| \angle \varphi_{Y}
+$$
+
+式中: $B=B_{C}-B_{L}$ 称为电路中的电纳。当 $B_{C}>B_{L}$ 时电路为感性, 当 $B_{L}>B_{C}$ 时电路为容性。电 路的导纳 $|Y|$ 和阻抗角 $\varphi_{Y}$ 与并联电路中的参数关系为
+
+$$
+\begin{aligned}
+& |Y|=\sqrt{G^{2}+B^{2}} \\
+& \varphi_{Y}=\arctan \frac{B}{G}
+\end{aligned}
+$$
+
+电导 $G$ 、电纳 $B$ 、导纳 $|Y|$ 和导纳角 $\varphi_{Y}$ 构成导纳三角形，见图 1.3-7(e)。
+
+对同一个不含独立电源的正弦交流一端口电路 $N_{0}$, 复阻抗 $Z$ 和复导纳 $Y$ 互为倒数; 导纳 角 $\varphi_{Y}$ 为阻抗角 $\varphi_{Z}$ 的负值, 即
+
+$$
+\begin{aligned}
+& Y=\frac{1}{Z} \\
+& Z=\frac{1}{Y} \\
+& \varphi_{Y}=-\varphi_{Z}
+\end{aligned}
+$$
+
+## 2. 有功功率
+
+对一个正弦交流一端口电路 $N$ (见图 1.3-8), 它的瞬时功率 $p$ 为端口电压 的瞬时值 $u$ 与端口电流的瞬时值 $i$ 的乘积, 即
+
+$$
+p=u i
+$$
+
+设 $u=U_{\mathrm{m}} \sin \left(\omega t+\psi_{u}\right), i=I_{\mathrm{m}} \sin \left(\omega t+\psi_{i}\right)$, 则
+
+$$
+p=u i=U_{\mathrm{m}} \sin \left(\omega t+\psi_{u}\right) I_{\mathrm{m}} \sin \left(\omega t+\psi_{i}\right)=U I \cos \left(\psi_{u}-\psi_{i}\right)-U I \cos \left(2 \omega t+\psi_{u}+\psi_{i}\right)
+$$
+
+有功功率定义: 瞬时功率 $p$ 在一个周期内的平均值为有功功率, 又称平均功率, 用大写 $P$ 表示, 单位为 $W($ 瓦), 其数学表达式为
+
+$$
+P=\frac{1}{T} \int_{0}^{T} p \mathrm{~d} t=U I \cos \varphi
+$$
+
+式中 $\varphi=\psi_{u}-\psi_{i}$, 即为电路的阻抗角。
+
+有功功率的物理意义是电路中消耗的功率。
+
+## 3. 无功功率
+
+无功功率的定义: 将图 1.3-8 正弦交流一端口电路中端口处的电压有效值 $U$ 、电流有效值 $I$ 和阻抗角的正弦值 $\sin \varphi$ 三者的乘积定义为交流电路的无功功率 $Q$, 单位为 $\operatorname{var}$ (无功伏安), 即
+
+$$
+Q=U I \sin \varphi
+$$
+
+无功功率的物理意义是电路 $N$ 与电源交换能量的最大速率。
+
+## 4. 现在功率
+
+视在功率的定义: 将图 1.3-8 正弦交流一端口电路中端口处的电压有效值 $U$ 、电流有效值 $I$ 的乘积定义为交流电路的视在功率 $S$, 单位为 VA (伏安), 即
+
+$$
+S=U I
+$$
+
+视在功率的物理意义是电路 $N$ 所需占用电源的容量。
+
+## 5. 功率因数
+
+功率因数的定义是在图 1.3-8 的交流电路 $N$ 中阻抗角的余弦值, 用 $\lambda$ 表示, 它的物理意义 是交流电路中的有功功率与视在功率的比值, 即
+
+$$
+\lambda=\cos \varphi=\frac{P}{S}
+$$
+
+有功功率、无功功率和视在功率三者的关系为
+
+$$
+S=\sqrt{P^{2}+Q^{2}}
+$$
+
+此关系可用图 1.3-9 所示的功率三角形帮助记忆交流电路中的各种功率的计算 式。
+
+【例 1.3-5】图 1.3-10 (a) 为一个不含独立电源的交流一端口电路 $N_{0}$, 已知电源电压 $u_{\mathrm{S}}$ $=120 \sin 1000 t \mathrm{~V}$, 电流 $i=8 \sin \left(1000 t-53.1^{\circ}\right) \mathrm{A}$ 。试分别用两个元件的串联和并联电路等效 该电路。
+
+解: 由已知 $u 、 i$ 瞬时值表达式得知电压导前电流, 则 $N_{0}$ 为感性电路, 图 1.3-10(b) 的电阻 悡泡感串联电路与图 1.3-10(c) 的电阻和电感并联电路为其等效电路。在图 1.3-10(b) 中有
+
+$$
+Z=\frac{U_{\mathrm{m}}}{I_{\mathrm{m}}}=\frac{120 \angle 0^{\circ}}{8 \angle-53.1^{\circ}}=15 \angle 53.1^{\circ}=9+\mathrm{j} 12 \Omega
+$$
+
+得
+
+$$
+R=9 \Omega, X_{L}=12 \Omega, L=\frac{X_{L}}{\omega}=\frac{12}{1000}=0.012 \mathrm{H}=12 \mathrm{mH}
+$$
+
+在图 1.3-10(c) 中有
+
+$$
+\begin{aligned}
+& Y=\frac{1}{Z}=\frac{1}{15 \angle 53.1^{\circ}}=0.067 \angle-53.1^{\circ} \mathrm{S}=0.04-\mathrm{j} 0.053 \mathrm{~S}=G^{\prime}-\mathrm{j} B^{\prime} \\
+& R^{\prime}=\frac{1}{G^{\prime}}=\frac{1}{0.04}=25 \Omega, X_{L}^{\prime}=\frac{1}{B^{\prime}}=\frac{1}{0.053}=18.9 \Omega \\
+& L^{\prime}=\frac{X_{L}^{\prime}}{\omega}=\frac{18.9}{1000}=0.0189 \mathrm{H}=18.9 \mathrm{mH}
+\end{aligned}
+$$
+
+【例 1.3-6】求图 1.3-11 电路的复阻抗 $Z$ 。 解: $Z=10+\frac{(10+\mathrm{j} 10)(-\mathrm{j} 20)}{10+\mathrm{j} 10-\mathrm{j} 20}=10+\frac{200-\mathrm{j} 200}{10-\mathrm{j} 10}=10+20=30 \Omega$
+
+【例 1.3-7】在图 1.3-12 电路中, $R_{1}=R_{2}=25 \Omega, X_{L}=X_{C}=33.3 \Omega$, 求电路的总复阻抗 $Z$ 。
+
+解法 1: $Y_{1}=\frac{1}{R_{1}}-\mathrm{j} \frac{1}{X_{L}}=\frac{1}{25}-\mathrm{j} \frac{1}{33.3}=0.04-\mathrm{j} 0.03=0.05 \angle-36.9^{\circ} \mathrm{S}$
+
+$$
+\begin{aligned}
+Y_{2} & =\frac{1}{R_{2}}+\mathrm{j} \frac{1}{X_{C}}=\frac{1}{25}+\mathrm{j} \frac{1}{33.3}=0.04+\mathrm{j} 0.03=0.05 \angle 36.9^{\circ} \mathrm{S} \\
+Z & =Z_{1}+Z_{2}=\frac{1}{Y_{1}}+\frac{1}{Y_{2}}=\frac{1}{0.05 \angle-36.9^{\circ}}+\frac{1}{0.05 \angle 36.9^{\circ}}=20 \angle 36.9^{\circ}+20 \angle-36.9^{\circ} \\
+& =16+\mathrm{j} 12+16-\mathrm{j} 12=32 \Omega
+\end{aligned}
+$$
+
+解法 2: $Z=Z_{1}+Z_{2}=\frac{R_{1}\left(\mathrm{j} X_{L}\right)}{R_{1}+\mathrm{j} X_{L}}+\frac{R_{2}\left(-\mathrm{j} X_{C}\right)}{R_{2}-\mathrm{j} X_{C}}=\frac{25(\mathrm{j} 33.3)}{25+\mathrm{j} 33.3}+\frac{25(-\mathrm{j} 33.3)}{25-\mathrm{j} 33.3}$
+
+$$
+\begin{aligned}
+& =\frac{832.5 \angle 90^{\circ}}{41.6 \angle 53.11^{\circ}}+\frac{832.5 \angle-90^{\circ}}{41.6 \angle-53.11^{\circ}}=20 \angle 36.9^{\circ}+20 \angle-36.9^{\circ} \\
+& =16+\mathrm{j} 12+16-\mathrm{j} 12=32 \Omega
+\end{aligned}
+$$
+
+【例 1.3-8】在图 1.3-13 电路中, 已知: $U_{\mathrm{S}}=100 \angle 0^{\circ} \mathrm{V}, R=30 \Omega, X_{L}$ $=40 \Omega$ 。求电路中的视在功率、有功功率、无功功率。
+
+$$
+\text { 解: } \begin{aligned}
+I= & \frac{U_{\mathrm{S}}}{R+\mathrm{j} X}=\frac{100 \angle 0^{\circ}}{30+\mathrm{j} 40}=\frac{100 \angle 0^{\circ}}{50 \angle 53.1^{\circ}}=2 \angle-53.1^{\circ} \mathrm{A} \\
+S & =U I=100 \times 2=200 \mathrm{VA}, P=U I \cos \varphi=100 \times 2 \cos 53.1^{\circ}=120 \mathrm{~W} \\
+Q & =U I \sin \varphi=100 \times 2 \sin 53.1^{\circ}=160 \mathrm{var}
+\end{aligned}
+$$
+
+【例 1.3-9】在图 1.3-14(a) 电路中, 已知: $U_{\mathrm{s}}=100 \angle 0^{\circ} \mathrm{V}, R=16 \Omega, L=38.2 \mathrm{mH}$, 电源 频率 $f=50 \mathrm{~Hz}, C=90.5 \mu \mathrm{F}$ 。先求无并联电容时的电流 $I$ 和功率因数 $\lambda$, 再求并联电容后的电 流 $I^{\prime}$ 、功率因数 $\lambda^{\prime}$ 和电容支路中的电流 $I_{C}$, 并画出包括 $\dot{U}_{\mathrm{S}} 、 \dot{I} \dot{I}^{\prime}$ 和 $\dot{I}_{C}$ 的相量图。
+
+## 解: 无电容时电路的复阻抗为
+
+$$
+\begin{aligned}
+& Z=R+\mathrm{j} X_{L}=R+\mathrm{j} 2 \pi f L=16+\mathrm{j} 2 \pi \times 50 \times 38.2 \times 10^{-3}=16+\mathrm{j} 12 \Omega \\
+& I=\frac{U_{\mathrm{S}}}{Z}=\frac{100 \angle 0^{\circ}}{16+\mathrm{j} 12}=\frac{100 \angle 0^{\circ}}{20 \angle 36.9^{\circ}}=5 \angle-36.9^{\circ} \mathrm{A} \\
+& I=5 \mathrm{~A}, \lambda=\cos \varphi=\cos \left(-36.9^{\circ}\right)=0.8
+\end{aligned}
+$$
+
+$$
+X_{C}=\frac{1}{2 \pi f C}=\frac{1}{2 \pi \times 50 \times 90.5 \times 10^{-6}}=35.1 \Omega
+$$
+
+电路的复阻抗为
+
+$$
+\begin{aligned}
+Z^{\prime} & =\frac{\left(R+\mathrm{j} X_{L}\right)\left(-\mathrm{j} X_{C}\right)}{R+\mathrm{j} X_{L}-\mathrm{j} X_{C}}=\frac{(16+\mathrm{j} 12)(-\mathrm{j} 35.1)}{16+\mathrm{j} 12-\mathrm{j} 35.1} \\
+& =\frac{20\left[36.9^{\circ} \times 35.1 \angle-90^{\circ}\right.}{26-\mathrm{j} 23.1} \\
+& =\frac{702 L-53.1^{\circ}}{34.8 L-41.6^{\circ}}=20.2 \angle-11.5^{\circ} \Omega
+\end{aligned}
+$$
+
+并联电容后
+
+$$
+\begin{aligned}
+& I^{\prime}=\frac{U_{S}}{Z^{\prime}}=\frac{100 \angle 0^{\circ}}{20.2 \angle \underline{11.5^{\circ}}}=4.95 \angle 11.5^{\circ} \mathrm{A}, I^{\prime}=4.95 \mathrm{~A} \\
+& \lambda^{\prime}=\cos 11.5^{\circ}=0.98 \approx 1 \\
+& I_{C}=\frac{U_{\mathrm{S}}}{-\mathrm{j} X_{C}}=\frac{100 \angle 0^{\circ}}{35.1 \angle-90^{\circ}}=28.4 \angle 90^{\circ} \mathrm{A}, I_{C}=2.84 \mathrm{~A}
+\end{aligned}
+$$
+
+相量图见图 1.3-14(b)。
+
+### 4 正弦电流电路分析的相量方法
+
+## 1. 相量计算方法
+
+在同频率的正弦电路中, 电路分析的相量计算法应遵循以下原则:
+
+(1)将电路中的变量用相量表示;
+
+(2)将电路中的参数用复参数形式表示;
+
+(3)画出电路的相量模型;
+
+(4)选用系统分析法中的某种方法列出复数方程, 解方程求得所需变量的相量或所需求解 的复参数;
+
+(5)应用电路的基本定理, 求得所需变量的相量或所需求解的复参数;
+
+(6)将求得变量的相量形式变换成所需变量的交流变量值,或由所得的复参数变成所需求 解的交流参数或元件参数。
+
+【例 1.3-10】在图 1.3-15(a) 电路中, 已知: $u_{\mathrm{S}}=2 \sqrt{2} \sin \omega t \mathrm{~V}, i_{\mathrm{S}}=\sqrt{2} \sin \omega t \mathrm{~A}, \beta=1, R=2$ $\Omega, X_{L}=2 \Omega, X_{C}=2 \Omega$, 求电感中的电流 $i_{L}$ 和电容两端电压 $u_{C}$ 。
+
+解: 图 1.3-15(a) 电路的相量模型为图 1.3-15(b)。选用网孔电流法, 在图 (b) 中设三个 网孔电流 $i_{1} 、 i_{2}$ 和 $i_{3}$, 则 $i_{3}=i_{\mathrm{s}}=1 \angle 0^{\circ} \mathrm{A}$, 只需列写如下两个方程:
+
+$$
+\left\{\begin{array}{l}
+(2+\mathrm{j} 2) i_{1}-\mathrm{j} 2 I_{2}-2 \times 1 \angle 0^{\circ}=2 \angle 0^{\circ} \\
+i_{2}=i=I_{1}-1 \angle 0^{\circ}
+\end{array}\right.
+$$
+
+将式(2)代人式 (1) 有
+
+$$
+(2+\mathrm{j} 2) i_{1}-\mathrm{j} 2\left(i_{1}-1 \angle 0^{\circ}\right)=2 \angle 0^{\circ}+2 \angle 0^{\circ}
+$$
+
+即
+
+$$
+(2+\mathrm{j} 2-\mathrm{j} 2) i_{1}=4-\mathrm{j} 2
+$$
+
+得
+
+$$
+i_{1}=2-\mathrm{j} 1 \mathrm{~A}
+$$
+
+将此结果代人式 (2) 得
+
+$$
+i_{2}=2-\mathrm{jl}-1=1-\mathrm{j} 1 \mathrm{~A}
+$$
+
+由图 (b) 可得
+
+$$
+\begin{aligned}
+& i_{L}=\dot{I}_{1}-\dot{I}_{2}=2-\mathrm{j} 1-1+\mathrm{j} 1=1 \angle 0^{\circ} \mathrm{A} \\
+& U_{c}=\left(i_{2}-\dot{I}_{3}\right) \times(-\mathrm{j} 2)=(1-\mathrm{j} 1-1) \times(-\mathrm{j} 2)=2 \angle 180^{\circ} \mathrm{A}
+\end{aligned}
+$$
+
+最后得
+
+$$
+i_{L}=\sqrt{2} \sin \omega t \mathrm{~A}, u_{C}=2 \sqrt{2} \sin \left(\omega t+180^{\circ}\right) \mathrm{V}
+$$
+
+【例 1.3-11】在图 1.3-16(a) 电路中, 已知: $u_{\mathrm{S}}=\sqrt{2} \sin \omega t \mathrm{~V}, i_{\mathrm{S}}=\sqrt{2} \sin \omega t \mathrm{~A}, r=2 \Omega, R=1$ $\Omega, X_{\mathrm{C}}=3 \Omega$, 求 $X_{L}$ 为何值时流过它的电流有效值最大, 此电流为多少?
+
+解: 电路的相量模型为图 1.3-16(b)。选用戴维南定理, 从电感两端开路, 开路后左侧电 路为图 1.3-16(c), 由节点电压法可有如下方程组:
+
+$$
+\left\{\begin{array}{l}
+\left(\frac{1}{-\mathrm{j} 3}+1\right) U_{\mathrm{oC}}=\frac{1 \angle 0^{\circ}}{-\mathrm{j} 3}+\frac{2 i_{1}}{1}+1 \\
+i_{1}=\frac{1 \angle 0^{\circ}-U_{\mathrm{OC}}}{-\mathrm{j} 3}
+\end{array}\right.
+$$
+
+将式(2)代人式(1)有
+
+$$
+\left(\frac{1}{-\mathrm{j} 3}+1\right) U_{\mathrm{oC}}=\mathrm{j} \frac{1}{3}+\mathrm{j} \frac{2}{3}-\mathrm{j} \frac{2}{3} \dot{U}_{\mathrm{OC}}+1
+$$
+
+即
+
+$$
+\begin{aligned}
+& \left(\mathrm{j} \frac{1}{3}+1+\mathrm{j} \frac{2}{3}\right) U_{O C}=\mathrm{j} 1+1 \\
+& (1+\mathrm{j} 1) U_{O C}=\mathrm{j} 1+1
+\end{aligned}
+$$
+
+得
+
+$$
+U_{\mathrm{OC}}=1 \angle 0^{\circ} \mathrm{A}
+$$
+
+将图 1.3-16 (c) 电路的独立电源置零后, 求人端复阻抗的电路为图 1.3-16(d), 在此电路
+
+$$
+\begin{aligned}
+& \dot{I}_{1}=-\frac{1}{-\mathrm{j} 3} \dot{U}_{\text {in }}=-\mathrm{j} \frac{1}{3} U_{\text {in }} \\
+& \dot{I}_{2}=\frac{U_{\text {in }}-2 \dot{I}_{1}}{1}=\dot{U}_{\text {in }}-2\left(-\mathrm{j} \frac{1}{3} U_{\text {in }}\right)=U_{\text {in }}+\mathrm{j} \frac{2}{3} U_{\text {in }} \\
+& \dot{I}_{\text {in }}=-\dot{I}_{1}+\dot{I}_{2}=\mathrm{j} \frac{1}{3} U_{\text {in }}+\dot{U}_{\text {in }}+\mathrm{j} \frac{2}{3} U_{\text {in }}=(1+\mathrm{j} 1) U_{\text {in }}
+\end{aligned}
+$$
+
+得
+
+$$
+Z_{\text {in }}=\frac{U_{\text {in }}}{I_{\text {in }}}=\frac{U_{\text {in }}}{(1+\mathrm{j} 1) U_{\text {in }}}=\frac{1}{(1+\mathrm{j} 1)}=\frac{1}{\sqrt{2} \angle 45^{\circ}}=\frac{1}{\sqrt{2}} \angle-45^{\circ}=0.5-\mathrm{j} 0.5 \Omega
+$$
+
+原电路的等效电路为图 1.3-16(e), 由此电路可有下式:
+
+$$
+i_{L}=\frac{1 \angle 0^{\circ}}{0.5-\mathrm{j} 0.5+\mathrm{j} X_{L}}=\frac{1}{0.5+\mathrm{j}\left(-0.5+X_{L}\right)}
+$$
+
+由此式可知当分母的虚部为零时 $I_{L}$ 最大, 则此时可有
+
+$$
+-0.5+X_{L}=0
+$$
+
+可得当 $X_{\mathrm{L}}=0.5 \Omega$ 时 $I_{L}$ 最大。
+
+由此可得
+
+$$
+i_{L \max }=\frac{1 \angle 0^{\circ}}{0.5}=2 \angle 0^{\circ} \mathrm{A}, I_{L \max }=2 \mathrm{~A}
+$$
+
+## 2. 相量图解析法
+
+在同频率的正弦电路中, 可以借助相量图求得待求变量或待求参数, 其原则是:
+
+(1)在所有已知变量的相量中选择一个参考相量;
+
+(2)将相同性质的变量采用相同的比例, 由已知条件画出电路的相量图;
+
+(3)根据电路的基本定律在相量图中找出待求变量的相量;
+
+(4)利用相量图中的几何解析关系求出待求相量的数值;
+
+(5)利用相量和参数的关系求出待求参数。
+
+【例 1.3-12】在图 1.3-17(a) 中, 两个电流表的读数皆为 $5 \mathrm{~A}$, 电压表的读数为 $70.7 \mathrm{~V}$, 并 且已知电压 $u_{\mathrm{S}}$ 和电流 $i_{L}$ 同相。求电感上的电压有效值 $U_{L}$ 和电阻上的电压有效值 $U_{R}$ 以及电阻 $R$ 、感抗 $X_{L}$ 和容抗 $X_{C}$ 。
+
+解: 选电阻中的电流相量 $i_{R}$ 为参考相量, 见图 1.3-17(b), 即 $i_{R}=5 \angle 0^{\circ} \mathrm{A}$, 画出相量 $\dot{I}_{R}$ 。 因为 $U_{R}$ 与 $i_{R}$ 同相, $U_{R}$ 与 $U_{C}$ 为同一电压, $I_{C}$ 导前于 $U_{c} 90^{\circ}, I_{C}=5 \mathrm{~A}$, 所以可以画出 $i_{C}$ 相量, 即 $i_{c}=5 \angle 90^{\circ} \mathrm{A}$ 。
+
+根据 $\mathrm{KCL}$, 有 $\dot{I}_{L}=\dot{I}_{R}+i_{C}$, 可画出 $\dot{I}_{L}$ 相量, 即 $\dot{I}_{L}=5 \sqrt{2} \angle 45^{\circ}=7.07 \angle 45^{\circ} \mathrm{A}$ 。
+
+根据已知条件 $U_{\mathrm{S}}$ 与 $i_{L}$ 同相, 且 $U_{\mathrm{S}}=70.7 \mathrm{~V}$, 可画出 $U_{\mathrm{s}}$ 相量, 即 $U_{\mathrm{S}}=70.7 \angle 45^{\circ} \mathrm{V}$ 。 因为 $U_{R}$ 与 $i_{R}$ 同相, $U_{L}$ 导前于 $i_{L} 90^{\circ}$, 则可知 $U_{R}$ 和 $U_{L}$ 的方位, 又根据 $U_{\mathrm{S}}=U_{R}+U_{L}$, 可间 $U_{S}$ 相量的顶端做平行四边形, 见图 1.3-17 (b), 由此得出 $U_{L}=U_{L} \angle 135^{\circ} \mathrm{V}, U_{R}=U_{R} \angle 0^{\circ} \mathrm{V}$ 。
+
+由 $\dot{U}_{R} 、 U_{L}$ 和 $U_{\mathrm{S}}$ 所构成的三角形为等腰三角形, 因为 $U_{\mathrm{S}}=70.7 \mathrm{~V}$, 所以可得
+
+$$
+\begin{aligned}
+& U_{L}=U_{\mathrm{S}}=70.7 \mathrm{~V} \\
+& U_{R}=2 U_{\mathrm{S}} \sin 45^{\circ}=2 \times 70.7 \sin 45^{\circ}=100 \mathrm{~V}
+\end{aligned}
+$$
+
+由变量与参数的关系可得
+
+$$
+\begin{aligned}
+& R=\frac{U_{R}}{I_{R}}=\frac{100}{5}=20 \Omega \\
+& X_{L}=\frac{U_{L}}{I_{L}}=\frac{70.7}{7.077}=10 \Omega \\
+& X_{C}=\frac{U_{C}}{I_{C}}=\frac{U_{R}}{I_{C}}=\frac{100}{5}=20 \Omega
+\end{aligned}
+$$
+
+### 5 频率特性概念
+
+频率特性的定义:在正弦电路中,交流参数与角频率的关系式和变量的有效值与频率的关 系式称为频率特性。表征这些关系式的曲线称为频率特性曲线。
+
+例如,感抗 $X_{L}$ 、容抗 $X_{C}$ 、电抗 $X$ 、阻抗 $|Z|$ 和阻抗角 $\varphi_{Z}$ 与角频率的关系式为
+
+$$
+X_{L}=\omega L, X_{C}=\frac{1}{\omega C}, X=\omega L-\frac{1}{\omega C},|Z|=\sqrt{R^{2}+\left(\omega L-\frac{1}{\omega C}\right)^{2}}, \varphi_{2}=\arctan \frac{\omega L-\frac{1}{\omega C}}{R}
+$$
+
+以上各式为交流参数的频率特性,它们的频率特性曲线见图 1.3-18(a) 和 $(\mathrm{b})$ 。
+
+又如在电阻 $R$ 、电感 $L$ 和电容 $C$ 串联电路中, 各变量有效值的频率特性曲线为图 1.3-18 (c)。此特性曲线主要应用于研究电路中的谐振现象。 1.3.6三相电路中电源和负载的连接方式及相电压、相电流、线电压、线电流、三 相功率的概念和关系
+
+## 1. 三相电源和三相负载的连接方式
+
+在三相电路中,三相电源和三相负载都有星形 $(Y)$ 和三角形 $(\Delta)$ 两种连接方式,因此可构 成 $Y-Y 、 Y-\Delta 、 \Delta-Y$ 和 $\Delta-\Delta 4$ 种连接方式。这 4 种连接方式称为三相三线制。此外,在低 压供电系统中, 将 $Y-Y$ 系统中的电源中点与负载中点用中线相连, 构成 $Y_{0}-Y_{0}$ 供电系统, 称 为三相四线制。因此,三相电路中可以有 5 种基本连接方式,见图 1.3-19。
+
+$Y_{0}-Y_{0}$
+
+## 2. 对称三相电路及其特点
+
+对称三相电路是指在三相电路中, 三相电源对称, 三相负载对称, 三个线路复阻抗相等的 三相电路。
+
+对称三相电源是指构成三相电源的三个电压源复值相等, 频率相同, 相位互差 $120^{\circ}$ 。其 正序表达式为
+
+$$
+u_{\mathrm{A}}=U_{\mathrm{m}} \sin \omega t, u_{\mathrm{B}}=U_{\mathrm{m}} \sin \left(\omega t-120^{\circ}\right), u_{\mathrm{C}}=U_{\mathrm{m}} \sin \left(\omega t+120^{\circ}\right)
+$$
+
+其负序的表达式为
+
+$$
+u_{\mathrm{A}}=U_{\mathrm{m}} \sin \omega t, u_{\mathrm{B}}=U_{\mathrm{m}} \sin \left(\omega t+120^{\circ}\right), u_{\mathrm{C}}=U_{\mathrm{m}} \sin \left(\omega t-120^{\circ}\right)
+$$
+
+在电路理论中,如不特别指明,一般皆指正序。正序的电压 (或电流) 波形图见图 1.3-20, 相量图见图 1.3-21。
+
+(1)在星形连接的三相电源或三相负载中, 线电流和相电流为同一电流; 线电压是相电压的 $\sqrt{3}$ 倍, 且线电压导前于相应的相电压 $30^{\circ}$, 即有
+
+$$
+\begin{array}{ll}
+I_{l}=I_{\mathrm{p}}, \quad I_{l}=I_{\mathrm{p}}, & U_{l}=\sqrt{3} U_{\mathrm{p}} \\
+U_{\mathrm{AB}}=\sqrt{3} U_{\mathrm{AN}} \angle 30^{\circ}, & U_{\mathrm{BC}}=\sqrt{3} U_{\mathrm{BN}} \angle 30^{\circ}, \quad U_{\mathrm{CA}}=\sqrt{3} U_{\mathrm{CN}} \angle 30^{\circ}
+\end{array}
+$$
+
+(2)在三角形连接的三相电源或三相负载中, 线电压和相电压为同一电压; 线电流是相电流 的 $\sqrt{3}$ 倍, 且线电流滞后于相应的相电流 $30^{\circ}$, 即有
+
+$$
+\begin{aligned}
+& U_{l}=U_{\mathrm{p}}, \quad U_{l}=U_{\mathrm{p}}, \quad I_{l}=\sqrt{3} I_{\mathrm{p}} \\
+& i_{\mathrm{A}}=\sqrt{3} i_{\mathrm{AB}} \angle-30^{\circ}, \quad i_{\mathrm{B}}=\sqrt{3} i_{\mathrm{BC}} \angle-30^{\circ}, \quad i_{\mathrm{C}}=\sqrt{3} i_{\mathrm{CA}} \angle-30^{\circ}
+\end{aligned}
+$$
+
+(3) 三个对称的电压或三个对称的电流的瞬时值或相量之和恒等于零, 即有
+
+$$
+\begin{aligned}
+& u_{\mathrm{A}}+u_{\mathrm{B}}+u_{\mathrm{C}}=0, \quad \dot{U}_{\mathrm{A}}+\dot{U}_{\mathrm{B}}+U_{\mathrm{C}}=0 \\
+& i_{\mathrm{A}}+i_{\mathrm{B}}+i_{\mathrm{C}}=0, \quad \dot{I}_{\mathrm{A}}+\dot{I}_{\mathrm{B}}+\dot{I}_{\mathrm{C}}=0
+\end{aligned}
+$$
+
+## 3. 三相功率
+
+三相电路的有功功率为各相有功功率之和, 即
+
+$$
+P=P_{\mathrm{A}}+P_{\mathrm{B}}+P_{\mathrm{C}}
+$$
+
+在对称情况下为
+
+$$
+P=3 U_{\mathrm{p}} I_{\mathrm{p}} \cos \varphi, \quad P=\sqrt{3} U_{l} I_{l} \cos \varphi
+$$
+
+式中的 $\varphi$ 角为各相负载的阻抗角。
+
+三相电路的无功功率为各相无功功率之和, 即
+
+$$
+Q=Q_{\mathrm{A}}+Q_{\mathrm{B}}+Q_{\mathrm{C}}
+$$
+
+在对称情况下为
+
+$$
+Q=3 U_{\mathrm{p}} I_{\mathrm{p}} \sin \varphi, \quad Q=\sqrt{3} U_{l} I_{l} \sin \varphi
+$$
+
+式中的 $\varphi$ 角为各相负载的阻抗角。
+
+三相电路的视在功率与有功功率和无功功率的关系为
+
+$$
+S=\sqrt{P^{2}+Q^{2}}
+$$
+
+在对称情况下为
+
+$$
+S=3 U_{\mathrm{p}} I_{\mathrm{p}}, \quad S=\sqrt{3} U_{l} I_{l}
+$$
+
+三相电路的功率因数定义为有功功率与视在功率之比, 即
+
+$$
+\lambda=\cos \varphi=\frac{P}{S}
+$$
+
+式中的 $\varphi$ 角只有在对称情况才有实际意义,为各相负载的阻抗角。
+
+三相电源或三相负载的瞬时功率为各相瞬时功率之和, 即
+
+$$
+p=p_{\mathrm{A}}+p_{\mathrm{B}}+p_{\mathrm{C}}
+$$
+
+在对称情况下, 三相电路的瞬时功率不随时间变化而为一定值, 此值为三相电路的有功功率 $P$, 即
+
+$$
+p=\sqrt{3} U_{l} I_{l} \cos \varphi=P
+$$
+
+此现象称为瞬时功率平衡, 可使三相旋转电机得到恒定转矩, 使其运行平稳。
+
+【例 1.3-13】 在图 1.3-22 的对称三相电路中, 已知 $U_{\mathrm{AB}}$ $=380 \not 0^{\circ} \mathrm{V}$ 。求相量 $U_{\mathrm{BC}} 、 U_{\mathrm{CA}} 、 U_{\mathrm{AN}^{\prime}} 、 U_{\mathrm{BN}^{\prime}} 、 U_{\mathrm{CN}^{\prime}} 、 i_{\mathrm{A}} 、 I_{\mathrm{B}} 、 I_{\mathrm{C}} 、 I_{\mathrm{AB}} 、$ $i_{\mathrm{BC}}$ 和 $i_{\mathrm{CA}}$, 并求电路中的有功功率 $P$ 、无功功率 $Q$ 、视在功率 $S$ 和功率因数 $\lambda$ 。
+
+解: $U_{\mathrm{BC}}=380 \angle-120^{\circ} \mathrm{V}$
+
+$U_{C \mathrm{~A}}=380 \angle 120^{\circ} \mathrm{V}$
+
+$\dot{U}_{\mathrm{AN}}=\frac{U_{\mathrm{AB}}}{\sqrt{3}} \angle-30^{\circ}=\frac{380}{\sqrt{3}} \angle 0^{\circ}-30^{\circ}=220 \angle-30^{\circ} \mathrm{V}$
+
+$U_{\mathrm{BN}^{\prime}}=\frac{U_{\mathrm{BC}}}{\sqrt{3}} \angle-30^{\circ}=\frac{380}{\sqrt{3}} \angle-120^{\circ}-30^{\circ}=220 \angle-150^{\circ} \mathrm{V}$
+
+$U_{\mathrm{CN}^{\prime}}=U_{\mathrm{BN}^{\prime}} \angle-120^{\circ}=220 \angle-150^{\circ}-120^{\circ}=220 \angle-270^{\circ}=220 \angle 90^{\circ} \mathrm{V}$
+
+$i_{\mathrm{A}}=\frac{U_{\mathrm{AN}^{\prime}}}{3+\mathrm{j} 4}=\frac{220 \angle-30^{\circ}}{5 \angle 53.1^{\circ}}=44 \angle-83.1^{\circ} \mathrm{A}$
+
+$i_{\mathrm{B}}=\dot{I}_{\mathrm{A}} \angle-120^{\circ}=44 \angle-83.1^{\circ}-120^{\circ}=44 \angle-203.1^{\circ}=44 \angle 156.9^{\circ} \mathrm{A}$
+
+$i_{\mathrm{C}}=i_{\mathrm{A}} \angle 120^{\circ}=44 \angle-83.1^{\circ}+120^{\circ}=44 \angle 36.9^{\circ} \mathrm{A}$
+
+$i_{\mathrm{AB}}=\frac{i_{\mathrm{A}}}{\sqrt{3}} \angle 30^{\circ}=\frac{44}{\sqrt{3}} \angle-83.1^{\circ}+30^{\circ}=25.4 \angle-53.1^{\circ} \mathrm{A}$
+
+$\dot{I}_{\mathrm{BC}}=\dot{I}_{\mathrm{AB}} \angle-120^{\circ}=25.4 \angle-53.1^{\circ}-120^{\circ}=25.4 \angle-173.1^{\circ} \mathrm{A}$
+
+$i_{\mathrm{CA}}=i_{\mathrm{AB}} \angle 120^{\circ}=25.4 \angle-53.1^{\circ}+120^{\circ}=25.4 \angle 66.9^{\circ} \mathrm{A}$
+
+$P=\sqrt{3} U_{l} I_{l} \cos \varphi=\sqrt{3} \times 380 \times 44 \cos 53.1^{\circ}=17.39 \mathrm{~kW}$
+
+$Q=\sqrt{3} U_{l} I_{l} \sin \varphi=\sqrt{3} \times 380 \times 44 \sin 53.1^{\circ}=23.16 \mathrm{kvar}$
+
+$S=\sqrt{3} U_{l} I_{l}=\sqrt{3} \times 380 \times 44=28.96 \mathrm{kVA}$
+
+$\lambda=\cos \varphi=\cos 53.1^{\circ}=0.6$
+
+### 7 对称三相电路分析的相量方法
+
+## 1. 简化为一相计算法
+
+原理: 因为在对称电路中, 各处的电压和电流都存在着对称关系, 所以只计算出一相电压 或电流响应后,其他两相的响应皆可按照对称关系得出。
+
+在图 1.3-23三相四线制电路中,负载 $Z$ 、各线路阻抗 $Z_{1}$ 和中线复阻抗 $Z_{\mathrm{N}}$ 均为已知, 求在给 定电源相电压相量下的各线电流相量。
+
+根据节点电压法有
+
+因为
+
+$$
+U_{\mathrm{N}^{\prime} \mathrm{N}}=\frac{\left(U_{\mathrm{AN}}+U_{\mathrm{BN}}+U_{\mathrm{CN}}\right) \frac{1}{Z+Z_{l}}}{\frac{3}{Z+Z_{l}}+\frac{1}{Z_{\mathrm{N}}}}
+$$
+
+$$
+U_{\mathrm{AN}}+U_{\mathrm{BN}}+U_{\mathrm{CN}}=0
+$$
+
+所以
+
+$$
+U_{\mathrm{N}^{\prime} \mathrm{N}}=0
+$$
+
+$$
+i_{\mathrm{A}}=\frac{U_{\mathrm{AN}}}{Z+Z_{l}}
+$$
+
+根据对称关系可得
+
+$$
+i_{\mathrm{B}}=i_{\mathrm{A}} \angle-120^{\circ}, \quad \dot{I}_{\mathrm{C}}=i_{\mathrm{A}} \angle 120^{\circ}
+$$
+
+从以上分析可以看出, 对 $Y_{0}-Y_{0}$ 系统的三相电路, 根据三相电路的特点可以只计算图 1. 3-24 所示的一相电路, 用此电路求得 $\mathrm{A}$ 线电流后, 其他两线电流的响应可由对称关系得出。 此外, 还可以用此电路计算出负载的相电压和线路阻抗上的电压以及一相功率等响应。这就 是简化为一相的计算法。
+
+应用:对其他 4 种三相三线制电路,使用简化为一相计算法可遵循以下原则。
+
+(1)在对称 $Y-Y$ 系统中, 因为电源的中点与负载的中点等电位, 可以用短路线相连后变成 $Y_{0}-Y_{0}$ 系统。
+
+(2)在对称 $Y-\Delta$ 系统中, 将 $\Delta$ 接对称负载, 等效变换成 $Y$ 接对称负载,构成 $Y-Y$ 系统后 再形成 $Y_{0}-Y_{0}$ 系统。
+
+(3)在对称 $\Delta-Y$ 系统中, 将 $\Delta$ 接对称电源, 利用对称关系变成对称 $Y$ 接电源, 构成 $Y-Y$ 系统后再形成 $Y_{0}-Y_{0}$ 系统。
+
+(4)在对称 $\Delta-\Delta$ 系统中, 将 $\Delta$ 接对称电源, 利用对称关系变成对称 $Y$ 接电源, 将 $\Delta$ 接对称 负载等效变换成 $\mathrm{Y}$ 接对称负载,构成 $\mathrm{Y}-\mathrm{Y}$ 系统后再形成 $\mathrm{Y}_{0}-\mathrm{Y}_{0}$ 系统。
+
+(5)对无线路阻抗的对称三相电路, 可直接利用负载与电源电压关系, 直接计算出一相响应 后,利用对称关系求得其他两相所需响应。
+
+## 2. 对称三相电路解题步聚
+
+(1)将已知的对称三相电路变成等效的 $\mathrm{Y}_{0}-\mathrm{Y}_{0}$ 系统;
+
+(2)画出一相计算电路图;
+
+(3)由已知条件确定一个参考相量;
+
+(4)计算出一相所需的电路响应;
+
+(5)根据对称关系计算其他所需的电路响应。
+
+【例 1.3-14】电路如图 1.3-25(a), 电源为对称三相电源, 其线电压为 $380 \mathrm{~V}$, 对称三角 形连接的负载每相复阻抗 $Z_{\Delta}=45+\mathrm{j} 30 \Omega$, 线路复阻抗 $Z_{l}=1+\mathrm{j} 2 \Omega$ 。求负载端各线电压和各 相电流的有效值相量及负载中三相总有功功率。 即
+
+解: 将电源设成为星接,将 $\Delta$ 形负载复阻抗 $Z_{\Delta}$ 利用 $\Delta \Rightarrow \mathrm{Y}$ 关系变为等效的 $\mathrm{Y}$ 形负载 $Z_{\mathrm{Y}}$,
+
+$$
+Z_{\mathrm{r}}=\frac{1}{3} Z_{\Delta}=\frac{1}{3}(45+\mathrm{j} 30)=15+\mathrm{j} 10=18 \angle 33.7^{\circ} \Omega
+$$
+
+将电源中点与负载中点相连得图 1.3-25(b), 可得图 1.3-26一相计算电路。由已知条件得电 源相电压 $U_{\mathrm{AN}}$ 为 $220 \mathrm{~V}$, 并以此电压的相量 $U_{\mathrm{AN}}$ 为参考相量, 由此可得 $\mathrm{A}$ 线电流相量
+
+$$
+i_{\mathrm{A}}=\frac{U_{\mathrm{AN}}}{Z_{l}+Z_{\mathrm{Y}}}=\frac{220 \angle 0^{\circ}}{1+\mathrm{j} 2+15+\mathrm{j} 10}=\frac{220 \angle 0^{\circ}}{16+\mathrm{j} 12}=\frac{220 \angle 0^{\circ}}{20 \angle 36.9^{\circ}}=11 \angle-36.9^{\circ} \mathrm{A}
+$$
+
+等效 $\mathrm{Y}$ 形负载的 $\mathrm{A}$ 相电压相量为
+
+$$
+\begin{aligned}
+U_{\mathrm{A}^{\prime} \mathrm{N}^{\prime}} & =I_{\mathrm{A}} Z_{\mathrm{Y}}=11 \angle-36.9^{\circ} \times 18 \angle 33.7^{\circ} \\
+& =198 \angle-3.2^{\circ} \mathrm{V}
+\end{aligned}
+$$
+
+根据对称关系得
+
+$$
+\begin{aligned}
+& U_{B^{\prime} N^{\prime}}=U_{A^{\prime} N^{\prime}} \angle-120^{\circ}=198 \angle-3.2^{\circ}-120^{\circ}=198 \angle-123.2^{\circ} \mathrm{V} \\
+& U_{C^{\prime} N^{\prime}}=U_{A^{\prime} N^{\prime}} \angle 120^{\circ}=198 \angle-3.2^{\circ}+120^{\circ}=198 \angle 116.8^{\circ} \mathrm{V}
+\end{aligned}
+$$
+
+利用对称星形连接相、线电压的特点, 可得 $\mathrm{AB}$ 线电压相量为
+
+$$
+U_{A^{\prime} \mathrm{N}^{\prime}}=\sqrt{3} U_{\mathrm{A}^{\prime} \mathrm{N}^{\prime}} \angle 30^{\circ}=\sqrt{3} \times 198 \angle-3.2^{\circ}+30^{\circ}=343 \angle 26.8^{\circ} \mathrm{V}
+$$
+
+根据对称关系得
+
+$$
+\begin{aligned}
+& U_{\mathrm{B}^{\prime} \mathrm{C}^{\prime}}=U_{\mathrm{A}^{\prime} \mathrm{B}^{\prime}} \angle-120^{\circ}=343 \angle 26.8^{\circ}-120^{\circ}=343 \angle-93.2^{\circ} \mathrm{V} \\
+& U_{\mathrm{C}^{\prime} \mathrm{A}^{\prime}}=U_{\mathrm{A}^{\prime} \mathrm{R}^{\prime}} \angle 120^{\circ}=343 \angle 26.8^{\circ}+120^{\circ}=343 \angle 146.8^{\circ} \mathrm{V}
+\end{aligned}
+$$
+
+原电路中 $\mathrm{AB}$ 相负载中的电流相量为
+
+$$
+i_{A^{\prime} \mathrm{B}^{\prime}}=\frac{U_{\mathrm{A}^{\prime} \mathrm{B}^{\prime}}}{Z_{\Delta}}=\frac{343 \angle 26.8^{\circ}}{45+\mathrm{j} 30}=\frac{343 \angle 26.8^{\circ}}{54 \angle 33.7^{\circ}}=6.35 \angle-6.9^{\circ} \mathrm{A}
+$$
+
+根据对称关系得
+
+$$
+\begin{aligned}
+& {\dot{\mathrm{B}^{\prime} \mathrm{C}^{\prime}}}=\dot{I}_{\mathrm{A}^{\prime} \mathrm{B}^{\prime}} \angle-120^{\circ}=6.35 \angle-6.9^{\circ}-120^{\circ}=6.35 \angle-126.9^{\circ} \mathrm{A} \\
+& i_{\mathrm{C}^{\prime} \mathrm{A}^{\prime}}=\dot{I}_{\mathrm{A}^{\prime} \mathrm{B}^{\prime}} \angle 120^{\circ}=6.35 \angle-6.9^{\circ}+120^{\circ}=6.35 \angle 113.1^{\circ} \mathrm{A}
+\end{aligned}
+$$
+
+负载的三相总有功功率为
+
+$$
+P=3 U_{\mathrm{p}} I_{\mathrm{p}} \cos \varphi=3 \times 343 \times 6.35 \times \cos 33.7^{\circ}=5.44 \mathrm{~kW}
+$$
+
+$$
+\text { 或 } P=\sqrt{3} U_{l} I_{l} \cos \varphi=\sqrt{3} \times 343 \times 11 \times \cos 33.7^{\circ}=5.44 \mathrm{~kW}
+$$
+
+【例 1.3-15】电路如图 1. 3-27, 已知电源相电压为 $220 \mathrm{~V}, Z_{l}=1+\mathrm{j} 2 \Omega, Z_{1}=8+\mathrm{j} 6 \Omega, Z_{2}$ $=24+\mathrm{j} 18 \Omega, Z_{\mathrm{N}}=2+\mathrm{j} 1 \Omega$ 。求各线电流相量和电源供出的功率。
+
+解: 将 $Z_{2}$ 的 $\Delta \Rightarrow \mathrm{Y}$ 后, 画出图 1.3-28 的一相计算电路。选 $\mathrm{A}$ 相电源电压为参考相量, 可得 $\mathrm{A}$ 线电流相量为
+
+$$
+i_{\Lambda}=\frac{U_{\mathrm{AN}}}{Z_{l}+\frac{Z_{\mathrm{t}}\left(Z_{2}^{\prime} / 3\right)}{Z_{1}+\left(Z_{2}^{\prime} / 3\right)}}=\frac{220 \angle 0^{\circ}}{(1+\mathrm{j} 2)+\frac{(8+\mathrm{j} 6)\left(\frac{24+\mathrm{j} 18}{3}\right)}{8+\mathrm{j} 6+\frac{24+\mathrm{j} 18}{3}}}
+$$
+
+$$
+=\frac{220 \angle 0^{\circ}}{1+j 2+\frac{8+j 6}{2}}=\frac{220 \angle 0^{\circ}}{5+j 5}=\frac{220 \angle 0^{\circ}}{7.07 \angle 45^{\circ}}=31.1 \angle-45^{\circ} \mathrm{A}
+$$
+
+根据对称关系得
+
+$$
+\begin{aligned}
+& \dot{I}_{\mathrm{B}}=\dot{I}_{\mathrm{A}} \angle-120^{\circ}=31.1 \angle-45^{\circ}-120^{\circ}=31.1 \angle-165^{\circ} \mathrm{A} \\
+& \dot{I}_{\mathrm{C}}=\dot{I}_{\mathrm{A}} \angle 120^{\circ}=31.1 \angle-45^{\circ}+120^{\circ}=31.1 \angle 75^{\circ} \mathrm{A}
+\end{aligned}
+$$
+
+电源供出的功率为
+
+$$
+P=\sqrt{3} U_{l} I_{l} \cos \varphi=\sqrt{3} \times 220 \sqrt{3} \times 31.1 \times \cos 45^{\circ}=14.5 \mathrm{~kW}
+$$
+
+【例 1.3-16】对称三相电路如图 1.3-29。电源线电压为 $380 \mathrm{~V}$, 负载阻抗 $Z=60+j 80 \Omega$ 。求负载中各相电流相量和各 线电流相量。
+
+解: 以 $\mathrm{AB}$ 线电源电压为参考相量, 可得 $\mathrm{AB}$ 相负载电流相量 为
+
+$$
+\dot{I}_{\mathrm{AB}}=\frac{U_{\mathrm{AB}}}{Z}=\frac{380 \angle 0^{\circ}}{60+\mathrm{j} 80}=\frac{380 \angle 0^{\circ}}{100 \angle 53.1^{\circ}}=3.8 \angle-53.1^{\circ} \mathrm{A}
+$$
+
+根据对称关系得
+
+$$
+\begin{aligned}
+& \dot{I}_{\mathrm{BC}}=\dot{I}_{\mathrm{AB}} \angle-120^{\circ}=3.8 \angle-53.1^{\circ}-120^{\circ}=3.8 \angle-173.1^{\circ} \mathrm{A} \\
+& \dot{I}_{\mathrm{CA}}=\dot{I}_{\mathrm{AB}} \angle 120^{\circ}=3.8 \angle-53.1^{\circ}+120^{\circ}=3.8 \angle 66.9^{\circ} \mathrm{A}
+\end{aligned}
+$$
+
+根据 $\Delta$ 形线电流和相电流的关系得
+
+$$
+i_{\mathrm{A}}=\sqrt{3} i_{\mathrm{AB}} \angle-30^{\circ}=3.8 \sqrt{3} \angle-53.1^{\circ}-30^{\circ}=6.58 \angle-83.1^{\circ} \mathrm{A}
+$$
+
+根据对称关系得
+
+$$
+\begin{aligned}
+& \dot{I}_{\mathrm{B}}=\dot{I}_{\mathrm{A}} \angle-120^{\circ}=6.58 \angle-83.1^{\circ}-120^{\circ}=6.58 \angle-203.1^{\circ}=6.58 \angle 156.9^{\circ} \mathrm{A} \\
+& \dot{I}_{\mathrm{C}}=\dot{I}_{\mathrm{A}} \angle 120^{\circ}=6.58 \angle-83.1^{\circ}+120^{\circ}=6.58 \angle 36.9^{\circ} \mathrm{A}
+\end{aligned}
+$$
+
+### 8 不对称三相电路的概念
+
+## 1. 不对称三相电路
+
+在三相电路中, 若三相电源不对称, 或三相负载不对称, 或 3 条传输线上的复阻抗不相等, 都称为不对称三相电路。
+
+在不对称三相电路中,各相电流、线电流、相电压和线电压一般不存在对称关系。较常见 的不对称二相电路是电源对称, 3 条传输线上的复阻抗相等, 只有负载不对称。在这种情况 下,电源端的相、线电压仍保持对称关系, 并且满足对称三相电源的特点。
+
+## 2. 中点位移概念
+
+在图 1.3-30(a) 不对称 $Y_{0}-Y_{0}$ 系统中, 假设星形连接的电源对称; 3 条传输线上的复阻抗 $Z_{l}$ 相等; 各相复负载分别为 $Z_{\mathrm{A}} 、 Z_{\mathrm{B}}$ 和 $Z_{\mathrm{C}}$, 中线阻抗为 $Z_{\mathrm{N}}$, 欲求各线电流 $i_{\mathrm{A}} 、 i_{\mathrm{B}} 、 i_{\mathrm{C}}$ 和中线电流 $i_{\mathrm{N}}$ 。由节点电压法可得中线电压为
+
+$$
+U_{\mathrm{N}^{\prime} \mathrm{N}}=\frac{\frac{\dot{U}_{\mathrm{AN}^{\prime}}}{Z_{\mathrm{A}}+Z_{l}}+\frac{U_{\mathrm{BN}^{\prime}}}{Z_{\mathrm{B}}+Z_{l}}+\frac{U_{\mathrm{CN}^{\prime}}}{Z_{\mathrm{C}}+Z_{l}}}{\frac{1}{Z_{\mathrm{A}}+Z_{l}}+\frac{1}{Z_{\mathrm{B}}+Z_{l}}+\frac{1}{Z_{\mathrm{C}}+Z_{l}}+\frac{1}{Z_{\mathrm{N}}}}
+$$
+
+一般情况下 $U_{N^{\prime} \mathrm{N}} \neq 0$ 。
+
+求得中线电压后可得各线电流为
+
+$$
+i_{\mathrm{A}}=\left(\frac{U_{\mathrm{AN}}-U_{\mathrm{N}^{\prime} \mathrm{N}}}{Z_{\mathrm{A}}+Z_{l}}\right), i_{\mathrm{B}}=\left(\frac{\dot{U}_{\mathrm{BN}}-U_{\mathrm{N}^{\prime} \mathrm{N}}}{Z_{\mathrm{B}}+Z_{l}}\right), i_{\mathrm{C}}=\left(\frac{U_{\mathrm{CN}}-U_{\mathrm{N}^{\prime} \mathrm{N}}}{Z_{\mathrm{C}}+Z_{l}}\right)
+$$
+
+根据 KCL 可求得中线电流
+
+$$
+i_{\mathrm{N}}=\dot{I}_{\mathrm{A}}+\dot{I}_{\mathrm{B}}+\dot{I}_{\mathrm{C}} \neq 0
+$$
+
+引起中点位移的原因是负载不对称, 负载不对称的程度越大中点位移越大。从相量图可 以看出, 中点位移较大时的后果是, 某相负载电压过高导致该相负载设备损坏; 某相负载电压 过低使该相负载不能正常工作。在 $Y_{0}-Y_{0}$ 系统中, 由于中线阻抗很小, 中点位移较小, 即使负 载不对称, 仍然可保证各相负载电压接近电源的相电压, 只是有中线电流存在, 但各相负载仍 能够正常工作。如果断开中线, 形成 $Y-Y$ 系统的中点位移现象, 就会造成较大的不良后果。 因此, 在低压供电的 $Y_{0}-Y_{0}$ 系统中, 中线不允许安装开关和保险丝, 并且中线应该使用强度较 大的导线以防止中线断路。
+
+## 3. 不对称三相电路的计算
+
+就一般不对称三相电路的计算而言,应按复杂交流电路对待,选用系统分析方伡
+
+理进行分析计算。对 $\mathrm{Y}-\mathrm{Y}$ 和 $\mathrm{Y}_{0}-\mathrm{Y}_{0}$ 系统, 常选用节点电压法。对其他有三角: 可视电路具体情况,用等效变换或回路电流法等方法进行分析计算。
+
+有些不对称二相电路可以用较简便的方法计算。例如, 对无线路阻抗的 Y $\Delta-\Delta$ 系统, 相当于各相负载直接与各相电源相接, 可以直接用欧姆定律、KCL 和 KVL 进行分 析计算。
+
+总之, 对于不对称三相电路的计算, 应该根据电路的具体电路结构和参数的特点, 选择较 简便的方法进行分析计算。
+
+【例 1.3-17】图 1.3-31 (a) 为相序指示器电路, 可以用来确定 3 条端线的相序。它是用 1 个电容和 2 个灯泡连成 $Y$ 接电路, 并且使电容的容抗等于灯泡的电阻, 即 $1 / \omega C=R_{\circ}$ 。已知线 电压对称, 求 2 个灯泡上的电压, 并以其亮度判断相序。
+
+解: 因为线电压对称, 所以图 1.3-31(a) 可看成图 1.3-31(b) 的对称电源向不对称负载供 电的 $\mathrm{Y}-\mathrm{Y}$ 系统不对称三相电路。设接电容者为 $\mathrm{A}$ 相, 且以 $U_{\mathrm{AN}}$ 为参考相量, 用节点电压法 有
+
+$$
+\begin{aligned}
+U_{\mathrm{N}^{\prime} \mathrm{N}} & =\frac{\mathrm{j} \omega C \dot{U}_{\mathrm{AN}}+\frac{1}{R} \dot{U}_{\mathrm{BN}}+\frac{1}{R} \dot{U}_{\mathrm{CN}}}{\mathrm{j} \omega C+\frac{1}{R}+\frac{1}{R}}=\frac{\mathrm{j} U_{\mathrm{AN}} \angle 0^{\circ}+U_{\mathrm{AN}} \angle-120^{\circ}+U_{\mathrm{AN}} \angle 120^{\circ}}{\mathrm{j}+2} \\
+& =(-0.2+\mathrm{j} 0.6) U_{\mathrm{AN}}
+\end{aligned}
+$$
+
+$\mathrm{B}$ 相灯泡的电压为
+
+$$
+\begin{aligned}
+U_{\mathrm{BN}} & =U_{\mathrm{BN}}-U_{\mathrm{N}^{\prime} \mathrm{N}}=U_{\mathrm{AN}} \angle-120^{\circ}-(-0.2+\mathrm{j} 0.6) U_{\mathrm{AN}} \\
+& =(-0.3-\mathrm{j} 1.466) U_{\mathrm{AN}}=1.496 \angle 258.4^{\circ} U_{\mathrm{AN}}
+\end{aligned}
+$$
+
+C 相灯泡的电压为
+
+$$
+\begin{aligned}
+U_{\mathrm{CN}^{\prime}} & =U_{\mathrm{CN}}-U_{\mathrm{N}^{\prime} \mathrm{N}}=U_{\mathrm{AN}} \angle 120^{\circ}-(-0.2+\mathrm{j} 0.6) U_{\mathrm{AN}} \\
+& =(-0.3+\mathrm{j} 0.266) U_{\mathrm{AN}}=0.401 \angle 138.4^{\circ} U_{\mathrm{AN}}
+\end{aligned}
+$$
+
+即得 $B 、 C$ 两相电压的有效值分别为
+
+$$
+U_{\mathrm{BN}^{\prime}}=1.496 U_{\mathrm{AN}}, \quad U_{\mathrm{CN}^{\prime}}=0.401 U_{\mathrm{AN}}
+$$
+
+显然, $U_{\mathrm{BN}}>U_{\mathrm{CN}^{\prime}}$, 即两灯中较亮的为 $\mathrm{B}$ 相, 较暗的为 $\mathrm{C}$ 相。由此可以确定出各端线的相 序为: 接电容线 $\rightarrow$ 灯较亮线 $\rightarrow$ 灯较暗线。
+
+## 4 非正弦周期电流电路
+
+### 1 非正弦周期量的傅里叶级数分解方法
+
+## 1. 周期目的傅里叶级数分解
+
+一个周期函数 $f(t)$ 若满足狄里克雷收玫条件, 即在有限的时间间隔中, 仅有有限个极值 点和有限个第一类不连续点, 则可展开成收玫的傅里叶级数 (傅氏级数)。
+
+对图 1.4-1 的非正弦函数 $f(t)$, 其周期为 $T$, 展开成傅氏级数 为
+
+$$
+\begin{aligned}
+f(t)= & a_{0}+\left(a_{1} \cos \omega t+b_{1} \sin \omega t\right)+\left(a_{2} \cos 2 \omega t+b_{2} \sin 2 \omega t\right) \\
+& +\cdots+\left(a_{k} \cos k \omega t+b_{k} \sin k \omega t\right)+\cdots \\
+= & \left.a_{0}+\sum_{k=1}^{\infty}\left[a_{k} \cos k \omega t+b_{k} \sin k \omega t\right)\right]
+\end{aligned}
+$$
+
+式中: $\omega=2 \pi / T, a_{0} 、 a_{k}$ 和 $b_{k}$ 为傅氏系数, 可按以下各式求得
+
+$$
+\begin{aligned}
+& a_{0}=\frac{1}{T} \int_{0}^{T} f(t) \mathrm{d} t=\frac{1}{2 \pi} \int_{0}^{2 \pi} f(t) \mathrm{d}(\omega t) \\
+& a_{k}=\frac{2}{T} \int_{0}^{T} f(t) \cos (k \omega t) \mathrm{d} t=\frac{1}{\pi} \int_{0}^{2 \pi} f(t) \cos (k \omega t) \mathrm{d}(\omega t) \\
+& b_{k}=\frac{2}{T} \int_{0}^{T} f(t) \sin (k \omega t) \mathrm{d} t=\frac{1}{\pi} \int_{0}^{2 \pi} f(t) \sin (k \omega t) \mathrm{d}(\omega t)
+\end{aligned}
+$$
+
+傅氏级数展开式的另一种形式为
+
+$$
+\begin{aligned}
+f(t) & =A_{0}+A_{1 \mathrm{~m}} \sin \left(\omega t+\psi_{1}\right)+A_{2 \mathrm{~m}} \sin \left(2 \omega t+\psi_{2}\right)+\cdots+A_{k \mathrm{~m}} \sin \left(k \omega t+\psi_{k}\right)+\cdots \\
+& =A_{0}+\sum_{k=1}^{\infty} A_{k \mathrm{~m}} \sin \left(k \omega t+\psi_{k}\right)
+\end{aligned}
+$$
+
+式中, $A_{0}=a_{0}, A_{k \mathrm{~m}}=\sqrt{a_{k}^{2}+b_{k}^{2}}, \psi_{k}=\arctan \frac{a_{k}}{b_{k}}$ 。
+
+## 2. 非正弦周期电压、电流和非正弦电路
+
+在工程实际中,会遇到许多非正弦电压、电流信号。在正弦激励下的非线性电路中会出现 非正弦电压、电流响应。交流发电机发出的电压严格地讲也不是理想的正弦。在图 1.4-2 中 给出了几种常见的非正弦周期电压和电流的波形。
+
+工程中的非正弦周期电压、电流都满足狄里克雷收敛条件,故可用傅里叶级数进行分解。 在电路理论中常用后一种傅氏级数展开式。非正弦周期电压 $u(t)$ 的傅氏级数展开式为
+
+$$
+\begin{aligned}
+u(t) & =U_{0}+U_{1 \mathrm{~m}} \sin \left(\omega_{1} t+\psi_{\mathrm{ul}}\right)+U_{2 \mathrm{~m}} \sin \left(2 \omega_{1} t+\psi_{u \mathrm{~m}}\right)+\cdots+U_{k \mathrm{~m}} \sin \left(k \omega_{1} t+\psi_{u k}\right)+\cdots \\
+& =U_{0}+\sum_{k=1}^{\infty} U_{k \mathrm{~m}} \sin \left(k \omega_{1} t+\psi_{u k}\right)
+\end{aligned}
+$$
+
+非正弦周期电流 $i(t)$ 的傅氏级数展开式为
+
+$$
+\begin{aligned}
+i(t) & =I_{0}+I_{1 \mathrm{~m}} \sin \left(\omega_{1} t+\psi_{i 1}\right)+I_{2 \mathrm{~m}} \sin \left(2 \omega_{1} t+\psi_{i 2}\right)+\cdots+I_{k \mathrm{~m}} \sin \left(k \omega_{1} t+\psi_{i k}\right)+\cdots \\
+& =I_{0}+\sum_{k=1}^{\infty} I_{k \mathrm{~m}} \sin \left(k \omega_{1} t+\psi_{i k}\right)
+\end{aligned}
+$$
+
+由此看出, - - 个非正弦周期电压、电流可以分解成一个直流分量和无限个频率与原非正弦 周期电压、电流的频率 $\omega_{1}$ 成整数倍的正弦电压、电流。其中: 和原非正弦周期电压、电流的频 率 $\omega_{1}$ 相同的电压、电流称为基波分量; 当 $k=2 、 k=3 、 k=4 \cdots \cdots$ 时,分别称为 2 次谐波、3 次 谐波、4 次谐波……等高次谐波。 $k$ 为奇数 $(k=1,3,5, \cdots)$ 时的谐波分量称为奇次谐波; $k$ 为偶 数 $(k=2,4,6, \cdots)$ 时的谐波分量称为偶次谐波。
+
+在.工程实际中, 出现非正弦周期电压、电流的电路可有两种情况: 一种情况为非正弦激励 下的线性电路; 另一种情况为正弦激励下的非线性电路。在电路理论中对非正弦电路分析计 算的重点在于第一种情况。
+
+### 2 非正弦周期量的有效值、平均值和平均功率的定义和计算方法
+
+## 1. 有效值、平均值和平均功率的定义
+
+有效值的定义为: 直流分量的平方加上各次谐波平方之和的平方根，即非正弦周期电压、 电流的有效值分别为
+
+$$
+\begin{aligned}
+& U=\sqrt{U_{0}^{2}+\sum_{k=1}^{\infty} U_{k}^{2}}=\sqrt{U_{0}^{2}+U_{1}^{2}+U_{2}^{2}+U_{3}^{2}+\cdots} \\
+& I=\sqrt{I_{0}^{2}+\sum_{k=1}^{\infty} I_{k}^{2}}=\sqrt{I_{0}^{2}+I_{1}^{2}+I_{2}^{2}+I_{3}^{2}+\cdots}
+\end{aligned}
+$$
+
+平均值的定义为: 非正弦量的绝对值的平均值, 即非正弦周期电压、电流的平均值分别为
+
+$$
+U_{\text {米的 }}=\frac{1}{T} \int_{0}^{T}|u(t)| \mathrm{d} t, I_{\text {平均 }}=\frac{1}{T} \int_{0}^{T}|i(t)| \mathrm{d} t
+$$
+
+平均功率的定义为: 直流分量的功率与各次谐波的平均功率的代数和, 即
+
+$$
+\begin{aligned}
+P & =P_{0}+\sum_{k=1}^{\infty} P_{k}=P_{0}+P_{1}+P_{2}+\cdots+P_{k}+\cdots \\
+& =U_{0} I_{0}+U_{1} I_{1} \cos \varphi_{1}+U_{2} I_{2} \cos \varphi_{2}+\cdots+U_{k} I_{k} \cos \varphi_{k}+\cdots
+\end{aligned}
+$$
+
+式中 $\varphi_{k}$ 为相同谐波次数的电压与电流的相位差, 即 $\varphi_{k}=\psi_{u k}-\psi_{i k}$ 。
+
+## 2. 有效值、平均值和平均功率的计算方法
+
+在非正弦电路中,计算有效值、平均值和平均功率时应注意以下几点。
+
+(1)电压、电流的有效值应该为直流分量的平方与各次谐波的平方之和的开平方，而不是直 流分量与各次谐波的有效值之和, 即在非正弦电路中
+
+$$
+\begin{aligned}
+& I \neq I_{0}+I_{1}+I_{2}+\cdots+I_{k}+\cdots \\
+& U \neq U_{0}+U_{1}+U_{2}+\cdots+U_{k}+\cdots
+\end{aligned}
+$$
+
+(2)工程上非正弦周期电压、电流的平均值与数学中的平均值不同,在工程上是取绝对值的 平均值。
+
+(3)在非正弦电路中,不同谐波次数的电压、电流不构成平均功率。
+
+(4) 非正弦电流流过某电阻时的平均功率为
+
+$$
+P=I_{0}^{2} R+I_{1}^{2} R+I_{2}^{2} R+\cdots+I_{k}^{2} R+\cdots=I^{2} R
+$$
+
+【例 1.4-1】某非正弦电流 $i(t)=3+6 \sin \left(\omega t+30^{\circ}\right)+2 \sin 3 \omega t \mathrm{~A}$, 求该电流的有效值。
+
+$$
+\text { 解: } I=\sqrt{I_{0}^{2}+I_{1}^{2}+I_{3}^{2}}=\sqrt{3^{2}+\left(\frac{6}{\sqrt{2}}\right)^{2}+\left(\frac{2}{\sqrt{2}}\right)^{2}}=5.39 \mathrm{~A}
+$$
+
+【例 1.4-2】在图 1.4-3 非含源一端口 $N_{0}$ 的端口处加非正弦电压 $u(t)=50$
+
+$+40 \sqrt{2} \sin \left(\omega t+60^{\circ}\right)+10 \sqrt{2} \sin \left(5 \omega t-60^{\circ}\right) \mathrm{V}$, 得非正弦电流 $i(t)=10+$ $5 \sqrt{2} \sin \left(\omega t-30^{\circ}\right)+2 \sqrt{2} \sin \left(3 \omega t-60^{\circ}\right) \mathrm{A}$ 。求该电路的平均功率。
+
+解: 因为不同次数谐波的电压和电流不构成功率, 则该电路的平均功率为
+
+$$
+\begin{aligned}
+P & =P_{0}+P_{1}=U_{0} I_{0}+U_{1} I_{1} \cos \left(\varphi_{u 1}-\varphi_{i 1}\right) \\
+& =50 \times 10+40 \times 5 \times \cos \left(60^{\circ}-\left(-30^{\circ}\right)\right)=500 \mathrm{~W}
+\end{aligned}
+$$
+
+### 3 非正弦周期电路的分析方法
+
+## 1. 分析计算原理
+
+在工程中,对在非正弦电压、电流源激励下的线性电路进行分析计算的理论基础是傅氏级 数分解和叠加定理。即利用傅氏级数将非正弦激励源分解成傅氏级数, 并根据误差要求取其 有限项后, 分别计算电路在直流激励下和各次谐波单独激励下的所需响应。然后将直流激励 下的电压、电流响应和在各次谐波单独激励下所需电压、电流响应的瞬时值进行叠加, 并根据 定义求所需的有效值和平均功率。
+
+## 2. 解题步骤
+
+(1)用傅氏级数分解给定的非正弦激励。由于傅氏级数收玫较快,在工程实际中常取展开 式中的前 3 - 5 项即可满足误差要求。常用的非正弦波形傅氏级数展开式都可从手册中查 到,不必进行积分运算。在电路理论中,对非正弦激励也常以展开式的形式给出。
+
+(2)画出直流激励下的电路图, 并求其所需响应。此时电感相当于短路, 电容相当于开路。
+
+(3)按照激励源中存在的各次谐波的数目,分别画出各次谐波单独激励下的各正弦电路图， 同时在各分电路图中计算所需响应。此时对不同次数的正弦激励下的感抗和容抗应使用谐波 电抗, 其计算式分别为
+
+$$
+X_{L}=k \omega L, X_{C}=\frac{1}{k \omega C}
+$$
+
+(4)将直流激励下求得的电压、电流所需响应和在各次谐波单独激励下求得的所需电压、电 流响应的瞬时值进行叠加, 得所需电压、电流响应的瞬时值表达式。
+
+(5)根据定义求所需响应的有效值和平均功率。
+
+## 3. 注意事项
+
+(1)当非正弦激励以展开式的形式给出时,第一步骤可以从略。
+
+(2)在直流激励下的电路中, 电感相当于短路; 电容相当于开路。但电感中有电流; 电容上 有电压。
+
+(3)在各次谐波激励下的正弦电路中, 遇有 $L 、 C$ 串联或并联环节, 在计算电路之前最好先 用谐波阻抗 $k \omega L=\frac{1}{k \omega C}$ 判断该环节是否谐振。如果发生谐振现象, $L 、 C$ 串联环节相当于短路; $L 、 C$ 并联环节相当于开路。
+
+(4)在各次谐波激励下的正弦电路中, $L 、 C$ 串联环节谐振时, 此环节相当于短路, 但该处有 电流, 并用此电流求电感或电容上的电压; $L 、 C$ 并联环节谐振时, 此环节相当于开路, 但该处有 电压, 并用此电压求电感或电容中的电流。
+
+(5)电路中的非正弦电压、电流响应只能是直流分量和各次谐波的瞬时值相叠加, 切不可用 有效值叠加, 即
+
+$$
+U \neq U_{0}+U_{1}+U_{3}+\cdots+U_{k}+\cdots, I \neq I_{0}+I_{1}+I_{3}+\cdots+I_{k}+\cdots
+$$
+
+也不能用直流分量和各次谐波电路中所计算出的电压、电流相量叠加，即
+
+$$
+U \neq U_{0}+U_{1}+U_{3}+\cdots+U_{k}+\cdots, I_{0} \neq I_{0}+i_{1}+i_{3}+\cdots+i_{k}+\cdots
+$$
+
+【例 1.4-3】在图 1.4-4(a) 电路中, 已知: $u_{\mathrm{S}}(t)=10+141.4 \sin \omega t+70.7 \sin \left(3 \omega t+30^{\circ}\right)$ $\mathrm{V}, \frac{1}{\omega C}=15 \Omega, \omega L=2 \Omega, R_{1}=5 \Omega, R_{2}=10 \Omega_{\text {。 }}$ 求各支路电流及 $R_{1}$ 支路电流的有效值和该支路 的平均功率。
+
+解: 由于非正弦激励以展开式的形式给出,则步骤(1)可以从略,直接从步骤(2)开始计算。 直流分量单独作用下的电路为图 1.4-4(b), 此时电感 $L$ 相当于短路; 电容 $C$ 相当于开路。 各支路电流分别为
+
+$$
+I_{L(0)}=\frac{U_{\mathrm{S}(0)}}{R_{1}}=\frac{10}{5}=2 \mathrm{~A}, I_{C(0)}=0, I_{(0)}=I_{L(0)}+I_{C(0)}=2+0=2 \mathrm{~A}
+$$
+
+基波分量单独作用下的电路为图 1.4-4(c), 用复数计算各支路电流相量得
+
+$$
+\begin{aligned}
+\dot{I}_{L(1)} & =\frac{U_{\mathrm{S}(1)}}{R_{1}+\mathrm{j} \omega L}=\frac{(141.4 / \sqrt{2}) \angle 0^{\circ}}{5+\mathrm{j} 2}=\frac{100 \angle 0^{\circ}}{5.385 \angle 21.8^{\circ}}=18.6 \angle-21.8^{\circ} \mathrm{A} \\
+\dot{I}_{C(1)} & =\frac{U_{\mathrm{s}(1)}}{R_{2}-\mathrm{j} \frac{1}{\omega C}}=\frac{(141.4 / \sqrt{2}) \angle 0^{\circ}}{10-\mathrm{j} 15}=\frac{100<0^{\circ}}{18 \angle 56.3^{\circ}}=5.56 \angle 56.3^{\circ} \mathrm{A} \\
+\dot{I}_{(1)} & =i_{L(1)}+\dot{I}_{C(1)}=18.6 \angle-21.8^{\circ}+5.56 \angle 56.3^{\circ} \\
+& =17.27-\mathrm{j} 6.91+3.084+\mathrm{j} 4.626=20.35-\mathrm{j} 2.284=20.5 \angle-6.4^{\circ} \mathrm{A}
+\end{aligned}
+$$
+
+三次谐波单独作用下的电路为图 1.4-4(d), 用复数计算各支路电流相量得
+
+$$
+\begin{aligned}
+i_{L(3)} & =\frac{U_{\mathrm{S}(3)}}{R_{\mathrm{1}}+\mathrm{j} 3 \omega L}=\frac{(70.7 / \sqrt{2}) \angle 30^{\circ}}{5+\mathrm{j} 3 \times 2}=\frac{50 \angle 30^{\circ}}{7.81 \angle 50.2}=6.4 \angle-20.2^{\circ} \mathrm{A} \\
+i_{C(3)} & =\frac{U_{\mathrm{S}(3)}}{R_{2}-\mathrm{j} \frac{1}{3 \omega C}}=\frac{(70.7 / \sqrt{2}) \angle 30^{\circ}}{10-\mathrm{j} 15 / 3}=\frac{50 \angle 30^{\circ}}{11.18 \angle-26.6^{\circ}}=4.47 \angle 56.6^{\circ} \mathrm{A} \\
+i_{(3)} & =I_{L(3)}+i_{C(3)}=6.4 \angle-20.0^{\circ}+4.47 \angle 56.6^{\circ} \\
+& =6.006-\mathrm{j} 2.21+2.461+\mathrm{j} 3.732=8.467+\mathrm{j} 1.522=8.6 \angle 10.2^{\circ} \mathrm{A}
+\end{aligned}
+$$
+
+在备流激励下各支路电流与在各次谐波单独作用下求得的各支路电流的瞬时值进行叠加 得各支路电流的瞬时值表达式
+
+$$
+\begin{aligned}
+& i_{L}=I_{L(0)}+i_{L(1)}+i_{L(3)}=2+18.6 \sqrt{2} \sin \left(\omega t-21.8^{\circ}\right)+6.4 \sqrt{2} \sin \left(3 \omega t-20.2^{\circ}\right) \mathrm{A} \\
+& i_{C}=I_{C(0)}+i_{C(1)}+i_{C(3)}=5.56 \sqrt{2} \sin \left(\omega t+56.3^{\circ}\right)+4.47 \sqrt{2} \sin \left(3 \omega t+56.6^{\circ}\right) \mathrm{A} \\
+& i=I_{(0)}+i_{(1)}+i_{(3)}=2+20.5 \sqrt{2} \sin \left(\omega t-6.4^{\circ}\right)+8.6 \sqrt{2} \sin \left(3 \omega t+10.2^{\circ}\right) \mathrm{A}
+\end{aligned}
+$$
+
+$R_{1}$ 支路电流的有效值为
+
+$$
+I_{L}=\sqrt{I_{L(0)}^{2}+i_{L(1)}^{2}+i_{L(3)}^{2}}=\sqrt{2^{2}+18.6^{2}+6.4^{2}}=19.77 \mathrm{~A}
+$$
+
+$R_{1}$ 支路的平均功率为
+
+$$
+\begin{aligned}
+P_{R 1}= & P_{R 1(0)}+P_{R 1(1)}+P_{R I(3)} \\
+= & U_{\mathrm{S}(0)} I_{(0)}+U_{\mathrm{S}(1)} I_{L(1)} \cos \left(\psi_{u S(1)}-\psi_{i L(1)}\right)+U_{\mathrm{S}(3)} I_{L(3)} \cos \left(\psi_{u S(3)}-\psi_{i L(3)}\right) \\
+= & 10 \times 2+(141.4 / \sqrt{2}) \times 18.6 \times \cos \left(0-\left(-21.8^{\circ}\right)\right) \\
+& +(70.7 / \sqrt{2}) \times 6.4 \times \cos \left(30^{\circ}-\left(-20.2^{\circ}\right)\right) \\
+= & 20+1727+205=1952 \mathrm{~W}
+\end{aligned}
+$$
+
+也可以用以下方法计算 $R_{1}$ 支路的平均功率为
+
+$$
+P_{R 1}=I_{L}^{2} R_{1}=19.77^{2} \times 5=1952 \mathrm{~W}
+$$
+
+【例 1.4-4】在图 1.4-5 (a) 电路中, 已知: $u_{\mathrm{S}}(t)=60+90 \sin \left(\omega t+150^{\circ}\right)$ $+40 \sin \left(2 \omega t+60^{\circ}\right) \mathrm{V}, \frac{1}{\omega C_{1}}=400 \Omega, \omega L_{1}=100 \Omega, \frac{1}{\omega C_{2}}=100 \Omega, \omega L_{2}=100 \Omega, R=60 \Omega$ 。求电 阻 $R$ 和电感 $L_{1}$ 中的电流 $i_{R}(t) 、 i_{L l}(t)$ 。
+
+解: 在图 1.4-5 (a) 电路中, 在电源的直流分量作用下由于两电容对直流相当于断路, 其全 部电压作用于电阻 $R$ 上。对电源中的基波分量, 因为 $\omega L_{2}=\frac{1}{\omega C_{2}}=100 \Omega$, 所以 $L_{2} 、 C_{2}$ 串联环节 发生串联谐振, 相当于短路, 即基波电流不会流过电阻 $R$ 。对电源中的 2 次谐波分量, 因为 $2 \omega L_{1}=\frac{1}{2 \omega C_{1}}=200 \Omega$, 所以 $L_{1} 、 C_{1}$ 并联环节发生并联谐振, 相当于开路, 即 2 次谐波电流也不会 流过电阻 $R$ 。则电阻 $R$ 中只有电源中的直流分量所形成的电流, 见图 1.4-5 (b)。得电阻 $R$ 中的电流
+
+$$
+i_{R}=I_{R(0)}=\frac{U_{\mathrm{S}(0)}}{R}=\frac{60}{60}=1 \mathrm{~A}
+$$
+
+流, 即
+
+对电感 $L_{1}$ 而言, 在电源的直流分量作用下, 流过它的电流与流过电阻 $R$ 的电流为同一电
+
+$$
+I_{L(0)}=I_{R(0)}=\frac{U_{S(0)}}{R}=\frac{60}{60}=1 \mathrm{~A}
+$$
+
+电感 $L_{1}$ 在电源的基波分量作用下的电路见图 1.4-5(c), 因为 $\omega L_{2}=\frac{1}{\omega C_{2}}=100 \Omega, L_{2} 、 C_{2}$ 串 联环节相当于短路电路, 即电阻 $R$ 不起作用, 电感 $L_{1}$ 中的基波分量电流最大值相量为
+
+$$
+i_{L \mathrm{~m}(1)}=\frac{\dot{U}_{\mathrm{Sm}(1)}}{\mathrm{j} \omega L_{1}}=\frac{90 \angle 150^{\circ}}{\mathrm{j} 100}=0.9 \angle 60^{\circ} \mathrm{A}
+$$
+
+电感 $L_{1}$ 在电源的 2 次谐波分量作用下的电路见图 1.4-5 (d), 此时 $2 \omega L_{1}=\frac{1}{2 \omega C_{1}}=200 \Omega$,
+
+$L_{1} 、 C_{1}$ 并联环节相当于开路, 即电源的电压全部作用于 $L_{1}$ 与 $C_{1}$ 相并联的环节上, 则电感 $L_{1}$ 中的 2 次谐波分量电流最大值相量为
+
+$$
+I_{L m(2)}=\frac{U_{S \mathrm{~m}(2)}}{j 2 \omega L_{1}}=\frac{40 \angle 60^{\circ}}{j 200}=0.2 \angle-30^{\circ} \mathrm{A}
+$$
+
+得电感 $L_{1}$ 中的电流
+
+$$
+i_{L t}(t)=I_{L 1(0)}+i_{L 1 \mathrm{~m}(1)}+i_{L 1 \mathrm{~m}(2)}=1+0.9 \sin \left(\omega t+60^{\circ}\right)+0.2 \sin \left(2 \omega t-30^{\circ}\right) \mathrm{A}
+$$
+
+## 5 简单动态电路的时域分析
+
+### 1换路定则和电压、电流初始值的确定
+
+## 1. 换路定则
+
+换路: 引起电路工作状态变动的因素统称为换路。这些因素包括: 开关的接通或断开、电 源的量值突然变化、元件参数的改变以及突发事故和干扰等因素。
+
+换路定则: 在换路时刻 $(t=0)$, 电容电压 (电荷量) 和电感电流 (磁链) 不能突变。用 $t\left(0_{+}\right)$表示换路后的初始时刻,用 $t\left(0_{-}\right)$表示换路前的终止时刻。换路定则的表达式为
+
+$$
+\begin{aligned}
+& u_{C}\left(0_{+}\right)=u_{C}\left(0_{-}\right), q_{C}\left(0_{+}\right)=q_{C}\left(0_{-}\right) \\
+& i_{L}\left(0_{+}\right)=i_{L}\left(0_{-}\right), \psi_{L}\left(0_{+}\right)=\psi_{L}\left(0_{-}\right)
+\end{aligned}
+$$
+
+在电路理论中, 换路符号为图 1.5-1。
+
+## 2. 电压和电流初始值的确定
+
+确定电压和电流初始值的方法是, 用换路前的电路求
+
+电容电压和电感电流换路前的终止值 $u_{c}\left(0_{-}\right)$和 $i_{L}\left(0_{-}\right)$, 应用换路定则确定电容电压和电感 电流换路后的初始值 $u_{C}\left(0_{+}\right)$和 $i_{L}\left(0_{+}\right)$。然后, 在换路后的电路中根据 KCL、KVL 以及系统分 析方法等求解直流电路的方法, 求出 $u_{R}\left(0_{+}\right) 、 i_{R}\left(0_{+}\right) 、 u_{L}\left(0_{+}\right)$和 $i_{C}\left(0_{+}\right)$等其他电路变量的初 始值。在求其他变量初始值时, 电路中的电容电压可以用电压为 $u_{c}\left(0_{+}\right)$的电压源替代, 电路 中的电感电流可以用电流为 $i_{L}\left(0_{+}\right)$的电流源替代。 顺便指出, 电路中除电容电压 $u_{C}$ 和电感电流 $i_{L}$ 在换路前后不能突变外, 其他变量 $u_{R} 、 i_{R} 、 u_{L}$ 和 $i_{c}$ 等其他电路变量均可能突变。
+
+【例 1.5-1 】在图 1.5-2(a) 电路中, $S$ 闭合时电路已达稳态。求 $S$ 打开时刻各支路电流和 电感电压的初始值 $i_{1}\left(0_{+}\right) 、 i_{2}\left(0_{+}\right) 、 i_{3}\left(0_{+}\right)$和 $u_{L}\left(0_{+}\right)$。
+
+解: 在图 1.5-2 (a) 换路前的电路中, 求得电容电压 $u_{C}\left(0_{-}\right)$和电感电流 $i_{L}\left(0_{-}\right)$分别为
+
+$$
+u_{c}\left(0_{-}\right)=U_{\mathrm{S}}, \quad i_{L}\left(0_{-}\right)=i_{2}\left(0_{-}\right)=\frac{U_{\mathrm{S}}}{R_{2}}
+$$
+
+根据换路定律, 在图 1.5-2(b)换路后的电路中有
+
+$$
+\begin{aligned}
+& u_{c}\left(0_{+}\right)=u_{C}\left(0_{-}\right)=U_{\mathrm{S}} \\
+& i_{2}\left(0_{+}\right)=i_{L}\left(0_{+}\right)=i_{L}\left(0_{-}\right)=i_{2}\left(0_{-}\right)=\frac{U_{\mathrm{S}}}{R_{2}}
+\end{aligned}
+$$
+
+因为 $R_{1} i_{1}\left(0_{+}\right)=u_{C}\left(0_{+}\right)$, 可得
+
+根据 KCL 有
+
+$$
+i_{1}\left(0_{+}\right)=\frac{u_{C}\left(0_{+}\right)}{R_{1}}=\frac{u_{c}\left(0_{-}\right)}{R_{1}}=\frac{U_{\mathrm{S}}}{R_{1}}
+$$
+
+$$
+i_{3}\left(0_{+}\right)=-\left[i_{1}\left(0_{+}\right)+i_{2}\left(0_{+}\right)\right]=-\left[\frac{U_{\mathrm{S}}}{R_{1}}+\frac{U_{\mathrm{S}}}{R_{2}}\right]=-\frac{R_{1}+R_{2}}{R_{1} R_{2}} U_{\mathrm{S}}
+$$
+
+根据 KVL 有
+
+$$
+u_{c}\left(0_{+}\right)=i_{2}\left(0_{+}\right) R_{2}+u_{L}\left(0_{+}\right)
+$$
+
+可得
+
+$$
+u_{L}\left(0_{+}\right)=u_{c}\left(0_{+}\right)-i_{2}\left(0_{+}\right) R_{2}=U_{\mathrm{S}}-\frac{U_{\mathrm{S}}}{R_{2}} R_{2}=0
+$$
+
+### 2一阶动态电路分析的基本方法
+
+## 1. 一阶动态电路及其微分方程
+
+严格地讲, 对含有动态元件 (电感或电容) 电路,所列写的微分方程为一阶微分方程时, 该 电路为一阶动态电路, 简称一阶电路。在一般情况下, 若电路中只有一个动态元件时, 即为一 阶电路。
+
+所谓动态电路的微分方程是在电路中以时间 $t$ 为主变量, 根据电路的基本定律所列写的 微分方程式。以图 1.5-3 的 $R 、 C$ 串联电路为例, 设电路在开关 $\mathrm{S}$ 闭合前电容 $C$ 的原始电压为 $U_{0}$, 即 $u_{c}\left(0_{-}\right)=U_{0}$, 在 $t=0$ 时刻开关 $\mathrm{S}$ 闭合, 求开关 $\mathrm{S}$ 闭合后电容电压随时间的变化规律 $u_{c}(t)$ 。根据 KVL 和 $i(t)=C \frac{\mathrm{d} u_{c}(t)}{\mathrm{d} t}$, 电路的微分方程为
+
+$$
+R C \frac{\mathrm{d} u_{C}(t)}{\mathrm{d} t}+u_{C}(t)=U_{\mathrm{s}}
+$$
+
+为
+
+此微分方程为一阶常系数 (线性) 非齐次微分方程, 其解的形式
+
+$$
+u_{c}(t)=u_{c}^{\prime}(t)+u_{c}^{\prime \prime}(t)
+$$
+
+其中: $u_{c}^{\prime}(t)$ 称为稳态分量, 此分量与微分方程的非齐次项 $U_{\mathrm{s}}$ 相关,
+
+对稳态分量 $u_{c}^{\prime}(t)$, 因为是微分方程的一个特解, 所以在电路理论中用换路后的稳态电路 的解，即换路后 $t \rightarrow \infty$ 时的解为稿...解，对图 1.5-3 则有
+
+$$
+u_{c}^{\prime}(t)=U_{\mathrm{s}}
+$$
+
+暂态分量 $u_{\mathrm{c}}^{\prime \prime}(t)$ 为非齐次微分方程所对应的齐次微分方程的通解, 其解的形式为
+
+$$
+u_{c}^{\prime \prime}(t)=A \mathrm{e}^{s t}
+$$
+
+其中: $A$ 为由初始条件确定的待定常数; $s$ 为齐次微分方程所对应的特征方程的特征根。则
+
+$$
+u_{c}(t)=u_{c}^{\prime}(t)+u_{c}^{\prime \prime}(t)=U_{\mathrm{S}}+A \mathrm{e}^{s t}
+$$
+
+在换路后的电路中, 根据换路定则, 当 $t=0_{+}$时有 $u_{C}\left(0_{+}\right)=u_{C}\left(0_{-}\right)=U_{0}$, 即电容电压 $u_{c}(t)$ 的初始条件为 $U_{0}$, 则有
+
+$$
+U_{\mathrm{s}}+A=U_{0}
+$$
+
+求得待定常数
+
+$$
+A=U_{0}-U_{\mathrm{s}}
+$$
+
+齐次微分方程所对应的特征方程为
+
+$$
+R C s+1=0
+$$
+
+得特征根为
+
+$$
+s=-\frac{1}{R C}
+$$
+
+由以上求得的待定常数 $A$ 和特征根 $s$ 得暂态分量为
+
+$$
+u_{c}^{\prime \prime}(t)=\left(U_{0}-U_{\mathrm{s}}\right) \mathrm{e}^{-\frac{1}{R C^{2}}}
+$$
+
+最后可得开关 $\mathrm{S}$ 闭合后电容电压随时间的变化规律为
+
+$$
+u_{c}(t)=u_{c}^{\prime}(t)+u_{c}^{\prime \prime}(t)=U_{\mathrm{S}}+A \mathrm{e}^{s t}=U_{\mathrm{S}}+\left(U_{0}-U_{\mathrm{S}}\right) \mathrm{e}^{-\frac{1}{R C^{t}}}
+$$
+
+以上所述是用数学中的微分方程方法分析一阶电路的基本方法, 也称为经典法。
+
+## 2. 一阶电路的零输入响应
+
+零输入响应是指在一阶电路换路后的电路中无激励源的情况下, 在动态元件原始储能的 电压、电流激励下所形成的电路响应。
+
+## (1) $R C$ 电路的零输入响应
+
+在图 1.5-4 (a) 电路中, 换路前开关在 a 点处已达稳态, 电容电压 $u_{C}(t)=U_{0}$ 。在 $t=0$ 时 刻开关倒向 $\mathrm{b}$ 点, 即 $t \geqslant 0$ 时构成图 $1.5-4(\mathrm{~b})$ 的 $R C$ 放电电路。分析 $t \geqslant 0$ 时电容电压 $u_{c}(t)$ 和 电流 $i_{C}(t)$ 等其他变量随时间的变化规律称为 $R C$ 电路的零输入响应。
+
+$$
+\text { 对图 1.5-4(b) 换路后的电路, 根据 } \mathrm{KVL} \text { 和 } i_{C}(t)=C \frac{\mathrm{d} u_{C}(t)}{\mathrm{d} t} \text { 有如下微分方程: }
+$$
+
+$$
+R C \frac{\mathrm{d} u_{c}(t)}{\mathrm{d} t}+u_{c}(t)=0
+$$
+
+此微分方程为齐次微分方程, 在其解中无稳态分量 $u_{c}^{\prime}(t)$, 即在零输入条件下, 无外加激励, 则无强制响应。
+
+暂态分量解的形式为 $u_{c}^{\prime \prime}(t)=A \mathrm{e}^{s t}$ 。根据换路定 则, 当 $t=0_{+}$时有 $u_{C}\left(0_{+}\right)=u_{C}\left(0_{-}\right)=U_{0}$ 。
+
+由初始条件可知 $A=U_{0}$ 。由特征方程 $R C s+1=0$ 得特征根为
+
+$$
+s=-\frac{1}{R C}
+$$
+
+得电容电压 $u_{c}(t)$ 的零输入响应
+
+$$
+u_{C}(t)=u_{C}^{\prime \prime}(t)=A \mathrm{e}^{s t}=U_{0} \mathrm{e}^{-\frac{1}{R c t}} \quad(t \geqslant 0)
+$$
+
+电流 $i_{c}(t)$ 的零输入响应为
+
+$$
+i_{C}(t)=C \frac{\mathrm{d} u_{C}(t)}{\mathrm{d} t}=-\frac{U_{0}}{R} \mathrm{e}^{-\frac{1}{R C} t}(t \geqslant 0)
+$$
+
+$R C$ 电路的零输入响应的电容电压 $u_{c}(t)$ 和电流 $i_{c}(t)$ 随时间的 变化曲线见图 1.5-5。
+
+(2) $R L$ 电路的零输入响应
+
+在图 1.5-6 (a) 电路中, 换路前电路已达稳态, 电感电流 $i_{L}(t)=$ $I_{0}$ 。在 $t=0$ 时刻换路, 即 $t \geqslant 0$ 时构成图 1.5-6(b) 的 $R 、 L$ 放电电路。
+
+对图 1.5-6(b) 换路后的电路, 根据 KVL 和 $u_{L}(t)=$ $L \frac{\mathrm{d} i_{L}(t)}{\mathrm{d} t}$ 有如下微分方程:
+
+$$
+L \frac{\mathrm{d} i_{L}(t)}{\mathrm{d} t}+R i_{L}(t)=0
+$$
+
+此微分方程为齐次微分方程.在其解中无稳态分量 $i_{L}^{\prime}(t)$, 即在零输入条件下, 无外加激励, 则无强制响应。
+
+暂态分量解的形式为 $i_{L}^{\prime \prime}(t)=A \mathrm{e}^{s t}$ 。根据换路定则, 当 $t=0_{+}$时有 $i_{L}\left(0_{+}\right)=i_{L}\left(0_{-}\right)=$ $I_{0}$ 。由初始条件可知 $A=I_{0}$ 。由特征方程 $L s+R=0$ 得特征根为
+
+$$
+s=-\frac{R}{L}
+$$
+
+得电感电流 $i_{L}(t)$ 的零输入响应
+
+$$
+i_{L}(t)=i_{L}^{\prime \prime}(t)=A \mathrm{e}^{s t}=I_{0} \mathrm{e}^{-\frac{R}{L} t} \quad(t \geqslant 0)
+$$
+
+电压 $u_{L}(t)$ 的零输入响应
+
+$$
+u_{L}(t)=L \frac{\mathrm{d} i_{L}(t)}{\mathrm{d} t}=-I_{0} \operatorname{Re}^{-\frac{R}{L^{t}}} \quad(t \geqslant 0)
+$$
+
+$R L$ 电路的零输入响应的电感电流 $i_{L}(t)$ 和电压 $u_{L}(t)$ 随时间的 变化曲线见图 1.5-7。
+
+## 3. 一阶电路的零状态响应
+
+零状态响应是指在一阶电路换路后的电路中, 动态元件的初始值为零的条件下, 在外加激 励源的作用时所形成的电路响应。
+
+(1) $R C$ 电路在直流激励下的零状态响应
+
+关 $\mathrm{S}$ 闭合, 分析在直流电压源 $\hat{U}_{\mathrm{S}}$ 激励下, $t \geqslant 0$ 时电容电压 $u_{c}(t)$ 和电流 $i_{c}(t)$ 等其他变量随时间的变化规律称为 $R C$ 电路在直流 激励下的零状态响应。
+
+根据 KVL 和 $i_{C}(t)=C \frac{\mathrm{d} u_{C}(t)}{\mathrm{d} t}$ 有如下微分方程:
+
+$$
+R C \frac{\mathrm{d} u_{c}(t)}{\mathrm{d} t}+u_{c}(t)=U_{\mathrm{S}}
+$$
+
+取换路后 $t \rightarrow \infty$ 时的解为稳态解, 则有
+
+$$
+u_{c}^{\prime}(t)=U_{\mathrm{S}}
+$$
+
+暂态解的形式为
+
+$$
+u_{c}^{\prime \prime}(t)=A \mathrm{e}^{s t}
+$$
+
+微分方程的解为
+
+$$
+u_{c}(t)=u_{c}^{\prime}(t)+u_{c}^{\prime \prime}(t)=U_{\mathrm{S}}+A \mathrm{e}^{s t}
+$$
+
+根据换路定则, 当 $t=0_{+}$时有 $u_{C}\left(0_{+}\right)=u_{C}\left(0_{-}\right)=0$, 则有 $U_{\mathrm{S}}+A=0$, 可得 $A=-U_{\mathrm{S}}$ 。 特征方程为 $R C s+1=0$, 得
+
+$$
+s=-\frac{1}{R C}
+$$
+
+最后得电容电压和电流在直流激励下的零状态响应分别为
+
+$$
+u_{C}(t)=u_{C}^{\prime}(t)+u_{C}^{\prime \prime}(t)=U_{\mathrm{S}}-U_{\mathrm{S}} \mathrm{e}^{-\frac{1}{R c}}=U_{\mathrm{S}}\left(1-\mathrm{e}^{-\frac{1}{R c^{c}}}\right) \quad(t \geqslant 0)
+$$
+
+$$
+i_{C}(t)=C \frac{\mathrm{d} u_{C}(t)}{\mathrm{d} t}=\frac{U_{\mathrm{S}}}{R} \mathrm{e}^{-\frac{1}{R C}} \quad(t \geqslant 0)
+$$
+
+$R C$ 电路的零状态响应的电容电压 $u_{C}(t)$ 和电流 $i_{C}(t)$ 随时间 的变化曲线见图 1.5-9。
+
+(2) $R L$ 电路在直流激励下的零状态响应
+
+在图 1.5-10 电路中, 开关 $S$ 闭合前电路已达稳态, 电感电流
+
+下, $t \geqslant 0$ 时电感电流 $i_{L}(t)$ 和电压 $u_{L}(t)$ 的零状态响应。
+
+根据 KVL 和 $u_{L}(t)=L \frac{\mathrm{d} i_{L}(t)}{\mathrm{d} t}$ 有如下微分方程:
+
+$$
+L \frac{\mathrm{d} i_{L}(t)}{\mathrm{d} t}+R i_{L}(t)=U_{\mathrm{s}}
+$$
+
+取换路后 $t \rightarrow \infty$ 时的解为稳态解, 则有
+
+$$
+i_{L}^{\prime}(t)=\frac{U_{\mathrm{S}}}{R}
+$$
+
+$$
+i_{L}^{\prime \prime}(t)=A \mathrm{e}^{s t}
+$$
+
+微分方程的解为
+
+$$
+i_{L}(t)=i_{L}^{\prime}(t)+i_{L}^{\prime \prime}(t)=\frac{U_{\mathrm{S}}}{R}+A \mathrm{e}^{s t}
+$$
+
+根据换路定则, 当 $t=0_{+}$时有 $i_{L}\left(0_{+}\right)=i_{L}\left(0_{-}\right)=0$, 则有 $\frac{U_{\mathrm{S}}}{R}+A=0$, 可得 $A=-\frac{U_{\mathrm{S}}}{R}$ 。特 征方程为 $L s+R=0$, 得
+
+$$
+s=-\frac{R}{L}
+$$
+
+最后得电感电流和电压在直流激励下的零状态响应分别为
+
+$$
+i_{L}(t)=i_{L}^{\prime}(t)+i_{L}^{\prime \prime}(t)=\frac{U_{\mathrm{S}}}{R}-\frac{U_{\mathrm{S}}}{R} \mathrm{e}^{-\frac{R}{L} t}=\frac{U_{\mathrm{S}}}{R}\left(1-\mathrm{e}^{-\frac{R}{L} t}\right) \quad(t \geqslant 0)
+$$
+
+$$
+u_{L}(t)=L \frac{\mathrm{d} i_{L}(t)}{\mathrm{d} t}=U_{\mathrm{S}} \mathrm{e}^{-\frac{R}{L}} \quad(t \geqslant 0)
+$$
+
+$R L$ 电路的零状态响应的电容电流 $i_{L}(t)$ 和电压 $u_{L}(t)$ 随时 间的变化曲线见图 1.5-11。
+
+## 4. 一阶电路的全响应
+
+在一阶电路换路后有激励源存在, 且动态元件的初始值不为 零情况下, 电路中的响应为全响应。求解全响应的基本方法是微 分方程法, 即在本节开始处以图 1.5-3 的 $R 、 C$ 串联电路为例, 通 过列微分方程、求稳态解、写通解、定常数和求特征根等步骤, 可得所需的全响应。也可以根据 叠加定理将零输入响应与零状态响应相叠加得全响应。例如, 前面对 $R C$ 电路中, 电容电压 $u_{c}(t)$ 的零输入响应和零状态响应已分别求得
+
+则全响应为
+
+$$
+u_{c}(t)=u_{c}(t)_{\text {人 }}+u_{\mathrm{C}}(t)_{\text {壮态 }}=U_{0} \mathrm{e}^{-\frac{1}{R C}}+U_{\mathrm{S}}\left(1-\mathrm{e}^{-\frac{1}{R C}}\right)=U_{\mathrm{S}}+\left(U_{0}-U_{\mathrm{S}}\right) \mathrm{e}^{-\frac{1}{R C}}
+$$
+
+此结果与在本节开始处以图 1.5-3 的 $R 、 C$ 串联电路为例, 用微分方程求得的结果相同。 为帮助记忆将此方法取名为叠加经典法。
+
+顺便指出, 前面用微分方程所得到各种情况下的结果皆可作为公式直接使用。
+
+## 5. 求解一阶动态电路全响应的三要素法
+
+以 $R C$ 电路中电容电压 $u_{c}(t)$ 的全响应为例, 即
+
+$$
+u_{c}(t)=U_{\mathrm{s}}+\left(U_{0}-U_{\mathrm{s}}\right) \mathrm{e}^{-\frac{1}{R C}}
+$$
+
+其中: (1) $U_{\mathrm{S}}=u_{c}^{\prime}(t)$ 为换路后所求变量的稳态值, 即换路后 $t \rightarrow \infty$ 时的响应值, 可记为 $f(\infty)$;
+
+(2) $U_{0}$ 为换路后所求变量的初始值,可记为 $f\left(0_{+}\right)$;
+
+(3) $R C$ 称为换路后电路的时间常数 $\tau$, 在 $R L$ 电路中 $\tau=L / R$ 。
+
+由此可见, 当求解一阶动态电路全响应时, 只需求得所求变量的三个要素, 即换路后电路 的稳态值 $f(\infty)$ 、换路后的初始值 $f\left(0_{+}\right)$和电路的时间常数 $\tau$, 就可求得该变量的全响应。三 要素法的一般公式为
+
+$$
+f(t)=f(\infty)+\left[f\left(0_{+}\right)-f(\infty)\right] \mathrm{e}^{-\frac{\iota}{\tau}}
+$$
+
+此公式适用于电路中的任何变量。
+
+【例 1.5-2】在图 1.5-12 中, 已知 $R_{1}=8 \Omega, R_{2}=12 \Omega, L=$ $0.6 \mathrm{H}$, 直流电压源 $U_{\mathrm{S}}=220 \mathrm{~V}_{\text {。 }}$ 开关 $\mathrm{S}$ 打开时电路已达稳态, 在 $t$ $=0$ 时将开关 $\mathrm{S}$ 闭合。求 $\mathrm{S}$ 闭合后电路中的电流 $i(t)$ 。 定则有
+
+解法 1 : 用叠加经典法。设 $U_{\mathrm{s}}=0$, 先求零输入响应。根据换路
+
+$$
+i\left(0_{+}\right)=i\left(0_{-}\right)=I_{0}=\frac{U_{\mathrm{S}}}{R_{1}+R_{2}}=\frac{220}{8+12}=11 \mathrm{~A}
+$$
+
+得 $\mathrm{S}$ 闭合后电路中电流的零输入响应为
+
+$$
+i(t)_{\text {子解入 }}=I_{0} \mathrm{e}^{-\frac{R_{2}}{L}}=11 \mathrm{e}^{-\frac{12}{0.6^{t}}}=11 \mathrm{e}^{-20 t} \mathrm{~A}
+$$
+
+求零状态响应, 此时 $U_{\mathrm{s}}=220 \mathrm{~V}$, 并设初始电流 $I_{0}=0$, 可得
+
+$$
+i(t)_{\text {亦壮 }}=\frac{U_{\mathrm{S}}}{R_{2}}\left(1-\mathrm{e}^{-\frac{R_{2}}{L}}\right)=\frac{220}{12}\left(1-\mathrm{e}^{-\frac{12}{0.6^{t}}}\right)=18.3\left(1-\mathrm{e}^{-20 t}\right) \mathrm{A}
+$$
+
+最后得 $\mathrm{S}$ 闭合后电路中的电流响应
+
+解法 2 : 用三要素法。
+
+$$
+\begin{aligned}
+& i(\infty)=\frac{U_{\mathrm{S}}}{R_{2}}=\frac{220}{12}=18.3 \mathrm{~A} \\
+& i\left(0_{+}\right)=i\left(0_{-}\right)=\frac{U_{\mathrm{S}}}{R_{1}+R_{2}}=\frac{220}{8+12}=11 \mathrm{~A} \\
+& \tau=\frac{L}{R_{2}}=\frac{0.6}{12}=\frac{1}{20} \mathrm{~s}
+\end{aligned}
+$$
+
+最后得 $\mathrm{S}$ 闭合后电路中的电流响应
+
+$$
+\begin{aligned}
+i(t) & =i(\infty)+\left[i\left(0_{+}\right)-i(\infty)\right] \mathrm{e}^{-\frac{1}{t} t} \\
+& =18.3+(11-18.3) \mathrm{e}^{-20 t}=18.3-7.3 \mathrm{e}^{-20 t} \mathrm{~A} \quad(t \geqslant 0)
+\end{aligned}
+$$
+
+此电流的变化曲线见图 1.5-13。
+
+【例 1.5-3】 在图 1.5-14 中, 已知 $R_{1}=6 \Omega, R_{2}=3 \Omega, C=$ $0.5 \mu \mathrm{F}$, 直流电压源 $U_{\mathrm{S}}=24 \mathrm{~V}$ 。开关 $\mathrm{S}$ 打开时电路已达稳态, 在 $t$ $=0$ 时将开关 $\mathrm{S}$ 闭合。求 $\mathrm{S}$ 闭合后电容电压 $u_{c}(t)$ 和电路中各支路电流 $i_{1}(t) 、 i_{2}(t)$ 及 $i_{c}(t)$ 。
+
+解法 1 : 用三要素法, 首选 $u_{c}(t)$ 变量。
+
+$$
+\begin{aligned}
+& u_{c}\left(0_{+}\right)=u_{c}\left(0_{-}\right)=U_{\mathrm{s}}=24 \mathrm{~V} \\
+& u_{r}(\infty)=\frac{U_{\mathrm{S}}}{R_{1}+R_{2}} R_{2}=\frac{24}{6+3} \times 3=8 \mathrm{~V}
+\end{aligned}
+$$
+
+应为将电压源置零后, 从动态元件电容 $C$ 两
+
+$$
+\frac{R_{1} R_{2}}{+R_{2}}=\frac{6 \times 3}{6+3}=2 \Omega
+$$
+
+$$
+\tau=R_{\text {in }} C=2 \times 0.5 \times 10^{-6}=10^{-6} \mathrm{~s}
+$$
+
+得 $S$ 闭合后电容电压
+
+$$
+u_{C}(t)=u_{C}(\infty)+\left[u_{C}\left(0_{+}\right)-u_{C}(\infty)\right] \mathrm{e}^{-\frac{1}{\tau} \gamma}=8+(24-8) \mathrm{e}^{-10 \sigma_{t}}=8+16 \mathrm{e}^{-10 \delta_{t}} \mathrm{~V} \quad(t \geqslant 0)
+$$
+
+电路中各支路电流分别为
+
+$$
+\begin{aligned}
+& i_{C}(t)=C \frac{\mathrm{d} u_{C}(t)}{\mathrm{d} t}=0.5 \times 10^{-6} \times 16 \times\left(-10^{6}\right) \mathrm{e}^{-10 \sigma_{t}}=-8 \mathrm{e}^{-106_{t}} \mathrm{~A} \quad(t \geqslant 0) \\
+& i_{2}(t)=\frac{u_{C}(t)}{R_{2}}=\frac{8+16 \mathrm{e}^{-106_{t}}}{3}=2.67+5.33 \mathrm{e}^{-10 \sigma_{t}} \mathrm{~A} \quad(t \geqslant 0) \\
+& i_{1}(t)=i_{C}(t)+i_{2}(t)=-8 \mathrm{e}^{-106_{t}}+2.67+5.33 \mathrm{e}^{-10 \sigma_{t}}=2.67\left(1-\mathrm{e}^{-106_{t}}\right) \mathrm{A} \quad(t \geqslant 0)
+\end{aligned}
+$$
+
+电容电压 $u_{C}(t)$ 和电路中各支路电流 $i_{1}(t) 、 i_{2}(t)$ 及 $i_{c}(t)$ 的变化曲线见图 1.5-15。
+
+解法 2 : 用三要素法。首选 $i_{1}(t)$ 变量。
+
+$$
+\begin{aligned}
+& i_{1}\left(0_{+}\right)=\frac{U_{\mathrm{S}}-u_{C}\left(0_{+}\right)}{R_{1}}=\frac{U_{\mathrm{S}}-u_{C}\left(0_{-}\right)}{R_{1}}=\frac{24-24}{6}=0 \\
+& i_{1}(\infty)=\frac{U_{\mathrm{S}}}{R_{1}+R_{2}}=\frac{24}{3+6}=2.67 \mathrm{~A} \\
+& \tau=R C
+\end{aligned}
+$$
+
+式中的电阻 $R$ 应为将电压源置零后, 从动态元件电容 $C$ 两端看进去的人端电阻 $R_{\mathrm{in}}$, 即
+
+得
+
+$$
+R_{\text {in }}=\frac{R_{1} R_{2}}{R_{1}+R_{2}}=\frac{6 \times 3}{6+3}=2 \Omega
+$$
+
+得
+
+$$
+\tau=R_{\text {in }} C=2 \times 0.5 \times 10^{-6}=10^{-6} \mathrm{~s}
+$$
+
+$$
+\begin{aligned}
+i_{1}(t) & =i_{1}(\infty)+\left[i_{1}\left(0_{+}\right)-i_{1}(\infty)\right] \mathrm{e}^{-\frac{t}{t}}=2.67+[0-2.67] \mathrm{e}^{-\frac{t}{10-6}} \\
+& =2.67\left(1-\mathrm{e}^{-106}\right) \mathrm{A} \quad(t \geqslant 0) \\
+u_{C}(t) & =-R_{1} i_{1}(t)+U_{\mathrm{S}}=-6 \times 2.67\left(1-\mathrm{e}^{-106_{t}}\right)+24=8+16 \mathrm{e}^{-10^{\sigma_{t}}} \mathrm{~V} \quad(t \geqslant 0) \\
+i_{C}(t) & =C \frac{\mathrm{d} u_{C}(t)}{\mathrm{d} t}=0.5 \times 10^{-6} \times 16 \times\left(-10^{6}\right) \mathrm{e}^{-106_{t}}=-8 \mathrm{e}^{-106_{t}} \mathrm{~A} \quad(t \geqslant 0) \\
+i_{2}(t) & =\frac{U_{\mathrm{C}}(t)}{R_{2}}=\frac{8+16 \mathrm{e}^{-106_{t}}}{3}=2.67+5.33 \mathrm{e}^{-10 \sigma_{t}} \mathrm{~A} \quad(t \geqslant 0)
+\end{aligned}
+$$
+
+解法 3 : 用叠加经典法。先求 $u_{c}(t)$ 的零输入响应。在换路后的电路中设 $U_{\mathrm{S}}=0$, 求得
+
+$$
+u_{C}(t)_{\text {零愉入 }}=U_{0} \mathrm{e}^{-\frac{1}{R C} t} \quad(t \geqslant 0)
+$$
+
+式中的电阻 $R$ 应为将电压源置零后, 从动态元件电容 $C$ 两端看进去的人端电阻 $R_{\text {in }}$, 即
+
+$$
+R_{\mathrm{in}}=\frac{R_{1} R_{2}}{R_{1}+R_{2}}=\frac{6 \times 3}{6+3}=2 \Omega
+$$
+
+得
+
+$$
+u_{C}(t)_{\text {输入 }}=U_{0} \mathrm{e}^{-\frac{1}{R_{\text {in }} t}}=24 \mathrm{e}^{-\frac{1}{2 \times 0.5 \times 10-6} t}=24 \mathrm{e}^{-10^{6} t} \mathrm{~V} \quad(t \geqslant 0)
+$$
+
+再求 $u_{C}(t)$ 的零状态响应, 在换路后的电路中, 设 $u_{C}\left(0_{+}\right)=U_{0}=0_{\text {。 }}$ 零状态响应的计算公 式为
+
+$$
+u_{C}(t)_{\text {客状态 }}=U_{\mathrm{S}}^{\prime}\left(1-\mathrm{e}^{-\frac{1}{R C^{t}}}\right) \quad(t \geqslant 0)
+$$
+
+式中的电压源的电压 $U_{\mathrm{s}}^{\prime}$ 应为从动态元件电容 $C$ 两端开路后, 戴维南等效电路的开路电压 $U_{\mathrm{OC}}$, 即
+
+得
+
+$$
+U_{\mathrm{s}}^{\prime}=U_{\mathrm{oc}}=\frac{U_{\mathrm{s}}}{R_{1}+R_{2}} R_{2}=\frac{24}{6+3} \times 3=8 \mathrm{~V}
+$$
+
+$$
+u_{c}(t)_{\text {年态 }}=U_{\mathrm{S}}^{\prime}\left(1-\mathrm{e}^{-\frac{1}{R_{\text {in }} c}}\right)=8\left(1-\mathrm{e}^{-\frac{1}{2 \times 0.5 \times 10-6^{t}}}\right)=8\left(1-\mathrm{e}^{-10^{6} t}\right) \mathrm{V} \quad(t \geqslant 0)
+$$
+
+得 $\mathrm{S}$ 闭合后电容电压 $u_{c}(t)$ 的全响应
+
+电路中各支路电流分别为
+
+$$
+\begin{aligned}
+& i_{C}(t)=C \frac{\mathrm{d} u_{C}(t)}{\mathrm{d} t}=0.5 \times 10^{-6} \times 16 \times\left(-10^{6}\right) \mathrm{e}^{-10^{6} t}=-8 \mathrm{e}^{-10^{6} t} \mathrm{~A} \quad(t \geqslant 0) \\
+& i_{2}(t)=\frac{u_{C}(t)}{R_{2}}=\frac{8+16 \mathrm{e}^{-10^{6} t}}{3}=2.67+5.33 \mathrm{e}^{-10^{6} t} \mathrm{~A} \quad(t \geqslant 0) \\
+& i_{1}(t)=i_{C}(t)+i_{2}(t)=-8 \mathrm{e}^{-10^{6} t}+2.67+5.33 \mathrm{e}^{-10^{6} t}=2.67\left(1-\mathrm{e}^{-10^{6} t}\right) \mathrm{A} \quad(t \geqslant 0)
+\end{aligned}
+$$
+
+## 5 .3 二阶电路分析的基本方法
+
+用二阶微分方程描述的动态电路为二阶电路。在时域中分析二阶电路的基本方法是微分 方程法。现以 $R L C$ 串联电路的零状态响应为例简要介绍二阶电路分析的基本方法。
+
+在图 1.5-16 中, 设电容 $C$ 在换路前的电压值 $U_{C}\left(0_{-}\right)=U_{0}$, 求开关闭合后的动态过程。
+
+根据 KVL 列换路后电路的微分方程
+
+$$
+u_{L}+u_{R}+u_{C}=L \frac{\mathrm{d} i}{\mathrm{~d} t}+R i+u_{C}=0
+$$
+
+将 $i=C \frac{\mathrm{d} u_{C}}{\mathrm{~d} t}$ 代人上式得
+
+$$
+L C \frac{\mathrm{d}^{2} u_{C}}{\mathrm{~d} t^{2}}+R C \frac{\mathrm{d} u_{C}}{\mathrm{~d} t}+u_{C}=0
+$$
+
+此方程为齐次微分方程, 则无强制响应, 即 $u_{c}^{\prime}=0$ 。此微分方程的特征方程为
+
+$$
+L C s^{2}+R C s+1=0
+$$
+
+特征根为
+
+$$
+s_{1,2}=-\frac{R}{2 L} \pm \sqrt{\frac{R^{2}}{4 L}-\frac{1}{L C}}=-\beta \pm \sqrt{\beta^{2}-\omega_{0}^{2}}
+$$
+
+式中 : $\beta=R / 2 L, \omega_{0}=\sqrt{1 / L C}$ 。
+
+对不同的电路参数 $R 、 L$ 和 $C$ 的情况下特征根有以下三种不同情况。
+
+(1)当 $\beta>\omega_{0}$ 时, $s_{1}$ 和 $s_{2}$ 为两个不等实根
+
+微分方程的解为
+
+$$
+\begin{aligned}
+& s_{1}=-\beta+\sqrt{\beta^{2}-\omega_{0}^{2}} \\
+& s_{2}=-\beta-\sqrt{\beta^{2}-\omega_{0}^{2}}
+\end{aligned}
+$$
+
+$$
+u_{C}=u_{C}^{\prime \prime}=A_{1} \mathrm{e}^{s_{1} t}+A_{2} \mathrm{e}^{s_{2} t}
+$$
+
+待定常数 $A_{1}$ 和 $A_{2}$ 可由 $u_{c}$ 和 $\mathrm{d} u_{C} / \mathrm{d} t$ 的初值求得。根据换路定则有
+
+$$
+\begin{aligned}
+& u_{C}\left(0_{+}\right)=u_{C}\left(0_{-}\right)=U_{0} \\
+& \left.\frac{\mathrm{d} u_{C}}{\mathrm{~d} t}\right|_{t=0_{+}}=\left.\frac{\mathrm{d} u_{C}}{\mathrm{~d} t}\right|_{t=0_{-}}=\frac{i\left(0_{+}\right)}{C}=\frac{i\left(0_{-}\right)}{C}=0
+\end{aligned}
+$$
+
+可得
+
+解得
+
+$$
+\begin{aligned}
+& A_{1}+A_{2}=U_{0} \\
+& A_{1} s_{1}+A_{2} s_{2}=0
+\end{aligned}
+$$
+
+$$
+A_{1}=\frac{s_{2}}{s_{2}-s_{1}} U_{0}, A_{2}=\frac{s_{1}}{s_{1}-s_{2}} U_{0}
+$$
+
+最后可得电路中各变量的零输入响应分别为
+
+$$
+\begin{aligned}
+& u_{C}=\frac{s_{2}}{s_{2}-s_{1}}\left(s_{2} \mathrm{e}^{s_{1} t}-s_{1} \mathrm{e}^{s_{2} t}\right) \quad(t \geqslant 0) \\
+& i=C \frac{\mathrm{d} u_{C}}{\mathrm{~d} t}=\frac{U_{0}}{L\left(s_{2}-s_{1}\right)}\left(\mathrm{e}^{s_{1} t}-\mathrm{e}^{s_{2} t}\right) \quad(t \geqslant 0) \\
+& u_{L}=L \frac{\mathrm{d} i}{\mathrm{~d} t}=\frac{U_{0}}{s_{2}-s_{1}}\left(s_{1} \mathrm{e}^{s_{1} t}-s_{2} \mathrm{e}^{s_{2} t}\right) \quad(t \geqslant 0) \\
+& u_{R}=R i=\frac{R U_{0}}{L\left(s_{2}-s_{1}\right)}\left(\mathrm{e}^{s_{1} t}-\mathrm{e}^{s_{2} t}\right) \quad(t \geqslant 0)
+\end{aligned}
+$$
+
+各变量随时间 $t$ 的变化曲线见图 1.5-17。
+
+由以上各变量响应表达式和变化曲线可以看出, 因为 $s_{1}$ 和 $s_{2}$ 都小于零,所以各变量都按指数规律衰减, 最后都趋向于零。因 为 $0>s_{1}>s_{2}$, 所以电流 $i$ 和电阻电压 $u_{R}$ 皆为负值, 电容连续放电。 但因有电感存在, 电流不能突变, 电流从零开始先反向增加, 到达 最大值后又趋向于零。当电流最大时其变化率为零, 此时电感电 压 $u_{L}$ 为零。在工程上将这种参数下的情况称为过阻尼非振荡过 程。
+
+(2)当 $R<2 \sqrt{L / C}$ 时, 即 $R / 2 L<2 \sqrt{1 / L C}$, 即 $\beta<\omega_{0}$ 时, $s_{1}$ 和 $s_{2}$ 为一对共轭复根, 经进一步确 定待定常数 $A_{1}$ 和 $A_{2}$ (数学推导从略), 可得如下各变量的零状态响应。 式中
+
+$$
+\begin{aligned}
+& u_{C}=U_{0} \frac{\omega_{0}}{\omega^{\prime}} \mathrm{e}^{-\beta t} \sin \left(\omega^{\prime} t+\arctan \frac{\omega^{\prime}}{\beta}\right) \quad(t \geqslant 0) \\
+& i=-\frac{U_{0}}{\omega^{\prime} L} \mathrm{e}^{-\beta t} \sin \omega^{\prime} t \quad(t \geqslant 0) \\
+& u_{L}=U_{0} \frac{\omega_{0}}{\omega^{\prime}} \mathrm{e}^{-\beta t} \sin \left(\omega^{\prime} t-\arctan \frac{\omega^{\prime}}{\beta}\right) \quad(t \geqslant 0)
+\end{aligned}
+$$
+
+$$
+\omega^{\prime}=\sqrt{\omega_{0}^{2}-\beta^{2}}=\sqrt{\frac{1}{L C}-\frac{R^{2}}{4 L^{2}}}
+$$
+
+各变量随时间 $t$ 的变化曲线见图 1.5-18。
+
+由以上各变量响应表达式和变化曲线可以看出, 各变量皆为幅值依指数规律衰减的正弦波。从 $t=0$ 时电流 $i$ 开始反向放电, 到达最大值即变化率为零时 电感电压 $u_{L}$ 与电容电压 $u_{C}$ 相等。经过多次反复衰减 振荡, 最后各变量皆趋向于零。在工程上将这种参数 下的情况称为欠阻尼振荡过程。若电路中无电阻或负 阻器补偿掉电路中的电阻, 可以构成等幅的正弦振荡
+
+(3)当 $R=2 \sqrt{L / C}$ 时, 即 $R / 2 L=2 \sqrt{1 / L C}$, 即 $\beta=\omega_{0}$ 时, $s_{1}$ 和 $s_{2}$ 为一重根, 即
+
+$$
+s_{1}=s_{2}=-\beta
+$$
+
+各变量的零状态响应为
+
+$$
+\begin{aligned}
+& u_{c}=U_{0}(1+\beta t) \mathrm{e}^{-\beta t} \quad(t \geqslant 0) \\
+& i=-\frac{U_{0}}{L} t \mathrm{e}^{-\beta x} \quad(t \geqslant 0) \\
+& u_{L}=U_{0}(1-\beta t) \mathrm{e}^{-\beta t} \quad(t \geqslant 0)
+\end{aligned}
+$$
+
+各变量随时间 $t$ 的变化情况和变化曲线与非振荡过程相仿, 不再赘述。在工程上将这种 参数下的情况称为临界状态。
+
+总之,对二阶动态电路进行时域分析的基本方法是, 按照电路具体情况,列写相应的二阶 微分方程, 根据微分方程和由电路参数决定的特征根特点, 解微分方程即可得到所需求解的变 量。
+
+## 6 静电场
+
+### 1 电场强度、电位
+
+## 1. 电场强度
+
+定义:正试验点电荷 $q_{0}$ 在电场中某点受力为 $\boldsymbol{F}$, 则电场强度为
+
+$$
+\boldsymbol{E}=\lim _{q_{0} \rightarrow 0} \frac{\boldsymbol{F}}{q_{0}}
+$$
+
+式中, $q_{0}$ 的单位为库仑 $(\mathrm{C}), \boldsymbol{F}$ 的单位为牛顿 $(\mathrm{N})$ ，电场强度 $\boldsymbol{E}$ 的单位为伏特 $/$ 米 $(\mathrm{V} / \mathrm{m})$ 。
+
+电场强度 (简称场强) 是表示电场强弱的基本物理量, 是一个向量, 其大小反映该点场的 强弱, 其方向表示该点置一正试验点电荷受力的方向。静电场是由静止电荷产生的, 并且满足 无旋场特性，即
+
+$$
+\oint_{l} E \cdot \mathrm{d} \boldsymbol{l}=0 \text { 或 } \nabla \times E=0
+$$
+
+在无限大均匀介质中, 点电荷 $q$ 产生的电场可以用下面公式计算:
+
+$$
+\boldsymbol{E}=\frac{q}{4 \pi \varepsilon r^{2}} \boldsymbol{e}_{r}
+$$
+
+式中, $r$ 表示源点 (电荷所在的点) 与场点 (待计算场强的点)之间的距离, $\boldsymbol{e}_{r}$ 表示由源点指向场 点的单位向量。 $\varepsilon$ 表示介质的介电系数,其单位为法拉/米 $(\mathrm{F} / \mathrm{m})$, 在真空中, 通常用 $\varepsilon_{0}$ 表示 其介电系数, 并且
+
+$$
+\varepsilon_{0}=\frac{1}{36 \pi} \times 10^{-9}=8.85 \times 10^{-12} \mathrm{~F} / \mathrm{m}
+$$
+
+关于点电荷在无限大均匀介质中计算公式的来历, 可以通过库仑定律直接获得。库仑定 律表示: 在无限大真空中, 两个距离为 $r$ 的点电荷 $q_{1}$ 和 $q_{2}$, 它们之间的作用力与 $r$ 的平方成反 比，与电荷的大小成正比，电荷间作用力的方向表现为同性相斥、异性相吸,其计算公式可以用 下式表示:
+
+$$
+\boldsymbol{f}=\frac{q_{1} q_{2}}{4 \pi \varepsilon_{0} r^{2}} \boldsymbol{e}_{f}
+$$
+
+如果其中一个电荷可视作试验点电荷, 则由于 $\boldsymbol{E}=\boldsymbol{f} / \boldsymbol{q}$, 则可得点电荷场强计算公式。将 $\varepsilon_{0}$ 写 成 $\varepsilon$,该计算式同样适用于无限大均匀介质。
+
+除点电荷以外，工程上也常用所谓线电荷、面电荷和体电荷分布的概念。它们的定义分别 为
+
+$$
+\begin{aligned}
+& \tau=\lim _{\Delta l \rightarrow 0} \frac{\Delta q}{\Delta l} \quad \mathrm{C} / \mathrm{m} \\
+& \sigma=\lim _{\Delta s \rightarrow 0} \frac{\Delta q}{\Delta S} \mathrm{C} / \mathrm{m}^{2} \\
+& \rho=\lim _{\Delta l \rightarrow 0} \frac{\Delta q}{\Delta V} \mathrm{C} / \mathrm{m}^{3}
+\end{aligned}
+$$
+
+如果在所研究的范围内, 电荷分布不是空间坐标的函数而是一个常量, 则称之为均匀分布电 荷。
+
+多个点电荷或连续分布的电荷形成的电场均可以运用叠加定理计算, 但是由于 $\boldsymbol{E}$ 是向 量, 因此计算时应采用向量叠加,这一过程有时是很麻烦的。
+
+对于无限大均匀介质中多个点电荷形成的电场, 其计算公式为
+
+$$
+\boldsymbol{E}=\frac{1}{4 \pi \varepsilon} \sum_{i=1}^{n} \frac{q_{i}}{r_{i}} \boldsymbol{e}_{i}
+$$
+
+式中, $q_{i} 、 r_{i}$ 和 $e_{i}$ 分别表示第 $i$ 个点电荷单独作用时对应的电荷值、距离和单位向量。
+
+对于无限大均匀介质中连续分布的电荷, 可以首先取一微分量, 并视作点电荷 $\mathrm{d} q$ 。针对 线元、面积元和体积元, 可以用以下各式分别求出 $\mathrm{d} q$ 值, 即
+
+$$
+\begin{aligned}
+& \mathrm{d} q=\tau \mathrm{d} l^{\prime} \\
+& \mathrm{d} q=\sigma \mathrm{d} S^{\prime}
+\end{aligned}
+$$
+
+$$
+\mathrm{d} q=\rho \mathrm{d} V^{\prime}
+$$
+
+上面各式加“””的原因是只有电荷存在的区间各式才不为零, 因此最终形成的积分只在电荷分 布的源点区间进行,一般并不涉及整个空间的积分计算。由此可得
+
+$$
+\mathrm{d} E=\frac{\mathrm{d} q}{4 \pi \varepsilon r^{2}} e_{r}
+$$
+
+再通过积分或数值计算等手段求解, 但过程一般较繁, 有兴趣者可参考本科生电磁场教材。
+
+[例 1.6-1] 图 1.6-1 中, 点电荷 $q$ 位于 $\left(x^{\prime}, y^{\prime}, z^{\prime}\right)$ 位置, 试求任一场点 $p$ 处的电场强 度。
+
+解: 由向量代数可知, 图示各量可表示为
+
+$$
+\begin{aligned}
+& \boldsymbol{r}^{\prime}=x^{\prime} \boldsymbol{e}_{x}+y^{\prime} \boldsymbol{e}_{y}+z^{\prime} \boldsymbol{e}_{z} \\
+& \boldsymbol{r}=x \boldsymbol{e}_{x}+y \boldsymbol{e}_{y}+z \boldsymbol{e}_{z}
+\end{aligned}
+$$
+
+两点之间的距离为
+
+$$
+\left|r-r^{\prime}\right|=\sqrt{\left(x-x^{\prime}\right)^{2}+\left(y-y^{\prime}\right)^{2}+\left(z-z^{\prime}\right)^{2}}
+$$
+
+由源点指向场点的单位向量为
+
+$$
+\frac{\boldsymbol{r}-\boldsymbol{r}^{\prime}}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}=\frac{\left(x-x^{\prime}\right) \boldsymbol{e}_{x}+\left(y-y^{\prime}\right) \boldsymbol{e}_{y}+\left(z-z^{\prime}\right) \boldsymbol{e}_{z}}{\sqrt{\left(x-x^{\prime}\right)^{2}+\left(y-y^{\prime}\right)^{2}+\left(z-z^{\prime}\right)^{2}}}
+$$
+
+故
+
+$$
+E=\frac{q}{4 \pi \varepsilon_{0}\left|r-r^{\prime}\right|^{2}} \cdot \frac{r-r^{\prime}}{\left|r-r^{\prime}\right|}
+$$
+
+【例 1.6-2】无限大真空中点电荷 $Q_{A}$ 位于直角坐标系坐标 $(-3,0,0)$ 处, 点电荷 $Q_{B}$ 位于 $(-3,-1,1)$ 处, 试求 $P$ 点 $(2,3,4)$ 处的电场强度。
+
+解: $Q_{A}$ 与 $Q_{B}$ 单独作用产生的电场分别为
+
+$$
+\begin{aligned}
+& \boldsymbol{E}_{A}=\frac{Q_{A}}{4 \pi \varepsilon_{0}} \cdot \frac{(2+3) e_{\mathrm{x}}+3 \boldsymbol{e}_{y}+4 \boldsymbol{e}_{z}}{\left[(2+3)^{2}+3^{2}+4^{2}\right]^{3 / 2}}=\frac{Q_{A}\left(5 \boldsymbol{e}_{x}+3 \boldsymbol{e}_{y}+4 e_{z}\right)}{200 \sqrt{50} \pi \varepsilon_{0}} \\
+& \boldsymbol{E}_{B}=\frac{Q_{B}}{4 \pi \varepsilon_{0}} \cdot \frac{(2+3) e_{x}+(3+1) e_{y}+(4-1) e_{z}}{\left[(2+3)^{2}+(3+1)^{2}+(4-1)^{2}\right]^{3 / 2}}=\frac{Q_{B}\left(5 e_{x}+4 e_{y}+3 e_{z}\right)}{200 \sqrt{50} \pi \varepsilon_{0}}
+\end{aligned}
+$$
+
+合成后得所求电场
+
+$$
+\boldsymbol{E}=\boldsymbol{E}_{A}+\boldsymbol{E}_{B}=\frac{1}{200 \sqrt{50} \pi \varepsilon_{0}}\left[Q_{A}\left(5 \boldsymbol{e}_{x}+3 \boldsymbol{e}_{y}+4 \boldsymbol{e}_{z}\right)+Q_{B}\left(5 \boldsymbol{e}_{x}+4 \boldsymbol{e}_{y}+3 \boldsymbol{e}_{z}\right)\right]
+$$
+
+## 2. 电位
+
+由于静电场的无旋性, 可引人标量函数 $\varphi$, 有
+
+$$
+E=-\nabla_{\varphi}
+$$
+
+$\varphi$ 被称为标量电位函数, $\varphi$ 在空间某点的值称为该点的电位。电位的单位为伏特 $(V), \nabla \varphi$ 表 示电位梯度,该定义中的负号表示场强的方向与 $\nabla_{\varphi}$ 的方向相反。
+
+电位的另一种定义式可表示为
+
+$$
+\varphi_{P}=\int_{P}^{Q} E \cdot \mathrm{d} \boldsymbol{l}
+$$
+
+式中, $\varphi_{P}$ 表示 $P$ 点相对于 $Q$ 点的电位, $Q$ 点是电位的参考点。该式可解析为: $P$ 点的电位等于 在电场力的作用下, 把单位正电荷由 $P$ 点移到参考点 (此处为 $Q$ 点) 时电场力所做的功。此式 在计算中常被采用。
+
+两点间电压 $U_{A B}$ 可用电位计算, 即
+
+$$
+U_{A B}=\varphi_{A}-\varphi_{A}
+$$
+
+电位的参考点可以任意指定。参考点改变, 电位的值也随之变化, 但任意两点间电压的值 是不变的。静电场是无旋场, 电位或电压的计算都与路径无关。参考点一般被取为无穷远处、 大地或金属外壳处。
+
+在无限大均匀介质中, 若取无穷远处作为电位参考点, 则点电荷形成的电位为
+
+$$
+\varphi=\frac{q}{4 \pi \varepsilon r}
+$$
+
+由 $n$ 个点电荷在场点产生的电位为
+
+$$
+\varphi=\frac{1}{4 \pi \varepsilon} \sum_{i=1}^{n} \frac{q_{i}}{r_{i}}
+$$
+
+式中 $q_{i}$ 为负电荷时, 应取负值, 而 $r_{i}$ 表示电荷与场点的距离, 恒为正值。
+
+静电场中的导体具有以下特点:
+
+(1)导体内部电场强度为零;
+
+(2)任一导体自身都是一个等位体;
+
+(3)如果导体带电, 电荷只能分布在导体的表面, 而且导体表面处任一点电场强度的方向一 定与导体表面垂直。当导体表面带正电荷时,电场强度方向向导体外指,否则相反。
+
+【例 1.6-3】无限大真空中, 点电荷 $q_{A}=1 \mathrm{C} 、 q_{B}=2 \mathrm{C} 、 q_{C}=-3 \mathrm{C}$, 各电荷的直角坐标分别 为 $(0,1,1) 、(-1,1,1) 、(1,1,-2)$, 试求场点 $P(1,1,1)$ 位置的电位。
+
+解: 各电荷距离场点的距离分别为
+
+$$
+\begin{aligned}
+& r_{A}=\sqrt{1^{2}+(1-1)^{2}+(1-1)^{2}}=1 \\
+& r_{B}=\sqrt{(1+1)^{2}+(1-1)^{2}+(1-1)^{2}}=2 \\
+& r_{C}=\sqrt{(1-1)^{2}+(1-1)^{2}+(1+2)^{2}}=3
+\end{aligned}
+$$
+
+所识
+
+$$
+\varphi_{P}=\frac{1}{4 \pi \varepsilon_{0}}\left(1+\frac{2}{2}+\frac{-3}{3}\right)=\frac{1}{4 \pi \varepsilon_{0}}
+$$
+
+【例 1.6-4】已知电位函数 $\varphi=4 x^{2}+3 x y z \mathrm{~V}$, 试求电场强度 $\boldsymbol{E}_{\text {。 }}$
+
+解 : 直角坐标系下展开 $\nabla \varphi$ 得
+
+$$
+\boldsymbol{E}=-\nabla_{\varphi}=-\frac{\partial \varphi}{\partial x} \boldsymbol{e}_{x}-\frac{\partial \varphi}{\partial y} \boldsymbol{e}_{y}-\frac{\partial \varphi}{\partial z} \boldsymbol{e}_{z}=-(8 x+3 y z) \boldsymbol{e}_{x}-3 x z \boldsymbol{e}_{y}-3 x y \boldsymbol{e}_{z} \mathrm{~V} / \mathrm{m}
+$$
+
+若给出场点的具体坐标, 则代人相应的 $x 、 y$ 和 $z$ 值, 即可求出该点的场强。
+
+## 3. 静电场的基本方程和分界面条件
+
+掌握静电场的基本方程和分界面条件，是学好静电场的基础。现分别介绍如下。
+
+（1）基本方程
+
+积分形式
+
+$$
+\left\{\begin{array}{l}
+\oint_{l} E \cdot \mathrm{d} l=0 \\
+\oint_{S} D \cdot \mathrm{d} S=\int_{V} \rho \mathrm{d} V
+\end{array}\right.
+$$
+
+微分形式
+
+$$
+\left\{\begin{array}{l}
+\nabla \times E=0 \\
+\nabla \cdot D=\rho
+\end{array}\right.
+$$
+
+式中, $\rho$ 为自由电荷体密度; $D$ 为电位移向量, 又称电通量密度, 单位为库仑 $/$ 米 $^{2}\left(\mathrm{C} / \mathrm{m}^{2}\right)$ 。
+
+由于介质中存在束缚电荷, 在外电场作用下会产生所谓极化现象。电位移向量的一般表 达式为
+
+$$
+D=\varepsilon_{0} E+P
+$$
+
+式中 $\boldsymbol{P}$ 称极化强度, 与 $\boldsymbol{D}$ 的单位相同, 它反映介质极化的情况。一般而言, 当 $\boldsymbol{D} 、 \boldsymbol{E}$ 和 $\boldsymbol{P}$ 的方 向不相同时,称为各向异性介质,三者方向一致时称为各向同性介质。
+
+对于各向同性介质, $\boldsymbol{D}$ 与 $\boldsymbol{E}$ 的关系可表示为
+
+$$
+D=\varepsilon E
+$$
+
+$\varepsilon$ 为介质的介电系数。 $\varepsilon$ 通常可表示为
+
+$$
+\varepsilon=\varepsilon_{\mathrm{r}} \varepsilon_{0}
+$$
+
+$\varepsilon_{\mathrm{r}}$ 称为相对介电系数, $\varepsilon_{0}$ 为真空中介质的介电系数。
+
+当某空间中 $\varepsilon$ 不是电场强度的函数时,该介质称为线性介质。当空间中介电系数与坐标 无关时, 称之为均匀介质。
+
+本部分内容限定在讨论各向同性、线性均匀或非均匀媒质中的场。此处非均匀系指空间 存在多种介质, 但在每一介质区域范围内,介质又是均匀的情况。
+
+基本方程表示静电场为无旋度源场, 即无旋场,因而空间任一点的电位或任意两点间的电 压的计算将与路径无关。为此,适当地选择计算路径将会简化计算过程,通常选取沿场强方向 和垂直场强 (此时 $\boldsymbol{E} \cdot \mathrm{d} \boldsymbol{l}=0$ ) 的路线计算。静电场的散度不可能处处为零, 有电荷存在的位置 其散度不会是零, 电荷是产生静电场的原因。
+
+任意无旋场都可以用标量电位函数表示, 对于静电场可引人标量电位 $\varphi$, 二者关系为
+
+$$
+\boldsymbol{E}=-\nabla_{\varphi}
+$$
+
+电位 $\varphi$ 满足泊松方程, 即
+
+$$
+\nabla^{2} \varphi=-\rho / \varepsilon
+$$
+
+若研究区间无电荷存在, $\varphi$ 满足拉普拉斯方程, 即
+
+$$
+\nabla^{2} \varphi=0
+$$
+
+泊松方程和拉普拉斯方程都是偏微分方程, 必须给出边界条件才可定解。三维方程求解 很繁,即使二维方程的解析解也往往需要借助分离变量法或复变函数求解。但对一维情况,其 求解过程一般还是比较方便的。
+
+(2) 分界面条件
+
+在两种介质的分界面处,场量一般要发生变化。假设分界面处取 法向如图 1.6-2 所示,则由基本方程不难导得
+
+$$
+\left\{\begin{array}{l}
+E_{1 t}=E_{2 t} \\
+D_{2 n}-D_{1 n}=\sigma
+\end{array}\right.
+$$
+
+式中表示分界面两侧相邻近点的电场强度的切向分量 $E_{1 t}$ 和 $E_{2 t}$ 相等,
+
+$$
+D_{2 n}=D_{1 n} \text { 。 }
+$$
+
+用电位表示的分界面条件为
+
+$$
+\left\{\begin{array}{l}
+\varphi_{1}=\varphi_{2} \\
+-\varepsilon_{2} \frac{\partial \varphi_{2}}{\partial n}+\varepsilon_{1} \frac{\partial \varphi_{1}}{\partial n}=\sigma
+\end{array}\right.
+$$
+
+各向同性介质中, 若分界面处无面电荷分布, 则可导得所谓的折射定律, 即
+
+$$
+\frac{\tan \alpha_{1}}{\tan \alpha_{2}}=\frac{\varepsilon_{1}}{\varepsilon_{2}}
+$$
+
+如果用导体代替第一种介质, 则显然存在 $D_{2 n}=\sigma$, 导体表面的面电荷密度等于电位移 (只存在 法向分量）。反之,存在 $D_{1 n}=-\sigma_{\text {。 }}$
+
+分界面条件十分重要, 它是分析场的分布特点的一条重要理论依据。
+
+## (3) 常用术语
+
+电场线: 为了形象地描述电场, 引入电场线 (电力线) 概念, 电场线是有方向的曲线, 其方 向 (或曲线任一点的切线方向) 表示该点场强的方向, 电场线的疏密表示其附近场强的大小。 值得指出的是, 电场线是按一定规则绘制的。
+
+平行平面场:垂直于某一直线的各个平面上的场的分布都一样。
+
+子午平面场:场中存在一轴线,过轴线的任一半平面上的场的分布都是一样的场。
+
+击穿强度:介质能够承受的最大电场强度, 超过此值后介质将被击穿, 失去介质性质。
+
+静电独立系统: 系统内的电场不受外部情况影响, 系统内电场也不影响系统外部, 这样的 系统中全部带电体所带有的电荷代数和为零。静电屏蔽可把空间分隔为不同的系统。
+
+孤立带电导体:有时会碰到孤立导体的电位和电容等提法, 这种提法实际必须考虑无穷远 处存在与之等量异号的电荷。“孤立体带电荷为 $q$, 求空间电场”, 该问题更严密的说法还应加 上在无穷远处存在总电量为 $-q$ 的电荷, 这样才满足静电独立系统。而孤立导体的电容实际 是该导体相对于无穷远处的电容。
+
+## 4. 常用数学知识
+
+无论是电场, 还是磁场, 它们都是向量场。电磁场理论涉及的数学知识较多, 掌握好这些 知识是学好电磁场的基础。下面将围绕常用的直角坐标系、圆柱坐标系和球面坐标系三种正 交坐标系做一简单介绍。
+
+(1) 直角坐标系
+
+直角坐标系中点与向量具有一一对应关系, 图 1.6-3
+
+$$
+\begin{aligned}
+& \boldsymbol{R}^{\prime}=x^{\prime} \boldsymbol{e}_{x}+y^{\prime} \boldsymbol{e}_{y}+z^{\prime} \boldsymbol{e}_{z} \\
+& \boldsymbol{R}=x \boldsymbol{e}_{x}+y \boldsymbol{e}_{y}+z \boldsymbol{e}_{z}
+\end{aligned}
+$$
+
+而 $A$ 点与 $B$ 点连线对应的 $r$ 向量为
+
+$$
+\boldsymbol{r}=\boldsymbol{R}-\boldsymbol{R}^{\prime}=\left(x-x^{\prime}\right) \boldsymbol{e}_{x}+\left(y-y^{\prime}\right) \boldsymbol{e}_{y}+\left(z-z^{\prime}\right) \boldsymbol{e}_{z}{ }^{\prime}
+$$
+
+式中 $e_{x} 、 e_{y}$ 与 $e_{z}$ 分别表示 $x$ 方向、 $y$ 方向和 $z$ 方向的单位向 量, 并且存在关系
+
+$$
+\boldsymbol{e}_{x} \times \boldsymbol{e}_{y}=\boldsymbol{e}_{z}, \boldsymbol{e}_{y} \times \boldsymbol{e}_{z}=\boldsymbol{e}_{x}, \boldsymbol{e}_{z} \times \boldsymbol{e}_{x}=\boldsymbol{e}_{y}
+$$
+
+$$
+\begin{aligned}
+& e_{x} \cdot e_{x}=e_{y} \cdot e_{y}=e_{z} \cdot e_{z}=1 \\
+& e_{x} \cdot e_{y}=e_{y} \cdot e_{z}=e_{z} \cdot e_{x}=0
+\end{aligned}
+$$
+
+必须注意: 工程上一般采用右旋坐标系统, 即右手四指由 $x$ 轴经 $90^{\circ}$ 绕至 $y$ 轴, 拇指指向应 为 $z$ 轴方向。否则, 上述表达式不正确。
+
+$$
+r=|r|=\sqrt{\left(x-x^{\prime}\right)^{2}+\left(y-y^{\prime}\right)^{2}+\left(z-z^{\prime}\right)^{2}}
+$$
+
+$r$ 向量的单位向量
+
+$$
+e_{r}=\frac{r}{|r|}=\frac{\left(x-x^{\prime}\right) e_{x}+\left(y-y^{\prime}\right) e_{y}+\left(z-z^{\prime}\right) e_{z}}{\sqrt{\left(x-x^{\prime}\right)^{2}+\left(y-y^{\prime}\right)^{2}+\left(z-z^{\prime}\right)^{2}}}
+$$
+
+对于任一标量函数 $g(x, y, z)$, 其梯度为
+
+$$
+\operatorname{gradg}(x, y, z)=\frac{\partial g}{\partial x} e_{x}+\frac{\partial g}{\partial y} e_{y}+\frac{\partial g}{\partial z} e_{z}
+$$
+
+若引人那勃勒算子符号 $\boldsymbol{\nabla}$, 即
+
+$$
+\boldsymbol{\nabla}=\frac{\partial}{\partial x} \boldsymbol{e}_{x}+\frac{\partial}{\partial y} \boldsymbol{e}_{y}+\frac{\partial}{\partial z} \boldsymbol{e}_{z}
+$$
+
+则可得
+
+$$
+\operatorname{grad} g=\nabla g
+$$
+
+任一向量场 $\boldsymbol{A}(x, y, z)$ 的散度表示场的散度源, 其计算式为
+
+$$
+\operatorname{div} A(x, y, z)=\frac{\partial A_{x}}{\partial x}+\frac{\partial A_{y}}{\partial y}+\frac{\partial A_{z}}{\partial z}
+$$
+
+或记为
+
+$$
+\operatorname{div} \boldsymbol{A}=\boldsymbol{\nabla} \cdot \boldsymbol{A}
+$$
+
+散度值为一标量。
+
+任一向量场 $\boldsymbol{A}(x, y, z)$ 的旋度表示场的旋度源, 其计算公式为
+
+$$
+\operatorname{curl} \boldsymbol{A}(x, y, z)=\left(\frac{\partial A_{z}}{\partial y}-\frac{\partial A_{y}}{\partial z}\right) \boldsymbol{e}_{x}+\left(\frac{\partial A_{x}}{\partial z}-\frac{\partial A_{z}}{\partial x}\right) \boldsymbol{e}_{y}+\left(\frac{\partial A_{y}}{\partial x}-\frac{\partial A_{x}}{\partial y}\right) \boldsymbol{e}_{z}
+$$
+
+或记为
+
+$$
+\operatorname{curl} \boldsymbol{A}=\boldsymbol{\nabla} \times \boldsymbol{A}
+$$
+
+旋度值为一向量。
+
+直角坐标系中拉普拉斯算子为
+
+$$
+\nabla^{2}=\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}
+$$
+
+在梯度、散度和旋度的计算中,引人那勃勒算子后可使表达式简洁, 并且它们遵从向量点 乘或叉乘的法则。
+
+## (2) 圆柱坐标系
+
+将直角坐标系中 $x O y$ 平面的 $x$ 和 $y$ 坐标采用极坐标 $r$ 和 $\alpha$ 表示, 则形成圆柱坐标系。其 中 $r$ 为与 $z$ 轴的距离, $\alpha$ 表示拇指指向 $z$ 轴时,四指由 $x$ 轴开始绕过的角度。
+
+圆柱坐标系与直角坐标系不同,它的三个方向除 $z$ 轴方向固定不变外, $r$ 和 $\alpha$ 的方向均随 空间坐标位置的变化而变化，因此在向量叠加时将会遇到困难,其中尤以 $e_{\alpha}$ 方向最难表示。
+
+考虑这是正交坐标系,则应用
+
+$$
+e_{z} \times e_{r}=e_{\alpha}
+$$
+
+很容易将 $\boldsymbol{e}_{\alpha}$ 用 $\boldsymbol{e}_{z}$ 和 $\boldsymbol{e}_{r}$ 表示, 而 $\boldsymbol{e}_{r}$ 也可方便地用直角坐标表示, 即
+
+$$
+e_{r}=\cos \alpha e_{x}+\sin \alpha e_{y}
+$$
+
+这样在需要的时候, 都可以方便地转化为直角坐标系中的分量, 叠加计算就十分方便了。
+
+圆柱坐标系中的梯度计算公式为
+
+$$
+\nabla g(x, y, z)=\frac{\partial g}{\partial r} e_{r}+\frac{1}{r} \frac{\partial g}{\partial \alpha} e_{\alpha}+\frac{\partial g}{\partial z} e_{z}
+$$
+
+散度计算公式为
+
+旋度计算式为
+
+$$
+\boldsymbol{\nabla} \cdot \boldsymbol{A}(x, y, z)=\frac{1}{r} \frac{\partial}{\partial r}(r A r)+\frac{1}{r} \frac{\partial A_{\alpha}}{\partial \alpha}+\frac{\partial A_{z}}{\partial z}
+$$
+
+$$
+\boldsymbol{\nabla} \times \boldsymbol{A}=\left(\frac{1}{r} \frac{\partial A_{z}}{\partial \alpha}-\frac{\partial A_{\alpha}}{\partial z}\right) \boldsymbol{e}_{r}+\left(\frac{\partial A_{r}}{\partial z}-\frac{\partial A_{z}}{\partial r}\right) \boldsymbol{e}_{\alpha}+\frac{1}{r}\left[\frac{\partial}{\partial r}\left(r A_{\alpha}\right)-\frac{\partial A_{r}}{\partial \alpha}\right] \boldsymbol{e}_{z}
+$$
+
+$\nabla^{2} g(x, y, z)$ 的展开式为
+
+$$
+\nabla^{2} g(x, y, z)=\frac{1}{r} \frac{\partial}{\partial r}\left(r \frac{\partial g}{\partial r}\right)+\frac{1}{r^{2}} \frac{\partial^{2} g}{\partial \alpha^{2}}+\frac{\partial^{2} g}{\partial z^{2}}
+$$
+
+(3) 球面坐标系
+
+球面坐标系坐标变量为 $r 、 \alpha$ 和 $\theta, r$ 为点到坐标原点的距离, $\alpha$ 为 $r$ 在 $x O y$ 平面上投影与 $x$ 轴间的夹角, $\theta$ 为 $r$ 与 $z$ 轴间的夹角。
+
+球面坐标系适合辐射对称场的计算, 例如点电荷或球面均匀分布电荷等在无限大均匀媒 质中形成的电场的计算。
+
+球面坐标系中标量函数 $g(x, y, z)$ 的梯度计算公式为
+
+$$
+\nabla g(x, y, z)=\frac{\partial g}{\partial r} e_{r}+\frac{1}{r} \frac{\partial g}{\partial \theta} e_{\theta}+\frac{1}{r \sin \theta \partial \alpha} e_{\alpha}
+$$
+
+其散度和梯度公式较繁, 这里从略。
+
+在实际计算中,常会通到多个场源问时存在的情况, 例如后面碰到的二线输电线等问题, 一开始就把问题放在一个统一的坐标系中进行计算, 往往会造成式子十分庞大,而对不同场源 分别选取不同的坐标系表示往往步骤十分简单, 如果需要的话, 最后再用统一的坐标变量给 出,往往会有利于求解过程的简化。
+
+值得指出的是: 本部分内容涉及的积分并不复杂, 大量问题涉及的仅是 $\frac{1}{r}$ 或 $\frac{1}{r}$ 的积分。更 复杂的积分是存在的,但由于过程十分复杂, 这里不再列举了。
+
+### 2 用高斯定律计算具有对称性分布的静电场问题
+
+高斯定律的一般形式为
+
+$$
+\oint_{S} D \cdot \mathrm{d} S=\oint_{V} \rho \mathrm{d} V
+$$
+
+高斯定律是静电场的基本定律之一,该定律将场源即电荷与场量联系在一起。在任意闭 合曲面上, 电位移向量的面积分恒等于该闭合曲面内所有自由电荷的代数和。该公式的计算 不需要考虑束缚电荷,因此使用十分方便。
+
+电位移向量在闭合面上的面积分与介质分布无关, 这并不说明电位移的分布与介质无关。 例如空气介质圆柱电容器, 当内外导体所带电荷量为固定值时, 整个内导体单位长度所带电荷 也为定值, 此时在此电容器注人一定的液态电介质, 则导体所带电荷将重新分布, 同时电场会 变化。
+
+在各向同性线性介质中,存在关系式
+
+$$
+D=\varepsilon E
+$$
+
+因此, 通过高斯定律求得 $\boldsymbol{D}$, 则电场强度不难计算, 介电系数 $\varepsilon$ 通常都是已知的。
+
+利用高斯定律可以方便地求得某些对称电场, 而判断电场的对称性则依赖于电荷与媒质 分布的特点。
+
+## 1. 辐射对称场
+
+辐射对称场表现为其场量仅是球面坐标系中 $r$ 的函数,其场源往往是点、球面、球壳或球 体等分布电荷,周围介质分布也不会与球坐标系中的角度相关。
+
+最简单的辐射对称场是由点电荷和带电金属球 (实心或空心) 在无限大均匀介质中产生 的电场。若金属球所带电量为 $q$, 金属球的半径为 $R$, 则金属球内的场强将为零, 金属球外的场 强
+
+$$
+\boldsymbol{E}=\frac{q}{4 \pi \varepsilon r^{2}} \boldsymbol{e}_{r} \quad(r \geqslant R)
+$$
+
+若设无穷远处为电位参考点, 则
+
+$$
+\varphi=\int_{r}^{\infty} E \cdot \mathrm{d} r=\int_{r}^{\infty} \frac{q}{4 \pi \varepsilon r^{2}} e_{r} \cdot e_{r} \mathrm{~d} r=\frac{q}{4 \pi \varepsilon r} \quad(r \geqslant R)
+$$
+
+金属球的电位等于球面的电位, 为一定值, 即
+
+$$
+\varphi=\frac{q}{4 \pi \varepsilon R}
+$$
+
+下面是几个典型辐射对称场的计算实例。
+
+【例 1. 6-5】无限大真空中同心金属球壳的尺寸如图 1.6-4 所示, 它们分别带有电量 $q_{1}$ 和 $q_{2}$, 试求各点的电场强度和电位。
+
+解:由于介质分布的对称性, $q_{1}$ 将均匀分布在内导体球的外表面 处, 而半径为 $R_{2}$ 的球壳内表面将均匀分布有总电量为 $-q_{1}$ 的电荷, $q_{1}$ $+q_{2}$ 均匀分布在半径为 $R_{3}$ 的球壳外表面处。
+
+以球心为半径的任一闭合球面上,电位移的大小将相等,其方向与 $e_{r}$ 方向一致。故高斯定律可表示为
+
+$$
+D \cdot 4 \pi r^{2}=\Sigma q
+$$
+
+再考虑 $\boldsymbol{D}=\varepsilon_{0} \boldsymbol{E}$, 则得解答
+
+$$
+\begin{aligned}
+& E=0 \quad\left(r<R_{1} \text { 及 } R_{2}<r<R_{3}\right) \\
+& \boldsymbol{E}=\frac{q_{1}}{4 \pi \varepsilon_{0} r^{2}} e_{r} \quad\left(R_{1} \leqslant r \leqslant R_{2}\right) \\
+& \boldsymbol{E}=\frac{q_{1}+q_{2}}{4 \pi \varepsilon_{0}{ }^{2}} e_{r} \quad\left(r \geqslant R_{3}\right)
+\end{aligned}
+$$
+
+若设无穷远处电位为零, 则
+
+$$
+\begin{aligned}
+& \varphi=\int_{l} \boldsymbol{E} \cdot \mathrm{d} l=\int_{r}^{\infty} \frac{q_{1}+q_{2}}{4 \pi \varepsilon_{0} r^{2}} \mathrm{~d} r=\frac{q_{1}+q_{2}}{4 \pi \varepsilon_{0} r} \quad\left(r \geqslant R_{3}\right) \\
+& \varphi=\int_{,}^{R_{2}} \frac{q_{1}}{4 \pi \varepsilon_{0} r^{2}} \mathrm{~d} r+\int_{R_{3}}^{\infty} \frac{q_{1}+q_{2}}{4 \pi \varepsilon_{0} r^{2}} \mathrm{~d} r=\frac{q_{1}}{4 \pi \varepsilon_{0}}\left(\frac{1}{r}-\frac{1}{R_{2}}\right)+\frac{q_{1}+q_{2}}{4 \pi \varepsilon_{0} R_{3}} \quad\left(R_{1} \leqslant r \leqslant R_{2}\right)
+\end{aligned}
+$$
+
+外球壳的电位
+
+$$
+\varphi=\frac{q_{1}+q_{2}}{4 \pi \varepsilon_{0} R_{3}}
+$$
+
+内球体的电位
+
+$$
+\varphi=\frac{q_{1}}{4 \pi \varepsilon_{0}}\left(\frac{1}{R_{1}}-\frac{1}{R_{2}}\right)+\frac{q_{1}+q_{2}}{4 \pi \varepsilon_{0} R_{3}}
+$$
+
+若此题 $q_{1}=-q_{2}$, 则 $r \geqslant R_{3}$ 处 $E$ 将等于 0 , 而外球壳的电位也将变为 0 。
+
+【例 1.6-6】图 1.6-5 为一双层介质的球形电容器, 若内外导 体间施加电压 $U_{0}$, 试求介质中的电场强度。
+
+解: 这是一个辐射对称场。设内导体所带电量为 $q$, 则由高斯 定律可求得
+
+$$
+\begin{aligned}
+E_{1} & =\frac{q}{4 \pi \varepsilon_{1} r^{2}} e_{r} \quad\left(R_{1}<r<R_{2}\right) \\
+E_{2} & =\frac{q}{4 \pi \varepsilon_{2} r^{2}} e_{r} \quad\left(R_{2}<r<R_{3}\right) \\
+U_{0} & =\int_{R_{1}}^{R_{2}} E_{1} \cdot \mathrm{d} r+\int_{R_{2}}^{R_{3}} E_{2} \cdot \mathrm{d} r \\
+& =\frac{q}{4 \pi \varepsilon_{1}}\left(\frac{1}{R_{1}}-\frac{1}{R_{2}}\right)+\frac{q}{4 \pi \varepsilon_{2}}\left(\frac{1}{R_{2}}-\frac{1}{R_{3}}\right)
+\end{aligned}
+$$
+
+由此可得
+
+$$
+\frac{q}{4 \pi}=\frac{U_{0}}{\frac{1}{\varepsilon_{1}}\left(\frac{1}{R_{1}}-\frac{1}{R_{2}}\right)+\frac{1}{\varepsilon_{2}}\left(\frac{1}{R_{2}}-\frac{1}{R_{3}}\right)}
+$$
+
+将上式代人 $\boldsymbol{E}_{1}$ 和 $\boldsymbol{E}_{2}$ 二式,即为用 $U_{0}$ 表示的二介质中的场强。
+
+【例 1.6-7】介电系数为 $\varepsilon_{0}$ 的无限大均匀介质中, 在半径 $r \leqslant R$ 的球形域中均匀分布着体 密度为 $\rho$ (常数) 的电荷, 试求空间任一点处的电场强度和电位。
+
+解:介质与电荷分布均满足辐射对称, 可用高斯定律求解。
+
+当 $r \leqslant R$ 时
+
+$$
+\begin{aligned}
+& D \cdot 4 \pi r^{2}=\int_{0}^{r} \rho 4 \pi r^{2} \mathrm{~d} r=\rho \frac{4}{3} \pi r^{3} \\
+& \boldsymbol{E}=\frac{\boldsymbol{D}}{\varepsilon}=\frac{\rho r}{3 \varepsilon_{0}} \boldsymbol{e}_{r}
+\end{aligned}
+$$
+
+当 $r>R$ 时
+
+$$
+\begin{aligned}
+& D=4 \pi r^{2}=\rho \frac{4}{3} \pi R^{3} \\
+& F=\frac{\rho R^{3}}{3 \varepsilon_{0} r^{2}} e_{r}
+\end{aligned}
+$$
+
+设无穷远处电位为零, 则
+
+$$
+\begin{aligned}
+& \varphi=\int_{,}^{\infty} \frac{\rho R^{3}}{3 \varepsilon_{0} r^{2}} \mathrm{~d} r=\frac{\rho R^{3}}{3 \varepsilon_{0} r} \quad(r>R) \\
+& \varphi=\int_{,}^{R} \frac{\rho r}{3 \varepsilon_{0}} \mathrm{~d} r+\int_{R}^{\infty} \frac{\rho R^{3}}{3 \varepsilon_{0} r^{2}} \mathrm{~d} r=\frac{\rho}{6 \varepsilon_{0}}\left(R^{2}-r^{2}\right)+\frac{\rho R^{2}}{3 \varepsilon_{0}}=\frac{\rho R^{2}}{2 \varepsilon_{0}}-\frac{\rho r^{2}}{6 \varepsilon_{0}} \quad(r \leqslant R)
+\end{aligned}
+$$
+
+## 2. 平面辐射对称场
+
+在圆柱坐标系 $(r, \boldsymbol{\alpha}, z)$ 中, 如果场量仅与 $r$ 相关, 即在半径为 $r$ 的圆柱面上, 场量的大小都 相等, 方向也仅是 $e_{r}$ 方向, 这种场可称为平面辐射对称场。应用高斯定律时, 可做一同轴圆柱 面, 其上下二底面由于场量方向 $\boldsymbol{e}_{\boldsymbol{r}}$ 与面的外法向垂直而构不成通量, 它的侧表面上场量与表 面外法向一致而又大小相等, 因此高斯定律左端变成场量大小与侧表面面积的乘积, 从而可以 方便地求得场。这种场的场源一般表现为无限大均匀媒质或分层圆柱对称介质中的无限长均 匀分布的线电荷、圆柱面电荷或圆柱体电荷。
+
+如果在无限大均匀介质中存在一无限长均匀分布的线密度为 $\tau$ 的线电荷, 则以线电荷所 在位置为 $z$ 轴, 任意半径 $r$ 处的电场强度值为
+
+$$
+\boldsymbol{E}=\frac{\tau}{z \pi \varepsilon r} \boldsymbol{e}_{r}
+$$
+
+必须注意: 这种电荷分布在求电位分布时, 不能将参考点取在无穷远处。
+
+【例 1.6-8】长为 $L$ 的圆柱形电容器, 内外导体的半径分别为 $R_{1}$ 和 $R_{2}$, 导体之间填充介 电系数为 $\dot{\varepsilon}$ 的介质, 若在二导体间施加电压 $U_{0}$, 试求内导体上所带的电荷 (忽略边缘效应)。
+
+解: 忽略边缘效应即表示该问题可以按无限长圆柱体计算。设内导体单位长所带电量为 $\tau$, 则 $R_{1} \leqslant r \leqslant R_{2}$ 区间存在.
+
+$$
+E=\frac{\tau}{2 \pi \varepsilon r} e_{r}
+$$
+
+内外导体间电压
+
+内导体所带电荷量
+
+$$
+U_{0}=\int_{R_{1}}^{R_{2}} \frac{\tau}{2 \pi \varepsilon r} \mathrm{~d} r=\frac{\tau}{2 \pi \varepsilon} \ln \frac{R_{2}}{R_{1}}
+$$
+
+$$
+q=\tau \cdot L=\frac{2 U_{0} \pi \varepsilon L}{\ln \frac{R_{2}}{R_{1}}}
+$$
+
+【例 1.6-9】无限长圆柱区间均匀分布电荷体密度为 $\rho$ 的电荷, 设周围介质的介电系数 为 $\varepsilon_{0}$, 试求空间任一点处的电场强度 (如图 1.6-6 所示)。
+
+解: 用高斯定律求解, 分柱内与柱外两部分 (柱外包围电荷为定 值)。取单位长度圆柱面, 则 $0 \leqslant r \leqslant R$ 时, 有
+
+$$
+\begin{aligned}
+& D \cdot 2 \pi r=\rho \cdot \pi r^{2} \\
+& E=\frac{\rho r}{2 \varepsilon_{0}} \boldsymbol{e}_{r}
+\end{aligned}
+$$
+
+$r>R$ 时, 有
+
+$$
+D \cdot 2 \pi r=\rho \cdot \pi R^{2}
+$$
+
+$$
+\boldsymbol{E}=\frac{\rho R^{2}}{2 \varepsilon_{0} r} \boldsymbol{e}_{r}
+$$
+
+【例 1.6-10】双层介质的同轴电缆横断面如图 1.6-7 所示, 当内外导体间施加电压 $U_{0}$ 时, 试求电缆内的电位分布 (设导体外皮电位为 0 )。
+
+解: 同轴电缆一般都可视为无限长,故可用高斯定律求解。设内导 体单位长所带电荷为 $\tau$, 则
+
+$$
+\begin{aligned}
+& E=\frac{\tau}{2 \pi \varepsilon_{1} r} e_{r} \quad\left(R_{1}<r<R_{2}\right) \\
+& E=\frac{\tau}{2 \pi \varepsilon_{2} r} e_{r} \quad\left(R_{2}<r<R_{3}\right) \\
+& U_{0}=\int_{R_{1}}^{R_{2}} \frac{\tau}{2 \pi \varepsilon_{1} r} \mathrm{~d} r+\int_{R_{2}}^{R_{3}} \frac{\tau}{2 \pi \varepsilon_{2} r} \mathrm{~d} r=\frac{\tau}{2 \pi \varepsilon_{1}} \ln \frac{R_{2}}{R_{1}}+\frac{\tau}{2 \pi \varepsilon_{2}} \ln \frac{R_{3}}{R_{2}}
+\end{aligned}
+$$
+
+由此可解出
+
+$$
+\begin{aligned}
+& \tau=\frac{U_{0}}{\frac{1}{2 \pi \varepsilon_{1}} \ln \frac{R_{2}}{R_{1}}+\frac{1}{2 \pi \varepsilon_{2}} \ln \frac{R_{3}}{R_{2}}} \\
+& \varphi=\int_{r}^{R_{3}} \frac{\tau}{2 \pi \varepsilon_{2} r} \mathrm{~d} r=\frac{\tau}{2 \pi \varepsilon_{2}} \ln \frac{R_{3}}{r} \quad\left(R_{2} \leqslant r \leqslant R_{3}\right) \\
+& \varphi=\int_{r}^{R_{2}} \frac{\tau}{2 \pi \varepsilon_{1} r} \mathrm{~d} r+\int_{R_{2}}^{R_{3}} \frac{\tau}{2 \pi \varepsilon_{2} r} \mathrm{~d} r=\frac{\tau}{2 \pi \varepsilon_{1}} \ln \frac{R_{2}}{r}+\frac{\tau}{2 \pi \varepsilon_{2}} \ln \frac{R_{3}}{R_{2}} \quad\left(R_{1} \leqslant r \leqslant R_{2}\right)
+\end{aligned}
+$$
+
+将 $\tau$ 值代人, 即可得到以 $U_{0}$ 表示的电位值。
+
+## 3. 面对称场
+
+$$
+\begin{aligned}
+& \boldsymbol{E}=\frac{\sigma}{2 \boldsymbol{\varepsilon}} \boldsymbol{e}_{\boldsymbol{x}} \quad(x>0) \\
+& \boldsymbol{E}=-\frac{\boldsymbol{\sigma}}{2 \varepsilon} \boldsymbol{e}_{x} \quad(x<0)
+\end{aligned}
+$$
+
+面对称场通常处于无限大均匀媒质中, 其场强只与直角坐标系中一个变量相关。
+
+【例 1.6-11】二无限大均匀带电面电荷空间位置如图1.6-9所示， 试求空间各点处的电场强度 (设介质的介电系数为 $\varepsilon_{0}$ )。
+
+解: 利用静电场的叠加定理, 让两个电荷各自单独作用, 由于它们 带等量异号的电荷, 故
+
+$$
+\begin{aligned}
+& \boldsymbol{E}=\frac{\sigma}{\varepsilon_{0}} \boldsymbol{e}_{x} \quad(-d<x<d) \\
+& \boldsymbol{E}=0 \quad(|x|>d)
+\end{aligned}
+$$
+
+【例 1.6-12】在无限大真空中, $|z| \leqslant d$ 的空间分布有体密度为 $\rho$ 的均匀电荷, 试求空间 各点的电场强度。
+
+解: 为分析方便, 作图 1.6-10。 由面动得体可知,该体电荷可以看成无穷多个与 $z$ 轴垂直的 面电荷组成, 由对称性不难理解, $x O y$ 平面上的场强为零。在 $|z|>d$ 或 $|z| \leqslant d$ 的区间,电场强度只具有 $z$ 方向值。
+
+在 $x O y$ 平面上作一边长等于 $1 \mathrm{~m}$ 的正方形,取高为 $|z|$, 构成 一立方体, 则仅在 $z \neq 0$ 的平面上场强构成通量, 由高斯定律可得 $-d \leqslant z \leqslant d$ 时
+
+$$
+E=\frac{\rho z}{\varepsilon_{0}} e_{z}
+$$
+
+$z>d$ 时
+
+$$
+\begin{aligned}
+\boldsymbol{E} & =\frac{\rho d}{\varepsilon_{0}} \boldsymbol{e}_{z} \\
+z<-d \text { 时 } & \\
+\boldsymbol{E} & =-\frac{\rho d}{\varepsilon_{0}} \boldsymbol{e}_{z}
+\end{aligned}
+$$
+
+类似此例题, 许多种体电荷组合也可以通过上述方法进行分析计算。即使 $\rho$ 不是常数, 只 要 $\rho$ 仅仅是 $z$ 的函数, 也可以仿照上述方法进行计算, 不过电荷的计算却要通过积分方可求 得。
+
+必须指出, 以上计算都是在无限大均匀介质条件下进行的, 如果场中存在导体, 则分析将 困难得多,甚至无法求出解析表达式。
+
+## 4. 场的要加性
+
+线性媒质中, 电荷形成的场可用叠加方法进行计算。但必须注意, 电荷可以单独作用, 而 周围媒质却必须保持不变。
+
+典型实例之一是计算二线输电线的电场。设导线半径等 于 $a$ 的两根平行架设的长直圆截面导线带有等量异号电荷, 如 图 1.6-11 所示。假如二线间距离远大于导线半径, 即可用叠 加法计算。
+
+导线很长, 可以视为平行平面场, 即忽略边缘效应, 这在工 程上是允许的。垂直输电线任取一平面坐标系如图 1.6-11 所 示, 由于导线截面积很小, 因此忽略其对介质均匀性的破坏是 合理的。当 $\tau$ 与 $-\tau$ 单独作用时, 其各自形成的电场均以各自 中心对称,故
+
+$$
+E=\frac{\tau}{2 \pi \varepsilon_{0} r_{1}} e_{r 1}+\frac{-\tau}{2 \pi \varepsilon_{0} r_{2}} e_{r 2}
+$$
+
+如果一定要写成坐标统一的变量表示, 则可代人
+
+$$
+\begin{aligned}
+& \frac{\boldsymbol{e}_{r 1}}{r_{1}}=\frac{r_{1}}{r_{1}^{2}}=\frac{(x-b) \boldsymbol{e}_{x}+y \boldsymbol{e}_{y}}{(x-b)^{2}+y^{2}} \\
+& \frac{\boldsymbol{e}_{r 2}}{r_{2}}=\frac{r_{2}}{r_{2}^{2}}=\frac{(x+b) \boldsymbol{e}_{x}+y \boldsymbol{e}_{y}}{(x+b)^{2}+y^{2}}
+\end{aligned}
+$$
+
+由于 $y O z$ 平面距二线距离相等, 而 $\tau$ 与 $-\tau$ 在该面上产生的电位合成后必为零, 故可设 $y$ 轴电位为参考电位, 通过推导, 不难得出此时任一场点的电位
+
+$$
+\varphi=\frac{\tau}{2 \pi \varepsilon_{0}} \ln \frac{r_{2}}{r_{1}}=\frac{\tau}{2 \pi \varepsilon_{0}} \ln \frac{\sqrt{(x+b)^{2}+y^{2}}}{\sqrt{(x-b)^{2}+y^{2}}}
+$$
+
+最后应当指出的是: 导线中的电场应为 0 , 而两根导线的电位也各自为定值, 上述公式只 适合计算导线外部场, 导线电位可通过代人导体表面处任一点的坐标求得,最方便的点是导线 与 $x$ 轴相交的点。
+
+顺便指出，当空间具有多对平行架设的输电线时，只要导线截面对介质均匀性的破坏可以 忽略, 即可利用上述公式一一叠加。要注意的是, 电场强度应按向量叠加, 而电位是标量叠加。
+
+### 3 静电场边值问题的镜像法和电轴法
+
+对于均匀介质, 静电场满足泊松方程
+
+$$
+\nabla^{2} \varphi=-\frac{\rho}{\varepsilon}
+$$
+
+如果研究的区间无电荷, 即 $\rho=0$, 则满足拉普拉斯方程
+
+$$
+\nabla^{2} \varphi=0
+$$
+
+式中拉普拉斯算子 $\nabla^{2}$ 在直角坐标系中的展开式为
+
+$$
+\nabla^{2}=\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}
+$$
+
+静电场中电位函数与时间无关,其积分常数要依靠边界条件确定。可以证明,满足边界条 件的泊松方程或拉普拉斯方程的解答是唯一的,这就是静电场问题中的解答唯一性定理。
+
+静电场的边界条件主要分为三类:第一类是已知各导体的电位;第二类是已知各导体表面 上的电荷面密度 $\sigma$, 由于 $\sigma=-\varepsilon \frac{\partial \varphi}{\partial n}$, 故也可以说已知各导体表面上电位的法向导数; 第三类 问题是由上述两类组合而成的所谓混合边界条件,即已知某些导体的电位,而另一些导体已知 的是电位在其表面处的法向导数。
+
+最简单的边值问题计算是一维问题，此时泊松方程或拉普拉斯方程简化为常微分方程。 这一类问题的求解有时是十分方便的。
+
+例如图 1.6-12 所示的平板电容器, 中间介质为均匀介质, 其介电 系数为 $\varepsilon_{0}$, 二极板间分布有体密度为 $\rho$ 的均匀分布电荷, 极板间电压 为 $U_{0}$ 。欲求该电容器内部的场, 可以通过高斯定律求解, 但如此求解 需假设二极板上带有面电荷 $\sigma_{A}$ 和 $\sigma_{B}$, 且 $\sigma_{A}$ 不一定等于 $\sigma_{B}$, 显然这 样做并不方便。如果用泊松方程求解,则可以写出
+
+$$
+\frac{\mathrm{d}^{2} \varphi}{\mathrm{d} x^{2}}=-\rho / \varepsilon_{0}
+$$
+
+积分两次可得方程通解为
+
+$$
+\varphi=-\frac{\rho}{2 \varepsilon_{0}} x^{2}+C_{1} x+C_{2}
+$$
+
+$C_{1}$ 和 $C_{2}$ 为待定的积分常数。
+
+假如设 $A$ 极板的电位为零 (参考点), 则边界条件为
+
+$$
+\begin{aligned}
+& \left.\varphi\right|_{x=0}=0 \\
+& \left.\varphi\right|_{x=d}=-U_{0}
+\end{aligned}
+$$
+
+代人通解可得 $C_{1}$ 和 $C_{2}$ 分别为
+
+$$
+C_{2}=0, C_{1}=\frac{-U_{0}}{d}+\frac{\rho d}{2 \varepsilon_{0}}
+$$
+
+因此
+
+$$
+\varphi=-\frac{\rho}{2 \varepsilon_{0}} x^{2}+\left(\frac{-U_{0}}{d}+\frac{\rho d}{2 \varepsilon_{0}}\right) x
+$$
+
+电场强度可通过电位梯度求解, 即
+
+$$
+\boldsymbol{E}=-\nabla_{\varphi}=-\frac{\mathrm{d} \varphi}{\mathrm{d} x} \boldsymbol{e}_{x}=\left(\frac{\rho}{\varepsilon_{0}} x+\frac{U_{0}}{d}-\frac{\rho d}{2 \varepsilon_{0}}\right) \boldsymbol{e}_{x}
+$$
+
+由分界面条件可得极板上电荷面密度为
+
+$$
+\begin{aligned}
+& \sigma_{A}=\left.D\right|_{x=0}=\left.\varepsilon_{0} E\right|_{x=0}=\frac{\varepsilon_{0} U_{0}}{d}-\frac{\rho d}{2} \\
+& \sigma_{B}=-\left.D\right|_{x=d}=-\left.\varepsilon_{0} E\right|_{x=d}=-\frac{\varepsilon_{0} U_{0}}{d}-\frac{\rho d}{2}
+\end{aligned}
+$$
+
+显然, 此时 $\sigma_{A} \neq-\sigma_{B}$ 。如果设极板面积为 $S$, 不难验证下式成立:
+
+$$
+\left(\sigma_{A}+\sigma_{B}\right) S+\rho S d=0
+$$
+
+## 1. 镜像法
+
+镜像法是求解静电场边值问题解的一种间接方示, 其理论依据是静电场解答的唯一性定 理。
+
+该方法的特点是在保持待求场域电荷分布、边界条件和媒质不变的条件下，把边界(或两 种介质分界面)上复杂分布电荷的作用, 用待求场域外的简单分布电荷来代替, 从而变成无限 大均匀媒质中的无边界问题。
+
+（1）电倚对无限大导电平面的镜像
+
+位于介质 $\varepsilon$ 中的点电荷 $q$ (如图 1.6-13(a)) 相对无 穷大导电平面的镜像电荷, 恰放置在相对平面对称的位 置, 其计算模型如图 1.6-13(b) 所示, 有效计算区为原 电荷所在的上半区间, 而 $-q$ 所在的下半区间原来对应 的是导体下方, 这里无电场, 不能用图示的模型计算。
+
+(a) (b)
+
+由电荷形成场的叠加性, 多个点电荷、线电荷甚至任意分布的体电荷都可以根据上述方法 找到其相对于无限大导电平面的镜像。如果电荷分布比较复杂时, 就是找到镜像电荷也很难 计算。
+
+【例 1.6-13】无限大导电平面上方有一对与平面平行架设的二线输电线(如图 1.6-14 (a) 所示), 分别带有等量异号电荷 $\tau$ 与 $-\tau$, 试求任一场点 $P$ 处的电位。
+
+解: 利用镜像法, 可得图 1.6-14(b) 的计算模型, 由此形成两对输电线, 取 $y$ 轴为电位参考 点, 则
+
+$$
+\varphi_{P}=\frac{\tau}{2 \pi \varepsilon_{0}} \ln \frac{r_{2}}{r_{1}}+\frac{\tau}{2 \pi \varepsilon_{0}} \ln \frac{r_{2}^{\prime}}{r_{1}^{\prime}}
+$$
+
+利用两点间距离公式, 很容易求得 $r_{1} 、 r_{2} 、 r_{1}^{\prime}$ 和 $r_{2}^{\prime}$ 的坐标表达式, 这里从略。
+
+(4)
+
+【例 1. 6-14】试给出利用镜像法计算图 1.6-15 (a) 和 (b) 两图形表示的无限大导电平面 构成的二面角内置以电荷的计算模型。
+
+解: 除电荷所在位置外, 介质中电位满足 $\nabla^{2} \varphi=0$
+
+可设导电平面电位为零, 由此可得图 1.6-16 的计算模型。
+
+根据此例题, 如果无限大导电二面角的角度为 $\frac{\pi}{n}$, 则总可以找到合适的镜像, 而 $n$ 必须是 正整数。
+
+无限大导电平面求得的所有镜像电荷的代数和,一般等于导电平面上分布的电荷总量。 （2）点电荷对导体球的镜像
+
+如果导体球接地, 并且地面距导体球很远, 在导体球附近有一点电荷 $q$ (如图 1.6-17(a)), 由于导体球电位与无穷远等电位, 故可设为 0 , 此时只要在球内关于点电荷的反演点处设置适 当的电荷, 即可满足边界条件 (图 1.6-17(b)), 即
+
+$$
+q^{\prime}=\frac{R}{d} q
+$$
+
+而
+
+$$
+b \cdot d=R^{2}
+$$
+
+假如导体球不接地,导体球面应是一个等位面。此时计算球外的场时,必须在图 1.6-17 （b）的球心处置以正 $q^{\prime}$ 。如果导体球原来就带有电荷 $Q$, 则置于球心外的电荷应改为 $Q+q^{\prime}$ 。
+
+当问题反过来思考, 即在接地的空心金属壳内置一点电荷时(如图 1.6-18 (a)), 显然这是 静电屏蔽问题,球壳外电场强度为零。金属球壳的内表面将感应有与点电荷等量而异号的总 电荷, 此时的计算区域为球壳内, 其计算模型如图 1.6-18(b) 所示, 由于 $b$ 和 $q^{\prime}$ 的位置意义不 同,此时将存在
+
+$$
+q^{\prime}=\frac{R}{d} q
+$$
+
+而
+
+$$
+b \cdot d=R^{2}
+$$
+
+如果金属球壳不接地,而原来球壳又没带电荷,则球壳内的电场强度仍如接地时一样计 算, 但此时球壳外存在电场,此电场是由金属壳外表面均匀分布的面电荷形成的,电荷总量为 $q$, 而不是 $q^{\prime}$, 可用高斯定律直接计算
+
+$$
+E=\frac{q}{4 \pi \varepsilon_{0} r^{2}} e_{r} \quad(r \geqslant R)
+$$
+
+点电荷对金属球得到的镜像电荷, 只表示对有效计算区域代替边界上复杂分布电荷的作 用, 而不代表这些电荷的总量。例如在图 1.6-18 中, 由于 $R>d$, 显然 $\left|q^{\prime}\right|>|q|$, 而球壳内表面 的感应电荷总量却是 $-q$, 况且当 $d$ 变化而 $q$ 不变时, $q^{\prime}$ 变化而球壳内表面感应的电荷总量不 变。
+
+【例 1. 6-15】如图 1.6-19 所示, 空气中一金属球接地 (地在很远处), 过球心一直线上有 等量异号两电荷位于球外, 试求球外表面 $A$ 点的场强。
+
+解: $b=\frac{R^{2}}{d}=\frac{1}{2} R$
+
+$$
+Q^{\prime}=\frac{R}{d} Q=\frac{1}{2} Q
+$$
+
+设 $A$ 点向右垂直金属球方向为 $\boldsymbol{e}_{x}$ 方向,由图 1.6-20 可得
+
+$$
+\begin{aligned}
+E_{A} & =\left[\frac{-Q}{4 \pi \varepsilon_{0}(3 R)^{2}}+\frac{\frac{1}{2} Q}{4 \pi \varepsilon_{0}\left(\frac{3}{2} R\right)^{2}}+\frac{-\frac{1}{2} Q}{4 \pi \varepsilon_{0}\left(\frac{1}{2} R\right)^{2}}+\frac{-Q}{4 \pi \varepsilon_{0} R^{2}}\right] \boldsymbol{e}_{x} \\
+& =-\frac{26 Q}{36 \pi \varepsilon_{0} R^{2}} \boldsymbol{e}_{x}=-\frac{13 Q}{18 \pi \varepsilon_{0} R^{2}} \boldsymbol{e}_{x}
+\end{aligned}
+$$
+
+(3) 电荷对无限大介质平面分界面的镜像
+
+设两种介质的分界面是一无限大平面, 在 $\varepsilon_{1}$ 介质中置一点电荷 $q$, 位置如图 1.6-21 (a) 所 示。该模型产生的场可通过图 (b) 和图 (c) 分别求得。图中
+
+$$
+\begin{aligned}
+& q^{\prime}=\frac{\varepsilon_{1}-\varepsilon_{2}}{\varepsilon_{1}+\varepsilon_{2}} q \\
+& q^{\prime \prime}=\frac{2 \varepsilon_{2}}{\varepsilon_{1}+\varepsilon_{2}} q
+\end{aligned}
+$$
+
+如果用线密度为 $\tau$ 的线电荷代替图中 $q$, 则计算式中只是将 $q^{\prime}$ 和 $q^{\prime \prime}$ 换上 $\tau^{\prime}$ 和 $\tau^{\prime \prime}$ 即可。类 似地依据叠加特性, 还可以建立其他的计算模型。
+
+【例 1.6-16】电场模型如图 1.6-22 所示, 试求点电荷与边界距离一半处的 $A$ 点及其对称 于分界面的 $B$ 点的电位。
+
+解: 利用镜像法分别得到图 1.6-23 (a) 和 (b) 的计算模型。设无穷远处为电位参考点, 则 由
+
+$$
+\begin{aligned}
+& q^{\prime}=\frac{\varepsilon_{0}-4 \varepsilon_{0}}{\varepsilon_{0}+4 \varepsilon_{0}} q=\frac{-3}{5} \times 10^{-7} \mathrm{C} \\
+& q^{\prime \prime}=\frac{2 \times 4 \varepsilon_{0}}{\varepsilon_{0}+4 \varepsilon_{0}} q=\frac{8}{5} \times 10^{-7} \mathrm{C}
+\end{aligned}
+$$
+
+$A$ 点电位
+
+$$
+\begin{aligned}
+\varphi_{A} & =\frac{q}{4 \pi \varepsilon_{0} \times 0.01}+\frac{q^{\prime}}{4 \pi \varepsilon_{0} \times 0.03}=\frac{10^{-7}}{4 \pi \times 8.85 \times 10^{-12} \times 0.01}+\frac{-0.6 \times 10^{-7}}{4 \pi \times 8.85 \times 10^{-12} \times 0.03} \\
+& =71.9 \mathrm{kV}
+\end{aligned}
+$$
+
+$B$ 点电位
+
+$$
+\varphi_{B}=\frac{q^{\prime \prime}}{4 \pi \times 4 \varepsilon_{0} \times 0.03}=\frac{1.6 \times 10^{-7}}{4 \pi \times 4 \times 8.85 \times 10^{-12} \times 0.03}=12.0 \mathrm{kV}
+$$
+
+(4)特殊边界条件
+
+镜像法也可求解一些复杂的边界条件, 不可能一一举列。下面分析两个特例。
+
+## 2. 电轴法
+
+电轴法用于计算带等量异号电荷的两平行架设的长圆柱导体间的静电场。该方法的关键
+
+是确定等效电轴的位置,然后按二线输电线的计算公式进行计算。 等效电轴位置利用关于圆的反演公式很容易求得。
+
+对于图 1.6-26(a) 所示的边值问题,可用图 1.6-26(b) 进行计 算。图中等效电轴的位置由下式确定：
+
+$$
+b=\sqrt{h^{2}-a^{2}}
+$$
+
+此例与二线输电线不同之处在于导体半径较大, 因此在导体 表面上分布的电荷是不均匀的, 正负电荷相互吸引的结果造成等 效电轴位置偏移。显然, 若 $a \ll h$, 则 $b \approx h$, 就没必要再用电轴法 了。另外，图 (b)的等效计算区域不包括导体所在的区域。
+
+$$
+\begin{aligned}
+& \left(h_{1}+b\right)\left(h_{1}-b\right)=a_{1}^{2} \\
+& \left(h_{2}+b\right)\left(h_{2}-b\right)=a_{2}^{2} \\
+& h_{1}+h_{2}=d
+\end{aligned}
+$$
+
+如果同轴电缆或圆柱电容器产生偏心, 则二柱间的电场也可用电轴法求解。图 1.6-28 表 示了这一模型。这里有效计算区域为二圆柱间部分, 而三个待求量的计算也可以通过三个方 程联立求得, 即
+
+$$
+\left(h_{1}+b\right)\left(h_{1}-b\right)=a_{1}^{2}
+$$
+
+$$
+\left(h_{2}+b\right)\left(h_{2}-b\right)=a_{2}^{2}
+$$
+
+$$
+h_{2}-h_{1}=d
+$$
+
+【例 1.6-17】单位长度带电量为 $\tau$ 的长直圆柱导体与地面 平行架设, 其有关尺寸如图 1.6-29 所示, 试求圆柱导体的电位 (设 大地电位为零)。
+
+解:利用镜像法, 在关于地面对称处得一带负电的导体圆柱, 二圆柱再用电轴法可得图 1.6-30 的计算模型图。其中
+
+$$
+b=\sqrt{h^{2}-a^{2}}
+$$
+
+显然,导体上的电位以取 $\tau$ 和 $-\tau$ 连线与导体原位置的 交点 $A$ 计算最方便, 由二线输电线电位计算公式得
+
+$$
+\varphi=\frac{\tau}{2 \pi \varepsilon_{0}} \ln \frac{b+(h-a)}{b-(h-a)}
+$$
+
+上式中, 对数中分子表示 $-\tau$ 电轴与 $A$ 点距离, 而分母表示 $\tau$ 电轴与 $A$ 点间的距离。
+
+【例 1.6-18】一均匀分布线电荷与一长直圆柱导体平 行, 周围介质为空气, 如图 1.6-31 所示, 试求圆柱导体表面 处的最大电场强度值。
+
+解: 由于正负电荷的吸引作用, 最大场强在导体面处应发生在柱心与 $\tau$ 位置的连线与柱表 面的交点 $A$ 处, 如图 1.6-32 所示, 由电轴法中的反演关系得
+
+则
+
+$$
+d(d-2 b)=a^{2}
+$$
+
+$$
+b=\frac{1}{2}\left(d-\frac{a^{2}}{d}\right)
+$$
+
+$$
+E_{A}=\frac{\tau}{2 \pi \varepsilon_{0}(d-a)}+\frac{\tau}{2 \pi \varepsilon_{0}(a-d+2 b)}
+$$
+
+### 4 电场力及其计算
+
+## 1. 用电场强度的定义计算
+
+$$
+F=q E
+$$
+
+【例 1.6-19]在直角坐标系中, 点电荷 $q_{1} 、 q_{2}$ 和 $q_{3}$ 分别位于 $\left(x_{1}, y_{1}, z_{1}\right) 、\left(x_{2}, y_{2}, z_{2}\right)$ 和 $\left(x_{3}, y_{3}, z_{3}\right)$ 处, 试求点电荷 $q_{3}$ 所受到的力。
+
+解: $q_{1}$ 和 $q_{2}$ 在 $q_{3}$ 所在位置产生的电场强度
+
+$$
+\begin{aligned}
+\boldsymbol{E}= & \frac{q_{1}\left[\left(x_{1}-x_{3}\right) \boldsymbol{e}_{x}+\left(y_{1}-y_{3}\right) \boldsymbol{e}_{y}+\left(z_{1}-z_{3}\right) \boldsymbol{e}_{z}\right]}{4 \pi \varepsilon_{0}\left[\left(x_{1}-x_{3}\right)^{2}+\left(y_{1}-y_{3}\right)^{2}+\left(z_{1}-z_{3}\right)^{2}\right]^{3 / 2}} \\
+& +\frac{q_{2}\left[\left(x_{2}-x_{3}\right) \boldsymbol{e}_{x}+\left(y_{2}-y_{3}\right) \boldsymbol{e}_{y}+\left(z_{2}-z_{3}\right) \boldsymbol{e}_{z}\right]}{4 \pi \varepsilon_{0}\left[\left(x_{2}-x_{3}\right)^{2}+\left(y_{2}-y_{3}\right)^{2}+\left(z_{2}-z_{3}\right)^{2}\right]^{3 / 2}}
+\end{aligned}
+$$
+
+故
+
+$$
+F=q_{3} E
+$$
+
+【例 1.6-20】与地面平行架设的一长直导线, 单位长度带电量为 $\tau$, 导线与地面的距离为 $h$,若 $h$ 远大于导线半径,试求该导线单位长度所承受地面作用力的大小和方向。
+
+解: 用镜像法可以计算这种作用力。镜像电荷在导线处产生的场对导线产生作用力为
+
+$$
+F=\frac{\tau^{2}}{2 \pi \varepsilon_{0} 2 h}=\frac{\tau^{2}}{4 \pi \varepsilon_{0} h} \text { (吸力, 垂直指向地面) }
+$$
+
+## 2. 虚位移法
+
+电场力是向量, 直接利用定义积分计算相当复杂, 而虚位移法有时会方便得多。利用虚位 移法计算的公式为
+
+式中: $f_{\mathrm{k}}$ 为广义力, $g$ 为广义坐标, $W_{\mathrm{e}}$ 为静电场能量, $\varphi_{k}$ 为导体电位, $q_{k}$ 为导体电荷。所谓广义 力与广义坐标概念可由下面关系理解: 广义力与广义坐标的乘积一定表示能量或功, 因此存 在:
+
+广义坐标是位移一广义力是力;
+
+广义坐标是角度一广地力是转矩;
+
+广义坐标是体积一广义力是压强;
+
+广义坐标是面积一广义力是表面张力。
+
+静电场能童的普遍计算公式可利用静电场的能量体密度的体积分计算。设 $w_{\mathrm{e}}$ 表示静电 场能量体密度, 则
+
+$$
+w_{r .}=\frac{1}{2} E D=\frac{1}{2} \varepsilon E^{2}
+$$
+
+$w_{\mathrm{r}}$ 的单位是焦耳/米 ${ }^{3}\left(\mathrm{~J} / \mathrm{m}^{3}\right)$ 。而静电场能量为
+
+$$
+W_{e}=\int_{V} w_{\mathrm{e}} \mathrm{d} V=\int_{V} \frac{1}{2} \varepsilon E^{2} \mathrm{~d} V
+$$
+
+对于多个导体组成的系统, 也可以通过各导体的电荷 $q_{k}$ 和各导体的电位 $\varphi_{k}$ 计算系统的 静电场总能量, 此付
+
+$$
+W_{c}=\sum_{k=1}^{n} \frac{1}{2} \varphi_{k} q_{k}
+$$
+
+【例 1.6-21】平板电容器中间填充的介质的介电系数为 $\varepsilon$, 板的面积为 $S$, 二极板的距离 为 $d$, 试求在二极板施加恒定电压 $U_{0}$ 时, 二极板间的吸力; 如果保持二极板上的电荷分布不 变, 此时二极板间的吸力又为多大?
+
+解: 平板电容器电容 $C=\varepsilon S / d$, 由
+
+$$
+\begin{aligned}
+& W_{\mathrm{e}}=\frac{1}{2} C U_{0}^{2}=\frac{\varepsilon S}{2 d} U_{0}^{2} \\
+& f=\left.\frac{\partial W_{\epsilon}}{\partial d}\right|_{\varphi_{k}=\text { 常能 }}=-\frac{\varepsilon S}{2 d^{2}} U_{0}^{2} \\
+& W_{e}=\frac{1}{2} q^{2}=\frac{d}{2 \varepsilon S} q^{2} \\
+& f=-\left.\frac{\partial W_{c}}{\partial d}\right|_{q_{k}=\text { 学用 }}=-\frac{1}{2 \varepsilon S} q^{2}
+\end{aligned}
+$$
+
+$f$ 表达式皆为负值,表示力的方向与 $d$ 增大的方向相反。将 $q=C U_{0}$ 代人,会发现两次计算的 结果是相等的,因为位移是虚的,故只能是同一结果。
+
+【例 1.6-22】球形电容器的内外半径分别为 $R_{1}$ 和 $R_{2}$, 若已知该电容器储存的静电场能 量为
+
+$$
+W_{\mathrm{e}}=K \frac{R_{1} R_{2}}{R_{2}-R_{1}} U_{0}^{2}
+$$
+
+式中 $K$ 为一常数,试求球外壳单位面积受的力 (压强)。
+
+解:利用广义力计算式
+
+$$
+f=\left.\frac{\partial W_{r}}{\partial V}\right|_{\xi_{k}=\text { 常的 }}
+$$
+
+球形体积 $V=\frac{4}{3} \pi R_{2}^{3}$, 则 $\partial V=4 \pi R_{2}^{2} \partial R_{2}$
+
+$$
+f=\left.\frac{1}{4 \pi R_{2}^{2}} \frac{\partial W_{\mathrm{e}}}{\partial R_{2}}\right|_{\varphi_{\mathrm{k}}=\text { 第俄 }}=\frac{K R_{1}}{4 \pi R_{2}^{2}} \cdot \frac{-R_{1}}{\left(R_{2}-R_{1}\right)^{2}} U_{0}^{2}=\frac{-K R_{1}^{2}}{4 \pi R_{2}^{2}\left(R_{2}-R_{1}\right)^{2}} U_{0}^{2}
+$$
+
+式中负号表示此力是指向 $R_{2}$ 减小的方向。
+
+## 3. 法拉第的观点
+
+为了形象化描绘电场, 常使用所谓电场线 ( $\boldsymbol{E}$ 线) 或电位移线 $(\boldsymbol{D}$ 线) 绘制电场图形。绘制 场图一般要遵守下述二原则:一是线的疏密应代表场量的强弱,二是线的切线方向应代表场量 的方向。如果是平行平面场, 则任意相邻两条曲线两点的连线沿纵向同样长度构成的曲面上 场量的通量应相等。由此, 不难想像用 $D$ 线描绘的场图可看作由许多电位移管组成。
+
+法拉第认为: 静电场中每一段电位移管沿其轴向要受到纵张力, 而垂直于轴向方向则要受 到侧压力, 张且纵张力和侧压力相等, 都是 $\frac{1}{2} D E\left(\mathrm{~N} / \mathrm{m}^{2}\right)$ 。电位移管沿轴线方向有收缩的趋 势, 沿垂直轴线方向有扩张的倾向，由此可判断受力的方向。
+
+【例 1.6-23】平板电容器二极板间距离为 $d$, 极板面积为 $S$, 中间填充的介质的介电系数 为 $\varepsilon$, 若在二极板间施加电压 $U_{0}$, 试求其极板上受的作用力。
+
+$$
+\text { 解: } E=\frac{U_{0}}{d}
+$$
+
+由于导体内场量为零,故板面受到单位面积的力为
+
+$$
+f_{0}=\frac{1}{2} D E=\frac{1}{2} \varepsilon E^{2}=\frac{1}{2} \varepsilon \frac{U_{0}^{2}}{d^{2}}
+$$
+
+极板受的总力为
+
+$$
+f=f_{0} S=\frac{\varepsilon S U_{0}^{2}}{2 d^{2}}
+$$
+
+力的方向指向另一极板。该式与前面用虚位移法计算的结果相同。
+
+【例 1.6-24】试求图 1.6-33 所示平行板电容器介质分界面处每单位面 积所受的力。
+
+解: $\left\{\begin{array}{l}E_{1} d_{1}+E_{2} d_{2}=U_{0} \\ \varepsilon_{1} E_{1}=\varepsilon_{2} E_{2}\end{array}\right.$
+
+则
+
+$$
+E_{1}=\frac{\varepsilon_{2} U_{0}}{\varepsilon_{2} d_{1}+\varepsilon_{1} d_{2}}, \quad E_{2}=\frac{\varepsilon_{1} U_{0}}{\varepsilon_{2} d_{1}+\varepsilon_{1} d_{2}}
+$$
+
+取 $f_{1}$ 的方向为合力 $f$ 的方向, 则
+
+$$
+f=f_{1}-f_{2}=\frac{1}{2} \varepsilon_{1} E_{1}^{2}-\frac{1}{2} \varepsilon_{2} E_{2}^{2}=\frac{\varepsilon_{1} \varepsilon_{2}\left(\varepsilon_{2}-\varepsilon_{1}\right) U_{0}^{2}}{2\left(\varepsilon_{2} d_{1}+\varepsilon_{1} d_{2}\right)^{2}}
+$$
+
+### 5电容和部分电容, 简单形状电极结构电容的计算
+
+## 1. 电容
+
+当空间只需考虑两个相互绝缘的导体时, 两导体分别带有等量而异号的电荷, 则电荷的量 值 $q$ 与两导体间电压 $U$ 之比, 称为两导体间的电容, 并以 $C$ 表示, 即
+
+$$
+C=\frac{q}{U}
+$$
+
+$C$ 恒取正值, 单位是法拉 $(F)$ 。线性电容器的电容值仅与电极的几何形状、大小、中间填 充的介质以及两电极间相对位置有关, 而与其是否带电无关。但必须指出: 许多电容值的计算 却是通过电场计算获得。一般计算步骤为先假设极板上带等量异号电荷, 由电场分析计算出两极板间电压, 最后相比求得 $C_{\text {。 }}$
+
+(1) 平行板电容器
+
+平行板单介质的电容器为 $C=\frac{\varepsilon S}{d}$, 这里 $\varepsilon 、 S$ 和 $d$ 分别表示填充介质的介 电系数、极板面积和二导体之间的距离。显然, 电容 $C$ 的计算公式中无电荷 或电压。
+
+【例 1.6-25】试求图 1.6-34 所示双层介质的平板电容器的电容(设极 板的面积为 $S$ )。
+
+解: 假设两极板带等量异号电荷; 其面密度分别为 $\boldsymbol{\sigma}$ 和 $-\boldsymbol{\sigma}$ 。由导体和 介质分界面条件可知, 电位移 $D$ 将相等, 且满足二介质分界面条件。由此得
+
+$$
+\begin{aligned}
+& \frac{D}{\varepsilon_{1}}=E_{1}, \quad \frac{D}{\varepsilon_{2}}=E_{2} \\
+& U=E_{1} \cdot d_{1}+E_{2} d_{2}=\frac{\sigma}{\varepsilon_{1}} d_{1}+\frac{\sigma}{\varepsilon_{2}} d_{2} \\
+& C=\frac{\sigma S}{U}=\frac{\varepsilon_{1} \varepsilon_{2} S}{d_{1} \varepsilon_{2}+d_{2} \varepsilon_{1}}
+\end{aligned}
+$$
+
+【例 1. 6-26】图 1.6-35 所示为平行板电容器示意图, 若介电系数为 $\varepsilon_{1}$ 的介质对应的极板面积为 $S_{1}$, 单个极板的总面积为 $S$, 试求该电容器的电容。
+
+解: 此例可看作两个平行板电容器并联, 故
+
+$$
+C=\frac{\varepsilon_{1} S_{1}+\varepsilon_{2}\left(S-S_{1}\right)}{d}
+$$
+
+(2) 圆柱形电容器
+
+圆柱形电容器的电极是共轴的, 中间填充介质。当所填充的介质介电系 数为 $\varepsilon$, 而内外半径分别为 $R_{1}$ 和 $R_{2}$, 长度为 $L$ 时, 该电容器的电容
+
+$$
+C=\frac{2 \pi \varepsilon L}{\ln \left(R_{2} / R_{1}\right)}
+$$
+
+【例 1.6-27】长为 $L$, 横截面如图 1.6-36 所示的双层介质圆柱电容器, 试求其电容。
+
+解: 设内导体单位长带电荷为 $\tau$, 则
+
+$$
+\begin{aligned}
+& E_{1}=\frac{\tau}{2 \pi \varepsilon_{1} r} e_{r} \quad\left(R_{1}<r<R_{2}\right) \\
+& E_{2}=\frac{\tau}{2 \pi \varepsilon_{2} r} e_{r} \quad\left(R_{2}<r<R_{3}\right) \\
+& U=\int_{R_{1}}^{R_{2}} E_{1} \mathrm{~d} r+\int_{R_{2}}^{R_{3}} E_{2} \mathrm{~d} r=\frac{\tau}{2 \pi}\left(\frac{1}{\varepsilon_{1}} \ln \frac{R_{2}}{R_{1}}+\frac{1}{\varepsilon_{2}} \ln \frac{R_{3}}{R_{2}}\right)
+\end{aligned}
+$$
+
+单位长度电容为
+
+$$
+C_{0}=\frac{\tau}{U}=\frac{2 \pi}{\frac{1}{\varepsilon_{1}} \ln \frac{R_{2}}{R_{1}}+\frac{1}{\varepsilon_{2}} \ln \frac{R_{3}}{R_{2}}}
+$$
+
+总电容为
+
+$$
+C=C_{0} L=\frac{2 \pi L}{\frac{1}{\varepsilon_{1}} \ln \frac{R_{2}}{R_{1}}+\frac{1}{\varepsilon_{2}} \ln \frac{R_{3}}{R_{2}}}
+$$
+
+(3) 球形电容器
+
+内外半径为 $R_{1}$ 和 $R_{2}\left(R_{2}>R_{1}\right)$ 的球形电容器, 中间填充介电系数为 $\varepsilon$ 的介质时, 其电容值 为
+
+$$
+C=\frac{4 \pi \varepsilon R_{1} R_{2}}{R_{2}-R_{1}}
+$$
+
+若中间填充的是两种介质, 介质分界面的半径为 $R_{2}$, 而外半径为 $R_{3}$, 介电系数分别用 $\varepsilon_{1}$ 和 $\varepsilon_{2}$ 表示,则由与例 1.6-27 相类似的计算过程不难得到
+
+$$
+C=\frac{4 \pi R_{2}}{\frac{1}{\varepsilon_{1} R_{1}}\left(R_{2}-R_{1}\right)+\frac{1}{\varepsilon_{2} R_{3}}\left(R_{3}-R_{2}\right)}
+$$
+
+(4) 其他简单电容的计算
+
+金属球与地、圆柱导体对地、二线输电线等之间的电容, 其结构都比较简单, 有些问题求解 也十分方便。另外, 通常提到的孤立导体的电容其实并不孤立, 而是另一导体被假设到了无穷 远处。
+
+【例 1.6-28】与地面平行架设的长圆柱导体示意如图 1.637 所示, 试求该导体单位长度对地的电容值。
+
+解: 由镜像法加电轴法得图 1.6-38 所示的计算图形。若设地 平面为电位参考点, 则
+
+$$
+\varphi_{A}=\frac{\tau}{2 \pi \varepsilon_{0}} \ln \frac{b+h-a}{b-h+a}
+$$
+
+$$
+b=\sqrt{h^{2}-a^{2}}
+$$
+
+$\varphi_{A}$ 即导体对大地的电压, 所求电容
+
+$$
+C_{0}=\frac{\tau}{\varphi_{A}}=\frac{2 \pi \varepsilon_{0}}{\ln \frac{b+h-a}{b-h+a}}
+$$
+
+当 $h \gg a$ 时, $b \approx h$, 则可得近似式
+
+$$
+C_{0} \approx \frac{2 \pi \varepsilon_{0}}{\ln \frac{2 h}{a}}
+$$
+
+如果求两平行架设的传输线之间的电容, 此时两导体之 间的电压应为两导体之间的电位差, 故相距为 $2 h$ 的等半径为
+
+$$
+C=\frac{\pi \varepsilon_{0}}{\ln \frac{b+h-a}{b-h+a}}
+$$
+
+## 2. 部分电容
+
+系统中存在序号为 $0,1,2, \cdots, n$ 的 $n+1$ 个导体, 各导体所带电荷量用序号表示区别, 各导 体之间的电压用二者序号下标以示区别, 若存在关系式 $\sum_{i=0}^{n} q_{i}=0$, 则
+
+$$
+\begin{aligned}
+& q_{1}=C_{10} U_{10}+C_{12} U_{12}+\cdots+C_{1 n} U_{1 n} \\
+& q_{2}=C_{21} U_{21}+C_{20} U_{20}+\cdots+C_{2 n} U_{2 n} \\
+& \cdots \cdots \\
+& q_{n}=C_{n 1} U_{n 1}+C_{n 2} U_{n 2}+\cdots+C_{n 0} U_{n 0}
+\end{aligned}
+$$
+
+式中各个系数称为多导体系统的部分电容。主对角线上的系数 (即 $C_{i 0}$ ) 称为自部分电容。非 主对角线上的各系数称为互部分电容。对线性介质而言, 各个部分电容存在以下关系:
+
+(1) $C_{i j}>0$;
+
+(2) $C_{i j}=C_{j i}$, 实际表示的是同一个电容。 因此, $n+1$ 个导体系统中, 部分电容的个数为 $\frac{1}{2} n(n+1)$ 。
+
+部分电容只与各导体的形状、大小、周围介质的分布以及各导体间的相对位置有关。但 是, 部分电容的求解必须进过电场分析计算,一般是比较复杂的。
+
+【例 1.6-29】图 1.6-39 所示对称的三芯电缆, 各导体与铅皮之间的部分电容均为 $C_{0}$, 各 导体之间的部分电容均为 $C_{1}$, 试求: (1) 将三颗芯线连接后与铅皮之间的等效电容; (2) 在任 意两颗芯线间施加电压, 则此时电路的等效电容又为考少?
+
+解: 电缆的各部分电容表示为如图 1.6-40 所示,其中 0 表示电缆的铅皮。
+
+(1) 芯线相联, $C_{1}$ 皆被短接, 故等效电容 $C_{\mathrm{e}}$ 为三个 $C_{0}$ 并联, 即
+
+$$
+C_{\mathrm{e}}=3 C_{0}
+$$
+
+(2) 利用电容的星三角转换, 若把 $C_{1}$ 转换成星接, 则将变为 $3 C_{1}$, 再利用电容的串并联, 则 等效电容 $C_{\mathrm{v}}$ 为
+
+$$
+C_{\mathrm{D}}=\frac{1}{2}\left(3 C_{1}+C_{0}\right)
+$$
+
+此题也可以把星接 $C_{\mathrm{D}}$ 转变为角接, 则将变为 $\frac{1}{3} C_{0}$, 再利用电容串并联, 则仍有上面结论。
+
+【例 1.6-30】图 1.6-41 中 1 和 2 表示与地面平行架设的二线输电线, 今测得 1 号导线对 地部分电容 $C_{10}=0.001 \mu \mathrm{F}$, 而 1 和 2 导体的等效电容为 $0.0025 \mu \mathrm{F}$, 试求部分电容 $C_{12}$ 和 $C_{20}$ 。
+
+解 : 由于对称关系
+
+$$
+C_{20}=C_{10}=0.001 \mu \mathrm{F}
+$$
+
+由串并联关系
+
+$$
+C_{12}+\frac{1}{2} C_{10}=0.0025
+$$
+
+代人 $C_{10}$ 值, 即得
+
+$$
+C_{12}=0.0025-\frac{1}{2} \times 0.001=0.002 \mu \mathrm{F}
+$$
+
+## 7 恒定电场
+
+## 7 .1 恒定电流、恒定电场和电流密度
+
+## 1. 恒定电流
+
+导电媒质中电荷流动的大小和分布不是时间的函数的电流称为恒定电流, 它是由导电媒 质中的恒定电场产生的。
+
+## 2. 恒定电场
+
+由电荷在导电媒质中激发, 不随时间变化的电场称为恒定电场。
+
+导体中存在电场,必将产生电流，恒定电场产生的电流也是恒定的。恒定电场与静电场的 重要区别在于: 静电场是由相对于观察者静止的电荷产生的;而恒定电场是由相对于观察者做 宏观运动,但其空间分布不是时间函数的电荷所产生。
+
+要维持恒定电场存在, 必须依赖于恒定电源 (恒定电源在电路中常称为直流电源)。电源 不是这里要关心的问题, 为简化分析过程, 在电源内部引人所谓局外力 $f_{\mathrm{e}}$ (非电场力) 和局外 场强 $\boldsymbol{E}_{\mathrm{e}}$ 的概念, 并且令
+
+$$
+E_{\mathrm{e}}=\frac{f_{\mathrm{e}}}{q}
+$$
+
+它表示在电源内部, 单位正电荷受到的局外力, 这里称局外场强完全是采用等效的概念。所谓 电源的电动势,一般可表示为
+
+$$
+\mathscr{E}=\int_{l} \boldsymbol{E}_{\mathrm{e}} \cdot \mathrm{d} \boldsymbol{l}
+$$
+
+积分路线 $l$ 是在电源内部由低电位电极到高电位电极。
+
+导电媒质中存在恒定电场时, 导体不再是等位体, 除非由此引起的电位差很小而被忽略不 计。另外, 在导电媒质周围的介质中, 将存在与静电场相似的恒定电场, 它也是由恒定分布的 电荷产生的。
+
+## 3. 电流密度
+
+电荷的定向运动形成电流。衡量电流的大小采用电流强度 (简称电流) 的概念, 即 $I=$ $\mathrm{d} q / \mathrm{d} t$, 它表示单位时间通过某导线横截面上的电量。电流强度是一个积分量, 不可能描述场 中每一点处电荷的流动情况, 因此, 在电磁场理论中, 更多地使用电流密度这一物理量。
+
+体密度为 $\rho$ 的分布电荷, 以速度 $v$ 运动时, 形成体分布的电流密度 $J$, 其表达式为
+
+$$
+J=\rho v
+$$
+
+电流密度也可以表述为: 当正电荷垂直通过某微小面积 $\Delta S$ 的电流强度为 $\Delta I$ 时, $\Delta I$ 与 $\Delta S$ 之比的极限, 即
+
+$$
+J=\lim _{\Delta S \rightarrow 0} \frac{\Delta I}{\Delta S}=\frac{\mathrm{d} I}{\mathrm{~d} S}
+$$
+
+正电荷运动的方向即为电流密度 $J$ 的方向。电流密度的单位为安培 $/ *^{2}\left(\mathrm{~A} / \mathrm{m}^{2}\right)$ 。
+
+电流强度与电流密度的关系可以表示为
+
+$$
+I=\int_{S} J \cdot \mathrm{d} S
+$$
+
+I程上会遇到电荷在一个很薄的面上流动的情况, 例如在一个薄金属板上流动。问题的 实质是, 电流虽是体分布, 但理想化成一个面电流分布对问题的分析计算更方便。理想化的结 果犹如一个面分布电荷 $\sigma$ 在面上流动, 由此引入 电流线密度向量 $J_{S}$, 且 $J_{S}=\sigma v_{\circ}$ 并可得到
+
+$$
+I=\int_{l} J_{s} \cdot e_{n} \mathrm{~d} l
+$$
+
+上式中 $e_{n}$ 为垂直于 $\mathrm{d} l$ 方向的单位向量。 $J_{s}$ 的单位为 $\mathrm{A} / \mathrm{m}$ 。
+
+类似地分析,如果电流通过的导线的横截面积非常小时, 可以理想化地用一线电流表示。
+
+【例 1.7-1】位于直角坐标系 $x O y$ 平面上的面电流可表示为
+
+$$
+J_{s}=4 e_{x}+3 e_{y} \quad \mathrm{~A} / \mathrm{m}
+$$
+
+试求通过点 $A(3,0)$ 和 $B(0,4)$ 之间线段上的电流。
+
+解: 由点的几何坐标,通过图 1.7-1 不难判断出线段的垂线 方向的单位向量
+
+由此
+
+$$
+e_{n}=0.8 e_{x}+0.6 e_{y}
+$$
+
+$$
+I=\int_{l} J_{S} \cdot e_{n} \mathrm{~d} l=(4 \times 0.8+3 \times 0.6) \times \sqrt{3^{2}+4^{2}}=25 \mathrm{~A}
+$$
+
+1.7 .2 欧姆定律和焦耳定律的微分形式,恒定电场的基本方程和分界面上的衔接条件
+
+## 1. 欧姆定律的微分形式
+
+$$
+J=\gamma E
+$$
+
+式中 $\gamma$ 表示导电媒质的电导率, 单位为 $\mathrm{S} / \mathrm{m}$ 。
+
+微分形式的欧姆定律表示导电媒质中电流密度 $\boldsymbol{J}$ 的大小与电导率成正比, 其方向与电场 强度的方向一致 (各向同性媒质中), 它描述了媒质中任一点处电荷运动的情况。
+
+【例 1.7-2】横截面积为 $3 \mathrm{~mm}^{2}$ 的导线, 通过它的电流为 $15 \mathrm{~A}$, 电流均匀分布于导线中, 若导线的电导率为 $5 \times 10^{7} \mathrm{~S} / \mathrm{m}$, 试求导线内部的电场强度。
+
+解: 导线内的电流密度
+
+$$
+J=\frac{I}{S}=\frac{15}{3 \times 10^{-6}}=5 \times 10^{6} \mathrm{~A} / \mathrm{m}^{2}
+$$
+
+导线内的电场强度
+
+$$
+E=\frac{J}{\gamma}=\frac{5 \times 10^{6}}{5 \times 10^{7}}=0.1 \mathrm{~V} / \mathrm{m}
+$$
+
+## 2. 焦耳定律的微分形式
+
+$$
+p=\boldsymbol{J} \cdot \boldsymbol{E} \quad \text { 或 } p=\gamma E^{2}=\frac{J^{2}}{\gamma}
+$$
+
+式中 $p$ 表示导体内的功率损耗密度, 即任一点处的单位体积所消耗的功率, 其单位为瓦 $/$ 米 $^{3}$ $\left(\mathrm{W} / \mathrm{m}^{3}\right)$ 。
+
+导电媒质中损耗的功率可通过下式计算:
+
+$$
+P=\int_{v} p \mathrm{~d} V=\int_{V} J E \mathrm{~d} V
+$$
+
+式中的 $P$ 与电路理论中的焦耳定律 $\left(P=I^{2} R\right)$ 的计算值相同。
+
+【例 1.7-3】一球形电容器的内外半径分别为 $R_{1}$ 和 $R_{2}$, 中间填充介质的漏电电导率为 $\gamma$, 若已知漏电电流强度为 1 , 试求电容器的功率损耗。 解: 由对称特点可知介质中的电流密度
+
+$$
+J=\frac{I}{4 \pi r^{2}} \quad\left(R_{1} \leqslant r \leqslant R_{2}\right)
+$$
+
+取球面 $4 \pi r^{2}$, 在 $4 \pi r^{2} \mathrm{dr}$ 的体积内 $J$ 可视为常量, 故
+
+$$
+P=\int_{V} \frac{J^{2}}{\gamma} \mathrm{d} V=\int_{R_{1}}^{R_{2}} \frac{I^{2}}{16 \pi^{2} \gamma r^{4}} 4 \pi r^{2} \mathrm{~d} r=\frac{I^{2}}{4 \pi \gamma}\left(\frac{1}{R_{1}}-\frac{1}{R_{2}}\right)
+$$
+
+## 3. 基本方程
+
+恒定电场的基本方程为
+
+$$
+\left\{\begin{array}{l}
+\oint_{l} E \cdot \mathrm{d} l=0 \\
+\oint_{S} J \cdot \mathrm{d} S=0
+\end{array}\right.
+$$
+
+以上二式研究的区间不包含电源内部,但恒定电场的存在必定存在电源,这样处理只是对 电源内部另做处理的一种分离。
+
+恒定电场的环路积分恒等于零, 说明恒定电场是位场, 可以引入电位概念, 即令
+
+$$
+E=-\nabla_{\varphi}
+$$
+
+恒定电流密度在任一闭合面上的积分恒等于零, 这一表达式又被称为电流连续性方程。 流人某闭合曲面电流必定等于流出该闭合曲面的电流，这一结论是电路中直流电路基尔霍夫 电流定律的理论依据。
+
+微分形式恒定电场的基本方程为
+
+$$
+\left\{\begin{array}{l}
+\nabla \times E=0 \\
+\nabla \cdot J=0
+\end{array}\right.
+$$
+
+恒定电场是一个无散度源的场，电流线必是无头无尾的闭合曲线。
+
+引人标量电位后, 对于均匀媒质不难得到
+
+$$
+\nabla^{2} \varphi=0
+$$
+
+即电位满足拉普拉斯方程。
+
+## 4. 分界面上的衔接条件
+
+两种电导率不同的媒质, 在分界面处场量会发生变化, 其衔 接条件为
+
+$$
+\left\{\begin{array}{l}
+E_{1 t}=E_{2 t} \\
+J_{1 n}=J_{2 n}
+\end{array}\right.
+$$
+
+即分界面处的电场强度切向分量连续, 而电流密度的法向分量 连续。
+
+对于各向同性的导电媒质, 存在所谓的恒定电场的折射定 律, 如图 1.7-2 所示, 则
+
+$$
+\frac{\tan \theta_{1}}{\tan \theta_{2}}=\frac{\gamma_{1}}{\gamma_{2}}
+$$
+
+当 $\gamma_{1} \gg \gamma_{2}$ 时, 只要 $\theta_{1}$ 不接近于 $90^{\circ}$, 则 $\theta_{2}$ 总可以认为近似为 $0^{\circ}$ 。由此不难得到: 当电流从良 导体流人不良导体时, 其电场强度或电流密度在不良导体中的方向总是近似垂直于分界面的。
+
+## 5. 恒定电场的计算
+
+恒定电场的计算类似于静电场。当电流密度的分布可以依据场域或边界条件判断时, 可 以通过简单的函数进行计算, 也可以由拉普拉斯方程和边界条件定解。
+
+由于无电荷区域的静电场和电源外部的恒定电场所满足的数学表达式相似，恒定电场还 可以通过静电比拟求解。静电场与恒定电场的对应量为: $\boldsymbol{E} \sim \boldsymbol{E} 、 \varphi \sim \varphi 、 D \sim J 、 q \sim I 、 \varepsilon \sim \gamma$ 。所 谓静电比拟, 意义之一可理解为: 如果静电场中的场源、边界条件和介质分布被对应的恒定电 场物理量所置换, 则静电场解答式中的物理量用恒定电场对应量代替后, 该解答即为恒定电场 的解答。媒质置换时应当注意保证满足条件
+
+$$
+\frac{\gamma_{1}}{\gamma_{2}}=\frac{\varepsilon_{1}}{\varepsilon_{2}}
+$$
+
+利用静电比拟, 可以推得分界面为无限大平面时, 两种导电媒质中的镜像法, 图 1.7-3 中 表示了这一过程。图中
+
+$$
+\begin{aligned}
+& I^{\prime}=\frac{\gamma_{1}-\gamma_{2}}{\gamma_{1}+\gamma_{2}} I \\
+& I^{\prime \prime}=\frac{2 \gamma_{2}}{\gamma_{1}+\gamma_{2}} I
+\end{aligned}
+$$
+
+若 $\gamma_{2}=0$, 则
+
+$$
+\begin{aligned}
+I^{\prime} & =I \\
+I^{\prime \prime} & =0
+\end{aligned}
+$$
+
+例如土壤中 $\left(\gamma_{2}\right)$ 埋一..电极, 上部为空气 $\left(\gamma_{1}\right)$ 即属于这种情况。
+
+利用静电比拟关系, 还可以把工程上难以测量的静电场问题比拟成恒定 电场问题, 而恒定电场可以通过直流测试仪表进行测量, 这种模拟实验在实 际中被广泛应用。
+
+在恒定电场计算中, 常用到所谓“电极”一词, 这里的电极是指它由优良 的导体制作,可以视为一等位体。因此, 电极处必是一个等电位的边界条件。
+
+【例 1.7-4】一平行板电容器横截面如图 1.7-4 所示, 若二介质中的漏 电电导率分别为 $\gamma_{1}$ 和 $\gamma_{2}$, 试给出在外施电压 $U_{0}$ 作用下, 介质分界面处的电 位和面电荷密度。
+
+解: 由于介质漏电, 在暂态过程中分界面处可能积累有自由电荷。在恒 定状态下, 用电流密度计算比较方便。由于 $J_{1 n}=J_{2 n}$, 可得
+
+$$
+\begin{aligned}
+& \gamma_{1} E_{1}=\gamma_{2} E_{2} \\
+& U_{0}=E_{1} \frac{d}{2}+E_{2} \frac{d}{2}=\frac{1}{2} E_{2} d+\frac{1}{2} \frac{\gamma_{2}}{\gamma_{1}} E_{2} d
+\end{aligned}
+$$
+
+即可得
+
+$$
+E_{2}=\frac{2 \gamma_{1} U_{0}}{\left(\gamma_{1}+\gamma_{2}\right) d}
+$$
+
+若取 $\varepsilon_{2}$ 一侧极板接电源负极, 并取为电位参考点, 则分界面处电位为
+
+$$
+\varphi=E_{2} d / 2=\frac{\gamma_{1} U_{0}}{\gamma_{1}+\gamma_{2}}
+$$
+
+而分界面处的面电荷 $\boldsymbol{\sigma}$ 可由分界面条件获得
+
+$$
+\sigma=D_{2 n}-D_{1 n}
+$$
+
+由 $D=\varepsilon E$ 和 $J=\gamma E$ 可得
+
+$$
+\sigma=\varepsilon_{2} E_{2}-\varepsilon_{1} E_{1}=\frac{\varepsilon_{2}}{\gamma_{2}} J_{2}-\frac{\varepsilon_{1}}{\gamma_{1}} J_{1}=\left(\frac{\varepsilon_{2}}{\gamma_{2}}-\frac{\varepsilon_{1}}{\gamma_{1}}\right) J
+$$
+
+代人 $J=\gamma_{2} E_{2}=\frac{2 \gamma_{1} \gamma_{2} U_{0}}{\left(\gamma_{1}+\gamma_{2}\right) d}$
+
+可得 $\quad \sigma=\frac{2\left(\gamma_{1} \varepsilon_{2}-\gamma_{2} \varepsilon_{1}\right)}{\left(\gamma_{1}+\gamma_{2}\right) d} U_{0}$
+
+由此例可见, 当
+
+$$
+\frac{\varepsilon_{2}}{\gamma_{2}}-\frac{\varepsilon_{1}}{\gamma_{1}} \neq 0 \text { 或 } \frac{\varepsilon_{2}}{\varepsilon_{1}} \neq \frac{\gamma_{2}}{\gamma_{1}}
+$$
+
+时, 二媒质分界面处会积累有电荷。
+
+【例 1.7-5】双层介质长直圆柱导体, 其横截面如图 1. 7-5 所示, 二介质漏电电导率分别为 $\gamma_{1}$ 和 $\gamma_{2}$, 如在二导体 间施加电压 $U_{0}$, 而各导体均可视为等位体, 试求二圆柱间单 位长度的漏电流。
+
+解: 由于对称关系, 在半径为 $R_{1} \leqslant r \leqslant R_{3}$ 的区间, 电流密 度仅是 $r$ 的函数。假设从内导体单位长流出的电流为 $I$, 则
+
+$$
+J=\frac{I}{2 \pi r} e_{r}
+$$
+
+二介质中的场强分别为
+
+$$
+E_{1}=\frac{I}{2 \pi \gamma_{1} r} e_{r}
+$$
+
+$$
+\boldsymbol{E}_{2}=\frac{\boldsymbol{I}}{2 \pi \gamma_{2} r} \boldsymbol{e}_{r}
+$$
+
+二导体间电压
+
+由此可解得
+
+$$
+U_{0}=\int_{R_{1}}^{R_{2}} \frac{I}{2 \pi \gamma_{1} r} \mathrm{~d} r+\int_{R_{2}}^{R_{3}} \frac{I}{2 \pi \gamma_{2} r} \mathrm{~d} r=\frac{I}{2 \pi}\left(\frac{1}{\gamma_{1}} \ln \frac{R_{2}}{R_{1}}+\frac{1}{\gamma_{2}} \ln \frac{R_{3}}{R_{2}}\right)
+$$
+
+$$
+l=\frac{2 \pi U_{0}}{\frac{1}{\gamma_{1}} \ln \frac{R_{2}}{R_{1}}+\frac{1}{\gamma_{2}} \ln \frac{R_{3}}{R_{2}}}
+$$
+
+由静电比拟也可计算本题。若设内导体单位长带有电荷 $\tau$, 则
+
+$$
+U_{0}=\frac{\tau}{2 \pi}\left(\frac{1}{\varepsilon_{1}} \ln \frac{R_{2}}{R_{1}}+\frac{1}{\varepsilon_{2}} \ln \frac{R_{3}}{R_{2}}\right)
+$$
+
+利用 $I$ 代替 $\tau, \gamma_{1}$ 和 $\gamma_{2}$ 分别代替 $\varepsilon_{1}$ 和 $\varepsilon_{2}$ 可得 $I_{\text {。 }}$
+
+## 7 .3 电导和接地电阻
+
+1. 电导
+
+$$
+G=\frac{I}{U}
+$$
+
+式中 I 为两电极间流过的电流, $U$ 为两电极间的电压。
+
+对于形状较规则的导体, 可先假设一电流再计算出电流密度 $J$, 通过 $\boldsymbol{E}=J / \gamma$ 计算出 $\boldsymbol{E}$, 再 积分求得 $U=\int_{l} \boldsymbol{E} \cdot \mathrm{d} l$, 可计算出 $G=I / U$, 或二电极间的电阻 $R=U / I$ 。另外, 也可以通过两导 体间电压, 计算出电流 $I$, 但这一过程并不多用。电导的计算, 还可以通过 拉普拉斯方程求解。
+
+【例 1.7-6】一平行板电容器, 极板面积为 $S$, 二极板间填充介质的漏 电电导率为 $\gamma$, 如图 1.7-6 所示, 若二极板间距离为 $d$, 试求该电容器的漏电 电阻。
+
+解 : 假设极板间流动的电流为 $I$, 则
+
+$$
+\begin{aligned}
+& J=\frac{I}{S}, E=\frac{I}{\gamma S} \\
+& U=\int_{0}^{d} \frac{I}{\gamma S} \mathrm{~d} x=\frac{I}{\gamma S} d
+\end{aligned}
+$$
+
+故有 $\quad R=\frac{U}{I}=\frac{d}{\gamma S}$
+
+【例 1.7-7】图 1.7-7 所示为一双层介质的电容器示意图, 若极板面积
+
+## 为 $S$, 试求该电容器的漏电阻。
+
+解: 设极板间电流为 $I$, 则此问题由分界面条件可判断, $J_{1}=J_{2}$, 即为均匀 分布电流, 故有
+
+$$
+J=\frac{I}{S}
+$$
+
+$$
+\begin{aligned}
+& E_{1}=\frac{J}{\gamma_{1}}=\frac{I}{\gamma_{1} S}, E_{2}=\frac{J}{\gamma_{2}}=\frac{I}{\gamma_{2} S} \\
+& U=\int_{n} E_{1} \mathrm{~d} l_{1}+\int_{n} E_{2} \mathrm{~d} l_{2}=\int_{0}^{d-d_{1}} \frac{I}{\gamma_{1} S} \mathrm{~d} l_{1}+\int_{0}^{d_{1}} \frac{I}{\gamma_{2} S} \mathrm{~d} l_{2}
+\end{aligned}
+$$
+
+$$
+=\frac{I}{\gamma_{1} S}\left(d-d_{1}\right)+\frac{I}{\gamma_{2} S} d_{1}
+$$
+
+$R=\frac{U}{I}=\frac{d-d_{1}}{\gamma_{1} S}+\frac{d_{1}}{\gamma_{2} S}$ 此题也可视为二段电阻串联, 利用例 1.7-6 的结论直接计算。即使有多层介质, 只要其中 电流是均匀分布的, 这种方法也同样适用。
+
+【例 1.7-8】一圆柱形电容器, 内外导体半径分别为 $R_{1}$ 和 $R_{2}$, 中间填充的介质漏电, 漏电 电导率为 $\gamma$, 若圆柱导体长度为 $L$, 试求该电容器的漏电电阻。
+
+解: 设内导体流出的电流为 $I$, 则电流密度
+
+漏电电阻
+
+$$
+\begin{aligned}
+& J=\frac{I}{2 \pi r L}, E=\frac{J}{\gamma}=\frac{I}{2 \pi \gamma L r} \\
+& U=\int_{R_{1}}^{R_{2}} E d r=\int_{R_{1}}^{R_{2}} \frac{I}{2 \pi \gamma L r} \mathrm{~d} r=\frac{I}{2 \pi \gamma L} \ln \frac{R_{2}}{R_{1}}
+\end{aligned}
+$$
+
+$$
+R=\frac{U}{I}=\frac{1}{2 \pi \gamma L} \ln \frac{R_{2}}{R_{1}}
+$$
+
+若此题改为双层介质或多层介质, 只要电流在 $r$ 处大小相等, 方向又都只存在径向分量, 计算过程仅仅注意到不同媒质中 $\gamma$ 不同,因而 $E$ 不同, 分段积分就可得到计算结果。具体过 程可以参照例 1.7-5。
+
+【例 1.7-9】一球形电容器, 内外半径分别为 $R_{1}$ 和 $R_{3}$, 中间填充两种介质, 介质分界面的 半径为 $R_{2}$, 若内外两层介质的漏电电导率分别为 $\gamma_{1}$ 和 $\gamma_{2}$ (如图 1.7-8), 求此电容器的漏电导。
+
+解: 设内导体流出的电流为 $I$, 由对称可得电容器内
+
+$$
+\begin{aligned}
+J & =\frac{I}{4 \pi r^{2}} \\
+E_{1} & =\frac{J}{\gamma_{1}}=\frac{I}{4 \pi \gamma_{1} r^{2}} \quad\left(R_{1}<r<R_{2}\right) \\
+E_{2} & =\frac{J}{\gamma_{2}}=\frac{I}{4 \pi \gamma_{2} r^{2}} \quad\left(R_{2}<r<R_{3}\right) \\
+U & =\int_{R_{1}}^{R_{2}} E_{1} \mathrm{~d} r+\int_{R_{2}}^{R_{3}} E_{2} \mathrm{~d} r \\
+& =\int_{R_{1}}^{R_{2}} \frac{I}{4 \pi \gamma_{1} r^{2}} \mathrm{~d} r+\int_{R_{2}}^{R_{3}} \frac{I}{4 \pi \gamma_{2} r^{2}} \mathrm{~d} r \\
+& =\frac{I}{4 \pi}\left[\frac{1}{\gamma_{1}}\left(\frac{1}{R_{1}}-\frac{1}{R_{2}}\right)+\frac{1}{\gamma_{2}}\left(\frac{1}{R_{2}}-\frac{1}{R_{3}}\right)\right]
+\end{aligned}
+$$
+
+$$
+G=\frac{I}{U}=\frac{4 \pi \gamma_{1} \gamma_{2}}{\gamma_{2}\left(\frac{1}{R_{1}}-\frac{1}{R_{2}}\right)+\gamma_{1}\left(\frac{1}{R_{2}}-\frac{1}{R_{3}}\right)}
+$$
+
+【例 1.7-10】图 1.7-9 所示厚为 $d$ 的一块导电板, 导电材料的电导率为 $\gamma$, 试求:
+
+(1) 沿厚度方向的电阻;
+
+(2) 两圆弧面间的电阻;
+
+(3) 两个侧表面间的电阻。
+
+解: 此题为一典型题目, 它说明电阻与施加电极的位置有关。换言之, 电阻与电流的分布 有关, 即不仅是与材料、大小和几何形状相关,也是场分布的函数。
+
+(1)沿厚度方向的电阻,相当于在其两面各加一等面积的电极,这样二电极间的电流必是均 匀分布, 可用所谓的电阻定律直接给出 $R$ 值, 即
+
+$$
+R=\frac{L}{S y}=\frac{2 d}{\gamma \theta\left(R_{2}^{2}-R_{1}^{2}\right)}
+$$
+
+(电阻定律: 电流均匀流过一段均匀导体时, 其电阻的大小与电导 率 $\gamma$ 成反比, 与导体的横截面积成反比, 而与导体的长度成正比。)
+
+若以电场计算, 可设电流为 $I$, 则
+
+$$
+\begin{aligned}
+& J=\frac{I}{S}=\frac{2 I}{\theta\left(R_{2}^{2}-R_{1}^{2}\right)} \\
+& E=\frac{J}{\gamma} \\
+& U=E d=\frac{2 I d}{\gamma \theta\left(R_{2}^{2}-R_{1}^{2}\right)}
+\end{aligned}
+$$
+
+用 $U / I$ 同样可得上面结果。
+
+(2) 由于形状特点, 电流 $I$ 由内弧面流向外弧面时,面积随 $r$ 的增大而增大, 但在同一 $r$ 的面 上, 电流密度应为同值, 故有
+
+$$
+\begin{aligned}
+& J=\frac{I}{S}=\frac{I}{\theta r d} \\
+& E=\frac{J}{\gamma} \\
+& U=\int_{R_{1}}^{R_{2}} E \mathrm{~d} r=\int_{R_{1}}^{R_{2}} \frac{I}{\gamma \theta r d} \mathrm{~d} r=\frac{I}{\gamma \theta d} \ln \frac{R_{2}}{R_{1}} \\
+& R=\frac{U}{I}=\frac{1}{\gamma \theta d} \ln \frac{R_{2}}{R_{1}}
+\end{aligned}
+$$
+
+(3)电极加在两侧, 由特定的几何形状可判断出: 对应于扇形的角度方向任一截面上, 电场 强度必定垂直于该面,而该面上的场强将与 $r$ 有关。若设两侧面施加电压 $U$, 则
+
+$$
+\begin{aligned}
+& E=\frac{U}{\theta r} \\
+& J=\gamma E \\
+& I=\int_{S} J \mathrm{~d} s=\int_{R_{1}}^{R_{2}} \frac{\gamma U}{\theta r} d \mathrm{~d} r=\frac{\gamma U d}{\theta} \ln \frac{R_{2}}{R_{1}} \\
+& R=\frac{U}{I}=\frac{\theta}{d \gamma \ln \frac{R_{2}}{R_{1}}}
+\end{aligned}
+$$
+
+该电阻的计算通过拉普拉斯方程计算也很方便,但必须掌握圆柱坐标系拉普拉斯方程和 梯度公式,下面给出这一计算过程。
+
+电位仅是 $\alpha$ 的函数,故可建立定解问题为
+
+$$
+\left\{\begin{array}{l}
+\frac{1}{r^{2}} \frac{\partial^{2} \varphi}{\partial \alpha^{2}}=0 \\
+\left.\varphi\right|_{\alpha=0}=0 \\
+\left.\varphi\right|_{\alpha=\theta}=U
+\end{array}\right.
+$$
+
+解得
+
+$$
+\varphi=C_{1} \alpha+C_{2}
+$$
+
+代入边界条件后可得
+
+$$
+\begin{aligned}
+& C_{2}=0, \quad C_{1}=\frac{U}{\theta} \\
+& \varphi=\frac{U}{\theta} \alpha \\
+& E=-\nabla_{\varphi}=-\frac{\partial \varphi}{r \partial \alpha} \boldsymbol{e}_{\alpha}=-\frac{U}{r \theta} \boldsymbol{e}_{\alpha} \\
+& J=\gamma E=-\frac{\gamma U}{r \theta} \boldsymbol{e}_{\alpha} \\
+& I=\int_{S} J \cdot \mathrm{d} S=-\int_{R_{2}}^{R_{1}} \frac{\gamma U}{r \theta} d \mathrm{~d} r=\frac{\gamma d U}{\theta} \ln \frac{R_{2}}{R_{1}}
+\end{aligned}
+$$
+
+故有
+
+$$
+R=\frac{U}{I}=\frac{\theta}{d \gamma \ln \frac{R_{2}}{R_{1}}}
+$$
+
+用拉普拉斯方程求解, 虽然过程较繁, 但对此题分析过程却要简便一些。
+
+【例 1.7-11】厚为 $h$ 的无限大导电平板, 其电导率为 $\gamma$, 今在板上挖有两个圆孔, 圆孔的 半径均为 $a$, 两圆孔的中心距离为 $d$, 现在圆孔中镶嵌以等半径的电极, 设电极的电导率远大于 平板的电导率, 试求二电极间的电阻。
+
+解: 由于二线输电线单位长度的电容为
+
+$$
+C_{0}=\frac{\pi \varepsilon_{0}}{\ln \frac{b+h-a}{b-h+a}}
+$$
+
+式中 $h=\frac{1}{2} d$, 而 $b=\sqrt{h^{2}-a^{2}}$, 采用静电比拟后, 无限长二圆柱电极对应的单位长度电导应为
+
+$$
+G_{0}=\frac{\pi y}{\ln \frac{\frac{d}{2}+\sqrt{(d / 2)^{2}-a^{2}}-a}{-\frac{d}{2}+\sqrt{(d / 2)^{2}-a^{2}}+a}}
+$$
+
+厚为 $h$ 的平极电极间电导应为
+
+$$
+G=G_{0} h
+$$
+
+其对应的电阻为 $G$ 的倒数, 因此
+
+$$
+R=\ln \frac{\frac{d}{2}+\sqrt{\frac{1}{4} d^{2}-a^{2}}-a}{-\frac{d}{2}+\sqrt{\frac{1}{4} d^{2}-a^{2}}+a} /(\pi \gamma h)
+$$
+
+## 2. 接地电阻
+
+电气设备通过引线与埋人地中导体相连接称为接地。一-个接地装置的接地电阻主要由接 地的导体 (接地体) 电流流散时, 通过土壤形成。对于引引线电阻、接地体自身电阻以及接地体 与大地之间的接触电阻, 由于其值相对较小,除非特殊申明，一般不予考虑。
+
+接地电阻的计算与一般电阻的计算完全一样, 只是其周围媒质离不开土壤。下面将列举 几种典型接地电极系统的接地电阻的计算。
+
+【例 1.7-12】半径为 $R_{0}$ 的半球接地体, 流出的电流为 $I$, 设土壤的电导率为 $\gamma$, 试求:
+
+(1) 该接地体的接地电阻;
+
+(2) 距球心 $l \mathrm{~m}$ 处向球心行进一步 (步长为 $b \mathrm{~m}$ ) 时的跨步电压;
+
+(3) 若人体的跨步电压允许值为 $U_{\mathrm{ml}}$, 试确定该接地体危险区的半径 (设 $\left.l \gg b\right)$ 。
+
+解: (1) 如图 1.7-10 所示, 由镜像法可知, 该半球电流 I 流出的电流是对称的, 且
+
+$$
+J=\frac{I}{2 \pi r^{2}}, E=\frac{I}{2 \pi \gamma r^{2}}
+$$
+
+半球到无穷远处的电压
+
+$$
+U=\int_{R_{0}}^{\infty} \frac{I}{2 \pi \gamma r^{2}} \mathrm{~d} r=\frac{I}{2 \pi \gamma R_{0}}
+$$
+
+接地体的电阻
+
+$$
+R=\frac{U}{I}=\frac{1}{2 \pi \gamma R_{0}}
+$$
+
+(2) 设跨步电压为 $U_{l}$, 则
+
+$$
+U_{l}=\int_{l-b}^{l} \frac{l}{2 \pi \gamma r^{2}} \mathrm{~d} r=\frac{l}{2 \pi \gamma}\left(\frac{1}{l-b}-\frac{1}{l}\right)
+$$
+
+(3) 若 $l \gg b$, 则
+
+$$
+\frac{1}{l-b}-\frac{1}{l}=\frac{b}{l(l-b)} \approx \frac{b}{l^{2}}
+$$
+
+故有
+
+$$
+U_{\mathrm{ml}}=\frac{l b}{2 \pi \gamma l^{2}}
+$$
+
+危险区半径
+
+$$
+l=\sqrt{\frac{I b}{2 \pi \gamma U_{\mathrm{ml}}}}
+$$
+
+一般情况下, 步长 $b$ 及 $U_{\mathrm{ml}}$ 均有规定值, 故此危险区半径 $l$ 取决于接地体流出的电流值 $I_{\text {。 }}$
+
+【例 1.7-13】一半径为 $R_{0}$ 的球形接地导体, 深埋土壤中, 若土壤的电导率为 $\gamma$, 试求该接 地体的接地电阻。
+
+解: 此题可视为金属球体在均匀导电媒质中向无穷远处电流流散,故若设流出的电流为 $I$, 则
+
+$$
+\begin{aligned}
+& J=\frac{I}{4 \pi r^{2}} e_{r}, E=\frac{J}{\gamma} \\
+& U=\int_{R_{0}}^{\infty} \frac{I}{4 \pi \gamma r^{2}} \mathrm{~d} r=\frac{I}{4 \pi \gamma R_{0}}
+\end{aligned}
+$$
+
+接地电阻为
+
+$$
+R=\frac{U}{I}=\frac{1}{4 \pi \gamma R_{0}}
+$$
+
+【例 1.7-14】位于悬崖一侧有一半球接地体,如图 1.7-11 所示, 若 $h \gg R_{0}$, 大地的电导率为 $\gamma$, 试求该接地体的接地电 阻。
+
+解: 由于存在条件 $h \gg R_{0}$, 故本例仍可用例 1.7-12 的方法计 算, 即接地电阻
+
+$$
+R \approx \frac{1}{2 \pi \gamma R_{0}}
+$$
+
+【例 1.7-15】圆柱形接地体如图 1.7-12 (a) 所示, 试求其 接地电阻。
+
+解: 这是一种常见的接地体, 其计算公式为
+
+$$
+R=\frac{1}{2 \pi \gamma L} \ln \frac{4 L}{d}
+$$
+
+该公式的推导过程较繁,且为近似计算,现推证如下。
+
+首先利用镜像法可得到一长为 $2 L$ 的模型, 若原模型流出的电流为 $I$, 则新模型在无限大均 匀媒质中流出的电流为 21 。由静电比拟可得到图 1.7-12(b), 现假设导体单位长度带电量为 一常数值 $\tau$, 且对外形成的场可视为等于电荷集中在几何轴线上。若以无穷远处为电位参考 点, 则在 $z=0$ 的平面上存在
+
+$$
+\begin{aligned}
+& \mathrm{d} \varphi=\frac{\tau \mathrm{d} z}{4 \pi \varepsilon r^{\prime}}, r^{\prime}=\sqrt{z^{2}+r^{2}} \\
+& \varphi=\frac{\tau}{4 \pi \varepsilon} \int_{-L}^{L} \frac{\mathrm{d} z}{\sqrt{z^{2}+r^{2}}}=\frac{\tau}{4 \pi \varepsilon} \ln \frac{L+\sqrt{L^{2}+r^{2}}}{-L+\sqrt{L^{2}+r^{2}}}=\frac{\tau}{4 \pi \varepsilon} \ln \frac{\left(L+\sqrt{L^{2}+r^{2}}\right)^{2}}{r^{2}}
+\end{aligned}
+$$
+
+当 $r=\frac{d}{2}$ 时, 求圆柱表面在 $z=0$ 处的电位。此时再考虑一般情况下存在 $L \gg d$, 则
+
+$$
+\varphi=\frac{\tau}{4 \pi \varepsilon} \ln \left(\frac{2 L}{d / 2}\right)^{2}=\frac{\tau}{2 \pi \varepsilon} \ln \frac{4 L}{d}
+$$
+
+遵照上述计算方法,得到的仅是 $z=0$ 处导体表面电位,但电荷集中在几何轴线上,以此模 型计算得到的导体表面其他位置的电位并不等于该值。基于工程考虑, 导体应是一个等位体, 当 $L \gg d$ 时,一般取 $z=0$ 处的电位值代表导体电位。显然, $\cdots$ 一个近似值, 但一般满足工
+
+## 程上的需要。
+
+长为 $2 L$ 的导体所带的电荷 $q=\tau 2 L$, 故得孤立导体的电容为
+
+$$
+C=\frac{q}{\varphi}=\frac{\tau 2 L}{\frac{\tau}{2 \pi \varepsilon} \ln \frac{4 L}{d}}=\frac{4 \pi \varepsilon L}{\ln \frac{4 L}{d}}
+$$
+
+由静电比拟, 长为 $2 L$ 的圆柱导体, 在无限大均匀媒质中产生的电导为
+
+$$
+G^{\prime}=\frac{4 \pi \gamma L}{\ln \frac{4 L}{d}}
+$$
+
+由于实际的接地体流出电流仅是总电流的一半, 故接地体的电导为
+
+$$
+G=\frac{2 \pi \gamma L}{\ln \frac{4 L}{d}}
+$$
+
+而接地电阻
+
+$$
+R=\frac{1}{G}=\frac{1}{2 \pi \gamma L} \ln \frac{4 L}{d}
+$$
+
+$G$ 为 $G^{\prime}$ 的一半, 还可以视为对应于两个电导 $G$ 并联的结果。另外, 流散同样的电流, 接地 体通过的导电媒质仅为无限大均匀媒质的一半, 故电导减半, 而电阻则加倍。
+
+## 8 恒定磁场
+
+## 8 .1 磁感应强度、磁场强度及磁化强度
+
+## 1. 磁感应强度
+
+磁感应强度 $(\boldsymbol{B})$ 是表示磁场强弱的基本物理量。其定义一般用洛仑兹力公式给出, 即
+
+$$
+\boldsymbol{f}=q(\boldsymbol{v} \times \boldsymbol{B})
+$$
+
+它表示当点电荷 $q$ 以速度 $v$ 运动时, 磁场对运动电荷产生的力大小不仅与电荷运动的速度和 磁感应强度的大小成正比, 而且与速度 $v$ 的方向与磁感应强度的方向之间夹角的正弦值成正 比; 而力的方向符合右手螺旋法则，即四指由 $\boldsymbol{v}$ 绕到 $\boldsymbol{B}$ ，而拇指表示受力方向。
+
+由此不难理解: 当单位正电荷以单位速度垂直磁场运动时, 该电荷受力的大小即表示该点 的磁感应强度的大小。显然, 电荷受力愈大, 表示该点磁场愈强。 $\boldsymbol{B}$ 的单位为特斯拉 $(\mathrm{T})$ 。
+
+静止电荷 $v=0$, 因此不会受到磁场力, 但会受到电场力, 这是区别电场和磁场的重要性质 之一。号外, 力 $\boldsymbol{f}$ 的方向恒与电荷运动的方向相垂直, 故洛仑兹力只能改变运动电荷速度的方 向, 而不能改变速度的量值; 换言之, 洛仑兹力不能做功。
+
+(1) 安培力公式
+
+载流导线受到的磁场力, 可通过安培力公式计算。通有电流 $l$ 的导线段 $\mathrm{d} l(\mathrm{~d} l$ 的方向系指 电流密度的方向), 其安培力为
+
+其积分形式为
+
+$$
+\mathrm{d} f=I(\mathrm{~d} l \times B)
+$$
+
+$$
+f=I \int \mathrm{d} \boldsymbol{l} \times \boldsymbol{B}
+$$
+
+若在均匀磁场中有长为 $l$ 的一段直导线, 则
+
+$$
+f=I(l \times B)
+$$
+
+当 $l$ 与 $B$ 垂直时, 其受力的大小变为
+
+$$
+f=I l B
+$$
+
+(2) 毕奥-萨伐尔定律
+
+在真空中, 电流 $I$ 所产生的磁场为
+
+$$
+B=\frac{\mu_{0}}{4 \pi} \oint_{l} \frac{I \mathrm{~d} l \times e_{r}}{r^{2}}
+$$
+
+上式称为毕奥-萨伐尔定律, 式中 $\mu_{0}$ 为真空中的磁导率, $\mu_{0}=4 \pi \times 10^{-7}$ 亨利 $/ *$ 米 $(\mathrm{H} / \mathrm{m})$ 。
+
+上式表示的定律运用于线电流产生的磁场的计算,但若是面电流或体分布电流,其计算式 往往涉及面积分或体积分,一般计算较繁。即
+
+$$
+\begin{aligned}
+& \boldsymbol{B}=\frac{\mu_{0}}{4 \pi} \oint_{S} \frac{\boldsymbol{K} \times \boldsymbol{e}_{r}}{r^{2}} \mathrm{~d} S \\
+& \boldsymbol{B}=\frac{\mu_{0}}{4 \pi} \oint_{V^{\prime}} \frac{\boldsymbol{J} \times \boldsymbol{e}_{r}}{r^{2}} \mathrm{~d} V^{\prime}
+\end{aligned}
+$$
+
+毕奥-萨伐尔定律运用于无限大真空条件。如果媒质是无限大均匀媒质, 其磁导率为 $\mu$, 则上面各公式中只需将 $\mu_{0}$ 换成 $\mu$ 就成立。但必须指出, 毕奥-萨伐尔定律不能计算非均匀媒 质中的磁场。
+
+【例 1.8-1】边长为 $2 a$ 的正方形载流导线如图 1.8-1 所示,试求该正方形几何中心处的 磁感应强度 $\boldsymbol{B}$ (设其周围媒质为真空)。
+
+解: 取电流段 $I \mathrm{~d} l$, 如图所示, 源点坐标为 $\left(a, y^{\prime}, 0\right)$, 而场 点坐标为 $(0,0,0)$, 故有
+
+$$
+\begin{aligned}
+& r=\sqrt{a^{2}+y^{\prime 2}} \\
+& \boldsymbol{e}_{r}=\frac{-a e_{x}-y^{\prime} \boldsymbol{e}_{y}}{\sqrt{a^{2}+y^{\prime 2}}} \\
+& \mathrm{~d} l=\mathrm{d} y^{\prime} \boldsymbol{e}_{y} \\
+& \mathrm{~d} l \times \boldsymbol{e}_{r}=\frac{a \boldsymbol{e}_{z}}{\sqrt{a^{2}+y^{\prime 2}}} \mathrm{~d} y^{\prime}
+\end{aligned}
+$$
+
+$A B$ 段电流产生的磁场
+
+由于对称,其他三段电流在该点产生的磁场和 $A B$ 电流产生的磁场完成相同,故得
+
+$$
+B=4 B_{1}=\frac{\sqrt{2} \mu_{0} I}{a \pi} e_{2}
+$$
+
+本例题采用比较规范的向量运算过程, 省去了判别磁场方向由投影关系判断的麻烦, 步骤 比较清晰。不难看出，直接用毕奥-萨伐尔定律计算磁场是不容易的。
+
+【例 1.8-2】真空中有一半径为 $R$ 的圆形电流, 如图 1.8-2 所示, 若该电流值为 $I$, 试求其 轴线上任一点处的磁感应强度。
+
+解: 由于对称, $I \mathrm{~d} l$ 在场点产生的 $\mathrm{d} B$ 在垂直 $z$ 轴的平面上必然抵消, 而在 $z$ 轴方向的分量 却互相增强, 故由
+
+而 $\mathrm{d} B_{z}=\mathrm{d} B \sin \theta$
+
+$$
+\mathrm{d} B=\frac{\mu_{0} I}{4 \pi r^{2}}\left(\mathrm{~d} \boldsymbol{l} \times \boldsymbol{e}_{r}\right)
+$$
+
+代人 $r^{2}=R^{2}+z^{2}, \mathrm{~d} l=R \mathrm{~d} \alpha$ 及 $\sin \theta=\frac{R}{\sqrt{R^{2}+z^{2}}}$
+
+则积分为
+
+$$
+\boldsymbol{B}_{z}=\int_{0}^{2 \pi} \frac{\mu_{0} I R}{4 \pi\left(R^{2}+z^{2}\right)^{3 / 2}} R \mathrm{~d} \alpha \boldsymbol{e}_{z}=\frac{\mu_{0} I R^{2}}{2\left(R^{2}+z^{2}\right)^{3 / 2}} \boldsymbol{e}_{z}
+$$
+
+## 2. 磁化强度
+
+磁化强度是描述媒质磁化状态的物理量, 并用 $\boldsymbol{M}$ 表示。它 表示媒质中每单位体积内所有分子磁矩的向量和, 即
+
+$$
+\boldsymbol{M}=\lim _{\Delta v+0} \frac{\sum \boldsymbol{m}_{i}}{\Delta V}
+$$
+
+式中 $m$ 为分子的磁矩, $m=I S, I$ 表示分子的等效电流强度, $S$ 为分子电流包围的面积, $S$ 的方 向与电流绕向间服从右手螺旋法则。 $\boldsymbol{m}$ 的单位为安 - 米 ${ }^{2}\left(\mathrm{~A} \cdot \mathrm{m}^{2}\right)$, 而 $\boldsymbol{M}$ 的单位为安/米 $(\mathrm{A}$ m)。
+
+磁化电流强度 $I_{M}$ 表示穿过 $S$ 面上的总磁化电流, 并且
+
+$$
+I_{M}=\oint_{l} M \cdot \mathrm{d} \boldsymbol{l}
+$$
+
+磁化电流密度 $J_{m}$ 满足
+
+$$
+J_{m}=\nabla \times M
+$$
+
+磁化电流的面密度 $\boldsymbol{K}_{m}$ 满足
+
+$$
+K_{m}=\left(M_{1}-M_{2}\right) \times e_{n}
+$$
+
+式中 $e_{n}$ 表示媒质分界面处由第一种媒质指向第二种媒质的单位法向向量。当媒质二中 $M_{2}=$ 0 (例如真空) 时, 则
+
+$$
+\boldsymbol{K}_{m}=M_{1} \times \boldsymbol{e}_{n}
+$$
+
+由分子电流形成的磁化电流和通常意义上的电流 (又称自由电流, 源于自由电荷流动) 一 样, 都可以产生磁场, 只是末被磁化的媒质中, 分子磁矩排列杂乱无章, 对外不显示磁性。在计 算含有媒质区域的磁场时, 只要把磁化电流和自由电流一起考虑进去, 则整个空间可以按照真 空计算。
+
+## 3. 磁场强度
+
+磁化电流计算是比较麻烦的, 工程上一一般引入磁场强度这一概念, 再利用描述媒质导磁性 质的一个系数,即磁导率来计算磁场。一般情况下,磁场强度 $\boldsymbol{H}$ 表达式为
+
+$$
+\boldsymbol{H}=\frac{\boldsymbol{B}}{\mu_{0}}-\boldsymbol{M}
+$$
+
+对于各向同性线性媒质, 存在
+
+$$
+\boldsymbol{M}=\chi_{m} \boldsymbol{H}
+$$
+
+$\chi_{m}$ 称为媒质的磁化率, 是一个纯数, 由此可得
+
+$$
+\boldsymbol{B}=\mu_{0}(\boldsymbol{H}+\boldsymbol{M})=\mu_{0}\left(1+\chi_{m_{m}}\right) \boldsymbol{H}=\mu_{0} \mu_{r} \boldsymbol{H}=\mu \boldsymbol{H}
+$$
+
+媒质磁导率 $\mu=\mu_{r} \mu_{0}$, 相对磁导率 $\mu_{\mathrm{r}}=1+\chi_{m}$, 且 $\mu_{\mathrm{r}}=\mu / \mu_{0}$ 。
+
+磁场强度的单位为安/米 $(\mathrm{A} / \mathrm{m})$ 。
+
+【例 1.8-3】均匀磁化的媒质中磁感应强度为 $B_{0}$, 媒质的相对磁导率为 $\mu_{\mathrm{r}}$, 试求媒质中的 磁化强度。
+
+解: $H=\frac{1}{\mu} B_{0}=\frac{B_{0}}{\mu_{\mathrm{r}} \mu_{0}}$
+
+$$
+M=\frac{B_{0}}{\mu_{0}}-H=\frac{B_{0}}{\mu_{0}}-\frac{B_{0}}{\mu_{\mathrm{r}} \mu_{0}}=\frac{B_{0}}{\mu_{0}}\left(1-\frac{1}{\mu_{\mathrm{r}}}\right)=\frac{B_{0}\left(\mu_{\mathrm{r}}-1\right)}{\mu_{\mathrm{r}} \mu_{0}}
+$$
+
+### 2 恒定磁场的基本方程和分界面上的衔接条件
+
+1. 恒定磁场中的基本方程
+
+积分形式为
+
+$$
+\left\{\begin{array}{l}
+\oint_{l} \boldsymbol{H} \cdot \mathrm{d} \boldsymbol{l}=\Sigma \boldsymbol{I} \\
+\oint_{S} \boldsymbol{B} \cdot \mathrm{d} \boldsymbol{S}=0
+\end{array}\right.
+$$
+
+上面二式分别被称为安培环路定律和磁通连续性定理。
+
+安培环路定律说明磁场强度 $\boldsymbol{H}$ 沿任意闭合问路的线积分恒等于该回路所包围的全部自 由电流, 当 $l$ 与 $\mathrm{d} l$ 的绕向符合右手螺旋法则时取正值, 否则取负值。使用该定理时注意电流 $I$ 必须是问路, 不能是一段电流。
+
+磁通连续性定理说明磁场线 (又称磁感应线) 必定是无头无尾的闭合曲线。
+
+恒定磁场基本方程的微分形式为
+
+$$
+\left\{\begin{array}{l}
+\boldsymbol{\nabla} \times \boldsymbol{H}=\boldsymbol{J}_{S} \\
+\boldsymbol{\nabla} \cdot \boldsymbol{B}=0
+\end{array}\right.
+$$
+
+式中 $\boldsymbol{J}_{\mathrm{S}}$ 表示自由面电流线密度。恒定磁场是有旋场,但是一个无散度源的无散场。
+
+联系二场量的关系式为
+
+$$
+\boldsymbol{B}=\mu_{0}(\boldsymbol{H}+\boldsymbol{M})
+$$
+
+在各向同性媒质中有
+
+$$
+\boldsymbol{B}=\mu \boldsymbol{H}
+$$
+
+## 2. 分界面上的衔接条件
+
+$$
+\left\{\begin{array}{l}
+H_{1 t}-H_{2 t}=J_{s} \\
+B_{1 n}=B_{2 n}
+\end{array}\right.
+$$
+
+下标 $t$ 和 $n$ 分别表示切向和法向。面电流线密度 $J_{S}$ 与 $\boldsymbol{H}_{1 t}$ 绕至 $\boldsymbol{H}_{2 t}$ 时符合右手螺旋法则时取 正,否则应取负值。用向量形式表示上述关系则存在
+
+$$
+\left\{\begin{array}{l}
+\left(\boldsymbol{H}_{1}-\boldsymbol{H}_{2}\right) \times \boldsymbol{e}_{n}=J_{S} \\
+\left(\boldsymbol{B}_{1}-\boldsymbol{B}_{2}\right) \cdot \boldsymbol{e}_{n}=0
+\end{array}\right.
+$$
+
+对于各向同性媒质,若分界面处 $\boldsymbol{J}_{s}=0$, 则存在所谓的折射定律 (参照图 1.8-3)
+
+$$
+\frac{\tan \alpha_{1}}{\tan \frac{\alpha_{2}}{\alpha_{2}}}=\frac{\mu_{1}}{\mu_{2}}
+$$
+
+当 $\mu_{1} \gg \mu_{2}$ 时 (例如铁磁材料相对非铁磁材料), 只要 $\alpha_{1} \neq 90^{\circ}$, 则可近似认为 $\alpha_{2}=0$, 即 $\mu_{2}$ 中的磁场是垂直于分界面的。例如 $\mu_{1}=$ $3000 \mu_{0}, \mu_{2}=\mu_{0}$, 当 $\alpha_{1}=88^{\circ}$ 时, 可由折射定律求得 $\alpha_{2}=33^{\prime}$ 。这一结 论在实用中十分有用。
+
+## 3. 安培环路定律的应用
+
+在电流与媒质分布具有对称特性时, 依据安培环路定律和分界 面上的衔接条件,可以方便地求得某些磁场。
+
+【例 1.8-4】半径为 $a$ 的长直导线通有电流 $I$, 周围是磁导率为 $\mu$ 的均匀媒质,试求媒质中的 $H 、 B$ 和 $M_{\text {。 }}$
+
+解: 长直导线可认为电流在远处闭合, 故可应用安培环路定律计算。设导线轴线为柱坐标 的 $z$ 轴, 取 $z$ 轴方向与 $I$ 参考方向一致,则
+
+$$
+\begin{aligned}
+& \oint_{l} \boldsymbol{H} \cdot \mathrm{d} l=H \cdot 2 \pi r=I \\
+& H=\frac{I}{2 \pi r} \\
+& B=\mu H=\frac{\mu l}{2 \pi r} \\
+& M=\frac{B}{\mu_{0}}-H=\frac{\mu-\mu_{0}}{\mu_{0}} \cdot \frac{I}{2 \pi r}
+\end{aligned}
+$$
+
+若以长直导线中电流 $I$ 的方向为 $z$ 轴, 则相应的 $B$ 可写为向量形式
+
+$$
+B=\frac{\mu I}{2 \pi r} \boldsymbol{e}_{\alpha}
+$$
+
+$\boldsymbol{e}_{\boldsymbol{\alpha}}$ 为圆柱坐标系中 $\boldsymbol{\alpha}$ 方向的单位向量。显然, $\boldsymbol{B}$ 与 $Z$ 坐标无关, 是一个平行平面场。
+
+【例 1.8-5】真空中位于 ${ } \mathrm{Oz}$ 平面上均匀分布着面电流 $J_{S}=J_{S} e_{z}$, 试求其周围的磁场。
+
+[图 $1.8-4$
+
+解: 该电流可以看作由无限多的 $J_{S} \mathrm{~d} y$ 电流组成, 而 $J_{S} \mathrm{~d} y$ 相 当于一细线电流( 如图 1.8-4), 它产生的磁场为
+
+$$
+\mathrm{d} \boldsymbol{B}=\frac{\mu_{0} J_{s} \mathrm{~d} y}{2 \pi \tau} \boldsymbol{e}_{\alpha}
+$$
+
+由于对称, 距离 $y O z$ 平面为 $x$ 位置处的磁感应强度在 $x$ 方 向上的分量将抵消, 而 $y$ 方向的分量为 $\mathrm{d} B \cos \theta$, 故当 $x>0$ 时
+
+$$
+\begin{aligned}
+\boldsymbol{B} & =\frac{\mu_{0} J_{S}}{2 \pi} \int_{-\infty}^{\infty} \frac{\cos \theta}{\sqrt{x^{2}+y^{2}}} \mathrm{~d} y \boldsymbol{e}_{y}=\int_{-\infty}^{\infty} \frac{\mu_{0} J_{S} x}{2 \pi\left(x^{2}+y^{2}\right)} \mathrm{d} y \boldsymbol{e}_{y} \\
+& =\left.\frac{\mu_{0} J_{S}}{2 \pi} \arctan \frac{y}{x}\right|_{-\infty} ^{\infty} \boldsymbol{e}_{y}=\frac{\mu_{0} J_{S}}{2} \boldsymbol{e}_{y} .
+\end{aligned}
+$$
+
+当 $x<0$ 时, 存在
+
+$$
+\boldsymbol{B}=-\frac{\mu_{0} J_{S}}{2} \boldsymbol{e}_{y}
+$$
+
+从计算结果可以看出, 无限大面电流形成的磁场到处量值相等, 而两侧的 $\boldsymbol{B}$ 反向。
+
+【例 1.8-6】真空中距离为 $d$ 的两个无限大平面如图1.8-5所示, $A 、 B$ 二平面上分别存在 均匀面电流 $J_{A}=3 e_{z}, J_{B}=-3 e_{z}$, 试求空间各点的磁感应强度。
+
+$$
+\oint_{l} \boldsymbol{H} \cdot \mathrm{d} l=\Sigma I
+$$
+
+可得 $R_{1}<r<R_{2}$ 时
+
+$$
+\begin{aligned}
+& H 2 \pi r=\frac{I \pi\left(r^{2}-R_{1}^{2}\right)}{\pi\left(R_{2}^{2}-R_{1}^{2}\right)} \\
+& H=\frac{I\left(r^{2}-R_{1}^{2}\right)}{2 \pi\left(R_{2}^{2}-R_{1}^{2}\right) r} \\
+& B=\frac{\mu I\left(r^{2}-R_{1}^{2}\right)}{2 \pi\left(R_{2}^{2}-R_{1}^{2}\right) r} e_{\alpha}
+\end{aligned}
+$$
+
+当 $r>R_{2}$ 时
+
+$$
+B=\frac{\mu_{0} I}{2 \pi r} e_{\alpha}
+$$
+
+当 $r<R_{1}$ 时
+
+$$
+\boldsymbol{B}=0
+$$
+
+解:两个平面上的电流分别单独作用, 然后合成得
+
+$$
+\begin{aligned}
+& \boldsymbol{B}=2 \times \frac{\mu_{0} J_{A}}{2} \boldsymbol{e}_{y}=\mu_{0} J_{A} e_{y}=3 \mu_{0} \boldsymbol{e}_{y} \quad(0<x<d) \\
+& \boldsymbol{B}=0 \quad(x<0 \text { 和 } x>d)
+\end{aligned}
+$$
+
+鼠然, $A$ 与 $B$ 二平面之间为 ....均匀磁场, 们一平面之外区间 无磁场。
+
+【例 1.8-7】磁导率为 $\mu$ 的长直管形导体, 通有电流 $I$, 管外 为空气, 试求空间各点的磁感应强度。
+
+解:该导体的横断面如图 1.8-6 所示,这是一个满足轴对称 的平行平面场。以轴心 $O$ 为圆心, 任意半径为 $r$ 的圆上 $H$ 相等, 方向与 $e_{\alpha}$ 一致,故由
+
+【例 1.8-8】磁导率为 $\mu$ 的无穷大导磁平板, 厚度为 $2 a$, 如图 1.8-7 所示。板内有均分分布的体电流密度 $J=J_{0} e_{z}$, 试求 空间各点的 $B 、 H$ 和 $M$ 。
+
+解: 由于对称, 可判断出 $x O z$ 平面上存在 $B=0 、 H=0 、 M=$ 0 。板内体电流可以视为无穷多的溥片面电流组成，因此可判 断出 $\boldsymbol{B}$ 将只具有 $x$ 方向分量。在 $x$ 轴1:取单位长度,在 $x O y$ 平 面做矩形问路,则 $y$ 方向的两边 $\mathrm{d} \boldsymbol{l}$ 的方向与 $\boldsymbol{B}$ 的方向垂直点 乘为零, 此时安培环路定律仅存在于高为 $y$ 的边上, $\boldsymbol{H}$ 与 $\mathrm{d} \boldsymbol{l}$ 方
+
+向一致,故有
+
+$0<y<a$ 时
+
+$$
+\begin{aligned}
+& \boldsymbol{H}=-J_{0} y \boldsymbol{e}_{x} \\
+& \boldsymbol{B}=-\mu_{0} J_{0} y \boldsymbol{e}_{x} \\
+& \boldsymbol{M}=\frac{\boldsymbol{B}}{\mu_{0}}-\boldsymbol{H}=-\frac{\mu-\mu_{0}}{\mu_{0}} J_{0} y \boldsymbol{e}_{x}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+& \boldsymbol{H}=-J_{0} a e_{x} \\
+& \boldsymbol{B}=-\mu_{0} J_{0} a e_{x} \\
+& \boldsymbol{M}=0
+\end{aligned}
+$$
+
+在 $y<0$ 的空间, 其值应取相异符号, 即
+
+$$
+-a<y<0 \text { 时 }
+$$
+
+$$
+\begin{aligned}
+& \boldsymbol{H}=J_{0} y \boldsymbol{e}_{x} \\
+& \boldsymbol{B}=\mu J_{0} y \boldsymbol{e}_{x} \\
+& \boldsymbol{M}=\frac{\mu-\mu_{0}}{\mu_{0}} J_{0} y \boldsymbol{e}_{x}
+\end{aligned}
+$$
+
+$y<-a$ 时
+
+$$
+\begin{aligned}
+& \boldsymbol{H}=J_{0} a e_{x} \\
+& B=\mu_{0} J_{0} a e_{x} \\
+& M=0
+\end{aligned}
+$$
+
+利用叠加性质, 许多类似此题的多种情况组合均可方便求解。
+
+【例 1.8-9]在真空中, 半径为 $R_{1}$ 的无限长直圆柱内, 除半 径为 $R_{2}$ 的无限长直圆柱外, 均有均匀电流, 其体密度为 $J_{0} e_{z}$, 试 求空洞内任一点的磁感应强度 $\boldsymbol{B}$ 。
+
+解: 由图 1.8-8 所示, 如果令半径为 $R_{1}$ 圆柱内通有电流 $J_{0} e_{z}$, 而让半径为 $R_{2}$ 圆柱内通有电流 $-J_{0} e_{z}$, 二者叠加即为本题 解。考虑柱对称磁场的方向均为 $e_{\alpha}$ 方向, 分别取二柱中心轴为 $z$ 轴, 则由安培环路定律可以得到
+
+$$
+\boldsymbol{B}=\frac{\mu_{0} J_{0} \pi r_{1}^{2}}{2 \pi r_{1}} \boldsymbol{e}_{\alpha 1}+\frac{-\mu_{0} J_{0} \pi r_{2}^{2}}{2 \pi r_{2}} \boldsymbol{e}_{\alpha 2}=\frac{\mu_{0} J_{0}}{2}\left(r_{1} \boldsymbol{e}_{\alpha 1}-r_{2} \boldsymbol{e}_{\alpha 2}\right)
+$$
+
+圆柱坐标系为正交坐标系, 存在关系式
+
+$$
+\boldsymbol{e}_{\alpha}=\boldsymbol{e}_{z} \times \boldsymbol{e}_{r}
+$$
+
+则
+
+$$
+\begin{aligned}
+\boldsymbol{B} & =\frac{\mu_{0} J_{0}}{2}\left[r_{1}\left(\boldsymbol{e}_{z} \times \boldsymbol{e}_{r 1}\right)-r_{2}\left(\boldsymbol{e}_{z} \times \boldsymbol{e}_{r 2}\right)\right]=\frac{\mu_{0} J_{0}}{2}\left[\boldsymbol{e}_{z} \times\left(\boldsymbol{r}_{1}-\boldsymbol{r}_{2}\right)\right] \\
+& =\frac{\mu_{0} J_{0}}{2}\left(\boldsymbol{e}_{z} \times d \boldsymbol{e}_{x}\right)=\frac{\mu_{0} J_{0} d}{2} \boldsymbol{e}_{y}
+\end{aligned}
+$$
+
+可见空洞内的磁场为一均匀磁场。
+
+【例 1.8-10】空气中二平行架设的无限长直导线 (导线材料的 磁导率为 $\mu_{0}$ ) 通有电流 $I$, 如图 1.8-9 所示, 试求过二导线轴线的平面 上任一点处的磁感应强度。
+
+解: 由所定义的坐标系不难看出, 该平面上 $\boldsymbol{B}$ 只有 $z$ 方向分量。 利用叠加定理, 当左导线单独作用时, 在左导体内部:
+
+$$
+\boldsymbol{B}_{1}=\frac{\mu_{0} I \pi\left(x+\frac{d}{2}\right)^{2}}{2 \pi\left(x+\frac{d}{2}\right) \pi R^{2}} \boldsymbol{e}_{2}=\frac{\mu_{0} I\left(x+\frac{d}{2}\right)}{2 \pi R^{2}} \boldsymbol{e}_{z}
+$$
+
+在左导线外部:
+
+$$
+\boldsymbol{B}_{2}=\frac{\mu_{0} l}{2 \pi\left(x+\frac{d}{2}\right)} \boldsymbol{e}_{z}
+$$
+
+当右导线单独作用时,在右导线内部:
+
+$$
+\boldsymbol{B}_{3}=\frac{-\mu_{0} I \pi\left(x-\frac{d}{2}\right)^{2}}{2 \pi\left(x-\frac{d}{2}\right) \pi R^{2}} e_{z}=\frac{-\mu_{0} I\left(x-\frac{d}{2}\right)}{2 \pi R^{2}} e_{z}
+$$
+
+在存导线外部:
+
+$$
+B_{4}=\frac{-\mu_{0} I}{2 \pi\left(x-\frac{d}{2}\right)} e_{z}
+$$
+
+由叠加可得在左导线内部:
+
+$$
+B=B_{1}+B_{4}=\left[\frac{\mu_{0} I\left(x+\frac{d}{2}\right)}{2 \pi R^{2}}-\frac{\mu_{0} I}{2 \pi\left(x-\frac{d}{2}\right)}\right] e_{z}
+$$
+
+在右导线内部:
+
+$$
+\boldsymbol{B}=\boldsymbol{B}_{2}+\boldsymbol{B}_{3}=\left[\frac{\mu_{0} I}{2 \pi\left(x+\frac{d}{2}\right)}-\frac{\mu_{0} I\left(x-\frac{d}{2}\right)}{2 \pi R^{2}}\right] e_{z}
+$$
+
+在二导线外部:
+
+$$
+\boldsymbol{B}=\boldsymbol{B}_{2}+\boldsymbol{B}_{4}=\left[\frac{\mu_{0} I}{2 \pi\left(x+\frac{d}{2}\right)}-\frac{\mu_{0} I}{2 \pi\left(x-\frac{d}{2}\right)}\right] \boldsymbol{e}_{z}
+$$
+
+注意: 置于坐标系中, 本题 $x$ 有正有负。
+
+【例 1.8-11】二平行架设的长直输电线通有电流 $I$, 如图
+
+1.8-10 所示。试求二线连线中垂面上任一点的磁感应强度。 解: 由安培环路定律和叠加定理可得
+
+$$
+\begin{aligned}
+\boldsymbol{B} & =\boldsymbol{B}_{1}+\boldsymbol{B}_{2}=\frac{\mu_{0} I}{2 \pi r} \cos \theta \boldsymbol{e}_{y}+\frac{\mu_{0} I}{2 \pi r} \cos \theta \boldsymbol{e}_{y} \\
+& =\frac{\mu_{0} I}{\pi r} \frac{\frac{d}{2}}{r} \boldsymbol{e}_{y}=\frac{\mu_{0} d I}{2 \pi\left(\frac{1}{4} d^{2}+y^{2}\right)} \boldsymbol{e}_{y}
+\end{aligned}
+$$
+
+【例 1.8-12】一空心圆环如图 1.8-11 所示, 圆环的磁导率为 $\mu$, 且 $\boldsymbol{\mu}$ $>\mu_{0}$, 圆环上均匀密绕有 $N$ 印线圈, 若线圈中通有电流 $I$, 试求圆环的平均 半径处的磁感应强度和圆环内的平均磁感应强度。
+
+解:平均半径
+
+$$
+R=\frac{R_{1}+R_{2}}{2}
+$$
+
+在该位置处,由安培环路定律得
+
+$$
+B_{0}=\frac{\mu N I}{2 \pi R}=\frac{\mu N I}{\pi\left(R_{1}+R_{2}\right)}
+$$
+
+设环内任一半径处半径为 $r$, 则
+
+$$
+B=\frac{\mu N I}{2 \pi r}
+$$
+
+其平均值
+
+$$
+B_{\mathrm{av}}=\frac{1}{R_{2}-R_{1}} \int_{R_{1}}^{R_{2}} \frac{\mu N I}{2 \pi r} \mathrm{~d} r=\frac{\mu N I}{2 \pi\left(R_{2}-R_{1}\right)} \ln \frac{R_{2}}{R_{1}}
+$$
+
+【例 1.8-13】一长直螺线管, 单位长度绕有 $N$ 匝线圈, 若线圈通有电流 $I$, 螺线管内的磁 导率为 $\mu_{0}$, 试求螺线管内的磁感应强度 $B$ 。
+
+解: 此问题的严格计算并不简单, 螺线管内无论沿轴向还是沿径向, 其磁感应强度 $B$ 的大 小都有差异。但如果螺线管很长, 而螺线管的横截面积又相对较小, 则在螺线管中绝大部分区 域可近似认为其磁场是均匀的, 并存在
+
+$$
+B=\mu_{0} N I
+$$
+
+该式的推导方法之一是利用分界面条件,即
+
+$$
+H_{1 t}-H_{2 i}=J_{S}
+$$
+
+螺线管内的磁场只具切向分量, 并且远大于管外的磁场, 而分界面处的 $N$ 匝电流等效为单位 长度上的面电流, 故有管内磁场强度
+
+$$
+H=N I
+$$
+
+而
+
+$$
+B=\mu_{0} H=\mu_{0} N I
+$$
+
+显然,这个结果是近似值。
+
+【例 1.8-14】两种媒质以 $y O z$ 平面为分界面,如图 1.8-12 所示, 若媒质 $\mu_{1}$ 中的磁场强度 $H_{1}=3 e_{x}+4 e_{y}+5 e_{z} \mathrm{~A} / \mathrm{m}$, 分界面上存在面电 流线密度 $J_{S}=e_{z} \mathrm{~A} / \mathrm{m}$, 求媒质 $\mu_{2}$ 中分界面处的磁场强度。
+
+解: $\boldsymbol{H}_{1}$ 中 $y$ 方向和 $z$ 方向分量构成分界面处的切向分量。由
+
+$$
+H_{1}-H_{21}=J_{S}
+$$
+
+可得
+
+$$
+H_{1 z}=H_{2 z}=5
+$$
+
+$H_{1 y}-H_{2 y}=-J_{S}$
+
+$$
+H_{2 y}=H_{1 y}+J_{S}=4+1=5
+$$
+
+$H_{1}$ 的 $x$ 方向分量是分界面的法线方向,故由 $B_{1 n}=B_{2 n}$ 可得
+
+$$
+\begin{aligned}
+& \mu_{1} H_{1 x}=\mu_{2} H_{2 x} \\
+& H_{2 x}=\frac{\mu_{1}}{\mu_{2}} H_{1 x}=3 \frac{\mu_{1}}{\mu_{z}}
+\end{aligned}
+$$
+
+合成后存在.
+
+$$
+H_{2}=3 \frac{\mu_{1}}{\mu_{2}} e_{x}+5 e_{y}+5 e_{z} \mathrm{~A} / \mathrm{m}
+$$
+
+## 8 .3 自感与互感
+
+电感可分为自感与互感两种概念, 自感又可分为内自感和外自感两种不同的计算方法。 研究电感离不开磁通和磁链。所谓磁通即表示某面积上磁感应强度的通量, 即
+
+$$
+\boldsymbol{\phi}=\int_{S} \boldsymbol{B} \cdot \mathrm{d} \boldsymbol{S}
+$$
+
+磁通是一个标量, 在设定的参考方向下, 有正负之分, 类似于电流强度。磁通的单位为韦伯 (Wb)。
+
+磁链与磁通相交链的电流相关, 一个通有电流 $I$ 的 $n$ 匝线圈, 其磁链
+
+$$
+\Psi=\phi_{1}+\phi_{2}+\cdots+\phi_{n}
+$$
+
+式中 $\phi_{i}$ 为每一匝线圈通过的磁通。如果每㭱线圈通过的磁通都为 $\phi$, 则
+
+$$
+\Psi=n \phi
+$$
+
+对于磁通包围的电流不足一匝的情况，必须引人分数匝概念, 此时将存在关系式
+
+$$
+\mathrm{d} \Psi=\frac{I^{\prime}}{I} \mathrm{~d} \phi
+$$
+
+## 1. 自感
+
+## (1)内自感
+
+内自感由导体内部磁链产生, 此时磁通包围的电流为分数匝, 典型计算如下。
+
+设半径为 $R$ 的长直导线通有均匀分布的电流 $I$, 如图 1. 8-13 所示。该导线内部的磁感应强度
+
+$$
+B=\frac{\mu_{0} I \pi r^{2}}{2 \pi r \pi R^{2}}=\frac{\mu_{0} I r}{2 \pi R^{2}}
+$$
+
+取轴向长度为 $l$ 、宽为 $\mathrm{d} r$ 的矩形面积元, $\mathrm{d} r$ 是微分量,故在该面积 元上 $B$ 可视为常量,因此
+
+$$
+\mathrm{d} \phi_{i}=B \mathrm{~d} S=\frac{\mu_{0} I r}{2 \pi R^{2}} l \mathrm{~d} r
+$$
+
+由 $\mathrm{d} \phi_{i}$ 包围的电流不是 $I$, 而是导线中全部电流的一部分, 相当于
+
+## 一匹电流的比例为
+
+$$
+\frac{I^{\prime}}{I}=\frac{I \pi r^{2}}{I \pi R^{2}}=\frac{r^{2}}{R^{2}}
+$$
+
+由此得内磁链微分量为
+
+$$
+\mathrm{d} \Psi_{i}=\frac{I^{\prime}}{I} \mathrm{~d} \phi_{i}=\frac{\mu_{0} I l r^{3}}{2 \pi R^{4}} \mathrm{~d} r
+$$
+
+内磁链 内自感
+
+$$
+\Psi_{i}=\int_{S} \mathrm{~d} \Psi_{i}=\int_{0}^{R} \frac{\mu_{0} l l r^{3}}{2 \pi R^{4}} \mathrm{~d} r=\frac{\mu_{0} l l}{8 \pi}
+$$
+
+$$
+L_{i}=\frac{\Psi_{i}}{I}=\frac{\mu_{0} l}{8 \pi}
+$$
+
+单位长度的内自感为一常数, 即
+
+$$
+L_{i 0}=\frac{L_{i}}{l}=\frac{\mu_{0}}{8 \pi}
+$$
+
+显然, 长直圆导线的内自感与导线半径 $R$ 无关, 而单位长直圆导线的内自感为一定值, 这 一结论十分重要。如果导线的磁导率不是 $\mu_{0}$, 而换上其相应的磁导率 $\mu$ 时, 这一结论仍然正 确。二线输电线往返有两颗导线, 只要是实心导体, 则其单位长度的内自感应为 $2 \frac{\mu_{0}}{8 \pi}=\frac{\mu_{0}}{4 \pi}$ 。 上述结论具有普遍的应用意义。
+
+(2) 外自感
+
+外自感不涉及分数匝概念,其一般计算公式为
+
+$$
+L_{0}=\frac{\Psi_{0}}{I}
+$$
+
+【例 1.8-15】导线半径为 $R$ 的二线输电线, 轴线间距离为 $d$, 周围 为空气,试求其单位长度的自感。
+
+解: 其计算模型如图 1.8-14 所示。设导线中流动的电流为 $I$, 则二 导线轴线所在平面上,左导线单独作用时
+
+$$
+B_{1}=\frac{\mu_{0} I}{2 \pi r}
+$$
+
+二导线间单位长度上, 由 $B_{1}$ 形成的磁通
+
+$$
+\phi_{1}=\int_{S} B_{1} \cdot \mathrm{d} S=\int_{k}^{\mathrm{d}-R} \frac{\mu_{0} I}{2 \pi r} \mathrm{~d} r=\frac{\mu_{0} I}{2 \pi} \ln \frac{d-R}{R}
+$$
+
+由于对称, 右导线在二导线间形成的磁通与 $\phi_{1}$ 大小相等, 方向相同。故二导线形成的外 磁通 (单回路磁通即外磁链)
+
+$$
+\phi_{0}=2 \phi_{1}=\frac{\mu_{0} I}{\pi} \ln \frac{d-R}{R}
+$$
+
+外自感
+
+$$
+L_{0}=\frac{\phi_{0}}{I}=\frac{\mu_{0}}{\pi} \ln \frac{d-R}{R}
+$$
+
+二线输电线单位长度的内自感为 $\frac{\mu_{0}}{4 \pi}$, 故单位长度的自感为
+
+$$
+L=L_{0}+L_{i}=\frac{\mu_{0}}{\pi} \ln \frac{d-R}{R}+\frac{\mu_{0}}{4 \pi}
+$$
+
+如果 $R \ll d$, 则上式变为
+
+$$
+L=\frac{\mu_{0}}{\pi} \ln \frac{d}{R}+\frac{\mu_{0}}{4 \pi}
+$$
+
+【例 1.8-16】试求图 1.8-15 所示同轴电缆单位长度的自感。 解: 设内外导体流动的电流为 $I$, 由安培环路定律不难得到
+
+$$
+\begin{aligned}
+& B_{1}=\frac{\mu_{0} I r}{2 \pi R_{1}^{2}} \quad\left(r \leqslant R_{1}\right) \\
+& B_{2}=\frac{\mu_{0} I}{2 \pi r} \quad\left(R_{1} \leqslant r \leqslant R_{2}\right) \\
+& B_{3}=\frac{\mu_{0}\left[I-\frac{I \pi\left(r^{2}-R_{2}{ }^{2}\right)}{\pi\left(R_{3}^{2}-R_{2}^{2}\right)}\right]}{2 \pi r}=\frac{\mu_{0} I\left(R_{3}^{2}-r^{2}\right)}{2 \pi r\left(R_{3}^{2}-R_{2}^{2}\right)} \quad\left(R_{2} \leqslant r \leqslant R_{3}\right)
+\end{aligned}
+$$
+
+内导体为实心圆导线,故内自感为
+
+$$
+L_{1}=\frac{\mu_{0}}{8 \pi}
+$$
+
+外导体的磁链
+
+$$
+\begin{aligned}
+\Psi_{3} & =\int_{R_{2}}^{R_{3}} \frac{I^{\prime}}{I} B_{3} \mathrm{~d} r=\int_{R_{2}}^{R_{3}} \frac{I-\frac{I \pi\left(r^{2}-R_{2}^{2}\right)}{\pi\left(R_{3}^{2}-R_{2}^{2}\right)}}{I} B_{3} \mathrm{~d} r=\int_{R_{2}}^{R_{3}} \frac{\mu_{0} I\left(R_{3}^{2}-r^{2}\right)^{2}}{2 \pi r\left(R_{3}^{2}-R_{2}^{2}\right)^{2}} \mathrm{~d} r \\
+& =\frac{\mu_{0} I R_{3}^{4}}{2 \pi\left(R_{3}^{2}-R_{2}^{2}\right)^{2}} \ln \frac{R_{3}}{R_{2}}-\frac{\mu_{0} I R_{3}^{2}}{2 \pi\left(R_{3}^{2}-R_{2}^{2}\right)}+\frac{\mu_{0} I\left(R_{3}^{2}+R_{2}^{2}\right)}{8 \pi\left(R_{3}^{2}-R_{2}^{2}\right)}
+\end{aligned}
+$$
+
+外导体的内自感
+
+$$
+L_{3}=\frac{\Psi_{3}}{I}=\frac{\mu_{0} R_{3}^{4}}{2 \pi\left(R_{3}^{2}-R_{2}^{2}\right)^{2}} \ln \frac{R_{3}}{R_{2}}-\frac{\mu_{0} R_{3}^{2}}{2 \pi\left(R_{3}^{2}-R_{2}^{2}\right)}+\frac{\mu_{0}\left(R_{3}^{2}+R_{2}^{2}\right)}{8 \pi\left(R_{3}^{2}-R_{2}^{2}\right)}
+$$
+
+内外导体间单位长度的外自感
+
+$$
+L_{2}=\frac{\phi_{2}}{I}=\int_{R_{1}}^{R_{2}} \frac{\mu_{0}}{2 \pi r} \mathrm{~d} r=\frac{\mu_{0}}{2 \pi} \ln \frac{R_{2}}{R_{1}}
+$$
+
+同轴电缆单位长度的总自感
+
+$$
+L=L_{1}+L_{2}+L_{3}
+$$
+
+本例题计算量较大, 但 $L_{1} 、 L_{2}$ 和 $L_{3}$ 任何一个值都可以单独进行计算, 只有 $L_{3}$ 计算积分比 较麻烦。同轴电缆的外导体的内自感不能使用 $\frac{\mu_{0}}{8 \pi}$, 原因是它不是实心圆导线。
+
+【例 1.8-17】内外半径分别为 $R_{1}$ 和 $R_{2}$ 的长直圆管形导体, 磁导率为 $\mu_{0}$, 其单位长度的 内自感为多大?
+
+解: 设圆管中通有电流 $I$, 则
+
+$$
+\begin{aligned}
+& B=\frac{\mu_{0} I\left(r^{2}-R_{1}{ }^{2}\right)}{2 \pi r\left(R_{2}{ }^{2}-R_{1}^{2}\right)} \\
+& \mathrm{d} \Psi_{i}=\frac{I^{\prime}}{I} \mathrm{~d} \varphi_{i}=\frac{\mu_{0} I\left(r^{2}-R_{1}{ }^{2}\right)^{2}}{2 \pi r\left(R_{2}{ }^{2}-R_{1}{ }^{2}\right)^{2}} \mathrm{~d} r
+\end{aligned}
+$$
+
+显然, 这一个结果与上题中 $\Psi_{3}$ 中的被积函数形式完全相似, 只是 $R_{3}$ 和 $R_{2}$ 的值被 $R_{2}$ 和 $R_{1}$ 所 代替, 因此本题的解答为
+
+$$
+L=\frac{\mu_{0} R_{2}{ }^{4}}{2 \pi\left({R_{2}}^{2}-R_{1}{ }^{2}\right)} \ln \frac{R_{2}}{R_{1}}-\frac{\mu_{0} R_{2}{ }^{2}}{2 \pi\left({R_{2}}^{2}-R_{1}{ }^{2}\right)}+\frac{\mu_{0}\left(R_{2}{ }^{2}+R_{1}{ }^{2}\right)}{8 \pi\left({R_{2}}^{2}-R_{1}{ }^{2}\right)}
+$$
+
+【例 1.8-18】横截面为长方形的铁磁镯环, 高为 $a$, 镯环内外半径分别为 $R_{1}$ 和 $R_{2}$, 铁磁 材料的磁导率为 $\mu$, 镯环上均匀密绕有 $N$ 匝导线 (如图 1.8-16 所示), 试求镯环的自感。
+
+解: 设导线中流过电流为 $I$, 则
+
+$$
+\begin{aligned}
+& B=\frac{\mu I N}{2 \pi r} \\
+& \phi=\int_{S} B \cdot \mathrm{d} S=\int_{R_{1}}^{R_{2}} \frac{\mu I N}{2 \pi r} a \mathrm{~d} r=\frac{\mu I a N}{2 \pi} \ln \frac{R_{2}}{R_{1}}
+\end{aligned}
+$$
+
+镯环为铁磁材料, 可认为 $\Psi=N \phi$, 故
+
+$$
+L=\frac{\Psi}{I}=\frac{\mu a N^{2}}{2 \pi} \ln \frac{R_{2}}{R_{1}}
+$$
+
+## 2. 互感
+
+由线圈 1 的电流 $I_{1}$ 所产生的磁场, 在线圈 2 中产生的磁链为 $\Psi_{21}$, 则线圈 1 对线圈 2 的互感定义为
+
+$$
+M_{21}=\frac{\Psi_{21}}{I_{1}}
+$$
+
+同理,线圈 2 对线圈 1 的互感定义为
+
+$$
+M_{12}=\frac{\Psi_{12}}{I_{2}}
+$$
+
+在各向同性线性媒质中, 存在关系式
+
+$$
+M_{21}=M_{12}
+$$
+
+互感与线圈的几何形状、大小、二线圈的相对位置和周围的媒质有关。为了计算互感, 通常也 需要在一个线圈中通以电流, 求出另一线圈所在问路的磁链, 然后得出 $M$ 值。
+
+两线形问路的互感存在计算公式
+
+$$
+M_{12}=M_{21}=\frac{\mu_{0}}{4 \pi} \oint_{l 1} \oint_{12} \frac{\mathrm{d} l_{1} \cdot \mathrm{d} l_{2}}{r}
+$$
+
+上式称为聂以曼公式, 有时也用来计算线圈的外自感。但是, 上式中两个闭合问路的线积分计 算比较麻烦,因此只有典型的几个特例才可求得其解析解。
+
+【例 1.8-19】两对平行架设的传输线 $A B$ 与 $C D$ 如图 1.8-17 所 示, 试求它们之间单位长度的互感。
+
+解: 设 $A B$ 对传输线通有电流 $I \circ A$ 导线单独作用时, 在 $C D$ 连线 并沿轴向取单位长构成的面积上产生的磁通, 可由下式计算:
+
+$$
+\phi_{i}=\int_{R_{A C}}^{R_{A \prime}} \frac{\mu_{0} I}{2 \pi r} \mathrm{~d} r=\frac{\mu_{0} l}{2 \pi} \ln \frac{R_{A D}}{R_{A C}}
+$$
+
+式中积分限取 $R_{A C}$ 和 $R_{A D}$ 的原因是: 磁场中穿过 $C D$ 所在的平面与穿 过由 $R_{A C}$ 和 $R_{A D}$ 界定的区域是相同的。
+
+同理, $B$ 导线单独作用在该面上产生的磁通
+
+$$
+\phi_{B}=\frac{\mu_{0} I}{2 \pi} \ln \frac{R_{B C}}{R_{B D}}
+$$
+
+故有
+
+$$
+\begin{aligned}
+& \phi=\phi_{A}+\phi_{B}=\frac{\mu_{0} I}{2 \pi} \ln \frac{R_{A D} R_{H C}}{R_{A C} R_{B D}} \\
+& M=\frac{\phi}{l}=\frac{\mu_{0}}{2 \pi} \ln \frac{R_{A D} R_{B C}}{R_{A C} R_{B D}}
+\end{aligned}
+$$
+
+如果二对输电线的中垂线 (断面图中) 一致, 则 $R_{A C}=R_{B D}, R_{A D}=R_{B C}$, 上式变为
+
+$$
+M=\frac{\mu_{0}}{\pi} \ln \frac{R_{A D}}{R_{A C}}
+$$
+
+如果 $C D$ 位于 $A B$ 连线的中垂线上, 则存在 $R_{A C}=R_{B C}, R_{A D}=R_{B D}$, 此时 $M=0$ 。 显然, 此时二 对输电线间无电磁干扰。
+
+【例 1.8-20】矩形单匝线圈与二平行架设的输电线位于同 一平面上,相互位置及有关尺寸如图 1.8-18 所示, 试求二线圈之 间的互感 $M$ 。
+
+解: 设二线输电线中通有电流 $I$, 并设穿人纸面的磁通为正, 则
+
+$$
+B=\frac{\mu_{0} I}{2 \pi r_{1}}-\frac{\mu_{0} I}{2 \pi r_{2}}
+$$
+
+式中 $r_{1}$ 和 $r_{2}$ 分别为导线右侧处平面上任一点距离右侧导线和左 侧导线的距离。
+
+$$
+\begin{aligned}
+& \phi=\int_{S} B \cdot \mathrm{d} S=\int_{d+a}^{d+a+b}-\frac{\mu_{0} I}{2 \pi r_{2}} c \mathrm{~d} r_{2}+\int_{a}^{a+b} \frac{\mu_{0} I}{2 \pi r_{1}} c \mathrm{~d} r_{1}=\frac{\mu_{0} l c}{2 \pi} \ln \frac{(a+b)(d+a)}{a(d+a+b)} \\
+& M=\frac{\phi}{I}=\frac{\mu_{0} c}{2 \pi} \ln \frac{(a+b)(d+a)}{a(d+a+b)}
+\end{aligned}
+$$
+
+【例 1.8-21】在 $x O y$ 平面上有一三角形单沛回路, $y$ 轴上 有一无限长直导线, 周围为空气, 试求它们之间的互感。(相 互间位置如图 1.8-19 所示)
+
+解: 设 $y$ 轴上的导线流过电流为 $I$, 则
+
+$$
+B=\frac{\mu_{0} I}{2 \pi x}
+$$
+
+二角形斜边的表达式为
+
+$$
+y=\frac{c}{b-a}(x-a)
+$$
+
+由于 $B$ 仅为 $x$ 的函数, 故在 $y \mathrm{~d} x$ 的微小面积上 $B$ 可视为常量。磁通
+
+$$
+\begin{aligned}
+& \phi=\int_{S} B \cdot \mathrm{d} S=\int_{a}^{b} \frac{\mu_{0} I}{2 \pi x} \cdot \frac{c}{b-a}(x-a) \mathrm{d} x=\frac{\mu_{0} I c}{2 \pi(b-a)}\left[(b-a)-a \ln \frac{b}{a}\right] \\
+& M=\frac{\phi}{I}=\frac{\mu_{0} c}{2 \pi}-\frac{\mu_{0} a c}{2 \pi(b-a)} \ln \frac{b}{a}
+\end{aligned}
+$$
+
+无限长直导线本身可以视为无限大半径的回路, 在有限区间则表示为一直线, 故本题的实 质仍是二问路之间的互感。
+
+【例 1.8-22】铁磁材料制成的圆环上绕有线圈 1, 线圈的匝数为 $N_{1}$, 今已测得该线圈的 自感为 $L_{1}$, 若磁通全部通过圆环内部, 试问在圆环上另一线圈 (匝数为 $N_{2}$ ) 与线圈 1 之间的互 感。
+
+解: 设线圈 1 通有电流 $I_{1}$, 则
+
+$$
+L_{1}=\frac{\Psi_{1}}{I_{1}}=\frac{N_{1} \phi}{I_{1}}
+$$
+
+线圈 2 穿过的磁通仍为 $\phi$, 故有
+
+$$
+M=\frac{\Psi_{21}}{I_{1}}=\frac{N_{2} \phi}{I_{1}}
+$$
+
+解得
+
+$$
+M=\frac{N_{2}}{N_{1}} L_{1}
+$$
+
+## 8 .4 磁场能量和磁场力
+
+## 1. 磁场能至
+
+磁场能量的体密度 $w_{m}$ : 表示单位体积中的磁场能量, 其计算公式为
+
+$$
+w_{m}=\frac{1}{2} \boldsymbol{H} \cdot \boldsymbol{B}
+$$
+
+对于各向同性线性媒质存在.
+
+$$
+w_{m}=\frac{1}{2} \mu H^{2}=\frac{1}{2 \mu} B^{2}
+$$
+
+体积 $V$ 内的磁场能量
+
+$$
+W_{m}=\int_{v} \frac{1}{2} \mu H^{2} \mathrm{~d} V=\int_{v} \frac{1}{2 \mu} B^{2} \mathrm{~d} V
+$$
+
+(1) 单回路场源系统
+
+$$
+W_{m}=\frac{1}{2} L I^{2}=\frac{1}{2} I \Psi
+$$
+
+这是回路电流的白有能。
+
+(2) 具有 $N$ 个电流回路场源的磁场
+
+$$
+W_{m}=\frac{1}{2} \sum_{i=1}^{N} L_{i} I_{i}^{2}+\left.\frac{1}{2} \sum_{i=1}^{N} \sum_{j=1}^{N} M_{i j} I_{i} I_{j}\right|_{i \neq j}
+$$
+
+或
+
+$$
+W_{m}=\frac{1}{2} \sum_{i=1}^{N} I_{k} \Psi_{k}
+$$
+
+式中与 $L_{i}$ 相关的能量称为系统的自有能; 与 $\boldsymbol{M}_{i j}$ 相关的能量称为系统的互有能, 它表示各电流 问路之间的相互作用能。
+
+## 2. 磁场力
+
+（1）洛仑兹力公式
+
+磁场对运动点电荷 $q$ 的作用力
+
+$$
+f=q(v \times B)
+$$
+
+(2) 安培力公式
+
+磁场对载流导线的作用力
+
+$$
+\boldsymbol{f}=\int_{1} I \mathrm{~d} \boldsymbol{l} \times \boldsymbol{B}
+$$
+
+(3) 虚位移法
+
+$$
+f=-\left.\frac{\partial W_{m}}{\partial g}\right|_{\psi=\text { 需典 }}=\left.\frac{\partial W_{m}}{\partial g}\right|_{I=\text { 常量 }}
+$$
+
+(4) 用毕奥-萨伐尔定律计算磁场力
+
+$$
+f_{21}=\frac{\mu_{0}}{4 \pi} \oint_{l_{1}} \oint_{l_{2}} \frac{I_{2} \mathrm{~d} l_{2} \times\left(I_{1} \mathrm{~d} l_{1} \times e_{r}\right)}{r^{2}}
+$$
+
+显然,这一表达式比较复杂, 计算也很繁, 但它是与库仑定律相对应的磁场实验定律, 具有重要 的理论价值。至于公式中各符号和方向的意义，可参阅本科生相关教材，此处不再一一介绍。
+
+(5) 法拉第观点
+
+法拉第认为: 由磁感应强度线 (磁场线) 构成的磁感应管沿其轴向受到纵张力,同时在其 垂直方向上受到侧压力, 此二力量值相等, 其单位面积受到的力均等于该处磁场能量的体密 度。
+
+另外, 在两种媒质的分界面上, 不论磁场的方向如何, 分界面受到的力总是与分界面垂直, 并且力的方向总是由磁导率较大的媒质指向磁导率较小的媒质。当分界面处无面电流时, $H_{1 t}$ $=H_{2 l}, B_{1 n}=B_{2 n}$, 若 $\mu_{2}>\mu_{1}$, 则单位面积上的力
+
+$$
+f_{0}=\frac{1}{2}\left(\frac{B_{1 n}^{2}}{\mu_{1}}-\frac{B_{2 n}^{2}}{\mu_{2}}\right)+\frac{1}{2}\left(\mu_{2} H_{2 l}^{2}-\mu_{1} H_{1 t}^{2}\right)=\frac{\mu_{2}-\mu_{1}}{2 \mu_{1} \mu_{2}}\left(B_{1 n}^{2}+\mu_{1} \mu_{2} H_{1 \mathrm{l}}^{2}\right)
+$$
+
+利用法拉第的观点,有时可以十分方便地求得磁场力。
+
+【例 1.8-23】内导体半径为 $R_{1}$, 外导体半径为 $R_{2}$ 的同轴电缆, 通有电流 $I$, 中间媒质的磁 导率为 $\mu_{0}$, 试求该电缆单位长度内外导体间储存的磁场能量。
+
+解:由安培环路定律
+
+$$
+H=\frac{I}{2 \pi r} \quad\left(R_{1}<r<R_{\dot{2}}\right)
+$$
+
+可求得
+
+$$
+W_{m}=\int_{V} \frac{1}{2} \mu_{0} H^{2} \cdot \mathrm{d} V=\int_{R_{2}}^{R_{1}} \frac{1}{2} \frac{\mu_{0} I^{2}}{(2 \pi r)^{2}} 2 \pi r \mathrm{~d} r=\int_{R_{1}}^{R_{2}} \frac{\mu_{0} I^{2}}{4 \pi r} \mathrm{~d} r=\frac{\mu_{0} I^{2}}{4 \pi} \ln \frac{R_{2}}{R_{1}}
+$$
+
+由同轴电缆单位长度的外自感
+
+$$
+L_{0}=\frac{\mu_{0}}{2 \pi} \ln \frac{R_{2}}{R_{1}}
+$$
+
+利用公式 $W_{m}=\frac{1}{2} L_{0} I^{2}$. 同样可求得 $W_{m}$ 值。
+
+【例 1.8-24】二线输电线与一矩形单匝线圈位于同一平面内,有关 尺寸如图 1.8-20 所示,若在矩形线圈中通有电流 $I_{2}$, 试求:
+
+(1) 在二线输电线回路中产生的磁通 $\phi$;
+
+(2) 若线圈为刚性线圈, 今在二线输电线中通有电流 $I_{1}\left(I_{1}\right.$ 方向为左 导线向上,有导线向下), 则线圈所受的力为多大?
+
+解: (1) 单匝问路中, 由
+
+$$
+M_{12}=\frac{\phi_{12}}{I_{2}}, M_{21}=\frac{\phi_{21}}{I_{1}}, M_{12}=M_{21}
+$$
+
+可得
+
+$$
+\frac{\phi_{12}}{I_{2}}=\frac{\phi_{21}}{I_{1}}
+$$
+
+令 $I_{1}=I_{2}$, 则可得 $\phi_{12}=\phi_{21}$, 故若二线输电线通以电流 $I_{2}$, 则线圈区间存在
+
+$$
+B=\frac{\mu_{0} I_{2}}{2 \pi r_{1}}+\frac{\mu_{0} I_{2}}{2 \pi r_{2}}
+$$
+
+$r_{1}$ 与 $r_{2}$ 分别为距离左右二导线距离。故有
+
+$$
+\phi=\int_{S} B \cdot \mathrm{d} S=\int_{a}^{a+b} \frac{\mu_{0} I_{2} c}{2 \pi r_{1}} \mathrm{~d} r_{1}+\int_{d-a-b}^{d-a} \frac{\mu_{0} I_{2} c}{2 \pi r_{2}} \mathrm{~d} r_{2}=\frac{\mu_{0} I_{2} c}{2 \pi} \ln \frac{(a+b)(\mathrm{d}-a)}{a(\mathrm{~d}-a-b)}
+$$
+
+(2) 由 (1) 知, 二囘路间互感
+
+$$
+M=\frac{\phi}{I_{2}}
+$$
+
+故当二同路各通有 $I_{1}$ 和 $I_{2}$ 时, 其互有能
+
+$$
+W_{m}=M I_{1} I_{2}=\frac{\mu_{0} I_{1} I_{2} c}{2 \pi} \ln \frac{(a+b)(\mathrm{d}-a)}{a(d-a-b)}
+$$
+
+对于刚性线圈, 假设 $a$ 移动, 而 $b$ 和 $c$ 不变, 其所受的力
+
+$$
+f=\left.\frac{\partial W_{m}}{\partial a}\right|_{I_{k}=\text { 常 }}=\frac{\mu_{0} I_{1} I_{2} c}{2 \pi}\left(\frac{1}{a+b}-\frac{1}{\mathrm{~d}-a}-\frac{1}{a}+\frac{1}{\mathrm{~d}-a-b}\right)
+$$
+
+力 $f$ 的方向为使 $a$ 增大的方向。
+
+此题也可以通过安培力公式,计算由 $I_{1}$ 产生的磁场对 $I_{2}$ 产生作用力。计算过程如下:
+
+$$
+B_{1}=\frac{\mu_{0} I_{1}}{2 \pi r_{1}}+\frac{\mu_{0} I_{1}}{2 \pi r_{2}}
+$$
+
+由于是直导线, 根据公式
+
+$$
+f=I_{2} \oint_{l}(\mathrm{~d} l \times B)
+$$
+
+此时矩形上下边受的力大小䄄等, 方向相反而抵消, 左右两边受力可用左手定则给出方向。若 假设力的方向向右为正,则
+
+$$
+f=-\left.I_{2} c B_{1}\right|_{\substack{c_{1}=a \\ r_{2}=d-a}}+\left.I_{2} c B_{1}\right|_{\substack{c_{1}=a+b \\ r_{2}=1-a-b}}
+$$
+
+代人后结果与虚位移法计算的结果相同。若引人坐标系，该计算过程用向量计算也很方便。
+
+【例 1.8-25】一沛数为 $N$ 的环形细线圈位于均匀磁场中, 如图 1.8-21 所示,外磁场的磁 感应强度为 $B_{0}$, 线圈的法向与磁场间夹角为 $\alpha$, 线圈所围成的面积为 $S$, 并通有电流 $I$, 试求线 圈所受的力矩 $T_{\text {。 }}$
+
+解: $\Psi=N \int_{S} B \cdot \mathrm{d} S=N B_{0} S \cos \alpha$ 互有能
+
+$$
+W_{m}=I \Psi=N B_{0} l S \cos \alpha
+$$
+
+若广义力为力矩, 广义几何坐标对应的是角度, 故
+
+$$
+T=\left.\frac{\partial W_{m}}{\partial \alpha}\right|_{1=\text { 深数 }}=-N I B_{0} S \sin \alpha
+$$
+
+【例 1.8-26】在某分界面处, 磁感应强度 $B$ 垂直于铁磁材料进人空气中, $B=0.1 \mathrm{~T}$, 若铁 磁材料的磁导率 $\mu=1000 \mu_{0}$, 试求分界面处铁磁材料单位面积受到的力。
+
+解: 此题可直接应用法拉第的观点，用能量体密度计算，力的方向由铁磁材料指向空气。 由于 $B_{1 n}=B_{2 n}$, 分界面处二媒质中 $B$ 相同, 故
+
+$$
+f_{0}=\frac{1}{2} \frac{B^{2}}{\mu_{0}}-\frac{1}{2} \frac{B^{2}}{\mu}=\frac{B^{2}}{2 \mu_{0}}\left(1-\frac{1}{1000}\right) \approx \frac{B^{2}}{2 \mu_{0}}=\frac{0.1^{2}}{2 \times 4 \pi \times 10^{-7}}=3.98 \times 10^{3} \mathrm{~N} / \mathrm{m}^{2}
+$$
+
+【例 1.8-27】一电磁铁如图 1.8-22 所示, 设电磁铁的横截 面积为 $S$, 空气隙 $l$ 很小, 计算时可忽略边缘效应, 若保持电磁铁 中的磁通 $\phi$ 不变, 试求该电磁铁的吸力。
+
+解: 空气中的磁场能量由两侧组成, 空气隙中的磁场可认为 是一均匀磁场, 因此
+
+$$
+W_{m}=w_{m} V=\frac{B^{2}}{2 \mu_{0}} 2 s l=\frac{\phi^{2}}{2 \mu_{0} s^{2}} 2 s l=\frac{\phi^{2} l}{\mu_{0} s}
+$$
+
+磁场力
+
+$$
+f=-\left.\frac{\partial W_{m}}{\partial l}\right|_{\phi=\text { 㫧数 }}=\frac{-\phi^{2}}{\mu_{0} S}
+$$
+
+式中负号表示该力是吸力,即使 $l$ 减小的方向。
+
+## 9 均匀传输线
+
+### 1 均匀传输线的基本方程和正弦稳态分析方法
+
+## 1. 均匀传输线的基本方程
+
+均匀传输线的定义:沿传输线路的电阻、电感、电导和电容是均匀分布的传输线。
+
+假设均匀传输线的传输方向为 $x$ 方向, 传输线的始端 (电源端) 为 $x=0$, 则均匀传输线沿 线路各处的电流和电压将表现为距离 $x$ 和时间 $t$ 的函数。
+
+任何电路的参数分布都是沿线分布的,构成特定的 均匀传输线求解问题还必须认识到: 由于电磁能量以有 限速度向空间传播, 当所研究的线路长度与电磁波波长 的长度可比时, 此时应该采用分布参数电路的特定求解 方法,而不能再用集总参数电路的求解方法。
+
+在图 1.9-1 (a) 所示的均匀传输线中,其微分段 $\mathrm{d} x$ 的等效电路如图 1.9-1 (b) 所示。由 KCL 和 KVL 并稍加 推导,可以得到均匀传输线方程
+
+$$
+\left\{\begin{array}{l}
+-\frac{\partial u}{\partial x}=R_{0} i+L_{0} \frac{\partial i}{\partial t} \\
+-\frac{\partial i}{\partial x}=G_{0} u+C_{0} \frac{\partial u}{\partial t}
+\end{array}\right.
+$$
+
+式中各参数的意义分别为:
+
+$R_{0}$ 一一单位长度 (一去一回两条线) 导线的电阻; $L_{0}$ 一单位长度的电感;
+
+$G_{0}$ 一一单位长度线间的漏电电导;
+
+$C_{0}$ 一一单位长度线间的电容。
+
+对于 $R_{0}=0, G_{0}=0$ 的传输线, 称为无损耗的传输线, 又称无损线。无损耗的均匀传输线方 程为
+
+$$
+\left\{\begin{array}{l}
+-\frac{\partial u}{\partial x}=L_{0} \frac{\partial i}{\partial t} \\
+-\frac{\partial i}{\partial x}=C_{0} \frac{\partial u}{\partial t}
+\end{array}\right.
+$$
+
+## 2. 均匀传输线的正弦稳态解
+
+对于正弦稳态电路,均匀传输线方程对应的相量表达式为
+
+$$
+\left\{\begin{array}{l}
+-\frac{\mathrm{d} U}{\mathrm{~d} x}=R_{0} \dot{I}+j \omega L_{0} I=Z_{0} I \\
+-\frac{\mathrm{d} I}{\mathrm{~d} x}=G_{0} U+j \omega C_{0} U=Y_{0} U
+\end{array}\right.
+$$
+
+式中 $Z_{0}=R_{0}+j \omega L_{0}$ 为单位长度的复阻抗, $Y_{0}=G_{0}+j \omega C_{0}$ 为单位长度的复导纳。
+
+上面二式各对 $x$ 求二阶导数,并相互代入可得
+
+$$
+\left\{\begin{array}{l}
+\frac{\mathrm{d}^{2} U}{\mathrm{~d} x^{2}}=\gamma^{2} U \\
+\frac{\mathrm{d}^{2} I}{\mathrm{~d} x^{2}}=\gamma^{2} I
+\end{array}\right.
+$$
+
+式中 $\gamma=\sqrt{\left(R_{0}+j \omega L_{0}\right)\left(G_{0}+j \omega C_{0}\right)}$, 称为传播常数。将 $\gamma$ 的实部和虚部分离可得 $\gamma=\alpha+\mathrm{j} \beta$
+
+式中 $\alpha$ 称为衰减常数, $\beta$ 称为相位常数。
+
+求解二阶常微分方程, 可得到通解为
+
+$$
+\left\{\begin{array}{l}
+U=A_{1} \mathrm{e}^{-\gamma x}+A_{2} \mathrm{e}^{\gamma x} \\
+i=\frac{A_{1}}{Z_{\mathrm{C}}} \mathrm{e}^{-\gamma x}-\frac{A_{2}}{Z_{\mathrm{c}}} \mathrm{e}^{\gamma x}
+\end{array}\right.
+$$
+
+上式中 $A_{1}$ 和 $A_{2}$ 为依靠边界条件确定的积分常数, $Z_{\mathrm{C}}$ 称为特性阻抗或波阻抗。波阻抗
+
+$$
+Z_{\mathrm{C}}=\sqrt{\frac{R_{0}+\mathrm{j} \omega L_{0}}{G_{0}+\mathrm{j} \omega C_{0}}}=\sqrt{\frac{Z_{0}}{Y_{0}}}
+$$
+
+将边界处 $\left(x=0\right.$ 处或 $x=l$ 处) 的电压和电流代人通解中, 可确定 $A_{1}$ 和 $A_{2}$, 具体解答如下。
+
+(1) 宙始端 ( $x=0$ 处) 的电压 $U_{1}$ 和电流 $i_{1}$ 边界条件所确定的解答形式
+
+$$
+\left\{\begin{array}{l}
+U=\frac{1}{2}\left(U_{1}+Z_{\mathrm{C}} \dot{I}_{1}\right) \mathrm{e}^{-\gamma x}+\frac{1}{2}\left(U-Z_{\mathrm{C}} \dot{I}_{1}\right) \mathrm{e}^{\gamma x} \\
+I=\frac{1}{2}\left(\frac{U_{1}}{Z_{\mathrm{C}}}+\dot{I}_{1}\right) \mathrm{e}^{-\gamma x}-\frac{1}{2}\left(\frac{U_{1}}{Z_{\mathrm{C}}}-\dot{I}_{1}\right) \mathrm{e}^{\gamma x}
+\end{array}\right.
+$$
+
+或写成
+
+$$
+\begin{aligned}
+& \dot{U}=\dot{U}^{+}+\dot{U}^{-} \\
+& \dot{I}=\dot{I}^{+}-\dot{I}^{-}
+\end{aligned}
+$$
+
+式中
+
+$$
+\begin{aligned}
+& U^{+}=\frac{1}{2}\left(U_{1}+Z_{\mathrm{C}} I_{1}\right) \mathrm{e}^{-\gamma x} \\
+& U^{-}=\frac{1}{2}\left(U_{1}-Z_{\mathrm{C}} I_{1}\right) \mathrm{e}^{\gamma x} \\
+& I^{+}=\frac{1}{2}\left(\frac{U_{1}}{Z_{\mathrm{C}}}+i_{1}\right) \mathrm{e}^{-\gamma x} \\
+& \dot{I}^{-}=\frac{1}{2}\left(\frac{U_{1}}{Z_{\mathrm{C}}}-i_{1}\right) \mathrm{e}^{\gamma x}
+\end{aligned}
+$$
+
+$U^{+}$和 $i^{+}$表示人射波 (又称正向行波) 电压和电流, $U^{-}$和 $i^{-}$表示反射波 (又称反向行波) 电压和电流。显然,该解答形式对于分析无反射波存在的线路十分方便。
+
+运用双曲函数
+
+$$
+\begin{aligned}
+& \sinh \gamma x=\frac{1}{2}\left(\mathrm{e}^{\gamma x}-\mathrm{e}^{-\gamma x}\right) \\
+& \cosh \gamma x=\frac{1}{2}\left(\mathrm{e}^{\gamma x}+\mathrm{e}^{-\gamma x}\right)
+\end{aligned}
+$$
+
+上面解答形式可改写为
+
+$$
+\left\{\begin{array}{l}
+U=U_{1} \cosh \gamma x-I_{1} Z_{\mathrm{c}} \sinh \gamma x \\
+I=I_{1} \cosh \gamma x-\frac{U_{1}}{Z_{\mathrm{c}}} \sinh \gamma x
+\end{array}\right.
+$$
+
+(2) 由终端 $\left(x=l\right.$ 处) 的边界条件 $U_{2}$ 和 $I_{2}$ 所确定的解答形式 设 $x^{\prime}=l-x$, 则可得到
+
+$$
+\left\{\begin{array}{l}
+U=\frac{1}{2}\left(U_{2}+i_{2} Z_{\mathrm{c}}\right) \mathrm{e}^{\gamma x^{\prime}}+\frac{1}{2}\left(U_{2}-I_{2} Z_{\mathrm{C}}\right) \mathrm{e}^{-\gamma x^{\prime}} \\
+I=\frac{1}{2}\left(\frac{U_{2}}{Z_{\mathrm{c}}}+i_{2} Z_{\mathrm{c}}\right) \mathrm{e}^{\gamma x^{\prime}}-\frac{1}{2}\left(\frac{U_{2}}{Z_{\mathrm{c}}}-I_{2}\right) \mathrm{e}^{-\gamma x^{\prime}}
+\end{array}\right.
+$$
+
+或写作
+
+$$
+\left\{\begin{array}{l}
+U=U_{2} \cosh \gamma x^{\prime}+i_{2} Z_{\mathrm{c}} \sinh \gamma x^{\prime} \\
+i=I_{2} \cosh \gamma x^{\prime}+\frac{U_{2}}{Z_{\mathrm{c}}} \sinh \gamma x^{\prime}
+\end{array}\right.
+$$
+
+3. 无损耗均匀传输线的正弦稳态解
+
+$$
+\begin{aligned}
+& \gamma=j \omega \sqrt{L_{0} C_{0}}, \alpha=0, \beta=\omega \sqrt{L_{0} C_{0}} \\
+& Z_{\mathrm{c}}=\sqrt{\frac{L_{0}}{C_{0}}}
+\end{aligned}
+$$
+
+此时, 对应双曲函数解答式蜕变为三角函数式, 即
+
+$$
+\left\{\begin{array}{l}
+U=U_{1} \cos \beta x-\mathrm{j} I_{1} Z_{\mathrm{c}} \sin \beta x \\
+I=I_{1} \cos \beta x-\mathrm{j} \frac{U_{1}}{Z_{\mathrm{C}}} \sin \beta x
+\end{array}\right.
+$$
+
+或
+
+$$
+\left\{\begin{array}{l}
+U=U_{2} \cos \beta x^{\prime}+\mathrm{j}_{2} Z_{\mathrm{C}} \sin \beta x^{\prime} \\
+i=\dot{I}_{2} \cos \beta x^{\prime}+\mathrm{j} \frac{U_{2}}{Z_{\mathrm{C}}} \sin \beta x^{\prime}
+\end{array}\right.
+$$
+
+上面两个表达式,依据边界条件的不同，适当选择可以简化计算过程。
+
+在均匀传输线中, $R_{0} 、 L_{0} 、 G_{0}$ 和 $C_{0}$ 被称为均匀传输线的原参数, 而传播常数 $\gamma$ 和特性阻抗 $Z_{\mathrm{C}}$ 被称为副参数。副参数一般都是频率的函数。当传输信号的波长 $\lambda$ 为已知时, 无损耗均匀 传输线的传播常数 $\gamma$ 的虚部 $\beta$ 可通过下式计算:
+
+$$
+\beta=\frac{2 \pi}{\lambda}
+$$
+
+波长 $\lambda$ 与波速 $v$ 和频率 $f$ 有关, 并且存在 $\lambda=v / f$ 。
+
+## 4. 均匀传输线的输入阻抗
+
+当均匀传输线终端接负载 $Z_{\mathrm{I}}$ 时, 如图 1.9-2 所示, 从始 端观察的输入阻抗
+
+$$
+Z_{\text {in }}=\left.\frac{U_{1}}{I_{1}}\right|_{x=l}=\frac{U_{2} \cosh \gamma l+I_{2} Z_{c} \sinh \gamma l}{I_{2} \cosh \gamma l+\frac{U_{2}}{Z_{c}} \sinh \gamma l}
+$$
+
+由于 $\dot{U}_{2} / i_{2}=Z_{1}$, 上式分子分母同除以 $i_{2}$ 可以得到
+
+$$
+Z_{\text {in }}=\frac{Z_{\mathrm{l}} \cosh \gamma l+\sinh \gamma l}{\cosh \gamma l+\frac{Z_{\mathrm{I}}}{Z_{\mathrm{c}}} \sinh \gamma l}
+$$
+
+该式计算比较麻烦, 但当 $Z_{1}=0$ (短路状态) 或 $Z_{1}=\infty$ (开路状态) 时, 上式变得简单。 $Z_{\text {in }}$ 的计算虽然麻烦, 但在复杂的传输线路中运算是不可避免的。为了简单又便于计算,下面分析 无损耗的均匀传输线的输入阻抗, 此时
+
+$$
+Z_{\text {in }}=\frac{U_{2} \cos \beta l+\mathrm{j} I_{2} Z_{c} \sin \beta l}{I_{2} \cos \beta l+\mathrm{j} \frac{U_{2}}{Z_{C}} \sin \beta l}=\frac{Z_{\mathrm{L}} \cos \beta l+\mathrm{j} Z_{c} \sin \beta l}{\cos \beta l+\mathrm{j} \frac{Z_{\mathrm{l}}}{Z_{C}} \sin \beta l}
+$$
+
+(1) 终端开路状态 $\left(Z_{\mathrm{I}}=\infty\right)$
+
+此时 $I_{2}=0$, 故
+
+$$
+Z_{\text {in }}=\frac{U_{2} \cos \beta l}{\mathrm{j} \frac{U_{2}}{Z_{\mathrm{c}}} \sin \beta l}=-\mathrm{j} Z_{\mathrm{c}} \cot \beta l
+$$
+
+$Z_{\text {in }}$ 相当于一个纯电抗。当 $l<\frac{1}{4} \lambda$ 时, 相当于-一个电容; 当 $\frac{1}{4} \lambda<l<\frac{1}{2} \lambda$ 时, 相当于一个电 感,依次可类推。
+
+(2) 终端短路状态 $\left(Z_{\mathrm{I}}=0\right)$
+
+此时 $U_{2}=0$, 故
+
+$$
+Z_{\text {in }}=\frac{j I_{2} Z_{\mathrm{C}} \sin \beta l}{I_{2} \cos \beta l}=j Z_{\mathrm{c}} \tan \beta l
+$$
+
+$Z_{\text {in }}$ 也相当于一个纯电抗。只是在 $l<\frac{1}{4} \lambda$ 时, 相当于一个电感; 当 $\frac{1}{4} \lambda<l<\frac{1}{2} \lambda$ 时, 相当于 一个电容。
+
+通过上面分析不难看到, 无论是终端短路还是开路, 都不能认为是始端 $Z_{\text {in }}$ 等于零或无穷 大, 这是分布参数特点。在终端开路时, 若 $l=\frac{1}{4} \lambda$, 则 $Z_{\mathrm{in}}=0$, 反而造成始端短路; 而在终端短 路时, 若 $l=\frac{1}{4} \lambda$, 则 $Z_{\mathrm{in}}=\infty$, 反而使始端相当于开路。
+
+【例 1.9-1】无损耗均匀传输线的长度 $l=100 \mathrm{~m}$, 特性阻抗 $Z_{\mathrm{c}}=300 \Omega$, 波长 $\lambda=1200 \mathrm{~m}$ 的正弦波电压在其终端开路时终端电压 $U_{2}=10 \mathrm{~V}$, 试求其始端电压和电流的有效值。
+
+解: 设 $U_{2}=1010^{\circ} \mathrm{V}$, 由于终端开路, 故 $I_{2}=0$, 考虑
+
+$$
+\beta l=\frac{2 \pi}{\lambda} l=\frac{2 \pi}{1200} \times 100=\frac{\pi}{6}=30^{\circ}
+$$
+
+代人公式
+
+$$
+\begin{aligned}
+& U=U_{2} \cos \beta x^{\prime}+\mathrm{j} i_{2} Z_{\mathrm{C}} \sin \beta x^{\prime} \\
+& I=I_{2} \cos \beta x^{\prime}+\mathrm{j} \frac{\dot{U}_{2}}{Z_{\mathrm{C}}} \sin \beta x^{\prime}
+\end{aligned}
+$$
+
+可得始端电压和电流为
+
+$$
+\begin{aligned}
+& U_{1}=10 \cos 30^{\circ}=8.66 \mathrm{~V} \\
+& I_{1}=\mathrm{j} \frac{10}{300} \sin 30^{\circ}=\mathrm{j} 16.7 \mathrm{~mA}
+\end{aligned}
+$$
+
+始端电压 $U_{1}=8.66 \mathrm{~V}$, 电流 $I_{1}=16.7 \mathrm{~mA}^{\circ}$ 。
+
+【例 1.9-2】长度为传输信号波长 $\frac{1}{6}$ 的一段均匀传输线, 波阻抗为 $400 \Omega$, 已知终端短路 时的始端电压 $U_{1}=5 \mathrm{~V}$, 试求传输线的始端电流和终端电流的有效值。
+
+解: 由已知始端边界电压的表达式
+
+$$
+\dot{U}=U_{1} \cos \beta x-\mathrm{j} I_{1} Z_{\mathrm{c}} \sin \beta x
+$$
+
+在终端处, 由于 $U_{2}=0$, 故
+
+$$
+I_{1}=\frac{U_{1} \cos \beta x}{\mathrm{j} Z_{\mathrm{c}} \sin \beta x}
+$$
+
+代人 $\beta x=\frac{2 \pi}{\lambda} \cdot \frac{\lambda}{6}=\frac{\pi}{3}$, 并设 $U_{1}=5 \underline{0^{\circ}} \mathrm{V}$, 则
+
+$$
+\begin{aligned}
+& i_{1}=\frac{5 \cos 60^{\circ}}{\mathrm{j} 400 \sin 60^{\circ}}=-\mathrm{j} 7.22 \mathrm{~mA} \\
+& i_{2}=i_{1} \cos 60^{\circ}-\mathrm{j} \frac{5}{400} \sin 60^{\circ}=-\mathrm{j} 7.22 \times 0.5-\mathrm{j} 12.5 \times 0.866=-\mathrm{j} 14.4 \mathrm{~mA}
+\end{aligned}
+$$
+
+始端和终端电流的有效值分别为: $I_{1}=7.22 \mathrm{~mA}, I_{2}=14.4 \mathrm{~mA}$ 。
+
+【例 1.9-3】一波阻抗为 $Z_{\mathrm{c}}$ 的短路线可视为无损耗的均匀传输线, 若线路长度为传输信 号波长的 $\frac{1}{8}$, 则由始端观察该线路的等效阻抗为多大?
+
+解: 由 $\beta l=\frac{2 \pi}{\lambda} \cdot \frac{\lambda}{8}=\frac{\pi}{4}$, 得
+
+$$
+Z_{\mathrm{e}}=\mathrm{j} Z_{\mathrm{c}} \tan \beta l=\mathrm{j} Z_{\mathrm{C}} \tan \frac{\pi}{4}=\mathrm{j} Z_{\mathrm{C}}
+$$
+
+即等效阻抗为 $\mathrm{j} Z_{\mathrm{c}}$ 。
+
+【例 1.9-4】某高压输电线长 $l=200 \mathrm{~km}$, 波阻抗 $Z_{\mathrm{c}}=400 \Omega$, 线路终端电压 $\dot{U}_{2}=110 \times$ $10^{3} \not 0^{\circ} \mathrm{V}$, 终端负载 $Z_{\mathrm{c}}=220 \angle 30^{\circ} \Omega$, 如图 1.9-3 所示。若该传输线可近似用无损耗线计算, 试估算其始端的电压和电流。
+
+解: $I_{2}=\frac{U_{2}}{Z_{1}}=\frac{110 \times 10^{3} \not 0^{\circ}}{220 \angle 30^{\circ}}=500 \angle-30^{\circ} \mathrm{A}$
+
+$\beta l=\frac{2 \pi}{\lambda} l=\frac{2 \pi}{6000} \times 200=\frac{\pi}{15}=12^{\circ}$
+
+$\dot{U}_{1}=U_{2} \cos \beta l+\mathrm{j}_{2} Z_{\mathrm{c}} \sin \beta l$
+
+$=110 \times 10^{3} \times \cos 12^{\circ}+\mathrm{j} 500 \angle-30^{\circ} \times 400 \sin 12^{\circ}$
+
+$=107.6 \times 10^{3}+\mathrm{j} 41.6 \times 10^{3} \underline{60^{\circ}}$
+
+$=128.4 \times 10^{3}+\mathrm{j} 36.0 \times 10^{3}=133 \times 10^{3}\left\lfloor 15.7^{\circ} \mathrm{V}\right.$
+
+$$
+\begin{aligned}
+i_{1} & =I_{2} \cos \beta l+\mathrm{j} \frac{\dot{U}_{2}}{Z_{c}} \sin \beta l=500 \angle-30^{\circ} \\
+& =424-\mathrm{j} 246+\mathrm{j} 57.2=464 \angle-24^{\circ} \mathrm{A}
+\end{aligned}
+$$
+
+【例 1.9-5】长度 $l=60 \mathrm{~m}$ 的架空线路, 工作频率为 $1 \mathrm{MHz}$, 其波阻抗 $Z_{\mathrm{c}}=150 \Omega$, 当其终 端开路时, 试求其输入端的等效阻抗 $Z_{\mathrm{e}}$ 。
+
+解: 架空线路的波速为 $3 \times 10^{8} \mathrm{~m} / \mathrm{s}$, 故波长
+
+$$
+\begin{aligned}
+& \lambda=\frac{v}{f}=\frac{3 \times 10^{8}}{10^{6}}=300 \mathrm{~m} \\
+& \beta l=\frac{2 \pi}{\lambda} l=\frac{2 \pi}{300} \times 60=\frac{2}{5} \pi=72^{\circ}
+\end{aligned}
+$$
+
+终端开路的等效阻抗
+
+$$
+Z_{\mathrm{v}}=-\mathrm{j} Z_{\mathrm{c}} \cot \beta l=\mathrm{j} 150 \cot 72^{\circ}=-\mathrm{j} 48.7 \Omega
+$$
+
+$Z_{\mathrm{e}}$ 的值相当于某一电容的纯容抗值。如果改变线路长度, $Z_{\mathrm{e}}$ 值将变化, 当然也可以相当 于纯电感的感抗值。
+
+【例 1.9-6】一均匀传输线无反射波存在, 若已知该线路的传播常数 $\gamma=\alpha+\mathrm{j} \beta$, 波阻抗为 $Z_{\mathrm{c}}$,始端电压 $U_{1}=U_{0} \not 0^{\circ} \mathrm{V}$, 试求该传输线沿线 ( $x$ 方向) 的电压和电流的瞬时值。
+
+解: 由于无反射波,故存在
+
+$$
+U=A_{1} \mathrm{e}^{-y x}
+$$
+
+代人边界条件: $x=0$ 时, $U=U_{1}$, 得到
+
+故有
+
+$$
+\dot{U}_{0}=A_{1}
+$$
+
+$$
+\begin{aligned}
+& U=U_{0} \mathrm{e}^{-\gamma x}=U_{0} \mathrm{e}^{-\alpha x} \mathrm{e}^{-j \beta x} \\
+& i=\frac{A_{1}}{Z_{\mathrm{c}}} \mathrm{e}^{-\gamma x}=\frac{U_{0}}{Z_{\mathrm{c}}} \mathrm{e}^{-\alpha x} \mathrm{e}^{-\mathrm{j} \beta x}
+\end{aligned}
+$$
+
+由此可对应写出电压和电流的瞬时值表达式
+
+$$
+\begin{aligned}
+& u(t, x)=\sqrt{2} U_{0} \mathrm{e}^{-\alpha x} \sin (\omega t-\beta x) \\
+& i(t, x)=\sqrt{2} \frac{U_{0}}{Z_{\mathrm{C}}} \mathrm{e}^{-\alpha x} \sin (\omega t-\beta x)
+\end{aligned}
+$$
+
+由此不难看浊, 衰减常数表示电压或电流幅值的衰减, 波行进 $x=\frac{1}{\alpha} \mathrm{m}$, 其幅度衰减到 $\frac{1}{\mathrm{e}}$, 即变为原值 $36.8 \%$ 。而相位常数 $\beta$ 表示波行进单位长度正弦波电压或电流相位的改变量。
+
+### 2 均匀传输线的特性阻抗和阻抗匹配
+
+## 1. 均匀传输线的特性阻抗
+
+$$
+Z_{C}=\sqrt{\frac{R_{0}+\mathrm{j} \omega L_{0}}{G_{0}+\mathrm{j} \omega C_{0}}}=\sqrt{\frac{Z_{0}}{Y_{0}}}=\left|Z_{\mathrm{C}}\right| \mathrm{e}^{\mathrm{j} \theta}
+$$
+
+对于无损耗均匀传输线, 则
+
+$$
+Z_{\mathrm{c}}=\sqrt{\frac{L_{0}}{C_{0}}}
+$$
+
+在直流厂.作状态下, 存在
+
+$$
+Z_{\mathrm{c}}=\sqrt{\frac{R_{0}}{G_{0}}}
+$$
+
+可见，一般情况下, $Z_{\mathrm{c}}$ 为一复数,它表示人射波 (或反射波) 电压与电流相量之比,其 $\theta$ 值 表示特定的参考方向下 (指电流由始端流向终端的方向为人射波电流方向, 而反射波电流取 其相反的方向) 电压超前电流的相位。对于无损线或直流状态, 波阻抗为一正实数。
+
+## 2. 阻抗匹配
+
+T.作在匹配状态下的均匀传输线, 具有以下特点。
+
+(1)电压或电流均无反射波,线路上电压和电流的有效值都是按指数规律从始端到终端逐 渐衰减的, 即
+
+$$
+U=U_{1} \mathrm{e}^{-\gamma x}, i=i_{1} \mathrm{e}^{-\gamma x}
+$$
+
+(2)在线路任一位置处电压和电流的相量比都相等,都等于线路的波阻抗, 即
+
+$$
+\frac{U}{i}=Z_{\mathrm{c}}
+$$
+
+(3)自然功率: 在无反射条件下, 线路能够传输到终端的功率称为白然功率。显然在匹配状 态下, 自然功率即终端功率 $P_{2}$, 即
+
+$$
+P_{2}=U_{2} I_{2} \cos \theta=\frac{U_{2}^{2}}{\left|Z_{\mathrm{C}}\right|} \cos \theta
+$$
+
+(4)传输效率: 由于匹配状态下无反射波存在, 此时传输线的传输效率比较高, 但这一值并 不一定是最大传输效率。传输线始端功率为
+
+由传输效率
+
+$$
+P_{1}=U_{1} I_{1} \cos \theta
+$$
+
+$$
+\eta=\frac{P_{2}}{P_{1}}=\frac{U_{2} I_{2} \cos \theta}{U_{1} I_{1} \cos \theta}=\frac{U_{2} I_{2}}{U_{1} I_{1}}
+$$
+
+当传输线的长度为 $l$ 时, 存在
+
+$$
+\begin{aligned}
+& \dot{U}_{2}=\dot{U}_{1} \mathrm{e}^{-\gamma l}=U_{1} \mathrm{e}^{-\alpha l} \mathrm{e}^{-j \beta l} \\
+& \dot{I}_{2}=\dot{I}_{1} \mathrm{e}^{-\gamma l}=\dot{I}_{1} \mathrm{e}^{-\alpha l} \mathrm{e}^{-j \beta l}
+\end{aligned}
+$$
+
+因此
+
+$$
+U_{2}=U_{1} \mathrm{e}^{-a l}, I_{2}=I_{1} \mathrm{e}^{-\alpha t}
+$$
+
+故有
+
+$$
+\eta=\mathrm{e}^{-2 \alpha l}
+$$
+
+该结果显示,匹配状态下的传输线效率只与线路的长度 $l$ 和衰减系数 $\alpha$ 相关。
+
+如果线路是无损耗的, 线路终端又接以匹配负载, 此时将存在
+
+$$
+U=U_{1} \mathrm{e}^{-\mathrm{i} \beta x}, I=i_{1} \mathrm{e}^{-\mathrm{i} \beta x}
+$$
+
+沿线路各处的电压和电流的有效值将不再变化, 仅仅相位随 $x$ 而变化。由于特性阻抗是实数, 沿线路任一位置电压和电流都将是同相位的。此时衰减系数 $\alpha=0$, 效率 $\eta=100 \%$, 达到最大 值。
+
+【例 1.9-7】一电缆参数为 $R_{0}=0.00184 \Omega / \mathrm{m}, L_{0}=0.07 \times 10^{-6} \mathrm{H} / \mathrm{m}, G_{0}=0.5 \times 10^{-9}$ $\mathrm{S} / \mathrm{m}, C_{0}=0.031 \times 10^{-9} \mathrm{~F} / \mathrm{m}$, 工作频率 $f=800 \mathrm{~Hz}$, 试求该线路的特性阻抗。
+
+解: $Z_{0}=R_{0}+\mathrm{j} \omega L_{0}=0.00184+\mathrm{j} 2 \pi \times 800 \times 0.07 \times 10^{-6}$
+
+$$
+\begin{aligned}
+& =0.00184+\mathrm{j} 0.000352=1.87 \times 10^{-3} 10.8^{\circ} \Omega \\
+Y_{0} & =G_{0}+\mathrm{j} \omega C_{0}=0.5 \times 10^{-9}+\mathrm{j} 2 \pi \times 800 \times 0.031 \times 10^{-9} \\
+& =(0.0005+\mathrm{j} 0.156) \times 10^{-6}=0.156 \times 10^{-6} \angle-89.8^{\circ} \mathrm{S}
+\end{aligned}
+$$
+
+$$
+Z_{\mathrm{c}}=\sqrt{\frac{Z_{0}}{Y_{0}}}=\sqrt{\frac{1.87 \times 10^{-3} \measuredangle 10.8^{\circ}}{0.156 \times 10^{-6} / 89.8^{\circ}}}=109 \angle-39.5^{\circ} \Omega
+$$
+
+【例 1.9-8】某电力传输线, 当终端接特性阻抗负载时, 终端电压 $U_{2}=10 \mathrm{kV}$, 传输线长度 $l=100 \mathrm{~km}$, 若已知线路的衰减系数 $\alpha=1.4 \times 10^{-6} 1 / \mathrm{m}$, 试求该传输线始端电压的有效值 $U_{1}$ 。
+
+解: 由
+
+$$
+U=U_{1} \mathrm{e}^{-\gamma x}
+$$
+
+可得
+
+$$
+U_{2}=U_{1} \mathrm{e}^{-\alpha l}
+$$
+
+即有
+
+$$
+U_{1}=U_{2} \mathrm{e}^{\alpha l}=10^{4} \times \mathrm{e}^{1.4 \times 10^{-6} \times 10^{5}}=11.5 \mathrm{kV}
+$$
+
+【例 1.9-9】无损耗均匀传输线的原参数为 $L_{0}=1.3 \times 10^{-3} \mathrm{H} / \mathrm{km}, C_{0}=8.6 \times 10^{-9} \mathrm{~F} / \mathrm{km}$, 欲使该线路T.作在匹配状态,则终端应接多大的负载?
+
+解: $Z_{\mathrm{C}}=\sqrt{\frac{L_{0}}{C_{0}}}=\sqrt{\frac{1.3 \times 10^{-3}}{8.6 \times 10^{-9}}}=389 \Omega$
+
+故终端应接负载
+
+$$
+Z_{\mathrm{I}}=389 \Omega
+$$
+
+【1.9-10】某高压输电线的波阻抗 $Z_{\mathrm{c}}=380\left\lfloor-6^{\circ} \Omega\right.$, 现测得在终端匹配的情况下始端电 压 $U_{1}=147 \mathrm{kV}$, 终端电压 $U_{2}=127 \mathrm{kV}$, 试求该传输线传输的自然功率和传输效率。
+
+解: 自然功率
+
+$$
+P_{2}=U_{2} I_{2} \cos \theta=\frac{U_{2}^{2}}{\left|Z_{C}\right|} \cos \theta=\frac{\left(127 \times 10^{3}\right)^{2}}{380} \cos 6^{\circ}=42.2 \mathrm{MW}
+$$
+
+始端功率
+
+$$
+P_{1}=\frac{U_{1}^{2}}{\left|Z_{\mathrm{C}}\right|} \cos \theta=\frac{\left(147 \times 10^{3}\right)^{2}}{380} \cos 6^{\circ}=56.6 \mathrm{MW}
+$$
+
+传输效率
+
+$$
+\eta=\frac{P_{2}}{P_{1}}=\frac{42.2}{56.6}=74.6 \%
+$$
+
+【例 1.9-11】图 1.9-4 所示电路中, 若 $l_{1}=\frac{1}{4} \lambda, l_{2}=\frac{1}{4} \lambda, l_{3}=\frac{1}{8} \lambda, Z_{\mathrm{C} 1}=100 \Omega, Z_{\mathrm{C} 2}=300$ $\Omega, Z_{\mathrm{c} 3}=200 \Omega, R_{1}=600 \Omega, R_{2}=300 \Omega, R_{3}=200 \Omega$, 试求 $1-1^{\prime}$ 端的输入阻抗。
+
+解: 由于两段分传输线路终端接的负载分别等于各自的波阻抗, 因此从 2-2'端观察它们 的输入阻抗分别等于 $R_{2}$ 和 $R_{3}$ 。在 2-2'端, 三个电阻并联如图 1.9-5 所示, 2-2'端的等效电 阻 $R_{\mathrm{e}}$ 为
+
+$$
+R_{\mathrm{e}}=\frac{1}{1 / R_{1}+1 / R_{2}+1 / R_{3}}=\frac{1}{1 / 600+1 / 300+1 / 200}=100 \Omega
+$$
+
+$R_{\mathrm{e}}$ 与 $Z_{\mathrm{Cl}}$ 相等, 满足匹配条件, 因此 $1-1^{\prime}$ 端的输入阻抗
+
+$$
+Z_{1-1^{\prime}}=Z_{\mathrm{C} 1}=100 \Omega
+$$
+
+## 仿真习鬼
+
+1-1 在题 1-1 图中, $U=10 \mathrm{~V}, I=1 \mathrm{~A}$, 电阻值 $R$ 为 ( )。
+(A) $10 \Omega$
+(B) $-10 \Omega$
+(C) $0.1 \mathrm{~S}$
+(D) $-0.1 \mathrm{~S}$
+
+1-2 在题 1-2 图中, $U=10 \mathrm{~V}$, 电导 $G=0.1 \mathrm{~S}$, 此元件消耗的功率为 ( )。
+(A) $-10 \mathrm{~W}$
+(B) $10 \mathrm{~J}$
+(C) $10 \mathrm{~W}$
+(D) $-10 \mathrm{~J}$
+
+1-3 在 1 个 $10 \Omega$ 电阻上通以 $2 \mathrm{~A}$ 电流, 1 分钟内消耗的电能为 ( )。
+(A) $40 \mathrm{~J}$
+(B) $240 \mathrm{~J}$
+(C) $2400 \mathrm{~W}$.
+(D) $2400 \mathrm{~J}$
+
+$1-4$ 在题 1-4 图中, 电压源 $U_{\mathrm{s}}$ 中的电流 $I_{\mathrm{s}}$ 为 ()。
+(A) $-1 \mathrm{~A}$
+(B) $1 \mathrm{~A}$
+(C) $-0.5 \mathrm{~A}$
+(D) $0.5 \mathrm{~A}$
+
+1-5 在题 1-5 图中, $10 \mathrm{~V}$ 电压源供出的功率为 ()。
+
+(A) $10 \mathrm{~W}$
+(B) $20 \mathrm{~W}$
+(C) $-10 \mathrm{~W}$
+(D) $-20 \mathrm{~W}$
+
+1-6 在题 1-6 图中, $4 \mathrm{~A}$ 电流源供出的功率为 ( )。
+( A ) $40 \mathrm{~W}$
+(B) $-40 \mathrm{~W}$
+(C) $80 \mathrm{~W}$
+(D) $-80 \mathrm{~W}$
+
+1-7 在题 1-7 图中, 已知 $I_{\mathrm{S} 1}=4 \mathrm{~A}, I_{\mathrm{S} 2}=2 \mathrm{~A}, U_{\mathrm{CS}}=r I=10 \mathrm{~V}$, 则受控电压源 (CCVS) 的转移 电阻 $r$ 为 ()。
+(A) $5 \Omega$
+(B) $-5 \Omega$
+(C) $-2.5 \Omega$
+(D) $2.5 \Omega$
+
+1-8 在题 1-8 图中, 已知 $U_{\mathrm{S}}=10 \mathrm{~V}, R_{1}=R_{2}=5 \Omega, I_{\mathrm{CS}}=\beta I_{1}=5 I_{1}$, 此受控电流源供出的功 率为 () 。
+(A) $-100 \mathrm{~W}$
+(B) $300 \mathrm{~W}$
+(C) $400 \mathrm{~W}$
+(D) $-400 \mathrm{~W}$
+
+1-9 在下面 4 个耦合电感中, 互感电压的参考方向判断正确的是图（）。
+
+(A)
+
+(B)
+
+(C)
+
+(D)
+
+1-10 对题 1-10 图电路, 如下 4 个关系式中, 正确的 $u-i$ 约束关系为 ( )。
+( A ) $u=R i$
+(B) $u_{1}=L \frac{\mathrm{d} i}{\mathrm{~d} t}$
+(C) $u_{L}=-L \frac{\mathrm{d} i}{\mathrm{~d} t}$
+(D) $i=C \frac{\mathrm{d} u_{\mathrm{C}}}{\mathrm{d} t}$
+
+1-11 对题 1-11 图中的节点 A, 正确的关系式为（）。
+(A) $i_{\mathrm{S}}-i_{R}+C \frac{\mathrm{d} u_{C}}{\mathrm{~d} t}+i_{L}=0$
+(B) $i_{\mathrm{S}}-i_{R}-C \frac{\mathrm{d} u_{C}}{\mathrm{~d} t}-i_{L}=0$
+(C) $i_{R}-C \frac{\mathbf{d} u_{c}}{\mathbf{d} t}+i_{L}=i_{\mathrm{S}}$
+(D) $i_{\mathrm{s}}=i_{R}+C \frac{\mathrm{d} u_{C}}{\mathrm{~d} t}+i_{L}$
+
+1-12 在题 1-12 图中, KVL 的正确关系式为 ( )。
+(A) $\left(R_{1}+R_{2}\right) i+L \frac{\mathrm{d} i}{\mathrm{~d} t}+u_{\mathrm{S} 1}+u_{\mathrm{S} 2}=\mathbf{0}$
+(B) $\left(R_{1}+R_{i}\right) i-L \frac{\mathrm{d} i}{\mathrm{~d} t}-u_{\mathrm{S} 1}-u_{\mathrm{S} 2}=\mathbf{0}$
+(C) $\left(R_{1}+R_{2}\right) i-L \frac{\mathrm{d} i}{\mathrm{~d} t}=u_{\mathrm{S1}}-u_{\mathrm{s} 2}$
+(D) $\left(R_{1}+R_{2}\right) i=u_{\mathrm{S} 1}-u_{\mathrm{S} 2}-L \frac{\mathrm{d} i}{\mathrm{~d} t}$
+
+1-13 在题 1-13 图中已知 $I_{\mathrm{St}}=I_{\mathrm{s} 2}=1 \mathrm{~A}$, 则电流源 $I_{\mathrm{S} 1}$ 供出的功率为 ( )。
+(A) $2 \mathrm{~W}$
+(B) $-2 \mathrm{~W}$
+(C) $8 \mathrm{~W}$
+(D) $-8 \mathrm{~W}$
+
+1-14 在题 1-14 图中开路电压 $U_{\mathrm{ub}}$ 为 $($ )。
+(A) $10 \mathrm{~V}$
+(B) $-10 \mathrm{~V}$
+(C) $0 \mathrm{~V}$
+(D) $-4 \mathrm{~V}$
+
+1-15 将题 1-15 图电路化简成电压源和电阻相串联的电路是图()。
+
+(A)
+
+(B)
+
+(A)
+
+(B)
+
+(C)
+
+(D)
+
+1-17 题 1-17 图电路的 $R_{\mathrm{ab}}$ 为 ( )。
+(A) $1.5 \Omega$
+(B) $3 \Omega$
+(C) $6 \Omega$
+(D) $9 \Omega$
+
+1-18 在题 1-18 图中, $U_{\mathrm{S}} 、 I_{\mathrm{S}} 、 R_{1} \sim R_{4}$ 和控制变量 $r 、 g$ 均为已知, 为求解此电路, 选 $\mathrm{d}$ 点为 参考点, 列出如下节点电压方程组
+
+$$
+\left\{\begin{array}{l}
+\left(\frac{1}{R_{1}}+\frac{1}{R_{2}}\right) U_{\mathrm{a}}-\frac{1}{R_{1}} U_{\mathrm{b}}-\frac{1}{R_{2}} U_{\mathrm{c}}=\frac{U_{\mathrm{s}}}{R_{1}}+I_{\mathrm{S}} \\
+\left(\frac{1}{R_{1}}+\frac{1}{R_{4}}\right) U_{\mathrm{b}}-\frac{1}{R_{1}} U_{\mathrm{a}}-\frac{1}{R_{4}} U_{\mathrm{c}}=\frac{U_{\mathrm{s}}}{R_{1}}+g U_{1} \\
+\left(\frac{1}{R_{2}}+\frac{1}{R_{3}}+\frac{1}{R_{4}}\right) U_{\mathrm{c}}-\frac{1}{R_{2}} U_{a}-\frac{1}{R_{4}} U_{\mathrm{b}}=\frac{r I}{R_{4}} \\
+I=\frac{U_{\mathrm{c}}}{R_{3}} \\
+U_{1}=U_{\mathrm{b}}-U_{\mathrm{a}}-U_{\mathrm{s}}
+\end{array}\right.
+$$
+
+在上述方程组中错误的情况是 ( )。
+(A) 只有 (1)、(2)、(3) 式有错误
+(B) 只有 (4)、(5)两式有错误
+(C) 只有 (1) 式正确,其他各式皆有错误
+(D) 只有 (5) 式正确,其他各式皆有错误
+
+1-19 用节点电压法求解题 1-19 图电路时,为使方程数最少,应选择参考点为 ( )。
+(A) a 点
+(B) $b$ 点
+(C) $\mathrm{c}$ 点
+(D) $\mathrm{d}$ 点
+
+1-20 用节点电压法求得题 1-20 图电路中电流源供出的功率为 ( )。
+(A) $15 \mathrm{~W}$
+(B) $20 \mathrm{~W}$
+(C) $-15 \mathrm{~W}$
+(D) $-20 \mathrm{~W}$
+
+1-21 在题 1-21 图电路中, $R_{1} \sim R_{4} 、 U_{\mathrm{S} 1} 、 U_{\mathrm{S} 2}$ 和 $I_{\mathrm{S}}$ 均为已知, 为用回路电流法求解此电路中 的各支路电流,选各自然网孔为独立问路。设各独立回路电流的方向如图所示。所列写的囘 路电流方程组正确的是( )。
+(A) $\left\{\begin{array}{l}\left(R_{1}+R_{3}\right) I_{\mathrm{a}}-R_{2} I_{\mathrm{b}}-R_{3} I_{\mathrm{c}}=0 \\ \left(R_{1}+R_{2}\right) I_{\mathrm{b}}-R_{2} I_{\mathrm{a}}=U_{\mathrm{S} 2} \\ \left(R_{3}+R_{4}\right) I_{\mathrm{c}}-R_{3} I_{\mathrm{a}}=U_{\mathrm{S} 1}-U_{\mathrm{S} 2}\end{array}\right.$
+(B) $\left\{\begin{array}{l}\left(R_{2}+R_{3}\right) I_{\mathrm{a}}-R_{2} I_{\mathrm{b}}-R_{3} I_{\mathrm{c}}=-U_{\mathrm{IS}} \\ \left(R_{1}+R_{2}\right) I_{\mathrm{b}}+R_{2} I_{\mathrm{a}}=U_{\mathrm{S} 2} \\ \left(R_{3}+R_{4}\right) I_{\mathrm{c}}+R_{3} I_{\mathrm{a}}=U_{\mathrm{S} 1}-U_{\mathrm{S} 2}\end{array}\right.$
+(C) $\left\{\begin{array}{l}\left(R_{2}+R_{3}\right) I_{\mathrm{a}}-R_{2} I_{\mathrm{b}}-R_{3} I_{\mathrm{c}}=U_{\mathrm{S}} \\ \left(R_{1}+R_{2}\right) I_{\mathrm{b}}-R_{2} I_{\mathrm{a}}=U_{\mathrm{S} 2} \\ \left(R_{3}+R_{4}\right) I_{\mathrm{c}}-R_{3} I_{\mathrm{a}}=U_{\mathrm{S} 2}-U_{\mathrm{S} 1} \\ U_{I \mathrm{~S}}=R_{2}\left(I_{\mathrm{a}}-I_{\mathrm{b}}\right)+R_{3}\left(I_{\mathrm{a}}-I_{\mathrm{c}}\right)\end{array}\right.$
+(D) $\left\{\begin{array}{l}I_{\mathrm{a}}=I_{\mathrm{S}} \\ \left(R_{1}+R_{2}\right) I_{\mathrm{b}}-R_{2} I_{\mathrm{S}}=U_{\mathrm{S} 2} \\ \left(R_{3}+R_{4}\right) I_{\mathrm{c}}-R_{3} I_{\mathrm{S}}=U_{\mathrm{S} 1}-U_{\mathrm{S} 2}\end{array}\right.$
+
+1-22 电路如题 1-22 图, 用叠加定理求得图中的电压 $U$ 为 ( )。
+(A) $12 \mathrm{~V}$
+(B) $4 \mathrm{~V}$
+(C) $-8 \mathrm{~V}$
+(D) $-4 \mathrm{~V}$
+
+1-23 电路如题 1-23 图, 用叠加定理求得图中的电流 $I$ 为( )。
+(A) $2 \mathrm{~A}$
+(B) $1.4 \mathrm{~A}$
+(C) $-1.4 \mathrm{~A}$
+(D) $-2 \mathrm{~A}$
+
+1-24 在题 1-24 图中, $N_{0}$ 为不含独立电源的线性电路, 当 $I_{s}=2 \mathrm{~A}, U_{s}=0$ 时, $U=20 \mathrm{~V}$; 当 $I_{s}=0, U_{s}=10 \mathrm{~V}$ 时, $U=-20 \mathrm{~V}$ 。求当 $I_{\mathrm{S}}=10 \mathrm{~A}, U_{\mathrm{s}}=2 \mathrm{~V}$ 时, 电压 $U$ 为 ( )。
+(A) $96 \mathrm{~V}$
+(B) $-96 \mathrm{~V}$
+(C) $36 \mathrm{~V}$
+(D) $-36 \mathrm{~V}$
+
+1-25 在题 1-25 图电路中, $N_{\mathrm{s}}$ 为含独立电源的线性电路, 已知 $U_{\mathrm{s}}=4 \mathrm{~V}, I_{\mathrm{s}}=1 \mathrm{~A}$ 。当 $U_{\mathrm{s}}$ 置零, 只有 $I_{\mathrm{S}}$ 作用时, $I=2 \mathrm{~A}$; 当 $I_{\mathrm{s}}$ 置零, 只有 $U_{\mathrm{s}}$ 作用时, $I=1 \mathrm{~A}$; 当两电源共同作用下 $I=4 \mathrm{~A}$ 。 若两电源同时反接后共同作用下的电流 $I$ 为 $($ )。
+(A) $-6 \mathrm{~A}$
+(B) $6 \mathrm{~A}$
+(C) $5 \mathrm{~A}$
+(D) $-5 \mathrm{~A}$
+
+1-26 在题 1-26 图中的含独立电源 $\mathrm{ab}$ 处接电压表测得 $U_{\mathrm{al},}=60 \mathrm{~V}$, 接电流表测得流出端 口处的电流 $I=3 \mathrm{~A}$, 若将 $100 \Omega$ 电阻接在端口处, 则电阻上的电压 $U_{\mathrm{ab}}$ 为 ( )。
+(A) $-50 \mathrm{~V}$
+(B) $50 \mathrm{~V}$
+(C) $0.5 \mathrm{~V}$
+(D) $-0.5 \mathrm{~V}$
+
+1-27 在题 1-27 图电路中, $\mathrm{ab}$ 两端开路。当 $2 \mathrm{~V}$ 电压源置零后的人端电阻 $R_{\text {in }}$ 为
+
+(C) $0.533 \Omega$
+(D) $-0.533 \Omega$
+
+1-28 在题 1-28 图中, 解得支路电流 $I$ 为( )。
+(A) $1.14 \mathrm{~mA}$
+(B) $-1.14 \mathrm{~mA}$
+(C) $2.28 \mathrm{~mA}$
+(D) $-2.28 \mathrm{~mA}$
+
+1-29 题 1-29 图电路的戴维南等效电路图为( )。
+
+(A)
+
+(B)
+
+(C)
+
+(D)
+
+1-30 题 1-30 图电路的诺顿等效电路为( )。
+
+(C)
+
+(B)
+
+1-31 $220 \mathrm{~V}$ 的正弦交流电压的最大值为 ( )。
+(A) $380 \mathrm{~V}$
+(B) $311 \mathrm{~V}$
+(C) $156 \mathrm{~V}$
+(D) $127 \mathrm{~V}$
+
+1-32 在题 1-32 图电路中, 已知 $I=1 \angle 0^{\circ} \mathrm{A}, X_{L}=10 \Omega, X_{C}=5 \Omega$, 则电源电压相量 $U_{\mathrm{s}}$ 为
+(A) $15 \angle 0^{\circ} \mathrm{V}$
+(B) $5 \angle 90^{\circ} \mathrm{V}$
+(C) $5 \angle-90^{\circ} \mathrm{V}$
+(D) $5 \angle 0^{\circ} \mathrm{V}$
+
+1-33 在题 1-33 图电路中, 已知 $U_{\mathrm{s}}=10 \angle 0^{\circ} \mathrm{V}, X_{L}=10 \Omega, X_{C}=5 \Omega$, 则电源电流相量 $I$ 为 ( )。
+(A) $1 / 90^{\circ} \mathrm{A}$
+(B) $1 \angle-90^{\circ} \mathrm{A}$
+(C) $3 \angle 90^{\circ} \mathrm{A}$
+(D) $3 \angle-90^{\circ} \mathrm{A}$
+
+1-34 在题 1-34 图电路中, $N_{0}$ 不含独立电源, 已知 $u=380 \sin \omega t \mathrm{~V}$, 电流 $i=38 \sin (\omega t+$ $\left.60^{\circ}\right) \mathrm{A}$, 则 $N_{0}$ 电路的复阻抗应为 $(\quad)$ 。
+(A) $10 \angle-60^{\circ} \Omega$ (感性)
+(B) $10 \angle 60^{\circ} \Omega$ (感性)
+(C) $10 \angle 60^{\circ} \Omega$ (容性)
+(D) $10 \angle-60^{\circ} \Omega$ (容性)
+
+1-35 在题 1-35 图电路中, $N_{0}$ 不含独立电源。已知 $U=100 \angle 0^{\circ} \mathrm{V}, I=10 \angle 60^{\circ} \mathrm{A}$, 则电路 $N_{0}$ 的复导纳 $Y$ 为 ( )。
+(A) $10 \angle-60^{\circ} \mathrm{S}$
+(B) $0.1 \angle-60^{\circ} \mathrm{S}$
+(C) $0.1 \angle 60^{\circ} \mathrm{S}$
+(D) $10 \angle 60^{\circ} \mathrm{S}$
+
+$1-36$ 在题 1-36 图两复阻抗并联电路的总复阻抗为 ()。
+(A) $Z=\frac{\left|Z_{1}\right|\left|Z_{2}\right|}{\left|Z_{1}\right|+\left|Z_{2}\right|}$
+(B) $Z=\frac{Z_{1} Z_{2}}{Z_{1}+Z_{2}}$
+(C) $Z=\frac{1}{Z_{1}}+\frac{1}{Z_{2}}$
+(D) $Z=Z_{1}+Z_{2}$
+
+1-37已知题 1-37 图电路中, $i=14.1 \sin \left(314 t+30^{\circ}\right) \mathrm{A}$, 则电路的平均功率为 ( )。
+(A) $1000 \mathrm{VA}$
+(B) $1 \mathrm{~kW}$
+(C) $1410 \mathrm{~W}$
+(D) $1000 \mathrm{var}$
+
+1-38 已知题 1-38 图电路中电压源相量 $U_{\mathrm{s}}=100 \angle 0^{\circ} \mathrm{V}$, 电路中的无功功率为 ( )。
+(A) $120 \mathrm{VA}$
+(B) $120 \mathrm{~W}$
+(C) 120 var
+(D) -120 var
+
+1-39 用并联电容提高感性负载的功率因数后的效果是 ( )。
+(A) 增加了电路中的无功功率
+(B) 减小了线路中的总电流
+(C) 加大了电路中的平均功率
+(D) 增加了电路所占用的电源容量
+
+140 在题 $1-40$ 图电路中, $N_{\mathrm{S}}$ 为含独立电源的线性电路。当 $u_{\mathrm{S}}=0$ 时, $i_{\mathrm{I}}=3 \sin \omega t \mathrm{~A}$; 当 $u_{\mathrm{S}}$ $=3 \sin \left(\omega t+30^{\circ}\right) \mathrm{V}$ 时, $i_{1}=3 \sqrt{2} \sin \left(\omega t+45^{\circ}\right) \mathrm{A}$ 。若 $u_{\mathrm{S}}=4 \sin \left(\omega t-150^{\circ}\right) \mathrm{V}$ 时, $i_{\mathrm{L}}$ 为 $(\quad)$ 。
+(A) $i_{\mathrm{L}}=5 \sin \left(\omega t-53.1^{\circ}\right) \mathrm{A}$
+(B) $i_{1}=5 \sin \left(\omega t+53.1^{\circ}\right) \mathrm{A}$
+(C) $i_{\mathrm{I}}=5 \sin \left(\omega t+36.9^{\circ}\right) \mathrm{A}$
+(D) $i_{\mathrm{L}}=5 \sin \left(\omega t-36.9^{\circ}\right) \mathrm{A}$
+
+1-41 正弦交流电路如题 141 图, 已知电源电压的有效值 $U=62.5 \mathrm{~V}$, 各支路电流的有效 值分别为 $I_{1}=1.5 \mathrm{~A}, I_{2}=2 \mathrm{~A}, I_{3}=2.5 \mathrm{~A}$, 则交流参数 $X_{C 2}$ 为 $(\quad)$ 。
+(A) $15 \Omega$
+(B) $25 \Omega$
+(C) $30 \Omega$
+(D) $50 \Omega$
+
+1-42 在题 $1-42$ 图对称三相电路中, 已知 $U_{\mathrm{AN}}=220 \angle 0^{\circ} \mathrm{V}, Z=4+\mathrm{j} 3 \Omega$, 则线电流相量 $i_{\mathrm{B}}$ 为 $(\quad)$ 。
+(A) $76 \angle-126.9^{\circ} \mathrm{A}$
+(B) $76 \angle-156.9^{\circ} \mathrm{A}$
+(C) $132 \angle-156.9^{\circ} \mathrm{A}$
+(D) $132 \angle-{126.9^{\circ} \mathrm{A}}$
+
+1-43 在题 1-43 图对称三相电路中, 已知电源线电压为 $380 \mathrm{~V}, Z=3+\mathrm{j} 4 \Omega$ 。此电路的平 均功率为 $(\quad)$ 。
+(A) $10.4 \mathrm{~kW}$
+(B) $17.4 \mathrm{~kW}$
+(C) $10.1 \mathrm{~kW}$
+(D) $17.4 \mathrm{~kW}$
+
+$1-44$ 在题 $1-44$ 图对称三相电路中, 三角形负载中消耗的平均功率为 $10 \mathrm{~kW}$ (感性), 星 接负载中消耗的平均功率为 $10 \mathrm{~kW}$ (感性), 三角形接负载的功率因数为 0.8 , 星接负载的功率 因数为 0.855 。线路复阻抗 $Z_{l}=0.1+\mathrm{j} 0.2 \Omega$ 。现测得负载端的线电压有效值为 $380 \mathrm{~V}$, 则电 源线电压的有效值为 ( )。
+(A) $380 \sqrt{2} \mathrm{~V}$
+(B) $380 \sqrt{3} \mathrm{~V}$
+(C) $393 \mathrm{~V}$
+(D) $425 \mathrm{~V}$
+
+$1-45$ 在 $Y-Y$ 不对称三相供电系统中,负载不对称时的后果是 $(\quad)$ 。
+
+(A) 各相负载电压都因过低而不能正常工作
+
+(B) 各相负载电压都因过高而损坏
+
+(C) 不影响各项负载正常工作
+
+(D) 有的相负载因电压过低而不能正常工作, 有的相负载因电压过高而损坏
+
+$1-46$ 在题 $1-46$ 图非正弦电路中, 已知 $\omega L=300 \Omega, \frac{1}{\omega C_{1}}=1200 \Omega, \frac{1}{\omega C_{2}}=400 \Omega, R=250$ $\Omega$, 外加电压 $u(t)=750+500 \sqrt{2} \sin \omega t+100 \sqrt{2} \sin 2 \omega t \mathrm{~V}$ 求得电感中的电流 $i_{L}(t)$ 为 $(\quad$ 。
+
+(A) $2.67 \sqrt{2} \sin \omega t \mathrm{~A}$
+
+(B) $0.167 \sqrt{2} \sin 2\left(\omega t-90^{\circ}\right) \mathrm{A}$
+
+(C) $2.67 \sqrt{2} \sin \omega t+0.167 \sqrt{2} \sin \left(2 \omega t-90^{\circ}\right) A$
+
+(D) $3+2.67 \sqrt{2} \sin \omega t+0.167 \sin \left(2 \omega t-90^{\circ}\right) \mathrm{A}$
+
+$1-47$ 在题 $1-47$ 图非证弦电路中, $R=1.1 \mathrm{k} \Omega, C=50 \mu \mathrm{F}$, 电流 $i(t)=3.6+2 \sqrt{2} \sin \omega t \mathrm{~mA}$, 在频率 $f=1000 \mathrm{~Hz}$ 时, 电阻 $R$ 上电压的有效值为 ( )。
+(A) $U_{R}=4.53 \mathrm{~V}$
+(B) $U_{R}=3.96 \mathrm{~V}$
+(C) $U_{R}=2.2 \mathrm{~V}$
+(D) $U_{R}=6.16 \mathrm{~V}$
+
+$1-48$ 在题 1-48 图电路中, 换路后电感电压的初始值 $u_{L}(0+)$ 为 $(\quad)$ 。
+(A) $\frac{U_{\mathrm{S}}}{R}$
+(B) $\frac{U_{\mathrm{S}}}{2 R}$
+(C) $U_{\mathrm{s}}$
+(D) $\frac{U_{\mathrm{S}}}{2}$
+
+$1-49$ 在题 $1-49$ 图电路中, $I_{\mathrm{S}}=10 \mathrm{~mA}, R_{\mathrm{1}}=R_{2}=2000 \Omega, C=3 \mu \mathrm{F}$ 。原来开关 $\mathrm{S}$ 闭合时电 路已达稳态, 当 $t=0$ 时将开关 $\mathrm{S}$ 打开, 则打开后电容电压 $u_{\mathrm{C}}(t)$ 的全响应为 $(\quad)$ 。
+(A) $20 \mathrm{e}^{-83 t} \mathrm{~V}$
+(B) $40-40 \mathrm{e}^{-83 t} \mathrm{~V}$
+(C) $40-20 \mathrm{e}^{-831} \mathrm{~V}$
+(D) $40+20 \mathrm{e}^{-83 t} \mathrm{~V}$
+
+1-50 在题 1-50 图电路中, 原来开关 $\mathrm{S}$ 闭合时电路已达稳态, 在 $t=0$ 时开关 $\mathrm{S}$ 打开, 则打 开后电感电流 $i(t)$ 为 $(\quad)$ 。
+(A) $-0.2+0.5 \mathrm{e}^{-250 t} \mathrm{~A}$
+(B) $0.5 \mathrm{e}^{-250 t} \mathrm{~A}$
+(C) $-0.2+0.5^{0.004 t} \mathrm{~A}$
+(D) $-0.2-0.5 e^{-250 t} \mathrm{~A}$
+
+1-51 无限大真空中, 点电荷 $q_{1}=q, q_{2}=2 q$, 它们之间的距离为 $d$, 则电场强度为零的点距 离 $q_{1}$ 的距离为 ()。
+(A) $\frac{1}{3} d$
+(B) $\frac{d}{\sqrt{2}+1}$
+(C) $\frac{d}{\sqrt{2}-1}$
+(D) $\frac{2}{3} d$
+
+1-52 无限大真空中, 点电荷 $q_{\mathrm{A}}$ 与 $q_{\mathrm{B}}$ 分别位于等边三角形 $\mathrm{ABC}$ 的两个顶点上 (题 1-52 图), 若 $q_{\mathrm{A}}$ 在 $\mathrm{C}$ 点单独作用产生的场 强大小为 $E$, 而 $q_{\mathrm{B}}=-q_{\mathrm{A}}$, 则 $q_{\mathrm{A}}$ 与 $q_{\mathrm{B}}$ 共同作用在 $\mathrm{C}$ 点产生的场强 大小为 $(\quad)$ 。
+(A) $E$
+(B) $2 E$
+(C) $\sqrt{3} E$
+(D) 0
+
+$1-53$ 电位函数 $\varphi=2\left(x^{2}+y^{2}\right)+4(x+y)+10 \mathrm{~V}$, 则场点 $A$ $(1,1)$ 处的场强 $\boldsymbol{E}$ 为 $(\quad)$ 。
+(A) $10 \mathrm{~V} / \mathrm{m}$
+(B) $6 e_{x}+6 e_{y} V / m$
+(C) $-8 e_{x}-8 e_{y} \mathrm{~V} / \mathrm{m}$
+(D) $-12 e_{x}-10 \mathrm{~V} / \mathrm{m}$
+
+1-54 无限大真空中, $A$ 与 $B$ 二平面互相平行 (题 1-54 图), 并分别带有面电荷密度为 $\sigma$ 和 $-\sigma$ 的电荷, 若二面间的距离为 $d$, 则 $A 、 B$ 二面间的电压为 ( )。
+(A) $\frac{\sigma}{d \varepsilon_{0}}$
+(B) $\frac{1}{2 \varepsilon_{0}} \sigma d$
+(C) $\frac{\sigma d}{\varepsilon_{0}}$
+(D) 0
+
+1-55 如图 1-55 所示, 空心金属球壳内置一点电荷 $q_{3}$, 金属球壳内外半径分别为 $R_{1}$ 和 $R_{2}$, 并且带有电荷 $q_{2}$, 如果球外介质均为 $\varepsilon_{0}$, 设无穷远处为电位参考点, 金属球壳的电位为
+(A) $\frac{q_{1}}{4 \pi \varepsilon_{0} R_{2}}$
+(B) $\frac{q_{1}+q_{2}}{4 \pi \varepsilon_{0} R_{1}}$
+(C) $\frac{q_{1}+q_{2}}{4 \pi \varepsilon_{0} R_{2}^{2}}$
+(D) $\frac{q_{1}+q_{2}}{4 \pi \varepsilon_{0} R_{2}}$
+
+$1-56$ 空气中半径为 $R$ 的球域内存在电荷体密度 $\rho=\frac{1}{2} r$ 的电荷, 则空间最大的电场强度 值为 ( )。
+(A) $\frac{R^{2}}{8 \varepsilon_{0}}$
+(B) $\frac{R}{8 \varepsilon_{0}}$
+(C) $\frac{R^{2}}{4 \varepsilon_{0}}$
+(D) $\frac{R}{4 \varepsilon_{0}}$
+
+$1-57$ 内外半径分别为 $R_{1}$ 和 $R_{2}$ 的同轴电缆, 中间填充介电系数为 $\varepsilon$ 的介质, 介质允许的 最大电场强度为 $E_{\text {max }}$ (又称介质的击穿场强), 该电缆所能承受的最大电压为 ( )。
+(A) $E_{\max } R_{2} \ln \frac{R_{1}}{R_{2}}$
+(B) $E_{\max } R_{1} \ln \frac{R_{1}}{R_{2}}$
+(C) $E_{\max } R_{1} \ln \frac{R_{2}}{R_{1}}$
+(D) $E_{\max }\left(R_{2}-R_{1}\right)$ $1-58$ 半径均为 $6 \mathrm{~cm}$ 的平行架设二导体圆柱, 其轴线间距为 $20 \mathrm{~cm}$, 二导体单位长度所带 的电荷为 $0.01 \mu \mathrm{C}$ (等量而异号), 导线相对较长, 则导线表面的最大电荷面密度值为 ( )。
+(A) $6 \pi \mu \mathrm{C} / \mathrm{m}^{2}$
+(B) $3 \pi \mu \mathrm{C} / \mathrm{m}^{2}$
+(C) $\frac{1}{3 \pi} \mu \mathrm{C} / \mathrm{m}^{2}$
+(D) $\frac{1}{6 \pi} \mu \mathrm{C} / \mathrm{m}^{2}$
+
+1-59 如题 1-59 图所示, 二长直圆柱之间均匀分布着电荷体密度为 $\rho_{0}$ 的电荷, 假设空间 介质的介电系数均为 $\varepsilon_{0}$, 小圆柱内任一点的电场强度的大小为 ( )。
+(A) $\frac{\rho}{2 \varepsilon_{0}}$
+(B) $\frac{\rho}{2 \varepsilon_{0}} d$
+(C) $\frac{\rho}{\varepsilon_{0}}$
+(D) $\frac{\rho}{\varepsilon_{0}} d$
+
+1-60 如题 1-60 图所示, 为一双层介质的平板电容器, $\varepsilon_{1}$ 介质的厚度为 $d_{1}, \varepsilon_{2}$ 介质的厚度 为 $d_{2}$, 若在二极板间施加电压 $U_{0}, \varepsilon_{1}$ 介质中的电场强度为 $($ )。
+(A) $\frac{\varepsilon_{1} U_{0}}{\varepsilon_{1} d_{1}+\varepsilon_{2} d_{2}}$
+(B) $\frac{\varepsilon_{1} U_{0}}{\varepsilon_{2} d_{1}+\varepsilon_{1} d_{2}}$
+(C) $\frac{\varepsilon_{2} U_{0}}{\varepsilon_{1} d_{1}+\varepsilon_{2} d_{2}}$
+(D) $\frac{\varepsilon_{2} U_{0}}{\varepsilon_{2} d_{1}+\varepsilon_{1} d_{2}}$
+
+1-61上下平面间分别分布有 $\varepsilon_{1}=\varepsilon_{0}, \varepsilon_{2}=4 \varepsilon_{0}$ 两种介质, 在垂直分界面两侧分别有点电 荷 $q_{1}$ 和 $q_{2}$, 如题 1-61 图所示, 则二电荷连线与分界面相交处 $\varepsilon_{2}$ 介质中点的电场强度 $E_{A}$ 为
+(A) $\frac{q_{1}-q_{2}}{4 \pi \varepsilon_{0} h^{2}}$
+(B) $\frac{q_{1}-q_{2}}{16 \pi \varepsilon_{0} h^{2}}$
+(C) $\frac{-q_{2}}{16 \pi \varepsilon_{0} h^{2}}$
+(D) $\frac{4 q_{1}-q_{2}}{40 \pi \varepsilon_{0} h^{2}}$
+
+1-62 空气中导体球外与球心相距 $d$ 处有一点电荷 $q_{1}$, 如题 1-62 图所示, 导体球上浄电 荷为零, 电荷 $q_{1}$ 所受到的电场力为 ( )。
+(A) $\frac{-a d q_{1}^{2}}{4 \pi \varepsilon_{0}\left(d^{2}-a^{2}\right)^{2}}$
+(B) $\frac{a^{3}\left(a^{2}-2 d^{2}\right) q_{1}^{2}}{4 \pi \varepsilon_{0} d^{3}\left(d^{2}-a^{2}\right)^{2}}$
+(C) $\frac{a d q_{1}^{2}}{4 \pi \varepsilon_{0}\left(d^{2}-a^{2}\right)^{2}}$
+(D) $\frac{a d q_{2}^{2}}{4 \pi \varepsilon_{0}\left(d^{2}-a^{2}\right)^{2}}$
+
+1-63 平行板电容器, 上半部分介质的介电系数为 $\varepsilon_{0}$, 下半部分介质的介电系数为 $4 \varepsilon_{0}$, 如题 1-63 图所示。若在二极板间施加电压 $U_{0}$, 该电容器上下二极板单位面积所受到的电场力 之比为 ()。
+(A) $\frac{1}{4}$
+(B) $\frac{1}{16}$
+(C) $\frac{1}{2}$
+(D) 1 1-64一静电装置的电场能量可表示为 $W_{m}=\frac{1}{\alpha} U^{2}$, 式中 $U$ 是常数, $\alpha$ 表示圆柱坐标系下 的角度, 则该系统产生的转矩为 ( )。
+(A) $\frac{2}{\alpha} U$
+(B) $\frac{1}{2} \frac{1}{\alpha} U^{3}$
+(C) $-\frac{1}{\alpha^{2}} U^{2}$
+(D) $-\frac{1}{\alpha} U^{2}$
+
+题 1-66 图 为 $(\quad)$ 。
+
+$1-65$ 半径为 $a$ 、轴线间距离为 $d$ 的架空二线输电线, 若 $a \ll d$, 则二线间单位长度的电容
+(A) $\frac{\pi \varepsilon_{0}}{\ln \frac{d}{a}}$
+(B) $\frac{\pi \varepsilon_{0}}{\ln \frac{a}{d}}$
+(C) $\frac{2 \pi \varepsilon_{0}}{\ln \frac{d}{a}}$
+(D) $\frac{2 \pi \varepsilon_{0}}{\ln \frac{a}{d}}$
+
+1-66 同轴圆柱导体间填充两种介质,其横截面如题 1-66 图所示,该二圆柱单位长度的 电容为 $($ )。
+(A) $\frac{\varepsilon_{1}+\varepsilon_{2}}{\ln \frac{R_{2}}{R_{1}}}$
+(B) $\frac{\varepsilon_{1} \alpha_{0}+\varepsilon_{2}}{\ln \frac{R_{2}}{R_{1}}}$
+(C) $\frac{\varepsilon_{1}\left(2 \pi-\alpha_{0}\right)+\varepsilon_{2} \alpha_{0}}{\ln \frac{R_{2}}{R_{1}}}$
+(D) $\frac{\varepsilon_{2}\left(2 \pi-\alpha_{0}\right)+\varepsilon_{1} \alpha_{0}}{\ln \frac{R_{2}}{R_{1}}}$
+
+1-67 半径为 $a$ 的导线与地面及一高墙平行架设, 如题 1-67 图所示。若 $a \ll b, a \ll d$, 则该 导线与地或墙之间单位长度的电容为 ( )。
+(A) $\frac{2 \pi \varepsilon_{0}}{\ln \frac{2 b d}{a \sqrt{b^{2}+d^{2}}}}$
+(B) $\frac{\pi \varepsilon_{0}}{\ln \frac{2 b d}{a \sqrt{b^{2}+d^{2}}}}$
+(C) $\frac{2 \pi \varepsilon_{0}}{\ln \frac{2 b \sqrt{b^{2}+d^{2}}}{a d}}$
+(D) $\frac{\pi \varepsilon_{0}}{\ln \frac{2 b \sqrt{b^{2}+d^{2}}}{a d}}$
+
+1-68 如题 1-68 图所示双层介质平板电容器, 若 $\varepsilon_{1}=\varepsilon_{0}, \varepsilon_{2}=5 \varepsilon_{0}, \varepsilon_{1}$ 介质的最大允许场 强为 $30 \mathrm{kV} / \mathrm{cm}, \varepsilon_{2}$ 介质的最大允许场强为 $120 \mathrm{kV} / \mathrm{cm}, d=1 \mathrm{~cm}$, 二介质各占一半, 该电容器所 能承受的最大电压为 $($ )。
+(A) $75 \mathrm{kV}$
+(B) $30 \mathrm{kV}$
+(C) $135 \mathrm{kV}$
+(D) $18 \mathrm{kV}$
+
+1-69 各向同性的两种导电媒质的分界面处, $\gamma_{1}=1$ 分 $\mathrm{S} / \mathrm{m}, \gamma_{2}=10^{5} \mathrm{~S} / \mathrm{m}$, 设分界面的法向 由第一种媒质指向第二种媒质, $\gamma_{1}$ 媒质中在分界面处有一电流密度与分界面法向间的夹角为
+
+$60^{\circ}$, 则与其相邻近的 $\gamma_{2}$ 媒质中的电流密度与分界面法线间夹角应为 $(\quad)$ 。
+(A) $3.31^{\circ}$
+(B) $86.7^{\circ}$
+(C) $9.83^{\circ}$
+(D) $0^{\circ}$
+
+1-70 如题 1-70 图所示, 金属球壳内部有一半空间被电导率为 $\gamma$ 的液体所占, 液体的电 导率远小于金属, 若在内外金属间施加电压 $U_{0}$, 而球壳上部可以认为不导电, 则液体中的电流 密度应为 $(\quad)$ 。
+(A) $\frac{\gamma R_{1} R_{2} U_{0}}{\left(R_{2}-R_{1}\right) r^{2}}$
+(B) $\frac{\left(R_{2}-R_{1}\right) U_{0}}{\gamma R_{1} R_{2} r^{2}}$
+(C) $\frac{R_{1} R_{2} U_{0}}{\gamma\left(R_{2}-R_{1}\right) r^{2}}$
+(D) $\frac{R_{1} R_{2} \gamma U_{0}}{\left(R_{2}-R_{1}\right) r}$
+
+1-71 同轴电缆的内外导体半径分别为 $R_{1}$ 和 $R_{2}$, 若介质的漏电电导率为 $\gamma$, 今在内外导 体间施加电压 $U_{0}$, 该电缆在单位长度内消耗的功率为 $($ )。
+(A) $\frac{2 \pi \gamma U_{0}^{2}}{\ln \frac{R_{2}}{R_{1}}}$
+(B) $\frac{\pi \gamma U_{0}^{2}}{\ln \frac{R_{2}}{R_{1}}}$
+(C) $\frac{U_{0}^{2}}{\gamma \ln \frac{R_{2}}{R_{1}}}$
+(D) $-\frac{U_{0}^{2}}{\gamma \ln \frac{R_{1}}{R_{2}}}$
+
+1-72 恒定电流流过媒质分界面, 媒质的参数分别为 $\varepsilon_{1} 、 \varepsilon_{2} 、 \gamma_{1}$ 和 $\gamma_{2}$, 当分界面无自由电 荷时 (即 $\sigma=0$ ), 这些参数应满足条件为 ( )。
+(A) $\frac{\varepsilon_{1}}{\varepsilon_{2}}=\frac{\gamma_{2}}{\gamma_{1}}$
+(B) $\frac{\varepsilon_{1}}{\varepsilon_{2}}=\frac{\gamma_{1}}{\gamma_{2}}$
+(C) $\varepsilon_{1} \gamma_{1}+\varepsilon_{2} \gamma_{2}=0$
+(D) $\varepsilon_{1} \gamma_{1}-\varepsilon_{2} \gamma_{2}=1$
+
+1-73 如题 1-73 图所示, 半径为 $R_{0}$ 的半球接地体, 为减小其接地电阻, 在半径为 $R_{1}$ 的区 间填充电导率 $\gamma_{1}$ 的媒质, $r>R_{1}$ 区间为电导率为 $\gamma_{2}$ 的大地, 则该接地体的接地电阻为
+(A) $\frac{R_{1}-R_{D}}{2 \pi \gamma_{1} R_{0}}+\frac{1}{2 \pi \gamma_{2} R_{1}}$
+(B) $\frac{1}{2 \pi \gamma_{2} R_{1}}$
+(C) $\frac{R_{\mathrm{t}}-R_{0}}{4 \pi r_{1} R_{0} R_{1}}+\frac{1}{4 \pi \gamma_{2} R_{\mathrm{l}}}$
+(D) $\frac{R_{1}-R_{0}}{2 \pi \gamma_{1} R_{0} R_{1}}+\frac{1}{2 \pi \gamma_{2} R_{1}}$
+
+1-74 如题 1-74 图所示, 半球接地体埋在地中, 半球平面与地表面位于同一平面。若半 球的半径 $R_{0}=1 \mathrm{~m}$, 土壤的电导率 $\gamma=10^{-2} \mathrm{~S} / \mathrm{m}$, 则该接地体的接地电阻为 ( )。
+(A) $50.3 \Omega$
+(B) $31.8 \Omega$
+(C) $15.9 \Omega$
+(D) $1 \Omega$
+
+1-75各向同性线性媒质的磁导率为 $\mu$, 其中存在的磁场磁感应强度为
+
+$$
+B=\frac{\mu / l \sin \theta}{4 \pi r^{2}} e_{\alpha}
+$$
+
+该媒质中的磁化强度为( )。
+(A) $\frac{I l \sin \theta}{4 \pi r^{2}} e_{\alpha}$
+(B) $\frac{\mu_{0} I l \sin \theta}{4 \pi r^{2}} e_{\alpha}$
+(C) $\frac{\left(\mu+\mu_{0}\right) l l \sin \theta}{4 \pi \mu_{0} r^{2}} e_{\alpha}$
+(D) $\frac{\left(\mu-\mu_{0}\right) l l \sin \theta}{4 \pi \mu_{0} r^{2}} e_{\alpha}$
+
+1-76 同轴空心长直圆管导体横截面如题 1-76 图所示, 圆管的磁导率为 $\mu$, 周围为空气, 若内外导体分别通有电流 $I$, 则外导体内的磁感应强度为 ( )。
+(A) $\frac{\mu I\left(R_{4}^{2}-r^{2}\right)}{2 \pi\left(R_{4}^{2}-R_{3}^{2}\right) r}$
+(B) $\frac{\mu I\left(r^{2}-R_{3}^{2}\right)}{2 \pi\left(R_{4}^{2}-R_{3}^{2}\right) r}$
+(C) $\frac{\mu_{0} I\left(R_{4}^{2}-R_{2}^{2}\right)}{2 \pi\left(R_{4}^{2}-R_{3}^{2}\right) r}$
+(D) $\frac{\mu I\left(r^{2}-R_{3}^{2}\right)}{2 \pi r}$
+
+1-77 空气中有一半径为 $a$ 的无限长圆柱面, 圆柱面上有 与圆柱轴线方向一致的面电流，其面电流线密度的大小为 $K_{0}$, 则圆柱面外与轴线相距为 $r$ 处的磁感应强度为 ( )。
+
+(A) $\frac{\mu_{0} K_{0}}{2 \pi r}$
+(B) $\frac{K_{0}}{2 \pi r}$
+(C) $\frac{\mu_{0} a K_{0}}{r}$
+(D) $\mu_{0} a K_{0}$
+
+$1-78$ 无限大真空中, 过 $x=-1$ 点, 并垂直于 $x$ 轴的平面上有一面电流 $6 \boldsymbol{e}_{z} ;$ 过 $x=1$ 点, 并 垂直于 $x$ 轴的平面上有一面电流 $-2 e_{z}$, 则在 $x>1$ 的空间中磁感应强度为 ( )。
+(A) $4 \mu_{0} e_{r}$
+(B) $2 \mu_{0} e_{y}$
+(C) $-4 \mu_{0} e$
+(D) $-2 \mu_{0} e_{3}$
+
+1-79 如题 1-79 图所示为二线输电线的示意图, 空间点 $P$ 的磁感应强度 $B$ 为 ( )。
+
+(A) $\frac{\mu_{0} I\left(2 e_{x}+e_{y}\right)}{5 \pi}$
+(B) $\frac{\mu_{0} I\left(e_{x}+2 e_{y}\right)}{5 \pi}$
+(C) $\frac{-\mu_{0} I\left(e_{x}+2 e_{y}\right)}{5 \pi}$
+(D) $\frac{-\mu_{0} I\left(2 e_{x}+e_{y}\right)}{5 \pi}$
+
+1-80 在空气中, 如题 1-80 图所示, 由两块宽为 $0.4 \mathrm{~m}$ 的长直薄导体片构成的直流输电 线, 两片间的距离为 $0.02 \mathrm{~m}$, 若忽略边缘效应, 则输电线单位长度的电感为 ( )。
+(A) $0.0628 \mu \mathrm{H}$
+(B) $0.628 \mu \mathrm{H}$
+(C) $1.25 \mu \mathrm{H}$
+(D) $0.125 \mu \mathrm{H}$
+
+1-81 三角形单匝回路与无限长直导线位于同一平面上,如题 1-81 图所示。它们之间的 互感为 $(\quad)$
+(A) $\frac{\mu_{0} c}{2 \pi}\left(\frac{a+b}{b} \ln \frac{a}{a+b}-1\right)$
+(B) $\frac{\mu_{0} c}{2 \pi}\left(\frac{b}{a+b} \ln \frac{a+b}{a}+1\right)$
+(C) $\frac{\mu_{0} c}{2 \pi}\left(\ln \frac{a+b}{a}-1\right)$
+(D) $\frac{\mu_{0} c}{2 \pi}\left(\frac{a+b}{b} \ln \frac{a+b}{a}-1\right)$
+
+1-82一空心圆环,如题 1-82 图所示, 内外半径分别为 $R_{1}$ 和 $R_{2}$, 其横截面为高 $h$ 的矩形, 磁导率为 $\mu$, 该圆环上均匀密绕有 $N$ 匝线圈, 通有电流 $I$, 该圆环内储存的磁场能量为
+( A) $\frac{\mu N^{2} I^{2} h}{2 \pi}-\ln \frac{R_{2}}{R_{1}}$
+( B) $\frac{\mu N^{2} I^{2} h}{\pi} \ln \frac{R_{2}}{R_{1}}$
+(C) $\frac{\mu N^{2} I^{2} h}{4 \pi} \ln \frac{R_{2}}{R_{1}}$
+(D) $\frac{\mu N^{2} I^{2} h\left(R_{2}-R_{1}\right)}{2 \pi}$
+
+1-83 两条平形架设的长直导线, 分别通有电流 $I_{1}$ 和 $I_{2}$, 如题 1-83 图所示, 假如周围的媒 质为空气, 则右导线单位长度受的作用力为 ( )。
+( A) $\frac{\mu_{0} I_{1} I_{2}}{2 \pi a} e_{x}$
+(B) $\frac{-\mu_{0} I_{1} I_{2}}{4 \pi a} e_{x}$
+(C) $\frac{\mu_{0} I_{1} I_{2}}{2 \pi a} e_{;}$
+(D) $\frac{-\mu_{0} I_{1} I_{2}}{4 \pi a} e_{z}$
+
+1-84 电动式仪表内有两个线圈,其中静圈固定不动, 而另 一个称为动圈的线圈可以绕轴转动,二线圈之间的互感是转角 $\alpha$ 的函数, 即 $M=M(\alpha)$, 现在二线圈中分别通有电流 $I_{1}$ 和 $I_{2}$, 则 动圈受到的转矩为 ( )。
+
+(A) $\frac{1}{2} I_{1} I_{2} \frac{\partial M(\alpha)}{\partial \alpha}$
+(B) $\frac{1}{2} M(\alpha) I_{1} I_{2}$
+(C) $M(\alpha) I_{1} I_{2}$
+(D) $I_{1} I_{2} \frac{\partial M(\alpha)}{\partial \alpha}$
+
+1-85 某架空线路的相量解答式
+
+$$
+U(x)=10^{4} \mathrm{e}^{330^{\circ}} \mathrm{e}^{-\left(10^{-7}+j 10-6\right) x} \mathrm{~V}
+$$
+
+若电压的角频率为 $\omega$, 则该电压的瞬时值表达式为 ( )。
+(A) $10^{4} \mathrm{e}^{3} 30^{\circ} \sin \left(\omega t-10^{-6} x\right) \mathrm{V}$
+(B) $10^{4} \sin \left(\omega t+30^{\circ}-10^{-6} x\right) \mathrm{V}$
+(C) $10^{4} \mathrm{e}^{-10^{-7} x} \sin \left(\omega t+30^{\circ}-10^{-6} x\right) \mathrm{V}$
+(D) $10^{4} \sqrt{2} \mathrm{e}^{-10^{-7} x} \sin \left(\omega t+30^{\circ}-10^{-6} x\right) \mathrm{V}$
+
+$1-86$ 长度为 $\frac{1}{6}$ 波长的无损耗均匀传输线, 终端处于开路状态, 测得其终端电压为 $U_{2}=$ $1 / 0^{\circ} \mathrm{V}$, 传输线的波阻抗为 $Z_{\mathrm{C}}=50 \Omega$, 则该传输线的始端电流的瞬时值表达式为 ( )。
+(A) $10 \sqrt{6} \sin \left(\omega t+60^{\circ}\right) \mathrm{mA}$
+(B) $10 \sqrt{2} \sin \left(\omega t+60^{\circ}\right) \mathrm{mA}$
+(C) $10 \sqrt{6} \sin \left(\omega t+90^{\circ}\right) \mathrm{mA}$
+(D) $10 \sqrt{2} \sin \left(\omega t+90^{\circ}\right) \mathrm{mA}$
+
+$1-87$ 长度为 $\frac{1}{8}$ 波长的无损耗均匀传输线, 终端短路时, 测得始端电压 $U_{1}=10 \mathrm{~V}$, 传输线 的波阻抗 $Z_{c}=100 \Omega$, 则该传输线终端短路电流的有效值为 $(\quad)$ 。
+(A) $0.1 \sqrt{2} \mathrm{~A}$
+(B) $0.2 \mathrm{~A}$
+(C) $0.1 \mathrm{~A}$
+(D) $0.2 \sqrt{2} \mathrm{~A}$
+
+1-88 某架空输电线的传播常数 $\gamma=4.58 \times 10^{-6} / 84.26^{\circ} 1 / \mathrm{m}$, 已知其始端电压 $U_{1}=6.6$ $\mathrm{kV}$, 则距离始端 $100 \mathrm{~km}$ 处的电压在终端接匹配负载时的有效值为 ( )。
+(A) $6.00 \mathrm{kV}$
+(B) $6.30 \mathrm{kV}$
+(C) $6.50 \mathrm{kV}$
+(D) $5.80 \mathrm{kV}$
+
+1-89一高压输电线的原参数为 $R_{0}=0.075 \Omega / \mathrm{km}, L_{0}=1.29 \mathrm{mH} / \mathrm{km}, C_{0}=8.75 \times 10^{-9}$ $\mathrm{F} / \mathrm{km}, G_{0}$ 可忽略不计, 该传输线工作频率为 $50 \mathrm{~Hz}$, 则线路达到匹配工作状态时, 终端应接的 负载为 $(\quad)$ 。
+(A) $500 \not 1.5^{\circ} \Omega$
+(B) $400 \angle-3.87^{\circ} \Omega$
+(C) $387 /-5.25^{\circ} \Omega$
+(D) $395 \angle-6.75^{\circ} \Omega$
+
+$1-90$ 均匀传输线的终端接有匹配负载, 始端的输入功率为 $15 \mathrm{MW}$, 若线路此时的传输效 率 $\boldsymbol{\eta}=96 \%$, 则该线路传输的自然功率为 ( )。
+(A) $14.4 \mathrm{MW}$
+(B) $15 \mathrm{MW}$
+(C) $13.8 \mathrm{MW}$
+(D) $0.6 \mathrm{MW}$
+
+## 习题答案
+
+$\begin{array}{llllllllllll}1-1 & \text { (B) } & 1-2 & \text { (C) } & 1-3 & \text { (D) } & 1-4 & \text { (A) } & 1-5 & \text { (A) } & 1-6 & \text { (C) } \\ 1-7 & \text { (B) } & 1-8 & \text { (C) } & 1-9 & \text { (D) } & 1-10 & \text { (B) } & 1-11 & \text { (C) } & 1-12 & \text { (D) } \\ 1-13 & \text { (B) } & 1-14 & \text { (C) } & 1-15 & \text { (C) } & 1-16 & \text { (B) } & 1-17 & \text { (A) } & 1-18 & \text { (C) } \\ 1-19 & \text { (B) } & 1-20 & \text { (A) } & 1-21 & \text { (D) } & 1-22 & \text { (B) } & 1-23 & \text { (B) } & 1-24 & \text { (A) } \\ 1-25 & \text { (A) } & 1-26 & \text { (B) } & 1-27 & \text { (D) } & 1-28 & \text { (C) } & 1-29 & \text { (B) } & 1-30 & \text { (C) } \\ 1-31 & \text { (B) } & 1-32 & \text { (B) } & 1-33 & \text { (A) } & 1-34 & \text { (D) } & 1-35 & \text { (C) } & 1-36 & \text { (B) }\end{array}$
+
+$\begin{array}{llllllllllll}1-37 & \text { (B) } & 1-38 & \text { (C) } & 1-39 & \text { (B) } & 1-40 & \text { (A) } & 1-41 & \text { (B) } & 1-42 & \text { (C) } \\ 1-43 & \text { (B) } & 1-44 & \text { (C) } & 1-45 & \text { (D) } & 1-46 & \text { (C) } & 1-47 & \text { (B) } & 1-48 & \text { (D) } \\ 1-49 & \text { (C) } & 1-50 & \text { (A) } & 1-51 & \text { (B) } & 1-52 & \text { (A) } & 1-53 & \text { (C) } & 1-54 & \text { (C) } \\ 1-55 & \text { (D) } & 1-56 & \text { (A) } & 1-57 & \text { (C) } & 1-58 & \text { (D) } & 1-59 & \text { (B) } & 1-60 & \text { (D) } \\ 1-61 & \text { (D) } & 1-62 & \text { (B) } & 1-63 & \text { (A) } & 1-64 & \text { (C) } & 1-65 & \text { (A) } & 1-66 & \text { (C) } \\ 1-67 & \text { (A) } & 1-68 & \text { (D) } & 1-69 & \text { (B) } & 1-70 & \text { (A) } & 1-71 & \text { (A) } & 1-72 & \text { (B) } \\ 1-73 & \text { (D) } & 1-74 & \text { (C) } & 1-75 & \text { (D) } & 1-76 & \text { (A) } & 1-77 & \text { (C) } & 1-78 & \text { (B) } \\ 1-79 & \text { (C) } & 1-80 & \text { (A) } & 1-81 & \text { (D) } & 1-82 & \text { (C) } & 1-83 & \text { (B) } & 1-84 & \text { (D) } \\ 1-85 & \text { (D) } & 1-86 & \text { (C) } & 1-87 & \text { (A) } & 1-88 & \text { (B) } & 1-89 & \text { (C) } & 1-90 & \text { (A) }\end{array}$
+
+## 复习内容
+
+## 1 半导体及二极管
+
+#### PN 结的形成及单向导电性
+
+1. 载流子, 扩散, 漂移
+
+(1) 载流子
+
+半导体中空穴和电子两种载流子共同参与导电。
+
+本征半导体中, 电子和空穴总是成对出现的, 电子一空穴对的数量受温度影响。空穴与电 子所带电量相同,极性相反, 因此本征半导体整体是电中性的。
+
+$\mathrm{P}$ 型半导体和 $\mathrm{N}$ 型半导体是两种基本的杂质半导体。
+
+$P$ 型半导体: 空穴数量远大于电子数量, 以空穴导电为主, 空穴为多数载流子, 电子为少数 载流子。
+
+$\mathrm{N}$ 型半导体: 电子数量远大于空穴数量, 以电子导电为主, 电子为多数载流子, 空穴为少数 载流子。 (2) 载流子的扩散与漂移运动
+
+载流子的扩散运动: 由于浓度差, 载流子从高浓度向低浓度方向产生的运动称为载流子的 扩散运动。
+
+漂移运动: 在电场力的作用下, 载流子沿电场力方向产生的定向运动称为载流子的漂移运 动。
+
+## PN 结的形成及单向导电性
+
+(1) PN 结的形成
+
+用半导体工艺将 $\mathrm{P}$ 型半导体和 $\mathrm{N}$ 型半导体结合在一起, 在其交界面处载流子由于浓度差 $\rightarrow$ 产生多子扩散 $\rightarrow$ 形成内电场 $\rightarrow$ 产生少子漂移, 当扩散运动与漂移运动达到动态平衡时,在交 界面处形成一层只有不能移动的离子而没有载流子的区域,称该区域为空间电荷区或耗尽层, 即 PN 结。PN 结又称势垒区或阻挡层。
+
+(2) PN 结的单向导电性
+
+在 PN 结上没有外加电压时, 通过 PN 结的扩散电流和漂移电流达到动态平衡, 通过 PN 结 的总电流为零。当有外加电压时, 平衡状态被打破。
+
+外加正向电压 $\rightarrow$ 耗尽层变窄, 内电场减弱 $\rightarrow$ 扩散大于漂移 $\rightarrow$ 扩散电流形成的正向电流大, 受外加电压影响显著 $\rightarrow$ 正向 PN 结呈现低电阻特征。
+
+外加反向电压 $\rightarrow$ 耗尽层变宽, 内电场增强 $\rightarrow$ 漂移大于扩散 $\rightarrow$ 漂移电流形成很小的反向电 流, 且不随外加电压变化 $\rightarrow$ 反向 PN 结呈现高电阻特征。
+
+PN 结的电路特征表现为正向电阻很小, 反向电阻很大, 这就是 PN 结的单向导电性。
+
+2.1 .2 二极管和稳压管特性、参数
+
+## 1. 半导体二极管
+
+（1）二极管的伏一安特性
+
+二极管的伏一安特性如图 2.1-1(a) 所示,分为三个区段: $A$ 段一一正向特性, $B$ 段一一反 向特性, $C$ 段一反向击穿特性。图 2.1-1 (b) 为理想二极管的伏一安特性, 正向压降 $U_{\mathrm{D}}=$ $0 \mathrm{~V}$, 门坎电压 $U_{\mathrm{th}}=0 \mathrm{~V}_{\text {。 }}$
+
+（2）二极管的伏一安特性方程
+
+二极管的正向特性和反向特性也可以用二极管的伏一安特性方程来描述。
+
+$i_{\mathrm{D}}=I_{\mathrm{S}}\left(\mathrm{e}^{u_{\mathrm{V}} U_{\mathrm{T}}}-1\right)$, 当 $T=300 \mathrm{~K}$ 时, $U_{\mathrm{T}}=26 \mathrm{mV}$ 。 正向特性: 当二极管的外加电压 $u_{\mathrm{D}}$ 为正, 且 $u_{\mathrm{D}} \gg U_{\mathrm{r}}$ 时, $i_{\mathrm{D}} \approx I_{\mathrm{S}}\left(\mathrm{e}^{u_{\mathrm{p}} U_{\mathrm{T}}}\right)$ 。
+
+反向特性: 当二极管的外加电压 $u_{\mathrm{D}}$ 为负, 且 $\left|u_{\mathrm{D}}\right| \gg U_{\mathrm{T}}$ 时, $i_{\mathrm{D}} \approx-I_{\mathrm{S}}$ 。
+
+但反向击穿特性不能用伏一安特性方程来描述。
+
+硅二极管门坎电压 $U_{\mathrm{th}} \approx 0.5 \mathrm{~V}$,正向压降 $U_{\mathrm{D}} \approx 0.7 \mathrm{~V}$ 。
+
+锗二极管门坎电压 $U_{\mathrm{th}} \approx 0.1 \mathrm{~V}$, 正向压降 $U_{\mathrm{D}} \approx 0.3 \mathrm{~V}$ 。
+
+(3) 二极管的主要参数
+
+最大整流电流 $I_{\mathrm{F}}$ : 长期运行时, 允许通过的最大正向平均电流。
+
+最大反向 T作电压 $U_{\mathrm{R}}$ : 允许承受的最大反向电压, 其值约为击穿电压 $U_{\mathrm{BR}}$ 的一半。
+
+反向电流 $I_{\mathrm{R}}$ : 外加反向电压尚未击穿时, 流过管子的电流。
+
+最高工作频率 $f_{\mathrm{m}}$ : 主要由极间电容的大小决定。当工. 作频率高于此值时, 二极管的单向导 电性将变差, 甚至消失。
+
+【例 2.1-1】二极管电路如图 2.1-2 所示, 试问图中各二极管是导通还是截止, $U_{0}$ 多少伏? 设二极管是理想的。
+
+解: 解这种类型题, 关键是正确判断二极管是导通还是截止, 而后再计算 $U_{\mathrm{o}}$ 。判断二极管 状态的方法: 假定将二极管与电路断开, 分别计算阳极和阴极对参考点的电位 (本题参考点为 “地”), 并将二者比较。对理想二极管, 当阳极电位大于阴极电位时, 二极管正偏, 导通; 反之, 反偏, 截止。
+
+阁中的“ $\mathrm{x}$ ”表示断开点, $\mathrm{a}$ 代表阳极, $\mathrm{k}$ 代表阴极。
+
+图(a) $U_{\mathrm{a}}=6 \mathrm{~V}, U_{\mathrm{k}}=0 \mathrm{~V}, U_{\mathrm{ak}}=U_{\mathrm{a}}-U_{\mathrm{k}}=6 \mathrm{~V}$, 二极管正偏, 导通, $U_{\mathrm{o}}=6 \mathrm{~V}$ 。
+
+图(b) $U_{\mathrm{a}}=-15 \mathrm{~V}, U_{\mathrm{k}}=12 \mathrm{~V}, U_{\mathrm{ak}}=U_{\mathrm{a}}-U_{\mathrm{k}}=-27 \mathrm{~V}$, 二极管反偏,截止, $U_{\mathrm{o}}=-15 \mathrm{~V}$ 。
+
+图(c) $U_{\mathrm{a}}=3 \mathrm{~V}, U_{\mathrm{k}}=0 \mathrm{~V}, U_{\mathrm{ak}}=U_{\mathrm{a}}-U_{\mathrm{k}}=3 \mathrm{~V}$, 二极管正偏, 导通。 $U_{\mathrm{o}}=0 \mathrm{~V}$ 。
+
+【例 2.1-2】电路如图 2.1-3 所示, 试判断图 中各二极管是导通还是截止,并计算电压 $U_{\mathrm{o}}$ 的值。 设二极管的导通压降 $U_{\mathrm{D}}=0.7 \mathrm{~V}$ 。
+
+解: 本题电路中有两个二极管。若两个二极 管均为正偏,则正向电压较大者优先导通, 以此再 判断另一个二极管的状态。
+
+将 $\mathrm{D}_{1}$ 和 $\mathrm{D}_{2}$ 从 “ $x$ ”处断开, 得: 图 (a) 中 $\mathrm{D}_{1}$ 的 $U_{\mathrm{ak} 1}=12 \mathrm{~V}, \mathrm{D}_{2}$ 的 $U_{\mathrm{ak} 2}=6 \mathrm{~V}, U_{\mathrm{ak} 1}>U_{\mathrm{ak} 2}, \mathrm{D}_{1}$ 优先导 通。
+
+在 $\mathrm{D}_{1}$ 导通后, $U_{\mathrm{o}}=-0.7 \mathrm{~V}$ 。在此状态下, 再判断 $\mathrm{D}_{2}$ 是导通还是截止。于是, $\mathrm{D}_{2}$ 的 $U_{\mathrm{ak} 2}=$ $-6-(-0.7)=-5.3 \mathrm{~V}$, 故 $\mathrm{D}_{2}$ 反偏而截止。所以 $U_{\mathrm{o}}=-0.7 \mathrm{~V}$ 。
+
+由图 (b) 用同样的方法, 可得: $\mathrm{D}_{1}$ 的 $U_{\mathrm{ak} 1}=12 \mathrm{~V}, \mathrm{D}_{2}$ 的 $U_{\mathrm{ak} 2}=18 \mathrm{~V}, U_{\mathrm{ak} 2}>U_{\mathrm{ak} 1}, \mathrm{D}_{2}$ 优先导通, $U_{\mathrm{o}}=-5.3 \mathrm{~V}$, 此时 $\mathrm{D}_{1}$ 的 $U_{\mathrm{ak} 1}=-5.3 \mathrm{~V}$, 反偏而截止。所以 $U_{\mathrm{o}}=-5.3 \mathrm{~V}$ 。
+
+【例 2.1-3】限幅电路如图 2.1-4 所示, $\mathrm{D}$ 的导通压降 $U_{\mathrm{D}}=0.7 \mathrm{~V}, U_{\mathrm{REF}}=4 \mathrm{~V}$, 当输入电压 $u_{\mathrm{i}}=10 \sin \omega t \mathrm{~V}$ 时,对应画出 $u_{\mathrm{o}}$ 的波形。
+
+解: 在 $u_{\mathrm{i}}$ 的正半周, 当 $u_{\mathrm{i}}<U_{\mathrm{REF}}+U_{\mathrm{D}}=4.7 \mathrm{~V}$ 时, D 反偏, 截止, $U_{\mathrm{o}}=u_{\mathrm{i}}$ 。当 $u_{\mathrm{i}} \geqslant U_{\mathrm{REF}}+U_{\mathrm{D}}$ $=4.7 \mathrm{~V}$ 时, $\mathrm{D}$ 正偏, 导通, $U_{\mathrm{o}}=4.7 \mathrm{~V}$ 。
+
+在 $u_{\mathrm{i}}$ 的负半周, D 反偏, 截止, $U_{\mathrm{o}}=u_{i}$ 。输出波形如图 (b) 中的 “粗线” 所示。
+
+## 2. 稳压管
+
+（1）稳压管的伏一安特性
+
+稳压管的伏一安特性曲线也分为正向特性、反向特性和反向击穿特性三个区域, 见图 2. 1-5。
+
+稳压管工作在反向击穿状态, 动态电阻 $r_{\mathrm{Z}}=\Delta u_{\mathrm{Z}} / \Delta i_{\mathrm{z}}$ 越小, 稳压性能越好。
+
+（2）稳压管的参数
+
+稳定电压 $U_{Z}$ : 即稳压管的击穿电压。
+
+稳定电流 $I_{z}$ :工作电压等于稳定电压时的工.作电流。工作电流低于该值时, 稳压效果不 好。
+
+耗散功率 $P_{\mathrm{M}}$ : 允许的最大功率损耗 $P_{\mathrm{M}}=U_{\mathrm{Z}} I_{\mathrm{ZM}}$, 其中 $I_{\mathrm{ZM}}$ 为最大稳定电流。
+
+稳定电压的温度系数: 管子的工作电流等于稳定电流 $I_{z}$ 时, 环境温度改变 $1^{\circ} \mathrm{C}$ 时, 稳定电 压变化量称为温度系数。
+
+动态电阻 $r_{\mathrm{Z}}$ : 在稳压范围内, 稳压管两端电压变化量与工作电流变化量的比值。
+
+【例 2.1-4】电路如图 2.1-6 所示, 设稳压管 $\mathrm{D}_{\mathrm{z} 1}$ 和 $\mathrm{D}_{\mathrm{z} 2}$ 的稳定电压分别为 $6 \mathrm{~V}$ 和 $8 \mathrm{~V}$, 求 图中各电路的输出电压 $U_{\mathrm{o}}$ 。已知稳压管的正向压降为 $0.7 \mathrm{~V}$ 。
+
+解:图 (a) $U_{\mathrm{o}}=14 \mathrm{~V}$; 图 (b) $U_{\mathrm{o}}=1.4 \mathrm{~V}$; 图 (c) $U_{\mathrm{o}}=6 \mathrm{~V}$; 图(d) $U_{\mathrm{o}}=0.7 \mathrm{~V}$ 。
+
+## 2 放大电路基础
+
+### 1 基本放大电路
+
+半导体三极管简称晶体管或三极管。因多子和少子都参与导电, 又称双极结型晶体管 $(B J T)$ 。三极管的主要特点是具有电流放大作用, 是构成放大电路的核心器件。
+
+1. 放大电路的组成原则
+
+(1) 具有放大功能
+
+(1)三极管工作在放大状态, 即电源极性设置须使发射结正向偏置、集电结反向偏置; (2)被 放大的信号能输入, 放大后的信号能取出。
+
+(2) 不失真
+
+设置合适的工作点。
+
+## 2. 三种基本放大电路
+
+基本放大电路有三种基本接法或组态, 它们是共射极放大电路、共集电极放大电路和共基 极放大电路, 分别如图 2.2-1 (a)、(b),(c) 所示。
+
+## 3. 放大电路的两种工作状态
+
+(1) 静态
+
+当输入交流信号 $u_{\mathrm{i}}=0$ 时, 放大电路的工作状态称为直流工作状态, 简称静态。电路中的 电压、电流均为不变的直流量。
+
+(2) 动态
+
+当输入交流信号 $u_{\mathrm{i}} \neq 0$ 时, 电路处于放大状态, 简称动态。电路中的电压、电流均随 $u_{\mathrm{i}}$ 的 变化而变化。
+
+## 4. 直流通路和交流通路
+
+(1) 直流通路的画法
+
+将电路中的电容开路, 所得电路为直流通路, 用于静态分析。
+
+(2) 交流通路的画法
+
+将电路中的电容和电源短路, 所得电路为交流通路, 用于动态分析。
+
+【例 2.2-1】电路如图 2.2-2 所示, 试判断各电路是否具有放大作用。
+
+解: 图 (d) 具有放大功能。
+
+图 (a)、图(c)、图(b) 没有放大功能。其中,图 (a) 基极无偏置电阻, 不能使发射极正向偏
+
+置。图 (c) 中交流输入信号被电容 $C_{2}$ 短路, 加不到发射结。图 (b) 中电源 $U_{\mathrm{cc}}$ 的极性错误, 不 能保证发射结正向偏置,集电结反向偏置。
+
+## 5. 静态工作点 $Q$ 及其稳定问题
+
+(1) 静态工作点 $Q$
+
+放大电路处于静态时, 三极管极间电压 $U_{\mathrm{CE}} 、 U_{\mathrm{BE}}$ 和电流 $I_{\mathrm{C}} 、 I_{\mathrm{B}}$ 的数值称为静态工作点。 $U_{\mathrm{BE}}$ 对于硅管为 $0.7 \mathrm{~V}$, 锗管为 $0.3 \mathrm{~V}$, 作为已知值。
+
+(2) $Q$ 点的稳定问题
+
+影响静态. . 作点稳定的主要因素是温度, 温度上升使 $\beta \uparrow 、 I_{\mathrm{CB} 0} \uparrow 、 U_{\mathrm{BE}} \downarrow$, 其结果是使 $I_{C} \uparrow$; 温度下降,使 $I_{C} \downarrow$ 。严重时可能导致 $Q$ 点进人二极管的饱和区或截止区。
+
+(3) 能稳定 $Q$ 点的电路—射极偏置电路
+
+### 2 放大电路的基本分析方法
+
+基本分析方法有近似估算法、图解法和微变等效电路法。
+
+## 1. 近似估算法
+
+用于近似计算静态工作点 $Q$ 。估算静态工作点应使用直流通路。
+
+(1) 固定偏置电路
+
+求解思路: $I_{\mathrm{BQ}} \rightarrow I_{\mathrm{CQ}} \rightarrow U_{\mathrm{CE} Q}$ 。
+
+$$
+I_{\mathrm{B} Q}=\frac{U_{\mathrm{CC}}-U_{\mathrm{BE}}}{R_{\mathrm{b}}}, I_{\mathrm{C} Q}=\beta I_{\mathrm{B} Q}, U_{\mathrm{CE} Q}=U_{\mathrm{CC}}-I_{\mathrm{C} Q} R_{\mathrm{c}}
+$$
+
+(2) 射极偏置电路
+
+求解思路: $U_{\mathrm{B}} \rightarrow U_{\mathrm{E}} \rightarrow I_{\mathrm{E} Q} \rightarrow U_{\mathrm{CE} Q}$ 。
+
+射极偏置电路 (图 2.2-3) 的直流通路如图 2.2-5 所示。
+
+$$
+\begin{aligned}
+& U_{\mathrm{B}} \approx \frac{R_{\mathrm{b} 2}}{R_{\mathrm{b} 1}+R_{\mathrm{h} 2}} U_{\mathrm{CC}}, I_{\mathrm{C} Q} \approx I_{\mathrm{E} Q}=\frac{U_{\mathrm{B}}-U_{\mathrm{BE}}}{R_{\mathrm{e}}} \\
+& U_{\mathrm{CE} Q} \approx U_{\mathrm{CC}}-I_{\mathrm{C} Q}\left(R_{\mathrm{c}}+R_{\mathrm{e}}\right), I_{\mathrm{B} Q}=\frac{I_{\mathrm{C} Q}}{\beta}
+\end{aligned}
+$$
+
+【例 2.2-2】近似计算图 2. 2-6(a) 所示放大电路的静态工作点 $Q$ 。
+
+解: 图 2.2-6(b) 为放大电路的直流通路。从图可知基极电流
+
+$$
+\begin{aligned}
+I_{\mathrm{B} Q} & =\frac{U_{\mathrm{CC}}-U_{\mathrm{BE}}}{R_{\mathrm{b}}+(1+\beta)\left(R_{\mathrm{e} 1}+R_{\mathrm{e} 2}\right)}=\frac{12-0.7}{250+51 \times 0.5}=41 \mu \mathrm{A} \\
+I_{\mathrm{C} Q} & =\beta I_{\mathrm{B} Q}=50 \times 41 \times 10^{-6} \approx 2.1 \mathrm{~mA} \\
+U_{\mathrm{CE} Q} & =U_{\mathrm{CC}}-\left[I_{\mathrm{C} Q} R_{\mathrm{c}}+I_{\mathrm{E} Q}\left(R_{\mathrm{e} 1}+R_{\mathrm{e} 2}\right)\right] \approx U_{\mathrm{CC}}-I_{\mathrm{C} Q}\left(R_{\mathrm{c}}+R_{\mathrm{el}}+R_{\mathrm{e} 2}\right) \\
+& =12-2.1 \times(3+0.5)=4.65 \mathrm{~V}
+\end{aligned}
+$$
+
+静态工作点为: $I_{\mathrm{B} Q}=41 \mu \mathrm{A}, I_{\mathrm{C} Q}=2.1 \mathrm{~mA}, U_{\mathrm{CE} Q}=4.65 \mathrm{~V}$ 。
+
+【例 2.2-3】图 2.2-3 中, $U_{\mathrm{CC}}=12 \mathrm{~V}, R_{\mathrm{b} 1}=15 \mathrm{k} \Omega, R_{\mathrm{b} 2}=5 \mathrm{k} \Omega, R_{\mathrm{c}}=5 \mathrm{k} \Omega, R_{\mathrm{e}}=2.3 \mathrm{k} \Omega$; 三 极管的 $U_{\mathrm{BE}}=0.7, \beta=50$ 。试确定静态工作点 $Q$ 。
+
+解: $U_{\mathrm{B}} \approx \frac{R_{\mathrm{b} 2}}{R_{\mathrm{b} 1}+R_{\mathrm{b} 2}} U_{\mathrm{cC}}=\frac{5}{5+15} \times 12=3 \mathrm{~V}, U_{\mathrm{E}}=U_{\mathrm{B}}-U_{\mathrm{BE}}=3-0.7=2.3 \mathrm{~V}$
+
+$$
+\begin{aligned}
+& I_{\mathrm{E} Q}=\frac{U_{\mathrm{E}}}{R_{\mathrm{e}}}=\frac{2.3}{2.3}=1 \mathrm{~mA}, I_{\mathrm{B} Q}=\frac{I_{\mathrm{E} Q}}{1+\beta}=\frac{1}{51} \approx 19.6 \mu \mathrm{A} \\
+& I_{\mathrm{C} Q}=\beta I_{\mathrm{B} Q}=0.98 \mathrm{~mA} \\
+& U_{\mathrm{CE} Q} \approx U_{\mathrm{CC}}-I_{\mathrm{C} Q}\left(R_{\mathrm{c}}+R_{\mathrm{e}}\right)=4.85 \mathrm{~V}
+\end{aligned}
+$$
+
+静态工作点为: $I_{\mathrm{B} Q}=19.6 \mu \mathrm{A}, I_{\mathrm{C} Q} \approx I_{\mathrm{E} Q}=1 \mathrm{~mA}, U_{\mathrm{CE} Q}=4.85 \mathrm{~V}$ 。
+
+## 2. 图解法
+
+主要用于确定合适的静态工作点和求出最大不失真输出电压峰值。 (1) 直流负载线
+
+(1) 直流负载线的画法。画直流负载线要用直流通路, 图 2. 2-7(a) 是典型固定偏置放大电 路, 其直流通路如图 2.2-7(c) 所示。依图可得直流负载线方程
+
+$$
+u_{\mathrm{cr}}=U_{\mathrm{cc}}-i_{\mathrm{c}} R_{\mathrm{c}}
+$$
+
+令 $i_{\mathrm{c}}=0$, 则 $u_{\mathrm{ce}}=U_{\mathrm{cC}}=12 \mathrm{~V}$, 得横轴上一点 $M_{\circ}$ 令 $u_{\mathrm{ce}}=0$, 则 $i_{\mathrm{c}}=U_{\mathrm{cC}} / R_{\mathrm{c}}=12 / 3=4 \mathrm{~mA}$, 得纵 轴上一点 $N$ 。在三极管的输出特性曲线 (图 2.2-7(b)) 上画出 $M 、 N$ 点连线, 直线 $M N$ 即为直 流负载线,其斜率为 $-1 / R_{\mathrm{c}}$ 。
+
+(2) 确定 $Q$ 点。
+
+$$
+I_{\mathrm{B} Q}=\frac{U_{\mathrm{CC}}-U_{\mathrm{BE}}}{R_{\mathrm{b}}}=\frac{12-0.7}{380} \approx 30 \mu \mathrm{A}
+$$
+
+$I_{\mathrm{B} Q}=30 \mu \mathrm{A}$ 的输出特性曲线与直流负载线的交点, 为静态工作点 $Q$ 。从 $Q$ 点得
+
+$$
+I_{\mathrm{C} Q}=1.5 \mathrm{~mA}, U_{\mathrm{CE} Q}=7.5 \mathrm{~V}
+$$
+
+(2) 交流负载线
+
+(1) 交流负载线的画法。交流负载线用于动态分析, 画交流负载线依据放大电路的交流通 路, 如图 2.2-7(d) 所示。交流负载电阻 $R_{\mathrm{L}}^{\prime}=R_{\mathrm{c}} / / R_{\mathrm{L}, \mathrm{o}}$ 通过 $Q$ 点, 画斜率为 $-1 / R_{\mathrm{L}}^{\prime}$ 的直线, 就 是交流负载线，如图 2.2-7(b) $A B$ 直线所示。或者用 $U_{\mathrm{CEQ}}+I_{\mathrm{C} Q} R_{\mathrm{L}}^{\prime}$ 得交流负载线在横轴上一 点,用该点通过 $Q$ 点做直线即为交流负载线 (见图 2.2-8)。
+
+从图 2.2-8 可知: 最大不截止失真输出电压幅度为 $I_{\mathrm{C} Q} R_{\mathrm{L}}^{\prime}$, 最大不饱和失真输出电压幅度 为 $U_{\mathrm{CE} Q}-U_{\mathrm{CES}}$ 。
+
+最大不失真输出电压峰值为
+
+$$
+U_{\text {om }}=\min \left[U_{\mathrm{CE} Q}-U_{\mathrm{CES}}, I_{\mathrm{CQ}} R_{\mathrm{L}}^{\prime}\right]
+$$
+
+要得到最大的 $U_{\mathrm{am}}$ 应把 $Q$ 点选在交流负载线的中点, 即满足 $U_{\mathrm{CE} Q}-U_{\mathrm{CES}}=I_{\mathrm{C} Q} R_{\mathrm{L}}^{\prime}$ 。
+
+【例 2.2-4】电路图及其直流负载线和交流负载线分别如图 2.2-9(a) 和 (b) 所示, 设 $U_{\mathrm{RE}}$ $=0 \mathrm{~V}$ 。试求:
+
+(1) $U_{\mathrm{CC}} 、 I_{\mathrm{B} Q} 、 I_{\mathrm{CQ}} 、 U_{\mathrm{CE} Q}$ 的值;
+
+(3) 电阻 $R_{\mathrm{b}} 、 R_{\mathrm{c}} 、 R_{\mathrm{L}}$ 的值;
+
+(3) 最大不失真输出电压的峰值;
+
+（4）当 $u_{\mathrm{i}}$ 的幅度足够大时,将首先产生何种失真? 如何消除?
+
+解: (1) $U_{\mathrm{cC}}=12 \mathrm{~V}, I_{\mathrm{B} Q}=30 \mu \mathrm{A}, I_{\mathrm{C} Q}=1.8 \mathrm{~mA}, U_{\mathrm{CE} Q}=7.1 \mathrm{~V}$
+
+(2) $R_{\mathrm{b}}=\left(U_{\mathrm{CC}}-U_{\mathrm{BE}}\right) / I_{\mathrm{B} Q}=12 / 30=400 \mathrm{k} \Omega$
+
+$R_{\mathrm{c}}=\left(U_{\mathrm{CC}}-U_{\mathrm{CE} Q}\right) / I_{\mathrm{CQ}}=(12-7.1) / 1.8 \approx 2.7 \mathrm{k} \Omega$
+
+$R_{\mathrm{L}}^{\prime}=(10-7.1) / I_{\mathrm{CQ}}=2.9 / 1.8 \approx 1.61 \mathrm{k} \Omega$
+
+$R_{\mathrm{L}}=\left(R_{\mathrm{c}} R_{\mathrm{L}}^{\prime}\right) /\left(R_{\mathrm{c}}-R_{\mathrm{L}}^{\prime}\right)=(2.7 \times 1.61) /(2.7-1.61) \approx 4.0 \mathrm{k} \Omega$, 取 $R_{\mathrm{L}}=3.9 \mathrm{k} \Omega$
+
+(3) 最大不失真输出电压峰值
+
+$$
+U_{\mathrm{om}}=I_{\mathrm{C} Q} R_{\mathrm{L}}^{\prime}=10-7.1=2.9 \mathrm{~V}
+$$
+
+(4) 首先出现截止失真, 减少 $R_{\mathrm{b}}$ 可消除失真。
+
+(3) 静态工作点与波形失真
+
+以 NPN 管组成的基本放大电路为例:
+
+(1) $Q$ 点太高一一产生饱和失真, 如图 2.2-10 (a) 所示。 $Q$ 点太高, 当输入信号足够大时, 在正半周,三极管进人饱和区, $u_{\mathrm{ce}}$ 的负半周被削平。
+
+(2) $Q$ 点太低一一产生截止失真, 如图 2.2-10 (b) 所示。 $Q$ 点太低, 当输入信号足够大时, 在负半周,三极管进人截止区, $u_{\mathrm{ce}}$ 的正半周被削平。
+
+若是 PNP 管,则正好相反:图 2.2-10(a) 是截止失真; 图 2.2-10(b) 是饱和失真。
+
+【例 2. 2-5】图 2.2-1 (a) 所示放大电路, 其输入、输出波形示于图 2.2-11, 为使输出波形
+
+为正弦波,试问应使
+(A) $R_{\mathrm{c}} \uparrow$
+( $\mathrm{B}) R_{\mathrm{b}} \uparrow$
+(C) $C_{\mathrm{b} 1} \uparrow$
+(D) $R_{\mathrm{b}} \downarrow$
+
+解: 输出波形是饱和失真, 所以应选 $(\mathrm{B})$ 。
+
+## 3. 微变等效电路分析法
+
+(1) 简化的 $H$ 参数微变等效电路
+
+在工作点附近的微小范围内, 将三极管的非线 性做局部线性化，从而可用一个线性电路来代替非 线性的三极管,图 2.2-12 所示。
+
+受控源 $\beta i_{b}$ 反映了三极管的电流控制作用, 其 方向与 $i_{\mathrm{b}}$ 相关联。按图中规定的电压和电流方向,
+$\beta i_{b}$ 的方向必须是从 $\mathrm{c}$ 极流向 $\mathrm{e}$ 极。
+
+(2) 确定 $r_{\mathrm{bc}}$
+
+$$
+r_{\mathrm{be}}=R_{\mathrm{bb}^{\prime}}+(1+\beta) \frac{U_{\mathrm{T}}(\mathrm{mV})}{I_{\mathrm{E}}(\mathrm{mA})} \approx 200 \Omega+(1+\beta) \frac{26(\mathrm{mV})}{I_{\mathrm{E}}(\mathrm{mA})}
+$$
+
+$R_{\mathrm{bb}}$ 在 $50 \sim 300 \Omega$ 之间，一般取 $200 \Omega$ 。
+
+微变等效电路只能用于交流分析, 不能用来求静态工作点 $Q$ 。但参数必须在工作点上求 得, 式中的 $I_{\mathrm{E}}$ 即为工作点值 $I_{\mathrm{E} Q} \circ \beta$ 值实测得到, 在试题中给出。
+
+（3）放大电路微变等效电路的画法
+
+(1) 用 $H$ 参数等效电路代替放大电路中的三极管。
+
+(2) 凡恒定的电压源都视为短路; 凡电容都视为短路。
+
+(3) 其他元件都按原位置画。
+
+(4) 电压和电流用相量表示。
+
+## 4. 用 $\boldsymbol{H}$ 参数等效电路分析基本放大电路
+
+（1）共射极基本放大电路
+
+(1) 画等效电路。如图 2.2-13(b) 所示。
+
+(2) 电压放大倍数
+
+$$
+A_{u}=\frac{U_{0}}{U_{\mathrm{i}}}=-\frac{\beta \dot{I}_{\mathrm{b}} R_{\mathrm{t}}^{\prime}}{\dot{I}_{\mathrm{b}} r_{\mathrm{be}}}=-\frac{\beta R_{\mathrm{f}}^{\prime}}{r_{\mathrm{be}}}
+$$
+
+负号表示 $U_{\mathrm{o}}$ 与 $U_{\mathrm{i}}$ 相位相反。
+
+(3) 输入电阻 $R_{\mathrm{i}}$ 。在输入端将信号源 $U_{\mathrm{s}}$ 及其电阻 $R_{\mathrm{s}}$ 拿掉, 外加一个测试电压 $U_{\mathrm{T}}$; 输出端的
+
+$R_{\mathrm{I}}$ 仍然保留, 就得到求输入电阻 $R_{\mathrm{i}}$ 的等效电路图 2.2-14。从图得
+
+$R_{\mathrm{i}}=\frac{U_{\mathrm{T}}}{\dot{I}_{\mathrm{T}}}=R_{\mathrm{b}} / / r_{\mathrm{be}}$
+
+(4) 输出电阻 $R_{\mathrm{s}}$ 。在输入端将信号源 $U_{\mathrm{s}}$ 短路, 但保留其电阻 $R_{\mathrm{s}}$; 输出端把 $R_{\mathrm{L}}$ 拿掉, 外加一 个测试电压 $U_{\mathrm{T}}$, 就得到求输出电阻 $R_{\mathrm{o}}$ 的等效电路图 2.2-15。因为 $U_{\mathrm{s}}=0 \Rightarrow I_{\mathrm{b}}=0 \Rightarrow \beta I_{\mathrm{b}}=0$, 所 以 $R_{\mathrm{o}}=\frac{\dot{U}_{\mathrm{T}}}{\dot{i}_{\mathrm{T}}}=R_{\mathrm{c}}$ 。
+
+(5) 源电压放大倍数
+
+$$
+A_{u \mathrm{us}}=\frac{U_{\mathrm{o}}}{U_{\mathrm{s}}}=\frac{U_{\mathrm{o}}}{U_{\mathrm{i}}} \times \frac{U_{\mathrm{i}}}{U_{\mathrm{s}}}=A_{u} \times \frac{R_{\mathrm{i}}}{R_{\mathrm{s}}+R_{\mathrm{i}}}
+$$
+
+【例 2.2-6】电路如图 2.2-16(a) 所示, 设 $C_{\mathrm{b} 1 、} 、 C_{\mathrm{b} 2} 、 C_{\mathrm{b} 3}$ 对交流可视为短路。要求:
+
+（1）画出直流通路，写出 $I_{\mathrm{C} Q}$ 和 $U_{\mathrm{CE} Q}$ 的表达式; (2) 画出交流通路及简化的 $H$ 参数微变等效电路;
+
+(3) 写出 $A_{\mathrm{u}}=U_{\mathrm{o}} / U_{\mathrm{i}}, R_{\mathrm{i}}$ 和 $R_{\mathrm{o}}$ 的表达式。
+
+解: (1) 直流通路如图 2.2-16(b) 所示。
+
+$$
+I_{\mathrm{B} Q}=\frac{U_{\mathrm{CC}}-U_{\mathrm{BE}}}{R_{\mathrm{b}}}, I_{\mathrm{C} Q}=\beta I_{\mathrm{B} Q}, U_{\mathrm{CE} Q}=U_{\mathrm{CC}}-I_{\mathrm{C} Q}\left(R_{\mathrm{c} 1}+R_{\mathrm{c} 2}\right)
+$$
+
+(2) 交流通路及简化的 $H$ 参数微变等效电路如图 2.2-16(c)、(d) 所示。
+
+(3) $A_{\mathrm{u}}=-\frac{\beta R_{\mathrm{t}}^{\prime}}{r_{\mathrm{be}}}, R_{\mathrm{t}}^{\prime}=R_{\mathrm{cl}} / / R_{\mathrm{f}}, R_{\mathrm{i}}=R_{\mathrm{b}} / / r_{\mathrm{be}}, R_{\mathrm{o}}=R_{\mathrm{cl} \text { 。 }}$ 。
+
+(2) 共集电极放大电路——射极输出器、射极跟随器
+
+(1) 求 $Q$ 点。根据直流通路图 2.2-17(b), 可以得到
+
+$$
+U_{\mathrm{CC}}=I_{\mathrm{B} Q} R_{\mathrm{b}}+U_{\mathrm{BE}}+I_{\mathrm{E} Q} R_{\mathrm{e}}, I_{\mathrm{B} Q}=\frac{U_{\mathrm{CC}}-U_{\mathrm{BE}}}{R_{\mathrm{b}}+(1+\beta) R_{\mathrm{e}}}, I_{\mathrm{C} Q}=\beta I_{\mathrm{B} Q}, U_{\mathrm{CE} Q} \approx U_{\mathrm{CC}}-I_{\mathrm{C} Q} R_{\mathrm{e}}
+$$
+
+(2) 电压放大倍数
+
+$$
+A_{u}=\frac{U_{\mathrm{o}}}{U_{\mathrm{i}}}=\frac{(1+\beta) R_{\mathrm{t}}^{\prime}}{r_{\mathrm{be}}+(1+\beta) R_{\mathrm{t}}^{\prime}} \approx \frac{B R_{\mathrm{t}}^{\prime}}{r_{\mathrm{be}}+\beta R_{\mathrm{t}}^{\prime}} \approx 1 \text { ( 因为一般 } r_{\mathrm{be}} \ll \beta R_{\mathrm{t}}^{\prime} \text { ) }
+$$
+
+式中 $R_{\mathrm{l}}^{\prime}=R_{\mathrm{e}} / / R_{\mathrm{L}, \text { 。 }}$
+
+由于 $U_{0}$ 与 $U_{\mathrm{i}}$ 相位相同, 又 $A_{u} \approx 1$, 所以又称射极跟随器。
+
+(3) 输入电阻 $R_{\mathrm{i}}$ 。因
+
+$$
+\begin{aligned}
+& R_{\mathrm{i}}^{\prime}=\frac{U_{\mathrm{i}}}{i_{\mathrm{b}}}=\frac{r_{\mathrm{be}} \dot{I}_{\mathrm{b}}+(1+\beta) \dot{I}_{\mathrm{b}} R_{\mathrm{t}}^{\prime}}{\dot{I}_{\mathrm{b}}}=r_{\mathrm{be}}+(1+\beta) R_{\mathrm{t}}^{\prime} \\
+& R_{\mathrm{i}}=R_{\mathrm{b}} / / R_{\mathrm{i}}^{\prime}=R_{\mathrm{b}} / /\left[r_{\mathrm{be}}+(1+\beta) R_{\mathrm{t}}^{\prime}\right]
+\end{aligned}
+$$
+
+(4) 输出电阻
+
+$$
+R_{\mathrm{o}}=R_{\mathrm{e}} / / \frac{R_{\mathrm{s}}^{\prime}+r_{\mathrm{be}}}{1+\beta} \approx \frac{R_{\mathrm{s}}^{\prime}+r_{\mathrm{be}}}{1+\beta}, R_{\mathrm{s}}^{\prime}=R_{\mathrm{s}} / / R_{\mathrm{b}}
+$$
+
+【例 2.2-7】图 2.2-17(a) 所示, 已知 $U_{\mathrm{CC}}=12 \mathrm{~V}, R_{\mathrm{b}}=470 \mathrm{k} \Omega, R_{e}=R_{\mathrm{l}}=5 \mathrm{k} \Omega, R_{\mathrm{s}}=100$ $\Omega$, 晶体管的 $\beta=100, U_{\mathrm{BE}}=0.7 \mathrm{~V}$ 。求: (1) 电压放大倍数 $A_{\mathrm{u}} ;(2)$ 输入电阻 $R_{\mathrm{i}} ;(3)$ 输出电阻 $R_{\mathrm{o}}$ 。
+
+解: 首先求出 $r_{\text {be }}$ 。
+
+$$
+\begin{aligned}
+& I_{\mathrm{B} Q}=\frac{U_{\mathrm{CC}}-U_{\mathrm{BE}}}{R_{\mathrm{b}}+(1+\beta) R_{\mathrm{e}}}=\frac{12-0.7}{470+101 \times 5} \approx 11.64 \mu \mathrm{A} \\
+& I_{\mathrm{C} Q}=\beta I_{\mathrm{B} Q}=100 \times 11.6=1.16 \mathrm{~mA} \\
+& r_{\mathrm{be}}=200(1+\beta) \frac{26}{I_{\mathrm{E}}} \approx 200+101 \times \frac{26}{1.16}=2.46 \mathrm{k} \Omega
+\end{aligned}
+$$
+
+(1) 电压放大倍数 $A_{u}$ : 画输出 $H$ 参数微变等效电路, 如图 2.2-17(c) 所示。
+
+$$
+A_{u}=\frac{\dot{U}_{\mathrm{o}}}{\dot{U}_{\mathrm{i}}}=\frac{(\beta+1) R_{\mathrm{L}}^{\prime}}{r_{\mathrm{bec}}+(1+\beta) R_{\mathrm{t}}^{\prime}}=\frac{101 \times(5 / / 5)}{2.46+101 \times(5 / / 5)}=\frac{252.5}{255} \approx 0.99
+$$
+
+(2) 输入电阻 $R_{\mathrm{i}}$ 。
+
+$$
+\begin{aligned}
+& R_{\mathrm{e}}^{\prime}=R_{\mathrm{e}} / / R_{\mathrm{L}}=5 / / 5=2.5 \mathrm{k} \Omega \\
+& R_{\mathrm{i}}=R_{\mathrm{b}} / /\left[r_{\mathrm{le}}+(1+\beta) R_{\mathrm{e}}^{\prime}\right]=470 / /(2.46+101 \times 2.5)=470 / / 255 \approx 165 \mathrm{k} \Omega
+\end{aligned}
+$$
+
+(3) 求 $R_{\mathrm{o}}$ 的等效电路如图 2.2-17(d) 所示。有
+
+$$
+R_{\mathrm{o}} \approx \frac{R_{\mathrm{s}} / / R_{\mathrm{b}}+r_{\mathrm{be}}}{1+\beta} \approx \frac{R_{\mathrm{s}}+r_{\mathrm{be}}}{1+\beta}=\frac{0.1+2.46}{101} \approx 25 \Omega
+$$
+
+(3) 共基极基本放大电路
+
+(1) 求 $Q$ 点,与射极偏置电路相同。
+
+(2) 电压放大倍数
+
+$$
+A_{u}=\frac{U_{\mathrm{o}}}{U_{\mathrm{i}}}=\frac{-\dot{I}_{\mathrm{c}} R_{\mathrm{L}}^{\prime}}{-\dot{I}_{\mathrm{b}} r_{\mathrm{be}}}=\frac{\beta R_{\mathrm{L}}^{\prime}}{r_{\mathrm{be}}}, R_{\mathrm{L}}^{\prime}=R_{\mathrm{c}} / / R_{\mathrm{L}}
+$$
+
+$U_{\text {o }}$ 与 $U_{\mathrm{i}}$ 相位相同。
+
+(3) 输入电阻 $R_{\mathrm{i}}$ 。由
+
+$$
+\begin{aligned}
+& r_{\mathrm{eb}}=\frac{\dot{U}_{\mathrm{i}}}{-i_{\mathrm{e}}}=\frac{-\dot{I}_{\mathrm{b}} r_{\mathrm{be}}}{-(1+\beta) \dot{I}_{\mathrm{b}}}=\frac{r_{\mathrm{be}}}{1+\beta} \\
+& R_{\mathrm{i}}=R_{\mathrm{e}} / / r_{\mathrm{eb}} \approx r_{\mathrm{eb}}=\frac{r_{\mathrm{be}}}{1+\beta}
+\end{aligned}
+$$
+
+(4) 输出电阻 $R_{\mathrm{o}}$
+
+$$
+R_{\mathrm{o}}=r_{\mathrm{cb}} / / R_{\mathrm{c}} \approx R_{\mathrm{c}}
+$$
+
+## 5. 三种基本放大电路的特点
+
+在三种基本放大电路中, 以共射极电路和共集电极电路为重点。 
+
+(1)共射极电路
+
+① 输出信号与输入信号相位相反;
+
+② 电压、电流、功率放大倍数都较大, 输入电阻和输出电阻适中;
+
+③ 主要用于多级放大器的中间级。
+
+(2) 共集电极电路——射极输出器、射极跟随器
+
+①  输出信号与输入信号相位相同;
+
+② 电压放大倍数接近于1,而小于 1 ;
+
+③ 输入电阻高, 输出电阻低, 带负载能力强;
+
+④ 主要用于输入级、输出级或缓冲级。
+
+（3）共基极电路
+
+① 输出信号与输入信号相位相同;
+
+② 电压放大倍数与共射极电路一样,但电流放大倍数小于 1 ;
+
+③ 输入电阻很低, 输出电阻适中;
+
+④ 主要用于高频和恒流源电路。
+
+【例 2.2-8 从共射、共集、共基放大电路的三种基本组态中,选择正确答案填空。
+
+(1) 要求电压放大倍数高, 且输入与输出同相位, 应选用 ;
+
+(2) 要求带负载能力强, 应选用
+
+(3) 要求从信号源吸取的电流小,应选用
+
+(4) 要求对电压和电流都能放大,应选用
+
+解: (1) 共基极电路; (2)共集电极电路; (3) 共集电极电路; (4) 共射极电路。
+
+### 3 放大电路的频率特性
+
+## 1. 频率特性
+
+由于放大电路中存在耦合电容、旁路电容和晶体管的极间电容这些电抗元件, 致使电路的 电压放大倍数对于不同频率的正弦信号不再恒定,而是频率的函数。
+
+放大电路对不同频率正弦信号的稳态响应称为频率特性,即
+
+$$
+A_{u}=A_{u}(f) \angle \varphi(f)
+$$
+
+频率特性包括幅频特性 $A_{u}(f)$ 和相频特性 $\varphi(f)$ 两部分。
+
+通常, 将频率特性分成三部分: 低频段、中频段和高频段。下限频率由耦合电容和旁路电 容决定,上限频率由管子的极间电容决定。单级 $R C$ 耦合放大电路的对数频率特性 (波特图) 如图 2. 2-19 所示。
+
+## 2. 通频带
+
+当放大倍数 $A_{u}=\left|A_{u}\right|$ 下降到中频放大倍数 $\left|A_{\mathrm{uM}}\right|$ 的 $\frac{1}{\sqrt{2}}(=0.707)$ 时, 所对应的低频频率 和高频频率分别称为下限频率 $f_{1}$ 和上限频率 $f_{\mathrm{H}}$ 。
+
+通频带 (带宽) 为
+
+$$
+f_{\mathrm{BW}}=f_{\mathrm{HI}}-f_{\mathrm{L}} \approx f_{\mathrm{H}}
+$$
+
+## 3. 波特图
+
+幅频特性的横坐标 $f$ 用对数刻度 (即用 $\lg f$ ), 纵坐标用 $20 \mathrm{lg}\left|A_{u}\right|$ (单位为分贝, $\mathrm{dB}$ ) 表
+
+示; 相频特性的纵坐标为 $\varphi$,这样绘制的对数频率特性称为波特图（图 2.2-19）。
+
+用折线组成的波特图与实际曲线的误差是: 幅频特性的最大误差为 $3 \mathrm{~dB}$, 在 $f_{\mathrm{L}}$ 和 $f_{\mathrm{H}}$ 处。相 频特性的最大误差为 $\pm 5.71^{\circ}$, 分别在 $0.1 f_{\mathrm{L}}$ 和 $10 f_{\mathrm{L}}$, 及 $0.1 f_{\mathrm{H}}$ 和 $10 f_{\mathrm{H}}$ 处。
+
+## 4. 增益带宽积
+
+中频电压放大倍数与通频带的乘积叫做增益带宽积 $\left|A_{u \mathrm{M}} f_{\mathrm{H}}\right|$ 。当电路参数和管子选定后, $\left|A_{\mu M} f_{\mathrm{H}}\right|$ 基本上是个常数,放大倍数提高多少倍,频带就变窄多少倍。
+
+【例 2.2-9】电路如图 2.2-13 所示, 写出其下限频率表达式。
+
+解: $C_{\mathrm{b} 1}$ 和 $C_{\mathrm{b} 2}$ 对频率特性的影响可以分开计算。
+
+$$
+f_{\mathrm{l}, 1}=\frac{1}{2 \pi C_{\mathrm{b} 1}\left(R_{\mathrm{s}}+R_{\mathrm{b}} / / r_{\mathrm{bc}}\right)}, f_{12}=\frac{1}{2 \pi C_{\mathrm{b} 2}\left(R_{\mathrm{c}}+R_{\mathrm{l}}\right)}
+$$
+
+若 $f_{\mathrm{I}, \mathrm{I}}$ 与 $f_{\mathrm{I} 2}$ 二者相差 4 倍以上, 取数值较大者为放大电路的下限频率 $f_{\mathrm{I}, \mathrm{o}}$ 。
+
+【例 2.2-10】某放大电路的波特图如图 2.2-20 所示, 则
+
+(1) 中频放大倍数为
+(A) 20
+(B) 40
+(C) 100
+(D) 120
+(2) 上限频率
+(B) $=100 \mathrm{kHz}$
+(C) $>100 \mathrm{kHz}$
+(D) $=10 \mathrm{kHz}$
+(3) 下限频率 ;
+(A) $<100 \mathrm{~Hz}$
+(B) $=100 \mathrm{~Hz}$
+(C) $>100 \mathrm{~Hz}$
+(D) $=1 \mathrm{KHz}$
+
+(4) 当 $f=f_{\mathrm{L}}$ 或 $f=f_{\mathrm{H}}$ 时, 电路的放大倍数为
+(4) $40 \mathrm{~dB}$
+(B) $37 \mathrm{~dB}$
+(C) $3 \mathrm{~dB}$
+(D) $28.28 \mathrm{~dB}$
+解: (1)(C),(2)(B),(3)(B), (4) (B)。
+
+## 2 .4 反馈的概念、类型及极性; 电压事联负反馈的分析计算
+
+## 1. 反馈的概念
+
+(1) 反馈
+
+将放大电路的输出电压或电流的一部分或全部通过反馈网络回送到放大电路的输入端, 与外加信号共同参与控制作用的过程称为反馈。判断有无反馈就是看从输出回路到输入回路 之间有无通路或支路,有, 则有反馈; 无, 则无反馈。反馈网络可由无源元件或有源器件组成。
+
+（2）反馈极性: 正反馈和负反馈
+
+正反馈: 反馈量使净输入信号增强的为正反馈, 正反馈使放大倍数增大。
+
+负反馈: 反馈量使净输入信号削弱的为负反馈, 负反馈使放大倍数减小。
+
+(3) 直流反馈和交流反馈
+
+直流反馈: 反馈信号中只有直流成分的为直流反馈。直流反馈的作用是稳定静态工作点, 不影响放大电路的动态性能。
+
+交流反馈: 反馈信号中只有交流成分的为交流反馈。交流反馈的作用是改善放大电路的 动态性能。
+
+## 2. 反馈的四种类型 (或组态)
+
+通常，反馈的四种类型是对交流负反馈划分的。
+
+(1) 四种反馈类型
+
+按照反馈量取的是输出电压还是输出电流以及在输入端反馈信号与输入信号、净输入信 号是以电压形式相加减还是以电流形式相加减, 把反馈分为电压串联负反馈、电压并联负反 馈、电流串联负反馈和电流并联负反馈。
+
+（2）四种反馈类型及反馈极性的判别方法
+
+(1) 正、负反馈的判别方法一一瞬时极性法。假定输入信号的瞬时极性 $\rightarrow$ 逐步推断电路中 各相关点的相应极性 $\rightarrow$ 确定输入端反馈信号的瞬时极性 $\rightarrow$ 判断净输入信号是增强了还是削弱 了, 增强的是正反馈, 削弱的是负反馈。用丹表示信号上升, $\Theta$ 表示信号下降。
+
+(2) 电压反馈和电流反馈判别方法。反馈信号与电压成比例的, 称为电压反馈。反馈信号 与电流成比例的, 称为电流反馈。也可用输出电压短路法判别: 假定将输出端对地短路, 若反 馈信号消失, 则为电压反馈; 若反馈信号依然存在, 则为电流反馈。
+
+(3)串联反馈和并联反馈判别法。串联反馈: 反馈信号与输入信号分别加在两个输入端上, 即在输入回路以电压形式叠加, 为串联反馈。并联反馈: 反馈信号与输入信号都加在同一个输 人端上, 即以电流形式叠加, 为并联反馈。
+
+【例 2.2-11】四种反馈类型举例。
+
+例 1 : 电压串联负反馈。
+
+(1) 根据瞬时极性法在图中标出瞬时极性, 可知净输入电压 $u_{\mathrm{id}}=u_{\mathrm{i}}-u_{\mathrm{i}}$ 比无反馈时减小, 所以是负反馈。
+
+(2) 利用输出电压短路法将 $R_{\mathrm{i}}$ 短路, 则 $R_{\mathrm{f}}$ 的右端接地, 反馈消失, 所以是电压反馈。
+
+(3) 输入电压和反馈电压分别加在运放器的两个输入端, 净输入信号 $u_{\mathrm{id}}=u_{\mathrm{i}}-u_{\mathrm{f}}$, 在输入 端是电压相减,所以是串联反馈。
+
+综上, 该电路是电压串联负反馈。
+
+电压串联负反馈的特点是: 能稳定输出电压, 提高输入电阻, 降低输出电阻。信号源内阻 $R_{\mathrm{s}}$ 越小, 反馈效果越好。
+
+例 2 : 电压并联负反馈。
+
+图中所标瞬时极性显示 $R_{\mathrm{f}}$ 的左端为 $\oplus$, 而有端为 $\ominus$, 反馈信号 $i_{\mathrm{f}}$ 比没有反馈 (即 $R_{\mathrm{f}}$ 的右端 接地) 时大。在 $i_{\mathrm{i}}$ 不变的情况下, $i_{\mathrm{id}}$ 减小, 所以是负反馈。从输出取出的是电压, 所以是电压反 馈。该电路是电压并联负反馈。
+
+并联反馈是电流形式相叠加, 信号源内阻 $R_{\mathrm{s}}$ 越大, 反馈效果越好。
+
+例 3 : 电流串联负反馈。
+
+反馈极性和串、并联反馈的判断方法与例 1 和例 2 相同。该电路当输出端对地交流短路 后, : 极管的.T作状态没有改变, $i_{\mathrm{n}}$ 依然存在, 反馈信号 $\dot{U}_{\mathrm{f}}$ 也依然存在, 所以是电流反馈。
+
+电流反馈能稳定输出电流, 提高输出电阻。
+
+例 4 : 电流并联负反馈。
+
+【例 2. 2-12】判别图 2.2-25 分别从 $u_{\mathrm{ol}}$ 输出和从 $u_{\mathrm{o} 2}$ 输出时的反馈类型和极性。 解: 反馈元件是 $R_{\mathrm{e}}$, 为串联负反馈。从 $u_{\mathrm{ol}}$ 输出时, 将输出端对 地短路, $l_{\mathrm{r}}$ 电流仍然存在, 反馈信号 $u_{\mathrm{f}}$ 也依然存在, 所以是电流串联 负反馈。
+
+从 $u_{\mathrm{o} 2}$ 输出时, 若将输出端对地短路, 则反馈信号消失, 所以为电 压串联负反馈。
+
+## 3. 电压串联负反馈的分析计算
+
+电压串联负反馈的闭环电压放大倍数
+
+$$
+A_{u \mathrm{f}}=\frac{\dot{U}_{\mathrm{u}}}{\dot{U}_{\mathrm{i}}}=\frac{A_{u}}{1+\dot{A}_{u} F_{u}}
+$$
+
+其中反馈系数 $F_{u}=\frac{U_{\mathrm{I}}}{U_{\mathrm{v}}}$, 开环放大倍数 $A_{u}=\frac{U_{\mathrm{o}}}{U_{\mathrm{id}}}, U_{\mathrm{id}}$ 为净输入信号。 $\left|1+A_{u} F_{u}\right|$ 为反馈深度, 满 足条件 $\left|1+A_{u} F_{u}\right| \gg 1$, 即 $\left|A_{u} F_{u}\right| \gg 1$ 的反馈称为深度负反馈。
+
+深度负反馈下的闭环电压放大倍数
+
+$$
+A_{\mathrm{uf}}=\frac{\dot{U}_{\mathrm{o}}}{\dot{U}_{\mathrm{i}}}=\frac{A_{u}}{1+A_{u} F_{u}} \approx \frac{1}{F_{u}}
+$$
+
+【例 2. 2-13】电路如图 2.2-26 所示, 已知 $R_{\mathrm{b} 11}=100 \mathrm{k} \Omega, R_{\mathrm{b}, 12}=22 \mathrm{k} \Omega, R_{\mathrm{cl}}=2.7 \mathrm{k} \Omega, R_{\mathrm{el}}=$ $22 \Omega, R_{\mathrm{b} 21}=24 \mathrm{k} \Omega, R_{\mathrm{b} 22}=4.7 \Omega, R_{\mathrm{c} 2}=2.7 \mathrm{k} \Omega, R_{\mathrm{e} 2}=750 \Omega, R_{\mathrm{f}}=2.4 \mathrm{k} \Omega, R_{\mathrm{s}}=600 \Omega, R_{\mathrm{L}}=1.6$ $\mathrm{k} \Omega, \beta_{1}=\beta_{2}=80$ 。该电路满足深度负反馈条件, 试近似计算闭环电压放大倍数。
+
+解: 深度负反馈条件下, 近似计算闭环电压放大倍数。
+
+反馈系数
+
+$$
+F_{u}=\frac{U_{\mathrm{f}}}{U_{\mathrm{o}}} \approx \frac{R_{\mathrm{el}}}{R_{\mathrm{f}}+R_{\mathrm{el}}}=\frac{0.022}{2.4+0.022}=0.00908
+$$
+
+闭环电压放大倍数
+
+$$
+A_{\mathrm{uI}} \approx \frac{1}{F_{u}}=\frac{1}{0.00908} \approx 110
+$$
+
+### 5 正负反馈的特点,不同反馈类型对性能的影响
+
+## 1. 正、负反馈的特点
+
+(1) 正反馈的特点
+
+适当引人正反馈, 可提高放大倍数和输入电阻。但使用不当, 易造成工作不稳定。
+
+(2) 负反馈的特点
+
+负反馈使放大倍数降低, 但能改善放大电路的性能。
+
+## 2. 不同反馈类型对性能的影响
+
+(1) 电压负反馈
+
+电压负反馈能稳定输出电压, 降低输出电阻, 带负载能力强。
+
+(2) 电流负反馈
+
+电流负反馈能稳定输出电流, 提高输出电阻。
+
+(3) 串联负反馈
+
+串联负反馈能提高输入电阻, 减少从信号源汲取的电流, 信号源内阻越小, 反馈作用越明
+
+(4) 并联负反馈
+
+并联负反馈能降低输入电阻,信号源内阻越大, 反馈作用越明显。
+
+2.2.6 自激的原因及条件,消除自激的方法,去耦电路
+
+## 1. 自激的原因及条件
+
+产生自激的原因是负反馈在某一频率上变成了正反馈。产生自激的条件是: $\dot{A F}=-1$ 或 $|A F|=1$ 一自激的幅值条件; $\varphi=\varphi_{A}+\varphi_{F}= \pm(2 n+1) \pi$ 一自激的相位条件。
+
+判断能否自激的方法是利用波特图, 对应 $\varphi=\varphi_{1}+\varphi_{F}=180^{\circ}$ 的 $|\dot{A F}| \geqslant 1$ 时, 就会产生自激 旅荡。
+
+【例 2.2-14】选择题。
+
+(1) 负反馈放大电路产生自激振荡的条件是
+(A) $\dot{A F}=0$
+(B) $\dot{A F}=1$
+(C) $\dot{A F}=-1$
+(D) $\dot{A F}=\infty$
+
+(2) 共射极基本放大电路, 如果通过电阻引进负反馈
+(A)一定会产生高频自激振荡
+(B) 一定满足自激振荡的相位条件
+(C) 一定不会产生高频自激振荡
+(D) 不能确定
+
+解: (1) (C), (2) (C)。
+
+## 2. 消除自激的方法，去耦电路
+
+(1) 消除自激的方法
+
+消除自激的方法有(1)减小反馈系数 F; (2)接人校正网络。实际常用的校正网络如图 2.227 所示。
+
+(2)去耦电路
+
+在多级放大电路中, 由于共用的直流电源存在内阻, 各级的交流电流经过该内阻相互影 响。在内阻上产生的交流电压, 对电路的某一级可能形成正反馈, 使放大电路自激。在图 2. 2-28中对第一级形成正反馈。消除自激的有效办法是接人去耦电路, 图中 $R_{\phi}$ 和 $C_{\phi}$ 组成去耦 电路。在电源内阻上产生的交流电压经 $R_{\phi}$ 与 $C_{\phi}$ 分压后, 再加于 $R_{\mathrm{b}}$ 上, 只要满足 $R_{\phi}>$ $\frac{1}{\omega_{1} C_{\phi}}$, 就可大大削弱对第一级的正反馈, 使电路保持正常工作, $\omega_{1 .}$ 是电路的下限角频率。
+
+## 3 线性集成运算放大器和运算电路
+
+### 1 差动放大电路
+
+## 1. 差动放大电路的工作原理
+
+(1) 静态
+
+$=u_{\mathrm{i} 2}=0$ 时, $i_{\mathrm{c} 1}=i_{\mathrm{c} 2}, R_{\mathrm{c} 1} i_{\mathrm{c} 1}=R_{\mathrm{c} 2} i_{\mathrm{c} 2}$, 输出电压 $u_{\mathrm{o}}=u_{\mathrm{c} 1}-u_{\mathrm{c} 2}=0$ 。
+
+(2) 动态
+
+若 $u_{\mathrm{i} 1}$ 和 $u_{\mathrm{i} 2}$ 不等于零, 而且大小相等, 极性相反, 即 $u_{\mathrm{i} 1}=-u_{\mathrm{i} 2}$, 将使 $i_{\mathrm{c} 1}$ 增加, $i_{\mathrm{c} 2}$ 等量减少, 则 $u_{\mathrm{o}}=u_{\mathrm{c} 1}-u_{\mathrm{c} 2} \neq 0$, 有放大输出。
+
+若 $u_{\mathrm{i} 1}$ 和 $u_{\mathrm{i} 2}$ 不等于零, 但大小相等, 极性相同, 即 $u_{\mathrm{i} 1}=u_{\mathrm{i} 2}$, 则 $i_{\mathrm{i}: 1}$ 和 $i_{\mathrm{c} 2}$ 将作相同的变化, $u_{\mathrm{o}}=$ $u_{\mathrm{c} 1}-u_{\mathrm{c} 2}=0$, 放大器没有输出。
+
+2. 差模、共模、零漂的概念
+
+(1) 差模
+
+大小相等,极性相反, 即 $u_{\mathrm{i} 1}=-u_{\mathrm{i} 2}$ 的两个输入信号称为差模信号。
+
+(2) 共模
+
+大小相等, 极性相同, 即 $u_{\mathrm{i} 1}=u_{\mathrm{i} 2}$ 的两个输入信号称为共模信号。
+
+(3) 零漂 (零点漂移的简称)
+
+当放大电路的输入端短路时, 输出端仍有不规则缓慢变化的输出电压产生, 致使放大电路 偏离零点。产生零漂的主要原因是晶体管参数 $U_{\mathrm{RE}}, \beta 、 I_{\mathrm{CBO}}$ 随温度的变化而变化。
+
+$\Delta U_{\mathrm{i}}=\Delta U_{\mathrm{a}} /\left(A_{u} \Delta T\right)$ 是衡量零漂的指标, 即把温度变化 $1^{\circ} \mathrm{C}$ 时输出电压漂移量除以电压放 大倍数折合成输入电压作为漂移参数值。
+
+## 3. 差动放大电路的四种接法
+
+差动放大电路的四种接法是: (1)双端输入一双端输出，见图 2.3-1; (2)双端输入一单端输 出, 见图 2.3-2; (3)单端输入一双端输出, 见图 2.3-3; (4)单端输入一单端输出, 见图 2.3-4。
+
+## 4. 静态及动态的分析计算
+
+(1) 静态分析
+
+静态分析就是求静态工作点。对长尾电路 (如图 2. 3-1 有 $R_{\mathrm{e}}$ 的电路) 和恒流源电路 ( $R_{\mathrm{e}}$ 由 恒流源代替)，均可认为三极管基极对地的电位 $U_{\mathrm{B}} \approx 0$ 。可得
+
+$I_{\mathrm{C} 1}=I_{\mathrm{C} 2}=\approx \frac{I_{\mathrm{E}}}{2} \approx \frac{U_{\mathrm{EE}}-U_{\mathrm{BE}}}{2 R_{\mathrm{e}}}\left(I_{\mathrm{E}}\right.$ 为流过 $R_{\mathrm{e}}$ 的电流 $)$
+
+$I_{\mathrm{B} 1}=I_{\mathrm{B} 2}=\frac{I_{\mathrm{C} 1}}{\beta}, U_{\mathrm{CE} 1}=U_{\mathrm{CE2} 2}=U_{\mathrm{CB} 1}+U_{\mathrm{BE} 1}$
+
+$U_{\mathrm{CH} 1}=U_{\mathrm{CC}}-I_{\mathrm{Cl}} R_{\mathrm{cl}}-U_{\mathrm{B}} \approx U_{\mathrm{cC}}-I_{\mathrm{Cl}} R_{\mathrm{cl}}$
+
+所以
+
+$$
+U_{\mathrm{CE} 1}=U_{\mathrm{CE} 2}=U_{\mathrm{CC}}-I_{\mathrm{C} 1} R_{\mathrm{c} 1}+U_{\mathrm{BE} 1}
+$$
+
+（2）动态指标计算
+
+在单端输入时,一般 $R_{\mathrm{e}}$ 足够大, 所以结果与双端输入一样。
+
+(1) 差模电压放大倍数。
+
+双端输出:
+
+$$
+A_{u \mathrm{~d}}=\frac{u_{\mathrm{ol}}-u_{\mathrm{o} 2}}{u_{\mathrm{i} 1}-u_{\mathrm{i} 2}}=\frac{2 u_{\mathrm{ol}}}{2 u_{\mathrm{i} 1}}=\frac{-\beta R_{\mathrm{L}}^{\prime}}{R_{\mathrm{s}}+r_{\mathrm{be}}}, R_{\mathrm{L}}^{\prime}=R_{\mathrm{c}} / / \frac{1}{2} R_{\mathrm{l}} .
+$$
+
+单端输出: 从 $T_{1}$ 的集电极输出
+
+$$
+A_{\mathrm{udl}}=\frac{u_{\mathrm{ol}}}{u_{\mathrm{i} 1}-u_{\mathrm{i} 2}}=\frac{u_{\mathrm{ol}}}{2 u_{\mathrm{il}}}=-\frac{1}{2} \frac{\beta R_{\mathrm{t}}^{\prime}}{R_{\mathrm{s}}+r_{\mathrm{be}}}
+$$
+
+从 $\mathrm{T}_{2}$ 的集电极输计
+
+$$
+\begin{aligned}
+& A_{u \mathrm{~d} 2}=\frac{u_{\mathrm{o} 2}}{u_{\mathrm{i} 1}-u_{\mathrm{i} 2}}=\frac{u_{\mathrm{o} 2}}{2 u_{\mathrm{i} 1}}=+\frac{1}{2} \frac{\beta R_{\mathrm{t}}^{\prime}}{R_{\mathrm{s}}+r_{\mathrm{be}}} \\
+& R_{\mathrm{L}}^{\prime}=R_{\mathrm{c}} / / R_{\mathrm{L}}
+\end{aligned}
+$$
+
+(2) 共模电压放大倍数。 双端输出时
+
+$$
+A_{u v}=\frac{u_{\text {ol }}-u_{\mathrm{o} 2}}{u_{\mathrm{ic}}} \approx 0
+$$
+
+单端输出时
+
+$$
+A_{u \mathrm{c} \cdot \mathrm{l}} \approx-\frac{R_{\mathrm{t}}^{\prime}}{2 R_{\mathrm{t}}}, R_{\mathrm{t}}^{\prime}=R_{\mathrm{c}} / / R_{\mathrm{t}}
+$$
+
+(3) 共模抑制比。 双端输出时
+
+$$
+K_{\mathrm{CMR}}\left|\frac{A_{u \mathrm{~d}}}{A_{u r}}\right| \approx \infty
+$$
+
+单端输出时
+
+$$
+K_{\mathrm{CMR}}=\left|\frac{A_{u \mathrm{dl}}}{A_{u \mathrm{cl}}}\right| \approx \frac{\beta R_{\mathrm{e}}}{R_{\mathrm{s}}+r_{\mathrm{he}}}
+$$
+
+(4) 差模输入电阻: 双端与单端差模输入电阻一样, 为 $R_{\mathrm{id}} \approx 2\left(R_{\mathrm{s}}+r_{\mathrm{be}}\right)$ 。
+
+(5) 差模输出电阻: 双端输出 $R_{\mathrm{od}} \approx 2 R_{\mathrm{c}}$, 单端输出 $R_{\mathrm{od}} \approx R_{\mathrm{c}}$ 。
+
+(3) 输入信号的分解
+
+如果两个输入信号的大小、极性都是任意的, 可分解成差模信号 $u_{\mathrm{id}}$ 和共模信号 $u_{\mathrm{ic}}$ 。
+
+$$
+u_{\mathrm{id}}=u_{\mathrm{i} 1}-u_{\mathrm{i} 2}, u_{\mathrm{ir}}=\frac{1}{2}\left(u_{\mathrm{i} 1}+u_{\mathrm{i} 2}\right)
+$$
+
+输出电压
+
+$$
+u_{\mathrm{o}}=A_{\mathrm{ui}} u_{\mathrm{ul}}+A_{\mathrm{uc}} u_{\mathrm{us}}
+$$
+
+【例 2.3-1】图 2.3-1 所示差动放大电路, 已知 $U_{\mathrm{CC}}=U_{\mathrm{EE}}=12 \mathrm{~V}, R_{\mathrm{s}}=1 \mathrm{k} \Omega, R_{\mathrm{c}}=R_{\mathrm{c} 1}=R_{\mathrm{c} 2}$ $=10 \mathrm{k} \Omega, R_{\mathrm{r}}=10 \mathrm{k} \Omega, R_{\mathrm{L}}=12 \mathrm{k} \Omega$, 两晶体管参数相同 $\beta=60, r_{\mathrm{ber}}=1.5 \mathrm{k} \Omega, U_{\mathrm{BE}}=0.6 \mathrm{~V}$ 。试 求:
+
+(1) 静态 T作点 $I_{\mathrm{B}}, I_{\mathrm{C}}, U_{\mathrm{CE}}$;
+
+(2) 当 $u_{\mathrm{i} 1}=10 \mathrm{mV}, u_{\mathrm{i} 2}=-2 \mathrm{mV}$ 时, (1)双端输出电压 $u_{\mathrm{o}}$, (2)负载电阻 $R_{1}$ 接在 $C_{1}$ 与地之间 时, 单端输出电压 $u_{\mathrm{n} 1}$;
+
+(3) 差模输入电阻 $R_{\text {id }}$ 、单端输出电阻 $R_{\text {od }}$ 。
+
+解: (1) 静态丁. 作点: $I_{\mathrm{C}} \approx I_{\mathrm{E}}=\frac{U_{\mathrm{EE}}-U_{\mathrm{BE}}}{2 R_{\mathrm{e}}}=\frac{12-0.6}{2 \times 10}=0.57 \mathrm{~mA}, I_{\mathrm{B}}=\frac{I_{\mathrm{C}}}{\beta}=\frac{0.57}{60}=9.5 \mu \mathrm{A}$, $U_{\mathrm{CE}}=U_{\mathrm{CC}}-I_{\mathrm{C}} R_{\mathrm{c}}+U_{\mathrm{BE}}=12-0.57 \times 10+0.6=6.9 \mathrm{~V}_{\text {。 }}$
+
+(2) 首先将信号分解成差模信号和共模信号, 差模信号 $u_{\mathrm{id}}=u_{\mathrm{i} 1}-u_{\mathrm{i} 2}=10-(-2)=12$ $\mathrm{mV}$, 共模信号 $u_{\mathrm{i}:}=\left(u_{\mathrm{i} 1}+u_{\mathrm{i} 2}\right) / 2=(10-2) / 2=4 \mathrm{mV}$ 。
+
+(1)求双端输出电压 $u_{n}$ 。
+
+$$
+R_{\mathrm{l} .}^{\prime}=R_{\mathrm{c}} / /\left(R_{\mathrm{r}} / 2\right)=10 / / 6=3.75 \mathrm{k} \Omega
+$$
+
+'差模电压放大倍数
+
+$$
+\begin{aligned}
+& A_{\mathrm{ud}}=-\frac{\beta R_{\mathrm{L}}^{\prime}}{R_{\mathrm{s}}+r_{\mathrm{bec}}}=-\frac{\beta \times\left(R_{\mathrm{c}} / / \frac{R_{\mathrm{L}}}{2}\right)}{R_{\mathrm{s}}+r_{\mathrm{be}}}=\frac{60 \times(10 / / 6)}{1+1.5}=-90 \\
+& u_{\mathrm{o}}=A_{u \mathrm{~d}} u_{\mathrm{id}}=-90 \times 12=-1080 \mathrm{mV}=1.08 \mathrm{~V}
+\end{aligned}
+$$
+
+(2)求单端输出电压 $u_{\mathrm{o} t}$ 。
+
+$$
+R_{\mathrm{L}}^{\prime}=R_{\mathrm{c}} / / R_{\mathrm{t}}^{\prime}=10 / / 12=5.45 \mathrm{k} \Omega
+$$
+
+差模电压放大倍数
+
+$$
+A_{u \mathrm{dl}}=\frac{1}{2} \frac{\beta R_{\mathrm{l}}^{\prime}}{R_{\mathrm{s}}+r_{\mathrm{be}}}=\frac{1}{2} \times \frac{60 \times 5.45}{1+1.5}=-65.4
+$$
+
+共模电压放大倍数
+
+$$
+\begin{aligned}
+A_{u c} & \approx-\frac{R_{\mathrm{L}}^{\prime}}{2 R_{\mathrm{c}}}=-\frac{5.45}{2 \times 10} \approx-0.27 \\
+u_{\mathrm{o}} & =A_{\text {utl }} u_{\mathrm{id}}+A_{\mathrm{uc}} u_{\mathrm{ic}}=-65.4 \times 12-0.27 \times 4 \approx-786 \mathrm{mV} \\
+(3) R_{\mathrm{id}} & =2\left(R_{\mathrm{s}}+r_{\mathrm{bec}}\right)=2 \times(1+1.5)=5 \mathrm{k} \Omega \\
+R_{\mathrm{od}} & =R_{\mathrm{c}}=10 \mathrm{k} \Omega
+\end{aligned}
+$$
+
+## 5. 输入输出相位关系
+
+根据输出电压与输入电压的相位关系, 输入端分为同相输入端和反相输入端。在图 2. 3-1 中, 当输出为 $u_{\mathrm{o}}$ 或 $u_{\mathrm{ol}}\left(C_{1}\right.$ 点) 时, $u_{\mathrm{i} 1}$ 与 $u_{\mathrm{v}}$ (或 $\left.u_{\mathrm{o} 1}\right)$ 的相位相反, $u_{\mathrm{i} 1}$ 称为反相输入端; $u_{\mathrm{i} 2}$ 与 $u_{\mathrm{o}}$ 或 $u_{\mathrm{ol}}$ 的相位相同, $u_{\mathrm{i} 2}$ 称为同相输入端。当从 $C_{2}\left(u_{\mathrm{o} 2}\right)$ 点单端输出时, $u_{\mathrm{i} 1}$ 则为同相输入端, $u_{\mathrm{i} 2}$ 则为 反相输入端。输出与输入同相位, 则放大倍数是正的, 输出与输入反相位, 则放大倍数是负的。
+
+## 6. 零漂抑制原理
+
+零点漂移主要是温度的影响, 由于温度对放大电路的影响是一致的, 所以是个共模信号。 差动放大电路抑制零漂的原理主要是利用 $\mathrm{T}_{1} 、 \mathrm{~T}_{2}$ 的对称性和通过 $R_{\mathrm{e}}$ 引进共模负反馈。 $R_{\mathrm{e}}$ 越 大, 抑制效果越显著。但由于电源的限制和集成电路中不能制造大电阻, 为此采用恒流源代替 $R_{\mathrm{e}}$ 恒流源的交流电阻很大, 从而比 $R_{\mathrm{e}}$ 抑制共模信号的作用更强。
+
+【例 2.3-2】选择正确的答案。
+(1) 共模抑制比 $K_{\mathrm{CMR}}$ 是 之比。
+(A) 差模信号与共模信号之比
+(B) 输入量中差模成分与共模成分之比
+(C) 差模电压放大倍数绝对值与共模电压放大倍数绝对值之比
+(D) 交流放大倍数绝对值与直流放大倍数绝对值之比
+(2) $K_{\text {CMR }}$ 越大，表明电路
+(A) 放大倍数越稳定
+(B) 交流放大倍数越大
+(C) 抑制温漂能力越强
+(D) 输入信号中差模成分越大
+
+解: (1) (C), (2) (C)。 2.3.2 集成运放的特点及组成, 复合管的正确接法及等效参数的计算, 恒流源作 有源负载和偏置电路
+
+## 1. 集成运放的特点及组成
+
+(1) 特点
+
+集成运放是高增益的直接耦合多级放大电路。
+
+(2) 组成
+
+集成运放通常由四部分组成(图 2.3-5)。
+
+(1) 差动输入级: 是提高性能指标的关键, 均采用差动放大电路。
+
+(2) 电压放大级: 主要用来提高电压放大倍数,通常采用恒流源负载。
+
+(3) 输出级:一般采用由复合管组成的甲乙类互补推挽功率放大电路。
+
+(4) 偏置电路: 为整个电路提供稳定和合适的偏置电流, 一般由恒流源构成。
+
+## 2. 复合管的正确接法及等效参数的计算
+
+(1) 相同极性三极管组成的复合管
+
+(1)正确接法如图 2.3-6。(2)等效参数为: $\beta \approx \beta_{1} \beta_{2}, r_{\mathrm{be}} \approx r_{\mathrm{bcl}}+\beta_{1} r_{\mathrm{be} 2}$ 。(3)等效三极管的极性, 与原来的极性相同。(4)各电极名称不变。
+
+(2) 不同极性三极管组成的复合管
+
+(1)正确接法如图 2.3-7。(2)等效参数为: $\beta \approx \beta_{1} \beta_{2}, r_{\mathrm{ber}} \approx r_{\mathrm{bel}}$ 。(3)等效三极管的极性, 与最前 面的(第一个管)极性相同。(4)各电极名称, 由最前面的(第一个管)电极名称决定。
+
+两管发射极电流方向一致, 就正确; 否则就错误。
+
+【例 2.3-3】复合管电路如图 2.3-8 所示, 设 $T_{1} 、 T_{2}$ 的电流放大系数分别为 $\beta_{1} 、 \beta_{2}$, 输入电 阻分别为 $r_{\text {bel } 1} r_{\text {be2 }}$ 。要求:
+
+(1) 分别画出等效晶体管符号 (电极名称);
+
+(2) 写出等效晶体管的 $\beta$ 与 $\beta_{1} 、 \beta_{2}$ 的关系式;
+
+(3) 写出各复合管的输入电阻表达式。
+
+解: (1) 图 (a)、(d) 为 PNP 管,图 (b)、(c) 为 NPN 管。等效晶体管符号如图 2.3-9 所示。
+
+(2) 图 (a)、(b)、(c)、(d) 均为 $\beta \approx \beta_{1} \beta_{2}$ 。
+
+(3) 图 (a)、(b) 由同类型管子组成,输入电阻包括两个发射结, 所以 $r_{\mathrm{be}}=r_{\mathrm{bel}}+\left(1+\beta_{1}\right) r_{\mathrm{be}}$; 图 (c)、(d) 由不同类型管子组成, 输入电阻只包括一个发射结, 所以 $r_{\mathrm{ber}}=r_{\text {hel }}$ 。
+
+【例 2.3-4】判断图 2.3-10 中各复合管连接是否正确。如正确, 各分别等效为何种极性 的晶体管，管脚 $1 、 2 、 3$ 分别对应什么电极。
+
+解:图 (a) 连接正确,等效晶体管为 PNP 型,管脚 $1-\mathrm{e}$ 极,管脚 2-b 极,管脚 3-c 极。图 (b) 连接不正确, 因为 $T_{1}$ 和 $T_{2}$ 发射极电流方向不一致。
+
+## 3. 恒流源作有源负载和偏置电路
+
+（1）镜像电流源
+
+（2）有源负载
+
+(3) 偏置电路
+
+恒流源作为偏置电路, 可为放大器提供稳定的偏置电流。图 2.3-13 中 $\mathrm{T}_{3} 、 \mathrm{~T}_{4} 、 R$ 组成的恒 流源为 $T_{1} 、 T_{2}$ 提供偏置电流。又由于恒流源的交流电阻很大, 相当于长尾电路中的 $R_{\mathrm{e}}$ 很大, 使 共模抑制能力很强。
+
+【例 2.3-5】图 2. 3-14 中, $U_{\mathrm{CC}}=6.5 \mathrm{~V},-U_{\mathrm{EE}}=-6.5 \mathrm{~V}, R_{2}=12.4 \mathrm{k} \Omega, \mathrm{T}_{1} \sim \mathrm{T}_{7}$ 的 $\beta=100$, $\left|U_{\mathrm{BE}}\right|=0.6 \mathrm{~V} ; r_{\mathrm{bel}}=r_{\mathrm{be} 2}=5.3 \mathrm{k} \Omega$, 试问:
+
+（1）各三极管分别组成何种功能的电路?
+
+(2) 求静态电流 $I_{\mathrm{c} 1}$ 和 $I_{\mathrm{c} 2}$ 。
+
+解: (1) $T_{1} 、 T_{2}$ 组成差动放大电路。 $T_{3} 、 T_{4}$ 组成镜像恒流源, 作为差动放大电路的有源负载。 $T_{5} 、 T_{6}$ 组成镜像恒流源, 作为差动放大电路的偏置电路。 $T_{7}$ 组成共射极放大电路。
+
+(2) 首先求出 $\mathrm{T}_{5} 、 \mathrm{~T}_{6}$ 组成的镜像恒流源的输出电流 $I_{c 5}$ 。
+
+$$
+\begin{aligned}
+& I_{\mathrm{CS}} \approx I_{\mathrm{REF}}=\frac{U_{\mathrm{CC}}-\left(-U_{\mathrm{EE}}\right)-U_{\mathrm{BE}}}{R_{2}}=\frac{13-0.6}{12.4}=1 \mathrm{~mA} \\
+& I_{\mathrm{C} 1}=I_{\mathrm{C} 2}=\frac{1}{2} I_{\mathrm{CS}}=0.5 \mathrm{~mA}
+\end{aligned}
+$$
+
+## 4. 集成运算放大器参数的含义
+
+(1)开环差模电压放大倍数 $A_{\text {wo }}$ : 无反馈情况下的直流差模电压增益。
+
+(2)输入失调电压 $U_{\mathrm{io}}$ : 为使输出电压为零, 在输入端所需加人的补偿电压。它反映了电路 的对称程度的好坏。数值越大, 说明对称程度越差。
+
+(3)输入失调电流 $I_{\mathrm{io}}$ : 当输出电压为零时, 流人放大器两输入端的静态基极电流之差。
+
+(4)输入偏置电流 $I_{\mathrm{iB}}$ : 输出电压为零时, 两个输入端静态电流的平均值。
+
+(5)温漂: 由输入失调电压和输入失调电流随温度的漂移所引起的。其中输入失调电压温 漂 $\Delta U_{\mathrm{io}} / \Delta T$ 为在规定工作范围内 $U_{\mathrm{in}}$ 的温度系数。输入失调电流温漂 $\Delta I_{\mathrm{io}} / \Delta T$ 为在规定工作 范围内 $I_{\text {io }}$ 的温度系数。
+
+(6)共模抑制比 $K_{\mathrm{CMR}}$ : 差模电压放大倍数与共模电压放大倍数之比的绝对值。
+
+(7)差模输入电阻 $r_{\mathrm{id}}$ : 两个输入端之间的等效动态电阻。 (8)输出电阻 $r_{0}$ : 从输出端和地之间看进去的动态电阻。
+
+(9)最大差模输入电压 $U_{\text {idmax }}$ : 反相和同相输入端所能承受的最大电压值。
+
+19最大共模输入电压 $U_{\mathrm{icmax}}$ : 所能承受的最大共模输入电压值。
+
+(11)最大输出电流 $I_{\text {omax }}$ : 所能输出的正向或反向峰值电流。
+
+(12)开环带宽 $B W\left(f_{\mathrm{H}}\right)$ : 开环差模电压增益下降 $3 \mathrm{~dB}$ 时对应的上限频率 $f_{\mathrm{H}}$ 。
+
+(13)转换速率 $S_{\mathrm{R}}$ : 放大电路在闭环状态下, 输入为大信号时, 输出电压对时间的最大变化率。
+
+2.3.3 多级放大电路的耦合方式及频率响应
+
+## 1. 耦合方式
+
+(1) 阻容耦合
+
+各级之间静态工作点相互独立,零点漂移可忽略。不能放大缓慢变化的信号。
+
+（2）直接耦合
+
+各级之间静态工作点相互影响, 存在零点漂移。能放大缓慢变化的信号。由于在集成电 路中还不能制作大容量电容, 所以集成运算放大器为直接耦合多级放大电路。
+
+(3) 变压器耦合
+
+各级之间静态工作点相互独立,利用变比的不同可以提高放大作用和输出功率。
+
+## 2. 频率响应
+
+将几级放大电路串接起来, 放大倍数提高, 但频带变窄, 即 $f_{\mathrm{L}}$ 增大, $f_{\mathrm{H}}$ 减小。
+
+【例 2.3-6】选择正确的答案填空。
+
+(1) 多级放大电路的通频带与各级通频带之间的关系
+
+(A) 比通频带最窄的还要窄
+
+（B）比通频带最宽的还要宽
+
+(C) 各级通频带的平均值
+
+(D) 各级通频带的乘积
+
+(2) 具有相同参数的两级放大电路,在各级的截止频率处,电压增益的幅值下降
+(A) $3 \mathrm{~dB}$
+(B) $6 \mathrm{~dB}$
+(C) $20 \mathrm{~dB}$
+(D) $9 \mathrm{~dB}$
+
+解: (1) (A), (2) (B)。
+
+### 4 基本运算电路
+
+## 1. 理想运放的虚短、虚地、虚断概念及其分析方法
+
+(1) 理想运放的模型
+
+满足以下理想化参数的运放称为理想运放。
+
+(1) 开环差模电压放大倍数 $A_{u 0}=\infty$;
+
+(2) 差模输入电阻 $r_{\text {id }}=\infty$;
+
+(3) 输出电阻 $r_{\mathrm{o}}=0$;
+
+(4) 输入失调电压 $U_{\mathrm{io}}=0$;
+
+(5) 输入失调电流 $I_{\mathrm{i},}=0$;
+
+(6) 输入偏置电流 $I_{\mathrm{iB}}=0$;
+
+(7) 输入失调电压温漂 $\Delta U_{\mathrm{io}} / \Delta T=0$;
+
+(8) 输入失调电流温漂 $\Delta I_{\mathrm{io}} / \Delta T=0$;
+
+(9) 共模抑制比 $K_{\mathrm{CMR}}=\infty$;
+
+10 开环带宽 $B W\left(f_{\mathrm{H}}\right)=\infty$; (11) 转换速率 $S_{\mathrm{R}}=\infty$ 。
+
+(2) 虚短、虚地、虚断概念
+
+虚短和虚断是线性工作状态下理想集成运放的两个重要特点。
+
+虚短: 由于 $A_{u \mathrm{~d}} \rightarrow \infty, u_{\mathrm{id}}=u_{\mathrm{N}}-u_{\mathrm{p}}=0$, 即同相输入端与反相输入端的电位相等, 二者之间接 近于短路, 而又不是真正的短路, 所以称为虚短。
+
+虚断: 由于 $r_{\mathrm{id}} \rightarrow \infty$, 两个输入端的电流 $i_{\mathrm{N}}=i_{\mathrm{P}}=0$, 即输入端好似断路, 而又并非真的断路, 所以称为虚断。
+
+虚地: 当同相端直接或通过电阻接地时, 因为存在虚短, 则反相端虚地。可见虚地只有在 同相输入端是地电位的条件下才存在。
+
+(3) 理想运放的分析方法
+
+(1) 首先判断运放器是否具有深度负反馈。存在深度负反馈, 则运放器工作在线性区。只 有工作在线性状态, 虚短、虚地才成立。若运放器处于开环状态或有正反馈, 则运放器工作在 非线性状态, 虚短、虚地不成立。
+
+(2) 利用虚短、虚地、虚断的特点, 求输出和输入的运算关系。当有多个输入信号时, 利用 叠加原理求解。
+
+(3) 工作在线性区, 一般都具有深度电压负反馈, 各级输出电阻近似为零。因此, 对于多级 运算电路, 不必考虑前后级之间的影响。
+
+(4) 求解较复杂的电路时, 首先确定每个运放器的功能,写出其输入、输出函数关系, 最后 得到整个电路的运算关系。
+
+## 2. 比例、加减运算电路及其电压传输特性
+
+(1) 反相比例运算电路
+
+(2) 同相比例运算电路
+
+同相比例运算电路。利用虚断和虚短可知 $u_{\mathrm{s}}=\frac{R_{1}}{R_{1}+R_{\mathrm{f}}} u_{\mathrm{o}}$, 由此得 $R_{f_{\mathrm{f}}}=\left(1+\frac{R_{\mathrm{f}}}{R_{\mathrm{l}}}\right) u_{\mathrm{s}}$
+
+因为 $u_{\mathrm{N}}=u_{\mathrm{p}} \neq 0$, 有共模输入电压, 所以同相输入不存在虚地。同相比例运算电路是个深 串联: 馈电路 (3) 反相加法运算电路
+
+(4) 同相加法运算电路
+
+$$
+u_{\mathrm{o}}=\left(1+\frac{R_{\mathrm{f}}}{R_{3}}\right)\left(\frac{R_{2}}{R_{1}+R_{2}} u_{\mathrm{sl}}+\frac{R_{1}}{R_{1}+R_{2}} u_{\mathrm{s} 2}\right)
+$$
+
+当 $R_{1}=R_{2}=R_{3}=R_{1}$ 时, $u_{0}=u_{\mathrm{s} 1}+u_{\mathrm{s} 2}$ 。
+
+(5) 差动输入减法运算电路
+
+$$
+u_{\mathrm{o}}=\left(\frac{R_{1}+R_{\mathrm{f}}}{R_{1}}\right)\left(\frac{R_{3}}{R_{2}+R_{3}}\right) u_{\mathrm{s} 2}-\frac{R_{\mathrm{f}}}{R_{1}} u_{\mathrm{s} 1}
+$$
+
+若满足 $R_{\mathrm{f}} / R_{1}=R_{3} / R_{2}$, 则 $u_{\mathrm{o}}=\frac{R_{\mathrm{f}}}{R_{1}}\left(u_{\mathrm{s} 2}-u_{\mathrm{s} 1}\right)$ 。
+
+(6) 电压跟随器
+
+【例 2.3-7】在图 2.3-21 中, 运放器为理想的。写出各输出电压的数值。
+
+解: $u_{\mathrm{oa}}=\left(1+\frac{60}{120}\right) \times 0.2=1.5 \times 0.2=0.3 \mathrm{~V}, u_{\mathrm{ob}}=-\frac{60}{120} \times 0.2=-0.1 \mathrm{~V}$
+
+$$
+u_{\mathrm{oc}}=3 \mathrm{~V} \text { (该电路是电压跟随器), } u_{\mathrm{od}}=-\frac{30}{15} \times 1+\left(1+\frac{30}{15}\right) \times 3=-2+9=7 \mathrm{~V}
+$$
+
+（7）比例及加减运算电路的电压传输特性
+
+运算电路的输出电压 $u_{\mathrm{o}}$ 与输入电压 $u_{i}$ 的关系曲线称为电压传输特性。
+
+【例 2.3-8】电路如图 2.3-22 所示, 设运放器为理想的, 要求画出其电压传输特性。
+
+解: 该电路是一个反相比例运算电路, 其输出端有稳压管限幅, 最大输出电压为 $\pm 8 \mathrm{~V}$ 。 $u_{\text {。 }}$ $=-\frac{120}{12} u_{\mathrm{i}}=-10 u_{\text {。 }}$ 。当 $u_{\mathrm{o}}=8 \mathrm{~V}$ 时, $u_{\mathrm{i}}=-\frac{8}{10}=-0.8 \mathrm{~V}$ 。同样, 当 $u_{\mathrm{o}}=-8 \mathrm{~V}$ 时, $u_{\mathrm{i}}=0.8 \mathrm{~V}$ 。 电压传输特性如图 2.3-23 所示。
+
+【例 2.3-9】图 2.3-24 为某运算电路的电压传输特性, 试问:
+
+(1) 输入与输出电压之间的运算关系;
+
+(2) 电压放大倍数为多少?
+
+(3) 若输入电压为正弦信号时,最大不失真输出电压的有效值为多少?
+
+解: (1) 从图可知 $u_{\mathrm{i}}>0, u_{\mathrm{o}}>0$ 。同样 $u_{\mathrm{i}}<0, u_{\mathrm{o}}<0$ 。可见输出与输入同相位, 所以是同相 比例运算电路。 （2）在线性范围内有 $\Delta u_{\mathrm{o}} / \Delta u_{\mathrm{i}}=1$, 所以电压放大倍数 $A_{u}=\Delta u_{\mathrm{o}} / \Delta u_{\mathrm{i}}=1$ 。
+
+(3) 最大不失真输出电压的有效值为 $\frac{5.6}{\sqrt{2}} \approx 3.96 \mathrm{~V}$ 。
+
+## 3. 积分、微分电路的工作原理
+
+(1) 积分电路
+
+$$
+u_{\mathrm{o}}=-\frac{1}{C} \int i_{C} \mathrm{~d} t+U_{\infty}=-\frac{1}{R C} \int u_{\mathrm{s}} \mathrm{d} t+U_{\infty}
+$$
+
+若电容 $C$ 的初始电压 $U_{c 0}=0$, 则
+
+$$
+u_{\mathrm{o}}=-\frac{1}{C} \int i_{C} \mathrm{~d} t=-\frac{1}{R C} \int u_{\mathrm{s}} \mathrm{d} t
+$$
+
+当 $u_{\mathrm{s}}$ 为阶跃电压时, $u_{\mathrm{o}}=-\frac{U_{\mathrm{s}}}{R C} t, u_{\mathrm{o}}$ 与时间 $t$ 成线性关系, 如图 2.3-26 所示。 $U_{\mathrm{o}}$ 增长到 $U_{\mathrm{om}}$ 时, 积分停止。此时运放进入饱和状态, $U_{\mathrm{om}}$ 为运放器的最大输出电压。
+
+【例 2.3-10】电路如图 2.3-25 所示, 运放是理想的。已知电容 $C$ 的初始电压 $U_{c 0}=0, R$ $=100 \mathrm{k} \Omega, C=4 \mu \mathrm{F}$ 。在 $t=0$ 时加上 $1 \mathrm{~V}$ 的直流电压, 试求 2 秒钟后的 $u_{\mathrm{o}}$ 值。
+
+解: $u_{\mathrm{o}}=-\frac{1}{R C} \int u_{\mathrm{s}} \mathrm{d} t=-\frac{1}{R C} U_{\mathrm{a}} t=-\frac{1}{100 \times 10^{3} \times 4 \times 10^{-6}} \times 1 \times 2=-5 \mathrm{~V}$
+
+(2) 微分电路
+
+【例 2.3-11】图 2.3-27 所示的微分电路, 运放是理想的。已知 $R=10 \mathrm{k} \Omega, C=100 \mu \mathrm{F}, u_{\mathrm{s}}$ 、 的波形如图 2.3-29 所示,试画出 $u_{0}$ 的波形,并标出有关数值。
+
+解: $u_{\mathrm{o}}=-R C \frac{\mathrm{d} u_{*}}{\mathrm{~d} t}=-\frac{\mathrm{d} u_{\mathrm{s}}}{\mathrm{d} t}$
+
+(1) $0 \sim 10$ 秒段: $u_{\mathrm{ol}}=-\frac{\mathrm{d} u_{\mathrm{s}}}{\mathrm{d} t}=\frac{-1}{10} \mathrm{~V}=-0.1 \mathrm{~V}_{\text {。 }}$
+
+(2) $10 \sim 30$ 秒段: $u_{\mathrm{o} 2}=\frac{\mathrm{d} u_{\mathrm{s}} \cdot}{\mathrm{d} t}=0 \mathrm{~V}$ 。
+
+(3) $30 \sim 40$ 秒段: $u_{\mathrm{o}}=-\frac{\mathrm{d} u_{\mathrm{s}}}{\mathrm{d} t}=\frac{1}{10}=0.1 \mathrm{~V}$ 。
+
+$u_{\mathrm{o}}$ 的波形如图 2.3-30 所示。
+
+### 5 实际运算放大器运算电路的分析
+
+## 1. 只考虑 $A_{u 0} \neq \infty$ 的情况
+
+由于 $A_{u 0} \neq \infty$, 所以虚短不成立, $u_{\mathrm{N}} \neq 0$, 即 $u_{\mathrm{N}}=$ $-\frac{u_{\mathrm{o}}}{A_{u 0}}$ 。因为仍有 $r_{\mathrm{id}}=\infty$, 所以 $i_{\mathrm{i}}=0$, 于是 $\frac{u_{\mathrm{s}}-u_{\mathrm{N}}}{R_{1}}=$ $\frac{u_{\mathrm{N}}-u_{\mathrm{o}}}{R_{\mathrm{f}}}$, 将 $u_{\mathrm{N}}=-\frac{u_{\mathrm{o}}}{A_{u 0}}$ 代人得
+
+$$
+A_{u \mathrm{f}}^{\prime}=\frac{u_{\mathrm{o}}}{u_{\mathrm{s}}}=-\frac{R_{\mathrm{f}}}{R_{\mathrm{f}}} \times \frac{A_{\mathrm{uo}}}{A_{\mathrm{uo}}+\left(1+\frac{R_{\mathrm{f}}}{R_{\mathrm{l}}}\right)}
+$$
+
+【例 2.3-12】反相比例运算电路如图 2.3-31 所示, 已知 $A_{\text {uo }}=1000, R_{1}=100 \mathrm{k} \Omega, R_{\mathrm{f}}=$ $1 \mathrm{M} \Omega$ 。求运算的相对误差 $\delta$ 。
+
+解: $A_{\mathrm{uo}}=1000$, 将已知数据代人表达式,得
+
+$$
+A_{\mathrm{uf}}^{\prime}=\frac{u_{\mathrm{o}}}{u_{\mathrm{s}}}=-\frac{R_{\mathrm{f}}}{R_{\mathrm{t}}} \times \frac{A_{\mathrm{uo}}}{A_{\mathrm{uo}}+\left(1+\frac{R_{\mathrm{f}}}{R_{\mathrm{l}}}\right)}=-\frac{1000}{100} \times \frac{1000}{1000+\left(1+\frac{1000}{100}\right)}=-9.89
+$$
+
+若 $A_{\mathrm{uo}}=\infty$, 则 $A_{\mathrm{uf}}=-10$ 。所以
+
+$$
+\delta=\frac{A_{u f}-A_{u f}^{\prime}}{A_{u f}^{\prime}}=\frac{10-9.89}{9.89} \approx 0.11 \%
+$$
+
+## 2. 只考虑失调电压 $U_{\mathrm{io}} \neq 0$ 时产生的误差输出电压
+
+若放大器的失调电压不为零, 要想使输出电压等于零, 必须在其输入端施加一个与 $U_{\mathrm{in}}$ 大 小相等、极性相反的补偿电压。所以等效电路如图 2.3-32 所示。
+
+$$
+U_{\mathrm{A}}=U_{\mathrm{io}}=\frac{R_{1}}{R_{1}+R_{\mathrm{f}}} u_{\mathrm{o}}
+$$
+
+所以由 $U_{\mathrm{io}}$ 引起的误差输出电压
+
+$$
+U_{\mathrm{or}}=U_{\mathrm{io}} \frac{R_{1}+R_{\mathrm{f}}}{R_{\mathrm{i}}}
+$$
+
+3. 只考虑输入偏置电流 $I_{\mathrm{IB}} \neq 0$ 和输入失调电流 $I_{10} \neq 0$ 时产生的误差输出电压 $I_{\mathrm{B}}=\left(I_{\mathrm{BN}}+I_{\mathrm{BP}}\right) / 2$, 当 $I_{\mathrm{BN}} \neq I_{\mathrm{BP}}$ 时, 使 $I_{\mathrm{io}}=\left|I_{\mathrm{BN}}-I_{\mathrm{BP}}\right| \neq 0$, 就产生了失调电流。 利用叠加原理求解:
+
+(1)设反相输入端的 $I_{\mathrm{iB}} \neq 0$, 同相输入端的 $I_{\mathrm{iB}}=0 、 I_{\mathrm{io}}=0$ 。产生的误差输出电压
+
+$$
+U_{\text {orN }}=I_{\mathrm{iB}} R_{\mathrm{f}}\left(\text { 因为 } U_{\mathrm{N}}=U_{\mathrm{p}}=0\right. \text { ) }
+$$
+
+(2)设同相输入端的 $I_{\mathrm{iB}} \neq 0 、 I_{\mathrm{io}} \neq 0$, 反相输入端的 $I_{\mathrm{iB}}=0$ 。产生的误差输出电压
+
+$$
+U_{\text {urp }}=\frac{R_{1}+R_{\mathrm{f}}}{R_{1}}\left(-I_{\mathrm{iB}}+I_{\mathrm{io}}\right) R_{2}
+$$
+
+(3)总的误差输出电压
+
+$$
+U_{\mathrm{or}}=U_{\mathrm{orN}}+U_{\mathrm{orP}}=-I_{\mathrm{iB}}\left(\frac{R_{1}+R_{\mathrm{f}}}{R_{1}} R_{2}-R_{\mathrm{r}}\right)+I_{\mathrm{io}} \frac{R_{1}+R_{\mathrm{f}}}{R_{1}} R_{2}
+$$
+
+为使两输入端的外接电阻平衡, 取 $R_{2}=R_{1} / / R_{\mathrm{f}}$, 则 $\frac{R_{1}+R_{\mathrm{f}}}{R_{\mathrm{l}}} R_{2}-R_{\mathrm{f}}=0$, 可以消除偏置电流 $I_{\mathrm{iB}}$ 对输出电压的影响。
+
+【例 2.3-13】电路如图 2.3-34(a) 所示, 运放器的型号为 $\mu \mathrm{A} 741$, 已知 $I_{\mathrm{iB}}=100 \mathrm{nA,} \boldsymbol{I}_{\mathrm{io}}=$ $20 \mathrm{nA}, U_{\mathrm{io}}=5 \mathrm{mV}$ 。试求由 $I_{\mathrm{iB}} 、 I_{\mathrm{io}} 、 U_{\mathrm{io}}$ 产生的误差输出电压 $U_{\mathrm{or}}$ 。 故
+
+解: 因为求的是误差输出电压 $U_{\mathrm{or}}$, 所以令输入电压 $u_{\mathrm{i}}=0$, 如图 (b) 所示。又 $R_{2}=R_{1} / / \boldsymbol{R}_{\mathrm{i}}$,
+
+$$
+U_{\text {or }}=U_{\mathrm{io}} \frac{R_{1}+R_{\mathrm{f}}}{R_{1}}+I_{\mathrm{io}} \frac{R_{1}+R_{\mathrm{f}}}{R_{1}} R_{2}=\frac{R_{1}+R_{\mathrm{f}}}{R_{\mathrm{f}}} U_{\mathrm{io}}+I_{\mathrm{io}} R_{\mathrm{f}}
+$$
+
+$$
+=\frac{100+1000}{100}\left(5 \times 10^{-3}\right)+20 \times 10^{-9} \times 1000 \times 10^{3}=75 \mathrm{mV}
+$$
+
+2.3.6 对数和指数运算电路工作原理, 输入输出关系
+
+## 1. 对数运算电路
+
+$$
+i_{\mathrm{c}} \approx i_{\mathrm{e}} \approx I_{\mathrm{ES}} \mathrm{e}^{\frac{u_{\mathrm{BE}}}{u_{\mathrm{T}}}}, i_{\mathrm{c}}=i=u_{\mathrm{s}} / R, u_{\mathrm{o}}=-u_{\mathrm{BE}}
+$$
+
+得到输入、输出关系式为
+
+$$
+u_{\mathrm{v}}=-U_{\mathrm{T}} \ln \frac{u_{\mathrm{s}}}{R}+U_{\mathrm{T}} \ln I_{\mathrm{ES}}
+$$
+
+从图 2.3-35 可知, $\left|u_{0}\right|<0.7 \mathrm{~V}_{\text {。 }}$
+
+## 2. 指数 (反对数) 运算电路
+
+将对数运算电路中的三极管与 $R$ 对调就得到如图 2.3-36 所示的反对数运算电路。输入、 输出关系式为
+
+$$
+u_{\mathrm{o}}=-I_{\mathrm{ES}} R_{\mathrm{f}} \mathrm{e}^{u_{\mathrm{s}} / U_{\mathrm{r}}}
+$$
+
+### 7乘法器的应用(平方、均方根、除法)
+
+## 1. 模做乘法器工作原理
+
+利用对数和反对数运算电路可实现乘法运算, 其数学原理是:
+
+$$
+u_{0}=\ln ^{-1}\left(\ln u_{x}+\ln u_{y}\right)=u_{x} u_{y}
+$$
+
+根据此式可得乘法器框图 (图 2.3-37)。
+
+## 2. 乘法器的应用
+
+（1）乘法运算
+
+乘法器能实现乘法运算。符号如图 2. 3-38 所示, 输出 $u_{0}$ 与输入 $u_{s}$ 和 $u_{y}$ 的乘积成正比, 即 $u_{\mathrm{o}}=k u_{x} u_{y}$ 。
+
+（2）平方运算
+
+当 $u_{x}=u_{y}=u_{i}$ 时, $u_{0}=k u_{\mathrm{i}}{ }^{2}$, 如图 2.3-39 所示。
+
+(3) 除法运算
+
+该电路要求 $u_{x}>0 \mathrm{~V}$, 以保证运放器处于负反馈工作状态。
+
+(4) 开平方运算
+
+电路如图 2.3-41 所示。依虚地概念有 $\frac{u_{\mathrm{s}}}{R}+\frac{u_{1}}{R}=0, u_{1}=-u_{\mathrm{s}}$, 又 $u_{1}=k u_{\mathrm{o}}{ }^{2}$, 所以 $u_{\mathrm{o}}=$ $\sqrt{-\frac{u_{\mathrm{s}}}{k}}$ 。
+
+该电路要求 $u_{s}$ 必须是负值。否则, 运放器通过乘法器引人的负反馈将变成正反馈。
+
+（5）均方根运算
+
+$$
+\begin{aligned}
+& u_{\mathrm{o} 1}=k u_{\mathrm{i} 1}^{2}, u_{\mathrm{o} 2}=k u_{\mathrm{i} 2}^{2}, u_{\mathrm{o} 3}=-k\left(u_{\mathrm{i} 1}^{2}+u_{\mathrm{i} 2}^{2}\right) \\
+& u_{\mathrm{o}}=\sqrt{-\frac{R_{2}}{R_{1} k}(-k)\left(u_{\mathrm{i} 1}^{2}+u_{\mathrm{i} 2}^{2}\right)}=\sqrt{\frac{R_{2}}{R_{1}}\left(u_{\mathrm{i} 1}^{2}+u_{\mathrm{i} 2}^{2}\right)}
+\end{aligned}
+$$
+
+## 4 信号处理电路
+
+### 1 滤波器
+
+## 1. 滤波器的概念、种类及幅频特性
+
+滤波器是一种选频电路,其功能是使有用频率的信号通过, 而将其余频率的信号加以抑制 或衰减。
+
+滤波器分类:按信号通过的频率分为低通滤波器、高通滤波器、带通滤波器、带阻滤波器和 全通滤波器。它们的理想幅频特性如图 2.4-1 所示, $|A|$ 为传输函数的模, $A_{\mathrm{up}}$ 为通带电压放大 倍数。
+
+通带截止频率: 能够通过的信号频率范围称为通带, 被衰减的信号频率范围称为阻带。通 带和阻带的界限频率称为通带截止频率, 如图 2. 4-1 中的 $\omega_{1}$ ，和 $\omega_{\mathrm{H}}$ 。
+
+低通滤波器 (LPF) : 其功能是 $0 \sim \omega_{\mathrm{H}}$ 的低频信号通过, 而频率高于 $\omega_{\mathrm{H}}$ 的信号则被衰减。
+
+高通滤波器 (HPF) : 频率大于 $\omega_{\mathrm{L}}$ 的高频信号通过, 而频率低于 $\omega_{\mathrm{I}}$ 的信号被抑制。
+
+带通滤波器 (BPF) : 只允许频率在 $\omega_{\mathrm{I}}<\omega<\omega_{\mathrm{H}}$ 范围内的信号通过。 $\omega_{\mathrm{I}}$ 和 $\omega_{\mathrm{H}}$ 的中点频率称 为中心角频率 $\omega_{0}$ 。主要用于从众多信号中提取有用信号。
+
+带阻滤波器 (BEF) : 阻止频率在 $\omega_{\mathrm{H}}<\omega<\omega_{\mathrm{L}}$ 范围内的信号通过。 $\omega_{\mathrm{L}}$ 和 $\omega_{\mathrm{H}}$ 的中点频率称为 中心角频率 $\omega_{0}$ 。主要用于抑制 $\omega_{H}<\omega<\omega_{L}$ 范围内的干扰信号。
+
+全通滤波器: 又称移相滤波器, 能通过所有频率的信号, 通带放大倍数为常数, 仅相位是频 率的函数。
+
+当前广泛使用的是由运算放大器和 $R C$ 滤波网络组成的有源滤波器。
+
+## 2. 低通有源滤波电路 (LPF)
+
+(1) 一阶低通有源滤波电路
+
+(1)电路组成。在图 2. 4-2 中, $R 、 C$ 为无源低通滤波环节,其后接一个同相比例放大电路。 (2)通带电压放大倍数 $A_{\mathrm{up}} \circ \omega=0$ (或 $f=0$ ) 时, $u_{0}$ 与 $u_{\mathrm{i}}$ 的比值, $A_{u \mathrm{p}}=1+\frac{R_{\mathrm{f}}}{R_{\mathrm{1}}}$ 。
+
+(3)传递函数。利用虚短和虚断, 该电路的传递函数为 $A(s)=\frac{U_{\mathrm{o}}(s)}{U_{\mathrm{i}}(s)}=\frac{A_{\mathrm{up}}}{1+s R C}$, 其中分母为 $s$ 的一次幂, 所以称为一阶低通有源滤波电路。
+
+(4)通带截止频率。将传递函数中的 $s$ 用实际频率 $\mathrm{j} \omega$ 代替, 则得频率特性为
+
+$$
+A(\mathrm{j} \omega)=\frac{U_{\mathrm{o}}(\mathrm{j} \omega)}{U_{\mathrm{i}}(\mathrm{j} \omega)}=\frac{A_{u \mathrm{p}}}{1+\mathrm{j}\left(\frac{\omega}{\omega_{n}}\right)}=\frac{A_{u \mathrm{p}}}{1+\mathrm{j}\left(\frac{f}{f_{n}}\right)}
+$$
+
+其中 $\omega_{n}=1 /(R C)$ 称为特征角频率, $f_{n}=1 /(2 \pi R C)$ 称为特征频率, 二者与 $R 、 C$ 的参数有关。 当 $\omega=\omega_{\mathrm{H}}=\omega_{n}$ 时, $|A|=\frac{A_{\text {up }}}{\sqrt{2}}=0.707 A_{\text {up }}$, 因此通带截止角频率 $\omega_{\mathrm{H}}=1 /(R C)$, 通带截止频率 $f_{\mathrm{H}}$ $=1 /(2 \pi R C)$ 。
+
+(5)主要性能。对数频率特性如图 2.4-3 所示。当 $\omega>\omega_{n}$ 时, 仅以 $-20 \mathrm{~dB} /$ 十倍频程衰减, 与理想情况相 差较大。
+
+## （2）二阶低通有源滤波电路
+
+在图 2.4-2 的基础上再加一级 $R C$ 低通滤波电路 就得到二阶低通有源滤波电路, 如图 2.4-4 所示。图 中第一级的 $C$ 没有直接接地, 而是接到输出端, 引进适 度的正反馈, 以使频率特性更接近理想特性。
+
+(1) 通带电压放大倍数 $A_{u \mathrm{p}}=1+\left(R_{\mathrm{f}} / R_{1}\right)$ 。
+
+(2)传递函数 $A(s)=\frac{U_{\mathrm{o}}(s)}{U_{\mathrm{i}}(s)}=\frac{A_{u \mathrm{p}}}{1-\left(3-A_{u \mathrm{p}}\right) s C R+(s C R)^{2}}=\frac{A_{u \mathrm{p}} \omega_{n}^{2}}{s^{2}+\frac{\omega_{n}}{Q} s+\omega_{n}^{2}}$
+
+传递函数的分母中有 $s^{2}$ 项, 可见该电路是一个二阶低通滤波电路。
+
+(3)通带截止频率 $f_{\mathrm{H}}=f_{n}=1 /(2 \pi R C)$ 。特征频率 $\omega_{n}=1 /(R C)$ 。
+
+(4)性能。当 $\omega>\omega_{n}$ 时, 以 $-40 \mathrm{~dB} /$ 十倍频程衰减, 较一阶电路加快一倍。品质因数 $Q=$ $1 /\left(3-A_{u \mathrm{p}}\right)$, 表明该电路只有 $A_{u \mathrm{p}}=1+\left(R_{\mathrm{f}} / R_{1}\right)<3$ 时, 才能稳定工作。当 $A_{u \mathrm{p}}=1+\left(R_{\mathrm{f}} / R_{1}\right)=$ 3 时, $Q \rightarrow \infty$, 电路产生自激振荡。
+
+## 3. 高通与低通滤波电路的对偶关系、特性及带通滤波电路的组成
+
+(1)一阶高通、低通滤波电路的对偶关系
+
+(1)电路结构的对偶性: 将低通滤波电路中的 $R 、 C$ 位置对换, 就组成了高通滤波电路。
+
+(2)传递函数的对偶性: 将低通滤波电路传递函数分母中的 $s R C$ 换成 $\frac{1}{s R C}$, 就可得到高通滤 波电路的传递函数 $A(s)_{\mathrm{H}}=\frac{U_{\mathrm{o}}(s)}{U_{\mathrm{i}}(s)}=\frac{A_{\mathrm{up}} 1}{1+\frac{1}{s R C}}=\frac{s R C}{1+s R C} A_{u \mathrm{p}}$
+
+(3)频率特性的对偶性:二者成“镜像”关系。
+
+(2) 二阶高通、低通滤波电路的对偶关系
+
+将二阶低通滤波电路中的 $R 、 C$ 互换就组成二阶高通滤波电路，如图 2.4-6 所示。
+
+(a)LPF
+
+(b)HPF
+
+（3）带通滤波电路的组成
+
+低通与高通滤波电路相串联可组成带通滤波电路 (BPF)，如图 2.4-7 所示。条件是低通 的截止角频率 $\omega_{\mathrm{H}}$ 大于高通的截止角频率 $\omega_{1 \mathrm{l}}$ ，通频带为 $\omega_{\mathrm{H}}-\omega_{\mathrm{I}}$ 。
+
+按该方法将二阶低通滤波电路的其中一级接成高通滤波电路, 就组成了二阶带通滤波电 路,如图 2. 4-8 所示。其中 $R_{3}$ 引进适度正反馈,仍然为改善频率特性。
+
+【例 2.4-1】选择正确的滤波器类型填空。
+
+(1) 有用信号频率为 $7 \mathrm{~Hz}$
+
+（2）有用信号频率低于 $500 \mathrm{~Hz}$
+
+(3) 希望抑制 $50 \mathrm{~Hz}$ 交流电源的干扰
+
+(4) 希望抑制 $1 \mathrm{kHz}$ 以下的信号
+(A) 低通
+(B) 高通
+(C) 带通
+(D) 带阻
+
+解: (1) (C), (2) (A), (3)(D), (4) (B)。
+
+【例 2.4-2】电路如图 2.4-9 所示, 已知 $R=10 \mathrm{k} \Omega, C=0.001 \mu \mathrm{F}, R_{\mathrm{f}}=20 \mathrm{k} \Omega$ 。设运放器 是理想的。试问:
+
+(1) 是什么类型的滤波器;
+
+(2) 写出推导传递函数;
+
+(3) 求通带截止频率。
+
+解: (1) 有源低通滤波电路。
+
+(2) 传递函数
+
+$$
+A(s)=\frac{U_{\mathrm{o}}(s)}{U_{\mathrm{i}}(s)}=\frac{1}{1+s R C}
+$$
+
+(3) 通带截止频率
+
+$$
+f_{\mathrm{H}}=\frac{1}{2 \pi R C} \approx 15.9 \mathrm{kHz}
+$$
+
+### 2 比较器
+
+## 1. 单门限电压比较器
+
+## （1）基本电路
+
+比较器是用来比较输入电压 $u_{\mathrm{i}}$ 与参考电压 $U_{\mathrm{REF}}$ 大小的电路。运放器工作在非线性区, 其 输出电压只有两个值:一个为正饱和值 $U_{\mathrm{oH}}$ (或正最大值 $+U_{\mathrm{om}}$ ), 一个为负饱和值 $U_{\mathrm{ol}}$ ( 或负最 大值 $\left.-U_{\mathrm{om}}\right)$ 。当 $u_{\mathrm{i}}$ 经过 $U_{\mathrm{REF}}$ 时, 输出电压就从一个饱和值跳到另一个饱和值。
+
+若 $U_{\mathrm{REF}}=0$, 则称为过零比较器。
+
+## (2) 阔值
+
+输出电压 $u_{0}$ 从一个极性的饱和值跳到另一个极性的饱和值所对应的输入电压 $u_{i}$ 的大小 称为门限电压或阈值电压 $U_{\mathrm{th}}$ 。
+
+【例 2. 4-3】电路如图 2. 4-12 所示, 运放器为理想的, $U_{\mathrm{oH}}=12 \mathrm{~V}, U_{\mathrm{ol}}=-12 \mathrm{~V}$, 输入电压 $u_{\mathrm{i}}=2 \sin \omega t \mathrm{~V}$ 。试对应画出 $u_{0}$ 的波形。
+
+解: 本电路是一个反相输入的过零比较器, $u_{0}$ 的波形如图 2.4-13 所示。
+
+## 2. 迟滞比较器
+
+$$
+U_{\mathrm{th}+}=\frac{R_{3}}{R_{2}+R_{3}} U_{\mathrm{REF}}+\frac{R_{2}}{R_{2}+R_{3}} U_{\mathrm{oH}}, U_{\mathrm{th}-}=\frac{R_{3}}{R_{2}+R_{3}} U_{\mathrm{REF}}+\frac{R_{2}}{R_{2}+R_{3}} U_{\mathrm{ol}}
+$$
+
+传输特性如图 2. 4-14(b) 所示。
+
+2.4.3 检波器和采样保持电路的工作原理
+
+## 1. 检波器工作原理
+
+检波器又称为线性整流电路, 可有效地克服二极管的门坎电压和非线性对检波性能的影 响。
+
+## 2. 采样保持电路的工作原理
+
+采样保持电路由模拟开关、存储电容和缓冲放大器三部分组成, 模拟开关采用场效应管, 缓冲放大器使用集成运放器, 电路如图 2.4-17 所示。工作过程分为采样和保持两个周期, 由 CTRL 端的控制信号控制。当控制信号为低电平时, $\mathrm{T}$ 导通, 开始采样, $C$ 上的电压跟踪输入信 号, 经由缓冲放大器 (电压跟随器) 到 $u_{0}$ 。所以输出信号跟踪输入信号的变化, 这是采样周期。 当控制信号为高电平时, $\mathrm{T}$ 截止, 存储电容 $C$ 将 $\mathrm{T}$ 截止时刻的输入信号保存下来, 并送到 $u_{\mathrm{o}}$, 为 保持周期,直到下一个采样开始。
+
+【例 2.4-4】电路图和输出波形、控制信号分别如图 2.4-17 和图 2.4-18 所示,试画出 $u_{\mathrm{o}}$ 的波形。
+
+解 : $\mathrm{S}$ 表示采样周期, $\mathrm{H}$ 表示保持周期。输出波形如图中“粗线”所示。
+
+## 5 信号发生电路
+
+### 1 产生正弦波自激振荡的条件
+
+## 1. 相位平衡条件
+
+$\varphi_{A}+\varphi_{F}=2 n \pi(n=0,1,2, \cdots)$, 相位平衡条件就是保证正反馈。
+
+## 2. 振幅平衡条件
+
+ 等幅振荡。$|\dot{A F}|=1$, 就是保证维持振荡。在满足相位平衡条件下, $|\dot{A F}|>1$ 是起振条件, $|\dot{A F}|=1$ 是
+
+#### RC 文氏电桥正弦波振荡电路
+
+## 1. 组成
+
+$R C$ 文氏电桥正弦波振荡电路由 $R C$ 串并联选频网络和电压放大电路两部分组成 (图 2.51)。 $R C$ 串并联网络既是选频网络, 又是正反馈网络。 $R_{\mathrm{f}}$ 和 $R_{\mathrm{l}}$ 构成负反馈, 用来改善输出波形 和稳定振荡幅度。
+
+## 2. $R C$ 串并联网络的选频特性
+
+$R C$ 串并联选频网络如图 2. 5-2 所示, 其选频特性为
+
+$$
+F_{u}=\frac{U_{\mathrm{f}}}{U_{\mathrm{o}}}=\frac{R / / \frac{1}{\mathrm{j} \omega C}}{R+\frac{1}{\mathrm{j} \omega C}+R / / \frac{1}{\mathrm{j} \omega C}}=\frac{1}{3+\mathrm{j}\left(\frac{\omega}{\omega_{0}}-\frac{\omega_{0}}{\omega}\right)}
+$$
+
+式中 $\omega_{0}=1 / R C$, 为选频网络的谐振角频率。当 $\omega=\omega_{0}=\frac{1}{R C}$ 或 $f=f_{0}=\frac{1}{2 \pi R C}$ 谐振时, $F_{u}$ 的最大 幅值 $\left|F_{u \text { max }}\right|=\frac{1}{3}, F_{u}$ 的相角 $\varphi_{F}=0^{\circ}$ 。
+
+## 3. 振荡频率
+
+$$
+\text { 振荡频率 } f_{0}=1 /(2 \pi R C)
+$$
+
+## 4. 相位和振幅平衡条件
+
+## (1) 相位条件
+
+放大器为同相放大电路, 相移 $\varphi_{A}=0^{\circ}$; 在振荡频率 $f_{0}=1 /(2 \pi R C)$ 时, 选频网络的相移 $\varphi_{F}$ $=0^{\circ}$, 满足相位条件。
+
+## (2) 振幅条件
+
+为能起振, 应满足起振条件 $F_{u \max } A_{u f}>1$, 即 $A_{u f}>3$ 又 $A_{u f} \approx 1+\left(R_{\mathrm{f}} / R_{\mathrm{f}}\right)$, 所以起振条件应满 足 $R_{\mathrm{r}}>2 R_{1}$ 。
+
+等幅振荡条件: $F_{u \text { max }} A_{\mathrm{uf}}=1, A_{\mathrm{uf}}=3, R_{\mathrm{f}}=2 R_{\mathrm{l}}$ 。
+
+## 5. 稳幅措施
+
+稳定输出电压幅度就是维持 $F_{u \max } A_{u \mathrm{f}}=1$ 。若起振后仍是 $F_{u \max } A_{u \mathrm{u}}>1$, 输出波形将产生失 真。稳幅的措施是在负反馈回路中采用非线性元件, 如用一个负温度系数的热敏电阻代替 $R_{\mathrm{f}}$, 或用正温度系数的热敏电阻代替 $R_{1}$ 。随着输出电压幅度的加大, 反馈量也随之加大, 使 $F_{u \max } A_{u f}$ 接近于 1 , 维持稳定的正弦输出。
+
+【例 2.5-1】电路如图 2.5-3 所示, 运放器为理想的, $R=1$ $\mathrm{k} \Omega, C=0.01 \mu \mathrm{F}$, 试求:
+
+(1) 振荡频率 $f_{0}$;
+
+(2) 若 $R_{1}=2 \mathrm{k} \Omega, R_{\mathrm{f}}$ 的最小值。
+
+解: (1) 振荡频率
+
+$$
+f_{0}=\frac{1}{2 \pi R C}=\frac{1}{6.28 \times 1 \times 10^{3} \times 0.01 \times 10^{-6}} \approx 15.9 \mathrm{kHz}
+$$
+
+(2) $R_{\mathrm{f}} \geqslant 2 R_{\mathrm{l}} \geqslant 2 \times 2 \mathrm{k} \Omega$, 取 $R_{\mathrm{f} \text { min }}=4.3 \mathrm{k} \Omega$ 。
+
+#### LC 正弦波振荡器
+
+## 1. 变压器反馈式
+
+电路如图 2.5-4 所示, $L_{1} C_{1}$ 并联电路为选频网络, 反聩由变压器绕组 $L_{2}$ 实现。
+
+判断相位平衡条件: $L_{2}$ 一端接地, 另一端接输入 (基极) 为反馈元件。谐振时 $L_{1} C_{1}$ 并联回 路为纯电阻性质, 用瞬时极性法判断可知 $L_{2}$ 引人的是正反馈, 满足相位平衡条件。
+
+## 2. 电感三点式 (电感反馈式)
+
+电路如图 2.5-5 所示, $L_{2}$ 接在基极和发射极之间 (交流通路), 所以是反馈元件。 $L C$ 并联 谐振回路谐振时近似为纯电阻, 用瞬时极性法判断可知是正反馈, 满足相位平衡条件。
+
+## 3. 电容三点式 (电容反馈式)
+
+电路如图 2.5-6 所示, $C_{1} 、 C_{2}$ 和 $L$ 组成谐振回路, 反馈元件是 $C_{2}$, 引人的是正反馈。
+
+【例 2.5-2】用相位平衡条件判断图 2.5-7 中哪个可能产生正弦波振荡。
+
+解: 图 (a) 满足相位平衡条件, 可能振荡, 为电容三点式电路。图 (b) 不满足相位平衡条 件, 不可能振荡。图 (c) 满足相位平衡条件, 可能振荡, 为电感二点式电路。
+
+## 5 .4 石英晶体振荡电路
+
+## 1. 石英晶体的等效电路与电抗特性
+
+串联谐振频率 $f_{\mathrm{s}}=\frac{1}{2 \pi \sqrt{L C}}$ 2 模拟电子技术
+
+并联谐振频率 $f_{\mathrm{p}}=\frac{1}{2 \pi \sqrt{L \frac{C C_{0}}{C+C_{0}}}}=f_{\mathrm{s}} \sqrt{1+\frac{C}{C_{0}}}$
+
+因为 $C_{0}>C$, 所以 $f_{\mathrm{s}}$ 与 $f_{\mathrm{p}}$ 很接近。
+
+2. 石英晶体振荡电路
+
+(1) 并联型撗荡电路 (图 2.5-9)
+
+石英晶体谐振频率 $f_{\mathrm{s}}<f_{0}<f_{\mathrm{p}}$, 石英晶体为大电感, 组成电容三点式振荡电路。
+
+(2) 串联型振荡电路 (图 2.5-10)
+
+石英晶体工作在 $f=f_{\mathrm{s}}$ 处, 振荡频率 $f_{0}=f_{\mathrm{n}}$ 时, 晶体阻抗最小, 并且为纯电阻性质, 相移为 零, 此时电路的正反馈最强。
+
+【例 2.5-3】图 2.5-11 是一个正弦波振荡器, 试问石英晶体 的工作频率为
+( A) $f_{\mathrm{a}}$
+(B) $f_{\mathrm{r}}$
+(C) $<f$ s
+(D) $>f_{\mathrm{p}}$
+
+解: 答案为 $(A)$ 。晶体串联谐振时, 呈纯电阻性, 并且阻值极 低, 没有相移, 所以正反馈最强。故石英晶体的工作频率应为串 联谐振频率 $f_{\mathrm{n}}$ 。
+
+### 5 各种正弦波振荡器的使用场合
+
+各种正弦波振荡器的使用场合主要根据工.作频率范围、波形
+
+好坏和稳定性选择。
+
+| 振荡电路类型 | 频率范围 | 频率稳定度 | 波形质量 | 频率调节 |
+| :---: | :---: | :---: | :---: | :---: |
+| $R C$ 文氏电桥 | 几 $\mathrm{Hz} \sim$ 几百 $\mathrm{kHz}$ | $10^{-2} \sim 10^{-4}$ | 好 | 方便,范围宽 |
+| 变压器反馈式 | 几百 $\mathrm{kHz} \sim$ 几 $\mathrm{MHz}$ | $10^{-2}-10^{-4}$ | 差 | 方便, 范周宽 |
+| 电感三点式 | 几百 $\mathrm{kHz} \sim$ 十几 $\mathrm{MHz}$ | $10^{-2} \sim 10^{-4}$ | 差 | 方便,范围宽 |
+| 电容三点式 | 几 $\mathrm{MHz}_{2} \sim$ 几十 $\mathrm{MHz}$ | $10^{-2}-10^{-4}$ | 较好 | 不方便，范围窄 |
+| 石英晶体 | 几 $\mathrm{kHz} \sim$ 十几 $\mathrm{MHz}$ | $10^{-5} \sim 10^{-8}$ | 好 | 微调 |
+
+2.5.6 方波、三角波、锯齿波发生电路
+
+## 1. 方波发生器
+
+方波发生器如图 2.5-12(a) 所示, 由迟滞比较器和 $R C$ 积分电路组成。阈值为
+
+$$
+U_{\mathrm{th}+}=+\frac{R_{2}}{R_{1}+R_{2}} U_{\mathrm{z}}, U_{\mathrm{th}-}=-\frac{R_{2}}{R_{1}+R_{2}} U_{\mathrm{z}}
+$$
+
+当 $C$ 充电到 $U_{\mathrm{th}}+$ 时, 输出跳变为 $-U_{\mathrm{z}}$ 。而后 $C$ 反向充电, 到 $U_{\mathrm{th}-}$ 时, 输出又跳变为 $+U_{\mathrm{z}}$ 。 如此反复输出电压 $u_{\mathrm{a}}$ 为方波 (图 $\left.(\mathrm{b})\right) 。 u_{C}$ 为 $C$ 的充放电波形。
+
+振荡周期
+
+$$
+T=2 R_{\mathrm{r}} C \ln \left(1+\frac{2 R_{2}}{R_{1}}\right)
+$$
+
+【例 2.5-4】在图 2.5-12(a)中,已知 $R_{\mathrm{f}}=51 \mathrm{k} \Omega, R_{1}=500 \mathrm{k} \Omega, R_{2}=1 \mathrm{M} \Omega, C=0.01 \mu \mathrm{F}, U_{\mathrm{z}}$ $=6 \mathrm{~V}$ 。设运算放大器为理想的, 试求:
+(1) 画出 $u_{\mathrm{o}}$ 和 $u_{c}$ 的波形;
+(2) 方波的周期 $T$ 。
+解: (1) $u_{\mathrm{o}}$ 和 $u_{c}$ 的波形如图 2.5-13 所示。
+(2) 方波的周期
+
+$$
+T=2 R_{\mathrm{r}} C \ln \left(1+\frac{2 R_{2}}{R_{1}}\right)=1.02 \times 10^{-3} \ln 5=1.64 \mathrm{~ms}
+$$
+
+## 2. 三角波发生器
+
+振荡周期
+
+$$
+T=\frac{4 R C R_{2}}{R_{1}}
+$$
+
+## 3. 锯齿波发生器
+
+## 迟滞比较器的阈值
+
+振荡周期
+
+$$
+U_{\mathrm{T}_{+}}=\left(R_{1} / R_{2}\right) U_{\mathrm{Z}}, U_{\mathrm{T}_{-}}=-\left(R_{\mathrm{l}} / R_{2}\right) U_{\mathrm{Z}}
+$$
+
+层洗周期
+
+$$
+T=T_{1}+T_{2}=\frac{2 R_{1} R_{6} C\left(R_{6}+2 R_{5}\right)}{R_{2}\left(R_{5}+R_{6}\right)}
+$$
+
+### 7 压控振荡器
+
+振荡频率受外加电压控制的振荡器称为压控振荡器。
+
+## 1. 输入、输出关系
+
+## 2. 电路组成及工作原理
+
+$\mathrm{A}_{3}$ 与 $\mathrm{A}_{4}$ 电路结构相同, 又相互串联, 所以 $u_{\mathrm{os}}$ 和 $u_{\mathrm{o} 4}$ 大小相等, 方向相反。迟滞比较器 $\mathrm{A}_{2}$ 的上、下门限也是大小相等,方向相反。 $u_{01}$ 为三角波, $u_{\mathrm{o} 2}$ 为方波。
+
+## 3. 振荡频率
+
+$$
+f_{0}=\frac{R_{1} U_{\mathrm{i}}}{4 R C R_{2} U_{2}}
+$$
+
+## 6 功率放大电路
+
+### 1 功率放大电路的特点及互补推挽功率放大电路
+
+## 1. 特点
+
+(1)输出功率尽可能大。
+
+(2)效率要高。 (3)尽可能减小非线性失真。
+
+(4)要考虑散热和过载保护。
+
+## 2. 乙类双电源互补推挽功率放大电路
+
+(1) 工作原理
+
+(1)静态。 $u_{\mathrm{i}}=0$ 时, 两个管子均不导通, $R_{\mathrm{L}}$.上无电流, $u_{\mathrm{o}}=\mathbf{0}$, 电路无 静态功耗。
+
+(2)动态。在正弦信号 $u_{\mathrm{i}}$ 的正半周, $\mathrm{T}_{1}$ 导通, $\mathrm{T}_{2}$ 截止, $\mathrm{T}_{1}$ 和 $R_{\mathrm{t}}$.工作在
+
+(2) 计算公式
+
+(1) 输出功率 $P_{0}$ : 输出功率 $P_{0}=$ 输出电压有效值 $U_{0} \times$ 输出电流有效值 $I_{0}$ 。
+
+$$
+P_{\mathrm{o}}=U_{\mathrm{o}} I_{\mathrm{o}}=\frac{U_{\mathrm{om}}}{\sqrt{2}} \times \frac{U_{\mathrm{om}}}{\sqrt{2} R_{L}}=\frac{1}{2} \times \frac{U_{\mathrm{om}}^{2}}{R_{\mathrm{L}}}\left(U_{\mathrm{om}} \text { 为输出电压峰值 }\right)
+$$
+
+最大输出功率 $P_{\mathrm{om}}$ : 当 $u_{\mathrm{i}}$ 足够大时, $U_{\mathrm{om}}=U_{\mathrm{cC}}-U_{\mathrm{cES}} \approx U_{\mathrm{cC}}$, 则
+
+(2) 两管总管耗
+
+$$
+P_{\mathrm{om}}=\frac{1}{2} \times \frac{\left(U_{\mathrm{CC}}-U_{\mathrm{CES}}\right)^{2}}{R_{\mathrm{L}}} \approx \frac{1}{2} \times \frac{U_{\mathrm{CC}}^{2}}{R_{\mathrm{L}}}
+$$
+
+$$
+P_{\mathrm{T}}=P_{\mathrm{T} 1}+P_{\mathrm{T} 2}=\frac{2}{R_{\mathrm{l}}}\left(\frac{U_{\mathrm{cc}} U_{\mathrm{om}}}{\pi}-\frac{U_{\mathrm{om}}^{2}}{4}\right)
+$$
+
+每管管耗
+
+$$
+P_{\mathrm{T} 1}=P_{\mathrm{T} 2}=\frac{1}{R_{\mathrm{L}}}\left(\frac{U_{\mathrm{cc}} U_{\mathrm{om}}}{\pi}-\frac{U_{\mathrm{om}}^{2}}{4}\right)
+$$
+
+当 $U_{\mathrm{om}}=\frac{2}{\pi} U_{\mathrm{cc}}$ 时,管耗最大。最大管耗
+
+$$
+P_{\mathrm{Tl} m}=P_{\mathrm{T} 2 \mathrm{~m}}=\frac{1}{\pi^{2}} \times \frac{U_{\mathrm{cc}}^{2}}{R_{\mathrm{l}}}
+$$
+
+(3) 单管最大管耗 $P_{\mathrm{T} 1 \mathrm{~m}}$ 与最大输出功率 $P_{\mathrm{om}}$ 之间的关系:
+
+$$
+P_{\mathrm{Tl} \mathrm{m}} \approx 0.2 P_{\mathrm{om}}
+$$
+
+(4) 直流电源供给的功率
+
+$$
+P_{u}=P_{\mathrm{o}}+P_{\mathrm{T}}=\frac{2}{\pi} \times \frac{U_{\mathrm{cC}} U_{\mathrm{om}}}{R_{\mathrm{l}}}
+$$
+
+电源供给的最大功率
+
+$$
+P_{U \mathrm{~m}}=\frac{2}{\pi} \times \frac{U_{\mathrm{CC}}^{2}}{R_{\mathrm{l}}}
+$$
+
+(5) 能量转换效率
+
+$$
+\eta=\frac{P_{\mathrm{o}}}{P_{v}}=\frac{\pi}{4} \times \frac{U_{\mathrm{om}}}{U_{\mathrm{cc}}}
+$$
+
+最大效率
+
+$$
+\eta_{\mathrm{m}}=\frac{\pi}{4} \times \frac{U_{\mathrm{cC}}}{U_{\mathrm{cC}}}=\frac{\pi}{4} \approx 78.5 \%
+$$
+
+注意:
+
+(1) 以上计算公式对所有互补推挽功率放大电路均适用。当单电源供电时, 只将公式中 $U_{\mathrm{cc}}$ 换成 $\frac{1}{2} U_{\mathrm{cc}}$ 即可。
+
+(2) $P_{\mathrm{o}}$ 与 $P_{\mathrm{om}}, P_{\mathrm{T} 1}$ 与 $P_{\mathrm{T} 1 \mathrm{~m}}, P_{U}$ 与 $P_{U_{\mathrm{m}}}, \eta$ 与 $\eta_{\mathrm{m}}$ 之间的差别是: 前者用的输出电压的幅值 $U_{\mathrm{om}}<$ $U_{\mathrm{cC}}$, 后者用的是最大不失真的输出电压幅值 $U_{\mathrm{om}}=U_{\mathrm{cC}}-U_{\mathrm{cES}} \approx U_{\mathrm{cC}}$ 。
+
+【例 2.6-1】如图 2.6-1 所示的互补推挽功率放大电路中, 输入为正弦信号, 功放管的饱 和压降忽略不计,在输出不失真情况下,最大管耗在 出现。
+
+(A) 输出功率约为最大不失真输出功率的 0.4 倍时
+
+(B) 输出功率为最大时
+
+(C) 效率最大时
+
+(D) 输出幅度为 $U_{\mathrm{CC}}$ 时
+
+解:答案为 $(\mathrm{A})$ 。
+
+因为 $P_{\mathrm{o}}=\frac{U_{\mathrm{om}}^{2}}{2 R_{\mathrm{t}}}, P_{\mathrm{om}}=\frac{U_{\mathrm{CC}}^{2}}{2 R_{\mathrm{t}}}$, 又当 $U_{\mathrm{om}}=\frac{2 U_{\mathrm{CC}}}{\pi}$ 时, 管耗最大。所以
+
+$$
+\frac{P_{\mathrm{o}}}{P_{\mathrm{om}}}=\frac{U_{\mathrm{om}}^{2}}{U_{\mathrm{cC}}^{2}}=\frac{\left(\frac{2}{\pi} U_{\mathrm{cC}}\right)^{2}}{U_{\mathrm{cC}}^{2}}=\left(\frac{2}{\pi}\right)^{2} \approx 0.4
+$$
+
+## 3. 甲乙类互补推换功率放大电路
+
+(1) 双电源供电
+
+对于图 2.6-1 所示的乙类互补推挽功率放大电路, 由于晶体管输入特性的非线性,有门坎 电压 $U_{\mathrm{th}} \approx 0.6 \mathrm{~V}$ (硅管) 或 $0.2 \mathrm{~V}$ (锗管)。当 $u_{\mathrm{i}}<U_{\mathrm{th}}$ 时, 晶体管不导通。实际输出波形如图 2. 6-2 所示, 在输入波形穿越零点附近产生了失真, 这种失真称为交越失真。解决的办法是给 两个功放管加上偏压, 使它们处于微导通状态, 即使功放管处于甲乙类工作状态。
+
+单电源供电的互补对称电路又称为 OTL( Output Transformerless, 无输出变压器) 电路。图 2. 6-4 只有 $+U_{\mathrm{cc}}$ 供电, 为单电源供电方式。输出端的电容 $C$ 起着 $-U_{\mathrm{cc}}$ 的作用, 静态时, 其上 电压 $U_{c}=\frac{1}{2} U_{\mathrm{cc}}$ 。所以单电源电路的输出端必须接人大电容 $C$, 其后再接负载。
+
+单电源供电的电路, 功放管的工作电压不是 $U_{\mathrm{cc}}$ 而是 $U_{\mathrm{cc}} / 2$, 输出电压的最大值 $U_{\mathrm{om}}$ 也只能 是 $U_{\mathrm{cc}} / 2$, 所以在乙类双电源电路中 $P_{\mathrm{o}} 、 P_{\mathrm{T}} 、 P_{U} 、 \eta$ 等, 只要用 $U_{\mathrm{cC}} / 2$ 替换公式中的 $U_{\mathrm{cC}}$ 即可用于 单电源供电的电路。
+
+【例 2.6-2】如图 2.6-5 所示单电源甲乙类互补推挽功率放大电路。已知 $U_{\mathrm{cc}}=24 \mathrm{~V}, R_{\mathrm{I}}$. $=16 \Omega, C_{2}$ 足够大。试问:
+
+(1) 静态时 $C_{2}$ 上的电压应为多少? 调整哪个电阻能满足此要求?
+
+(2) 如果输出出现交越失真,应调整哪个电阻,如何调整?
+
+(3) 设功放管的饱和压降 $U_{\mathrm{CES}}=1 \mathrm{~V}$, 求负载 $R_{\mathrm{I}}$, 上得到的最大功率 $P_{\mathrm{om}}$ 。
+
+解: 该电路是一个单电源互补推挽功率放大电路, 计算公式中, 要将双电源电路公式中的 $U_{\mathrm{cc}}$ 用 $U_{\mathrm{cc}} / 2$ 代人。
+
+（2）增大电阻 $R_{\text {。 }}$
+
+(3) $P_{\mathrm{om}}=\frac{1}{2} \times \frac{\left(\frac{U_{\mathrm{cC}}}{2}-U_{\mathrm{CES}}\right)^{2}}{R_{\mathrm{l}}}=\frac{1}{2} \times \frac{121}{16} \approx 3.78 \mathrm{~W}$
+
+2.6.2 集成功率放大电路的内部组成
+
+## 1. 主要组成部分
+
+(1) 差动输入级
+
+由 $\mathrm{T}_{1} 、 \mathrm{~T}_{2}$ 组成长尾式 (即带 $R_{\mathrm{e}}$ 的) 差动放大电路, 1 端为同相输入端, 2 端为反相输入端, 3 端为输出端。
+
+(2) 中间电压放大级
+
+由 $\mathrm{T}_{4} 、 \mathrm{~T}_{5}$ 组成。 $\mathrm{T}_{4}$ 的射极和基极分别接在 $\mathrm{T}_{1} 、 \mathrm{~T}_{2}$ 的集电极, 使差动放大电路双端输出, 比
+
+单端输出的电压放大倍数增加一倍。 $\mathrm{T}_{4}$ 又把差动放大电路的双端输出转换成单端输出, 从集 电极送给 $T_{5} 。 T_{5}$ 是输出级的前置放大级, 驱动推挽输出级。 $T_{3}$ 接成二极管, 为 $T_{4}$ 提供偏置电 压。若无 $T_{3}$, 因为静态时 $T_{1} 、 T_{2}$ 的集电极电位相等, $U_{\mathrm{BF} A}=0, T_{4}$ 不能正常工作。
+
+(3) 互补推挽功率放大输出级
+
+由 $T_{9} \sim T_{13}$ 组成。 $T_{9} 、 T_{10}$ 组成的复合管等效为 $N P N$ 管, $T_{11} \sim T_{13}$ 组成的复合管等效为 PNP 管。 $T_{6} 、 T_{7} 、 T_{8}$ 三个发射结的电压供给 $T_{9} 、 T_{10} 、 T_{11}$ 三个发射结的偏置电压, 使它们处于微导通状 态,用来克服交越失真。
+
+## 2. 稳定静态工作点的措施
+
+从 $\mathrm{K}$ 点通过 $R_{6}$ 到 $\mathrm{T}_{2}$ 的基极引入电压负反馈, 以稳定静态工作点。调整 $R_{6}$ 可使 $\mathrm{K}$ 点电位 $U_{\mathrm{K}}=\frac{1}{2} U_{\mathrm{cc}}$ 。
+
+### 3 自举电路及功率放大管
+
+## 1. 自举电路一一提高正向输出电压幅度
+
+加人 $R_{2} 、 C_{2}$ 自举环节后, 静态时, $C_{2}$ 上的电压被充电到 $U_{C}=U_{\mathrm{CC}} / 2$ 。由于 $C_{2}$ 数值较大, 动 态时可认为 $U_{C}=U_{\mathrm{aC}} / 2$ 不变, 所以 $\mathrm{A}$ 点电位 $U_{\mathrm{A}}$ 始终比 $\mathrm{K}$ 点高。这样, 在 $u_{i}$ 为负时, $\mathrm{T}_{1}$ 导通, $U_{\mathrm{k}}$ 在 $U_{\mathrm{cc}} / 2$ 的基础上升高。于是 $U_{\mathrm{A}}>U_{\mathrm{cc}}$, 保证 $\mathrm{T}$ 能达到饱和状态, 提高正向输出电压幅度, 也 即提高了最大不失真输出电压的幅度。
+
+## 2. 功率放大管
+
+(1) 工作状态
+
+(1)甲类。如图 2.6-8 所示, 静态工作点 $Q_{1}$ 位于负载线中间附近。功放管在一个周期内均 有电流流过。优点是不失真, 缺点是静态损耗大, 效率低。主要用于电压放大。
+
+(2)甲乙类。静态工作点 $Q_{2}$ 靠近横轴。 $\pi$ <功放管导通角度 $<2 \pi$ 。
+
+(3)乙类。静态...作点 $Q_{3}$ 在横轴上。功放管只在半个周期导电, $0^{\circ}<$ 功放管导通角度 $<\pi$ 。 甲乙类和乙类工作状态用于功率放大电路。静态损耗小,效率高, 但失真严重。 甲类、乙类、甲乙类功率放大电路就是根据功率放大管的工作状态划分的。
+
+(2) 功率放大管的选择
+
+(1) 最大允许管耗 $P_{\mathrm{CM}}>P_{\mathrm{Ti}} \approx 0.2 P_{\mathrm{om}}$ 。
+
+(2) 集电极最大允许电流 $I_{\mathrm{CM}}>U_{\mathrm{CC}} / R_{\mathrm{1}, \text { 。 }}$
+
+(3) 反向击穿电压 $U_{(\mathrm{BR}) \mathrm{CEO}}>2 U_{\mathrm{CC}}$ (双电源) 或 $U_{(\mathrm{BR}) \mathrm{CEO}}>U_{\mathrm{CC}}$ (单电源)。
+
+【例 2.6-3】电路如图 2.6-1 所示, 已知输入电压 $u_{\mathrm{i}}$ 为正弦信号, $U_{\mathrm{CC}}=20 \mathrm{~V}, R_{\mathrm{L}}=8 \Omega$, 忽 略功放管的饱和压降 $U_{\text {CES }}$, 要求最大输出功率 $P_{\mathrm{om}}=25 \mathrm{~W}$ 。试计算所选功放管的集电极最大 允许功率损耗 $P_{C M}$ 、集电极最大允许电流 $I_{\mathrm{CM}}$ 和反向击穿电压 $U_{(\mathrm{RR}) \mathrm{CE} O}$ 的最小值。
+
+解: 每个管子的集电极最大允许功率损耗
+
+$$
+P_{\mathrm{cm}} \geqslant 0.2 P_{\mathrm{om}}=0.2 \times 25=5 \mathrm{~W}
+$$
+
+集电极最大允许电流
+
+$$
+I_{\mathrm{CM}} \geqslant U_{\mathrm{CC}} / R_{\mathrm{I} .}=20 / 8=2.5 \mathrm{~A}
+$$
+
+反向击穿电压
+
+$$
+U_{(\text {BR }) \text { CE } 0} \geqslant 2 U_{\text {CC }} \geqslant 40 \mathrm{~V}
+$$
+
+(3) 功率放大管的发热
+
+功率放大管在把直流电源的功率转换为负载上的输出功率过程中,管压降和流过集电极 的电流会造成集电极的功率损耗,使管子的结温升高。当达到结温后,会使管子损坏。为达到 最大允许管耗 $P_{\mathrm{CM}}$, 应该加装手册上推荐尺寸的散热器。如功放管 $3 \mathrm{AD} 6$, 加上 $120 \mathrm{~mm} \times 120$ $\mathrm{mm} \times 4 \mathrm{~mm}$ 的散热片后,允许的 $P_{\mathrm{CM}}=10 \mathrm{~W}$; 而不加散热装置时, $P_{\mathrm{CM}}$ 仅为 $1 \mathrm{~W}$ 。手册上给出的 $P_{C M}$ 是在环境温度为 $25^{\circ} \mathrm{C}$, 并加装规定尺寸的散热器后测得的。
+
+## 7 直流稳压电源
+
+## 7 .1 桥式整流及滤波电路
+
+## 1. 桥式整流电路
+
+(1) 工作原理
+
+$u_{2}$ 的正半周, $\mathrm{D}_{2} 、 \mathrm{D}_{4}$ 截止, $\mathrm{D}_{1} 、 \mathrm{D}_{3}$ 导通。 $u_{2}$ 的负半周, $D_{1} 、 D_{3}$ 截止, $D_{2} 、 D_{4}$ 导通。
+
+正、负半周流过 $R_{\mathrm{I}}$ 的电流均为图中 $i_{\mathrm{o}}$ 的方向, 在负载 上得到了方向不变的脉动电流和电压。该电流和电压含
+
+有直流分量和较大的交流分量。
+
+(2) 参数计算
+
+(1) 输出直流电压 $U_{0}=0.9 U_{2}, U_{2}$ 为变压器次级电压有效值。
+
+(2) 输出直流电流 $I_{\mathrm{o}}=\left(0.9 U_{2}\right) / R_{\mathrm{I}, 0}$
+
+(3) 脉动系数 $S \approx 0.67$ 。
+
+(4) 二极管的平均电流 $I_{\mathrm{D}}=\frac{I_{\mathrm{o}}}{2}=\frac{0.9 U_{2}}{2 R_{\mathrm{1}}}=\frac{0.45 U_{2}}{R_{1}}$ 。
+
+(5) 二极管承受的最大反压 $U_{\mathrm{RM}}=\sqrt{2} U_{2}$ 。
+
+(6) 变压器副边电流有效值 $I_{2}=1.11 I_{\mathrm{o}}$ 。
+
+## 2. 电容滤波电路 (图 2.7-2)
+
+(1) 参数计算
+
+(1) 滤波电容的容量 $R_{\mathrm{I}} C \geqslant(3 \sim 5) \frac{T}{2}, T$ 为 $u_{2}$ 的周期。
+
+(2) $U_{\mathrm{o}} \approx 1.2 U_{2}$ (在满足上式所选电容容量下)。
+
+(3) 输出直流电流 $I_{\mathrm{o}}=\frac{U_{\mathrm{o}}}{R_{\mathrm{L}}}=1.2 \frac{U_{2}}{R_{\mathrm{L}}}$ 。
+
+时, 峰值增大, 故整流二极管工作电流取无电容滤波时的 $2 \sim 3$ 倍。
+
+(5) 二极管承受的最大反压 $U_{\mathrm{RM}}=\sqrt{2} U_{2}$ 。
+
+(6) 变压器副边电流有效值 $I_{2}=(1.5 \sim 2) I_{0}$ 。
+
+(2) 外特性
+
+输出电压与输出电流的关系曲线称为电容滤波电路的外特性。图 2.7-3 中的曲线 2 为无 电容滤波时的外特性。曲线 1 为有电容滤波时的外特性。从图可见,空载时 (即 $R_{\mathrm{L}}=\infty$ ), $U_{\mathrm{o}}$ $=\sqrt{2} U_{2} \approx 1.4 U_{2}$, 但随着 $I_{\mathrm{o}}$ 的增加, 下降很快, 所以电容滤波电路适用于负载电流变化不大的 场合。
+
+【例 2.7-1】电路如图 2.7-4 所示, $u_{1}$ 的频率 $f=50 \mathrm{~Hz}, U_{\mathrm{o}}=30 \mathrm{~V}, R_{\mathrm{L}}=200 \Omega$ 。试求: (1) 变压器副边电压 $u_{2}$ 的有效值 $U_{2} ;(2)$ 滤波电容 $C$ 的容量及承受的最高反向电压 $U_{\mathrm{CM}}$; (3) 流过二极管的平均电流 $I_{\mathrm{D}}$ 和承受的最高反向电压 $U_{\mathrm{RM}}$ 。
+
+解: (1) 变压器副边电压有效值
+
+$$
+U_{2}=\frac{U_{0}}{1.2}=\frac{30}{1.2}=25 \mathrm{~V}
+$$
+
+(2) $R_{1} C \geqslant(3 \sim 5) \frac{T}{2}=4 \frac{T}{2}=2 T=2 \times \frac{1}{50}=0.04 \mathrm{~s}$
+
+$$
+C=\frac{0.04}{R_{L}}=\frac{0.04}{200}=200 \mu \mathrm{F}
+$$
+
+$C$ 承受的最高反向电压
+
+$$
+U_{\text {CM }}=\sqrt{2} U_{2} \approx 35 \mathrm{~V}
+$$
+
+（3）二极管的平均电流
+
+$$
+I_{\mathrm{D}}=\frac{1}{2} \times \frac{U_{\mathrm{o}}}{R_{\mathrm{r}}}=\frac{30}{2 \times 200}=0.075 \mathrm{~A}=75 \mathrm{~mA}
+$$
+
+承受的最高反向电压
+
+$$
+U_{\mathrm{RM}}=\sqrt{2} U_{2}=\sqrt{2} \times 25 \approx 35 \mathrm{~V}
+$$
+
+### 2 串联型稳压电路
+
+## 1. 工作原理
+
+## 2. 电压调节范围
+
+该电路引人了深度负反馈, $\mathrm{T}$ 是射极跟随器接法。根据虚短有
+
+$$
+U_{\mathrm{N}}=U_{\mathrm{P}}=U_{\mathrm{REF}} \text {, 又 } U_{\mathrm{N}}=\frac{R_{2}^{\prime}}{R_{1}^{\prime}+R_{2}^{\prime}} U_{\mathrm{o}}
+$$
+
+所以
+
+$$
+U_{\mathrm{u}}=\left(\frac{R_{1}^{\prime}+R_{2}^{\prime}}{R_{2}^{\prime}}\right) U_{\mathrm{REF}}
+$$
+
+当 $R_{\mathrm{p}}$ 的滑动头调至最上端时, 输出电压最小: $U_{\mathrm{o} \text { min }}=U_{\mathrm{REF}}\left(\frac{R_{1}+R_{\mathrm{p}}+R_{2}}{R_{\mathrm{p}}+R_{2}}\right)$ 。
+
+当 $R_{\mathrm{p}}$ 的滑动头调至最下端时, 输出电压最大: $U_{\mathrm{o} \max }=U_{\mathrm{REF}}\left(\frac{R_{1}+R_{\mathrm{p}}+R_{2}}{R_{2}}\right)$ 。
+
+电压调节范围为: $U_{\mathrm{REF}}\left(\frac{R_{1}+R_{\mathrm{p}}+R_{2}}{R_{\mathrm{p}}+R_{2}}\right)<U_{\mathrm{o}}<U_{\mathrm{REF}}\left(\frac{R_{1}+R_{\mathrm{p}}+R_{2}}{R_{2}}\right)$ 。
+
+## 3. 参数选择
+
+用例题说明参数的选择。
+
+【例 2.7-2】电路如图 2.7-6 所示, 已知运放器是理想的, 其最大输出电流为 $1 \mathrm{~mA} ; U_{\mathrm{REF}}$ $=6 \mathrm{~V}, R_{\mathrm{t}}=R_{2}=R_{\mathrm{p}}=2 \mathrm{k} \Omega, \beta_{1}=20, \beta_{2}=50$ 。试求:
+
+(1) 最大输出电流 $I_{\text {omax }}$;
+
+(2) 当 $U_{i}=24 \mathrm{~V}$ 时, $T_{1}$ 的最大集电极功耗 $P_{C_{\text {max }}}$;
+
+(3) 若 $\mathrm{T}_{1}$ 的 $U_{\mathrm{CEl}} \geqslant 3 \mathrm{~V}, U_{\mathrm{i}}$ 应至少多大?
+
+解: 应首先求出 $U_{\mathrm{o}}$ 的调节范围。
+
+$U_{\text {amax }}=\left(\frac{R_{1}+R_{\mathrm{p}}+R_{2}}{R_{2}}\right) \times U_{\mathrm{REF}}=\left(\frac{2+2+2}{2}\right) \times 6=18 \mathrm{~V}$
+
+$U_{\text {omin }}=\left(\frac{R_{1}+R_{\mathrm{p}}+R_{2}}{R_{2}+R_{\mathrm{p}}}\right) \times U_{\mathrm{REF}}=\left(\frac{2+2+2}{2+2}\right) \times 6=9 \mathrm{~V}$
+
+(1) $I_{\text {vmax }}=1 \times \beta_{1} \beta_{2}=1 \times 20 \times 50=1 \mathrm{~A}$
+
+(2) $P_{\text {Cmax }}=\left(U_{\mathrm{i}}-U_{\text {omin }}\right) I_{\text {omax }}=(24-9) \times 1=15 \mathrm{~W}$
+
+(3) $U_{\mathrm{i}} \geqslant U_{\text {omax }}+U_{\mathrm{CEI} \min }=18+3=21 \mathrm{~V}$
+
+## 7 .3 三端集成稳压器
+
+## 1. 输出电压固定的三端集成稳压器
+
+（1）电路结构及工作原理
+
+（2）应用电路
+
+常用的固定电压输出式三端集成稳压器或三端稳压块有 $\mathrm{W} 78 \times \times$ (正电压输出) 和 W79 $\times \times$ (负电压输出) 两个系列。额定输出电压有 $5 \mathrm{~V} 、 6 \mathrm{~V} 、 9 \mathrm{~V} 、 12 \mathrm{~V} 、 15 \mathrm{~V} 、 18 \mathrm{~V}$ 和 $24 \mathrm{~V}$ 七个等 级。型号中后两位数字表示额定输出电压值, 如 7805 表示输出电压为 $+5 \mathrm{~V}$ 。
+
+(1) 基本应用电路, 如图 2.7-8 和图 2.7-9 所示。要求 $U_{\mathrm{i}}-U_{\mathrm{a}} \geqslant 3 \mathrm{~V}, C_{1}$ 的作用是抑制自激 振荡, $C_{2}$ 用来消弱高频噪声。
+
+(2) 提高输出电压的电路。图 2.7-10 是提高输出电压的电路。 $U_{\mathrm{oW}}$ 是稳压块的额定输出 电压, $I_{\mathrm{w}}$ 是稳压块的静态电流。 $I_{R 1}=U_{\mathrm{ow}} / R_{1}, I_{R 1} \gg I_{\mathrm{w}}$, 所以有
+
+$$
+U_{\mathrm{o}}=I_{R 1} R_{1}+\left(I_{\mathrm{w}}+I_{R 1}\right) R_{2}=\left(1+\frac{R_{2}}{R_{1}}\right) U_{\mathrm{ow}}+I_{\mathrm{w}} R_{2} \approx\left(1+\frac{R_{2}}{R_{1}}\right) U_{\mathrm{ow}}
+$$
+
+可见,改变 $R_{1}$ 和 $R_{2}$ 的数值, 可以提高输出电压。
+
+【例 2.7-3】电路如图 2.7-10 所示, 静态电流 $I_{\mathrm{W}}=10 \mathrm{~mA}, R_{1}=150 \Omega, R_{2}=90 \Omega$, 求 $U_{\mathrm{o}}$ 为 多少?
+
+解: $U_{\mathrm{o}}=\left(1+\frac{R_{2}}{R_{1}}\right) U_{\mathrm{ow}}+I_{\mathrm{w}} R_{2}=\left(1+\frac{90}{150}\right) \times 5+10 \times 0.090=1.6 \times 5+0.9=8.9 \mathrm{~V}$
+
+(3) 扩展输出电流的电路。图 2.7-11 是扩展输出电流的电路, 图中 $I_{\mathrm{ow}}$ 是稳压块的输出电
+
+## 流。从图可直接得到
+
+$$
+U_{\mathrm{o}}=U_{\mathrm{ow}}+U_{\mathrm{D}}-U_{\mathrm{BE}}
+$$
+
+若 $U_{\mathrm{D}}=U_{\mathrm{BE}}$, 则 $U_{\mathrm{o}}=U_{\mathrm{oW}}$, 使输出电压仍为三端稳压器的输出电压值。输出电流
+
+$$
+I_{\mathrm{o}}=(1+\beta) I_{\mathrm{B}}=(1+\beta)\left(I_{\mathrm{oW}}-\frac{U_{\mathrm{oW}}}{R}\right)
+$$
+
+【例 2.7-4】电路如图 2.7-12 所示, $R=24 \Omega, I_{\mathrm{w}}=10$ $\mathrm{mA}$, 运算放大器是理想的。试问 $I_{\mathrm{o}}$ 为多少?
+
+解: W7812 的额定输出电压 $U_{\mathrm{oW}}=12 \mathrm{~V}$, 利用运算放大器 的虚短概念, 则 $R$ 两端的电压为 $12 \mathrm{~V}$ 。所以
+
+$$
+I_{\mathrm{o}}=12 / 24=0.5 \mathrm{~A}
+$$
+
+## 2. 输出电压可调的三端集成稳压器
+
+正电压输出的有 W117、W217、W317 系列, 负电压输出的 有 W137、W237、W337 系列, $V_{\mathrm{REF}}=1.25 \mathrm{~V}$, 输出电压调节范围 为 $1.25 \sim 37 \mathrm{~V}$ 。
+
+$\mathrm{D}_{1}$ : 当输入短路时, 为 $C_{4}$ 放电提供通路, 防止 $C_{4}$ 上存储的电荷放电反向流入稳压器, 使之损坏。输入电压较高, 电容量较大时, 必 须接此二极管加以保护。
+
+$\mathrm{D}_{2}$ : 当输出短路时, 为 $C_{2}$ 提供放电通路, 防止 $C_{2}$ 通过调整端 $\mathrm{ADJ}$ 放电, 损坏稳压器。
+
+输出电压 $U_{\mathrm{o}}=U_{\mathrm{REF}}\left(1+\frac{R_{\mathrm{p}}}{R}\right)+I_{\mathrm{ADJ}} R_{\mathrm{p}} \approx$
+
+$1.25 \times\left(1+\frac{R_{\mathrm{p}}}{R}\right)$, 调节 $R_{\mathrm{p}}$ 即可改变输出电压。
+
+为保证稳压器空载时也能正常工作, 一般 $R$ 取 $120 \sim 240 \Omega$ 。 可调范围。
+
+【例 2.7-5】图 2.7-13 中,已知 $R=120 \Omega, R_{\mathrm{p}}=2.2 \mathrm{k} \Omega, I_{\mathrm{ADJ}}=50 \mu \mathrm{A}$ 。求输出电压 $U_{\mathrm{o}}$ 的
+
+解: $U_{\mathrm{o}}=U_{\mathrm{REF}}\left(1+\frac{R_{\mathrm{p}}}{R}\right)+I_{\mathrm{ADJ}} R_{\mathrm{p}}$ 。当 $R_{\mathrm{p}}=0$ 时, $U_{\mathrm{o}}=U_{\mathrm{REF}}=1.25 \mathrm{~V}$; 当 $R_{\mathrm{p}}=2.2 \mathrm{k} \Omega$ 时, $U_{\mathrm{o}}=$ $1.25 \times(1+2200 / 120)+50 \times 10^{-6} \times 2200=24.3 \mathrm{~V}_{\text {。 }}$
+
+输出电压 $U_{\mathrm{o}}$ 的可调范围为 $1.25 \mathrm{~V} \sim 24.3 \mathrm{~V}$ 。
+
+2.7 .4 硅稳压管稳压电路中限流电阻的计算及倍压整流电路工作原理
+
+1. 稳压管稳压电路中限流电阻的计算
+
+在图 2.7-14 中, 限流电阻 $R$ 的选择应满足: (1) $R_{\text {min }}$ 应满足: 流过稳压管的最大电流 $I_{Z_{\max }}<$ 稳压管的最大允许T作电流 $I_{Z M}$, 使功耗不超过其最大耗散功率 $P_{M}\left(P_{M}=U_{Z} I_{Z M}\right)$, 保证稳压管 不被烧坏。(2) $R_{\text {max }}$ 应满足: 流过稳压管的最小电流 $I_{\text {zmin }}>$ 稳压管的稳定电流 $I_{z}$, 保证稳压管具 有稳压功能。 当输入电压最大, 同时负载电流最小 $\left(R_{\mathrm{I}}\right.$ 最大 $)$ 时, 流过稳压管的电流最大, 其值应小于 $I_{\mathrm{ZM}}$, 即
+
+$$
+\begin{aligned}
+& I_{\mathrm{ZM}}>\frac{U_{\mathrm{imax}}-U_{\mathrm{o}}}{R_{\min }}-I_{\mathrm{omin}} \\
+& R_{\min }>\frac{U_{\mathrm{imax}}-U_{\mathrm{o}}}{I_{\mathrm{ZM}}+I_{\mathrm{o} \text { min }}}
+\end{aligned}
+$$
+
+当输入电压最小, 同时负载电流最大 $\left(R_{\mathrm{I}}\right.$ 最小) 时, 流过稳压管的电流最小, 其值应大于 $I_{z}$, 即
+
+$$
+\begin{aligned}
+& I_{Z}<\frac{U_{\mathrm{i} \text { min }}-U_{\mathrm{o}}}{R_{\max }}-I_{v \max } \\
+& R_{\max }<\frac{U_{\mathrm{imin}}-U_{\mathrm{o}}}{I_{\mathrm{Z}}+I_{\mathrm{o} \max }}
+\end{aligned}
+$$
+
+$R$ 的选择范围是:
+
+$$
+\begin{aligned}
+& \frac{U_{\mathrm{i} \text { max }}-U_{\mathrm{o}}}{I_{7 M}+I_{\mathrm{o} \text { min }}}<R<\frac{U_{\mathrm{i}_{\text {min }}}-U_{\mathrm{o}}}{I_{\mathrm{z}}+I_{\mathrm{n} \max }} \\
+& U_{\mathrm{a}}=U_{\mathrm{z}} \text { (稳压管的稳定电压) }
+\end{aligned}
+$$
+
+【例 2.7-6】电路如图 2.7-14 所示, 已知稳压管 $\mathrm{D}_{\mathrm{Z}}$ 的稳定电压 $U_{\mathrm{z}}=6 \mathrm{~V}$, 稳定电流 $I_{z}=5 \mathrm{~mA}$, 最大电流 $I_{2 \mathrm{M}}=40 \mathrm{~mA}$; 输出电流 $I_{\mathrm{o}}$ 的变化范围为 $0 \sim 20 \mathrm{~mA}, U_{\mathrm{i}}$ $=18 \mathrm{~V}_{\text {。 }}$ 当电网电压 $u_{1}$ 波动范围为 $\pm 10 \%$ 时, 求限流 电阻 $R$ 的取值范围?
+
+解: $R>\frac{U_{\mathrm{i} \max }-U_{\mathrm{c}}}{I_{\mathrm{ZM}}+I_{\mathrm{o} \text { min }}}=\frac{1.1 \times 18-6}{(40+0) \times 10^{-3}}=\frac{13.8}{40 \times 10^{-3}}=345 \Omega$
+
+$$
+R<\frac{U_{\mathrm{i} \min }-U_{\mathrm{o}}}{I_{Z}+I_{\mathrm{o} \max }}=\frac{0.9 \times 18-6}{(5+20) \times 10^{-3}}=\frac{10.2}{25 \times 10^{-3}}=408 \Omega
+$$
+
+所以 $345 \Omega<R<408 \Omega$
+
+## 2. 倍压整流电路的工作原理
+
+倍压整流电路适用于负载电流小并且基本维持不变的场合。
+
+(1) 二倍压整流电路
+
+每个二极管承受的最大反向电压为 $2 \sqrt{2} U_{2}, C_{1}$ 所承受的最大反向电压为 $\sqrt{2} U_{2}, C_{2}$ 所承受 的最大反向电压为 $2 \sqrt{2} U_{2}$ 。
+
+(2) $n$ 倍压整流电路
+
+## 仿真习卮
+
+2-1 电路如本题图所示, 设二极管的正向压降 $U_{\mathrm{D}}=0.6 \mathrm{~V}$, 则 $I_{\mathrm{D}}=$ ( ) 。
+(A) $0.775 \mathrm{~mA}$
+(B) $1.31 \mathrm{~mA}$
+(C) $0.55 \mathrm{~mA}$
+(D) $1 \mathrm{~mA}$
+
+2-2 题 2-2 图中设二极管具有理想特性, $u_{\mathrm{i}}=1.0 \sin \omega t \mathrm{~V}, U=2 \mathrm{~V}$ 。 $u_{\text {。 }}$ 的波形如图( ) 所示。
+(A) (a)
+(B) (b)
+(C) (c)
+(D) (d)
+
+2-3 题 2-3 图中 $U_{\mathrm{i}}=18 \mathrm{~V}$, 稳压管 $\mathrm{D}_{\mathrm{z} 1}$ 的稳定电压 $U_{\mathrm{z} 1}=7 \mathrm{~V}$, $\mathrm{D}_{z}$ 的稳定电压 $U_{\mathrm{z} 2}=6 \mathrm{~V}$, 二者具有理想特性。电路的 $U_{\mathrm{o}}=$ ( )。
+(A) $13 \mathrm{~V}$
+(B) $1 \mathrm{~V}$
+(C) $6 \mathrm{~V}$
+(D) $7 \mathrm{~V}$
+
+24 题 24 图 (a) (d) 为稳压管组成的电路, 已知 $u_{\mathrm{i}}=20 \mathrm{sin}$
+
+题 2-3 图 $\omega t \mathrm{~V}, \mathrm{D}_{\mathrm{z} 1}$ 的稳定电压 $U_{\mathrm{z} 1}=10 \mathrm{~V}, \mathrm{D}_{\mathrm{z} 2}$ 的稳定电压 $U_{\mathrm{z} 2}=6 \mathrm{~V}$, 稳压管的正向压降忽略不计。图 $(\mathrm{e})$ 所示波形为电路图( ) 的输出波形。
+(A) (a)
+(B) (b)
+(C) $(c)$
+(D) (d)
+
+2-5 电路如题 2-5 图所示, 该电路的静态电流 $I_{\mathrm{CQ}}=(\quad)$ 。
+(A) $\frac{U_{\mathrm{CC}}-U_{\mathrm{BE}}}{R_{\mathrm{b}}+R_{\mathrm{e}}} \beta$
+(B) $\frac{U_{\mathrm{CC}}-U_{\mathrm{RE}}}{R_{\mathrm{b}}} \beta$
+(C) $\frac{U_{\mathrm{CC}}-U_{\mathrm{BE}}}{R_{\mathrm{b}}+(1+\beta) R_{\mathrm{e}}} \beta$
+(D) $\frac{U_{\mathrm{CC}}-U_{\mathrm{BE}}}{\frac{R_{\mathrm{b}}}{(1+\beta)}+R_{\mathrm{e}}}$
+
+2-6 电路如题 2-6 图所示, 已知晶体管的炧和压降 $U_{\mathrm{CES}}=0.3 \mathrm{~V}, R_{\mathrm{c}}=R_{\mathrm{L}}=2 \mathrm{k} \Omega$, 静态工 作点 $I_{\mathrm{C} P}=2 \mathrm{~mA}, U_{\mathrm{CEQ}}=6 \mathrm{~V}$ 。该电路最大不失真输出正弦电压的幅值为 ( )。
+(A) $6 \mathrm{~V}$
+(B) $5.7 \mathrm{~V}$
+(C) $6.6 \mathrm{~V}$
+(D) $2 \mathrm{~V}$
+
+2-7 电路如本题图所示, 该电路的电压放大倍数 $A_{\mathrm{u}}=\frac{U_{\mathrm{o}}}{U_{\mathrm{i}}}=(\quad)$ 。
+(A) $\frac{\beta R_{\text {. }}^{\prime}}{r_{\text {be }}+(1+\beta) R_{\text {e }}}$
+(B) $-\frac{\beta R_{\mathrm{l}}^{\prime}}{r_{\mathrm{be}}+(1+\beta) R_{\mathrm{e}}}$
+(C) $\frac{\beta R_{\mathrm{t}}^{\prime}}{r_{\mathrm{bec}}+R_{\mathrm{e}}}$
+(D) $-\frac{\beta R_{\mathrm{L}}^{\prime}}{r_{\mathrm{be}}+R_{\mathrm{e}}}$
+
+2-8 电路如题 2-8 图所示, 已知晶体管的 $\beta=50, U_{\mathrm{BE}}=0.6 \mathrm{~V}, r_{\mathrm{bee}}=1.5 \mathrm{k} \Omega$ 。该电路的输 人电阻 $\boldsymbol{R}_{\mathrm{i}}=(\quad)$ 。
+(A) $1.36 \mathrm{k} \Omega$
+(B) $15 \mathrm{k} \Omega$
+(C) $13.4 \mathrm{k} \Omega$
+(D) $1.5 \mathrm{k} \Omega$
+
+2-9 电路如题 2-9 图所示, $C_{1} 、 C_{2}$ 可视为交流短路, 该电路的输出电阻 $R_{\mathrm{v}}=(\quad)$ 。
+(A) $R_{2} / / R_{\mathrm{L}}$
+(B) $R_{2}$
+
+(C) $R_{2} / / R_{\mathrm{t}} / / \frac{R_{\mathrm{s}} / / R_{1}+r_{\mathrm{be}}}{1+\beta}$
+(D) $R_{2} / / \frac{R_{\mathrm{s}} / / R_{1}+r_{\text {be }}}{1+\beta}$
+
+2-10 题 2-10 图所示为一个深度负反馈放大电路, $C_{\mathrm{k}, 1} 、 C_{\mathrm{b} 2} 、 C_{\mathrm{t}} 、 C_{\mathrm{f}}$ 认为交流短路。该电路 的电压放大倍数 $A_{u \mathrm{r}}=\dot{U}_{\mathrm{v}} / \dot{U}_{\mathrm{i}}=(\quad)$ 。
+(A) 10
+(B) -11
+(C) 11
+(D) -10
+
+2-11 在题 2-11 图中, 要引入电压并联负反馈, 正确连接方法是( )。
+(A) $\mathrm{C}_{1}-\mathrm{N}, \mathrm{C}_{2}-\mathrm{P}, \mathrm{F}-\mathrm{B}_{1}$
+(B) $\mathrm{C}_{1}-\mathrm{N}, \mathrm{C}_{2}-\mathrm{P}, \mathrm{F}-\mathrm{B}_{2}$
+(C) $\mathrm{C}_{1}-\mathrm{P}, \mathrm{C}_{2}-\mathrm{N}, \mathrm{F}-\mathrm{B}_{1}$
+(D) $\mathrm{C}_{1}-\mathrm{P}, \mathrm{C}_{2}-\mathrm{N}, \mathrm{F}-\mathrm{B}_{2}$
+
+2-12 题 2-12 图为某放大电路电压放大倍数的对数幅频特性, 其下限频率 $f_{\mathrm{L}}$ 、上限频率 $f_{\mathrm{H}}$ 及在 $f_{\mathrm{L}} f_{\mathrm{H}}$ 处的实际电压增益 $A_{u}$ 是
+
+(A) $f_{\mathrm{L}}=100 \mathrm{~Hz}, f_{\mathrm{H}}=100 \mathrm{kHz}, A_{u}=60 \mathrm{~dB}$
+(B) $f_{\mathrm{L}}=100 \mathrm{~Hz}, f_{\mathrm{H}}=100 \mathrm{kHz}, A_{u}=57 \mathrm{~dB}$
+(C) $f_{\mathrm{I}}<100 \mathrm{~Hz}, f_{\mathrm{H}}<100 \mathrm{kHz}, A_{u}=60 \mathrm{~dB}$
+(D) $f_{\mathrm{L}}>100 \mathrm{~Hz}, f_{\mathrm{H}}>100 \mathrm{kHz}, A_{u}=57 \mathrm{~dB}$ 为 $(\quad)$ 。
+
+2-13 电路如题 2-13 图, 已知 $\left|A_{u \mathrm{~d}}\right|=100, A_{u \mathrm{c}}=0, u_{\mathrm{i} 1}=10 \mathrm{mV}, u_{\mathrm{i} 2}=5 \mathrm{mV}$, 则输出电压 $\left|u_{\mathrm{o}}\right|$
+(A) $500 \mathrm{mV}$
+(B) $200 \mathrm{mV}$
+(C) $250 \mathrm{mV}$
+(D) $125 \mathrm{mV}$
+
+题 2-14 图 该 $($ )。
+
+2-14 电路如题 2-14 图所示, 若输入电压 $u_{\mathrm{i} 1}=u_{\mathrm{i} 2}=0$ 时, $U_{\mathrm{o}}=U_{\mathrm{c} 1}-U_{\mathrm{c} 2}<0$, 要使 $U_{\mathrm{o}}=0$, 应
+(A) 减少 $R_{\text {e }}$
+(C) 向左移动 $R_{\mathrm{p}}$ 的滑动端
+(B) 增加 $R_{e}$
+(D) 向右移动 $R_{\mathrm{p}}$ 的滑动端
+
+2-15 电路如题 2-15 图所示, 已知 $R_{\mathrm{s}}=1 \mathrm{k} \Omega, R_{\mathrm{c}}=R_{\mathrm{L}}=10 \mathrm{k} \Omega$, 晶体管的 $\beta=50, r_{\mathrm{be}}=1.5$ $\mathrm{k} \Omega$ 。该电路的共模抑制比 $K_{\mathrm{CMR}} \approx(\quad)$ 。
+(A) 2000
+(B) -2000
+(C) 1000
+(D) -1000
+
+2-16 电路如题 2-16 图所示, $I_{2}=(\quad)$ 。
+(A) $0.5 \mathrm{~mA}$
+(B) $1 \mathrm{~mA}$
+(C) $1.5 \mathrm{~mA}$
+(D) $-0.5 \mathrm{~mA}$
+
+2-17 在题 2-17 图中, 设 $A_{1}$ 和 $A_{2}$ 为理想运算放大器, $u_{\mathrm{o}}=(\quad)$ 。
+(A) $1 \mathrm{~V}$
+(B) $-1.5 \mathrm{~V}$
+(C) $-1 \mathrm{~V}$
+(D) $1.5 \mathrm{~V}$
+
+2-18 题 2-18 图为理想运算放大器组成的电路, 其电压放大倍数 $A_{u}=u_{\mathrm{o}} / u_{\mathrm{i}}=(\quad)$ 。
+(A) 1
+(B) 21
+(C) -21
+(D) 20
+
+2-19 积分电路如题 2-19 图所示, 运放器是理想的。已知 $u_{1}=1 \mathrm{~V}, u_{2}=-2 \mathrm{~V}$ 。在 $t=0$ 时开关 S 断开, 试问当 $u_{0}$ 达到 $6 \mathrm{~V}$ 时, 所需时间 $t=(\quad) \mathrm{s}$ 。
+
+(A) 2
+(B) 1.2
+(C) 3
+(D) 1.5
+
+2-20 题 2-20 图 (a) 所示电路的电压传输特性如图 (b) 所示, 则 $R_{1}=(\quad)$ 。
+(A) $3 \mathrm{k} \Omega$
+(B) $5 \mathrm{k} \Omega$
+(C) $10 \mathrm{k} \Omega$
+(D) $15 \mathrm{k} \Omega$
+
+2-21 输入失调电流补偿电路如题 2-21 图所示, 已知 $I_{\mathrm{BN}}=100 \mathrm{nA}, I_{\mathrm{BP}}=75 \mathrm{nA}, R_{1}=10$ $\mathrm{k} \Omega, R_{\mathrm{f}}=30 \mathrm{k} \Omega_{\text {。 }}$ 要求没有输入时, 输出为零, 则平衡电阻 $R_{2}$ 的数值约为 $(\quad)$ 。
+(A) $5 \mathrm{k} \Omega$
+(B) $40 \mathrm{k} \Omega$
+(C) $30 \mathrm{k} \Omega$
+(D) $10 \mathrm{k} \Omega$
+
+2-22 题 2-22 图中运放器和模拟乘法器均为理想的, 已知 $u_{\mathrm{i} 1}>0$, 电路的输出电压与输入 电压的关系为 ( )。
+(A) $u_{\mathrm{o}}=k u_{\mathrm{i1}} u_{\mathrm{i} 2}$
+(B) $\frac{k u_{i 1}}{u_{i 2}}$
+(C) $\frac{k u_{\mathrm{i} 2}}{u_{\mathrm{i} 1}}$
+(D) $u_{\mathrm{o}}=\frac{u_{\mathrm{i} 2}}{k u_{\mathrm{i} 1}}$
+
+2-23一个低通滤波电路和一个高通滤波电路, 通带截止频率分别为 $1 \mathrm{kHz}$ 和 $10 \mathrm{kHz}$, 通 带电压放大倍数相等, 将二者并联起来可组成( )滤波电路。
+(A) 带通
+(B) 带阻
+(C) 低通
+(D) 高通
+
+2-24 本题图为一阶低通滤波电路, 其通带截止频率 $f_{\mathrm{H}}$ 为 $(\quad)$ 。
+(A) $\frac{1}{2 \pi R_{2} C}$
+(B) $\frac{1}{R_{1} C}$
+(C) $\frac{1}{2 \pi\left(R_{1}+R_{2}\right) C}$
+(D) $\frac{1}{2 \pi R_{1} C}$
+
+2-25 电路如本题图 (a) 所示, 设 $U_{\mathrm{REF}}<0$, 则该电路的电压传输特性为图中的图 ( ) 所示。
+
+(A) (b)
+
+(B) (c)
+
+(C) (d)
+
+(D) (e)
+
+2-26 电路如题 2-26 图所示, $U_{\mathrm{i} 1}=2 \mathrm{~V}, U_{\mathrm{i} 2}=1 \mathrm{~V}$ 。输出电压 $U_{\mathrm{o}}=(\quad)$ 。
+(A) $12 \mathrm{~V}$
+(B) $-12 \mathrm{~V}$
+(C) $-6 \mathrm{~V}$
+(D) $+6 \mathrm{~V}$
+
+2-27 文氏电桥正弦波振荡电路如题 2-27 图所示, 已知 $R_{\mathrm{f}}=120 \mathrm{k} \Omega$, 运放器具有理想特 性。为保证起振, $R_{1}$ 应满足 ( )。
+(A) $R_{1}>120 \mathrm{k} \Omega$
+(B) $R_{1}<120 \mathrm{k} \Omega$
+(C) $R_{1}>60 \mathrm{k} \Omega$
+(D) $R_{1}<60 \mathrm{k} \Omega$
+
+2-28 试用相位平衡条件判断题 2-28 图中, 有可能产生振荡的是图 ( )。
+(A) (a)
+(B) (b)
+(C) (c)
+(D) (a), (b), (c)
+
+2-29 电路如题 2-29 图所示, 运算放大器为理想的, 热敏电阻 $R_{1}$ 具有正温度系数。为能 产生振幅稳定的正弦波输出和起振, $R_{\mathrm{f}}$ 和 $R_{\mathrm{t}}$ 在电路中的接人位置以及 $R_{\mathrm{t}}$ 的最大值分别为
+
+(A) $R_{\mathrm{f}}$ 接虚框 $1, R_{\mathrm{t}}$ 接虚框 $2,500 \Omega$
+
+(C) $R_{\mathrm{f}}$ 接虚框 $2, R_{1}$ 接虚框 $1,500 \Omega$
+
+(B) $R_{\mathrm{f}}$ 接虚框 $1, R_{\mathrm{l}}$ 接虚框 $2,2 \mathrm{k} \Omega$
+
+(D) $R_{\mathrm{f}}$ 接虚框 $2, R_{\mathrm{t}}$ 接虚框 $1,2 \mathrm{k} \Omega$
+
+2-30 题 2-30 图为信号发生器, 指出 $u_{\mathrm{o} 1} 、 u_{\mathrm{o} 2} 、 u_{\mathrm{o} 3}$ 的波形是( )。
+
+(A) $u_{01}$ 方波, $u_{02}$ 方波, $u_{03}$ 三角波
+
+(B) $u_{\mathrm{o} 1}$ 方波, $u_{\mathrm{o} 2}$ 锯齿波, $u_{\mathrm{o} 3}$ 三角波
+
+(C) $u_{\mathrm{ot}}$ 三角波, $u_{\mathrm{o} 2}$ 方波, $u_{\mathrm{o} 3}$ 锯齿波
+
+(D) $u_{01}$ 方波， $u_{02}$ 三角波， $u_{03}$ 锯齿波
+
+2-31 题 2-31 图所示电路中, 已知 $U_{\mathrm{cC}}=20 \mathrm{~V}, R_{\mathrm{r}}=8 \Omega$ 。 功率管的参数应满足 ( )。
+
+(A) $P_{\mathrm{CM}}>5 \mathrm{~W}, I_{\mathrm{CM}}>2.5 \mathrm{~A}, U_{(\mathrm{BR}) \text { CEO }}>40 \mathrm{~V}$
+
+(B) $P_{\mathrm{CM}}>5 \mathrm{~W}, I_{\mathrm{CM}}>2.5 \mathrm{~A}, U_{(\mathrm{BR}) \mathrm{CEO}}>20 \mathrm{~V}$
+
+(C) $P_{\mathrm{CM}}>25 \mathrm{~W}, I_{\mathrm{CM}}>2.5 \mathrm{~A}, U_{(\mathrm{BR}) \mathrm{CEO}}>40 \mathrm{~V}$
+
+(D) $P_{\mathrm{CM}}>25 \mathrm{~W}, I_{\mathrm{CM}}>2.5 \mathrm{~A}, U_{(\mathrm{BR}) \mathrm{CEO}}>20 \mathrm{~V}$
+
+2-32 本题图中, 二极管是理想的, 电容足够大, 变压器
+
+题 2-31 图 副边电压有效值 $U_{2}=10 \mathrm{~V}$, 则三个电路的直流输出电压 $U_{\mathrm{oa}} 、 U_{\mathrm{ob}} 、 U_{\mathrm{oc}}$ 分别约为 $(\quad)$ 。
+(A) $U_{\mathrm{ou}}=9 \mathrm{~V}, U_{\mathrm{ol}}=14 \mathrm{~V}, U_{\mathrm{oc}}=12 \mathrm{~V}$
+(B) $U_{\mathrm{oa}}=9 \mathrm{~V}, U_{\mathrm{ob}}=12 \mathrm{~V}, U_{\mathrm{oc}}=14 \mathrm{~V}$
+(C) $U_{\mathrm{oa}}=12 \mathrm{~V}, U_{\mathrm{ob}}=12 \mathrm{~V}, U_{\mathrm{oc}}=12 \mathrm{~V}$
+(D) $U_{\mathrm{oa}}=12 \mathrm{~V}, U_{\mathrm{ob}}=14 \mathrm{~V}, U_{\mathrm{oc}}=14 \mathrm{~V}$
+
+2-33电路如题 2-33 图所示, $R_{\mathrm{l}}=10 \Omega$, 变压器副边电 压 $u_{2}=24 \sin \omega t(\mathrm{~V})$ 。流过整流二极管的平均电流 $I_{\mathrm{D}}$ 和承受 的反向电压峰值 $U_{\mathrm{RM}}$ 约为 ( )。
+(A) $I_{\mathrm{D}}=2 \mathrm{~A}, U_{\mathrm{RM}}=17 \mathrm{~V}$
+(B) $I_{\mathrm{D}}=1 \mathrm{~A}, U_{\mathrm{RM}}=24 \mathrm{~V}$
+(C) $I_{\mathrm{D}}=2 \mathrm{~A}, U_{\mathrm{RM}}=24 \mathrm{~V}$
+(D) $I_{\mathrm{D}}=1 \mathrm{~A}, U_{\mathrm{RM}}=17 \mathrm{~V}$
+
+2-34 如题 2-34 图所示, 已知 $\mathrm{T}_{1}$ 的 $U_{\mathrm{CE} 1}=5 \mathrm{~V}, \mathrm{~T}_{2}$ 的 $U_{\mathrm{BE} 2}$
+
+题 2-33 图 $=0.6 \mathrm{~V}, U_{\mathrm{z}}=5.4 \mathrm{~V}, R_{1}=R_{2}=2 \mathrm{k} \Omega, R_{\mathrm{p}}=1 \mathrm{k} \Omega$, 则变压器副边电压有效值 $U_{2} \approx(\quad)$ 。
+(A) $15 \mathrm{~V}$
+(B) $20 \mathrm{~V}$
+(C) $16.7 \mathrm{~V}$
+(D) $12.5 \mathrm{~V}$
+
+2-35 如题 2-35 图所示, 已知 $\mathrm{D}_{2}$ 的稳定电压 $U_{z}=8 \mathrm{~V}$, 最小稳定电流 $I_{2 \min }=5 \mathrm{~mA}$, 最大允 许电流 $I_{Z_{\text {max }}}=30 \mathrm{~mA} ; U_{\mathrm{i}}=22 \mathrm{~V}, R_{\mathrm{t}}$ 的变化范围为 $400 \sim 800 \Omega_{\text {。 }}$ 限流电阻 $R$ 的取值范围约为
+(A) $350 \sim 560 \Omega$
+(B) $280 \sim 933 \Omega$
+(C) $560 \sim 933 \Omega$
+(D) $280 \sim 560 \Omega$
+
+## 习题答案
+
+$\begin{array}{llllllllllll}2-1 & \text { (B) } & 2-2 & \text { (A) } & 2-3 & \text { (B) } & 2-4 & \text { (B) } & 2-5 & \text { (C) } & 2-6 & \text { (D) } \\ 2-7 & \text { (B) } & 2-8 & \text { (C) } & 2-9 & \text { (D) } & 2-10 & \text { (C) } & 2-11 & \text { (A) } & 2-12 & \text { (B) } \\ 2-13 & \text { (A) } & 2-14 & \text { (D) } & 2-15 & \text { (A) } & 2-16 & \text { (D) } & 2-17 & \text { (A) } & 2-18 & \text { (B) } \\ 2-19 & \text { (A) } & 2-20 & \text { (B) } & 2-21 & \text { (D) } & 2-22 & \text { (D) } & 2-23 & \text { (B) } & 2-24 & \text { (A) } \\ 2-25 & \text { (C) } & 2-26 & \text { (C) } & 2-27 & \text { (D) } & 2-28 & \text { (C) } & 2-29 & \text { (A) } & 2-30 & \text { (D) } \\ 2-31 & \text { (A) } & 2-32 & \text { (A) } & 2-33 & \text { (B) } & 2-34 & \text { (C) } & 2-35 & \text { (A) } & & \end{array}$
+
+## 复习内容
+
+## 1 数字电路基础知识
+
+## 1 .1 数字电路的基本概念
+
+## 1. 数字电路
+
+用来产生、传输、处理不连续变化的离散信号的电路称为数字电路。数字电路的特点是电 路中的半导体器件多数工作在开关状态, 即工作在饱和区或截止区, 而放大区只是过渡状态。
+
+## 2. 数字电路的分类
+
+按其组成的结构可分为分立元件电路和集成电路两大类。其中集成电路根据集成度又可 分为小规模集成电路、中规模集成电路、大规模集成电路、超大规模集成电路。
+
+按电路所用器件不同分为双极型电路和单极型电路。其中双极型电路有 DTL、TTL、ECL 等, 单极型电路有 JFET、NMOS、PMOS、CMOS 等。
+
+按电路的逻辑功能特点分为组合逻辑电路和时序逻辑电路。
+
+## 1 .2 数制和码制
+
+## 1. 数制
+
+人们常用数字量表示事物的多少,在多位数码中,每一位的构成方法以及从低位向高位进 位的规则称为计数进位制,简称数制。常用的数制有十进制数、二进制数、八进制数、十六进制 数等。 (1) 十进制数
+
+十进制数中的每一位用 $0 、 1 、 2 、 3 、 4 、 5 、 6 、 7 、 8 、 9$ 十个符号表示数码, 其基数为 10 ,进位关 系是“逢十进一”。
+
+十进制数中, 数码所在的位置不同, 其“权”值的大小不同, 所表示的数值就不同。如十进 制数 435.76 可按“权”展开如下:
+
+435. $76=4 \times 10^{2}+3 \times 10^{1}+5 \times 10^{0}+7 \times 10^{-1}+6 \times 10^{-2}$
+
+(2) 二进制数
+
+二进制数中的每一位用 $0 、 1$ 两个符号表示数码, 其基数为 2 , 进位关系是“逢二进一”。
+
+任何一个二进制数同样可以按权展开。如
+
+$(101.11)_{2}=1 \times 2^{2}+0 \times 2^{1}+1 \times 2^{0}+1 \times 2^{-1}+1 \times 2^{-2}=(5.75)_{10}$
+
+(3)八进制数和十六进制数
+
+“逢八进一”。
+
+任何一个八进制数可以按权展开。如
+
+$(234)_{8}=2 \times 8^{2}+3 \times 8^{1}+4 \times 8^{0}=(156)_{10}$
+
+十六制数中的每一位用 $0 \sim 9 、 A 、 B 、 C 、 D 、 E 、 F$ 十六个符号表示数码, 其基数为 16 , 进位关 系是“逢十六进一”。
+
+任仙一个十六进制数可以按权展开。如
+
+$$
+(2 \mathrm{~A} .7 \mathrm{~F})_{16}=2 \times 16^{1}+10 \times 16^{0}+7 \times 16^{-1}+15 \times 16^{-2}=(42.4960)_{10}
+$$
+
+## 2. 数制的转换
+
+(1) $2^{n}$ 进制数转换成十进制数
+
+二进制数、八进制数、十六进制数可将它们按权位展开后,求得各位数之和, 即可得到对应 的十进制数。
+
+【例 3.1-1】将 $(1011.01)_{2} 、(25.46)_{8} 、(\text { B2 })_{16}$ 数转换成十进制数。
+
+解: $(1011.01)_{2}=\left(1 \times 2^{3}+0 \times 2^{2}+1 \times 2^{1}+1 \times 2^{0}+0 \times 2^{-1}+1 \times 2^{-2}\right)_{10}$
+
+$$
+\begin{aligned}
+& =(8+2+1+0.25)_{10} \\
+& =(11.25)_{10}
+\end{aligned}
+$$
+
+$(25.46)_{8}=\left(2 \times 8^{1}+5 \times 8^{0}+4 \times 8^{-1}+6 \times 8^{-2}\right)_{10}$
+
+$=(16+5+0.5+0.09375)_{10}$
+
+$=(21.59375)_{10}$
+
+$(B 2)_{16}=\left(11 \times 16^{1}+2 \times 16^{0}\right)_{10}=(178)_{10}$
+
+(2) 十进制数转换成 $2^{n}$ 进制数
+
+十进制数转换成 $2^{n}$ 进制数时, 可将其分为整数和小数两部分分别转换, 然后将其合并起 来,即可得出转换的结果。
+
+(1) 整数部分的转换: 采用除基取余法。即用目的数制的基数去除十进制整数,第一次所 得的余数为日的数的最低位, 把所得的商再除以该基数,所得的余数为目的数的次低位, 依此 类推,直至商为 0 ,所得的余数为目的数的最高位。
+
+【例 3.1-2】把 (28) ${ }_{10}$ 转换成二进制数、八进制数、十六进制数。 解:
+
+$$
+\begin{aligned}
+& (28)_{10}=(11100)_{2} \\
+& (28)_{10}=(34)_{8} \\
+& (28)_{10}=(1 \mathrm{C})_{16}
+\end{aligned}
+$$
+
+(2)小数部分的转换: 采用乘基取整法。即用该小数去乘目的数制的基数,第一次乘得的结 果整数部分为目的数的最高位,将乘得结果的小数部分再乘基数,所得结果的整数部分作为目 的数的第二位, 依此类推, 直到小数部分为零或达到要求的精度 (要求的小数位数) 为止。
+
+【例 3.1-3】把 $(0.765)_{10}$ 转换成二进制数、八进制数、十六进制数 (要求精确到小数后四 位)。
+
+解:
+$0.765 \times 2=1.530 \quad 1$
+$0.765 \times 8=6.12 \quad 6$
+$0.765 \times 16=12.24 \quad \mathrm{C}$
+$0.530 \times 2=1.06 \quad 1$
+$0.12 \times 8=0.96$
+$0.24 \times 16=3.84$
+$0.06 \times 2=0.12 \quad 0$
+$0.96 \times 8=7.68$
+$0.84 \times 16=13.44$
+D
+$0.12 \times 2=0.24 \quad 0$
+$0.68 \times 8=5.44 \quad 5$
+$0.44 \times 16=7.04$
+7
+$0.24 \times 2=0.48$
+$0.44 \times 8=3.52$
+$0.04 \times 16=0.64$
+0
+
+$(0.765)_{10}=(0.1100)_{2}$
+
+$(0.765)_{10}=(0.6075)_{8}$
+
+$(0.765)_{10}=(0 . \mathrm{C} 3 \mathrm{D} 7)_{16}$
+
+在将十进制小数转换成其他进制时,一般保留 4 位小数,第 5 位数在二进制时采用“零舍 -.人一的原则，在八进制时采用“二.舍四人”,在十六进制时采用“七舍八人”。
+
+(3) $2^{n}$ 进制数之间的转换
+
+八进制的基数为 $8=2^{3}$,十六进制的基数为 $16=2^{4}$, 所以 3 位二进制数构成 1 位八进制数, 4 位二进制数构成 1 位十六进制数。若将二进制数转换成八进制数或十六进制数,整数部分 只要从低位到高位每 3 位或 4 位分成一组并代之以等值的八进制数或十六进制数,小数部分 则要从高位到低位同理转换,即可得到相应的八进制数或十六进制数。
+
+将八进制数或十六进制数转换成二进制数时, 只要写出每位数码对应的二进制数,依次排 好即可。
+
+【例 3. 1-4】将二进制数( 1101101100.110111011$)_{2}$ 转换成八进制数。
+
+解: $\begin{array}{cccccccc}001 & 101 & 101 & 100 & \cdot & 110 & 111 & 011 \\ 1 & 5 & 5 & 4 & . & 6 & 7 & 3\end{array}$
+
+$(1101101100.110111011)_{2}=(1554.673)_{8}$
+
+【例 3. 1-5 】 将二进制数( 1101101100.110111011$)_{2}$ 转换成十六进制数。
+
+解: $0011 \quad 0110 \quad 1100 \quad$. $1101 \quad 1101 \quad 1000$
+
+【例 3.1-6】将八进制数 $(1234.56)_{8}$ 换成二进制数。
+
+$\left(\begin{array}{lll}1 & 234.56\end{array}\right)_{8}=\left(\begin{array}{llll}1010011 & 100.101110\end{array}\right)_{2}$
+
+3. 码制
+
+用一定位数的二进制数来代表某一特定的事物、文字、符号等, 称为编码。采用不同的编 码形式,称为码制。常用的有如下几种。
+
+## (1) BCD 码
+
+用四位二进制数组成一组代码, 表示 0 9十个数字, 这种代码称为二一十进制代码 (Binary Coded Decimal), 简称 BCD 码。其常用的编码形式有 8421 码、2421 码、余三码等,如表 3 . 1-1 所示。
+
+(1)8421 码: 该码四位二进制数的权值从高位到低位分别为 $8 、 4 、 2 、 1$,故称 8421 码。它属 于有权码。如
+
+$$
+(84)_{10}=(10000100)_{8421 \text { BCD }}
+$$
+
+(2)2421 码: 它也是有权码,其权值从高位到低位分别为 $2 、 4 、 2 、 1$ 。
+
+(3)余二码: 它属于无权码。它的数值要比它所表示的十进制数码多 3。
+
+## 表 3.1-1 常用的 BCD 码
+
+| 十进制数 | 8421 码 | 2421 码 | 余三码 |
+| :---: | :---: | :---: | :---: |
+| 0 | 0000 | 0000 | 0011 |
+| 1 | 0001 | 0001 | 0100 |
+| 2 | 0010 | 0010 | 0101 |
+| 3 | 0011 | 0011 | 0110 |
+| 4 | 0100 | 0100 | 0111 |
+| 5 | 0101 | 1011 | 1000 |
+| 6 | 0110 | 1100 | 1001 |
+| 7 | 0111 | 1101 | 1010 |
+| 8 | 1000 | 1110 | 1011 |
+| 9 | 1001 | 1111 | 1100 |
+
+## (2) 格雷 (Gray) 码
+
+它属于无权码。其特点是任意两个相邻的码之间只有一位数码不同, 另外, 由于首、尾相 接后也仅一位不同,故通常又称循环码。如表 3.1-2 所示。
+
+表 3.1-2 格雷码的编码表
+
+| $\dagger$ 十进制数 | 格雷码 | 十进制数 | 格雷码 |
+| :---: | :---: | :---: | :---: |
+| 0 | 0000 | 8 | 1100 |
+| 1 | 0001 | 9 | 1101 |
+| 2 | 0011 | 10 | 1111 |
+| 3 | 0010 | 11 | 1110 |
+| 4 | 0110 | 12 | 1010 |
+| 5 | 0111 | 13 | 1011 |
+| 6 | 0101 | 14 | 1001 |
+| 7 | 0100 | 15 | 1000 |
+
+## （3）奇偶校验码
+
+奇偶校验码是将 1 位二进制代码配置到每一组二进制代码的最后一位, 表示每一组代码 中“1”的个数为奇数或偶数,如表 3.1-3 所示为带奇偶校验位的 8421 码。
+
+表 3.1-3 带奇偶校验位的 8421 码
+
+| 十进制数 | $\mathbf{8 4 2 1}$ 码 | 奇校验码 | 偶校验码 |
+| :---: | :---: | :---: | :---: |
+| 0 | 0000 | 00001 | 00000 |
+| 1 | 0001 | 00010 | 00011 |
+| 2 | 0010 | 00100 | 00101 |
+| 3 | 0011 | 00111 | 00110 |
+| 4 | 0100 | 01000 | 01001 |
+| 5 | 0101 | 01011 | 01010 |
+| 6 | 0110 | 01101 | 01100 |
+| 7 | 0111 | 01110 | 01111 |
+| 8 | 1000 | 10000 | 10001 |
+| 9 | 1001 | 10011 | 10010 |
+
+【例 3.1-7】试用 8421 BCD 码和余三码表示十进制数 (751) 10 。
+
+解: (751) 10 用 $8421 \mathrm{BCD}$ 码表示时, 是用四位二进制数表示一位十进制数, 即可得 (0111 $01010001)_{8421 R C D 。}$
+
+用余三码表示时,应在 8421 BCD 码上加 3 , 则可得 (1010 1000 0100) xs3。
+
+【例 3.1-8】已知二进制码为 $(01011001)_{2}$, 试求它所对应的格雷码。
+
+解: 二进制码转换成格雷码的方法是从低位开始每两位相异或, 即可得出转换后所对应的 格雷码为 $(01011001)_{8421 \mathrm{BCD}}=(01110101)_{\mathrm{Gray}}$ 。
+
+## 1 .3 半导体器件的开关特性
+
+## 1. 理想开关特性
+
+在图 3.1-1 所示的电路中, 如果 $\mathrm{S}$ 是一个理想的开关, 则:
+
+(1)开关 $\mathrm{S}$ 断开时, 在开关两端 $\mathrm{A} 、 \mathrm{~B}$ 间的电压 $U_{\mathrm{AB}}=E$, 通过开关的电流 $I=0$, 开关等效电 阻 $R=\infty$;
+
+(2)开关 $\mathrm{S}$ 闭合时,在开关两端 $\mathrm{A} 、 \mathrm{~B}$ 间的电压 $U_{\mathrm{AB}}=0$, 通过开关的电流 $I=E / R$, 开关等效 电阻 $R=0$;
+
+(3)开关 $\mathrm{S}$ 的开闭动作瞬时完成。
+
+## 2. 二极管开关特性
+
+二极管具有单向导电性。若二极管两端加上正向电压且超过死区电压时, 二极管导通,且 钳位于 $U_{\mathrm{D}}=0.7 \mathrm{~V}$ (硅管) 或 $U_{\mathrm{D}}=0.2 \mathrm{~V}$ (锗管), 此时相当于开关闭合, 如图 3.1-2(a) 所示; 若 二极管两端加上反向电压或正向电压小于死区电压时, 二极管截止, 相当于开关断开, 如图 3. 1-2(b) 所示。
+
+## 3. 三极管开关特性
+
+三极管可工作在截止、放大、饱和三种工作状态。通常在数字电路中，三极管作为开关元
+
+(a)二极管闭合等效电路 (b) 二极管断开等效电路
+
+件,主要工作在饱和状态 (“开”态) 或截止状态 (“关”态)。三极管的开关等效电路如图 3.1-3 所示。
+
+（a）三极管共发射极电路 (b)截止状态等效电路 (c) 饱和状态等效电路
+
+三极管的三种工作状态的条件和特点可由表 3.1.4 表示。
+
+表 3.1.4 NPN 硅三极管共发射极电路三种状态条件和特点
+
+| 工作状态 |  | 截止 | 放大 | 饱和 |
+| :---: | :---: | :---: | :---: | :---: |
+| 条 件 |  | $i_{\mathrm{b}} \approx 0$ | $0<i_{\mathrm{b}}<I_{\mathrm{Cs}} / \beta$ | $i_{\mathrm{b}}>I_{\mathrm{cs}} / \beta$ |
+| $\begin{array}{l}\text { I } \\ \text { 作 } \\ \text { 特 } \\ \text { 点 }\end{array}$ | 偏置晴况 | 发射结和集电结均为反偏 | 发射结正偏, 集电结反偏 | 发射结和集电结均为正偏 |
+|  | 集电极电流 | $i_{c} \approx 0$ | $i_{\mathrm{c}}=\beta i_{\mathrm{b}}$ | $i_{\mathrm{c}}=I \mathrm{cs} \approx U \mathrm{cc} / R_{\mathrm{c}}$ |
+|  | 管压降 | $U_{\mathrm{cbo} O} \approx U \mathrm{cc}$ | $U_{\mathrm{CE}}=U \mathrm{cc}-i_{\mathrm{c}} R_{\mathrm{c}}$ | $U_{\mathrm{CES}} \approx 0.3 \mathrm{~V}$ |
+|  | C、 $\mathbf{E}$ 间等效电阻 | 很大,相当于开路 | 可变 | 很小,相当于开关闭合 |
+
+【例 3.1-9】分析图 3.1-4 所示三个电路的工作状态。
+
+解: 分析三极管的工作状态时, 要根据三极管的三个工作区的不同特点进行分析 (以 NPN 硅管为例)。
+
+(1) 图 3.1-4 (a) 所示电路状态分析。因为该电路中 $U_{\mathrm{BE}}>0.7 \mathrm{~V}$, 三极管导通, 有
+
+$$
+i_{\mathrm{B}}=\frac{U_{\mathrm{i}}-0.7}{R}=\frac{6-0.7}{50}=0.1 \mathrm{~mA}
+$$
+
+而
+
+$$
+I_{\mathrm{CS}}=\frac{E_{\mathrm{C}}-U_{\mathrm{CES}}}{R_{\mathrm{C}}}=\frac{12-0.3}{1 \times 10^{3}}=11.7 \mathrm{~mA}
+$$
+
+有
+
+$$
+i_{c:}=\beta i_{\mathrm{b}}=50 \times 0.1=5 \mathrm{~mA}<I_{\mathrm{CS}}
+$$
+
+所以, 图 3.1-4(a) 所示电路中三级管工作在放大区。
+
+(2) 图 3.1-4(b) 所示电路状态分析。因为
+
+$$
+U_{\mathrm{BE}}=\frac{U_{\mathrm{i}} R_{1}-E_{\mathrm{B}} R_{2}}{R_{1}+R_{2}}=-\frac{E_{\mathrm{B}} R_{2}}{R_{1}+R_{2}}=-\frac{6 \times 10}{30}=-2 \mathrm{~V}<0 \mathrm{~V}
+$$
+
+电路不满足三极管的导通条件, 图 3.1-4(b) 电路中三极管工作在截止区。
+
+(3)图 3.1-4(c) 所示电路状态分析。利用戴维南定理, 可求出基极电位
+
+$$
+\begin{aligned}
+& U_{\mathrm{B}}=\frac{U_{\mathrm{i}} R_{1}-E_{\mathrm{B}} R_{2}}{R_{1}+R_{2}}=\frac{6 \times 20-6 \times 10}{30}=2 \mathrm{~V} \\
+& i_{\mathrm{b}}=i_{1}-i_{2}=\frac{U_{\mathrm{i}}-0.7}{R_{2}}-\frac{0.7+E_{\mathrm{B}}}{R_{1}}=(0.53-0.33)=0.2 \mathrm{~mA} \\
+& I_{\mathrm{BS}}=\frac{I_{\mathrm{CS}}}{\beta}=\frac{E_{\mathrm{C}}-U_{\mathrm{CES}}}{\beta R_{\mathrm{C}}}=\frac{10-0.3}{2 \times 50}=0.12 \mathrm{~mA}
+\end{aligned}
+$$
+
+满足 $i_{\mathrm{b}}>I_{\mathrm{BS}}$ 条件, 图 3.1-4(c) 所示电路中三极管工作在饱和区。
+
+## MOS 管开关特性
+
+## 1 .4 三种基本逻辑关系及其表达方式
+
+基本逻辑关系有与逻辑、或逻辑和非 (反)逻辑。实现这些逻辑关系的电路称为与门、或 门和非门。用这三种基本门电路还可以组成多种复合门电路。
+
+## 1. 与逻辑
+
+与逻辑: 输入逻辑变量 $A$ 与 $B$ 同时为 “ 1 ” 时, 输出逻辑变量 $F$ 才为“ “ 1 ”, 否则 $F$ 为“ 0 ”。其 表达方式可用如下三种形式。
+
+(a) MOS 管电路 (b) “关”态等效电路 (c) “开”态等效电路
+
+(1)真值表
+
+| $A$ | $B$ | $F$ |
+| :---: | :---: | :---: |
+| 0 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
+
+(2)逻辑表达式
+
+$F=A \cdot B$
+
+(3)逻辑符号, 如图 3.1-6 所示。
+
+(a) 标准符号 (b)曾用符号 (c) 美国符号
+
+## 2. 或逻辑
+
+或逻辑: 输入逻辑变量 $A$ 与 $B$ 只要有一个为 “ 1 ” 时, 输出逻辑变量 $F$ 才为 “ 1 ”, 否则 $F$ 为 “ 0 ”。其表达方式可用如下三种形式。
+
+(1)真值表
+
+| $A$ | $B$ | $F$ |
+| :---: | :---: | :---: |
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
+
+(2)逻辑表达式
+
+$$
+F=A+B
+$$
+
+(3)逻辑符号, 如图 3.1-7 所示。
+
+(a) 标准符号 (b)曾用符号 (c) 美国符号
+
+## 3. 非 (反) 逻辑
+
+非 (反) 逻辑: 输入逻辑变量只有一个, 当输入逻辑变量 $A$ 为 “ 1 ” 时, 输出逻辑变量 $F$ 为 “0”; 当输入逻辑变量 $A$ 为“ 0 ” 时,输出逻辑变量 $F$ 为“ 1 ”, 两者状态相反。其表达方式可用如 下三种形式。
+
+## (1)真值表
+
+(2)逻辑表达式
+
+$$
+F=\bar{A}
+$$
+
+(3)逻辑符号, 如图 3.1-8 所示。
+
+## （a）标准符号 （b）曾用符号 (c) 美国符号
+
+【例 3.1-10】由门电路组成的电路如图 3.1-9 所示。试写出输出 $F$ 的逻辑表达式; 并求 出当 $A=1 、 B=0$ 时, 输出 $F$ 的值。
+
+解: 根据图 3.1-9 的电路, 可写出逻辑函数表达式:
+
+$$
+\begin{aligned}
+& P=A B \\
+& Q=\overline{\bar{A} \bar{B}} \\
+& F=A B+\overline{\bar{A} \bar{B}}
+\end{aligned}
+$$
+
+将 $A=1 、 B=0$ 代人上式, 可得
+
+$$
+F=1
+$$
+
+## 2 集成迻辑门电路
+
+#### TTL 集成逻辑门电路
+
+## TTL 与非门电路
+
+(1) 电路结构
+
+转移的角度, $\mathrm{T}_{1}$ 的作用相当于多个二极管作在 一个芯片上, 几个二极管并联, 构成一个多发 射极晶体管。 $\mathrm{T}_{1} 、 R_{1}$ 为输入级, 完成与的逻辑 功能。 $\mathrm{T}_{2} 、 R_{2} 、 R_{3}$ 为中间级, 完成倒相的功能, 获得两个相位相反的信号。 $\mathrm{T}_{3} 、 \mathrm{~T}_{4} 、 \mathrm{~T}_{5}$ 和 $R_{5}$ 构 成推拉式输出级 (又称图腾柱输出电路), 以 提高带负载的能力。
+
+## (2)工作原理
+
+输入全为高电平 $(3.6 \mathrm{~V})$ 时的工作情况 如下。
+
+三极管 $\mathrm{T}_{1}: U_{A}=U_{B}=U_{C}=3.6 \mathrm{~V}, U_{\mathrm{B1}}=$ $U_{\mathrm{BC} 1}+U_{\mathrm{BE} 2}+U_{\mathrm{BES}}=2.1 \mathrm{~V}, U_{\mathrm{Cl}}=1.4 \mathrm{~V}_{\circ} A 、 B 、 C$ 三个发射结都反偏, 集电结正偏, 此时, $\mathrm{T}_{1}$ 工作 于“倒置”的状态, 即发射结起集电结的作用, 集电结起发射结的作用。
+
+极管 $\mathrm{T}_{2}$ : 因为 $I_{\mathrm{B} 2}=I_{\mathrm{C} 1}$, 该电流很大, 可使 $\mathrm{T}_{2}$ 饱和。因此, $U_{\mathrm{CE2} 2}=0.3 \mathrm{~V}$ 。
+
+二.极管 $\mathrm{T}_{5}$ : 因为 $U_{\mathrm{B} 5}=U_{\mathrm{F} 2}=0.7 \mathrm{~V}$, 深饱和, 可允许很大的灌电流负载, $U_{\mathrm{ol} .}=U_{\mathrm{CE} 5}=0.3 \mathrm{~V}$ 。 二极管 $\mathrm{T}_{3} 、 \mathrm{~T}_{4}$ : 因为 $U_{\mathrm{C} 2}=U_{\mathrm{BES}}+U_{\mathrm{CE} 2}=0.7+0.3=1 \mathrm{~V}$, 所以, $\mathrm{T}_{3}$ 处于微导通, $\mathrm{T}_{4}$ 处于截止状 态。
+
+输入有低电平 $(0.3 \mathrm{~V})$ 时的工作情况如下。
+
+三极管 $\mathrm{T}_{1}$ : 设 $U_{A}=0.3 \mathrm{~V}, U_{B}=U_{C}=3.6 \mathrm{~V}$, 则 $U_{\mathrm{BI}}=U_{A}+U_{\mathrm{BE} 1}=0.3+0.7=1 \mathrm{~V}_{\text {。此电位不 }}$ 足以使 $T_{1}$ 的集电结及 $T_{2} 、 T_{5}$ 的发射结正偏, 故 $T_{2} 、 T_{5}$ 截止。
+
+二极管 $\mathrm{T}_{3} 、 \mathrm{~T}_{4}$ : 由于电源 $E_{\mathrm{C}}$ 通过 $R_{2}$ 向 $\mathrm{T}_{3}$ 提供基极电流, 因为 $\mathrm{T}_{5}$ 截止, 所以 $\mathrm{T}_{3} 、 \mathrm{~T}_{4}$ 处于导通 状态。
+
+通过上述分析可以得出该电路的逻辑关系是: 输入全 1 , 输出为 0 ; 输入有 0 , 输出为 1 。
+
+(3) 电压传输特性
+
+TTL 与非门的电压传输特性如图 3.2-2 所示。 图中曲线大体分为四段,即 $A B$ 段、 $B C$ 段、 $C D$ 段和 $D E$ 段。
+
+$\mathrm{T}_{5}$ 截止, $\mathrm{T}_{3}$ 微导通, $\mathrm{T}_{4}$ 导通, 输出 $U_{\mathrm{o}}=U_{\mathrm{oH}}=3.6 \mathrm{~V}$, 属于“关门”状态。
+
+$B C$ 段: $U_{\mathrm{i}}=0.6 \sim 1.4 \mathrm{~V}$ 。随着 $U_{\mathrm{i}}$ 的增高 $\mathrm{T}_{2}$ 开 始导通, $U_{\mathrm{C} 2}$ 随 $U_{\mathrm{Cl}}$ 的上升而下降, 而经 $\mathrm{T}_{3} 、 \mathrm{~T}_{4}$ 使 $U_{\mathrm{o}}$ 随 $U_{\mathrm{C} 2}$ 的下降而下降,出现了 $B C$ 段。
+
+$C D$ 段: $U_{\mathrm{i}} \approx 1.4 \mathrm{~V}$ 。当 $U_{\mathrm{i}} \approx 1.4 \mathrm{~V}$ 时, $T_{2}$ 导通电流较大。以至 $U_{\mathrm{Bs}}$ 达到 $0.7 \mathrm{~V}$ 左右, 使 $\mathrm{T}_{5}$ 很 快由导通变为饱和, 使输出幅度明显下降。
+
+$D E$ 段: $U_{\mathrm{i}}>1.4 \mathrm{~V}_{\text {。 }} \mathrm{T}_{5}$ 饱和导通, $\mathrm{T}_{4}$ 截止。输入增加对输出电压影响不大。此时 $U_{0}=U_{\mathrm{ol}}$. $=0.35 \mathrm{~V}$, 属于与非门的“开门”状态。
+
+从电压传输特性曲线可以得出:
+
+低电平噪声容限
+
+$$
+U_{\mathrm{NI}}=U_{\mathrm{OFF}}-U_{\mathrm{iL}}=0.8-0.1=0.70 \mathrm{~V}
+$$
+
+高电平噪声容限
+
+$$
+U_{\mathrm{NH}}=U_{\mathrm{iH}}-U_{\mathrm{ON}}=3.0-1.4=1.6 \mathrm{~V}
+$$
+
+## 2. 特殊 TTL 门电路
+
+(1) 集电极开路与非门 ( OC 门)
+
+为了使门电路的输出能够并联使用, 采用的方法就是把输出级改为集电极开路的三极管 结构, 称为集电极开路的门电路 (OC 门), 电路结构和逻辑符号如图 3.2-3 所示。
+
+$O C$ 门工作时, 输出端需要外接负载电阻和电源。
+
+【例 3.2-1】试分析图 3.2-4 所示电路的逻辑功能。
+
+解: $Y=Y_{1} \cdot Y_{2}=\overline{A B} \cdot \overline{C D}=\overline{A B+C D}$
+
+(2) 三态与非门(TS门)
+
+普通的 TTL 门有两个状态, 即输出逻辑“ 0 ” 和逻辑 “ 1 ”, 这两个状态都是低阻输出。三态 输出门是在普通门电路的基础上附加控制电路而构成的, 它的特点是多了一种高阻状态, 电路 结构和逻辑符号如图 3.2-5 所示。
+
+在电路中 $E N$ 为控制端 (使能端), 当 $E N=1$ 时, 对 $\mathrm{T}_{1}$ 管无影响, 二极管 $\mathrm{D}$ 截止, 电路处于 与非门工作状态; $Y=\overline{A B}$; 当 $E N=0$ 时, $\mathrm{T}_{1}$ 导通, $U_{\mathrm{b} 1} \approx 1 \mathrm{~V}, \mathrm{~T}_{2} 、 \mathrm{~T}_{3}$ 管截止, 由于 $\mathrm{D}$ 导通, 使 $\mathrm{T}_{4}$ 管也
+
+截止, 故输出端呈高阻状态。这样输出端就有三种状态, 即高电平、低电平、高阻状态。由于电 路在 $E N=1$ 时为正常的与非工作状态, 所以称为高电平有效三态门。若在使能端加人一个非 门, 此时, 电路在 $\overline{E N}=0$ 时才处于正常的与非门工作状态, 故称为低电平有效三态门。
+
+## 3. 其他逻辑功能 TTL 逻辑门
+
+TTL 逻辑门电路除上述的与非门电路外, 还可构成具有其他逻辑功能的集成逻辑门电路。 (1) 或非门
+
+【例 3.2-2】试分析图 3.2-6 所示电路的逻辑功能。
+
+解: 该电路为或非门电路, 即
+
+$$
+Y=\overline{A+B}
+$$
+
+(2)与或非门
+
+【例 3.2-3】试分析图 3.2-7 所示电路的逻辑功能。
+
+解: 该电路为与或非门电路, 即
+
+$$
+Y=\overline{A B+C D}
+$$
+
+(3) 异或门
+
+【例 3.2-4】试分析图 3.2-8 所示电路的逻辑功能。
+
+解: 该电路为异或门电路, 即
+
+$$
+Y=A \bar{B}+\bar{A} B=A \oplus B
+$$
+
+#### MOS 集成逻辑门电路
+
+MOS 集成电路按照所用的管子类型不同分为二种。
+
+(1)PMOS 电路, 是由 PMOS 管构成的集成电路。其制造工艺简单, 但工作速度较低。
+
+(2)NMOS 电路, 是由 NMOS 管构成的集成电路。其工作速度优于 PMOS, 但制造工艺较为 复杂。
+
+(3)CMOS 电路, 是由 PMOS 管和 NMOS 管构成的互补 MOS 集成电路。具有静态功耗低、 抗干扰能力强、工作稳定性好、开关速度高等优点。
+
+## NMOS 反相器及逻辑门
+
+(1) NMOS 反相器
+
+一般 NMOS 电源电压 $E_{\mathrm{D}} \leqslant 15 \mathrm{~V}$, 典型数据为 $12 \mathrm{~V}, \mathrm{NMOS}$ 增强型管的开启电压 $U_{\mathrm{TN}}=3 \sim 5$ $\mathrm{V}, U_{\mathrm{TN}}$ 一般取 $4 \mathrm{~V}$ 进行分析。
+
+工作原理:
+
+当 $U_{\mathrm{i}}$ 为低电平 $(1 \mathrm{~V})$ 时, 由于 $U_{\mathrm{i}}<U_{\mathrm{Tl}}(4 \mathrm{~V})$, 因 此 $\mathrm{T}$ 截止; 而 $\mathrm{T}_{2}$ 管因 $U_{\mathrm{G} 2}=U_{\mathrm{D} 2}=E_{\mathrm{D}}=12 \mathrm{~V}$, 因此 $U_{\mathrm{CS} 2}$ $>U_{\mathrm{T} 2}(4 \mathrm{~V})$, 开启导通。输出电压 $U_{\mathrm{o}}=E_{\mathrm{D}}-U_{\mathrm{T} 2}=12$ $-4=8 \mathrm{~V}$, 为输出高电平。
+
+当 $U_{\mathrm{i}}$ 为高电平 $(8 \mathrm{~V})$ 时, 由于 $U_{\mathrm{i}}>U_{\mathrm{T}}(4 \mathrm{~V})$, 因 此 $\mathrm{T}_{1}$ 开通; 而 $\mathrm{T}_{2}$ 管因 $U_{\mathrm{GS}}$ 也大于 $U_{\mathrm{T} 2}(4 \mathrm{~V}), \mathrm{T}_{2}$ 也开启 导通。则输出电压
+
+$$
+U_{\mathrm{o}}=\frac{E_{\mathrm{D}}}{r_{\mathrm{DS} 1}+r_{\mathrm{DS} 2}} \times r_{\mathrm{DS} 1}
+$$
+
+由于 $T_{1}$ 和 $T_{2}$ 的跨导不同, 其中 $g_{m 1} \gg g_{m 2}$, 所以 $T_{1}$ 和 $T_{2}$ 导通后, 漏源电阻 $r_{\mathrm{DS} 1} \ll<r_{\mathrm{DS} 2}$, 输出 电压 $U_{\mathrm{o}}=U_{\mathrm{ol}} \approx 1 \mathrm{~V}$ 。
+
+电压传输特性和性能分析：
+
+典型 NMOS 增强型负载管反向器的电压 传输特性如图 3. 2-10 所示。输出高电平 $U_{\mathrm{oH}}=$ $E_{\mathrm{D}}-U_{\mathrm{T} 2}=8 \mathrm{~V}$, 输出低电平 $U_{\mathrm{o}}=1 \mathrm{~V}$ 。特性曲 线 $U_{\mathrm{i}} \geqslant 4 \mathrm{~V}$ 后转折。
+
+由电压传输特性曲线可得其关门电平 $U_{\mathrm{oFF}}$ 为 $4.5 \mathrm{~V}$; 开门电平 $U_{\mathrm{ON}}$ 为 $5 \mathrm{~V}$, 则可求出此反相 器的噪声容限。低电平噪声容限为
+
+$$
+U_{\mathrm{NL} .}=U_{\mathrm{OFF}}-U_{\mathrm{il}}=4.5-1=3.5 \mathrm{~V}
+$$
+
+高电平噪声容限为
+
+$$
+U_{\mathrm{NH}}=U_{\mathrm{iH}}-U_{\mathrm{ON}}=8-3=3 \mathrm{~V}
+$$
+
+可见 MOS 电路抗干扰能力较强。
+
+## (2) NMOS 门电路
+
+NMOS 与非门和或非门电路分别如图 3.2-11 (a)、(b) 所示。
+
+(a) NMOS 与非门(b) NMOS 或非门
+
+其中, 图 3.2-11(a) 所示电路输出为
+
+$$
+L=\overline{A \cdot B}
+$$
+
+$$
+L=\overline{A+B}
+$$
+
+NMOS 与或非门和或与非门电路分别如图 3.2-12(a)、(b) 所示。
+
+其中, 图 3.2-12(a) 所示电路输出为
+
+$$
+L=\widehat{A B+C}
+$$
+
+$$
+L=\overline{(A+B)(C+D)}
+$$
+
+【例 3. 2-5】 NMOS 逻辑门电路如图 3.2-13 所示, 试写出输出逻辑表达式。
+
+解: $Y_{1}=\overline{\overline{A(B+C)+A D}}=A B+A C+A D$
+
+【例 3. 2-6】MOS 逻辑门电路如图 3. 2-14 所示, 试写出输出逻辑表达式。
+
+(a) NMOS 与或非门(b) NMOS 或与非门
+
+解: $Y_{2}=\overline{\overline{A(B+C)+B C+D}}=A B+A C+B C+D$
+
+## PMOS 反相器及逻辑门
+
+(1) PMOS 反相器
+
+在 PMOS 集成电路中,一般取负逻辑, 规定: 高电平为“ 0 ”, 低电平为“ 1 ”。由图 3.2-15 可 以看出, 当输入 $U_{\mathrm{i}}$ 为 $-1 \mathrm{~V}$ 时 (高电平“ 0 ”), 输出 $U_{\mathrm{o}}$ 为 $-8 \mathrm{~V}$ (低电平“ “ 1 ”); 输入 $U_{\mathrm{i}}$ 为 $-8 \mathrm{~V}$ (低 电平“ 1 ”) 时, 输出 $U_{0}$ 为 $-1 \mathrm{~V}$ (高电平“ 0 ”)。
+
+(2) PMOS 门电路
+
+PMOS 与非门、或非门、与或非门电路分别如图 3.2-16(a)、(b)、(c) 所示。 其中, 图 3.2-16(a) 所示电路输出为
+
+$$
+L=\overline{A B}
+$$
+
+$$
+L=\overline{A+B}
+$$
+
+$$
+L=\overline{A B+C}
+$$
+
+(a) PMOS 与非门(b) PMOS 或非门(c)PMOS 与或非门
+
+## CMOS 反相器及摆辑门
+
+(1) CMOS 反相器
+
+CMOS 反相器是由一个 NMOS 管和一个 PMOS 管构成的互补 MOS 反相电路, 如图 3. 2-17 所示。工作管 $T_{1}$ 是增强型 NMOS管, 它的衬 底 $B_{1}$ 与 $S_{1}$ 相接, 并接地 (最低电平); 负载管 $\mathrm{T}_{2}$ 是一个增强型 PMOS 管, 它的祄底 $\mathrm{B}_{2}$ 与 $\mathrm{S}_{2}$ 相接, 并接电源 $E_{\mathrm{D}}$ (最高电平)。㮽极连接在 一起作为反向器的输入端, 漏极也连接在一 起作为反向器的输出端。
+
+电源电压 $E_{\mathrm{D}}>\left|U_{\mathrm{TP}}\right|+U_{\mathrm{TN}}$ 。 $\left(U_{\mathrm{TP}} 、 U_{\mathrm{TN}}\right.$ 分 别为 $\mathrm{T}_{2}$ 管和 $\mathrm{T}_{1}$ 管的开启电压), 一般取 $U_{\mathrm{TP}}=$ $-3 \mathrm{~V} ; U_{\mathrm{TN}}=3 \mathrm{~V}$, 电源电压 $E_{\mathrm{D}}$ 为 $+10 \mathrm{~V}$ 。
+
+## 工作原理:
+
+当 $U_{\mathrm{i}}$ 为低电平 $(\approx 0 \mathrm{~V})$ 时, 工作管 $\mathrm{T}_{1}$ 截止, 负载管 $\mathrm{T}_{2}$ 导通, 电源电压主要降在 $\mathrm{T}_{1}$ 管上, 输 出电压 $U_{\mathrm{o}}=E_{\mathrm{D}}(10 \mathrm{~V})$, 为高电平。
+
+当 $U_{\mathrm{i}}$ 为高电平 $(10 \mathrm{~V})$ 时, 工作管 $\mathrm{T}$, 导通, 负载管 $\mathrm{T}_{2}$ 截止, 电源电压主要降在 $\mathrm{T}_{2}$ 管上, 输出 电压 $U_{\mathrm{o}}=0 \mathrm{~V}$, 为低电平。
+
+由上述分析可见, CMOS 反相器有倒相的功能; 两管中一个导通, 另一个截止, 因此静态功 耗极小; 两个互补管的跨导都比较大, 因此在两个不同的输出状态下, 都为负载电容提供了一 个低阻抗的快速放电回路, 使其工作速度较高。
+
+(2) CMOS门电路
+
+【例 3.2-7】试分析图 3.2-18(a)、(b)、(c) 所示的 CMOS 逻辑门电路的逻辑功能。
+
+(a) CMOS 与非门 (b) CMOS 或非门 (c) CMOS 与或非门
+
+解:图 3. 2-18 (a) $: L=\overline{A B}$, 为与非门。
+
+(3) CMOS 传输门
+
+CMOS 传输门电路与符号如图 3.2-19 所示。它是由一个 PMOS 管 $T_{P}$ 和一个 NMOS 管 $T_{N}$ 并联而成, 两管源极接在一起, 作为输入端 $U_{i}$ 。两管漏极接在一起作为输出端 $U_{\mathrm{o}}$, 两管㮽极作
+
+(a) 电路 (b) 符号
+
+为控制端 (如加一对 $C P$ 和 $\overline{C P}$ (互为反相) 的控制 电压)。由于 MOS 管结构对称, 源极和漏极可以 互换, 电流可两个方向流动, 所以 $U_{\mathrm{i}}$ 和 $U_{\mathrm{o}}$ 可以互 换,因此,传输门又称双向开关。
+
+工作原理:
+
+当 $C P=$ “1" $(10 \mathrm{~V}), \overline{C P}=$ " 0 " $(0 \mathrm{~V})$ 时, 输入 在 $0 \sim 10 \mathrm{~V}$ 范围内连续变化, 传输门 TG 开通。为 分析方便起见, 设 $T_{P}$ 和 $T_{N}$ 的开启电压均为 $3 V_{\text {。 }}$ 。 $U_{\mathrm{i}}$ 在 $0 \sim 7 \mathrm{~V}$ 范围内变化时, $\mathrm{T}_{\mathrm{N}}$ 导通; $U_{\mathrm{i}}$ 在 $3 \sim 10 \mathrm{~V}$ 范围内变化时, $T_{p}$ 导通。因此, $U_{i}$ 在 $0 \sim 10 \mathrm{~V}$ 范围 内变化时, $\mathrm{T}_{\mathrm{p}} 、 \mathrm{~T}_{\mathrm{N}}$ 管中至少有一个管子导通, 即相
+
+当于开关接通, 输出 $U_{\mathrm{o}}=U_{\mathrm{i}}$ 。
+
+当 $C P=$ “ 0 " $(0 \mathrm{~V}), \overline{C P}=$ “ 1 ” (10 V) 时,无论输入为在 $0 \sim 10 \mathrm{~V}$ 范围内的任何值, $\mathrm{T}_{\mathrm{P}} 、 \mathrm{~T}_{\mathrm{N}}$ 均 不能导通, 因此, 相当于开关断开。
+
+【例 3. 2-8】 MOS 逻辑门电路如图 3.2-20 所示, 试写出输 出逻辑表达式。
+
+解 : $Y=A \bar{B}+\bar{A} B=A \oplus B$
+
+【例 3. 2-9】在 CMOS 电路中, 有时采用如图 3.2-21 所示 的电路扩展它的逻辑功能, 试分析各图的逻辑功能, 写出 $Y_{1} \sim$ $Y_{4}$ 的逻辑式。
+
+解:图 (a)
+
+$$
+Y_{1}=\overrightarrow{A B C D E}
+$$
+
+$$
+Y_{2}=\overline{A+B+C+D+E}
+$$
+
+图(c)
+
+$$
+Y_{3}=\overline{A B C} \cdot \overline{D E F}=\overline{A B C+D E F}
+$$
+
+图(d)
+
+$$
+Y_{4}=\overline{A+B+C} \cdot \overline{D+E+F}
+$$
+
+## 3 逻辑代数及逻辑函数化简
+
+### 1 逻辑代数的基本运算
+
+逻辑代数中,基本逻辑运算有“与”逻辑、“或”逻辑、“非”逻辑三种运算。
+
+## 1. “与”逻辑运算
+
+“与”逻辑运算简称“与”运算, 又称逻辑乘,通常用符号“ ・”表示。两个变量的“与”运算 的逻辑表达式为
+
+$$
+F=A \cdot B
+$$
+
+对于 $n$ 个变量的“与”运算逻辑表达式为
+
+$$
+F=A_{1} \cdot A_{2} \cdot A_{3} \cdot \cdots \cdot A_{n}
+$$
+
+2. “或”逻辑运算
+
+“或”逻辑运算简称“或”运算, 又称逻辑加,通常用符号“+”表示。两个变量的“或”运算 的逻辑表达式为
+
+$$
+F=A+B
+$$
+
+对于 $n$ 个变量的“或”运算逻辑表达式为
+
+$$
+F=A_{1}+A_{2}+A_{3}+\cdots+A_{n}
+$$
+
+## 3. “非”逻辑运算
+
+“非”逻辑运算简称“非”运算, 又称反相运算。其逻辑表达式为
+
+$$
+F=\bar{A}
+$$
+
+实际应用中会出现一些复杂的逻辑函数式,它们都是由一些基本运算组合而成。几种常 用的逻辑运算逻辑符号及表达式如图 3.3-1 所示。
+
+### 2 逻辑代数的基本定律和基本定理
+
+## 1. 逻辑代数的基本定律
+
+(1)自等律
+
+$$
+\begin{aligned}
+& A+0=A \\
+& A \cdot 1=A
+\end{aligned}
+$$
+
+(2)互补律
+
+$$
+\begin{aligned}
+& A+\bar{A}=1 \\
+& A \cdot \bar{A}=0
+\end{aligned}
+$$
+
+(3)交换律
+
+$$
+\begin{aligned}
+& A+B=B+A \\
+& A \cdot B=B \cdot A
+\end{aligned}
+$$
+
+(4)结合律
+
+$$
+\begin{aligned}
+& (A+B)+C=A+(B+C) \\
+& (A \cdot B) \cdot C=A \cdot(B \cdot C)
+\end{aligned}
+$$
+
+(5) 0 -1 律
+
+$$
+\begin{aligned}
+& 1+A=1 \\
+& 0 \cdot A=0
+\end{aligned}
+$$
+
+(6)重叠律
+
+$$
+\begin{aligned}
+& A+A=A \\
+& A \cdot A=A
+\end{aligned}
+$$
+
+(7)分配律
+
+$$
+\begin{aligned}
+& A \cdot(B+C)=A \cdot B+A \cdot C \\
+& A+B \cdot C=(A+B) \cdot(A+C)
+\end{aligned}
+$$
+
+(8)狄. 摩根定律 (De Morgan)
+
+$$
+\begin{aligned}
+& \overline{A \cdot B \cdot C}=\bar{A}+\bar{B}+\bar{C} \\
+& \overline{A+B+C}=\bar{A} \cdot \bar{B} \cdot \bar{C}
+\end{aligned}
+$$
+
+(9)二次求反律
+
+$$
+\overline{\bar{A}}=A
+$$
+
+2. 几个常用的公式
+
+$$
+\begin{aligned}
+& A+A B=A \\
+& A+\bar{A} B=A+B \\
+& A B+A \bar{B}=A \\
+& A(A+B)=A \\
+& A B+C D=(A+C)(A+D)(B+C)(B+D) \\
+& A B+\bar{A} C+B C=A B+\bar{A} C
+\end{aligned}
+$$
+
+## 3. 逻辑代数的基本定理
+
+(1) 代入定理
+
+在任何逻辑代数等式中, 如果等式两边所有出现某一变量的位置都代以一个逻辑函数,则 等式仍然成立。这就是代入定理。
+
+(2) 反演定理
+
+求原函数的反函数的过程称为反演。对于任意一个逻辑函数 $Y$, 若将其中的“ - ”换成
+
+得出的结果即为原函数的反函数 $\bar{Y}$ 。这个规律称为反演定理。
+
+使用反演定理时应注意两个原则 : “先括号后乘、加” 的运算原则; 不属于单个变量的反号 应保留下来。
+
+【例 3.3-1】若 $Y=\overline{B+C D+\overline{C+E}}+A B$, 求 $\bar{Y}$ 。
+
+解: 用反演定理可以直接写出:
+
+$$
+\bar{Y}=\overline{\bar{B}(\bar{C}+\bar{D}) \cdot \overline{\bar{C}} \overline{\bar{E}}} \cdot(\bar{A}+\bar{B})
+$$
+
+(3) 对偶定理
+
+对于任意一个逻辑函数 $Y$, 若将其中的“ .”换成“+”, “+”换成“・”, “0”换成“1”，“1” 换成“ 0 ”, 变量不变, 则得出的函数式为原函数式的对偶式 $Y^{\prime}$ 。
+
+【例 3.3-2】若 $Y=A(\bar{B}+C)+C D$ 求 $Y^{\prime}$ 。
+
+解: 用对偶定理可直接写出:
+
+$$
+Y^{\prime}=(A+\bar{B} C)(C+D)
+$$
+
+### 3 逻辑函数的建立和表达方法
+
+对于任何一个二值的逻辑问题, 常常可以设定此问题产生的条件为输入逻辑变量, 设定此 问题产生的结果为输出逻辑变量, 从而用逻辑函数来描述它。
+
+下面以一个实例来说明逻辑函数的建立和它的描述方法。如有三个变量 $A 、 B 、 C$ 。当三 个输入变量中有两个或两个以上为“ 1 ” 时输出为 “ 1 ”, 㔯则, 输出为 “ 0 ”。其逻辑关系的真值表 列于表 3. 3-1 中。
+
+表 3. 3-1 真值表
+
+| $A$ | $B$ | $C$ | $Y$ | $A$ | $B$ | $C$ | $Y$ |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 | 1 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 0 | 1 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+
+根据真值表可写出逻辑函数表达式并化简:
+
+$$
+\begin{aligned}
+Y & =\bar{A} B C+A \bar{B} C+A B \bar{C}+A B C=\bar{A} B C+A \bar{B} C+A B(\bar{C}+C) \\
+& =\bar{A} B C+A(\bar{B} C+B)=\bar{A} B C+A B+A C=B(\bar{A} C+A)+A C \\
+& =A B+A C+B C
+\end{aligned}
+$$
+
+根据逻辑函数表达式, 可以画出相应的逻辑电路图, 如图 3.3-2 所示。
+
+卡诺图是描述逻辑函数的另一种方法, 如图 3.3-3 所 示。它是用几何图形来简化逻辑函数表达式的有用工具。
+
+综上所述,逻辑函数真值表、逻辑函数表达式、逻辑电 路图和卡诺图是描述逻辑问题的四种不同形式。这四种 形式是可以相互转换的。
+
+【例 3.3-3】已知一个三变量逻辑函数的卡诺图如图 3. 3-4 所示。试用真值表、逻辑函数表达式和逻辑图来表 示该逻辑函数。
+
+解:用真值表表示该逻辑函数如下。
+
+| $A$ | $B$ | $C$ | $Y$ | $A$ | $B$ | $C$ | $Y$ |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 | 1 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 0 | 1 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 0 | 1 | 1 | 1 | 1 |
+
+## 用逻辑函数表示为
+
+$$
+Y=A \bar{B} C+A B \bar{C}+A B C=A \bar{B} C+A B(\bar{C}+C)=A B+A C
+$$
+
+用逻辑图表示,如图 3. 3-5 所示。
+
+### 4 逻辑函数的标准表达形式
+
+一个逻辑函数可以有多种等效的表达式,但其标准形式是唯一的。逻辑函数有两种标准 形式,即标准与或式(最小项表达式)和标准或与式(最大项表达式)。
+
+## 1. 标准与或式(最小项表达式)
+
+在 $n$ 个变量的逻辑函数中,若 $m$ 是由 $n$ 个变量组成的乘积项,在每一个乘积项中,这 $n$ 个 变量均以原变量或反变量出现,且仅出现一次,则该乘积项 $m$ 即为最小项。例如, $A 、 B 、 C$ 三个 变量的逻辑函数共有 $\bar{A} \bar{B} \bar{C} 、 \bar{A} \bar{B} C 、 \bar{A} B \bar{C} 、 \bar{A} B C 、 A \bar{B} \bar{C} 、 A \bar{B} C 、 A B \bar{C} 、 A B C$ 八个最小项。为了叙述和 书写方便,通常用 $m_{i}$ 表示最小项。下标 $i$ 按下面规则规定: 把最小项的取值看做一个二进制 数,那么它所表示的十进制数即为该最小项的编号。如最小项 $A \bar{B} C$ 记作 $m_{5}$ 。
+
+$n$ 变量构成的逻辑函数共有 $2^{n}$ 个最小项。
+
+任何一个逻辑函数都可以表示成若干最小项之和,该表达式称为最小项标准与或表达式。
+
+【例 3.3-4】写出 $Y=A B+A C+B C$ 的最小项标准与或表达式。
+
+解: $Y=A B+A C+B C$
+
+$$
+\begin{aligned}
+& =A B(C+\bar{C})+A C(B+\bar{B}+B C(A+\bar{A}) \\
+& =A B C+A B \bar{C}+A B C+A \bar{B} C+A B C+\bar{A} B C \\
+& =\bar{A} B C+A \bar{B} C+A B \bar{C}+A B C \\
+& =m_{3}+m_{5}+m_{6}+m_{7}=\sum m(3,5,6,7)
+\end{aligned}
+$$
+
+## 2. 标准或与式(最大项表达式)
+
+在 $n$ 个变量的逻辑函数中,若 $M$ 是由 $n$ 个变量组成的和项,在每一个和项中,这 $n$ 个变量 均以原变量或反变量出现,且仅出现一次,则和项 $M$ 即为最大项。例如 $A 、 B 、 C$ 三个变量的逻 辑函数共有 $(\bar{A}+\bar{B}+\bar{C}) 、(\bar{A}+\bar{B}+C) 、 \cdots \cdots,(A+B+C)$ 八个最大项。为了叙述和书写方便, 通 常用 $\boldsymbol{M}_{j}$ 表示最大项。下标 $j$ 按下面规则规定 : 最大项的取值看做一个二进制数,然后取反,那 么它所表示的十进制数即为该最大项的编号。如最大项 $(A+\bar{B}+C)$ 记作 $M_{2}$ 。
+
+$n$ 变量构成的逻辑函数共有 $2^{n}$ 个最大项。
+
+任何一个逻辑函数,都可以表示成若干最大项之积,该表达式称为最大项标准或与表达 式。
+
+【例 3. 3-5】写出 $Y=A B+A C+B C$ 的最大项标准或与表达式。
+
+解: $Y=A B+A C+B C$
+
+$$
+\begin{aligned}
+& =(A B+A C+B)(A B+A C+C)=(B+A C)(C+A B) \\
+& =(B+A)(B+C)(A+C)(B+C)=(A+B)(A+C)(B+C) \\
+& =(A+B+C \bar{C})(A+B \bar{B}+C)(A \bar{A}+B+C) \\
+& =(A+B+C)(A+B+\bar{C})(A+B+C)(A+\bar{B}+C)(A+B+C)(\bar{A}+B+C) \\
+& =(A+B+C)(A+B+\bar{C})(A+\bar{B}+C)(\bar{A}+B+C) \\
+& =M_{0} M_{1} M_{2} M_{4}=\prod M(0,1,2,4)
+\end{aligned}
+$$
+
+## 3. 最小项与最大项的关系
+
+对于一个逻辑函数的最小项表达式 $Y=\sum m_{i}$, 其最大项表达式就是它的反函数 $\bar{Y}$, 即
+
+$$
+Y=\overline{\bar{Y}}=\overline{\sum_{k \neq i} m_{k}}=\prod_{k \neq i} \overline{m_{k}}=\prod_{k \neq i} M_{k}
+$$
+
+### 5 逻辑函数的化简
+
+## 1. 逻辑函数的公式化简法
+
+公式法就是灵活运用逻辑代数的基本定律、定理和常用公式进行简化。现将经常使用的 方法归纳如下。
+
+(1) 并项法
+
+利用互补律 $A+\bar{A}=1$, 将两个乘积项合并为一项, 并消去一个变量。例如:
+
+$$
+Y=A B C+A B \bar{C}=A B(C+\bar{C})=A B
+$$
+
+（2）吸收法
+
+利用公式 $A+A B=A$, 吸收多余的乘积项，例如:
+
+$$
+Y=A \bar{C}+A \bar{B} \bar{C}+B C=A \bar{C}(1+\bar{B})+B C=A \bar{C}+B C
+$$
+
+(3) 消去法
+
+利用公式 $A+\bar{A} B=A+B$, 消去多余的变量。例如:
+
+$$
+Y=A B+\bar{A} C+\bar{B} C=A B+(\bar{A}+\bar{B}) C=A B+\overline{A B} C=A B+C
+$$
+
+(4) 配项法
+
+利用互补律 $B(A+\bar{A})=B$, 将某一项配成两项, 以便消去更多的乘积项。例如:
+
+$$
+\begin{aligned}
+Y & =A B+\bar{A} \bar{B}+B C+\bar{B} \bar{C}=A B+\bar{A} \bar{B}(C+\bar{C})+B C(A+\bar{A})+\bar{B} \bar{C} \\
+& =A B+\bar{A} \bar{B} C+\bar{A} \bar{B} \bar{C}+A B C+\bar{A} B C+\bar{B} \bar{C} \\
+& =A B+\bar{B} \bar{C}+\bar{A} C
+\end{aligned}
+$$
+
+用代数法化简逻辑函数的优点是简单方便,变量数没有限制。缺点是要熟练掌握逻辑代 数的基本定律和公式以及灵活运用的技巧;化简后的函数有时难以判断是否为最简式。
+
+【例 3.3-6】用代数法化简逻辑函数
+
+$$
+Y=\overline{\bar{A}(B+\bar{C})}(A+\bar{B}+C)(\overline{\bar{A} \bar{B} \bar{C}})
+$$
+
+解: $Y=\overline{\bar{A}(B+\bar{C})}(A+\bar{B}+C)(\overline{\bar{A} \bar{B} \bar{C}})$
+
+$$
+\begin{aligned}
+& =[A+\overline{(B+\bar{C})}](A+\bar{B}+C)(A+B+C) \\
+& =[A+\bar{B} C](A+\bar{B}+C)(A+B+C) \\
+& =A+\bar{B} C
+\end{aligned}
+$$
+
+【例 3.3-7】用代数法化简逻辑函数
+
+$$
+Y=A B+A \bar{C}+\bar{B} C+B \bar{C}+\bar{B} D+B \bar{D}+A D E(F+G)
+$$
+
+解: $Y=A B+A \bar{C}+\bar{B} C+B \bar{C}+\bar{B} D+B \bar{D}+A D E(F+G)$
+
+$$
+\begin{aligned}
+& =A(B+\bar{C})+\bar{B} C+B \bar{C}+\bar{B} D+B \bar{D}+A D E(F+G) \\
+& =A \bar{B} C+\bar{B} C+B \bar{C}+\bar{B} D+B \bar{D}+A D E(F+G) \\
+& =A+\bar{B} C+B \bar{C}+\bar{B} D+B \bar{D}+A D E(F+G) \\
+& =A+\bar{B} C+B \bar{C}+\bar{B} D+B \bar{D} \\
+& =A+\bar{B} C(D+\bar{D})+B \bar{C}+B \bar{D}+B \bar{D}(C+\bar{C}) \\
+& =A+\bar{B} C D+\bar{B} C \bar{D}+B \bar{C}+\bar{B} D+B C \bar{D}+B \bar{C} \bar{D} \\
+& =A+\bar{B} D+C \bar{D}+B \bar{C}
+\end{aligned}
+$$
+
+## 2. 逻辑函数的卡诺图化简法
+
+(1)卡诺图的构成
+
+卡诺图实质上是将代表逻辑函数的最小项用小方格表示,并将这些小方格按相邻原则排 列而成的方块图。图 3.3-6 中分别画出二到四变量的卡诺图。
+
+(2) 用卡诺图表示逻辑函数
+
+任何一个逻辑函数都可以用最小项之和的形式来表示,因此,也就可以用卡诺图来表示任 意一个逻辑函数。其方法是: 首先将逻辑函数转换成最小项之和的形式,然后在卡诺图上与这 些最小项对应的位置上填人 1 , 其余位置上填人 0 (或不填), 这就得到了表示该逻辑函数的卡 诺图。
+
+(a) 二变量卡诺图 (b)三变量卡诺图 (c) 四变量卡诺图
+
+(3) 用卡诺图化简逻辑函数为最简与或式
+
+由于卡诺图具有相邻性, 当相邻的两个方格为 1 时,即可消去两个方格中不同的那个变 量。其具体化简步骤如下。
+
+第一步,根据给定的逻辑函数,画出该逻辑函数的卡诺图。
+
+第二步,合并最小项。即将卡诺图中相邻方格中的 “ 1 ” 圈起来。画包围圈原则如下:
+
+(1)包围圈中所包围的最小项的个数必须为 $2^{n}$ 个 $(n=1,2,3, \cdots)$;
+
+(2)包围圈要尽量大,以便消去更多的变量因子;
+
+(3)避免重复包围。包围圈中必须有新的变量。否则,该包围圈将是多余的。
+
+第三步, 按包围圈写出每个包围圈的函数式, 然后将 这些函数式相加, 即得出简化后的逻辑函数式。
+
+【例 3.3-8】用卡诺图化简逻辑函数
+
+$$
+Y=\overline{A B C} D+\overline{A B} C D+\overline{A B} D+\bar{A} B \bar{D}+A C D+A \bar{B}
+$$
+
+解: 先将逻辑函数变换成最小项表达式, 即
+
+$$
+\begin{aligned}
+Y & =\overline{A B C} D+\overline{A B} C D+\overline{A B} D+\bar{A} B \bar{D}+A C D+A \bar{B} \\
+& =\sum m(1,3,4,6,8,9,10,11,15)
+\end{aligned}
+$$
+
+画出该逻辑函数的卡诺图,如图 3.3-7 所示。
+
+画包围圈合并最小项,写出最简与或表达式为
+
+$$
+Y=A \bar{B}+\bar{A} B \bar{D}+\bar{B} D+A C D
+$$
+
+(4) 具有无关项的逻辑函数的化简
+
+在实际逻辑电路中, 经常会遇到某些最小项的取值可以是任意的, 或者这些最小项在电路 中根本不会出现, 例如 BCD 码, 用四位二进制数组成的 16 个最小项中的 10 个编码, 其余 6 个 几余项是不会出现, 这样的最小项称为无关项。在卡诺图和真值表中用 $\phi$ 表示这些无关项。 在无关项的取值可以为 1 或 0 , 在用卡诺图化简时, 其取值应有利于得到更为简化的逻辑函数 式。
+
+【例 3.3-9】用卡诺图化简如下逻辑函数为最简与或表达式。
+
+$$
+\begin{aligned}
+& Y(A, B, C, D) \\
+& =\sum m(4,6,7,8,12,13)+\sum \phi(5,9,15)
+\end{aligned}
+$$
+
+解:画出卡诺图,如图 3.3-8 所示。
+
+利用无关项进行化简, 可得最简与或表达式为 $Y=\bar{A} C+B C$
+
+画包围圈时应避免重复包围,否则将产生多余项， 图 3. 3-8 中虚线所示的包围圈即为多余项。
+
+## 4 集成组合逻辑电路
+
+## 4 .1 组合逻辑电路概述
+
+组合逻辑电路在结构上的特点是：
+
+(1)它单纯由各类逻辑门组成, 逻辑电路中不含存 储元件；
+
+(2)逻辑电路的输入和输出之间没有反馈通路。
+
+由此可以看出,组合逻辑电路在任何时刻,电路的输出状态仅取决于该时刻的输入状态, 而与电路前一时刻的状态无关。这样的逻辑电路称为组合逻辑电路, 简称组合电路。
+
+3.4 .2 组合逻辑电路的分析和设计
+
+## 1. 组合逻辑电路的分析
+
+对一个给定的组合逻辑电路进行分析, 就是对电路进行逻辑解析, 从而确定它的逻辑功 能。其步骤如下:
+
+(1)由给定的逻辑电路逐级写出各输出端的逻辑函数表达式, 最后得到表示输出与输入关 系的逻辑表达式;
+
+(2)化简和变换逻辑表达式为最小项表达式;
+
+(3)根据最小项表达式, 列出真值表;
+
+(4)由真值表分析其执行的逻辑功能;
+
+(5)评价原设计电路,改进设计, 寻找最佳设计方案。
+
+在实际进行电路分析时, 由于电路的形式各种各样, 所以不必拘泥上述步骤, 可以略去或 颠倒其中某些步骤。
+
+【例 3. 4-1】 组合逻辑电路如图 3.4-1 所示, 试分析该电路的逻辑功能。
+
+解: (1)列出输出逻辑函数表达式。
+
+$Y=C(A \oplus B)+A \cdot \bar{B}+C+\overline{A+B+C}$ (2)化简和变换逻辑表达式为最小项表达式。
+
+$$
+\begin{aligned}
+Y & =C(A \oplus B)+A \cdot \bar{B}+C+\overline{A+B+C} \\
+& =C(A \bar{B}+\bar{A} B)+A B \bar{C}+\bar{A} \bar{B} \bar{C} \\
+& =A \bar{B} C+\bar{A} B C+A B \bar{C}+\bar{A} \bar{B} \bar{C} \\
+& =\sum m(0,3,5,6)
+\end{aligned}
+$$
+
+（3）根据最小项表达式,列出真值表,如表 3.4-1 所示。
+
+(4) 分析电路的逻辑功能: 从真值表中可以看出, 当 $A 、 B 、 C$ 二个输入变量组合中出现偶数个“ 1 ” 时,输出函数 $Y$ 为“ 1 ”, 否则 为“ 0 ”, 因此该组合电路是二输入偶校验电路。
+
+（5）评价原设计电路:上述电路用异或门或异或非门实现, 电 路比较简单。因为
+
+$$
+\begin{aligned}
+Y & =A \bar{B} C+\bar{A} B C+A B \bar{C}+\bar{A} \bar{B} \bar{C} \\
+& =C(A \bar{B}+\bar{A} B)+\bar{C}(A B+\bar{A} \bar{B}) \\
+& =C(A \oplus B)+\bar{C} \overline{(A \oplus B)} \\
+& =A \oplus B \oplus C
+\end{aligned}
+$$
+
+## 2. 组合逻辑电路的设计
+
+组合逻辑电路设计是根据给出的实际逻辑问题, 经过逻辑抽象, 找出用最少的逻辑门实现 给定的逻辑功能的方案, 并画出逻辑电路图。其设计步骤如下:
+
+| 输入变量 |  |  | $\frac{\text { 输蚔变量 }}{Y}$ |
+| :---: | :---: | :---: | :---: |
+| $A$ | $B$ | $C$ |  |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | $\overline{1}$ |
+| 1 | 1 | 1 | 1 |
+
+(1)根据给定的逻辑问题, 对逻辑问题进行抽象, 确定因果关系, 做出输入、输出变量规定, 建立真值表;
+
+(2)根据真值表写出逻辑表达式;
+
+(3)化简或变换逻辑函数表达式;
+
+(4)根据逻辑函数表达式画出逻辑电路图。
+
+【例 3. 4-2】试用与非门设计一个组合电路, 实现如下逻
+
+表 3. 4-2 例 3.4-2 真值表 辑功能:
+
+| 输入变量 |  |  | 输出变量 |
+| :---: | :---: | :---: | :---: |
+| $A$ | $B$ | $C$ | $Y$ |
+| 0 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 1 |
+| 1 | 1 | 1 | 0 |
+
+$$
+\begin{aligned}
+Y & =A B \bar{C}+A \bar{B} C+A B C \\
+& =A B(\bar{C}+C)+A C(\bar{B}+B) \\
+& =A B+A C
+\end{aligned}
+$$
+
+只有当三个裁判 (包括裁判长), 或一个裁判长和另一个裁 判确认的情况下, 才认为成功, 按下按键, 使灯亮, 否则, 表示失 败。
+
+解: (1) 对逻辑问题进行抽象。设 $A 、 B 、 C$ 三个逻辑变量代 表三个裁判,其中 $A$ 为裁判长。设逻辑“ 1 ” 表示按下按键, 逻辑 “ 0 ” 表示未按按键; $Y=1$ 表示成功, $Y=0$ 表示失败。
+
+(2)列出真值表, 如表 3.4-2 所示。
+
+(3) 根据真值表写出逻辑表达式。
+
+$$
+Y=A B \bar{C}+A \bar{B} C+A B C
+$$
+
+(4) 化简或变换逻辑函数表达式。
+
+图3.4-2 例 3.4-2 逻辑电路图
+
+$$
+=\overline{\overline{A B} \cdot \overline{A C}}
+$$
+
+(5) 画出逻辑电路图, 如图 3.4-2 所示。
+
+## 4 .3 编码器
+
+将二进制码按一定的规律进行编排, 使每一组代码具有 一定的含义 (如代表某一个数或符号), 这一过程称为编码。 实现编码的电路称为编码器。
+
+## 1. 二一十进制编码器
+
+二一十进制编码器的功能是将十进制的十个数字 $(0 \sim 9)$ 分别编成四位 BCD 码。以 $8421 \mathrm{BCD}$ 码为例, 该编码器有十个输入端 $\left(I_{0} \sim I_{9}\right)$ 代表十进制的十个数字, 有四个输出端 $(A$ 、 $B 、 C 、 D)$ 为二进制数, 代表四位 $B C D$ 码, 其中 $A$ 为最高位, $D$ 为最低位, 如图 3.4-3 所示。
+
+由于编码的惟一性, 即某一时刻只能对一个输入进行编码, 所以十个输入信号 $\left(I_{0} \sim I_{9}\right)$ 中, 某一时刻只能有一个输入信号为低电平 (设低电平为有效状态), 其余均为高电平。根据 逻辑电路可写出逻辑函数表达式为
+
+$$
+\begin{aligned}
+& A=\overline{I_{8}}+\overline{I_{9}}=\overline{I_{8} I_{9}} \\
+& B=\overline{I_{4}}+\overline{I_{5}}+\overline{I_{6}}+\overline{I_{7}}=\overline{I_{4} I_{5} I_{6} I_{7}} \\
+& C=\overline{I_{2}}+\overline{I_{3}}+\overline{I_{6}}+\overline{I_{7}}=\overline{I_{2} I_{3} I_{6} I_{7}} \\
+& D=\overline{I_{1}}+\overline{I_{3}}+\overline{I_{5}}+\overline{I_{7}}+\overline{I_{9}}=\overline{I_{1} I_{3} I_{5} I_{7} I_{9}}
+\end{aligned}
+$$
+
+| 十进制数 | 输入 |  |  |  |  |  |  |  |  |  | 输 出 |  |  |  |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|  | $I_{9}$ | $I_{8}$ | $I_{7}$ | $I_{6}$ | $I_{5}$ | $I_{4}$ | $I_{3}$ | $I_{2}$ | $I_{1}$ | $I_{0}$ | $A$ | $B$ | C | $D$ |
+| 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 1 |
+| 2 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1 | 0 |
+| 3 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 0 | 0 | 1 | 1 |
+
+根据逻辑函数式, 可列出 8421 BCD 编码器的逻辑功能表, 如表 3.4-3 所示。
+
+表 3.4-3 8421 BCD 编码器的逻辑功能表
+
+| 十进制数 | 输 人 |  |  |  |  |  |  |  |  |  | 输 出 |  |  |  |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|  | $l_{9}$ | $I_{8}$ | $I_{7}$ | $I_{6}$ | $I_{5}$ | $I_{4}$ | $I_{3}$ | $I_{2}$ | $I_{1}$ | $I_{0}$ | $A$ | $B$ | $C$ | $D$ |
+| 4 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 0 | 1 | 0 | 0 |
+| 5 | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 0 | 1 |
+| 6 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 0 |
+| 7 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 1 |
+| 8 | I | 0 | I | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| 9 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 1 |
+
+## 2. 二进制编码器
+
+【例 3.4-3】试分析如图 3.4-4 所示逻辑电路的 逻辑功能。
+
+解: (1) 根据逻辑电路,写出输出逻辑函数表达 式。
+
+$$
+\begin{aligned}
+& Y_{0}=\overline{\overline{I_{1}} \cdot \overline{I_{3}} \cdot \overline{I_{5}} \cdot \overline{I_{7}}} \\
+& Y_{1}=\overline{\overline{I_{2}} \cdot \overline{I_{3}} \cdot \overline{I_{6}} \cdot \overline{I_{7}}} \\
+& Y_{2}=\overline{\overline{I_{4}} \cdot \overline{I_{5}} \cdot \overline{I_{6}} \cdot \overline{I_{7}}}
+\end{aligned}
+$$
+
+(2) 根据逻辑函数式列出逻辑功能表, 如表 3.4-4
+
+表 3.4-4 例 3.4-3 逻辑功能表
+
+|  |  | 输 | $\lambda$ |  | 输 出 |  |  |  |  |  |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $\overline{I_{7}}$ | $\overline{I_{6}}$ | $\overline{I_{5}}$ | $\bar{I}_{4}$ | $\overline{I_{3}}$ | $\overline{I_{2}}$ | $\overline{I_{1}}$ | $\overline{I_{0}}$ | $Y_{2}$ | $Y_{1}$ | $Y_{0}$ |
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | 1 |
+| 1 | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 0 |
+| 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 |
+| 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+
+(3) 分析逻辑功能: 从逻辑功能表可以看出, 该逻辑电路为输入低电平有效的 8-3 二进制 编码器。
+
+## 4 .4 译码器和显示器
+
+## 1. 译码器
+
+译码是编码的逆过程, 它的逻辑功能是将每一组代码的含义“翻译”出来, 即将每一组代 码译为一个特定的输出信号, 表示它原来所代表的信息。能完成译码功能的逻辑电路称为译 码器。
+
+(1) 二进制译码器
+
+二进制译码器原理电路如图 3.4-5 所示。
+
+二进制译码器有 $n$ 位二进制代码输入端, $2^{n}$ 个译码输出端, 还可以有一个或多个输入使能 端。当输入使能端为有效电平时, 对应每一组的代码输入,仅有一个与该代码相对应的输出端 为有效电平, 其他 $2^{n}-1$ 个输出端均为无效电平。
+
+(a) 74LS138 电路图 (b) 74IS138 逻辑符号
+
+当使能端为有效电平, 即 $S_{1}=1, \overline{S_{2}}=\overline{S_{3}}=0$ 时, 根据逻辑电路可写出输出逻辑函数表达 式:
+
+$$
+\begin{aligned}
+& \overline{Y_{0}}=\overline{\bar{A}_{2} \bar{A}_{1} \ddot{A}_{0}}=\overline{m_{0}} ; \quad \overline{Y_{4}}=\overline{A_{2} \bar{A}_{1} \bar{A}_{0}}=\overline{m_{4}} \\
+& \overline{Y_{1}}=\overline{\bar{A}_{2} \bar{A}_{1} \bar{A}_{0}}=\overline{m_{1}} ; \quad \overline{Y_{5}}=\overline{A_{2} \overline{A_{1} A_{0}}}=\overline{m_{5}} \\
+& \overline{Y_{2}}=\overline{\overline{A_{2}} A_{1} \overline{A_{0}}}=\overline{m_{2}} ; \quad \overline{Y_{6}}=\overline{A_{2} A_{1} \overline{A_{0}}}=\overline{m_{6}} \\
+& \overline{Y_{3}}=\overline{\overline{A_{2} A_{1} A_{0}}}=\overline{m_{3}} ; \quad \overline{Y_{7}}=\overline{A_{2} A_{1} A_{0}}=\overline{m_{7}}
+\end{aligned}
+$$
+
+(2) 二一十进制译码器
+
+二一十进制译码器的逻辑功能是将四位 BCD 码的十组代码翻译成十组高、低电平输出信 号, 代表十进制数码。
+
+根据图 3.4-7 写出译码器输出逻辑函数的逻辑表达式:
+
+$$
+\begin{aligned}
+& \overline{Y_{0}}=\overline{\bar{A}_{3} \bar{A}_{2} \bar{A}_{1} \bar{A}_{0}}, \quad \overline{Y_{5}}=\overline{\overline{A_{3} A_{2} \overline{A_{1}} A_{1}}} \\
+& \overline{Y_{1}}=\overline{\bar{A}_{3} \bar{A}_{2} \bar{A}_{1} A_{0}}, \quad \overline{Y_{6}}=\overline{\overline{A_{3} A_{2} A_{1}}} \overline{\overline{A_{0}}}
+\end{aligned}
+$$
+
+$$
+\begin{array}{ll}
+\overline{Y_{2}}=\overline{\bar{A}_{3} \bar{A}_{2} \bar{A}_{1} A_{0},} & \overline{Y_{7}}=\overline{\overline{A_{3}} A_{2} A_{1} A_{0}} \\
+\overline{Y_{3}}=\overline{\bar{A}_{3} \bar{A}_{2} A_{1} A_{0},} & \overline{Y_{8}}=\overline{A_{3} \bar{A}_{2} \bar{A}_{1} A_{0}} \\
+\overline{Y_{4}}=\overline{\bar{A}_{3} A_{2} \bar{A}_{1} \bar{A}_{0},} & \overline{Y_{9}}=\overline{A_{3} \bar{A}_{2} \bar{A}_{1} A_{0}}
+\end{array}
+$$
+
+## 2. 译码显示驱动器
+
+该电路中数码管为七段共阴极数码管, 当某一段为高电平时, 该端发光二极管亮。集成电 路 74LS48 为七段译码驱动器, 输入 $A_{3} \sim A_{0}$ 为四位二进制代码, 译码器输出 $Y_{\mathrm{a}} \sim Y_{\mathrm{g}}$ 用来驱动发 光二极管。例如: 当输入二进制代码 $A_{3} \sim A_{0}=0011$ 时, 译码器的输出 $Y_{\mathrm{a}} \sim Y_{\mathrm{g}}=1111001$, 即 七段显示器 $a 、 b 、 c 、 d 、 g$ 段被点亮,此时显示数字“3”。
+
+【例 3.4-4】试用两片 3-8 译码器 74LS138 接成 4-16 译码器。
+
+解: 由于 3 线- 8 线译码器 74LS138 只有 3 个代码输入端, 而 4 线- 16 线译码器应有 4 个代 码输入端, 所以, 可选用控制端作为第四个代码输入端。
+
+取片 (1) 和片 (2) 的 $S_{1}$ 作为第四个代码输入端 $A_{3}$, 片 (1) 和片 (2) 的 3 个代码输入端 $A_{2}$ 、 $A_{1} 、 A_{0}$ 接在一起作为 4-16 译码器的 3 个代码输入端 $A_{2} 、 A_{1} 、 A_{0}$ 。同时, 使两片的 $\overline{S_{3}}=\overline{S_{3}}=0$, 如图 3. 4-9 所示。
+
+电路的工作原理如下。
+
+当 $A_{3}=0$ 时, 片 (1)工作, 而片 (2) 禁止, 将 $A_{3} A_{2} A_{1} A_{0}=0000 \sim 0111$ 这八个输入代码译成 $\overline{Y_{0}} \sim \overline{Y_{7}}$ 八个低电平信号。当 $A_{3}=1$ 时, 片 (1) 禁止, 而片 (2) . . 作, 将 $A_{3} A_{2} A_{1} A_{0}=0111 \sim 1111$
+
+这八个输入代码译成 $\overline{Y_{8}} \sim \overline{Y_{15}}$ 八个低电平信号。这样即实现了用两个 3-8 译码器扩展成一个 $4-$ 16 译码器。
+
+## 4 .5 加法器
+
+能够完成两个数码相加的逻辑电路称为加法器。
+
+## 1. 半加器
+
+半加是实现两个一位二进制数相加的运算电路, 称为半加器。
+
+假定两个一位二进制数 $A_{i}$ 和 $B_{i}$ 进行半加运算, 半加和为 $S_{i}$, 向高位进位用 $C_{i}$ 表示。按二 进制的加法运算规则可得到半加器的真值表, 如表 3.4-5 所示。
+
+表 3. 4-5 半加器真值表
+
+| 输 |  | 输 出 |  | 输 人 |  | 输出 |  |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $A_{i}$ | $B_{i}$ | $S_{i}$ | $C_{i}$ | $A_{i}$ | $B_{i}$ | $S_{i}$ | $C_{i}$ |
+| 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 0 | 1 | 1 | 1 | 1 |
+
+由表 3.4-5 可写出半加器的输出逻辑表达式:
+
+$$
+\begin{aligned}
+& S_{i}=A_{i} \overline{B_{i}}+\overline{A_{i}} B_{i}=A_{i} \oplus B_{i} \\
+& C_{i}=A_{i} B_{i}
+\end{aligned}
+$$
+
+由输出逻辑表达式可以画出半加器的逻辑电路图, 如图 3.4-10 所示。
+
+## 2. 全加器
+
+全加是指两个一位二进制数相加时,还要考虑到来自低位的进位数的运算。实现全加运 算的逻辑电路称为全加器。
+
+假定来自低位的进位用 $C_{\mathrm{i}-1}$ 表示, 两个一位二进制数 $A_{\mathrm{i}}$ 和 $B_{\mathrm{i}}$ 进行全加运算，按二进制的 加法运算规则可得到全加器的真值表,如表 3.4-6 所示。
+
+由表 3.4-6 可写出全加器的输出逻辑函数表达式:
+
+$$
+\begin{aligned}
+& S_{i}=\bar{A}_{i} \bar{B}_{i} C_{i-1}+\bar{A}_{i} B_{i} \bar{C}_{i-1}+A_{i} \bar{B}_{i} \bar{C}_{i-1}+A_{i} B_{i} C_{i-1} \\
+& C_{i}=\bar{A}_{i} B_{i} C_{i-1}+A_{i} \bar{B}_{i} C_{i-1}+A_{i} B_{i} \bar{C}_{i-1}+A_{i} B_{i} \bar{C}_{i-1}
+\end{aligned}
+$$
+
+(a) 用异或门和与门构成的半加器 (b) 用与非门构成的半加器 (c) 逻辑符号
+
+若用半加器和门电路组成全加器的逻辑电路, 则可将上式变换为
+
+表 3.4-6 全加器真值表
+
+| 人 输 |  |  | 输 出 |  | 输 人 |  |  | 人 输 |  |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $A_{i}$ | $B_{i}$ | $C_{i-1}$ | $S_{i}$ | $C_{i}$ | $A_{i}$ | $B_{i}$ | $C_{i-1}$ | $S_{i}$ | $C_{i}$ |
+| 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
+| 0 | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 0 | 1 |
+| 0 | 1 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 1 |
+| 0 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 1 |
+
+$S_{i}=A_{i} \oplus B_{i} \oplus C_{i-1}$
+
+$C_{i}=\left(A_{i} \oplus B_{i}\right) C_{i-1}+A_{i} B_{i}$
+
+由此逻辑函数式画出的逻辑电路图,如图 3.4-11 所示。
+
+(a) 全加器逻辑电路图 (b) 逻辑符号
+
+## 3. 多位加法器
+
+由四个全加器构成的四位二进制串行进位加法器如图 3. 4-12 所示。其中 $A_{3} \sim A_{0}$ 为被加 数, $B_{3} \sim B_{0}$ 为加数, $S_{3} \sim S_{0}$ 为和数, $C_{3}$ 为进位数。
+
+### 6 数码比较器
+
+能完成两数进行比较的数字逻辑电路称为数码比较器。用来比较的两个数, 可以是二进 制数,也可以是其他进制数。
+
+## 1. 一位数码比较器
+
+$A$ 和 $B$ 为一位二进制数,进行数值比较,比较结果有三种情况：
+
+$A_{3} B_{3}$
+
+$A_{2} B_{2}$
+
+$A_{1} B_{1}$
+
+$A_{0} \quad B_{0}$
+
+(1) $A>B$, 应使比较器的输出 $Y_{(A>B)}=1$;
+
+(2) $A=B$, 应使比较器的输出 $Y_{(A=B)}=1$;
+
+(3) $A<B$, 应使比较器的输出 $Y_{(A<B)}=1$ 。
+
+根据上述三种情况, 可以列出一位数码比较器的真值表, 如表 3.4-7 所示。
+
+表 3.4-7 一位数码比较器真值表
+
+| 输 |  | 愉 |  |  |
+| :---: | :---: | :---: | :---: | :---: |
+| $A$ | $B$ | $Y_{(A>B)}$ | $Y_{(A=B)}$ | $Y_{(\Lambda<B)}$ |
+| 0 | 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 0 | 1 |
+| 1 | 0 | 1 | 0 | 0 |
+| 1 | 1 | 0 | 1 | 0 |
+
+由表 3.4-7 可得到输出逻辑函数表达式:
+
+$$
+\begin{aligned}
+& Y_{(A>B)}=A \bar{B} \\
+& Y_{(A=B)}=\bar{A} \bar{B}+A B=\bar{A} B+A \bar{B} \\
+& Y_{(A<B)}=\bar{A} B
+\end{aligned}
+$$
+
+根据逻辑函数表达式, 可画出一位数码比较器的逻辑电路图, 如图 3.4-13 所示。
+
+## 2. 多位数码比较器
+
+常用的集成数码比较器是四位数码比较器, 如 74LS85 芯片, 其逻辑符号如图 3.4-14 所 示。该四位数码比较器是输入的四位数 $A_{3} \sim A_{0}$ 与 $B_{3} \sim B_{0}$ 进行比较, 三个输出端为 $Y_{(A>B)}$ 、 $Y_{(A=B)} 、 Y_{(A<B)}$ 。为了使比较器的功能更加完善, 使用灵活, 又增加了从低位来的比较结果的三 个输入端 $I_{(A>B)} 、 I_{(A=B)} 、 I_{(A<B)}$ 。
+
+【例 3.4-5】将两片四位数码比较器74LS85 扩展成八位二进制数码比较器。
+
+解: 对两个八位二进制数, 若高四位相等, 则它们的大小应由低四位的比较结果来确定。 因此, 低四位比较结果应作为高四位比较的条件, 所以, 低四位比较器的输出 $\left(Y_{\mathrm{L},(A>B)} 、 Y_{\mathrm{I},(A=B)}\right.$ 、 $\left.Y_{\mathrm{L}(A<B)}\right)$ 应分别连接到高四位的进位输入端 $\left(I_{(A>B)} 、 I_{(A=B)} 、 I_{(A<B)}\right)$ 。如图 3.4-15 所示。
+
+### 7 数据选择器
+
+在数据传输过程中, 经常遇到需要把多路信号中的某一路信号挑选出来, 能完成这一功能 的部件, 称为数据选择器 (或多路开关)。它是一种多路输入, 单路输出的逻辑部件, 究竟选择 哪一路输入信号, 则由地址控制端决定。
+
+八选一数据选择器 74IS151 的逻辑电路图和逻辑符号如图 3.4-16 所示。由图中可以看 出, 该数据选择器有 $Y$ 和 $Y$ 两个互补输出端, $I_{7} \sim I_{0}$ 为 8 路数据输入端, $A_{2} \sim A_{0}$ 为 3 路通道选择 端, 还有一个使能输入端 $\bar{S}$ 。
+
+(a) 逻辑电路图 (b) 逻辑符号图
+
+当 $\bar{S}=0$ 时, 电路处于工作状态, 选择器工作, 此时可列出它的输出逻辑表达式:
+
+$$
+Y=\bar{A}_{2} \bar{A}_{1} \bar{A}_{0} I_{0}+\bar{A}_{2} \bar{A}_{1} A_{0} I_{1}+\overline{A_{2}} A_{1} \overline{A_{0}} I_{2}+\bar{A}_{2} A_{1} A_{0} I_{3}+A_{2} \bar{A}_{1} \bar{A}_{0} I_{4}+A_{2} \overline{A_{1}} A_{0} I_{5}
+$$
+
+$$
++A_{2} A_{1} \overline{A_{0}} I_{6}+A_{2} A_{1} A_{0} I_{7}
+$$
+
+【例 3.4-6】试用 8 选 1 数据选择器 74LS151 实现逻辑函数
+
+$$
+F(A, B, C)=\bar{A} \bar{B} \bar{C}+A \bar{C}+A B C
+$$
+
+解: (1) 将函数表达式展成最小项表达式。
+
+$$
+F(A, B, C)=\bar{A} \bar{B} \bar{C}+A \bar{C}(B+\bar{B})+A B C=m_{0}+m_{4}+m_{6}+m_{7}
+$$
+
+(2) 写出八选一数据选择器的输出逻辑函数式, 并与上述函数式进行比较, 求出对应关 系。令
+
+$$
+\begin{aligned}
+& I_{0}=I_{4}=I_{6}=I_{7}=1 \\
+& I_{1}=I_{2}=I_{3}=I_{5}=0
+\end{aligned}
+$$
+
+根据上述逻辑函数式, 可画出逻辑电路图, 如图 3.4-17 所示。
+
+### 8 数据分配器
+
+在数据传输过程中, 完成将一路输入数据分配到多路输出端的电路称为数据分配器。它 是一种单路输入,多路输出的逻辑部件, 究竟从哪一路输出, 则由地址控制端决定。
+
+由逻辑图可写出数据分配器的输出逻辑函数逻辑 表达式:
+
+$$
+\begin{aligned}
+& F_{0}=\overline{E \bar{A}_{1} \bar{A}_{0} \bar{D}}, F_{1}=\overline{E \overline{A_{1} A_{0} \bar{D}}} \\
+& F_{2}=\overline{E A_{1} \bar{A}_{0} \bar{D}}, F_{3}=\overline{E A_{1} A_{0} \bar{D}}
+\end{aligned}
+$$
+
+如当 $E=1, A_{1} A_{0}=10$ 时, $F_{2}=D$, 其他输出为 1 。其 余可以依此类推。
+
+## 4 .9 半导体存储器
+
+## 1. 存储器分类
+
+半导体存储器的种类很多, 根据用户能对存储器进 行的操作分为只读存储器 (ROM) 和随机读写存储器
+
+| $\begin{array}{c}\text { 只读存储器 ROM } \\ \text { (只能读出数据,断电不丢失) }\end{array}$ |  |  |  |  | $\begin{array}{c}\text { 读写存储器 RAM } \\ \text { (可随机存取数据,断电即丢失) } \\ \end{array}$ |  |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $\begin{array}{l}\text { 周定 ROM } \\ \text { 掩膜 ROM }\end{array}$ | 可编程 ROM |  |  |  | $\frac{\text { 静态 RAM }}{\text { SRAM }}$ | $\frac{\text { 动态 RAM }}{\text { DRAM }}$ |
+|  | PROM | EPROM | $E^{2}$ ROM | 块闪 ROM |  |  |
+| $\begin{array}{l}\text { 由生产厂 } \\ \text { 家用掩膜 方 } \\ \text { 法写人,数据 } \\ \text { 周定不变 }\end{array}$ | $\begin{array}{l}\text { 一次性可 } \\ \text { 编程存储器, } \\ \text { 出厂时数据 } \\ \text { 全为 } 0 \text { 或 } 1 \text {, } \\ \text { 可由用户写 } \\ \text { 人一次 }\end{array}$ | $\begin{array}{l}\text { 光可擦除 } \\ \text { 可编程存储 } \\ \text { 器,利用叠柈 } \\ \text { MOS 技术, 以 } \\ \text { 紫外线多次 } \\ \text { 整体擦除, 以 } \\ \text { 专用编程 器 } \\ \text { 写人 }\end{array}$ | $\begin{array}{l}\text { 电可擦除 } \\ \text { 可编程存储 } \\ \text { 器, 隧道 MOS } \\ \text { 管技术, 电擦 } \\ \text { 除, 速 度快, } \\ \text { 擦除写人同 } \\ \text { 时完成, 按字 } \\ \text { 摖除, 随机读 } \\ \text { 写 }\end{array}$ | ![](https://cdn.mathpix.com/cropped/2023_09_05_faef86c54cde9eea44b4g-239.jpg?height=419&width=162&top_left_y=553&top_left_x=1082) | $\begin{array}{l}\text { 静态随机存 } \\ \text { 取, 如 CMOS 六 } \\ \text { 管存储单元构成 } \\ \text { 的存储体 }\end{array}$ | $\begin{array}{l}\quad \text { 动态随机 存 } \\ \text { 取,用单管、三管 } \\ \text { 动态单元构成存 } \\ \text { 储体。需要定珀 } \\ \text { 刷新 }\end{array}$ |
+
+## 2. 存储器的结构
+
+存储器电路包括地址译码器、存储矩阵和读/写控制电路。RAM 和 ROM 的结构基本一 致。地址译码器实现地址编码到字选信号的变换, 通常分为行译码和列译码。存储矩阵将存 储单元按矩阵排列, 来自译码器输出的行选信号和列选信号选通存储矩阵中的某一存储单元, 一个存储单元存放一位二进制数。读/写电路完成读出和写入的方向选择。如图 3.4-19 所示 为一个 256 字 $\times 4$ 位的存储器电路结构。
+
+图中,8 条地址线分为两组, $A_{4} \sim A_{0}$ 经行地址译码器产生 $X_{31} \sim X_{0}$ 的 32 个行选信号, $A_{7} \sim$ $A_{5}$ 经列地址译码器产生 $Y_{7} \sim Y_{0}$ 的 8 个列选信号, 每一行、每一列选线的交叉点分布着一组存 储单元, 这组存储单元占同一地址,一组中的四个单元即同一字的四位,整个矩阵具有 $256 \times 4$ 个存储单元, 容量是 $256 \times 4$ 位。
+
+【例 3.4-7】在图 3. 4-20 所示的 ROM 电路中适当的位置加画 NMOS 管, 分别实现下面组 合逻辑函数,并用三态门输出。
+
+$$
+D_{3}=\overline{A \cdot B}, D_{2}=\overline{A+B}, D_{1}=A \oplus B, D_{0}=\overline{A \oplus B}
+$$
+
+解: 这是一个用 NMOS 管反相器为基本存储单元构成的 ROM 电路, 其中, 地址信号 $A 、 B$ 作为函数输入信号,位线信号 $S$ 控制三态门输出。
+
+列出实现逻辑函数的真值表,如表 3.4-9 所示。
+
+表 3. 4-9 例 3.4-7 真值表
+
+| $B$ | $D_{3}$ | $D_{2}$ | $D_{1}$ | $D_{0}$ |  |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|  | $\overline{A B}$ | $\overline{A+B}$ | $A \oplus B$ | $\overline{A \oplus B}$ |  |
+| 0 | 0 | 1 | 1 | 0 | 1 |
+| 0 | 1 | 0 | 1 | 0 |  |
+| 10 | 1 | 0 | 1 | 0 |  |
+| 1 | 0 | 0 | 0 | 1 |  |
+
+按电路分析的要求, 在适当的位线和字线交叉点的位置上加 MOS 管即可。为了方便, 通 常用加黑点代替管子,如图 3.4-20 所示。
+
+#### 0 可编程逻辑阵列
+
+可编程逻辑阵列 (Programmable Logic Array) 是由可编程逻辑与阵列和可编程逻辑或阵列 组成, 如图 3.4-21 所示。
+
+图中, 与逻辑阵列最多可以产生 8 个可编程的乘积项 (不一定是最小项), 或逻辑阵列最 多能产生四个组合逻辑函数,这四个逻辑函数为
+
+$$
+\begin{aligned}
+& F_{3}=B_{1} B_{0} A_{1} A_{0} \\
+& F_{2}=B_{1} \overline{B_{0}} A_{1}+B_{1} A_{1} \overline{A_{0}} \\
+& F_{1}=B_{1} \overline{A_{1}} A_{0}+B_{1} \overline{B_{0}} A_{0}+\overline{B_{1}} B_{0} A_{1}+B_{0} A_{1} \overline{A_{0}} \\
+& F_{0}=B_{0} A_{0}
+\end{aligned}
+$$
+
+【例 3.4-8】试用 PLA 实现表 3.4-10 所示一组多输出组合逻辑函数 $F_{1} 、 F_{2} 、 F_{3}$ 和 $F_{4}$ 。
+
+表 3.4-10 例 3.4-8 题表
+
+| $A$ | $B$ | $C$ | $D$ | $F_{1}$ | $F_{2}$ | $F_{3}$ | $F_{4}$ |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 0 | 0 | 0 | 0 | 1 | 1 | 1 | 1 |
+| 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 |
+| 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 1 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 0 | 1 | 0 | 1 | 0 | 0 | 0 | 1 |
+| 0 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
+| 0 | 1 | 1 | 1 | 1 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 1 | 0 | 0 | 1 | 1 | 0 | 1 | 1 |
+| 1 | 0 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 1 | 1 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+
+解: 由于 PLA 的与逻辑阵列和或逻辑阵列都是可以编程的,因此, 可先对表 3. 4-10 给出的 一组逻辑函数进行化简,然后画出 PLA 的阵列图形。
+
+根据表 3.4-10 给出的真值表, 利用卡诺图化简可得
+
+$$
+\begin{aligned}
+& F_{1}=\bar{B} D+B C+\bar{A} \bar{B} \bar{C} \\
+& F_{2}=B C+\bar{A} \bar{B} \bar{C}+A B \\
+& F_{3}=\bar{B} D+B C+\bar{A} \bar{B} \bar{C} \\
+& F_{4}=\bar{A} \bar{C}+A C+\bar{B} \bar{C}
+\end{aligned}
+$$
+
+根据逻辑表达式,画出 PLA 阵列图,如图 3.4-22 所示。图中“.”表示存储 1。
+
+## 5 触发器
+
+## 5 .1 RS 触发器
+
+## 1. 基本 RS 触发器
+
+(1) 电路组成
+
+由与非门组成的基本 RS 触发器是由两个与非门交叉耦合而成, 如图 3.5-1 (a) 所示。它 有两个输出端 $Q$ 和 $\bar{Q}$, 它们互为反变量; 两个输入端, $\overline{S_{\mathrm{D}}}$ (称为置位端或置 1 端), $R_{\mathrm{D}}$ (称为复位 端或置 0 端)。逻辑符号如图 3.5-1 (b) 所示。
+
+(a) 电路结构 (b) 逻辑符号
+
+(2) 工作原理
+
+当 $\overline{S_{\mathrm{D}}}=0, \overline{R_{\mathrm{b}}}=1$ 时, $Q^{n+1}=1, \overline{Q^{n+1}}=0$, 电路处于 1 状态。
+
+当 $\overline{S_{\mathrm{D}}}=1, \overline{R_{\mathrm{D}}}=0$ 时, $Q^{n+1}=0, \overline{Q^{n+1}}=1$, 电路处于 0 状态。
+
+当 $\overline{S_{\mathrm{D}}}=1, \overline{R_{\mathrm{D}}}=1$ 时,电路保持原状态不变。
+
+当 $\overline{S_{\mathrm{D}}}=0, \overline{R_{\mathrm{D}}}=0$ 时, 电路的输出状态是无法确定的。因此; 这种情况是不允许出现的, 即 约束条件为: $\overline{R_{\mathrm{D}}}+\overline{S_{\mathrm{D}}}=1$ 。
+
+(3) 逻辑功能的描述
+
+根据上述工作过程可列出功能表 (特性表) 来表示逻辑功能,其功能表如表 3.5-1 所示。 表 3.5-1 用与非门组成的基本 RS 触发器的功能表
+
+| $\overline{S_{0}}$ | $\overline{R_{0}}$ | $Q^{n}$ | $Q^{n+1}$ | 功能 |
+| :---: | :---: | :---: | :---: | :---: |
+| 1 | 0 | 0 | 0 | 置 0 |
+| 1 | 0 | 1 | 0 | 置 1 |
+| 0 | 1 | 0 | 1 |  |
+| 0 | 1 | 1 | 0 | 状态不定 |
+| 1 | 1 | 0 | 1 |  |
+| 0 |  |  |  |  |
+
+根据功能表可画出基本 RS 触发器 $Q^{n+1}$ 的卡诺图, 如图 3.5-2 所示。 化简后可得出该触发器的逻辑功能函数表达式(特征方程):
+
+$$
+\left\{\begin{array}{l}
+Q^{n+1}=S_{\mathrm{D}}+\overline{R_{\mathrm{D}}} Q^{n} \\
+\overline{S_{\mathrm{D}}}+\overline{R_{\mathrm{D}}}=1
+\end{array}\right.
+$$
+
+根据状态表或特征方程可以画出状态转 换图，如图 3.5-3 所示。
+
+根据状态表或特征方程还可以画出基本 RS 触发器在输入信号作用下, 输出信号随时 间变化的时序波形图 (简称时序图), 如图 3.54 所示。
+
+## 2. 同步 RS 触发器
+
+(1) 电路组成
+
+该电路由两部分组成: 与非门 $G_{1} 、 G_{2}$ 组成 基本 RS 触发器; 与非门 $G_{3} 、 G_{4}$ 组成输入控制 电路,如图 3.5-5(a) 所示。逻辑符号如图 3.5-
+
+(2) 工作原理
+
+当 $C P=0$ 时, $\mathrm{G}_{3} 、 \mathrm{G}_{4}$ 截止, 输入信号 $R 、 S$ 不会影响输出状态, 故触发器保持原状态不变。
+
+当 $C P=1$ 时, $R 、 S$ 信号通过 $\mathrm{G}_{3} 、 \mathrm{G}_{4}$ 反相加到由 $\mathrm{G}_{1} 、 \mathrm{G}_{2}$ 组成的基本 RS 触发器上, 使 $Q$ 和 $\bar{Q}$ 的状态随输入状态而改变。它的功能表如表 3. 5-2 所示。
+
+表 3.5-2 同步 RS 触发器的功能表
+
+| $C P$ | $S$ | $R$ | $Q^{n}$ | $Q^{n+1}$ | 功能 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 0 | $\phi$ | $\phi$ | 0 | 0 | 保持 |
+| 0 | $\phi$ | $\phi$ | 1 | 1 |  |
+| 1 | 0 | 0 | 0 | 0 | 状态不变 |
+| 1 | 0 | 0 | 1 | 1 |  |
+| 1 | 1 | 0 | 0 | 1 | 同 $S$ 端 |
+| 1 | 1 | 0 | 1 | 1 |  |
+| 1 | 0 | 1 | 0 | 0 | 同 $S$ 端 |
+| 1 | 0 | 1 | 1 | 0 |  |
+| 1 | 1 | 1 | $\overline{0}$ | $\phi$ | 状态不定 |
+| 1 | 1 | 1 | 1 | $\phi$ |  |
+
+从功能表可以看出, 只有当 $C P=1$ 时触发器输出的状态才受输入信号控制, 而且在 $C P=$ 1 时的功能与基本 $R S$ 触发器相同, 其约束条件为 $R 、 S$ 不能同时为 1 , 即 $S R=0$ 。
+
+(3) 逻辑功能的描述
+
+同步 RS 触发器的功能除用上述的功能表描述外，还可用特征方程、状态转换图、时序图 来描述。
+
+根据功能表可写出逻辑函数式并化简, 即可得出特征方程：
+
+$$
+\left\{\begin{array}{l}
+Q^{n+1}=S+\bar{R} Q^{n} \\
+S R=0 \quad \text { (约束条件) }
+\end{array}\right.
+$$
+
+根据状态表或特征方程可以画出状态转换图,如图 3.5-6 所示。
+
+在 $C P 、 S 、 R$ 输入信号作用下输出的时序波形图如图 3.5-7 所示。
+
+## 3. 主从 RS 触发器
+
+(1) 电路组成
+
+主从 RS 触发器是由两个同步 RS 触发器组成, 如图 3.5-8 (a) 所示。与非门 $G_{1} \sim G_{4}$ 组成 的同步 RS 触发器称主触发器; 与非门 $\mathrm{G}_{5} \sim \mathrm{G}_{8}$ 组成的同步 $\mathrm{RS}$ 触发器称从触发器, 非门 $\mathrm{G}_{9}$ 使主 从触发器的时钟脉冲互相反相。输出端为 $Q$ 和 $\bar{Q}$, 输入端为 $S 、 R$ 。逻辑符号如图 3.5-8(b) 所 示。
+
+(2) 工作原理
+
+$C P=1$ 时为接收阶段, 与非门 $\mathrm{G}_{1} 、 \mathrm{G}_{2}$ 开通, $\mathrm{G}_{5} 、 \mathrm{G}_{6}$ 被封锁,故主触发器的输出状态由 $S 、 R$ 来确定, 从触发器的输出状态不变。
+
+$C P$ 下降沿来到后, $\boldsymbol{C P}=0$, 与非门 $\mathrm{G}_{1} 、 \mathrm{G}_{2}$ 封锁, $\mathrm{G}_{5} 、 \mathrm{G}_{6}$ 开通, 故主触发器的输出状态不变, 从触发器的输出状态由主触发器的输出 $S_{1} 、 R_{1}$ 来确定。
+
+(3) 逻辑功能的描述
+
+主从 RS 触发器的逻辑功能与同步 RS 触发器相同, 但要注意它输出状态是在时钟脉冲的 下降沿改变。
+
+【例 3.5-1】试画出主从 RS 触发器在输入如图 3.5-9 所示的 $S 、 R$ 信号作用下, 输出端 $Q$
+
+的波形 (设触发器的初态为 0 )。
+
+解 : 在 $C P=1$ 时, 与非门 $\mathrm{G}_{1} 、 \mathrm{G}_{2}$ 开通, 将输入的 $S 、 R$ 信号保存在主触发器的 $Q_{m}$ 和 $\bar{Q}_{m}$ 中, 由于 $\mathrm{G}_{5}$ 、 $\mathrm{G}_{6}$ 被封锁, 故从触发器的输出状态不变; 在 $C P=0$ 时, $G_{1} 、 G_{2}$ 封锁, $G_{5} 、 G_{6}$ 开通, 将主触发器的 $Q_{m}$ 和 $\overline{Q_{m}}$ 状态传送到从触发器。其输出波形如图 3.5-9 所示。
+
+## $3.5 .2 \mathrm{D}$ 触发器
+
+## 1. 同步 D 触发器
+
+(1) 电路组成
+
+在同步 RS 触发器的输入 $S$ 和 $R$ 之间接一非门,输入信号只从 $S$ 端输入, 并改称 $S$ 端为 $D$ 端, 这种触发器又称为 D 锁存器, 如图 3.5-10(a) 所示。它的逻辑符号如图 3.5-10(b) 所示。
+
+## (2)工作原理
+
+当 $C P=0$ 时,由于控制门被封锁,触发器的状态保持不变。
+
+当 $C P=1$ 时, 控制门被打开, 若 $D=1$, 则 $S=1, R=0$, 故 $Q^{n+1}=1$; 若 $D=0$, 则 $S=0, R=1$, 故 $Q^{n+1}=0$ 。
+
+## (3) 逻辑功能的描述
+
+根据上述工作状况可列出功能表, 如表 3. 5-3 所示。
+
+表 3.5-3 D 触发器功能表
+
+| $C P$ | $D$ | $Q^{n}$ | $Q^{n+1}$ | 功能 |
+| :---: | :---: | :---: | :---: | :---: |
+| 0 | 0 | 0 | 0 | 不变 |
+| 0 | 1 | 1 | 1 | 同 $D$ 端 |
+| 1 | 0 | 0 | 0 |  |
+
+特性方程:
+
+$$
+Q^{n+1}=D
+$$
+
+状态转换图如图 3. 5-11 所示。
+
+【例 3. 5-2】试画出同步 $\mathrm{D}$ 触发器在输入如图 3.5-12 所示的 $D$ 信号作用下,输出端 $Q$ 和 $\bar{Q}$ 的波形 (设触发器的初态为 0 )。
+
+解: 根据 D 触发器的逻辑功能和输入信号, 可画出其输出 $Q$ 和 $\bar{Q}$ 的波形, 如图 3.5-12 所 示。
+
+## 2. 维持阻塞 D 触发器
+
+(1) 电路组成
+
+它是由六个与非门组成的正边沿触发器, 如图 3.5-13 所示。
+
+(2)工作原理
+
+$C P=0$ 时, 输入信号被 $\mathrm{G}_{3} 、 \mathrm{G}_{4}$ 封锁, 输出状态保持不变。这时 $\mathrm{G}_{1} 、 \mathrm{G}_{2}$ 根据输入的 $D$ 信号 做好准备。
+
+$C P$ 的上升沿来到时, 触发器的状态即根据准备好的信号发生翻转。
+
+维持阻塞 D 触发器的逻辑功能与同步 D 触发器相同。
+
+【例 3.5-3】已知维持阻塞 D 触发器输入 $C P$ 和 $D$ 信号的波形,如图 3.5-14 所示, 设触发 器的初态为 0 ,试画出输出端 $Q$ 的波形。
+
+解: 维持阻塞 $\mathrm{D}$ 触发器的输出只决定于 $C P$ 上升沿到来前瞬间 $D$ 的状态变化, 而与原 来状态无关。其输出波形如图 3.5-14 所示。
+
+## 5 .3 主从 JK 触发器
+
+## 1. 电路组成
+
+在主从 RS 触发器的基础上加上两条反馈线, 得到如图 3.5-15(a) 所示的主从 JK 触发器。 逻辑符号如图 3.5-15(b) 所示。
+
+利用 $Q$ 和 $\bar{Q}$ 不能同时为 “ 1 ” 的特点, 将它们交叉反馈到输入门 $G_{1} 、 G_{2}$, 从而避免 $C P=1$ 时, 触发器输出状态可能出现不定的现象, 这样对输入信号 $S 、 R$ 无约束条件。为了与主从 RS 触发器相区别, 将输入 $S$ 端改用 $J$ 表示, 输入 $R$ 端改用 $K$ 表示, 故称主从 $\mathrm{JK}$ 触发器。
+
+## 2. 工作原理
+
+若 $J=1, K=0, Q^{n}=0$, 则 $C P=1$ 时主触发器置 $1, C P$ 下降沿来到后, $C P=0$, 从触发器随之 置 1 , 即 $Q^{n+1}=1$; 若 $J=1, K=0, Q^{n}=1$, 则 $C P=1$ 时主触发器保持不变, $C P$ 下降沿来到后, $C P$ $=0$, 从触发器输出保持不变, 即 $Q^{n+1}=1$ 。
+
+若 $J=0, K=1, Q^{n}=0$, 则 $C P=1$ 时主触发器保持不变。 $C P$ 下降沿来到后, $C P=0$, 从触发 器输出保持不变, 即 $Q^{n+1}=0$; 若 $J=0, K=1, Q^{n}=1$, 则 $C P=1$ 时主触发器置 $0, C P$ 下降沿来到 后, $C P=0$, 从触发器随之置 0 , 即 $Q^{n+1}=0$ 。
+
+若 $J=0, K=0$, 与非门 $\mathrm{G}_{1} 、 \mathrm{G}_{2}$ 被封锁, 则 $C P=1$ 时主触发器保持不变。 $C P$ 下降沿来到后, $C P=0$, 从触发器输出保持不变, 即 $Q^{n+1}=Q^{n}$ 。
+
+若 $J=1, K=1, Q^{n}=0$, 则 $C P=1$ 时主触发器置 $1, C P$ 下降沿来到后, $C P=0$, 从触发器随之 置 1 , 即 $Q^{n+1}=1$; 若 $J=1, K=1, Q^{n}=1$, 则 $C P=1$ 时主触发器置 $0, C P$ 下降沿来到后, $C P=0$, 从触发器随之置 0 , 即 $Q^{n+1}=0$, 因此, 可表示为: $Q^{n+1}=\bar{Q}^{n}$ 。在这种情况下触发器将翻转为与 原态相反的状态。该特点称为触发器的计数翻转功能。
+
+## 3. 逻辑功能的描述
+
+根据上述分析可列出其功能表如表 3.5-4 所示。 表 3.5-4 JK 触发器功能表
+
+| $C P$ | $J$ | $K$ | $Q^{n}$ | $Q^{n+1}$ | 功 能 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| $\phi$ | $\phi$ | $\phi$ | $Q^{n}$ | $Q^{n}$ | 保持 |
+| $\downarrow$ | 0 | 0 | 0 | 0 | 保持 |
+| $\downarrow$ | 0 | 0 | 1 | 1 |  |
+| $\downarrow$ | 0 | 1 | 0 | 0 | $\begin{array}{c}\text { 置 } 0 \\ \text { (同 } J \text { 端) }\end{array}$ |
+| $\downarrow$ | 0 | 1 | 1 | 0 |  |
+| $\downarrow$ | 1 | 0 | 0 | 1 | $\begin{array}{c}\text { 犆 } 1 \\ \text { (同 } J \text { 端) }\end{array}$ |
+| 1 | 1 | 0 | 1 | 1 |  |
+| $\downarrow$ | 1 | 1 | 0 | 1 | 计数翻转 |
+| $\downarrow$ | 1 | 1 | 1 | 0 |  |
+
+根据功能表可写出状态方程 (特征方程):
+
+$$
+Q^{n+1}=J \overline{Q^{n}}+\bar{K} Q^{n}
+$$
+
+状态转换图如图 3.5-16 所示。
+
+【例 3.5-4】主从 $\mathrm{JK}$ 触发器的输入 $C P 、 J 、 K$ 波形如图 3.5-17 所示, 试画出输出 $Q$ 和 $\bar{Q}$ 的 波形。设触发器的初始状态为“ 0 ”态。
+
+解: 输出 $Q$ 和 $\bar{Q}$ 的波形如图 3.5-17 所示。
+
+## $3.5 .4 \mathrm{~T}$ 触发器
+
+$\mathrm{T}$ 触发器是受控计数型触发器, 它是逻辑设计中使用较多的一种触发器, 但一般不生产这 样的产品, 它多由 JK 触发器或 D 触发器转换得到。
+
+其逻辑功能如表 3.5-5 所示。
+
+表 3.5-5 T 触发器功能表
+
+| $T$ | $Q^{n}$ | $Q^{n+1}$ | 说明 |
+| :---: | :---: | :---: | :---: |
+| 0 | 0 | 0 | $Q^{n+1}=Q^{n} \quad$ 保持 |
+| 0 | 1 | 1 | $Q^{n+1}=\overline{Q^{n}}$ 翻转 |
+
+根据功能表可写出 $\mathrm{T}$ 触发器的特征方程:
+
+$$
+Q^{n+1}=\bar{T} Q^{n}+T \overline{Q^{n}}
+$$
+
+【例 3.5-5】由 $\mathrm{D}$ 触发器组成的 $\mathrm{T}$ 触发器如图 3.5-18 所示, 试画出在 $T 、 C P$ 信号作用下, 输出 $Q$ 端的波形。设触发器的初始状态为“ 0 ”态。
+
+图3.5-19 例 3.5-5 波形图
+
+解: 根据 T 触发器的特性方程, 可画出波形如图 3. 5-19 所示。
+
+## 5 .5 触发器时钟脉冲的触发方式
+
+对于不同电路结构的触发器, 可以实现相同的逻辑功能,但其动态特点是不同的,反应到 逻辑符号上,时钟的触发方式是不同的。即逻辑符号的 CP 脉冲输入端上不带小三角的为电 平触发, 带小三角的为脉冲边沿触发, 不带小圈的为时钟脉冲的高电平或上升沿触发, 带小圈 的为时钟脉冲的低电平或下降沿触发。因此, 在画时序图时应注意时钟脉冲的触发方式。
+
+现以 JK 触发器为例,画出各种触发方式的逻辑符号, 如图 3.5-20 所示。
+
+（a）高电平触发(b) 低电平触发(c) 上升沿触发(d)下降沿触发
+
+【例 3.5-6】试分别画出图 3.5-20(c)、(d) 触发器在图 3.5-21 所示 $J 、 K$ 信号作用下, $Q$ 端的输出波形 (设动态为“ 0 ”)。
+
+解: 根据 JK 触发器的逻辑功能和输入的信号, 并考虑到图 (c) 为上升沿触发, 图 (d) 为下 降沿触发,可画出 $Q$ 端的输出波形如图 3.5-21 所示。
+
+### 6 触发器逻辑功能的转换
+
+## D 触发器转换为 T 触发器
+
+$\mathrm{T}$ 触发器的特征方程为
+
+$$
+Q^{n+1}=\bar{T} Q^{n}+T \overline{Q^{n}}
+$$
+
+D 触发器的特征方程为
+
+$$
+Q^{n+1}=D
+$$
+
+将两个方程相比, 可得
+
+$$
+D=\bar{T} Q^{n}+T \overline{Q^{n}}
+$$
+
+根据此式可画出逻辑电路图, 如图 3.5-22 所示。
+
+## JK 触发器转换为 $\mathrm{D}$ 触发器
+
+$\mathrm{JK}$ 触发器的特征方程为
+
+$$
+Q^{n+1}=J \overline{Q^{n}}+\bar{K} Q^{n}
+$$
+
+$D$ 触发器的特征方程为
+
+$$
+Q^{n+1}=D
+$$
+
+转换时, 可将 D 触发器的特征方程变换成 JK 触发器特征方程相似的形式, 即
+
+$$
+Q^{n+1}=D=D\left(\overline{Q^{n}}+Q^{n}\right)=D \overline{Q^{n}}+D Q^{n}=J \overline{Q^{n}}+\bar{K} Q^{n}
+$$
+
+可见, 若取 $J=D, K=\bar{D}$, 则可画出逻辑电路图, 如图 3.5-23 所示。
+
+【例 3.5-7】试画出由 D 触发器转换成 JK 触发器的逻辑电路图。
+
+解:已知 $\mathrm{D}$ 触发器的特征方程为
+
+$$
+Q^{n+1}=D
+$$
+
+$\mathrm{JK}$ 触发器的特征方程为
+
+$$
+Q^{n+1}=J \overline{Q^{n}}+\bar{K} Q^{n}
+$$
+
+则可得
+
+$$
+D=J \bar{Q}^{n}+\bar{K} Q^{n}
+$$
+
+根据此式可画出逻辑电路图如图 3.5-24 所示。
+
+#### CMOS 触发器
+
+CMOS 触发器具有功耗低、集成度高、抗干扰能力强和成本低等优点。这类触发器一般都 是主从结构,产品有 D 和 JK 两种类型。
+
+## CMOS D 触发器
+
+CMOS D 触发器如图 3.5-25 所示。它是由主触发器和从触发器两部分构成的主从结构。
+
+(a) 电路结构 (b) 逻辑符号
+
+当 $C P=0, \overline{C P}=1$ 时, 传输门 $\mathrm{TG}_{1}$ 开通, $\mathrm{TG}_{2}$ 关闭, 主触发器开通, 但因 $\mathrm{TG}_{2}$ 关闭而失去自 锁作用, $G_{1} 、 G_{2}$ 变成两个串连的非门, 输入 $D$ 信号即经过两次反相后存在主触发器中, 此时, $D$ 信号若发生变化, 主触发的输出状态也发生相应变化,因此,它不存在一次变化现象。同时,传 输门 $\mathrm{TG}_{3}$ 关闭、 $\mathrm{TG}_{4}$ 开通, 使从触发器和主触发器之间断开, 故从触发器自锁, 保持原来状态不 变。
+
+当 $C P$ 上升沿到来时, 传输门 $\mathrm{TG}_{1}$ 关闭, $\mathrm{TG}_{2}$ 开通, 使主触发器建立自锁, 保持 $C P$ 上升沿 到来之前的 $D$ 信号。同时, $\mathrm{TG}_{3}$ 开通, $\mathrm{TG}_{4}$ 关闭, 从触发器失去自锁作用, 使从触发器的输出状 态随主触发器的输出状态而变化。即电路的输出状态在 $C P$ 上升沿到来时 $Q^{n+1}=D$ 。
+
+## CMOS JK 触发器
+
+CMOS JK 触发器是在 CMOS D 触发器的输入端增加一个组合电路, $J 、 K$ 输入端信号经组 㕣它站送到 D 触发器,如图 3.5-26 所示。
+
+（a）电路结构 (b) 逻辑符号
+
+根据电路可写出:
+
+$$
+Q^{n+1}=D=\overline{J+Q}+K Q=(J+Q) \overline{K Q}=(J+Q)(\bar{K}+\bar{Q})=J \bar{Q}+\bar{K} Q
+$$
+
+从而得出该电路实现 JK 触发器的逻辑功能。
+
+## 6 时序逻辑电路
+
+### 1 时序逻辑电路的特点及组成
+
+## 1. 时序逻辑电路的特点
+
+时序逻辑电路任何时刻的输出不仅取决于该时刻的输入, 还与电路原来的状态有关, 这是 由时序电路的结构决定的。
+
+## 2. 时序逻辑电路的组成
+
+时序逻辑电路是由组合逻辑电路和存储电路两部 分组成,如图 3.6-1 所示。
+
+图中, $X\left(X_{1}, X_{2}, X_{3}, \cdots, X_{i}\right)$ 表示外部输入, $Q\left(Q_{1}\right.$, $Q_{2}, Q_{3}, \cdots, Q_{m}$ ) 表示存储电路 (触发器) 的输出的状态, $Y$ $\left(Y_{1}, Y_{2}, Y_{3}, \cdots, Y_{k}\right)$ 表示存储电路输入, $Z\left(Z_{1}, Z_{2}, Z_{3}, \cdots\right.$, $\left.Z_{j}\right)$ 表示组合电路的输出信号, 也就是时序电路的外部 输出。由方框图可得出 $X 、 Y 、 Z 、 Q$ 之间的关系为
+
+$$
+\begin{array}{ll}
+Z=F_{1}\left(X, Q^{n}\right) & \text { 输出方程 } \\
+Y=F_{2}\left(X, Q^{n}\right) & \text { 驱动方程 } \\
+Q^{n+1}=F_{3}\left(Y, Q^{n}\right) & \text { 状态方程 }
+\end{array}
+$$
+
+## 3. 时序逻辑电路逻辑功能的描述
+
+描述时序逻辑电路逻辑功能的方法有驱动方程、状态方程和输出方程。但从这一组方程 式还不能获得电路逻辑功能的完整印象, 因此, 描述时序电路转换全过程的方法还有状态转换 表、状态转换图和时序图。
+
+### 2 时序逻辑电路的分析方法
+
+时序逻辑电路的分析是根据给定的逻辑电路图, 通过分析, 找到电路输出状态 $Q$ 端的变 化规律及外部输出 $Z$ 的变化规律。
+
+由于时序逻辑电路有同步和异步之分, 因此, 其分析也分为同步电路分析和异步电路分 析。时序逻辑电路一般分析步骤如下:
+
+(1)分析电路的组成;
+
+(2)确定输出方程和驱动方程;
+
+(3)写出存储器的状态方程 (分析异步时序电路时应考虑时钟脉冲的作用);
+
+(4)列出状态转换真值表和状态表;
+
+(5)画出状态转换图;
+
+(6)电路逻辑功能的描述。
+
+【例 3.6-1】分析图 3.6-2 所示时序逻辑电路的逻辑功能。
+
+解: (1) 分析电路的组成。该电路的组合电路是一个与门, 存储电路是两级 $\mathrm{T}$ 触发器, 每 个触发器的 $C P$ 端都接在一起, 共同接受输入时钟, 所以是一个同步时序逻辑电路。
+
+(2) 确定输出方程和驱动方程。分别为
+
+$$
+\begin{aligned}
+& T_{1}=X \\
+& T_{2}=X Q_{1}
+\end{aligned}
+$$
+
+$$
+Z=X Q_{1} Q_{2}
+$$
+
+(3) 写出存储器的状态方程。
+
+$$
+\begin{aligned}
+& Q_{1}^{n+1}=X \overline{Q_{1}^{n}}+\bar{X} Q_{1}^{n}=X \oplus Q_{1}^{n} \\
+& Q_{2}^{n+1}=X Q_{1}^{n} \overline{Q_{2}^{n}}+\overline{X Q_{1}^{n}} Q_{2}^{n}=X Q_{1}^{n} \oplus Q_{2}^{n}
+\end{aligned}
+$$
+
+(4) 列出状态转换真值表和状态表。设定外部输入和初态, 求出次态, 列出真值表, 如表 3. 6-1 所示。
+
+| 表 3. 6-1 例 3. 6-1 状态转换真值表 |  |  |  |  |  |  |  |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $X$ | $Q_{2}^{n}$ | $Q_{1}^{n}$ | $T_{2}$ | $T_{1}$ | $Q_{2}^{n+1}$ | $Q_{1}^{n+1}$ | $Z$ |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 | 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 | 1 | 0 | 1 | 0 |
+| 1 | 0 | 1 | 1 | 1 | 1 | 0 | 0 |
+| 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |
+| 1 | 1 | 1 | 1 | 1 | 0 | 0 | 1 |
+
+| 表 3.6-2 |  | 例 3. 6-1 状态转换表 |  |  |  |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| $Q_{1}^{n}$ | $Q_{2}^{n}$ | $Q_{2}^{n+1} Q_{1}^{n+1} / Z$ |  |  |  |
+|  |  | $X$ |  |  |  |
+|  |  | 0 | 1 |  |  |
+| 0 | 0 | 0 | $0 / 0$ | 0 | $1 / 0$ |
+| 0 | 1 | 0 | $1 / 0$ | 1 | $0 / 0$ |
+| 1 | 0 | 1 | $0 / 0$ | 1 | $1 / 0$ |
+| 1 | 1 | 1 | $1 / 0$ | 0 | $0 / 1$ |
+
+由表 3.6-1 可以列出更为简单和直观的状态转换表,如表 3.6-2 所示。
+
+(3) 画出状态转换图。状态表虽然可以描述电路的状 态转换和逻辑功能, 但不直观, 所以, 通常采用状态图来更 直观地描述逻辑功能。假设电路现态 $Q_{2} Q_{1}$ 为 $00,01,10$ 和 11 , 分别用 $S_{0}, S_{1}, S_{3}$ 和 $S_{4}$ 表示, 可以画出状态转换图 3.63 。
+
+(6) 电路逻辑功能的描述。从状态转换图可以看出: 当 $X=0$ 时, 状态维持不变; 当 $X=1$ 时, 状态发生转换。假如, $X$ 固定取值为 1 , 并预置电路在 $S_{0}$ 状态, 那么, 随着 $C P$ 的作 用, 状态将按照 $S_{0} \rightarrow S_{1} \rightarrow S_{2} \rightarrow S_{3} \rightarrow$ 循环转换, 并且每输入
+
+四个脉冲作用后输出一个进位脉冲, 故此电路逻辑功能是可控模 4 加法计数器。
+
+【例 3.6-2】分析图 3.6-4 所示时序逻辑电路的逻辑功能。
+
+解: (1) 分析电路的组成。该电路是由三个 $\mathrm{JK}$ 触发器组成的时序电路, 且 $C P$ 端都接在一
+
+起, 共同接受输入时钟, $C P$ 端带有小圈, 故是下降沿触发的同步时序逻辑电路。
+
+(2) 确定驱动方程。
+
+$$
+\begin{aligned}
+& J_{1}=\overline{Q_{3}^{n}}, K_{1}=1 \\
+& J_{2}=K_{2}=Q_{1}^{n} \\
+& J_{3}=Q_{1}^{n} Q_{2}^{n}, K_{3}=1
+\end{aligned}
+$$
+
+(3) 写出存储器的状态方程。
+
+$$
+\begin{aligned}
+& Q_{1}^{n+1}=J_{1} \overline{Q_{1}^{n}}+\overline{K_{11}} Q_{1}^{n}=\overline{Q_{3}^{n}} \cdot \overline{Q_{1}^{n}} \\
+& Q_{2}^{n+1}=J_{2} \overline{Q_{2}^{n}}+\overline{K_{21}} Q_{2}^{n}=Q_{1}^{n} \overline{Q_{2}^{n}}+\overline{Q_{1}^{n}} Q_{2}^{n} \\
+& Q_{3}^{n+1}=J_{3} \overline{Q_{3}^{n}}+\overline{K_{31}} Q_{3}^{n}=Q_{1}^{n} Q_{2}^{n} \overline{Q_{3}^{n}}
+\end{aligned}
+$$
+
+(4)列出状态转换真值表。设定初态, 求出次态, 列出真值表, 如表 3.6-3 所示。
+
+(5) 画出状态转换图。根据状态转换表, 可以画出状态转换图, 如图 3.6-5 所示。
+
+表 3.6-3 例 3.6-2 状态转换表
+
+| $C P$ 脉冲序列 | $Q_{3}$ | $Q_{2}$ | $Q_{1}$ |
+| :---: | :---: | :---: | :---: |
+| 0 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 1 |
+| 2 | 0 | 1 | 0 |
+| 3 | 0 | 1 | 1 |
+| 4 | 1 | 0 | 0 |
+| 5 | 0 | 0 | 0 |
+
+(6) 电路逻辑功能的描述。从状态转换图的分 析可以看出, 它具有 5 个状态构成一个闭合的环形, 即每经过 5 个时钟脉冲电路循环变化一次, 而且变 化的规律是 $000 、 001 、 010 、 011 、 100 、 000$ 依次循环, 所以该电路是一个同步五进制加法计数器。
+
+(7) 时序波形图。图 3.6-6 画出了在 $C P$ 脉冲作 用下的 $Q_{3} Q_{2} Q_{1}$ 的输出波形。
+
+### 3 计数器
+
+## 1. 计数器的基本概念
+
+所谓“计数”, 就是计算时钟脉冲的个数。计数器的应用十分广泛, 不仅用来计数,也可用 做分频、定时等。
+
+## 2. 计数器的分类
+
+计数器可从以下几个方面进行分类。
+
+(1) 按计数脉冲引入方式
+
+按计数脉冲引入方式分为同步计数器和异步计数器。
+
+(2) 按计数器中数码的变化规律
+
+按计数器中数码的变化规律分为加法计数器、减法计数器和可逆计数器。
+
+(3) 按计数体制
+
+按计数体制分为二进制计数器、十进制计数器和任意进制 (也称 $N$ 进制, 即除二进制、十 进制之外的其他进制) 计数器。
+
+## 3. 异步二进制计数器分析
+
+【例 3.6-3】 由 JK 触发器组成的时序逻辑电路如图 3.6-7 所示, 试分析该电路的逻辑功 能。
+
+解: (1) 分析电路的组成。该电路是由四个下降沿触发的 JK 触发器组成的电路。每个触 发器的 $J 、 K$ 端都悬空, 即相当接高电平 “ 1 ”, 所以, 它构成计数型触发器; 且输入 $C P$ 脉冲是加 到第一级触发器计数脉冲输入端, 第一级的 $Q$ 端输出作为第二级的计数脉冲输入, 依此类推, 所以该电路是异步时序逻辑电路。
+
+(2) 确定电路的状态方程。由于该电路是异步时序电路, 各触发器的时钟脉冲不是同时 到达, 故在列出状态方程时应将时钟脉冲作为变量考虑进去。状态方程为
+
+$Q_{1}$
+
+$Q_{3}$
+
+$$
+\begin{aligned}
+& Q_{0}^{n+1}=\overline{Q_{0}^{n}} C P_{0} \downarrow=\overline{Q_{0}^{n}} C P \downarrow \\
+& Q_{1}^{n+1}=\overline{Q_{1}^{n}} C P_{1} \downarrow=\overline{Q_{1}^{n}} Q_{0}^{n} \downarrow \\
+& Q_{2}^{n+2}=\overline{Q_{2}^{n}} C P_{2} \downarrow=\overline{Q_{2}^{n}} Q_{1}^{n} \downarrow \\
+& Q_{3}^{n+1}=\overline{Q_{3}^{n}} C P_{3} \downarrow=\overline{Q_{3}^{n}} Q_{2}^{n} \downarrow
+\end{aligned}
+$$
+
+(3) 根据状态方程可以画出时序波形图, 如图 3.68 所示。
+
+(4) 逻辑功能描述。该电路是一个异步四位二进 制加法计数器。
+
+【例 3.6-4】由 D 触发器组成的时序逻辑电路如图 3.6-9 所示, 试分析该电路的逻辑功 能。
+
+解: (1) 分析电路的组成。该电路是由四个上升沿触发的 D 触发器组成的电路, 其中每个 D 触发器都接成计数型触发器。
+
+(2) 确定状态方程。
+
+$$
+\begin{aligned}
+& Q_{0}^{n+1}=D_{0}=\overline{Q_{0}^{n}} C P_{0} \downarrow=\overline{Q_{0}^{n}} C P \uparrow \\
+& Q_{1}^{n+1}=D_{1}=\overline{Q_{1}^{n}} C P_{1} \uparrow=\overline{Q_{1}^{n}} Q_{0}^{n} \uparrow \\
+& Q_{2}^{n+1}=D_{2}=\overline{Q_{2}^{n}} C P_{2} \uparrow=\overline{Q_{2}^{n}} Q_{1}^{n} \uparrow \\
+& Q_{3}^{n+1}=D_{3}=\overline{Q_{3}^{n}} C P_{3} \uparrow=\overline{Q_{3}^{n}} Q_{2}^{n} \uparrow
+\end{aligned}
+$$
+
+(3) 根据状态方程可以画出时序波形图, 如图 3.610 所示。
+
+(4) 逻辑功能描述。该电路是一个异步四位二进 制减法计数器。
+
+## 4. 同步二进制计数器分析
+
+【例 3.6-5】 由 JK 触发器组成的同步时序逻辑电路如图 3.6-11 所示, 试分析该电路的逻 辑功能。
+
+解: (1) 分析电路的组成: 该 电路由于 $C P$ 端接在一起, 同时接 受时钟脉冲, 所以它是一个亚步 时序逻辑电路。
+
+(2) 确定驱动方程:
+
+$$
+\begin{aligned}
+& J_{3}=K_{3}=Q_{2}^{n} Q_{1}^{n} Q_{0}^{n} \\
+& J_{2}=K_{2}=Q_{1}^{n} Q_{0}^{n} \\
+& J_{1}=K_{1}=Q_{0}^{n} \\
+& J_{0}=K_{0}=1
+\end{aligned}
+$$
+
+(3) 写出存储器的状态方程:
+
+$$
+\begin{aligned}
+& Q_{3}^{n+1}=Q_{2}^{n} Q_{1}^{n} Q_{0}^{n} \overline{Q_{3}^{n}}+\overline{Q_{2}^{n} Q_{1}^{n} Q_{0}^{n}} Q_{3}^{n} \\
+& Q_{2}^{n+1}=Q_{1}^{n} Q_{0}^{n} \overline{Q_{2}^{n}}+\overline{Q_{1}^{n} Q_{0}^{n} Q_{2}^{n}} \\
+& Q_{1}^{n+1}=Q_{0}^{n} \overline{Q_{1}^{n}}+\overline{Q_{0}^{n}} Q_{1}^{n} \\
+& Q_{0}^{n+1}=\overline{Q_{0}^{n}} \\
+& C=Q_{3}^{n} Q_{2}^{n} Q_{1}^{n} Q_{0}^{n}
+\end{aligned}
+$$
+
+(4) 列出状态转换真值表: 设定初态, 求出次态, 列出真值表, 如表 3.6-4 所示。
+
+| $C P$ | $Q_{3}^{n}$ | $Q_{2}^{n}$ | $Q_{1}^{n}$ | $Q_{0}^{n}$ | $Q_{3}^{n+1}$ | $Q_{2}^{n+1}$ | $Q_{1}^{n+1}$ | $Q_{0}^{n+1}$ | $C$ |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 1 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| 2 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 3 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 4 | 0 | 1 | 0 | 0 | 0 | 1. | 0 | 1 | 0 |
+| 5 | 0 | 1 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |
+| 6 | 0 | 1 | 1 | 0 | 0 | 18 | 1 | 1 | 0 |
+| 7 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 8 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
+| 9 | 1 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 0 |
+| 10 | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 1 | 0 |
+| 11 | 1 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| 12 | 1 | 1 | 0 | 0 | 1 | 1 | 0 | 1 | 0 |
+| 13 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 0 | 0 |
+| 14 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 0 |
+| 15 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |
+
+(5) 画出状态转换图: 如图 3.6-12 所示。
+
+(6) 电路逻辑功能的描述: 从状态转换表或状态转换图可以看出该电路是一个四位二进 制加法计数器。 $C$ 为进位信号。
+
+(7) 时序波形图: 如图 3.6-13 所示。
+
+## 6 .4 寄存器
+
+能够存放二值代码的部件叫寄存器。
+
+构成寄存器的核心器件是触发器。
+
+一个触发器只能存储一位二值代码, 所以, $n$ 位寄存器实际上就是受同一时钟脉冲控制的 $n$ 个触发器。
+
+寄存器又分为数码寄存器和移位寄存器。移位寄存器又分为左移移位寄存器、右移移位 寄存器和双向移位寄存器。
+
+## 1. 数码寄存器
+
+由 $\mathrm{D}$ 触发器构成的四位数码寄存器如图 3.6-14 所示。 $\mathrm{D}$ 触发器的逻辑功能是: 在 $C P=1$ 时, $Q$ 端的状态随 $D$ 端的信号变化。 $D_{3} \sim D_{0}$ 为数据输入端, 在 $C P=1$ 时, $Q_{3} \sim Q_{0}$ 的状态即随 $D_{3} \sim D_{0}$ 输入的数据而改变, $C P$ 变为低电平时, $Q$ 端的状态保持不变, 即将数码寄存起来。
+
+为增加使用的灵活性,有些寄存器还增加一些控制电路,如图 3.6-15 所示。该电路是采 用负边沿触发的 $\mathrm{D}$ 触发器, 且具有清零端输入。当 $\vec{R}_{\mathrm{D}}=0$ 时, 四个触发器被清零; 在 $\bar{R}_{\mathrm{D}}=1$, $C P$ 的上升沿来到时, 经反相器加到触发器的 $C P$ 端, 使触发器的输出 $Q$ 端发生相应的变化, 即 将数码寄存起来。
+
+## 2. 移位寄存器
+
+移位寄存器除了具有存储代码的功能外, 还具有移位的功能。所谓移位, 是指寄存器里存 储的代码能在移位脉冲的作用下依次左移或右移。因此, 移位寄存器不仅可以用于寄存代码, 还可以实现数据的串行一并行转换数值的运算和数据的处理等。
+
+$Q_{2}$
+
+$Q_{3}$
+
+其工作过程如下。设输入四位数码 $A_{3} A_{2} A_{1} A_{0}$, 数码是从 $D_{0}$ 端串行输入, 先将 $A_{3}$ 送到 $D_{0}$ 端, 在第一个 $C P$ 脉冲的下降沿到来 后, $Q_{0}=A_{3}$; 再将 $A_{2}$ 送到 $D_{0}$ 端, 在第二个 $C P$ 脉冲的下降沿到来 后, $Q_{0}=A_{2}, Q_{1}=A_{3}$; 然后将数码 $A_{1}$ 送到 $D_{0}$ 端, 在第三个 $C P$ 脉冲 的下降沿到来后, $Q_{0}=A_{1}, Q_{1}=A_{2}, Q_{2}=A_{3}$; 最后将数码 $A_{0}$ 送到 $D_{0}$ 端, 在第四个 $C P$ 脉冲的下降沿到来后, $Q_{0}=A_{0}, Q_{1}=A_{1}, Q_{2}=$ $A_{2}, Q_{3}=A_{3}$ 。图 3.6-17 画出了在 $A_{3} A_{2} A_{1} A_{0}=1011$ 时, 各输出 $Q$ 端的波形。
+
+从波形图中可以看出, 数据从 $D_{0}$ 端输入, 从 $Q_{3}$ 端输出, 此时 是串行输出, 它是一个左移的移位寄存器。亦可同时由 $Q_{3} Q_{2} Q_{1}$ $Q_{0}$ 同时输出，即并行输出。
+
+### 5 序列信号发生器
+
+产生二进制序列信号的逻辑电路称为序列信号发生器。它的功能是产生一组或多组二进 制序列信号。序列信号发生器在雷达、通信、遥控和遥测、测量以及无线电仪表等领域中得到 广泛的应用。例如, 在通信设备中要产生一组规则码, 用来调试或检修设备; 又如通信系统中 的同步就需要产生一组特定的二进制序列信号来表示一组信息的开始或终止。
+
+序列信号发生器通常可以在寄存器或计数器的基础上构成, 前者通常只产生一组序列信 号,后者可以产生一组或多组序列信号。
+
+## 1. 寄存器型序列信号发生器
+
+寄存器型序列信号发生器的框图如图 3.6-18 所示。反馈电路的作用是检测移位寄存器 的现态, 产生 0 或 1 的输出, 输至移位寄存器以便得到相应状态, 使电路输出给定的序列信号。
+
+【例 3.6-6】寄存器型序列信号发生器如图 3.6-19 所示, 试分析该电路的逻辑功能。
+
+解: (1) 该电路是由三个 D 触发器构成的移位寄存器和由门电路组成的反馈电路组成的 序列脉冲产生电路。
+
+(2) 电路的驱动方程和状态方程为
+
+$$
+D_{3}=Q_{2}^{n}=Q_{3}^{n+1}
+$$
+
+$$
+\begin{aligned}
+& D_{2}=Q_{1}^{n}=Q_{2}^{n+1} \\
+& D_{1}=\bar{Q}_{2}^{n} \bar{Q}_{3}^{n}+\overline{Q_{3}^{n}} Q_{1}^{n}+\overline{Q_{1}^{n}} Q_{2}^{n} Q_{3}^{n}=Q_{1}^{n+1}
+\end{aligned}
+$$
+
+(3) 列出状态转换表,如表 3.6-5 所示。
+
+表 3.6-5 例 3.6-6 状态转换表
+
+| $Q_{3}^{n}$ | $Q_{2}^{n}$ | $Q_{1}^{n}$ | $Q_{3}^{n+1}$ | $Q_{2}^{n+1}$ | $Q_{1}^{n+1}$ | $D_{1}$ |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 0 | 0 | 0 | 0 | 0 | 1 | 1 |
+| 0 | 0 | 1 | 0 | 1 | 1 | 1 |
+| 0 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 1 | 1 | 1 | 1 | 1 | 0 | 0 |
+| 1 | 1 | 0 | 1 | 0 | 1 | 1 |
+| 1 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+(4) 从状态转换表可以看出, 该电路无论从 $Q_{1}$ 输出, 还是从 $Q_{2} 、 Q_{3}$ 输出, 都可产生一序列 脉冲, 其脉冲序列为 00011101 , 所以它的逻辑功能是一个 00011101 序列信号发生器。
+
+(5) 画出它的状态转换图,如图 3.6-20 所示。
+
+## 2. 计数器型序列信号发生器
+
+计数器构成的序列信号发生器的框图如图 3.6-21 所示。它是由周期为 $M$ 的计数器和组 合电路组成。组合电路的输出可以是周期为 $M$ 的一组,也可以是周期为 $M$ 的多组序列信号。 【例 3.6-7】计数器型序列信号发生器如图 3.6-22 所示, 试分析该电路的逻辑功能。
+
+解: (1) 该电路是由四位二进制计数器 74LS193 构成的模为 11 的加法计数器和门电路构 成的组合电路组成的计数器型序列信号发生器。
+
+(2) 输出逻辑函数表达式为
+
+$$
+F=\overline{Q_{A}} Q_{B}+Q_{B} Q_{C}+\overline{Q_{A}} Q_{D}
+$$
+
+(3) 由于计数器是先预置数为 0100 , 故计数为从 $0100 \sim 1111$ 进行加计数。可列出状态转 换表,如表 3.6-6 所示。
+
+表 3.6-6 例 3.6-7 状态转换表
+
+| $C P$ | $Q_{D}$ | $Q_{C}$ | $Q_{B}$ | $Q_{A}$ | $F$ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 0 | 0 | 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 0 | 1 | 0 |
+| 2 | 0 | 1 | 1 | 0 | 1 |
+| 3 | 0 | 1 | 1 | 1 | 1 |
+| 4 | 1 | 0 | 0 | 0 | 1 |
+| 5 | 1 | 0 | 0 | 1 | 0 |
+| 6 | 1 | 0 | 1 | 0 | 1 |
+| 7 | 1 | 0 | 1 | 0 | 1 |
+| 8 | 1 | 1 | 0 | 1 | 0 |
+| 9 | 1 | 1 | 0 | 0 | 1 |
+| 10 | 1 | 1 | 1 | 1 | 1 |
+| 11 | 1 | 1 | 1 | 1 | 0 |
+
+(4) 从状态真值表可以看出, 在 $C P$ 脉冲的作用下, 输出端 $F$ 依次输出一系列脉冲 001110101011 , 所以该电路为序列脉冲发生器。
+
+## 7 脉冲波形的产生
+
+## 7 .1 多谐振荡器
+
+多谐振荡器是一种自激振荡器, 它没有稳定的状态, 不需要外加信号, 只要接通电源, 就能 产生矩形脉冲信号。由于矩形波有丰富的谐波分量, 故常称这种振荡器为多谐振荡器。它主 要作为信号源来应用。
+
+## 1. 环形多谐振荡器
+
+它是利用闭合问路中的正反馈作用产生自激振荡的。由于门电路存在传输延迟时间, 将 奇数个门首尾相接,即可构成环形多谐振荡器。其原理图如图 3.7-1(a) 所示。
+
+(a) 环形多谐振荡器电原理图 (b) 环形多谐振荡器各点波形
+
+若 $u_{v}$ 为高电平, 经三级门倒相后, $u_{\mathrm{v}}$ 跳转为低电平。若门电路的平均传输延迟时间为 $t_{\mathrm{pd}}$, $u_{\mathrm{o}}$ 输出信号的周期为 $6 t_{\mathrm{pd}}$ 。其各点波形如图 3.7-1(b) 所示。
+
+用这种方法构成的振荡器很简单, 但不实用。因为门电路的传输延迟时间极短, 输出信号 的频率很高, 而且不能调节。为此, 通常采用外加 $R C$ 延迟电路来改进环形多谐振荡器。
+
+## 2. $R C$ 环形多谐振荡器
+
+(1) 电路组成
+
+它是由二个非门 $\mathrm{G}_{1} 、 \mathrm{G}_{2} 、 \mathrm{G}_{3}$ 、两个电阻 $\left(R_{1} 、 R\right)$ 和一个电容 $C$ 组成, 如图 3.7-2 所示。电阻 $R_{1}$ 是非门 $\mathrm{G}_{3}$ 的限流保护电阻,一般在 $100 \Omega$ 左右; $R 、 C$ 为定时器件, $R$ 的值要小于门的关门电 阻,一般在 $700 \Omega$ 以下, 否则电路无法工作。由于 $R C$ 的值足够大,传输时间增大, 门延迟时间 $t_{\mathrm{pd}}$ 可以忽略不计。
+
+（2）工作原理
+
+设初始时 $\mathrm{A}$ 点电位为低电平, $\mathrm{G}_{1}$ 关闭, 输出 $u_{\mathrm{o} 1}$ 为高电平。它一方面使 $\mathrm{G}_{2}$ 开通, 输出 $u_{\mathrm{o} 2}$ 为 低电平; 另一方面通过电容 $C$ 的耦合使 $\mathrm{B}$ 点和 $\mathrm{D}$ 点的电位 $u_{\mathrm{B}} 、 u_{\mathrm{D}}$ 均为高电平, 导致 $\mathrm{G}_{3}$ 开通, 输 出 $u_{\mathrm{a} 3}$ 为低电平。由于 $u_{\mathrm{a} 3}$ 的低电平通过反馈线反债到 $\mathrm{G}_{1}$ 的输入端, 稳定在低电平, 所以能保持 一段时间不变。
+
+但它是一个暂稳态, 因为 $u_{\mathrm{o} 2}$ 为低电平, $u_{\mathrm{o} 1}$ 通过 $R$ 对电容 $C$ 充电, 使 $\mathrm{B}$ 点电位 $u_{\mathrm{B}}$ 逐渐下降, $u_{\mathrm{D}}$ 也随之下降。当 $u_{\mathrm{D}}$ 降到 $\mathrm{G}_{2}$ 的关门电平时, $\mathrm{G}_{3}$ 关闭, 输出 $u_{\mathrm{o} 3}$ 为高电平。电路转人另一个暂稳 态, 这是因为 $u_{\mathrm{o} 3}$ 为高电平后, 由反馈线使 $G_{1} 门$ 开通, 输出 $u_{01}$ 转为低电平, $\mathrm{G}_{2}$ 关闭, 输出 $u_{02}$ 为高 电平, 电容 $C$ 被反向充电, 使 $u_{\mathrm{B}}$ 逐渐上升, 当 $u_{\mathrm{B}}$ 达到 $\mathrm{G}_{3}$ 的开门电平时, $\mathrm{G}_{3}$ 开通, 电路恢复到第 一暂稳态,如此周而复始, 反复转,便形成了多谐振荡,输出矩形波。
+
+(3) 输出脉冲周期
+
+输出脉冲的周期 $T$ 由电容 $C$ 的充电 $\left(t_{\mathrm{w} 1}\right)$ 和放电 $\left(t_{\mathrm{w} 2}\right)$ 两部分组成, 其中
+
+$t_{w 1} \approx 1.1 R C$
+
+$t_{\mathrm{w} 2} \approx 1.2 R C$
+
+振荡周期
+
+$$
+T=t_{\mathrm{w} 1}+t_{\mathrm{w} 2} \approx 2.3 R C
+$$
+
+【明 3.7-1】用奇数个与非门组成的环形多谐振荡器如图 3.7-3 所示。
+
+（1）设每个门的平均传输时间为 $t_{\mathrm{pd}}$, 试求振莎频率的计算公式。
+
+(2) 若每级门的平均传输时间为 $t_{\mathrm{pd}}=20 \mathrm{~ns}$, 要想获得频率 $f=5 \mathrm{MHz}$ 的振荡波形, 试问需 多少个门?
+
+解: (1) 每级门的传输时间为 $t_{\mathrm{pd}}, n$ 级门的传输时间为 $n t_{\mathrm{pd}}$, 则可得振莎周期为 振莎频率为
+
+$$
+T=2 n t_{\mathrm{pd}}
+$$
+
+$$
+f=\frac{1}{2 n t_{\mathrm{pd}}}
+$$
+
+(2) 根据 $f=\frac{1}{2 n t_{\mathrm{pd}}}$, 可求出
+
+$$
+n=\frac{1}{2 f_{\mathrm{pd}}}=\frac{1}{2 \times 5 \times 10^{6} \times 20 \times 10^{-9}}=5
+$$
+
+【例 3.7-2】 $R C$ 环形多谐振莎器电路如图 3.7-2 所示。
+
+若电路中 $R=510 \Omega, C=0.01 \mu \mathrm{F}$, 试求振莎频率。
+
+解: 根据 $R C$ 环形多谐振荡器的振荡周期 $T \approx 2.3 R C$, 可得出
+
+$$
+f=\frac{1}{T}=\frac{1}{2.3 R C}=\frac{1}{2.3 \times 510 \times 0.01 \times 10^{-6}}=85 \mathrm{kHz}
+$$
+
+## 7 .2 单稳态触发器
+
+单稳态触发器具有稳态和暂稳态两个不同的工作状态, 在外界触发信号作用下, 能从稳态 翲转到暂稳态, 维持一段时间以后, 再自动返回到稳态, 暂稳态维持时间的长短取决于电路的 参数，而与外界触发信号的宽度和幅度无关。
+
+这种电路被广泛应用于脉冲整形、延时以及定时电路中。
+
+## 1. 微分型单稳态触发器
+
+微分型单稳态触发器如图 3.7-4 (a) 所示。其中, $G_{1}$ 和 $G_{2}$ 为两级正反馈连接的与非门, $R$ 和 $C$ 组成延时电路，它们按微分电路的连接方式接在 $\mathrm{G}_{1}$ 门的输出端和 $\mathrm{G}_{2}$ 门的输入端之间。 $C_{\mathrm{i}}$ 和 $R_{i}$ 组成触发输入电路，把触发信号微分成尖脉冲,如图 3.74(b) 所示。
+
+电路的工作过程如下。
+
+（a）电路图 (b) 波形图
+
+(1) $0 \sim t_{1}$ 稳定状态
+
+门 $\mathrm{G}_{1}$ 和 $\mathrm{G}_{2}$ 的输入端都接有一个电阻, 其值的选择可决定 $\mathrm{G}_{1}$ 和 $\mathrm{G}_{2}$ 的输出, 所以, 选择 $R<$ $R_{\mathrm{off}}$, 使 $u_{R}$ 约为 $0.5 \mathrm{~V}, 门 \mathrm{G}_{2}$ 输出为高电平, 它反馈到 $\mathrm{G}_{1}$ 门的输入, 若选 $R_{\mathrm{i}}>R_{\mathrm{on}}, u_{R \mathrm{i}}$ 被钳位在 1.4 $V$,门 $G_{1}$ 输出为低电平, 触发器为稳定状态, 此时, $u_{\mathrm{o} 1}=$ “ 0 ”, $u_{\mathrm{o} 2}=$ “ 1 ”, 电容 $C$ 上的电压约为 -0.2 $\mathrm{v}$ 。
+
+## (2) $t_{1} \sim t_{2}$ 暂稳态
+
+当 $u_{\mathrm{i}}$ 出现下降沿时, 经 $R_{\mathrm{i}} 、 C_{\mathrm{i}}$ 微分电路得到负尖脉冲, 使 $u_{\mathrm{o}}$ 上跳至高电平, 由于电容 $C$ 电 压不能突变, 故 $u_{R}$ 也变为高电平, 使 $u_{\mathrm{o} 2}$ 变为低电平, 电路发生翻转, 从而进入暂稳态。随着电 容器 $C$ 的充电, $u_{R}$ 也逐渐降低, 当达到 $\mathrm{G}_{2}$ 门的关门电平时, $\mathrm{G}_{2}$ 门关闭, $u_{\mathrm{o} 2}$ 变为高电平, $u_{\mathrm{o} 1}$ 变为 低电平, 电路自动返回到初始稳定状态。暂稳态的持续时间决定于定时电路 $R C$ 的充电速度。 (3) $t>t_{2}$ 恢复期
+
+电路自动翻转后, 电容两端的电压要恢复到初始状态时需要一定的时间, 一般取
+
+$$
+t_{\mathrm{R}}=(3 \sim 5) \tau_{\mathrm{d}}=(3 \sim 5) R C
+$$
+
+(4) 参数计算
+
+该单稳态触发器可产生一定宽度的负脉冲,其输出脉冲宽度为
+
+$$
+t_{\mathrm{w}} \approx 0.7 R C
+$$
+
+调。
+
+一般采用改变电容的大小实现脉冲宽度的粗调, 用改变电阻的大小来实现脉冲宽度的微
+
+电路的最高工作频率为
+
+$$
+f_{\max }=\frac{1}{t_{\mathrm{w}}+t_{\mathrm{R}}}
+$$
+
+【例 3.7-3】微分型单稳态触发器如图 3.7-4 (a) 所示。电路参数如图中标出的数值, 试 求: 电路的输出脉冲宽度; 电路的最高工作频率。
+
+解: 输出脉冲宽度为
+
+$$
+t_{\mathrm{w}}=0.7 R C=0.7 \times 390 \times 0.01 \times 10^{-6}=2.73 \mu \mathrm{s}
+$$
+
+最高工作频率的计算
+
+$$
+\begin{aligned}
+& t_{\mathrm{R}}=(3 \sim 5) \tau_{\mathrm{d}}=(3 \sim 5) R C=4 R C=4 \times 390 \times 0.01 \times 10^{-6}=15.6 \mu \mathrm{s} \\
+& f_{\max }=\frac{1}{t_{\mathrm{W}}+t_{\mathrm{R}}}=\frac{1}{2.73+15.6}=0.05 \mathrm{MHz}
+\end{aligned}
+$$
+
+## 2. 积分型单稳态触发器
+
+积分型单稳态触发器如图 3.7-5 (a) 所示。图中 $R C$ 为积分定时电路。
+
+其工.作波形如图 3.7-5 (b) 所示。电路工作过程如下。
+
+(a) 电路图 (b) 波形图
+
+在正触发脉冲作用之前, $u_{\mathrm{i}}$ 为低电平, 门 $\mathrm{G}_{1}$ 和 $\mathrm{G}_{2}$ 均处于关闭状态, 它们的输出 $u_{\mathrm{o} 1}$ 和 $u_{\mathrm{o} 2}$ 均 为高电平, 电路处于稳定状态。此时 $R$ 上无电流流过, 电容 $C$ 上充有恒定电压 $\left(u_{c}=3.6 \mathrm{~V}\right)$ 。 在 $t=t_{1}$ 瞬间, $u_{i}$ 正跳变, 由于电容 $C$ 两端电压不能突变, $u_{C}$ 仍为高电平, 因而, 门 $G_{1}$ 和 $G_{2}$ 同 时开通, $u_{01}$ 和 $u_{02}$ 立即由高电平跳变到低电平, 电路发生翻转, 进人到暂稳态。
+
+当 $u_{\mathrm{ol}}$ 由高电平变为低电平后, 已充电的电容 $C$ 就要通过 $R$ 和 $\mathrm{G}_{1}$ 门进行放电, 使 $u_{c}$ 按指数 规律下降。当 $t=t_{2}, u_{C}$ 下降到 $\mathrm{G}_{2}$ 门的关门电平时, $\mathrm{G}_{2}$ 门关闭, $u_{\mathrm{o} 2}$ 由低电平变为高电平, 暂稳态 结束。但此时电容 $C$ 仍继续放电。
+
+当 $t=t_{3}$ 时刻, $u_{i}$ 由高电平跳变到低电平, $G_{1}$ 门关闭, 电路进人恢复过程。此后对电容 $C$ 重
+
+输出脉冲宽度为
+
+$$
+t_{\mathrm{w}}=R C \ln \left(\frac{U_{\mathrm{OH}}}{U_{\mathrm{T}}}\right)
+$$
+
+式中: $U_{\mathrm{oH}}$ 为 TTL门的输出高电平值; $U_{\mathrm{T}}$ 为 TTL 门的阈值电压。
+
+由上面分析可以看出, 这种单稳态触发器要求正触发脉冲的宽度 $t_{w_{i}}$ 必须大于输出脉冲宽 度 $t_{\text {w }}$, 否则, 电路将不能正常工作。
+
+【例 3.7-4】积分型单稳态触发器如图 3.7-5 (a) 所示。电路参数如图中标出的数值, 门 $\mathrm{G}_{1} 、 \mathrm{G}_{2}$ 的阈值电压 $U_{\mathrm{T}}=1.4 \mathrm{~V}$, 输出高电平 $U_{\mathrm{oH}}=3.6 \mathrm{~V}_{\text {。 }}$
+
+试求: 电路的输出脉冲宽度; 输入触发脉冲宽度 $t_{\mathrm{W}_{\mathrm{i}}}=0.5 \mu \mathrm{s}$ 时电路是否能正常工作?
+
+解: 输出脉冲宽度为
+
+$$
+t_{\mathrm{W}}=R C \ln \left(\frac{U_{\mathrm{oH}}}{U_{\mathrm{T}}}\right)=200 \times 5000 \times 10^{-12} \ln \frac{3.6}{1.4}=0.94 \mu \mathrm{s}
+$$
+
+当输入触发脉冲的宽度 $t_{\mathrm{wi}}=0.5 \mu \mathrm{s}$ 时, 由于 $t_{\mathrm{wi}}<t_{\mathrm{w}}$, 所以, 电路不能正常工作。
+
+## 7 .3 施密特触发器
+
+施密特触发器是脉冲波形变换经常使用的一种电路。输出有两个稳定状态。该电路有两 个重要特点:一是输出状态依赖于电路输入信号的电平; 二是能改善输出波形, 使输出电压波 形的边沿变得很陡。
+
+## 1. 㢆路图
+
+## 2. 工作原理
+
+设输入 $u_{\mathrm{i}}$ 为三角波,如图 3.7-7 (a) 所示。设 $G_{1} 、 G_{2} 、 G_{3}$ 的门坎电平为 $U_{\mathrm{T}}$ 。 $=0$ 。
+
+当 $u_{\mathrm{i}}$ 高于 $U_{\mathrm{T}}$ 时, $\mathrm{G}_{3}$ 开通, 使 $\overline{R_{\mathrm{D}}}=0, \mathrm{D}$ 截止, 则 $\overline{S_{\mathrm{p}}}=1, u_{\mathrm{o} 1}=1, u_{\mathrm{o} 2}=0$, 电路处于第一稳态, $Q$
+
+只有当 $u_{\mathrm{i}}$ 下降到 $u_{\mathrm{i}}=U^{-}=U_{\mathrm{T}}-U_{\mathrm{D}}$ 时, $\overline{R_{\mathrm{D}}}=1, \mathrm{D}$ 导通, $\overline{S_{\mathrm{D}}}=0$, 电路才发生翻转到第二稳 态, $Q=1$ 。
+
+当 $u_{\mathrm{i}}$ 再升高时, 只有当升高到 $u_{\mathrm{i}}=U^{+}=U_{\mathrm{T}}$ 时, $\mathrm{G}_{3}$ 开通, D 截止, $\overline{R_{\mathrm{D}}}=0, \overline{S_{\mathrm{D}}}=1, u_{\mathrm{o} 1}=1, u_{\mathrm{o} 2}$ $=0$, 电路又返回到第一稳态。图 3.7-7 (b)、(c) 给出了相应的 $u_{\mathrm{o} 1}$ 与 $u_{\mathrm{o} 2}$ 波形。
+
+## 3. 回差特性
+
+通过上述分析可以看出, 在输入电压下降过程中, 电路由第一稳态翻转到第二稳态所要求 的输入电压 $u_{i}=U^{-}$, 与输入电压上升过程中电路从第二稳态回到第一稳态所要求的输入电压 $u_{\mathrm{i}}=U^{+}$是不同的。这种现象称为回差现象, 如图 3.7-8 所示。 $U^{+}$称为正向阈值电压, $U^{-}$称为 负向阈值电压, 电路的回差电压 $\Delta U=U^{+}-U^{-}$。
+
+## 4. 施密特触发器的应用
+
+(1)用于波形变换;
+
+(2)用于脉冲整形;
+
+(3)用于脉冲的幅度鉴别。
+
+【例 3.7-5】图 3.7-9 所示的施密特电路中, 与非门 $\mathrm{G}_{1} 、 \mathrm{G}_{2}$ 的阈值电压 $U_{\mathrm{T}}=1.1 \mathrm{~V}$, 二极管的导通压降 $U_{\mathrm{D}}=0.7$ $\mathrm{V}, R_{1}=1 \mathrm{k} \Omega, R_{2}=2 \mathrm{k} \Omega$, 试计算正向阈值电压 $U^{+}$、负向阈 值电压 $U^{-}$和电路的回差电压 $\Delta U$ 。
+
+解: 当输入电压 $u_{\mathrm{i}}=0$ 时, $\mathrm{G}_{1}$ 门关闭, $\mathrm{G}_{2}$ 门开通, 输出 $u_{\mathrm{o}}$ 为低电平。
+
+当输入电压 $u_{\mathrm{i}}$ 升高, 达到 $\mathrm{G}_{1}$ 门的开门电平时, $\mathrm{G}_{1}$ 门开通, 欲使 $\mathrm{G}_{1}$ 门开通则要求:
+
+$$
+\frac{u_{\mathrm{i}}-0.7-u_{\mathrm{o}}}{R_{1}+R_{2}} \times R_{2}+u_{\mathrm{o}}=U_{\mathrm{T}}
+$$
+
+将给定数值代人, 即
+
+$$
+\frac{u_{\mathrm{i}}-0.7-0.3}{1+2} \times 2+0.3=1.1 \mathrm{~V}
+$$
+
+可求出正向阈值电压
+
+负向阈值电压
+
+$$
+u_{\mathrm{i}}=U^{+}=2.2 \mathrm{~V}
+$$
+
+$$
+U^{-}=1.1 \mathrm{~V}
+$$
+
+电路的回差电压
+
+$$
+\Delta U=2.2-1.1=1.1 \mathrm{~V}
+$$
+
+## 8 数模 $(D / A)$ 和模数 $(A / D)$ 转换
+
+## 8 .1 数模转换器 ( $\mathrm{D} / \mathrm{A}$ 转换器)
+
+$D_{3} \sim D_{0}$ 表示四位二进制数字输入信号, $D_{3}$ 为高位, $D_{0}$ 为低位。 $S_{3} \sim S_{0}$ 是四个电子模拟开 关, 当某一位数 $D_{i}=1$, 即表示 $\mathrm{S}_{i}$ 接 1 , 这时相应的电流 $I_{i}$ 流向 $I_{01}$, 当 $D_{i}=0$, 即表示 $\mathrm{S}_{i}$ 接 0 , 则 流过相应电阻的电流 $I_{i}$ 流向 $I_{02}$ 到地。因此, 运算放大器的输入电流 $I_{01}$ 由下式决定:
+
+$$
+\begin{aligned}
+I_{01} & =I_{3} D_{3}+I_{2} D_{2}+I_{1} D_{1}+I_{0} D_{0} \\
+& =\frac{U_{\mathrm{REF}}}{2 R} D_{3}+\frac{1}{2} \frac{U_{\mathrm{REF}}}{2 R} D_{2}+\frac{1}{2^{2}} \frac{U_{\mathrm{REF}}}{2 R} D_{1}+\frac{1 U_{\mathrm{REF}}}{2^{3}} D_{0} \\
+& =\frac{U_{\mathrm{REF}}}{2^{4} R}\left(D_{3} 2^{3}+D_{2} 2^{2}+D_{1} 2^{1}+D_{0} 2^{0}\right)
+\end{aligned}
+$$
+
+$$
+U_{\mathrm{o}}=-I_{01} R_{\mathrm{f}}=-\frac{U_{\mathrm{REF}}}{2^{4}} \frac{R_{\mathrm{f}}}{R}\left(D_{3} 2^{3}+D_{2} 2^{2}+D_{1} 2^{1}+D^{0} 2^{0}\right)
+$$
+
+即输出的模拟电压与输入的数字信号 $D_{3} \sim D_{0}$ 的状态以及位权成正比。
+
+若取电阻 $R_{\mathrm{f}}=R$, 且电阻网络由 $N$ 级组成, 则 $\mathrm{D} / \mathrm{A}$ 转换后的输出电压表示为
+
+$$
+U=-\frac{U_{\mathrm{REF}}}{2^{n}}\left(D_{n-1} 2^{n-1}+D_{n-2} 2^{n-2}+\cdots+D_{1} 2^{1}+D_{0} 2^{0}\right)
+$$
+
+数模 $(D / A)$ 转换器的主要参数如下。
+
+(1) 分辨率
+
+分辨率是指对输出最小电压的分辨能力。它用输入数码只有最低有效位为 1 时的输出电 压与输入数码全为 1 时输出满量程电压之比表示, 即
+
+分辩率 $=\frac{1}{2^{n}-1}$
+
+(2) 绝对误差 (绝对精度)
+
+绝对误差是指当输入数码为全 1 时, 所对应实际输出电压与电路理论值之差。
+
+(3) 转换速度
+
+转换速度是指从送人数字信号起, 到输出电流或电压达到稳态值所需要的时间。
+
+【例 3.8-1】四位 $R-2 R$ 的 $\mathrm{T}$ 形网络 $\mathrm{D} / \mathrm{A}$ 转换器, 如图 3.8-1 所示电路, 试求: 参考电压 $U_{\mathrm{REF}}=8 \mathrm{~V}$, 数字量输入 $D_{3} D_{2} D_{1} D_{0}=1001$ 时的输出电压。
+
+解: $U_{\mathrm{o}}=-I_{01} R_{\mathrm{f}}=-\frac{U_{\mathrm{REF}}}{2^{4}}\left(D_{3} 2^{3}+D_{2} 2^{2}+D_{1} 2^{1}+D_{0} 2^{0}\right)$
+
+$$
+=-\frac{8}{2^{4}}\left(1 \times 2^{3}+0 \times 2^{2}+0 \times 2^{1}+1 \times 2^{0}\right)=-4.5 \mathrm{~V}
+$$
+
+【例 3.8-2】某 8 位 $\mathrm{D} / \mathrm{A}$ 转换器, 满度输出电压为 $8 \mathrm{~V}$, 那么, 它的 $1 \mathrm{LSB}$ 对应电压值是多 少?
+
+解: $\frac{8}{2^{8}-1}=0.031 \mathrm{~V}$
+
+3.8 .2 模数转换器 ( $\mathrm{A} / \mathrm{D}$ 转换器)
+
+## 1. 逐次逼近式模数转换器
+
+逐次逼近式模数转换器是由比较器、D/A 转换器、数码寄存器和控制逻辑电路等组成, 如 图 3.8-2 所示。
+
+转换开始前, 先将数码寄存器清零, 所以, 给 D/A 转换器 DAC 的数字量也全是零。当发 出转换控制信号后, 通过逻辑控制电路, 首先使寄存器的输出最高位置 1 , 这个数字量被送到 $\mathrm{D} / \mathrm{A}$ 转换器, 转换成相应的模拟电压 $U_{\mathrm{f}}$, 并送到比较器与输入信号 $U_{\mathrm{i}}$ 进行比较, 如果 $U_{\mathrm{f}}>U_{\mathrm{i}}$, 说明数字过大,去掉这个 “ 1 ”; 如果 $U_{\mathrm{f}}<U_{\mathrm{i}}$, 说明数字不够大, 保留这个“ 1 ”。接着, 寄存器的次 高位置“ 1 ”, 按上述方法确定这个 “ 1 ” 是否保留, 逐位比较下去, 直到最低位比较完为止。这时 寄存器所存的数码就是所求的数字量。
+
+【例 3.8-3】一个 8 位二进制输出的逐次逼近型 $\mathrm{A} / \mathrm{D}$ 转换器中, 若 $U_{\mathrm{REF}}=5 \mathrm{~V}, U_{\mathrm{i}}=4.22$ $\mathrm{V}$, 试问输出是多少? 若其他条件不变, 仅将 $\mathrm{A} / \mathrm{D}$ 转换器换成 10 位, 那么输出是多少?
+
+解: 输入 $U_{\mathrm{i}}=4.22 \mathrm{~V}$ 时, 对应的输出数字量为 11010111 。
+
+若将 $\mathrm{A} / \mathrm{D}$ 转换器换成 10 位, 则输出数字量为 1101011111 。
+
+## 2. 双积分型模数转换器
+
+双积分 A/D 转换器原理电路如图 3.8-3 所示。它是由积分器、比较器、计数器、控制逻辑 电路和时钟信号源等几部分组成。
+
+其工作过程分三个阶段进行。
+
+(1) 初始准备
+
+转换控制信号 $U_{\mathrm{t}}=0$, 计数器清零, 开关 $\mathrm{S}$ 闭合, 使电容 $C$ 完全放电。
+
+(2) 第一次积分 (采样阶段)
+
+转换控制信号 $U_{\mathrm{L}}=1$, 通过控制逻辑电路使 $\mathrm{S}$ 断开, 开关 $\mathrm{S}_{1}$ 接到模拟输入 $U_{\mathrm{i}}$ 上, 积分器开 始对 $U_{i}$ 积分。当积分到 $T_{1}$ 时刻, 采样阶段结束, 此时, 积分器的输出电压为
+
+$$
+U_{\mathrm{o}}=-\frac{1}{R C} \int_{0}^{T_{1}} u_{\mathrm{i}} \mathrm{d} t=-\frac{T_{1}}{R C} U_{\mathrm{i}}
+$$
+
+式中: $T_{1}$ 为采样时间, $T_{1}=N T_{C P} ; N$ 为脉冲数; $T_{C P}$ 为时钟脉冲的周期。
+
+此时, 控制逻辑输出使 $\mathrm{S}_{1}$ 开关置于 $-U_{\mathrm{REF}}$, 电路进入比较阶段。
+
+## （3）第二次积分（比较阶段）
+
+此时积分器反向积分, 当积分器输出电压上升到零时, 积分过程结束, 设这段时间为 $T_{2}$, 则积分输出电压为
+
+$$
+\begin{aligned}
+& U_{n}=\frac{1}{C} \int_{0}^{T_{2}} \frac{U_{\mathrm{REF}}}{R} \mathrm{~d} t-\frac{T_{1}}{R C} U_{\mathrm{i}}=0 \\
+& \frac{T_{2}}{R C} U_{\mathrm{REF}}=\frac{T_{1}}{R C} U_{\mathrm{i}}
+\end{aligned}
+$$
+
+所以
+
+$$
+T_{2}=\frac{T_{1}}{U_{\mathrm{REF}}} U_{i}
+$$
+
+从而可以看出, 反向积分到 $U_{\mathrm{o}}=0$ 的这段时间 $T_{2}$ 与输入信号 $U_{\mathrm{i}}$ 成正比, 被转换电压 $U_{\mathrm{i}}$ 越大, $U_{\mathrm{o}}$ 数值越大, $T_{2}$ 时间越长。令计数器在 $T_{2}$ 时间里对固定频率为 $f_{C P}\left(f_{C P}=\frac{1}{T_{C P}}\right)$ 的时钟脉 冲计数为 $D$, 则
+
+取 $T_{1}=N T_{C P}$, 则
+
+$$
+D=\frac{T_{2}}{T_{C P}}=\frac{T_{1}}{T_{C P} U_{\mathrm{REF}}} U_{\mathrm{i}}
+$$
+
+$$
+D=\frac{U_{\mathrm{i}}}{U_{\mathrm{REF}}} N
+$$
+
+被转换电压 $U_{\mathrm{i}}$ 的大小转换为计数脉冲值 $D$, 即数字量大小。而 $N$ 为采样积分的时钟脉冲数, 它是一个常数。其工作波形如图 3.8-4 所示。
+
+【例 3.8.4】一个双积分 $\mathrm{A} / \mathrm{D}$ 转换器的计数器为四位十进制计数器, 设最大容量为 (3000) $)_{10}$, 计数器的时钟频率 $f_{\mathrm{cp}}=400 \mathrm{kHz}$, 求:
+
+(1) 若参考电压 $U_{\mathrm{REF}}=15 \mathrm{~V}$, 当输出为 $(1000)_{10}$ 时, 输入模拟电压是多少?
+
+(2)转换器的最小工作周期是多少?
+
+解: (1) 输入模拟量
+
+$$
+U_{\mathrm{i}}=\frac{1000}{3000} \times 15=5 \mathrm{~V}
+$$
+
+(2) 采样时间
+
+$$
+T_{1}=N T_{C P}=3000 \times \frac{1}{400 \times 10^{3}}=7.5 \mathrm{~ms}
+$$
+
+比较时间
+
+$$
+T_{2}=\frac{T_{1}}{U_{\mathrm{REF}}} \times U_{\mathrm{i}}=\frac{7.5}{15} \times 5=2.5 \mathrm{~ms}
+$$
+
+最小工作周期
+
+$$
+T=T_{1}+T_{2}=7.5+2.5=10 \mathrm{~ms}
+$$
+
+### 3 典型集成数模和模数转换器
+
+## 1. 集成数模转换器
+
+集成 $\mathrm{D} / \mathrm{A}$ 芯片通常是将 $\mathrm{T}$ 形 (倒 $\mathrm{T}$ 形) 电阻网络、模拟开关等集成到一块芯片上,它并不 包括运算放大器。构成 D/A 转换器时需外接运算放大器, 有时还要外接反馈电阻。常用的 $D / A$ 芯片有 8 位、10 位、12 位、16 位等。
+
+下面以 8 位 D/A 芯片 DAC0832 为例, 说明它的结构。
+
+(1) 锁存器 (寄存器) 样。
+
+具有两个锁存器, 即输入锁存器和 DAC 锁存器, 可以进行两次缓冲操作, 使操作灵活、多
+
+## (2) 控制电路
+
+由 $G_{1} 、 G_{2} 、 G_{3}$ 等门电路组成, 实现锁存器的多种控制。
+
+## (3) D/A 转换电路
+
+8 位 $\mathrm{D} / \mathrm{A}$ 转换电路, 主要由倒 $\mathrm{T}$ 形电阻网络组成。
+
+## 2. 集成模数转换器
+
+它主要由三部分电路组成。
+
+(1)模拟多路器。ADC0809 可以处理 8 个不同信号源的模拟信号,它通过 8 位模拟开关和 地址锁存译码器来完成。
+
+(2) D/A 转换器。该芯片是 8 位逐次比较式 A/D 转换。
+
+(3)控制器。实现对 8 路模拟输入量的选择和 A/D 转换的控制。
+
+## 8 .4 采样保持电路
+
+把随时间连续变化的模拟信号变化成对应的离散数字信号,首先要按一定时间间隔取出 模拟信号的值,这一过程叫采样。由于 A/D 转换需要一定的时间,在这段时间内所采集的模 拟信号应保持不变, 完成这种功能的电路称为采样保持电路。
+
+采样保持电路的原理电路如图 3-8-7(a) 所示。
+
+采样就是对模拟信号周期性地抽取样值,使模拟信号变成时间上离散的脉冲串,其幅值取 决于采样时间内输入模拟信号的大小。
+
+采样频率 $f_{\mathrm{S}}(1 / T)$ 越高, 采样越密, 采样值就越多, 采样信号 $u_{\mathrm{S}}$ 的包络线就越接近输入信 号波形。采样定理指出: 只有当采样频率大于模拟信号最高频率分量的 2 倍时, 即 $f_{\mathrm{s}} \geqslant 2 f_{\text {imax }}$ 时,所采集的信号才能不失真地反映原来模拟信号的变化规律。
+
+对于变化较快的模拟信号,其采样值 $u_{\mathrm{s}}$ 在脉冲持续时间内会有明显的变化,顶部不平, 故 不能得到一个采样值。为此, 利用电容 $C$ 的电荷存储作用, 使 $u_{\mathrm{o}}$ 保持采样结束时 $u_{\mathrm{i}}$ 的瞬时值, 形成幅度固定的采样值。 $u_{\mathrm{o}}$ 形状如图 3.8-7(e) 所示。
+
+【例 3.8-5】若 $\mathrm{A} / \mathrm{D}$ 转换器的输入模拟信号 电压最高频率为 $20 \mathrm{kHz}$, 则采样频率的下限是 多少?
+
+解: 根据采样定理有
+
+$$
+f_{\mathrm{s}} \geqslant 2 f_{\text {imax }}
+$$
+
+则可采样频率的下限为 $40 \mathrm{kHz}$ 。
+
+## 仿真习题
+
+3-1 下列几种说法中与 BCD 码的性质不符的是 ( )。
+
+(A) BCD 码是一种人为选定的 $0 \sim 9$ 十个数字的代码
+
+(B) 一组四位二进制数组成的码只能表示一位十进制数
+
+(C) BCD 码有多种
+
+(D) BCD 码是一组四位二进制数,能表示 16 以内的任何一个十进制数
+
+3-2一个三极管的发射结处于正向偏置, 集电结也处于正向偏置, 则该三极管工作在 ) 状态。
+(A) 饱和
+(B) 截止
+(C) 放大
+(D) 不能确定
+
+3-3 十进制数的“ 5 ”, 用余 3 码表示为 ( )。
+(A) 1000
+(B) 1011
+(C) 0110
+(D) 0101
+
+3-4 电路如题 3-4 图所示, 试判断 $\mathrm{D}_{1} 、 \mathrm{D}_{2}$ 的工作状态。（）
+(A) $\mathrm{D}_{1}$ 导通, $\mathrm{D}_{2}$ 截止
+(B) $D_{1}$ 截止, $\mathrm{D}_{2}$ 导通
+(C) $D_{1}$ 导通, $D_{2}$ 导通
+(D) $\mathrm{D}_{1}$ 截止, $\mathrm{D}_{2}$ 截止 3-5 若将一异或门 (输入端为 $A 、 B$ ) 当做反相器使用, 则 $A 、 B$ 端 应( ) 连接。
+(A) $A$ 或 $B$ 中有一个接 1
+(B) $A$ 或 $B$ 中有一个接 0
+(C) $A$ 和 $B$ 并联使用
+(D) 不能实现
+
+3-6 TTL 与非门的 3 输入端 $A 、 B 、 C$, 在 $C$ 输入端接一电阻到地, 要实现 $F=\overline{A B}, R_{A}$ 的取值应( )。
+(A) 小于 $200 \Omega$
+(B) 大于 $2 \mathrm{k} \Omega$
+(C) 小于 $2 \mathrm{k} \Omega$
+(D) 可以任意取值
+
+3-8 TTL 与非门的关门电平为 $0.7 \mathrm{~V}$, 开门电平为 $1.9 \mathrm{~V}$, 当输入低电平为 $0.4 \mathrm{~V}$, 输入高 电平为 $3.2 \mathrm{~V}$ 时, 输入高电平噪声容限为 $(\quad)$ 。
+(A) $1.1 \mathrm{~V}$
+(B) $1.3 \mathrm{~V}$
+(C) $1.2 \mathrm{~V}$
+(D) $1.5 \mathrm{~V}$
+
+3-9 CMDS 门电路如题 3-9 图所示, 设二极管具有理想特性, 其输出 $F$ 的逻辑表达式为 $(\quad)$ 。
+(A) $F=\overline{A B C D E}$
+(B) $F=\overline{A B(C+D+E)}$
+(C) $F=\overline{\overline{A B C D E}}$
+(D) $F=\overline{A B} C D E$
+
+3-10 如题 3-10 图所示电路, 该电路的输出 $F$ 的 逻辑表达式为 () 。
+(A) $F=C \overline{(A+B)}$
+(B) $F=\bar{C}+\overline{A B}$
+(C) $F=C \overline{A B}$
+(D) $F=\overline{C(A+B)}$
+
+3-11 某电路的输入、输出波形如题 3-11 图所示,
+
+题 3-11 图 该电路所实现的逻辑函数表达式为 ( )。
+(A) $F=\overline{A B}$
+(B) $F=\overline{A+B}$
+(C) $F=\overline{A \oplus B}$
+(D) $F=A \oplus B$
+
+3-12 以下几种说法中, 正确的是( )。
+
+(A)一个逻辑函数的全部最小项之和恒等于 0
+
+(B) 一个逻辑函数的全部最大项之和恒等于 0
+
+(C)一个逻辑函数的全部最小项之积恒等于 1
+
+(D) 一个逻辑函数的全部最大项之积恒等于 0
+
+3-13 逻辑函数的标准或与式是由(）构成的逻辑表达式。
+(A) 最大项之积
+(B) 最小项之积
+(C) 最大项之和
+(D) 最小项之和
+
+3-14 函数 $F=A B+\bar{A} C+\bar{B} C+\bar{C} D+\bar{D}$ 的最简与或式为 ( )。
+(A) 1
+(B) 0
+(C) $A B$
+(D) $A B+\bar{D}$
+
+3-15 函数 $A \oplus B$ 与 $\bar{A} \oplus \bar{B}(\quad)$ 。
+(A) 相等
+(B) 互为反函数
+(C) 互为对偶式
+(D) 答案都不正确
+
+3-16 逻辑函数 $F=A(B+\bar{C})+\overline{\bar{D} E}$ 的反函数为 $(\quad)$ 。
+(A) $(A+B \bar{C}) \bar{D}+E$
+(C) $(\bar{A}+\bar{B} C) \bar{D} E$
+(B) $(A+B \bar{C}) \overline{D+\bar{E}}$
+(D) $(A+\bar{B} C) \overline{\bar{D} E}$
+
+3-17 逻辑函数 $F=A B+C D+\bar{A} B D$ 的最简或与式是 () 。
+(A) $(A+B)(C+D)(\bar{A}+B+D)$
+(C) $(\bar{A}+\bar{B})(\bar{C}+\bar{D}) \cdot(A+\bar{B}+\bar{D})$
+(B) $(A+D)(B+C)(B+D)$
+(D) $(B+C)(\bar{A}+B+D)(A+\bar{C}+D)$
+
+3-18 由异或门组成的电路如题 3-18 图所示, $A 、 B 、 C 、 D$ 为输入二进制代码, $F$ 为输出, 该 电路具有 ( ) 逻辑功能。
+(A) 偶校验电路
+(B) 奇校验电路
+(C) 数值比较器
+(D) 数据分配器
+
+3-19 由 8 选 1 数据选择器组成的三变量逻辑函数发生器电路如题 3-19 图所示, 该电路 所产生的逻辑函数为 $(\quad)$ 。
+(A) $F=\bar{A} \bar{B} C+\bar{A} B \bar{C}+\bar{A} B C+A \bar{B} C$
+(B) $F=\bar{A} \bar{B} \bar{C}+A \bar{B} \bar{C}+A B \bar{C}+A B C$
+(C) $F=\bar{A} \bar{B} \bar{C}+\bar{A} B \bar{C}+A \bar{B} \bar{C}+A B \bar{C}+A B C$
+(D) $F=A \bar{B} \bar{C}+\bar{A} B \bar{C}+A B \bar{C}+A \bar{B} C$
+
+3-20 由 3-8 译码器和 8 选 1 数据选择器组成的电路如题 3-20 图所示, 3-8 译码器输入的 三位二进制数为 $A=A_{2} A_{1} A_{0}, 8$ 选 1 数据选择器输入的三位二进制数为 $B=B_{2} B_{1} B_{0}$, 输出为 $F$, 该电路的逻辑功能为 $(\quad)$ 。
+(A) 数据选择器
+(B) 数据分配器
+(C) 同比较器
+(D) 译码器
+
+3-21 某组合逻辑电路的工作波形如题 3-21 图所示, 其中 $A 、 B 、 C$ 是电路的输入端, $F$ 是 输出端, 该电路的输出 $F$ 的函数表达式和逻辑功能为 ( )。
+(A) $F=\bar{A} \bar{B} C+\bar{A} B \bar{C}+A \bar{B} \bar{C}+A B C$ 奇校验电路
+(B) $F=\bar{A} B C+A B \bar{C}+A \bar{B} C+A B C$ 多数表决电路
+(C) $F=\bar{A} \bar{B} \bar{C}+\bar{A} B C+A B \bar{C}+A \bar{B} C$ 偶校验电路
+(D) $F=\bar{A} B C+\bar{A} B \bar{C}+A \overline{B C}+A B C$ 不能说明
+
+3-22 组合逻辑电路如题 3-22 图所示, 该电路的逻辑功能是 ( )。
+(A) 三变量多数表决电路
+(B) 三变量非一致电路
+(C) 三变量一致电路
+(D)三变量奇校验电路
+
+3-23 组合电路如题 3-23 图所示, 该电路的逻辑功能是( )。
+(A) 数据选择器
+(B) 译码器
+(C) 数据分配器
+(D) 编码器
+
+3-24 由 3-8 译码器和与非门构成的组合电路如题 3-24 图所示, 输入 $A 、 B 、 C$ 为 码, 输出为 $F_{1}$ 和 $F_{2}$, 该电路具有的逻辑功能是 ( )。
+(A) 数据选择器
+(B) 全加器
+(C) 数据比较器
+(D) 译码器
+
+3-25 JK 触发器连接如题 3-25 图所示, 其在 $C P$ 脉冲作用下, $Q$ 端的输
+
+3-26 如题 3-26 图所示电路, 设初始状态 $Q=0$, 其在 $C P$ 脉冲作用下输出 $Q$ 端的波形为
+
+3-27一个触发器的状态转换图如题 3-27 图所示, 则该触发器为 ( )。
+
+(A) RS 触发器
+(B) $\mathrm{T}$ 触发器
+(C) JK 触发器
+(D) D 触发器
+
+3-28 电路如题 3-28 图所示, 设触发器的初始状态为 0, 其在输入 $A$ 和 $C P$ 脉冲作用下输 出 $Q$ 端的波形为( )。
+
+3-29 用 $n$ 级触发器组成的计数器, 其最大计数模是 ( )。
+(A) $n$
+(B) $2 n$
+(C) $n^{2}$
+(D) $2^{n}$
+
+3-30 四位移位寄存器, 现态为 0111 , 经右移一位后其次态为 ( )。
+(A) 0011 或 1011
+(B) 1111 或 1110
+(C) 1011 或 1110
+(D) 0011 或 1111
+
+3-31一个移位寄存器原来的状态为 0000 , 如果串行输入始终为 1 , 则经过 4 个移位脉冲 后寄存器的内容为 $(\quad)$ 。
+(A) 0001
+(B) 0111
+(C) 1110
+(D) 1111
+
+3-32 由 4 位二进制同步计数器 74IS161 和与非门组成的电路如题 3-32 图所示, 其中 $S_{1} 、 S_{2}$ 为使能端, $Q_{0} \sim Q_{3}$ 为输出, $C P$ 为计数脉冲输入, $\bar{L}$ 为置位输入端, 试判断该电路为 $(\quad)$ 进制计数器。
+(A) 十进制计数器
+(B) 五进制计数器
+(C) 十一进制计数器
+(D) 十六进制计数器
+
+3-33 由 JK 触发器组成的电路如题 3-33 图所示, 试判断该电路的逻辑功能是( )。
+
+(A) 同步二进制加法计数器
+
+(B) 同步二进制减法计数器
+
+(C) 异步二进制加法计数器
+
+(D) 异步二进制减法计数器
+
+3-34 由 D 触发器组成的电路如题 3-34 图 所示, 试判断该电路的逻辑功能是 ( )。
+
+(A) 同步二进制加法计数器
+
+(B) 同步二进制减法计数器
+
+(C) 异步二进制加法计数器
+
+(D) 异步二进制减法计数器
+
+3-36 能起定时作用的电路是( )。
+(A) 施密特触发器
+(B) 单稳态触发器
+(C) 多谐振荡器
+(D) 译码器
+3-37 把 $50 \mathrm{~Hz}$ 的正弦波变成周期性变化的矩形波,应选用( )电路。
+(A) 施密特触发器
+(B) 单稳态触发器
+(C) 多谐振荡器
+(D) 译码器
+
+3-38 由与非门构成的 $R C$ 环形多谐振荡器如题 3-37 图所示, 当 $n=101$ 时, 振荡周期为 $10.1 \mu \mathrm{s}$, 则每个与非门的平均传输延迟时间 $t_{\mathrm{pd}}$ 为 () $\mathrm{ns}$ 。
+
+(A) 10
+(B) 20
+(C) 25
+(D) 50
+
+3-39 $R C$ 环形多谐振荡器如题 3-39 图所示, 当 $R=1 \mathrm{k} \Omega, C=0.01 \mu \mathrm{F}$ 时, 其振荡频率约 为 (
+
+(A) $100 \mathrm{kHz}$
+(B) $143 \mathrm{kHz}$
+(C) $84 \mathrm{kHz}$
+(D) $43.5 \mathrm{kHz}$.
+
+3-40 微分型单稳态触发器如题 3-40 图所示。其中 $R=390 \Omega, C=0.01 \mu \mathrm{F}$, 则暂稳态的 延迟时间为 ( )。
+(A)6. $9 \mu \mathrm{s}$
+(B) $3.9 \mu \mathrm{s}$
+(C) $2.73 \mu \mathrm{s}$
+(D) $12 \mu \mathrm{s}$
+
+题 $3-41$ 图
+
+3-41 由 TTL 门电路组成的微分型单稳态触发器如题 3-41 图所示。其中 $R=200 \Omega, C=$ $5100 \mathrm{pF}$, 则暂稳态的延迟时间约为 ()。
+(A) $1 \mu \mathrm{s}$
+(B) $2.3 \mu \mathrm{s}$
+(C) $5 \mu \mathrm{s}$
+(D) $10 \mu \mathrm{s}$
+
+3-42 八位 DAC 电路可分辨的最小输出电压为 $10 \mathrm{mV}$, 则输入数字量为 $(10000000)_{2}$ 时, 输出电压为 $($ )。
+(A) $2.56 \mathrm{~V}$
+(B) $1.28 \mathrm{~V}$
+(C) $1.27 \mathrm{~V}$
+(D) $2.55 \mathrm{~V}$
+
+$3-43$ 四位 $R-2 R$ 的 $\mathrm{T}$ 形网络 $\mathrm{D} / \mathrm{A}$ 转换器如题 3-43 图所示, 当参考电压 $U_{\mathrm{REF}}=10 \mathrm{~V}$, 数 字量输入 $D_{3} D_{2} D_{1} D_{0}=1000$ 时的输出电压为 ( )。
+(A) $5 \mathrm{~V}$
+(B) $8 \mathrm{~V}$
+(C) $-5 \mathrm{~V}$
+(D) $-8 \mathrm{~V}$
+
+3-44一个 8 位二进制输出的逐次逼近型 $\mathrm{A} / \mathrm{D}$ 转换器中, $U_{\mathrm{REF}}=5 \mathrm{~V}$, 当 $U_{\mathrm{i}}=4 \mathrm{~V}$ 时, 输出 的数字量为 ()。
+(A) 10001000
+(B) 11110000
+(C)0111 1111
+(D) 11001100
+
+## 习题答案
+
+3-1 (D)
+
+3-2 (A)
+
+3-3 (A)
+
+3-4 (B)
+
+3-5 (A)
+
+3-6 (B)
+
+$\begin{array}{lllllllllllll}3-7 & \text { (B) } & 3-8 & \text { (B) } & 3-9 & \text { (A) } & 3-10 & \text { (D) } & 3-11 & \text { (D) } & 3-12 & \text { (D) } \\ 3-13 & \text { (A) } & 3-14 & \text { (A) } & 3-15 & \text { (A) } & 3-16 & \text { (C) } & 3-17 & \text { (B) } & 3-18 & \text { (B) } \\ 3-19 & \text { (B) } & 3-20 & \text { (C) } & 3-21 & \text { (A) } & 3-22 & \text { (B) } & 3-23 & \text { (D) } & 3-24 & \text { (B) } \\ 3-25 & \text { (B) } & 3-26 & \text { (B) } & 3-27 & \text { (C) } & 3-28 & \text { (A) } & 3-29 & \text { (D) } & 3-30 & \text { (A) } \\ 3-31 & \text { (D) } & 3-32 & \text { (B) } & 3-33 & \text { (D) } & 3-34 & \text { (D) } & 3-35 & \text { (A) } & 3-36 & \text { (B) } \\ 3-37 & \text { (A) } & 3-38 & \text { (D) } & 3-39 & \text { (D) } & 3-40 & \text { (C) } & 3-41 & \text { (D) } & 3-42 & \text { (B) } \\ 3-43 & \text { (C) } & 3-44 & \text { (D) } & & & & & & & & \end{array}$
+
+## 复习内容
+
+## 1 电力系统基本知识
+
+### 1 电力系统运行特点和基本要求
+
+## 1. 电力系统运行的特点
+
+(1)电能不能大量存储。电能的生产、输送、分配和消费实际上是同时进行的, 任何时刻发 电机所发出的功率等于用电设备所消耗的功率与输送和分配环节中功率损耗之和。
+
+(2)电力系统的暂态过程非常短促。从一种运行状态到另一种运行状态的过渡极为迅速, 以毫秒甚至微秒计。
+
+(3)与国民经济和人民生活密切相关。供电的突然中断会造成很大的损失以致严重的后 果。
+
+## 2. 对电力系统运行的基本要求
+
+(1)保证安全可靠供电。对负荷按照不同级别分别采取适当的技术措施来满足它们对供电 可靠性的要求。
+
+(2)保证电能的质量 (电压、频率和谐波)。
+
+(3)要有良好的经济性 (降低网损、降低煤耗等)。
+
+(4)电能生产要符合环境保护标准 (限制二氧化碳、二氧化硫等污染物的排放量)。
+
+### 2 电能质量各项指标
+
+(1)电压幅值。对于 $35 \mathrm{kV}$ 及以上电压级允许变化范围为额定值的 $\pm 5 \%, 10 \mathrm{kV}$ 及以下电 压级允许变化范围为 $\pm 7 \%$ 。
+
+(2)频率。我国电力系统的额定频率为 $50 \mathrm{~Hz}$, 正常运行时允许的偏移为 $\pm 0.2 \sim \pm 0.5 \mathrm{~Hz}$ 。
+
+(3)谐波。为保证电压质量, 要求电压为正弦波形, 但由于某种原因总会产生一些谐波, 会 造成电压波形的畸变。为此, 对电压正弦波形畸变率也有限制 (波形畸变率是指各次谐波有 效值平方和的方根对基波有效值的百分比), 对于 $6 \sim 10 \mathrm{kV}$ 供电电压不超过 $4 \%, 0.38 \mathrm{kV}$ 电 压不超过 5\%。
+
+### 3 电力系统中各种接线方式及特点
+
+电力系统的接线包括发电厂、变电所的主接线和电力网的接线。电力网的接线通常按可 靠性分为无备用和有备用两类。
+
+(1)无备用接线,是指每一个负荷只能靠一条线路取得电能。优点是设备费用小, 缺点是可 靠性差。无备用接线主要有三种方式, 即放射式、干线式、树状网络,如图 4.1-1 所示。
+
+(2)有备用接线, 是指负荷可以从两条及以上线路取得电能。优点是可靠性高, 缺点是设备 费用高。主要有三种方式, 即双回线、环网、两端供电, 如图 4.1-2 所示。
+
+### 4 我国电力系统的额定电压
+
+以下所说的额定电压均指额定线电压。
+
+## 1. 网络的额定电压
+
+网络的额定电压等于用户设备的额定电压, 也等于母线的额定电压, 也等于线路的额定电 压, 也就是通常所说的额定电压。具体数值见表 4.1-1 的第一列。
+
+(a) 双回线 (b) 环网 (c) 两端供电
+
+## 2. 发电机的额定电压
+
+发电机通常运行在比网络额定电压高 $5 \%$ 的状态下, 所以发电机的额定电压规定比网络 额定电压高 $5 \%$ 。具体数值见表 4.1-1 的第二列。
+
+表 4.1-1 我国电力系统的颣定电压
+
+| 网络顸定电压 | 发电机额定电压 | 一次绕组 | 二变压器颀定电压 |
+| :---: | :---: | :---: | :---: |
+|  | 3.15 | 3 及 3.15 | 3.15 及 3.3 |
+| 3 | 6.3 | 6 及 6.3 | 6.3 及 6.6 |
+| 10 | 10.5 | 10 及 10.5 | 10.5 及 11 |
+|  | 13.8 | 13.8 |  |
+|  | 15.75 | 15.75 |  |
+| 35 | 18 | 18 | 38.5 |
+| 110 | 20 | 20 | 121 |
+| 220 |  | 35 | 242 |
+| 330 |  | 110 | 363 |
+| 500 |  | 220 | 550 |
+
+## 3. 变压器的额定电压
+
+根据功率的流向, 规定接受功率的一侧为一次绕组, 输出功率的一侧为二次绕组。对于双 绕组升压变压器, 低压绕组为一次绕组, 高压绕组为二次绕组; 对于双绕组降压变压器, 高压绕 组为一次绕组, 低压绕组为二次绕组。
+
+(1)变压器一次绕组相当于用电设备, 故其额定电压等于网络的额定电压, 但当直接与发电 机连接时, 就等于发电机的额定电压。
+
+(2)变压器二次绕组相当于供电设备, 再考虑到变压器内部的电压损耗, 故当变压器的短路 电压小于 $7 \%$ 或直接与用户连接时, 则二次绕组额定电压比网络的高 $5 \%$; 当变压器的短路电 压大于等于 7\% 时,则二次绕组额定电压比网络的高 $10 \%$ 。
+
+## 4. 我国电力系统的平均额定电压
+
+电力系统的平均额定电压 $U_{\mathrm{avN}} \approx 1.05 U_{\mathrm{N}}$, 并适当取整, 具体为 $3.15 \mathrm{kV} 、 6.3 \mathrm{kV} 、 10.5 \mathrm{kV}$ 、 $37 \mathrm{kV} 、 115 \mathrm{kV} 、 230 \mathrm{kV} 、 345 \mathrm{kV} 、 525 \mathrm{kV}$ 。
+
+## 5. 变压器的分接头及其变比
+
+为了调节电压, 变压器的高压绕组以及三绕组变压器的中压绕组一般有不同的分接头抽 头, 用百分数表示, 即表示分接头电压与主抽头电压的差值为主抽头电压的百分之几。
+
+(1)额定变比, 即主抽头额定电压之比。
+
+(2)实际变比,即实际所接分接头的额定电压之比。
+
+【例 4.1-1】电力系统的部分接线示于图 4.1-3, 各电压级的额定电压及功率输送方向已 标明在图中。试求:
+
+(1) 发电机及各变压器高、低压绕组的额定电压;
+
+(2) 各变压器的额定变比;
+
+(3) 设变压器 $\mathrm{T}-1$ 工作于 $+5 \%$ 抽头, $\mathrm{T}-2$ 和 $\mathrm{T}-4$ 工作于主抽头, $\mathrm{T}-3$ 工作于 $-2.5 \%$ 抽头时, 各变压器的实际变比。
+
+解: (1) G: $10.5 \mathrm{kV}$
+
+$\mathrm{T}-1$ : 低 $10.5 \mathrm{kV}$, 高 $242 \mathrm{kV}$
+
+$\mathrm{T}-2$ : 高 $220 \mathrm{kV}$, 中 $121 \mathrm{kV}$, 低 $38.5 \mathrm{kV}$
+
+$\mathrm{T}-3$ : 高 $35 \mathrm{kV}$, 低 $10.5 \mathrm{kV}$
+
+$\mathrm{T}-4$ : 高 $220 \mathrm{kV}$, 低 $121 \mathrm{kV}$
+
+(2) $\mathrm{T}-1: 242 / 10.5$
+
+$\mathrm{T}-2: 220 / 121,220 / 38.5,121 / 38.5$
+
+$\mathrm{T}-3: 35 / 10.5$
+
+$\mathrm{T}-4: 220 / 121$
+
+(3) $\mathrm{T}-1: 242(1+0.05) / 10.5$
+
+$$
+\begin{aligned}
+& \mathrm{T}-2 \text { 与 } \mathrm{T}-4: \text { 同 }(2) \\
+& \mathrm{T}-3: 35(1-0.025) / 10.5
+\end{aligned}
+$$
+
+### 5 电力网络中性点运行方式及对应的电压等级
+
+电力网络中性点是指星形接线的变压器或发电机的中性点。中性点的运行方式或称接地 方式可分为两大类: 中性点直接接地; 中性点不接地或经消弧线圈接地。
+
+## 1. 中性点直接接地的电力网络
+
+中性点直接接地的电力网络, 其优点是: 首先安全性好, 因为系统单相接地时即为单相短 路, 保护装置可以立即动作切除故障; 其次经济性好, 因中性点直接接地系统在任何情况下, 中 性点电压不会升高, 且不会出现系统单相接地时电弧过电压问题, 网络绝缘水平可按相电压考 虑。其缺点是: 供电可靠性差。目前, 我国 $110 \mathrm{kV}$ 及以上电力网络采用中性点直接接地方式。
+
+## 2. 中性点不接地的电力网络
+
+中性点不接地的电力网络, 其优点是供电可靠性高, 因为电力网络发生单相接地时, 接地 电流只是网络电容电流, 比较小, 不是单相短路, 保护装置不作用于跳闸, 只给出信号, 电网可 继续运行 2 小时, 故提高了供电可靠性。缺点是经济性差, 因不接地网络发生单相接地时, 使 不接地相对地电压变为了线电压, 故系统的绝缘水平应按线电压设计, 费用较高。此外, 中性 点不接地系统发生单相接地时, 易出现电弧引起的谐振过电压。为了使电弧容易熄灭, 在电容 电流较大的 $35 \mathrm{kV}$ 或 $10 \mathrm{kV}$ 电网, 采用中性点经消弧线圈 (电感线圈) 接地。不接地方式一般 用在 $35 \mathrm{kV}$ 及以下电网, 在电容电流较大的 $10 \mathrm{kV}$ 和 $35 \mathrm{kV}$ 电网, 采用中性点经消弧线圈接地 的方式。
+
+## 2 电力线路、变压器的参数与等值电路
+
+## 2.1 输电线路的参数计算及其等值电路
+
+## 1. 输电线路的参数计算
+
+1) 电阻 $(r)$
+
+直流电阻
+
+$$
+r=\frac{\rho}{S}(\Omega / \mathrm{km})
+$$
+
+式中 $\rho$ 一导线的电阻率, $\Omega \cdot \mathrm{mm}^{2} / \mathrm{km}$;
+
+$S$-一导线载流部分的标称截面积, $\mathrm{mm}^{2}$ 。
+
+对于交流电阻, 由于集肤效应以及多股绞线使得导线实际长度大于导线长度等原因, 致使 交流电阻要大于直流电阻, 故在使用上述公式时, 导线的电阻率取得略大一些, 铜取 $18.8 \Omega$. $\mathrm{mm}^{2} / \mathrm{km}$, 铝取 $31.5 \Omega \cdot \mathrm{mm}^{2} / \mathrm{km}_{\text {。 }}$
+
+2) 电抗 $(x)$
+
+(1) 单导线
+
+$$
+x=0.1445 \lg \frac{D_{e q}}{D_{\mathrm{s}}}(\Omega / \mathrm{km})
+$$
+
+式中 $D_{\text {eq }}$ 二相导线的互几何均距, $D_{\text {eq }}=\sqrt[3]{D_{12} D_{23} D_{31}}$, 其中 $D_{12} 、 D_{23} 、 D_{31}$ 分别为三导线中心 之间的距离。 $D_{\mathrm{s}}$ 一一导线的自几何均距, 对于非铁磁材料的单股线, $D_{s}=0.779 r(r$ 为导线计算半 径); 对于非铁磁材料的多股线, $D_{s}=(0.724 \sim 0.771) r$; 对于钢芯铅线, $D_{\mathrm{s}}=$ $(0.77 \sim 0.9) r$ 。
+
+(2) 分裂导线
+
+$$
+x=0.1445 \lg \frac{D_{\mathrm{eq}}}{D_{\mathrm{sh}}}(\Omega / \mathrm{km})
+$$
+
+式中 $D_{\text {eq }}$ 一互几何均距, $D_{e q}=\sqrt[3]{D_{12} D_{23} D_{31}}$, 其中 $D_{12} 、 D_{23} 、 D_{31}$ 分别为两相分裂导线重心间的 距离。
+
+$D_{\mathrm{sb}}$ 一一自几何均距, 它与分裂间距及分裂根数有关, 分裂根数为 2 时, $D_{\mathrm{sb}}=\sqrt{D_{\mathrm{s}} d}$, 其 中 $D_{\mathrm{s}}$ 为每根导线的自几何均距, $d$ 为分裂间距; 分裂根数为 3 时, $D_{\mathrm{s}, \mathrm{s}}=\sqrt[3]{D_{\mathrm{v}} d^{2}}$; 分裂根数为 4 时, $D_{\mathrm{st}}=1.09 \sqrt[4]{D_{\mathrm{s}} d^{3}}$ 。
+
+在近似计算时，对于单导线、二分裂、三分裂、四分裂，每公里的电抗值可分别取为 $0.4 \Omega$ 、 $0.33 \Omega 、 0.30 \Omega, 0.28 \Omega$ 左右。
+
+3) 电导 $(g)$
+
+$$
+g=\frac{\Delta P_{\mathrm{s}}}{U_{\mathrm{l}}{ }^{2}}(\mathrm{~S} / \mathrm{km})
+$$
+
+式中 $\Delta P_{\mathrm{s}}$ 二三相线路每公里的电晕损耗, $\mathrm{MW} / \mathrm{km}$;
+
+$U_{\mathrm{L}}$ 一一线电压, $\mathrm{kV}$ 。
+
+一般情况下 $g \approx 0$ 。
+
+4) 电纳 $(b)$
+
+$$
+b=\frac{7.58}{\lg \frac{D_{\text {eq }}}{r_{\text {eq }}}} \times 10^{-6}(\mathrm{~S} / \mathrm{km})
+$$
+
+式中 $D_{\mathrm{cq}}$ 一一互几何均距，对于分裂导线为各相分裂导线重心间的几何均距。
+
+$r_{\mathrm{eq}}-$ 一一相导线组的等值半径, 单导线时, $r_{\mathrm{eq}}=r$ ( $r$ 为导线半径): 二分裂时, $r_{\mathrm{rq}}=\sqrt{r d}$ ( $d$ 为分裂间距); 三分裂时, $r_{\mathrm{eq}}=\sqrt[3]{r d^{2}}$; 四分裂时, $r_{\mathrm{eq}}=1.09 \sqrt[4]{r d^{3}}$ 。
+
+在近似计算时,对于单导线、二分裂、三分裂和四分裂导线的电纳每公里大约为 $2.8 \times$ $10^{-6} \mathrm{~S} 、 3.4 \times 10^{-6} \mathrm{~S} .3 .8 \times 10^{-6} \mathrm{~S}$ 和 $4.1 \times 10^{-6} \mathrm{~S}$ 。
+
+【例 4.2-1】 $110 \mathrm{kV}$ 架空输电线路的导线型号为 LGJ - 185, 导线水平排列, 相间距离为 $4 \mathrm{~m}$, 求线路参数。
+
+解: 线路的电阻
+
+$$
+r=\frac{\rho}{S}=\frac{31.5}{185}=0.17 \Omega / \mathrm{km}
+$$
+
+于. pr 得 LGJ - 185 的计算直径为 $19 \mathrm{~mm}$ 。
+
+戗路的，抗
+
+$$
+x=0.1445 \lg \frac{D_{\mathrm{eq}}}{D_{\mathrm{s}}}=0.1445 \lg \frac{1.26 \times 4000}{0.88 \times 19 \times 0.5}=0.402 \Omega / \mathrm{km}
+$$
+
+线路的电纳
+
+$$
+b=\frac{7.58}{\lg \frac{D_{\text {eq }}}{r_{\text {eq }}}} \times 10^{-6}=\frac{7.58}{\lg \frac{1.26 \times 4000}{19 \times 0.5}} \times 10^{-6}=2.78 \times 10^{-6} \mathrm{~S} / \mathrm{km}
+$$
+
+【例 4.2-2】有一 $330 \mathrm{kV}$ 架空输电线路, 导线水平排列, 相间距离 $8 \mathrm{~m}$, 每相采用 $2 \times$ LGJQ - 300 分裂导线, 分裂间距为 $400 \mathrm{~mm}$, 试求线路参数。
+
+解: 线路电阻
+
+$$
+r=\frac{\rho}{S}=\frac{31.5}{2 \times 300}=0.053 \Omega / \mathrm{km}
+$$
+
+由手册查得 LGJQ - 300 分裂导线的计算半径为 $23.5 \mathrm{~mm}$, 分裂导线的自几何均距
+
+$$
+D_{\mathrm{ab}}=\sqrt{D_{\mathrm{s}} d}=\sqrt{0.9 \times \frac{23.5}{2} \times 400}=65.04 \mathrm{~mm}
+$$
+
+线路的电抗
+
+$$
+x=0.1445 \lg \frac{D_{\text {eq }}}{D_{\mathrm{sb}}}=0.1445 \lg \frac{1.26 \times 8000}{65.04}=0.316 \Omega / \mathrm{km}
+$$
+
+每相导线组的等值半径
+
+$$
+r_{\text {eq }}=\sqrt{r d}=\sqrt{\frac{23.5}{2} \times 400}=68.56 \mathrm{~mm}
+$$
+
+线路的电纳
+
+$$
+b=\frac{7.58}{\lg \frac{D_{\text {eq }}}{r_{\text {eq }}}} \times 10^{-6}=\frac{7.58}{\lg \frac{1.26 \times 8000}{68.56}} \times 10^{-6}=3.5 \times 10^{-6} \mathrm{~S} / \mathrm{km}
+$$
+
+(1)
+
+## 2. 输电线路等值电路
+
+$110 \mathrm{kV}$ 及以上输电线路的集中参数等值电 路一般用 $\Pi$ 形等值电路, 如图 4.2-1 所示。图中: $Z^{\prime}$ 为串联阻抗, 在数值上 $Z^{\prime}=Z_{\mathrm{C}} \mathrm{sh} \gamma l$, 其中 $Z_{\mathrm{c}}$ 为 波阻抗, $\gamma$ 为传播常数, $l$ 为线路长度; $Y^{\prime}$ 为并联导 纳, 在数值上 $Y^{\prime}=\frac{2(\operatorname{ch} \gamma l-1)}{Z_{C} \operatorname{sh} \gamma l}$ 。ch 和 $\mathrm{sh}$ 为双曲 函数。由于复数双曲函数的计算很不方便,一般可简化为 (称修正参数计算)
+
+$$
+\begin{aligned}
+& Z^{\prime}=K_{r} r_{0} l+\mathrm{j} K_{x} x_{0} l \\
+& Y^{\prime}=\mathrm{j} K_{b} b_{0} l
+\end{aligned}
+$$
+
+式中 $r_{0} 、 x_{0} 、 b_{0}$ 一每公里电阻、电抗和电纳值;
+
+l一线路长度;
+
+$$
+\begin{aligned}
+& K_{r}=1-\frac{1}{3} x_{0} b_{0} l^{2} ; \\
+& K_{x}=1-\frac{1}{6}\left(x_{0} b_{0}-r_{0}^{2} \frac{b_{0}}{x_{0}}\right) l^{2} ; \\
+& K_{b}=1+\frac{1}{12} x_{0} b_{0} l^{2}
+\end{aligned}
+$$
+
+当线路长度小于 $300 \mathrm{~km}$ 时, 还可进一步简化为 (称近似参数计算)
+
+$$
+\begin{aligned}
+& Z^{\prime}=Z=\left(r_{0}+\mathrm{j} x_{0}\right) l \\
+& Y^{\prime}=Y=\mathrm{j} b_{0} l
+\end{aligned}
+$$
+
+在稳态计算中,一般使用近似参数。但当线路长度大于 $300 \mathrm{~km}$ 时, 也可用几个 $\Pi$ 形等值 电路串联表示, 只要 $\Pi$ 形等值电路表示的线路长度小于 $300 \mathrm{~km}$ 即可。 $35 \mathrm{kV}$ 及以下电压的输 电线路, 由于线路长度较短,故也可略去并联导纳, 只保留串联阻抗即可。
+
+【例 4.2-3】 $330 \mathrm{kV}$ 架空线路的参数为: $r_{0}=0.0579 \Omega / \mathrm{km}, x_{0}=0.316 \Omega / \mathrm{km}, g_{0}=0, b_{0}=$ $3.55 \times 10^{-6} \mathrm{~S} / \mathrm{km}$ 。试分别计算长度为 $100 \mathrm{~km} 、 200 \mathrm{~km} 、 300 \mathrm{~km}$ 线路的 $\Pi$ 形等值电路参数的 近似值、修正值和精确值。
+
+解: 首先计算 $100 \mathrm{~km}$ 线路的参数。
+
+(1) 近似参数计算
+
+$$
+\begin{aligned}
+& Z^{\prime}=\left(r_{0}+\mathrm{j} x_{0}\right) l=(0.0579+\mathrm{j} 0.316) \times 100=5.79+\mathrm{j} 31.6 \Omega \\
+& Y^{\prime}=\left(g_{0}+\mathrm{j} b_{0}\right) l=\left(0+\mathrm{j} 3.55 \times 10^{-6}\right) \times 100=\mathrm{j} 3.55 \times 10^{-4} \mathrm{~S}
+\end{aligned}
+$$
+
+(2) 修正参数计算
+
+$$
+\begin{aligned}
+K_{r} & =1-\frac{1}{3} x_{0} b_{0} l^{2}=1-\frac{1}{3} \times 0.316 \times 3.55 \times 10^{-6} \times(100)^{2}=0.9963 \\
+K_{x} & =1-\frac{1}{6}\left(x_{0} b_{0}-r_{0}^{2} \frac{b_{0}}{x_{0}}\right) l^{2} \\
+& =1-\frac{1}{6}\left[0.316 \times 3.55 \times 10^{-6}-(0.0579)^{2} \times 3.55 \times 10^{-6} / 0.316\right] \times(100)^{2} \\
+& =0.9982
+\end{aligned}
+$$
+$$
+
+K_{b}=1+\frac{1}{12} x_{0} b_{0} l^{2}=1+\frac{1}{12} \times 0.316 \times 3.55 \times 10^{-6} \times(100)^{2}=1.0009
+
+$$
+$$
+Z^{\prime}=\left(K_{r} r_{0}+\mathrm{j} K_{x} x_{0}\right) l=(0.9963 \times 0.0579+\mathrm{j} 0.9982 \times 0.316) \times 100
+$$
+$$
+
+=5.7686+\mathrm{j} 31.5431 \Omega
+
+$$
+$$
+Y^{\prime}=\mathrm{j} K_{b} b_{0} l=\mathrm{j} 1.0009 \times 3.55 \times 10^{-6} \times 100=\mathrm{j} 3.5533 \times 10^{-4} \mathrm{~S}
+$$
+
+(3) 精确参数计算
+
+先计算 $Z_{\mathrm{c}}$ 和 $\gamma$
+
+$$
+\begin{aligned}
+Z_{\mathrm{c}} & =\sqrt{\left(r_{0}+\mathrm{j} x_{0}\right) /\left(g_{0}+\mathrm{j} b_{0}\right)}=\sqrt{(0.0579+\mathrm{j} 0.316) /\left(\mathrm{j} 3.55 \times 10^{-6}\right)} \\
+& =(299.5914-\mathrm{j} 27.2201) \Omega \\
+\gamma & =\sqrt{\left(r_{0}+\mathrm{j} x_{0}\right)\left(g_{0}+\mathrm{j} b_{0}\right)}=\sqrt{(0.0579+\mathrm{j} 0.316) \times \mathrm{j} 3.55 \times 10^{-6}} \mathrm{~km}^{-1} \\
+& =(0.9663+\mathrm{j} 10.6355) \times 10^{-4} \mathrm{~km}^{-1} \\
+\gamma l & =(0.9663+\mathrm{j} 10.6355) \times 10^{-4} \times 100=(0.9663+\mathrm{j} 10.6355) \times 10^{-2}
+\end{aligned}
+$$
+
+计算双曲线函数。利用公式
+
+$$
+\begin{aligned}
+& \operatorname{sh}(x+\mathrm{j} y)=\operatorname{sh} x \cos y+\mathrm{jch} x \sin y \\
+& \operatorname{ch}(x+\mathrm{j} y)=\operatorname{ch} x \cos y+\mathrm{j} \operatorname{sh} x \sin y
+\end{aligned}
+$$
+
+将 $\gamma l$ 的值代人, 便得
+
+$$
+\begin{aligned}
+\operatorname{sh} \gamma l= & \operatorname{sh}\left(0.9663 \times 10^{-2}+\mathrm{j} 10.6355 \times 10^{-2}\right) \\
+= & \operatorname{sh}\left(0.9663 \times 10^{-2}\right) \cos \left(10.6355 \times 10^{-2}\right) \\
+& +\operatorname{jch}\left(0.9663 \times 10^{-2}\right) \sin \left(10.6355 \times 10^{-2}\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+= & (0.9609+\mathrm{j} 10.6160) \times 10 \\
+\operatorname{ch} \gamma l= & \operatorname{ch}\left(0.9663 \times 10^{-2}+\mathrm{j} 10.6355 \times 10^{-2}\right) \\
+= & \operatorname{ch}\left(0.9663 \times 10^{-2}\right) \cos \left(10.6355 \times 10^{-2}\right) \\
+& +j \operatorname{sh}\left(0.9663 \times 10^{-2}\right) \sin \left(10.6355 \times 10^{-2}\right) \\
+= & 0.9944+j 0.1026 \times 10^{-2}
+\end{aligned}
+$$
+
+П 形电路的精确参数为
+
+$$
+\begin{aligned}
+Z^{\prime} & =Z_{\mathrm{C}} \operatorname{sh} \gamma l=(299.5914-\mathrm{j} 27.2201) \times(0.9609+\mathrm{j} 10.6106) \times 10^{-2} \\
+& =(5.7684+\mathrm{j} 31.5429) \Omega \\
+Y^{\prime} & =\frac{2(\operatorname{ch} \gamma l-1)}{Z_{\mathrm{C}} \operatorname{sh} \gamma l}=\frac{2 \times\left(0.9944+\mathrm{j} 0.1026 \times 10^{-2}-1\right)}{5.7684+\mathrm{j} 31.5429}=(0.0006+\mathrm{j} 3.5533) \times 10^{-4} \mathrm{~S}
+\end{aligned}
+$$
+
+不同长度线路的 $\Pi$ 形等值电路参数也可用相同的方法算出, 结果列于表 4. 2-1 中。
+
+表 4. 2-1 例 4. 2-3 的计算结果
+
+| $l / \mathrm{km}$ |  | $Z^{\prime} / \Omega$ | $Y^{\prime} \times 10^{-4} / \mathrm{S}$ |
+| :---: | :---: | :---: | :---: |
+| 100 | 1 | $5.7900+\mathrm{j} 31.6000$ | $j 3.55$ |
+|  | 2 | $5.7683+\mathrm{j} 31.5429$ | $\mathrm{j} 3.5533$ |
+|  | 3 | $5.7684+\mathrm{j} 31.5429$ | $0.0006+\mathrm{j} 3.5533$ |
+| 200 | 1 | $11.58+\mathrm{j} 63.2000$ | $\mathrm{j} 7.1000$ |
+|  | 2 | $11.4068+\mathrm{j} 62.7432$ | $\mathrm{j} 7.1265$ |
+| 300 | 3 | $11.4074+\mathrm{j} 62.7442$ | $0.0049+\mathrm{j} 7.1267$ |
+|  | 1 | $17.3700+\mathrm{j} 94.8000$ | $\mathrm{j} 10.6500$ |
+|  | 2 | $16.7854+\mathrm{j} 93.2584$ | $\mathrm{j} 10.7393$ |
+|  | 3 | $16.7898+\mathrm{j} 93.2656$ | $0.0167+\mathrm{j} 10.7405$ |
+
+### 2 双绕组变压器的等值电路及其参数计算
+
+## 1. 双绕组变压器的等值电路
+
+双绕组变压器的近似等值电路一般将励磁支路前移到电源侧, 而把变压器两个绕组的阻 抗折算后合并到一起用 $R_{\mathrm{T}}+\mathrm{j} X_{\mathrm{T}}$ 来表示。其等值电路如图 4.2-2 所示。
+
+## 2. 双绕组变压器的参数计算
+
+(1) 电阻 $R_{\mathrm{T}}$
+
+$$
+R_{\mathrm{r}}=\frac{\Delta P_{\mathrm{s}} U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}^{2}} \times 10^{3}(\Omega)
+$$
+
+式中 $\Delta P_{\mathrm{s}}$ 二三相短路损耗 $\mathrm{kW}$;
+
+$U_{\mathrm{N}}$ 一一变压器的额定线电压, $\mathrm{kV}$;
+
+$S_{\mathrm{N}}$ 一一变压器三相额定容量, $\mathrm{kVA}$ 。
+
+注意: (1)双绕组变压器的额定电压有两个,把参数归算到哪一侧就用哪一侧的揢
+
+(2)虽然短路损耗和功率用三相的，电压用线电压，但所计算的 $R_{\mathrm{T}}$ 则是一相的。
+
+后面介绍的其他参数计算所使用的 $U_{\mathrm{N}} S_{\mathrm{N}}$ 的含义及单位均与此相同。 (2) 电抗 $X_{\mathrm{T}}$
+
+$$
+X_{\mathrm{T}}=\frac{U_{\mathrm{s}} \%}{100} \times \frac{U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}} \times 10^{3}(\Omega)
+$$
+
+式中 $U_{\mathrm{s}} \%$ 一一变压器的短路电压百分值。
+
+(3) 电导 $G_{\mathrm{T}}$
+
+$$
+G_{\mathrm{T}}=\frac{\Delta P_{0}}{U_{\mathrm{N}}^{2}} \times 10^{-3}(\mathrm{~S})
+$$
+
+式中 $\Delta P_{0}$ 一变压器的空载损耗, $\mathrm{kW}$ 。
+
+(4) 电纳 $B_{\mathrm{T}}$
+
+$$
+B_{\mathrm{T}}=\frac{I_{0} \%}{100} \times \frac{S_{\mathrm{N}}}{U_{\mathrm{N}}^{2}} \times 10^{-3}(\mathrm{~S})
+$$
+
+式中 $I_{0} \%$ 一一空载电流百分值。
+
+(5) 变比 $K_{\mathrm{T}}$
+
+变压器两侧绕组实际抽头的空载电压之比
+
+$$
+K_{\mathrm{T}}=\frac{U_{1 \mathrm{~N}}(1+\text { 挡位 } \times \text { 挡距 })}{U_{2 \mathrm{~N}}}
+$$
+
+【例 4. 2-4】 有一台 SFL1 20000/110 型的向 $10 \mathrm{kV}$ 网络供电的降压变压器, 铭牌给出的 试验数据为: $\Delta P_{\mathrm{s}}=135 \mathrm{~kW}, U_{\mathrm{s}} \%=10.5, \Delta P_{0}=22 \mathrm{~kW}, I_{0} \%=0.8$ 。试计算归算到高压侧的变 压器参数。
+
+解: 由型号知, $S_{\mathrm{N}}=20000 \mathrm{kVA}$, 高压侧额定电压 $U_{\mathrm{N}}=110 \mathrm{kV}$ 。各参数如下:
+
+$$
+\begin{aligned}
+& R_{\mathrm{T}}=\frac{\Delta P_{\mathrm{s}} U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}^{2}} \times 10^{3}=\frac{135 \times 110^{2}}{20000^{2}} \times 10^{3}=4.08 \Omega \\
+& X_{\mathrm{T}}=\frac{U_{\mathrm{s}} \%}{100} \times \frac{U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}} \times 10^{3}=\frac{10.5 \times 110^{2}}{100 \times 20000} \times 10^{3}=63.53 \Omega \\
+& G_{\mathrm{T}}=\frac{\Delta P_{0}}{U_{\mathrm{N}}^{2}} \times 10^{-3}=\frac{22}{110^{2}} \times 10^{-3}=1.82 \times 10^{-6} \mathrm{~S} \\
+& B_{\mathrm{T}}=\frac{I_{0} \%}{100} \times \frac{S_{\mathrm{N}}}{U_{\mathrm{N}}^{2}} \times 10^{-3}=\frac{0.8}{100} \times \frac{20000}{110^{2}} \times 10^{-3}=13.2 \times 10^{-6} \mathrm{~S} \\
+& K_{\mathrm{T}}=\frac{U_{1 \mathrm{~N}}}{U_{2 \mathrm{~N}}}=\frac{110}{11}=10
+\end{aligned}
+$$
+
+4.2.3 三绕组变压器的等值电路及其参数计算
+
+## 1. 三绕组变压器的等值电路
+
+等值电路如图 4. 2-3 所示, 它采用励磁支路前 移的星形等值电路, 各支路阻抗分别代表各个绕 组折算后的等值阻抗。
+
+## 2. 三绕组变压器的参数计算
+
+(1) 电阻 $R_{1} 、 R_{2} 、 R_{3}$
+
+先对两两短路试验所测得短路损耗 $\Delta P_{s, 1-2}^{\prime}$ 、
+
+$$
+\begin{aligned}
+& \Delta P_{s, 1-2}=\Delta P_{s, 1-2}^{\prime}\left(\frac{S_{\mathrm{N}}}{S_{2 \mathrm{~N}}}\right)^{2} \\
+& \Delta P_{s, 2-3}=\Delta P_{\mathrm{s}, 2-3}^{\prime}\left(\frac{S_{\mathrm{N}}}{\min \left(S_{2 \mathrm{~N}}, S_{3 \mathrm{~N}}\right)}\right)^{2} \\
+& \Delta P_{\mathrm{s}, 3-1}=\Delta P_{\mathrm{s}, 3-1}^{\prime}\left(\frac{S_{\mathrm{N}}}{S_{3 \mathrm{~N}}}\right)^{2}
+\end{aligned}
+$$
+
+然后计算各绕组短路损耗
+
+$$
+\begin{aligned}
+& \Delta P_{\mathrm{s}, 1}=\frac{1}{2}\left(\Delta P_{\mathrm{s}, 1-2}+\Delta P_{\mathrm{s}, 3-1}-\Delta P_{\mathrm{s}, 2-3}\right) \\
+& \Delta P_{\mathrm{s}, 2}=\frac{1}{2}\left(\Delta P_{\mathrm{s}, 1-2}+\Delta P_{\mathrm{s}, 2-3}-\Delta P_{\mathrm{s}, 3-1}\right) \\
+& \Delta P_{\mathrm{s}, 3}=\frac{1}{2}\left(\Delta P_{\mathrm{s}, 2-3}+\Delta P_{\mathrm{s}, 3-1}-\Delta P_{\mathrm{s}, 1-2}\right)
+\end{aligned}
+$$
+
+最后再按下式计算各绕组电阻
+
+$$
+R_{i}=\frac{\Delta P_{\mathrm{si}} U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}^{2}} \times 10^{3}(\Omega)(i=1,2,3)
+$$
+
+(2) 电抗 $X_{1} 、 X_{2} 、 X_{3}$
+
+由于给出的短路电压, 一般均已折算为变压器额定容量相对应的值, 因此可直接根据给出 的短路电压 $U_{s, 1-2} \% 、 U_{s, 2-3} \% 、 U_{\mathrm{s}, 3-1} \%$,计算各绕组的短路电压。
+
+$$
+\begin{aligned}
+& U_{\mathrm{s}, 1} \%=\frac{1}{2}\left(U_{\mathrm{s}, 1-2} \%+U_{\mathrm{s}, 3-1} \%-U_{\mathrm{s}, 2-3} \%\right) \\
+& U_{\mathrm{s}, 2} \%=\frac{1}{2}\left(U_{\mathrm{s}, 1-2} \%+U_{\mathrm{s}, 2-3} \%-U_{\mathrm{s}, 3-1} \%\right) \\
+& U_{\mathrm{s}, 3} \%=\frac{1}{2}\left(U_{\mathrm{s}, 2-3} \%+U_{\mathrm{s}, 3-1} \%-U_{\mathrm{s}, 1-2} \%\right)
+\end{aligned}
+$$
+
+然后按下式计算各绕组的电抗
+
+$$
+X_{i}=\frac{U_{\mathrm{si}} \%}{100} \times \frac{U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}} \times 10^{3}(\Omega)(i=1,2,3)
+$$
+
+需指出, 三绕组变压器排在中间的绕组, 其等值电抗较小,或具有较小的负值。
+
+(3) 导纳 $G_{\mathrm{T}}-\mathrm{j} B_{\mathrm{T}}$ 及变比 $K_{12} 、 K_{13} 、 K_{23}$
+
+三绕组的导纳和变比计算与双绕组变压器相同。
+
+【例 4.2-5】有一容量比为 $90 / 90 / 60 \mathrm{MVA}$, 额定电压为 $220 / 38.5 / 11 \mathrm{kV}$ 的三绕组变压 器。工厂给出的试验数据如下: $\Delta P_{0}=187 \mathrm{~kW}, I_{0} \%=0.856, \Delta P_{\mathrm{s}, 1-2}^{\prime}=560 \mathrm{~kW}, \Delta P_{\mathrm{s}, 2-3}^{\prime}=178$ $\mathrm{kW}, \Delta P_{s, 3-1}^{\prime}=363 \mathrm{~kW}, U_{\mathrm{s}, 1-2} \%=13.15, U_{\mathrm{s}, 2-3} \%=5.7, U_{\mathrm{s}, 3-1} \%=20.4$, 试求归算到 $220 \mathrm{kV}$ 侧 的变压器参数。
+
+解 : (1) 各绕组电阻
+
+先折算短路损耗
+
+$$
+\Delta P_{\mathrm{s}, 1-2}=\Delta P_{\mathrm{s}, 1-2}^{\prime}\left(\frac{S_{\mathrm{N}}}{S_{2 \mathrm{~N}}}\right)^{2}=560\left(\frac{90}{90}\right)^{2}=560 \mathrm{~kW}
+$$
+
+$$
+\begin{aligned}
+& \Delta P_{\mathrm{s}, 2-3}=\Delta P_{\mathrm{s}, 2-3}^{\prime}\left(\frac{S_{\mathrm{N}}}{S_{3 \mathrm{~N}}}\right)^{2}=178\left(\frac{90}{60}\right)^{2}=401 \mathrm{~kW} \\
+& \Delta P_{\mathrm{s}, 3-1}=\Delta P_{\mathrm{s}, 3-1}^{\prime}\left(\frac{S_{\mathrm{N}}}{S_{3 \mathrm{~N}}}\right)=363\left(\frac{90}{60}\right)^{2}=817 \mathrm{~kW}
+\end{aligned}
+$$
+
+各绕组的短路损耗分别为
+
+$$
+\begin{aligned}
+& \Delta P_{\mathrm{s}, 1}=\frac{1}{2}\left(\Delta P_{\mathrm{s}, 1-2}+\Delta P_{\mathrm{s}, 3-1}-\Delta P_{\mathrm{s}, 2-3}\right)=\frac{1}{2}(560+817-401)=488 \mathrm{~kW} \\
+& \Delta P_{\mathrm{s}, 2}=\frac{1}{2}\left(\Delta P_{\mathrm{s}, 1-2}+\Delta P_{\mathrm{s}, 2-3}-\Delta P_{\mathrm{s}, 3-1}\right)=\frac{1}{2}(560+401-817)=72 \mathrm{~kW} \\
+& \Delta P_{\mathrm{s}, 3}=\frac{1}{2}\left(\Delta P_{\mathrm{s}, 2-3}+\Delta P_{\mathrm{s}, 3-1}-\Delta P_{\mathrm{s}, 1-2}\right)=\frac{1}{2}(401+817-560)=329 \mathrm{~kW}
+\end{aligned}
+$$
+
+各绕组的电阻分别为
+
+$$
+\begin{aligned}
+& R_{1}=\frac{\Delta P_{\mathrm{s}, 1} U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}^{2}} \times 10^{3}=\frac{488 \times 220^{2}}{90000^{2}} \times 10^{3}=2.92 \Omega \\
+& R_{2}=\frac{\Delta P_{\mathrm{s}, 2} U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}^{2}} \times 10^{3}=\frac{72 \times 220^{2}}{90000^{2}} \times 10^{3}=0.43 \Omega \\
+& R_{3}=\frac{\Delta P_{\mathrm{s}, 3} U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}^{2}} \times 10^{3}=\frac{329 \times 220^{2}}{90000^{2}} \times 10^{3}=1.97 \Omega
+\end{aligned}
+$$
+
+(2) 各绕组等值电抗
+
+各绕组的短路电压为
+
+$$
+\begin{aligned}
+& U_{\mathrm{s}, 1} \%=\frac{1}{2}\left(U_{\mathrm{s}, 1-2} \%+U_{\mathrm{s}, 3-1} \%-U_{\mathrm{s}, 2-3} \%\right)=\frac{1}{2}(13.15+20.4-5.7)=13.93 \\
+& U_{\mathrm{s}, 2} \%=\frac{1}{2}\left(U_{\mathrm{s}, 1-2} \%+U_{\mathrm{s}, 2-3} \%-U_{\mathrm{s}, 3-1} \%\right)=\frac{1}{2}(13.15+5.7-20.4)=-0.78 \\
+& U_{\mathrm{s}, 3} \%=\frac{1}{2}\left(U_{\mathrm{s}, 2-3} \%+U_{\mathrm{s}, 3-1} \%-U_{\mathrm{s}, 1-2} \%\right)=\frac{1}{2}(5.7+20.4-13.15)=6.48
+\end{aligned}
+$$
+
+各绕组的等值电抗分别为
+
+$$
+\begin{aligned}
+& X_{1}=\frac{U_{\mathrm{s}, 1} \%}{100} \times \frac{U_{\mathrm{N}}^{2}}{S_{N}} \times 10^{3}=\frac{13.93}{100} \times \frac{220^{2}}{90000} \times 10^{3}=74.9 \Omega \\
+& X_{2}=\frac{U_{\mathrm{s}, 2} \%}{100} \times \frac{U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}} \times 10^{3}=\frac{-0.78}{100} \times \frac{220^{2}}{90000} \times 10^{3}=-4.2 \Omega \\
+& X_{3}=\frac{U_{\mathrm{s}, 3} \%}{100} \times \frac{U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}} \times 10^{3}=\frac{6.48}{100} \times \frac{220^{2}}{90000} \times 10^{3}=34.8 \Omega
+\end{aligned}
+$$
+
+(3) 变压器的导纳
+
+$$
+\begin{aligned}
+& G_{\mathrm{T}}=\frac{\Delta P_{0}}{U_{\mathrm{N}}^{2}} \times 10^{-3}=\frac{187}{220^{2}} \times 10^{-3}=3.9 \times 10^{-6} \mathrm{~S} \\
+& B_{\mathrm{T}}=\frac{I_{0} \%}{100} \times \frac{S_{\mathrm{N}}}{U_{\mathrm{N}}^{2}} \times 10^{-3}=\frac{0.856}{100} \times \frac{90000}{220^{2}} \times 10^{-3}=15.9 \times 10^{-6} \mathrm{~S}
+\end{aligned}
+$$
+
+## 2.4 电网等值电路及其标幺值参数计算
+
+## 1. 标幺值
+
+(1) 标幺值的定义
+
+标幺值是一种相对值, 它是某种物理量的有名值与所选定的与有名值同单位的基准值之 比, 即
+
+$$
+\text { 标幺值 }=\frac{\text { 有名值 }}{\text { 基准值 }}
+$$
+
+式中基准值必须与有名值单位相同。标幺值是一个没有量纲的量, 其大小与基准值的取值有 关。表示方法一般用标量带一 $*$ 号下标,也可不带 $*$ 号。
+
+（2）基准值的选取
+
+基准值的选取除了与实际值单位相同外, 原则上可以任意。但是采用标幺值的目的, 是为 了简化计算,并便于对结果进行分析,基准值的选取应尽量能实现这个目的。
+
+(1)基准值的选取, 应满足电路计算的关系。在三相电路中, 取基准 $S_{\mathrm{B}}$ (三相功率)、 $U_{\mathrm{B}}$ (线 电压) 、 $I_{\mathrm{B}}$ (线电流)、 $Z_{\mathrm{B}}$ (阻抗), 则应有
+
+$$
+\begin{aligned}
+& S_{\mathrm{B}}=\sqrt{3} U_{\mathrm{B}} I_{\mathrm{B}} \\
+& U_{\mathrm{B}}=\sqrt{3} I_{\mathrm{B}} Z_{\mathrm{B}}
+\end{aligned}
+$$
+
+(2)在四个量中,一般选定两个量 $S_{\mathrm{B}}$ 和 $U_{\mathrm{B}}$, 另两个基准可由上述公式推出：
+
+$$
+\begin{aligned}
+& I_{\mathrm{B}}=\frac{S_{\mathrm{B}}}{\sqrt{3} U_{\mathrm{B}}} \\
+& Z_{\mathrm{B}}=\frac{U_{\mathrm{B}}}{\sqrt{3} I_{\mathrm{B}}}=\frac{U_{\mathrm{B}}^{2}}{S_{\mathrm{B}}}
+\end{aligned}
+$$
+
+(3) 不同基准值的标幺值之间的换算
+
+在电力系统的实际计算中, 在制定标幺值的等值电路时, 各元件的参数必须按统一的基准 值进行归算, 但从手册或产品说明书中查得的阻抗值,一般都是以各设备的额定容量和额定电 压为基准的标幺值或百分值,这样将产生基准不同, 因而必须归算为统一基准下的标么参数。 具体归算方法如下。
+
+(1)把设备额定值下的标幺值换算为有名值, 即
+
+$$
+X=X_{\mathrm{N}} * \frac{U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}}
+$$
+
+其中 $X_{\mathrm{N}}$ 是以设备额定功率 $S_{\mathrm{N}}$ 和额定电压 $U_{\mathrm{N}}$ 为基准的标幺值。
+
+(2)再按统一基准,求出其标幺值
+
+$$
+X,=X / \frac{U_{\mathrm{B}}^{2}}{S_{\mathrm{B}}}=X \frac{S_{\mathrm{B}}}{U_{\mathrm{B}}^{2}}=X_{\mathrm{N}} \cdot \frac{U_{\mathrm{N}}^{2} S_{\mathrm{B}}}{U_{\mathrm{B}}^{2} S_{\mathrm{N}}}
+$$
+
+(3)对于电抗器, 其额定标么电抗是以电抗器的额定电压和额定电流为基准来表示的, 则
+
+$$
+\begin{aligned}
+& X_{R}=X_{R(\mathrm{~N}) *} \frac{U_{\mathrm{N}}}{\sqrt{3} I_{\mathrm{N}}} \\
+& X_{R *}=\frac{X_{R}}{X_{\mathrm{B}}}=X_{R(\mathrm{~N})} * \frac{U_{\mathrm{N}}}{\sqrt{3} I_{\mathrm{N}} S_{\mathrm{B}}^{2}}
+\end{aligned}
+$$
+
+(4)有时产品说明书中用百分电抗来表示电抗, 它是 $100 \times$ 标幺值, 故
+
+$$
+\begin{aligned}
+& X_{R}=\frac{X_{R(\mathrm{~N})} \% U_{\mathrm{N}}}{100 \sqrt{3} I_{\mathrm{N}}} \\
+& X_{R *}=\frac{X_{R(\mathrm{~N})} \% U_{\mathrm{N}} S_{\mathrm{B}}}{100 \sqrt{3} I_{\mathrm{N}} U_{\mathrm{B}}^{2}}
+\end{aligned}
+$$
+
+## 2. 电网等值电路
+
+(1) 单电压等级电力网的等值电路
+
+在只有一个电压等级的电力网中, 用标幺值表示与用有名值表示的等值电路, 从电路结构 来说完全相同, 即各元件按照各自的等值电路以及相互之间的连接情况, 将它们的等值电路相 应地连接起来, 便得到了电力网的等值电路。
+
+在单电压等级电力网中, 基准功率 $S_{\mathrm{B}}$ 和 $U_{\mathrm{B}}$ 的选择只要整个网络相同便可, 习惯上 $S_{\mathrm{B}}$ 取 $100 \mathrm{MVA}$ 或 $1000 \mathrm{MVA}$ 或 $10 \mathrm{MVA}, U_{\mathrm{B}}$ 取网络额定电压或平均额定电压。
+
+(2) 有几级电压的电力网的等值电路
+
+对于有几级电压的网络, 由于各级的电压不等, 彼此之间通过变压器的磁路耦合而没有直 接的电气联系, 其元件的参数均有一个属于哪个电压级的问题, 不同电压级的参数是不能按接 线图直接连在一起形成等值电路。作等值电路时有以下两种方法可以采用。
+
+(1)把不同电压级的参数归算到同一电压级,然后连接成等值电路。参数归算时, 对于阻抗 参数应乘以变比的平方。
+
+(2)参数按不同电压级计算,然后用理想变压器连接起来。在这种情况下, 对参数用标幺值 表示的,其功率基准全网统一,电压基准按不同电压级选取。
+
+理想变压器的变比标幺值计算 (也称非标准变比) 为
+
+$$
+k_{T *}=\frac{\text { 实际变比 }}{\text { 基准变比 }}=\frac{U_{\mathrm{I}} / U_{\mathrm{I}}}{U_{\mathrm{B} \mathrm{I}} / U_{\mathrm{B} \mathrm{I}}}
+$$
+
+上述公式中分子用哪一侧电压,则非标准变比就写在哪一侧。
+
+在短路电流计算中, 可以认为各个变压器的变比就等于其两侧的平均额定电压之比, 各侧 基准电压也选为平均额定电压, 这样在标幺值参数的等值电路中, 所有变压器的非标准变比标 幺值都等于 1 ,因而在等值电路中就去掉了非标准变比。
+
+【例 4.2-6】 有一网络如图 4.2-4 所示, 其参数如下:
+
+$$
+\begin{aligned}
+& \mathrm{G}: S_{\mathrm{GN}}=30 \mathrm{MVA}, U_{\mathrm{G}(\mathrm{N})}=10.5 \mathrm{kV}, X_{G(\mathrm{~N}) *}=0.26 \\
+& \mathrm{~T}_{1}: S_{\mathrm{T} 1 \mathrm{~N})}=31.5 \text { MVA, } U_{\mathrm{s}} \%=10.5, K_{\mathrm{Tl}}=10.5 / 121 \\
+& \mathrm{~T}_{2}: S_{\mathrm{T} 2(\mathrm{~N})}=31.5 \mathrm{MVA}, U_{\mathrm{s}} \%=10.5, K_{\mathrm{T} 1}=110 / 6.6 \\
+& R: U_{R(\mathrm{~N})}=6 \mathrm{kV}, I_{R(\mathrm{~N})}=0.3 \mathrm{kA}, X_{R} \%=5 \\
+& \mathrm{j} X_{\mathrm{G} *}=\mathrm{j} X_{\mathrm{G}(\mathrm{N})} * \frac{U_{\mathrm{G}(\mathrm{N})}^{2}}{S_{\mathrm{G}(\mathrm{N})}} S_{\mathrm{B}} U_{\mathrm{BI}}^{2}=\mathrm{j} 0.26 \frac{10.5^{2}}{30} \frac{100}{10^{2}}=\mathrm{j} 0.956 \\
+& \mathrm{j} X_{\mathrm{T} 1 *}=\mathrm{j} \frac{U_{\mathrm{s}} \% U_{\mathrm{T}(\mathrm{N})}^{2} S_{\mathrm{B}}}{100 S_{\mathrm{T}(\mathrm{N})} U_{\mathrm{B} \mathrm{I}}^{2}}=\mathrm{j} \frac{10.510 .5^{2} 100}{100} \frac{100}{31.510^{2}}=\mathrm{j} 0.368
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+& Z_{L,}=Z_{L} \frac{S_{\mathrm{B}}}{S_{\mathrm{B} \rrbracket}^{2}}=100(0.1+\mathrm{j} 0.4) \frac{100}{110^{2}}=0.083+\mathrm{j} 0.331 \\
+& Y_{L *}=Y_{L} \frac{U_{\mathrm{BII}}^{2}}{S_{\mathrm{B}}}=\mathrm{j} 2.85 \times 10^{-6} \times 100 \times \frac{110^{2}}{100}=\mathrm{j} 0.0344 \\
+& \mathrm{j} X_{\mathrm{T} 2 *}=\mathrm{j} \frac{U_{\mathrm{s}} \%}{100} \frac{U_{\mathrm{T} 2(\mathrm{~N})}}{S_{\mathrm{T} 2(\mathrm{~N})}} \frac{S_{\mathrm{B}}}{U_{\mathrm{R} \mathbb{}}^{2}}=\mathrm{j} \frac{10.5110^{2} 100}{10031.5110^{2}}=\mathrm{j} 0.333 \\
+& \mathrm{j} X_{R_{*}}=\mathrm{j} \frac{X_{R} \%}{100 \sqrt{3} I_{R(\mathrm{~N})}} \frac{S_{\mathrm{B}}}{U_{\mathrm{BM}}^{2}}=\mathrm{j} \frac{5}{100 \sqrt{3} \times 0.36^{2}}=\mathrm{j} 1.604 \\
+& k_{\mathrm{T} 1}=\frac{10.5 / 121}{10 / 110}=0.9545 \\
+& k_{\mathrm{T} 2} * \frac{110 / 6.6}{110 / 6}=0.909
+\end{aligned}
+$$
+
+最后得出的等值电路图如图 4.2-5 所示。
+
+## 3 简单电网的潮流计算
+
+### 1 电压降落、电压损耗和功率损耗
+
+## 1. 电压降落
+
+电压降落 $\mathrm{d} U=U_{1}-U_{2}$, 即两端电压的向量差。对于图 4. 3-1 所示电路, 则
+
+$$
+\mathrm{d} U=\frac{P_{1} R+Q_{1} X}{U_{1}}+\mathrm{j} \frac{P_{1} X-Q_{1} R}{U_{1}}=\Delta U_{1}+\mathrm{j} \delta U_{1}
+$$
+
+通式
+
+$$
+\begin{aligned}
+& \Delta U=\frac{P R+Q X}{U} \text { 一电压降落的纵分量 } \\
+& \delta U=\frac{P X-Q R}{U} \text { 一电压降落的横分量 }
+\end{aligned}
+$$
+
+注意:(1)功率和电压必须是同端的;(2)功率用三相的,电压用线电压。
+
+## 2. 电压损耗
+
+电压损耗是两端电压的幅值差
+
+$$
+\mathrm{d} U=U_{1}-U_{2}
+$$
+
+在通常的计算中, 由于电压损耗 $\mathrm{d} U$ 与电压降落的纵分量在数值上较接近, 故一般用电压 降落的纵分量近似为电压损耗, 即
+
+$$
+\mathrm{d} U=\Delta U=\frac{P R+Q X}{U}
+$$
+
+## 3. 功率损耗
+
+电力线路和变压器绕组的等值阻抗中流过功率时, 要引起功率损耗, 其计算公式为
+
+$$
+\Delta S_{Z}=\frac{S^{2}}{U^{2}}(R+\mathrm{j} X)=\frac{P^{2}+Q^{2}}{U^{2}}(R+\mathrm{j} X)=\Delta P+\mathrm{j} \Delta Q
+$$
+
+对丁电力线路的并联电纳, 其无功损耗
+
+$$
+\Delta S_{\mathrm{k}}=-\mathrm{j} U^{2} B
+$$
+
+对于变压器并联导纳支路的功率损耗
+
+$$
+\Delta S_{\mathrm{T}}=U^{2} G_{\mathrm{T}}+\mathrm{j} U^{2} B_{\mathrm{T}} \approx \Delta P_{0}+\frac{I_{0} \%}{100} S_{\mathrm{NT}}
+$$
+
+在计算功率损耗时, 功率和电压均需用同一端的且功率用三相的, 电压用线电压。
+
+### 2 简单电网的潮流计算
+
+电力网的潮流计算是根据给定的运行条件确定系统的运行状态 (主要是功率分布和各点 电压的数值)。
+
+## 1. 开式网络的潮流计算
+
+（1）已知末端负荷和末端电压
+
+按照功率损耗和电压降落的公式, 从未端向首端推算, 功率和电压同时计算。
+
+（2）已知末端负荷和首端电压
+
+电力网计算中多数是这种情况, 它的计算分两步进行:
+
+(1)由末端向首端计算各支路功率损耗和功率分布,直到首端送出功率,第一次计算时各点 电压用相应点的额定电压,第二次迭代时用(2)中计算出的电压值;
+
+(2)用首端已知电压和(1)中计算出的各支路功率,逐段支路计算各段的电压降落,求出各节 点电压。
+
+通过(1)和(2)完成了第一次迭代计算, 精度要求高时可反复迭代。通常计算时可只进行一 次迭代,还可忽略电压降落的横分量。
+
+(3) 树状网络的潮流计算
+
+树状网络不存在闭合问路, 供电点为树根, 它的节点分为叶节点和非叶节点, 其中叶节点 为只同一条支路连接的节点, 且为该支路的终点; 非叶节点为同两条或两条以上支路连接的节 点。
+
+树状网络潮流计算的步骤如下。
+
+(1)从叶节点开始计算与叶节点相连支路功率损耗和功率分布, 这时电压用该节点额定电 压或前次计算出的电压代替。当所有叶节点计算完毕后, 假想把这些与叶节点相连支路暂时 去掉, 又形成新的叶节点, 节点功率等于节点原有负荷功率与以该节点为始点的各支路首端功 率之和, 以此直到根节点。
+
+(2)从根节点开始, 用已知的电压逆着计算功率的顺序, 求出各节点电压。
+
+为了提高计算精度,重复(1)和(2)即可。 (4) 有几级电压的开式电力网计算
+
+有几级电压的开式电力网, 其参数可按各自电压计算, 变压器的参数可归算到某一侧, 然 后用理想变压器连接起来, 理想变压器的变比用实际变比。在计算中, 遇到理想变压器时, 电 压之比等于变比, 功率经理想变压器时不变, 这是因为理想变压器没有损耗只有变比。
+
+【例 4.3-1】已知某 $110 \mathrm{kV}$ 线路, 其线路参数 $Z_{\mathrm{L}}=11+\mathrm{j} 33 \Omega, B_{\mathrm{t}}=\mathrm{j} 1.1 \times 10^{-4} \mathrm{~S}$, 线路末 端输出功率为 $15+\mathrm{j} 10 \mathrm{MVA}$, 首端电压为 $112 \mathrm{kV}$, 试计算首端送出的功率 $S_{1}$ 和末端电压 $U_{2}$ 。
+
+解: 根据题意, 作出等值电路如图 4.3-2。
+
+先从末端向首端计算功率损耗及功率分布, 电压用额定电压 $110 \mathrm{kV}$ 代替。
+
+$$
+\begin{aligned}
+S_{2}^{\prime} & =S_{2}-\frac{1}{2} \mathrm{j} B_{\mathrm{l}} U_{\mathrm{N}}^{2}=15+\mathrm{j} 10-\frac{1}{2} \times \mathrm{j} 1.1 \times 10^{-4} \times 110^{2}=15+\mathrm{j} 9.3345 \mathrm{MVA} \\
+S_{1}^{\prime} & =S_{2}^{\prime}+\Delta S_{21 .}=15+\mathrm{j} 9.3345+\frac{15^{2}+9.3345^{2}}{110^{2}}(11+\mathrm{j} 33) \\
+& =15.284+\mathrm{j} 10.186 \mathrm{MVA} \\
+S_{1} & =S_{1}^{\prime}-\frac{1}{2} \mathrm{j} B_{\mathrm{L}} U_{\mathrm{N}}^{2}=15.284+\mathrm{j} 10.186-\frac{1}{2} \times \mathrm{j} 1.1 \times 10^{-4} \times 110^{2} \\
+& =15.284+\mathrm{j} 9.521 \mathrm{MVA}
+\end{aligned}
+$$
+
+然后计算末端电压
+
+$$
+\begin{aligned}
+U_{2} & =\sqrt{\left(U_{1}-\Delta U\right)^{2}+\delta U^{2}} \\
+& =\sqrt{\left(112-\frac{15.284 \times 11+10.186 \times 33}{112}\right)^{2}+\left(\frac{15.284 \times 33-10.186 \times 11}{112}\right)^{2}} \\
+& =\sqrt{(112-4.502)^{2}+(3.503)^{2}}=107.56 \mathrm{kV} \\
+\delta & =\operatorname{arcot} \frac{\delta U}{U_{1}-\Delta U}=\operatorname{arcot} \frac{3.503}{112-4.502}=1.866^{\circ}
+\end{aligned}
+$$
+
+忽略电压降落的横分量
+
+$$
+U_{2}=U_{1}-\Delta U=112-\frac{15.284 \times 11+10.186 \times 33}{112}=107.5 \mathrm{kV}
+$$
+
+【例 4.3-2】在图 4.3-3(a) 中额定电压为 $110 \mathrm{kV}$ 的双回输电线路, 长度为 $80 \mathrm{~km}$, 采用 LGJ-150 导线, 其参数为: $r_{0}=0.21 \Omega / \mathrm{km}, x_{0}=0.416 \Omega / \mathrm{km}, b_{0}=2.74 \times 10^{-6} \mathrm{~S} / \mathrm{km}_{\text {。 变电所 }}$ 中装有两台三相 $110 / 11 \mathrm{kV}$ 的变压器, 每台的容量为 $15 \mathrm{MVA}$, 其参数为: $\Delta P_{0}=40.5 \mathrm{~kW}, \Delta P$ s $=128 \mathrm{~kW}, U_{\mathrm{s}} \%=10.5, I_{0} \%=3.5$ 。母线 $\mathrm{A}$ 的实际运行电压为 $117 \mathrm{kV}$, 负荷功率: $S_{\mathrm{IDB}}=30+$
+
+解: (1) 计算参数并作出等值电路 输电线路的电阻、等值电抗和电纳分别为
+
+$$
+\begin{aligned}
+& R_{\mathrm{L}}=\frac{1}{2} \times 80 \times 0.21=8.4 \Omega \\
+& X_{\mathrm{L}}=\frac{1}{2} \times 80 \times 0.416=16.6 \Omega \\
+& B_{\mathrm{C}}=2 \times 80 \times 2.74 \times 10^{-6}=4.38 \times 10^{-4} \mathrm{~S}
+\end{aligned}
+$$
+
+由于线路电压末知, 可用线路额定电压计 算线路产生的充电功率, 并将其等分为两部分, 得
+
+$$
+\begin{aligned}
+\Delta Q_{\mathrm{B}} & =-\frac{1}{2} B_{\mathrm{C}} U_{\mathrm{N}}^{2} \\
+& =-\frac{1}{2} \times 4.38 \times 10^{-4} \times 110^{2} \\
+& =-2.65 \mathrm{Mvar}
+\end{aligned}
+$$
+
+将 $\Delta Q_{\mathrm{B}}$ 分别接于节点 $\mathrm{A}$ 和 $\mathrm{B}$, 作为节点负
+
+两台变压器并联运行时, 它们的组合电阻、电抗及励磁功率分别为
+
+$$
+\begin{aligned}
+& R_{\mathrm{T}}=\frac{1}{2} \frac{\Delta P_{\mathrm{s}} U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}^{2}} \times 10^{3}=\frac{1}{2} \times \frac{128 \times 110^{2}}{15000^{2}} \times 10^{3}=3.4 \Omega \\
+& X_{\mathrm{T}}=\frac{1}{2} \frac{U_{\mathrm{s}} \% U_{\mathrm{N}}^{2}}{S_{\mathrm{N}}} \times 10=\frac{1}{2} \times \frac{10.5 \times 110^{2}}{15000} \times 10=42.4 \Omega \\
+& \Delta P_{0}+\mathrm{j} \Delta Q_{0}=2\left(0.0405+\mathrm{j} \frac{3.5 \times 15}{100}\right)=0.08+\mathrm{j} 1.05 \mathrm{MVA}
+\end{aligned}
+$$
+
+变压器的励磁涌流功率也作为接于节点 $\mathrm{B}$ 的一种负荷, 于是节点 $\mathrm{B}$ 的总负荷
+
+$$
+S_{\mathrm{B}}=30+\mathrm{j} 12+0.08+\mathrm{j} 1.05-\mathrm{j} 2.65=30.08+\mathrm{j} 10.4 \mathrm{MVA}
+$$
+
+这样就得到图 4. 3-3(b) 所示的等值电路。
+
+(2) 计算由母线 A 输出的功率
+
+先按电力网的额定电压计算电力网的功率损耗。变压器绕组中的功率损耗
+
+$$
+\Delta S_{\mathrm{T}}=\frac{20^{2}+15^{2}}{110^{2}}(3.4+\mathrm{j} 42.4)=0.18+\mathrm{j} 2.19 \mathrm{MVA}
+$$
+
+由图 4.3-3(b) 可知
+
+$$
+\begin{aligned}
+& S_{\mathrm{C}}^{\prime}=S_{\mathrm{C}}+\Delta S_{\mathrm{T}}=20+\mathrm{j} 15+0.18+\mathrm{j} 2.19=20.18+\mathrm{j} 17.19 \mathrm{MVA} \\
+& S_{1}^{\prime \prime}=S_{\mathrm{C}}^{\prime}+S_{\mathrm{B}}=20.18+\mathrm{j} 17.19+30.08+\mathrm{j} 10.4=50.26+\mathrm{j} 27.59 \mathrm{MVA}
+\end{aligned}
+$$
+
+线路中的功率损耗
+
+$$
+\Delta S_{\mathrm{I}}=\frac{50.26^{2}+27.59^{2}}{110^{2}}(8.4+\mathrm{j} 16.6)=2.28+\mathrm{j} 4.51 \mathrm{MVA}
+$$
+
+于是可得
+
+$$
+S_{1}^{\prime}=S_{1}^{\prime \prime}+\Delta S_{1}=50.26+\mathrm{j} 27.59+2.28+\mathrm{j} 4.51=52.54+\mathrm{j} 32.1 \mathrm{MVA}
+$$
+
+由母线 $\mathrm{A}$ 输出的功率
+
+$$
+S_{\mathrm{A}}=S_{1}^{\prime}+\mathrm{j} \Delta Q_{\text {в }}=52.54+\mathrm{j} 32.1-\mathrm{j} 2.65=52.54+\mathrm{j} 29.45 \mathrm{MVA}
+$$
+
+(3) 计算各节点电压
+
+线路中电压降落的纵、横分量分别为
+
+可得 $\mathrm{B}$ 点电压
+
+$$
+\begin{gathered}
+\Delta U_{\mathrm{L}}=\frac{P_{1}^{\prime} R_{\mathrm{L}}+Q^{\prime}{ }_{1} X_{\mathrm{I}}}{U_{\mathrm{A}}}=\frac{52.54 \times 8.4+32.1 \times 16.6}{117}=8.3 \mathrm{kV} \\
+\delta U_{\mathrm{L} .}=\frac{P_{1}^{\prime} X_{\mathrm{L}}+Q^{\prime}{ }_{1} R_{\mathrm{L}}}{U_{\mathrm{A}}}=\frac{52.54 \times 16.6-32.1 \times 8.4}{117}=5.2 \mathrm{kV}
+\end{gathered}
+$$
+
+$$
+U_{\mathrm{B}}=\sqrt{\left(U_{\mathrm{A}}-\Delta U_{\mathrm{L}}\right)^{2}+\left(\delta U_{\mathrm{L}}\right)^{2}}=\sqrt{(117-8.3)^{2}+5.2^{2}}=108.8 \mathrm{kV}
+$$
+
+变压器中电压降落的纵、横分量分别为
+
+$$
+\begin{aligned}
+& \Delta U_{\mathrm{T}}=\frac{R_{\mathrm{C}}^{\prime} R_{\mathrm{T}}+Q_{\mathrm{C}}^{\prime} X_{\mathrm{T}}}{U_{\mathrm{B}}}=\frac{20.18 \times 3.4+17.19 \times 42.4}{108.8}=7.3 \mathrm{kV} \\
+& \delta U_{\mathrm{T}}=\frac{P_{\mathrm{C}}^{\prime} X_{\mathrm{T}}-Q_{\mathrm{C}}^{\prime} R_{\mathrm{T}}}{U_{\mathrm{B}}}=\frac{20.18 \times 42.4-17.19 \times 3.4}{108.8}=7.3 \mathrm{kV}
+\end{aligned}
+$$
+
+归算到高压侧的 $\mathrm{C}$ 点电压
+
+$$
+U_{\mathrm{C}}^{\prime}=\sqrt{\left(U_{\mathrm{B}}-\Delta U_{\mathrm{T}}\right)^{2}+\left(\delta U_{\mathrm{T}}\right)^{2}}=\sqrt{(108.8-7.3)^{2}+7.3^{2}}=101.7 \mathrm{kV}
+$$
+
+变电所低压母线 $\mathrm{C}$ 的实际电压
+
+$$
+U_{\mathrm{c}}=U_{\mathrm{C}}^{\prime} \times \frac{11}{110}=101.7 \times \frac{11}{110}=10.17 \mathrm{kV}
+$$
+
+如果在上述计算中都将电压降落的横分量略去不计, 所得的结果是
+
+$$
+U_{\mathrm{B}}=108.7 \mathrm{kV}, U_{\mathrm{C}}^{\prime}=101.4 \mathrm{kV}, U_{\mathrm{C}}=10.14 \mathrm{kV}
+$$
+
+同考虑电压降落横分量的计算结果相比较, 误差很小。
+
+## 2. 简单环网的潮流计算
+
+简单环网如图 4.3-4 所示, 它的潮流分布计算可按 如下近似方法进行。
+
+(1)先不计功率损耗,求出支路的功率分布
+
+$$
+\begin{aligned}
+& S_{12}=\frac{S_{2}\left(Z_{23}^{*}+Z_{13}^{*}\right)+S_{3} Z_{13}^{*}}{Z_{12}^{*}+Z_{23}^{*}+Z_{13}^{*}} \\
+& S_{13}=\frac{S_{3}\left(Z_{12}^{*}+Z_{23}^{*}\right)+S_{2} Z_{12}^{*}}{Z_{12}^{*}+Z_{23}^{*}+Z_{13}^{*}}
+\end{aligned}
+$$
+
+(2)找出功率分点。具体方法是把第(1)步中计算出的 功率分布, 与各节点负荷进行代数运算, 可发现有一个节 点的功率是从两个方向流人的, 则此节点即为功率分点。
+
+(3)在功率分点处,按不同支路流人的功率大小,把环网打开,形成两个开式网络。
+
+(4)按开式网络计算潮流的方法,计算功率损耗和电压。
+
+【例 4.3-3】图 4.3-5 为一个 $110 \mathrm{kV}$ 的电力网, 母线 $\mathrm{A}$ 是电源, 其电压保持 $116 \mathrm{kV}$ 。当 取 $S_{\mathrm{B}}=100 \mathrm{MVA}, U_{\mathrm{B}}=110 \mathrm{kV}$ 时, 各母线负荷功率的标幺值示于图 4.3-5(a)中。各线路的参 数列于表 4.3-1 中, 用标幺值表示的电力网等值电路如图 4.3-5(b) 所示。求网络中的功率分 布和母线 B、C 及 $D$ 的电压。
+
+表 4. 3-1 例 4. 3-3 线路参数
+
+| 线路 | 长度 $/ \mathrm{km}$ | 导线型号 | $r_{1} /(\Omega / \mathrm{km})$ | $x_{1} /(\Omega / \mathrm{km})$ | $b_{1} \times 10^{-6} /(\mathrm{S} / \mathrm{km})$ | $R_{*}$ | $X_{*}$ | $\left(B_{*} / 2\right) \times 10^{-3}$ |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $\mathrm{A}-\mathrm{B}$ | 30 | LGJ -120 | 0.27 | 0.423 | 2.69 | 0.0669 | 0.105 | 4.89 |
+| $\mathrm{A}-\mathrm{C}$ | 45 | LGJ -150 | 0.21 | 0.416 | 2.74 | 0.0781 | 0.155 | 7.48 |
+| $\mathrm{B}-\mathrm{C}$ | 40 | LGJ -120 | 0.27 | 0.423 | 2.60 | 0.0893 | 0.140 | 6.5 |
+| $\mathrm{C}-\mathrm{D}$ | 50 | LGJ -70 | 0.45 | 0.44 | 2.58 | 0.0934 | 0.091 | 15.61 |
+
+解: (1) 计算辐射形网络 CD 段的功率分布
+
+$S_{\mathrm{CD}}^{\prime}=0.2+\mathrm{j} 0.10-\mathrm{j} 0.01561=0.2+\mathrm{j} 0.0844$
+
+$S_{\mathrm{CD}}^{\prime \prime}=0.2+\mathrm{j} 0.0844+\left(0.2^{2}+0.0844^{2}\right) \times(0.0934+\mathrm{j} 0.0910)=0.204+\mathrm{j} 0.0887$
+
+$S_{\mathrm{CD}}=0.204+\mathrm{j} 0.0887-\mathrm{j} 0.01561=0.204+\mathrm{j} 0.0731$
+
+（2）计算母线 B 和 C 的运算负荷
+
+$S_{\mathrm{B}}=0.12+\mathrm{j} 0.04-\mathrm{j} 0.00489-\mathrm{j} 0.0065=0.12+\mathrm{j} 0.0286$
+
+$S_{\mathrm{C}}=0.204+\mathrm{j} 0.0731-\mathrm{j} 0.00748-\mathrm{j} 0.0065+0.1+\mathrm{j} 0.062=0.304+\mathrm{j} 0.121$
+
+(3) 计算环形网络部分的初步功率分布
+
+将环形网络在母线 $\mathrm{A}$ 处割开,如图 4.3-6(a) 所示, 可得
+
+$$
+Z_{\Sigma}=Z_{\mathrm{AB}}+Z_{\mathrm{BC}}+Z_{\mathrm{CA}}=(0.0669+0.0893+0.0781)+\mathrm{j}(0.105+0.14+0.155)
+$$
+
+$$
+\begin{aligned}
+& =0.2343+\mathrm{j} 0.400 \\
+S_{\mathrm{AB}} & =\frac{S_{\mathrm{B}}\left(Z_{\mathrm{BC}}+Z_{\mathrm{CA}}\right)+S_{\mathrm{C}} Z_{\mathrm{CA}}}{Z_{\Sigma}}=0.2047-\mathrm{j} 0.0578 \\
+S_{\mathrm{BC}} & =S_{\mathrm{AB}}-S_{\mathrm{B}}=0.0847-\mathrm{j} 0.0292 \\
+S_{\mathrm{AC}} & =S_{\mathrm{A}}+S_{\mathrm{B}}-S_{\mathrm{AB}}=0.220-\mathrm{j} 0.0918
+\end{aligned}
+$$
+
+于是, 由环形网络中的近似功率分布, 可以看出功率分点在母线 $C$ 处。
+
+(4) 计算环形网络功率损耗及功率分布
+
+$$
+\begin{aligned}
+S_{\mathrm{AC}}^{\prime} & =0.220+\mathrm{j} 0.0918+\left(0.22^{2}+0.0918^{2}\right) \times(0.0781+\mathrm{j} 0.155)=0.224+\mathrm{j} 0.101 \\
+S_{\mathrm{BC}}^{\prime} & =0.0847+\mathrm{j} 0.0292+\left(0.0847^{2}+0.0292^{2}\right) \times(0.0893+\mathrm{j} 0.140) \\
+& =0.0854+\mathrm{j} 0.0303 \\
+S_{\mathrm{AB}}^{\prime \prime} & =S_{\mathrm{BC}}^{\prime}+S_{\mathrm{B}}=0.205+\mathrm{j} 0.0589 \\
+S_{\mathrm{AB}}^{\prime} & =S_{\mathrm{AB}}^{\prime \prime}+\Delta S_{\mathrm{AB}}=0.205+\mathrm{j} 0.0589+\left(0.205^{2}+0.0589^{2}\right) \times(0.0669+\mathrm{j} 0.105) \\
+& =0.208+\mathrm{j} 0.0637
+\end{aligned}
+$$
+
+母线 $\mathrm{A}$ 供给的总功率
+
+$S_{\mathrm{A}}=0.208+\mathrm{j} 0.0637+0.224+\mathrm{j} 0.101-\mathrm{j} 0.00748-\mathrm{j}=0.00489=0.433+\mathrm{j} 0.152$
+
+(5) 网络中的电压分布 (忽略电压的横分量)
+
+$$
+\begin{aligned}
+& U_{\mathrm{B}}=1.055-\frac{0.208 \times 0.0669+0.0637 \times 0.105}{1.055}=1.036 \\
+& U_{\mathrm{C}}=1.055-\frac{0.224 \times 0.0781+0.101 \times 0.155}{1.055}=1.024 \\
+& U_{\mathrm{D}}=1.024-\frac{0.204 \times 0.0934+0.0887 \times 0.0910}{1.024}=0.998
+\end{aligned}
+$$
+
+最终的潮流分布见图 4. 3-7 所示。
+
+### 3 输电线路中功率的流向与电压相角和幅值的关系
+
+由于高压输电线路的电阻远小于电抗, 因而使得高压输电线路中有功功率的流向主要由 两端节点电压的相位决定, 有功功率是从电压相位超前的一端流向滞后的一端; 输电线路中无
+
+功功率的流向主要由两端节点电压的幅值决定, 由幅值高的一端流向低的一端。这可由下面 公式看出, 即
+
+$$
+U_{1}=U_{2}+\frac{P_{2} R+Q_{2} X}{U_{2}}+\mathrm{j} \frac{P_{2} X-Q_{2} R}{U_{2}}
+$$
+
+当 $R \approx 0$ 时
+
+$$
+\begin{aligned}
+& U_{1}=U_{2}+\frac{Q_{2} X}{U_{2}}+\mathrm{j} \frac{P_{2} X}{U_{2}} \\
+& U_{1}=U_{1}(\cos \delta+\mathrm{j} \sin \delta)=U_{1} \cos \delta+\mathrm{j} U_{1} \sin \delta=U_{2}+\frac{Q_{2} X}{U_{2}}+\mathrm{j} \frac{P_{2} X}{U_{2}}
+\end{aligned}
+$$
+
+则 $U_{1} \sin \delta=\frac{P_{2} X}{U_{2}}$
+
+$$
+P_{2}=\frac{U_{1} U_{2}}{X} \sin \delta
+$$
+
+由此可见, $P_{2}$ 主要与 $\delta=\delta_{1}-\delta_{2}$ 的大小有关, $\delta$ 越大, 则 $P_{2}$ 越大。
+
+$$
+\begin{aligned}
+& U_{1} \cos \delta=U_{2}+\frac{Q_{2} X}{U_{2}} \\
+& Q_{2}=\frac{\left(U_{1} \cos \delta-U_{2}\right) U_{2}}{X} \approx \frac{\left(U_{1}-U_{2}\right) U_{2}}{X}
+\end{aligned}
+$$
+
+由此可见, $Q_{2}$ 与两端电压幅值 $U_{1}$ 和 $U_{2}$ 的差值有关, 差值越大, 则 $Q_{2}$ 越大。
+
+4. 3.4 输电线路的空载与负荷运行特性
+
+## 1. 输电线路的空载运行特性
+
+电线”, 宁载时, 线路末端的功率为零, 即在图 4.3-8 中 $S_{2}=0$, 当线路末端电压 $U_{2}$ 已知
+
+$$
+\begin{array}{r}
+\mathrm{j} \frac{B}{2} U_{2}^{2} \\
+S^{\prime}-\mathrm{j} \frac{B}{2} U_{2}^{2}
+\end{array}
+$$
+
+传输功率示意图
+
+$$
+U_{1}=U_{2}-\frac{B X}{2} U_{2}+\mathrm{j} \frac{B R}{2} U_{2}
+$$
+
+考虑到高压线路一般所采用的导线截面较大， 在忽略电阻的情况下有
+
+$$
+U_{1}=U_{2}-\frac{B X}{2} U_{2}
+$$
+
+由于线路的 $\Pi$ 形等值电路的电纳是容性, $B$ 本 身大于零,因此由上式可见
+
+$$
+U_{1}<U_{2}
+$$
+
+这说明高压输电线路空载时, 线路末端的电压将高于始端电压, 故此称为末端电压升高现 象。
+
+## 2. 输电线路的负载运行特性
+
+(1)输电线路的负载很轻时, 称为轻载。在这种情况下, 当负载电流小于线路电容电流, 则 也会出现末端电压升高现象。
+
+(2)输电线路的㑔载电流大于线路电容电流时, 输电线路末端电压将低于首端电压, 输电线 路传输的最大功率主要与两端电压幅值的乘积成正比, 而与线路的电抗成反比, 即
+
+$$
+P_{\text {max }}=\frac{U_{1} U_{2}}{X}
+$$
+
+实际中还要考虑到导线发热和系统稳定性等其他因素, 实际能传输的有功功率比它小得 多。
+
+## 4 无功功率平衡和电压调整
+
+### 1 无功功率平衡的概念及无功功率平衡的基本要求
+
+电压是衡量电能质量的主要指标。保证供给用户的电压与其额定值的偏移不超过规定的 数值是电力系统运行调整的基本任务之一。电力系统的运行电压水平与无功功率的平衡密切 相关: 系统的无功电源比较充足, 系统就有较高的运行电压水平; 反之, 无功不足就反映为运行 电压水平偏低。因此, 应该力求实现在额定电压下的系统无功功率的平衡。
+
+系统中大量的负荷需要一定的无功功率, 同时网络元件也会有无功功率损耗。因此,电源 所发虫的无功功率在任何时刻都必须满足负荷所需的无功功率和网络中的无功功率损耗,这 就是要保持系统总无功功率的平衡,否则电压就会偏离额定值。从改善电压质量和降低网络 功率损耗考虑, 应该尽量减少通过电网元件长距离和跨电压级传送无功功率,负荷所需的无功 功率应尽量做到就地供应。因此, 仅从全系统的角度进行无功功率平衡是不够的, 更重要的是 还应该分地区分电压级进行无功功率平衡。有时候, 某一地区无功功率电源有富余, 另一地区 则存在缺额,对它们调余补缺往往是不适宜的,这时就应该分别进行处理。例如,在现代大型 电力系统中, 超高压输电网的线路电容能产生大量的无功功率, 从系统安全运行考虑, 需要装 设并联电抗器予以吸收; 而较低电压等级的配电网却要配置大量的并联电容补偿, 以改善用户 处的电压质量。
+
+电力系统无功功率平衡的基本要求是:系统中的无功电源可能发出的无功功率应该大于 负荷所需的无功功率和网络中的无功损耗之和。为了保证系统运行的可靠性和适应无功负荷 的增长需要, 系统还必须配置一定的无功备用容量, 无功备用容量一般为无功负荷的 7\% $8 \%$ 。令 $Q_{G \mathrm{CC}}$ 为无功功率电源能供应的无功功率之和, $Q_{\mathrm{I}, \mathrm{D}}$ 为无功负荷之和, $Q_{\mathrm{l}}$ ，为网络无功功 率损耗之和, $Q_{\mathrm{res}}$ 为无功功率备用, 则系统中无功功率平衡关系式为
+
+$$
+Q_{\mathrm{CC}}-Q_{\mathrm{L}, \mathrm{l})}-Q_{\mathrm{L}}-Q_{\mathrm{res}} \geqslant 0
+$$
+
+上式成立,表示系统中无功功率可以平衡且有适量的备用; 如不成立,表示系统中无功功 率不足, 应考必加设无功补偿装置。
+
+【例 4.4-1】电力系统中无功功率平衡与电压水平有什么关系?
+
+答: 系统拥有的无功功率电源必须满足正常电压水平下的无功需求,并留有必要的备用容 量。当系统出现无功功率缺额时, 系统运行电压将下降; 当系统出现无功功率过剩时, 应适当 减少无功电源发出的无功功率, 否则系统运行电压将上升。
+
+### 2 系统中各类无功电源的调节特性
+
+电力系统的无功电源, 除了发电机外, 还有同步调相机、静电电容器及静止无功补偿器, 后 二种装置又称为无功补偿装置。
+
+## 1. 发电机
+
+发电机既是惟一的有功电源, 同时也是最基本的无功电源。在不影响有功功率平衡的前 提下, 改变发电机的功率因数 (通过改变励磁电流), 可以调节其无功功率的输出, 从而调整系 统的运行电压。当然, 发电机的无功功率输出要受其 $P-Q$ 运行极限的限制。
+
+发电机在额定状态下运行时如图 4.4-1 所示。 图中纵轴和横轴分别代表有功功率 $P$ 和无功功率 $Q 。 \overrightarrow{O A}$ 表示发电机额定端电压 $U_{G N}, I_{G N}$ 为额定定子 电流, $\varphi_{\mathrm{N}}$ 为额定功率因数角。 $\overrightarrow{A B}$ 表示 $I_{\mathrm{CN}}$ 在电抗 $X_{d}$ 上的电压降, 其长度正比于 $I_{\mathrm{GN}}$, 在发电机端电 压保持不变的条件下,也以一定比例代表发电机 的额定规在功率 $S_{\mathrm{GN}}$ 。 $\overrightarrow{A B}$ 在 $P$ 轴和 $Q$ 轴上的投影 分别为 $\overrightarrow{A C}=\overrightarrow{A B} \cos \varphi_{\mathrm{N}}$ 和 $\overrightarrow{A E}=\overrightarrow{A B} \sin \varphi_{\mathrm{N}}$, 可分别以 同样比例代表发电机的额定有功功率 $P_{G N}$ 和额定 无功功率 $Q_{\mathrm{GN}} \circ \overrightarrow{O B}$ 表示额定运行状态下的电势 $\dot{E}$, 其长度正比于转子额定励磁电流 $i_{\mathrm{rN}}$ 。
+
+由图 4.4-1 可知, 发电机在额定状态下运行时, 发出的无功功率为
+
+$$
+Q_{\mathrm{CN}}=S_{\mathrm{GN}} \sin \varphi_{\mathrm{N}}=P_{\mathrm{CN}} \tan \varphi_{\mathrm{N}}
+$$
+
+改变发电机运行中的功率因数时, 要注意到发电机运行的约束条件。发电机通常要受到 下列运行条件的限制。
+
+(1) 定子电流 $I_{\mathrm{G}} \leqslant I_{\mathrm{GN}}$ 。以 $A$ 点为圆心, 以 $\overrightarrow{A B}$ 为半径所作圆弧 $\overparen{B F}$ 表示定子电流保持额定值 的轨迹。
+
+(2) 转子励磁电流 $i_{\mathrm{f}} \leqslant i_{\mathrm{fN}}$ 。以 $O$ 点为圆心, 以 $\overrightarrow{O B}$ 为半径所作圆弧 $\overparen{B D}$ 表示转子励磁电流保 持额定值的轨迹。
+
+(3) 有功功率 $P_{\mathrm{G}} \leqslant P_{\mathrm{GN}} \circ C B$ 直线表示原动机出力保持额定值的轨迹。
+
+从图中可以看到, 发电机只有在额定状态 (即运行点 $B$ ) 下运行时其有功功率、无功功率 和视在功率才能达到额定值, 容量得到最充分的利用。当发电机发出的 $P_{\mathrm{G}}$ 低于 $P_{\mathrm{GN}}$ 时, 可发 出的无功功率虽较额定运行状态时大, 但视在功率却较额定值小。任何时候, 发电机的运行点 都不能超出图 4.4-1 中的阴影线范围。
+
+## 2. 同步调相机
+
+同步调相机实质上是只发无功功率的同步发电机, 它在过励磁运行时向系统供给感性无 功功率成为无功电源; 在欠励磁运行时从系统吸取感性无功功率成为无功负荷。因此,改变同 步调相机的励磁, 可以平滑地改变其输出 (或吸取) 的无功功率, 从而平滑地调节所在地区电 压。但在欠励磁运行时, 其容量约为过励磁运行时额定容量的 $50 \% \sim 60 \%$ 。
+
+同步调相机的有功损耗较大,并且小容量的调相机每 kVA 容量的建设投资费用也较大， 故同步调相机宜于大容量集中使用,常安装在枢纽变电所。此外, 同步调相机为旋转机械,运 行维护比较复杂。
+
+## 3. 静电电容器
+
+静电电容器只能向系统供给感性无功功率, 而不能吸收无功功率, 它所供出的感性无功功 率 $Q_{C}$ 与所在节点的电压 $U$ 的平方成正比, 即
+
+$$
+Q_{C}=U^{2} / X_{C}
+$$
+
+式中, $X_{C}=1 / \omega C$ 为静电电容器的容抗。
+
+静电电容器的优点是:
+
+(1) 静电电容器是根据需要由许多电容器连接成组的, 故静电电容器组的容量可大可小, 既可集中使用,又可分散使用,使用比较灵活;
+
+(2) 静电电容器在运行时的功率损耗比较小, 约为额定容量的 $0.3 \% \sim 0.5 \%$;
+
+(3) 静电电容器没有旋转部件,维护比较方便。
+
+静电电容器的不足之处是:
+
+(1) 无功功率调节性能比较差, 由式 (4.4-3) 可以看出, 当系统电压下降需要无功功率时, 它供给系统的感性无功功率按电压的平方减少, 导致系统电压水平进一步下降;
+
+(2)它是靠电容器投、切进行调节, 调节过程是不连续的, 不能平滑调压。
+
+## 4. 静止补偿器
+
+静止补偿器由静电电容器与电抗器并联组成。电容器可发出无功功率, 电抗器可吸收无 功功率, 两者结合起来, 再配以调控电抗器的电力电子调节装置, 就成为能够平滑改变输出或 吸收无功功率的静止补偿器。
+
+与静电电容器相比, 静止补偿器能快速、平滑地调节无功功率, 克服了电容器作为无功补 偿装置只能作电源不能作负荷, 调节不连续的缺点。
+
+与同步调相机相比较,静止补偿器的优点是:
+
+(1) 运行维护简单;
+
+(2) 功率损耗小;
+
+(3) 能做到分相补偿以适应不平衡的负荷变化,对于冲击性负荷也有较强的适应性。
+
+因此, 静止补偿器在电力系统中得到越来越广泛的应用。
+
+【例 4.4-2】试述常用的无功功率补偿设备及其特点。
+
+答: 无功功率补偿设备有同步调相机、静电电容器和静止补偿器。同步调相机和静止补偿 器均可平滑改变发出或吸收的无功功率, 实现对无功功率的连续调节。但是, 同步调相机宜于 大容量集中使用, 常安装在枢纽变电所。静电电容器只能发出感性无功功率, 也就是说, 只能 作为无功电源而不能作为无功负荷, 并且不能连续调节无功功率, 其控制性能最差。但是, 静 电电容器使用灵活, 既可集中使用, 又可分散安装就地供应无功功率。
+
+### 3 利用电容器进行补偿调压的原理与方法
+
+引起电压偏移的直接原因是线路和变压器的电压损耗, 若能减小网络的电压损耗, 系统的 电压质量就会不同程度地得到改善。电压损耗近似等于电压降落的纵分量, 即 $\Delta U=$ $\frac{P R+Q X}{U}$, 当网络参数 $R, X$ 和运行电压 $U$ 确定时, 影响电压损耗大小的因素就是通过网络的有 功功率 $P$ 和无功功率 $Q$ 。众所周知, 建立电力网的目的就是为了最大限度地输送有功功率, 因 而为了减少电压损耗而改变有功功率的分布或减少有功功率的输出是不合理的。用户的无功 功率则既可由发电机供给, 也可由设在负荷点 (或其附近) 的无功补偿装置提供, 这样的补偿 也常称为并联电容补偿。合理地配置无功补偿容量, 可以改变网络通过的无功功率, 减少网络 中的电压损耗, 从而改善用户处的电压质量。另外,也可在线路中串联电容器补偿线路的感 抗, 从而减少网络中的电压损耗，以改善用户处的电压质量。这种补偿也称为串联电容补偿。 本节将讨论按调压要求选择并联电容补偿容量的问题,并介绍串联电容补偿调压的原理。
+
+## 1. 按调压要求选择并联电容补偿容量
+
+在末加补偿装置前若不计电压降落的横分量, 便有
+
+$$
+U_{1}=U_{2}^{\prime}+\frac{P R+Q X}{U_{2}^{\prime}}
+$$
+
+式中, $U_{2}^{\prime}$ 为归算到高压侧的变压器低压母线电压。
+
+在变压器低压侧设置容量为 $Q_{c}$ 的无功补偿设备后, 网络传送到负荷点的无功功率变为 $Q-Q_{c}$, 这时变压器低
+
+$$
+U_{1}=U_{2 C}^{\prime}+\frac{P R+\left(Q-Q_{C}\right) X}{U_{2 C}^{\prime}}
+$$
+
+如果补偿前后 $U_{1}$ 保持不变,则有
+
+$$
+U_{2}^{\prime}+\frac{P R+Q X}{U_{2}^{\prime}}=U_{2 C}^{\prime}+\frac{P R+\left(Q-Q_{C}\right) X}{U_{2 C}^{\prime}}
+$$
+
+由此可解得使变压器低压母线的归算电压从 $U_{2}^{\prime}$ 改变到 $U_{2 c}^{\prime}$ 所需要的无功补偿容量为
+
+$$
+Q_{c}=\frac{U_{2 C}^{\prime}}{X}\left[\left(U_{2 C}^{\prime}-U_{2}^{\prime}\right)+\left(\frac{P R+Q X}{U_{2 C}^{\prime}}-\frac{P R+Q X}{U_{2}^{\prime}}\right)\right]
+$$
+
+上式方括号中第二项的数值一般很小, 可以略去,于是式 (4.4-7) 简化为
+
+$$
+Q_{C}=\frac{U_{2 C}^{\prime}}{X}\left(U_{2 C}^{\prime}-U_{2}^{\prime}\right)
+$$
+
+若变压器的变比为 $k$, 补偿后变压器低压侧要求保持的电压为 $U_{2 C}$, 则 $U_{2 C}^{\prime}=k U_{2 C}$ 。代人式 (4. 4-8), 可得
+
+$$
+Q_{C}=\frac{k U_{2 C}}{X}\left(k U_{2 C}-U_{2}^{\prime}\right)=\frac{k^{2} U_{2 C}}{X}\left(U_{2 C}-\frac{U_{2}^{\prime}}{k}\right)
+$$
+
+由此可见, 补偿容量与调压要求和降压变压器的变比均有关。变比 $k$ 的选择原则是: 在满 足调压的要求下, 使无功补偿容量为最小。
+
+由于电容器只能发出感性无功功率, 所以在变压器母线电压偏低时可用以提高电压, 但电 压偏高时却不能用来降低电压。通常降压变电所在大负荷时电压偏低，小负荷时电压偏高。 为了充分利用电容器的补偿容量, 在最大负荷时电容器应全部投人, 在最小负荷时退出。从而 并联电容补偿容量的计算步骤可归结如下。
+
+(1)根据调压要求, 按最小负荷时没有补偿的情况确定变压器分接头。令 $U_{2 \mathrm{~min}}^{\prime}$ 和 $U_{2 \mathrm{~min}}$ 为最 小负荷时低压母线归算到高压侧的实际电压和要求保持的电压, 则 $U_{2 \min }^{\prime} / U_{2 \min }=U_{\mathrm{T}} / U_{2 \mathrm{~N}}$, 其 中, $U_{2 \mathrm{~N}}$ 为变压器低压绕组的额定电压, 由此可算出变压器的分接头电压应为
+
+$$
+U_{\mathrm{T}}=\frac{U_{2 \mathrm{~N}} U_{2 \min }^{\prime}}{U_{2 \min }}
+$$
+
+选定与 $U_{\mathrm{T}}$ 最近的分接头 $U_{1 \mathrm{~T}}$, 并由此确定变压器的变比
+
+$$
+k=U_{1 \mathrm{~T}} / U_{2 \mathrm{~N}}
+$$
+
+(2)按最大负荷时的调压要求计算补偿容量,即
+
+$$
+Q_{C}=\frac{U_{2 C_{\max }}}{X}\left(U_{2 C_{\text {max }}}-\frac{U_{2 \max }^{\prime}}{k}\right) k^{2}
+$$
+
+后变电所低压侧要求保持的电压。
+
+(3)根据确定的变比和选定的电容器容量, 校验实际的电压变化。
+
+【例 4.4-3】简单输电系统的接线图和等值电路分别如图 4.4-3(a) 和 (b) 所示。变压器 励磁支路和线路电容被略去。节点 1 归算到高压侧的电压为 $118 \mathrm{kV}$, 且维持不变。受端低压 母线电压要求保持为 $10.5 \mathrm{kV}$ 。试配合降压变压器 $\mathrm{T}-2$ 的分接头选择, 确定受端应装设的电 容器补偿容量。
+
+解: (1) 计算补偿前 $\mathrm{T}-2$ 变压器低压 母线归算到高压侧的电压
+
+因为首端电压已知,宜用首端功率计算 网络的电压损耗。为此, 先按额定电压计算 输电系统的功率损耗。有 于是
+
+$$
+\begin{aligned}
+\Delta S_{\max } & =\frac{20^{2}+15^{2}}{110^{2}} \times(26+\mathrm{j} 130) \\
+& =1.34+\mathrm{j} 6.71 \mathrm{MVA} \\
+\Delta S_{\min } & =\frac{10^{2}+7.5^{2}}{110^{2}} \times(26+\mathrm{j} 130) \\
+& =0.34+\mathrm{j} 1.68 \mathrm{MVA}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+& S_{1 \max }=S_{\text {max }}+\Delta S_{\max }=20+\mathrm{j} 15+1.34+\mathrm{j} 6.71=21.34+\mathrm{j} 21.71 \mathrm{MVA} \\
+& S_{1_{\min }}=S_{\min }+\Delta S_{\min }=10+\mathrm{j} 7.5+0.34+\mathrm{j} 1.68=10.34+\mathrm{j} 9.18 \mathrm{MVA}
+\end{aligned}
+$$
+
+利用首端功率和首端电压可以算出电压损耗
+
+$$
+\begin{aligned}
+& \Delta U_{\max }=\frac{21.34 \times 26+21.71 \times 130}{118}=28.62 \mathrm{kV} \\
+& \Delta U_{\min }=\frac{10.34 \times 26+9.18 \times 130}{118}=12.39 \mathrm{kV}
+\end{aligned}
+$$
+
+$\mathrm{T}-2$ 变压器低压母线归算到高压侧的电压
+
+$$
+\begin{aligned}
+& U_{2 \max }^{\prime}=118-28.62=89.38 \mathrm{kV} \\
+& U_{2 \min }^{\prime}=118-12.39=105.61 \mathrm{kV}
+\end{aligned}
+$$
+
+(2) 根据调压要求, 按最小负荷时没有补偿的情况确定变压器的分接头
+
+$$
+U_{\mathrm{T}}=\frac{U_{2 \min }^{\prime}}{U_{2 \min }} U_{2 \mathrm{~N}}=\frac{105.61}{10.5} \times 11=110.64 \mathrm{kV}
+$$
+
+选最近的分接头电压为 $110 \mathrm{kV}$, 由此可得 $\mathrm{T}-2$ 变压器的变比
+
+$$
+k=\frac{110}{11}=10
+$$
+
+(3) 计算电容器的补偿容量
+
+$$
+Q_{C}=\frac{U_{2 \max }}{X}\left(U_{2 C_{\max }}-\frac{U_{2 \max }^{\prime}}{k}\right) k^{2}=\frac{10.5}{130}\left(10.5-\frac{89.38}{10}\right) \times 10^{2}=12.62 \mathrm{Mvar}
+$$
+
+取补偿容量 $Q_{c}=12 \mathrm{Mvar}_{\text {。 }}$
+
+（4）验算最大负荷时 $\mathrm{T}-2$ 变压器低压侧的实际电压
+
+最大负荷时补偿后的输电系统功率损耗和首端功率分别为
+
+$$
+\begin{aligned}
+& \Delta S_{C_{\max }}=\frac{20^{2}+(15-12)^{2}}{110^{2}}(26+\mathrm{j} 130)=0.88+\mathrm{j} 4.4 \mathrm{MVA} \\
+& S_{1 C_{\max }}=20+\mathrm{j}(15-12)+0.88+\mathrm{j} 4.4=20.88+\mathrm{j} 7.4 \mathrm{MVA}
+\end{aligned}
+$$
+
+补偿后 $\mathrm{T}-2$ 变压器低压母线归算到高压侧的电压
+
+$$
+U_{2 C_{\max }}^{\prime}=118-\frac{20.88 \times 26+7.4 \times 130}{118}=105.25 \mathrm{kV}
+$$
+
+故最大和最小负荷时 $\mathrm{T}-2$ 变压器低压母线的实际电压
+
+$$
+\begin{aligned}
+& U_{2 C_{\max }}=U_{2 C_{\max }}^{\prime} / k=\frac{105.25}{10}=10.525 \mathrm{kV} \\
+& U_{2 \min }=U_{2 \min }^{\prime} / k=\frac{105.61}{10}=10.561 \mathrm{kV}
+\end{aligned}
+$$
+
+计算结果表明,所选电容器容量能满足调压要求。
+
+## 2. 线路串联电容补偿调压的原理
+
+在线路上串连接人静电电容器, 利用电容器的容抗补偿线路的感抗, 使电压损耗中 $Q X / U$ 分量减小, 从而可提高线路末端电压。对图 4.4-4 所示的架空输电线路, 未加串联电容补偿前 有
+
+$$
+\Delta U=\frac{P_{1} R+Q_{1} X}{U_{1}}
+$$
+
+线路串联容抗 $X_{C}$ 后变为
+
+$$
+\Delta U_{C}=\frac{P_{1} R+Q_{1}\left(X-X_{C}\right)}{U_{1}}
+$$
+
+上述两种情况电压损耗之差就是线路末端电压提高的数值, 它与电容器容抗的关系为
+
+$$
+\Delta U-\Delta U_{c}=Q_{1} X_{C} / U_{1}
+$$
+
+根据线路末端电压需要提高的数值 $\left(\Delta U-\Delta U_{C}\right)$, 可求得需要补偿的容抗值
+
+$$
+X_{C}=\frac{U_{1}\left(\Delta \mathrm{U}-\Delta U_{C}\right)}{Q_{1}}
+$$
+
+线路上串连接人的电容器是由许多单个电容器串、并联组成的 (见图 4.4-5)。如果每台 电容器的额定电流为 $I_{\mathrm{NC}}$, 额定电压为 $U_{\mathrm{NC}}$, 电抗为 $X_{\mathrm{NC}}$, 额定容量为 $Q_{\mathrm{N} C}=U_{\mathrm{NC}} I_{\mathrm{NC}}$, 则可根据通 过的最大负荷电流 $I_{C \text { max }}$ 和所需的容抗值 $X_{c}$ 计算得到电容器串、并联数 $n$ 和 $m$ 及电容器总容 量 $Q_{c}$, 并检验是否满足调压要求。
+
+$$
+\begin{aligned}
+& m I_{N C} \geqslant I_{C_{\max }} \\
+& n U_{N C} \geqslant I_{C_{\max }} X_{C}
+\end{aligned}
+$$
+
+在得到电容器组的串、并联数 $n$ 和 $m$ 后, 即可求得电容器组的电抗 $X_{C}^{\prime}=n X_{N C} / m$, 它应与所 需的容抗 $X_{c}$ 相近。如果偏差过大, 调压效果就差, 甚至达不到调压要求。此时应调整 $n$ 和 $m$, 使偏差不致过大。确定 $n$ 和 $m$ 后即可获得所需的电容器总容量
+
+$$
+Q_{C}=3 m n Q_{\mathrm{NC}}=3 m n U_{\mathrm{N} C} I_{\mathrm{NC}}
+$$
+
+串联电容器提升的末端电压的数值 $Q X_{C} / U$ (即调压效果) 随无功负荷大小而变, 负荷大时 增大, 负荷小时减小,恰与调压的要求一致, 这是串联电容器调压的一个显著优点。但对负荷 功率因数高 $(\cos \varphi>0.95)$ 或导线截面小的线路, 由于分量 $P R / U$ 的比重大, 串联补偿的调压 效果就小。故串联电容调压一般用在供电电压为 $35 \mathrm{kV}$ 或 $10 \mathrm{kV}$, 负荷波动大而频繁, 功率因 数又低的配电线路上。
+
+补偿所需的容抗值 $X_{C}$ 与被补偿线路原来的感抗值 $X_{L}$ 之比 $k_{C}=X_{C} / X_{L}$ 称为补偿度。在配 电网络中, 以调压为目的的串联电容补偿, 其补偿度常接近或大于 1 。
+
+### 4 改变变压器变比调压
+
+改变变压器的变比在原边电压不变的情况下可以升高或降低副边电压。为了实现调压, 双绕组变压器的高压绕组设有若干个分接头可供选择, 其中对应额定电压 $U_{\mathrm{N}}$ 的称为主接头。 变压器的低压绕组不设分接头。对于三绕组变压器,一般是在高压绕组和中压绕组设置分接 头。改变变压器的变比调压实际上就是根据调压要求选择适当分接头。
+
+## 1. 普通双绕组变压器分接头的选择
+
+(1)降压变压器分接头的选择
+
+$$
+\left.\begin{array}{l}
+\Delta U_{\mathrm{T}}=\left(P R_{\mathrm{T}}+Q X_{\mathrm{T}}\right) / U_{1} \\
+U_{2}=\left(U_{1}-\Delta U_{\mathrm{T}}\right) / k
+\end{array}\right\}
+$$
+
+式中, $k=U_{1 \mathrm{~T}} / U_{2 \mathrm{~N}}$ 是变压器的变比, 即高压绕组分接头电压 $U_{\mathrm{IT}}$ 和低
+
+将 $k$ 代人式(4.4-18), 得高压侧分接头电压
+
+$$
+U_{1 \mathrm{~T}}=\frac{U_{1}-\Delta U_{\mathrm{T}}}{U_{2}} U_{2 \mathrm{~N}}
+$$
+
+由式(4.4-19) 可求出满足低压侧电压要求应选择的高压侧分接头电压。
+
+普通变压器的分接头只能在停电情况下改变, 正常运行中无论负荷怎样变化只能使用一 个固定的分接头。为满足不同负荷时的电压要求可根据最大负荷和最小负荷时所要求的电压 $U_{2 \max }$ 和 $U_{2 \min }$ 分别求得应选择的分接头电压, 取其算术平均值, 即
+
+$$
+\begin{aligned}
+& U_{1 \mathrm{~T}_{\max }}=\frac{U_{1 \max }-\Delta U_{T_{\max }}}{U_{2 \max }} U_{2 \mathrm{~N}} \\
+& U_{1 T_{\min }}=\frac{U_{1 \min }-\Delta U_{T_{\min }}}{U_{2 \min }} U_{2 \mathrm{~N}} \\
+& \left.U_{\mathrm{iT}, \mathrm{av}}=\left(U_{1 \mathrm{~T}_{\max }}+U_{\mathrm{iT} \min }\right) / 2\right)
+\end{aligned}
+$$
+
+根据 $U_{1 \mathrm{~T}, \mathrm{av}}$ 的值选择与它最接近的分接头。然后根据所选取的分接头校验最大负荷和最小负 荷时低压母线的实际电压是否符合要求。
+
+【例 4.4-4】降压变压器等值电路如图 4.4-7 所示。归算至高压侧的阻抗为 $R_{\mathrm{T}}+\mathrm{j} X_{\mathrm{T}}=$ $2.44+\mathrm{j} 40 \Omega$ 。已知最大和最小负荷时通过变压器的功率分别为 $S_{\text {max }}=28+\mathrm{j} 14 \mathrm{MVA}$ 和 $S_{\text {min }}=$ $10+\mathrm{j} 6 \mathrm{MVA}$, 高压侧的电压分别为 $U_{1 \text { max }}=110 \mathrm{kV}$ 和 $U_{1 \text { min }}=113 \mathrm{kV}$ 。要求低压母线的电压变化 不超出 $10 \sim 11 \mathrm{kV}$, 试选择分接头。
+
+解: 先计算最大负荷和最小负荷时变压器的电压损耗
+
+$$
+\begin{aligned}
+& \Delta U_{T_{\max }}=\frac{28 \times 2.44+14 \times 40}{110}=5.7 \mathrm{kV} \\
+& \Delta U_{T_{\min }}=\frac{10 \times 2.44+6 \times 40}{113}=2.34 \mathrm{kV}
+\end{aligned}
+$$
+
+假定在最大和最小负荷时变压器低压侧的电压分别取为 $U_{2 \max }=10 \mathrm{kV}$ 和 $U_{2 \min }=11 \mathrm{kV}$, 则
+
+$$
+\begin{aligned}
+& U_{1 T_{\max }}=(110-5.7) \times \frac{11}{10}=114.7 \mathrm{kV} \\
+& U_{1 r_{\min }}=(113-2.34) \times \frac{11}{11}=110.7 \mathrm{kV}
+\end{aligned}
+$$
+
+取算术平均值
+
+$$
+U_{1 \mathrm{~T}, \mathrm{av}}=\frac{(114.7+110.7)}{2}=112.7 \mathrm{kV}
+$$
+
+选最接近的分接头 $U_{1 \mathrm{~T}}=112.75 \mathrm{kV}$ 。按所选分接头校验低压母线的实际电压, 即
+
+$$
+\begin{aligned}
+& U_{2_{\max }}=(110-5.7) \times \frac{11}{112.75}=10.18 \mathrm{kV}>10 \mathrm{kV} \\
+& U_{2 \min }=(113-2.34) \times \frac{11}{112.75}=10.8 \mathrm{kV}<11 \mathrm{kV}
+\end{aligned}
+$$
+
+可见所选分接头满足调压要求。
+
+## (2) 升压变压器分接头的选择
+
+选择升压变压器分接头的方法与选择降压变压器的基本 相同,差别仅在于由高压侧电压推算低压侧电压时,因功率是 从低压侧送往高压侧的 (如图 4.4-8 所示), 故应将电压损耗和 高压侧电压相加。因而有
+
+$$
+U_{1 \mathrm{~T}}=\frac{U_{1}+\Delta U_{\mathrm{T}}}{U_{2}} U_{2 \mathrm{~N}}
+$$
+
+式中, $U_{2}$ 为变压器低压侧的实际电压或给定电压; $U_{1}$ 为高压侧要求的电压。
+
+【例 4.4-5】升压变压器等值电路如图 4.4-9 所示。归算至高压侧的阻抗为 $R_{\mathrm{T}}+\mathrm{j} X_{\mathrm{T}}=3$ $+\mathrm{j} 48 \Omega$ 。已知在最大和最小负荷时通过变压器的功率分别为 $S_{\text {max }}=25+\mathrm{j} 18 \mathrm{MVA}$ 和 $S_{\text {min }}=14$ $+\mathrm{j} 10 \mathrm{MVA}$, 高压侧要求的电压分别为 $U_{1 \text { max }}=120 \mathrm{kV}$ 和 $U_{1 \text { min }}=114 \mathrm{kV}$ 。发电机电压的可调整 范围是 $6.0 \sim 6.6 \mathrm{kV}$, 试选择分接头。
+
+解: 先计算最大负荷和最小负荷时变压器的电压损耗
+
+$$
+\begin{aligned}
+& \Delta U_{T_{\max }}=\frac{25 \times 3+18 \times 48}{120}=7.825 \mathrm{kV} \\
+& \Delta U_{\mathrm{T}_{\min }}=\frac{14 \times 3+10 \times 48}{114}=4.579 \mathrm{kV}
+\end{aligned}
+$$
+
+根据所给的发电机电压的可调整范围, 可算出
+
+$$
+\begin{aligned}
+& U_{\mathrm{I} T \max }=\frac{(120+7.825) \times 6.3}{(6.0 \sim 6.6)}=134.216 \sim 122.015 \mathrm{kV} \\
+& U_{\mathrm{IT}_{\min }}=\frac{(114+4.579) \times 6.3}{(6.0 \sim 6.6)}=124.508 \sim 113.189 \mathrm{kV}
+\end{aligned}
+$$
+
+取 $U_{1 T_{\max }}$ 的下限与 $U_{1 r_{\min }}$ 的上限的算术平均值, 得
+
+$$
+U_{1 \mathrm{~T}, \mathrm{av}}=\frac{(122.015 .+124.508)}{2}=123.262 \mathrm{kV}
+$$
+
+选最接近的分接头 $U_{1 \mathrm{r}}=124.025 \mathrm{kV}$ 。验算对发电机端电压的实际要求。即
+
+$$
+\begin{aligned}
+& U_{2 \max }=(120+7.825) \times \frac{6.3}{124.025}=6.493 \mathrm{kV} \\
+& U_{2 \min }=(114+4.579) \times \frac{6.3}{124.025}=6.023 \mathrm{kV}
+\end{aligned}
+$$
+
+可见所选分接头能满足调压要求。
+
+## 2. 有载调压变压器
+
+在最大和最小负荷时, 若电压的变化幅度 (例如 $12 \%$ ) 超过了分接头的调整范围 (例如 \pm $5 \%)$, 或者调压要求的变化趋势与实际的相反,则利用普通变压器调压就无法满足调压要求。 这时可采用有载调压变压器调压。
+
+与普通变压器相比, 有载调压变压器的优点是可以在带负荷的条件下切换分接头, 调压范 围较宽,一般在 $15 \%$ 以上。我国 $110 \mathrm{kV}$ 电压等级的有载调压变压器有 $U_{\mathrm{N}} \pm 8 \times 1.25 \%$ 共 17 个分接头; $220 \mathrm{kV}$ 电压等级的有 $U_{\mathrm{N}} \pm 4 \times 2.5 \%$ 共 9 个分接头。
+
+采用有载调压变压器时, 由于其分接头可带负荷改变, 因而只需校验调压所需的分接头是 否在其范围内即可, 也就是检查最大和最小负荷时所需的分接头 $U_{1 \mathrm{IT}_{\text {max }}}$ (这应是所需分接头的 下限值) 和 $U_{1 \text { T min }}$ (这应是所需分接头的上限值) 是否在其范围内。
+
+【例 4. 4-6】某降压有载调压变压器的电压为 $110 \pm 8 \times 1.25 \% / 11 \mathrm{kV}$, 按最大和最小负
+
+最大和最小负荷时要求的电压分别为 $10.5 \mathrm{kV}$ 和 $10 \mathrm{kV}$, 试选择其分接头。
+
+解:依据题意可以算出
+
+$$
+\begin{aligned}
+& U_{1 \text { max }}=\frac{107}{10.5} \times 11=112.095 \mathrm{kV} \\
+& U_{1 \text { Tmin }}=\frac{108}{10} \times 11=118.8 \mathrm{kV}
+\end{aligned}
+$$
+
+最大负荷时选最接近 $U_{1 \mathrm{Tmax}}$ 的分接头为 $112.75 \mathrm{kV}$, 最小负荷时选最接近 $U_{1 \mathrm{~m} \text { min }}$ 的分接头为 $118.25 \mathrm{kV}$, 它们都在此变压器的分接头范围内。按所选分接头计算低压母线的实际电压
+
+$$
+\begin{aligned}
+& U_{2 \max }=\frac{107}{118.75} \times 11=10.44 \mathrm{kV} \\
+& U_{2 \min }=\frac{108}{118.25} \times 11=10.05 \mathrm{kV}
+\end{aligned}
+$$
+
+可见,所选有载调压变压器的分接头能满足调压要求。
+
+应当指出的是, 在无功充裕和无功能平衡的电力系统中, 改变变压器变比调压有良好的效 果, 应优先采用。但在无功不足的电力系统中, 不宜采用改变变压器变比调压。因为改变变压 器的变比并没有增加系统的无功功率, 这就有可能在采用变压器变比改善某个地区电压水平 的同时恶化其他地区无功功率不足, 导致电压水平进一步下降。因此, 在无功不足的电力系统 中,首先应当装设无功功率补偿装置来补偿无功功率的部额。
+
+## 5 短路电流计算
+
+### 1 实用短路电流计算的近似条件
+
+三相系统中短路的类型有三相短路、两相短路、两相短路接地及单相短路接地。三相短路 时系统各相仍处在对称状态, 故称为对称短路; 其他类型的短路皆为不对称短路。在各种短路 类型中, 单相短路占大多数, 两相短路较少, 三相短路的发生概率最小, 但情况较严重。各种短 路的示意图及其表示符号示于表 4.5-1 中。
+
+表 4.5-1 各种短路的示意图及其表示符号
+
+|  | 示意图 | 短路代表符号 |
+| :---: | :---: | :---: |
+|  | 三相短路 | 5 |
+
+短路故障的后果主要有以下几个方面。
+
+(1)短路时短路点附近的支路中将出现比正常值大许多倍的电流, 由于电动力效应, 导体间 将产生很大的机械应力, 可能破坏导体及其支架使事故进一步扩大。
+
+(2)短路电流使设备发热增加, 当短路持续时间较长时,可能因过热而损坏设备。
+
+(3)短路时系统电压大幅下降, 使负荷中的主要成分异步电动机转速下降, 并可能停转, 造 成产品报废甚至设备损坏等严重后果。
+
+(4)当短路点离电源很近而持续时间较长时, 并列运行的发电厂可能失去同步而破坏系统 稳定, 造成大面积停电。这是短路故障的最严重后果。
+
+(5)不对称短路时的不平衡电流在邻近的电路内将感应出很大的电动势, 对高压电力线路 附近的通信线路或铁道讯号系统等产生严重影响。
+
+短路计算的目的主要如下。
+
+(1) 以短路计算为依据, 选择有足够机械稳定度和热稳定度的电气设备, 例如断路器、互感 唯、瓷瓶、母线、电缆等。
+
+(2) 对电力网中发生的各种短路进行计算和分析, 合理地配置各种继电保护和自动装置并 正确整定其参数。
+
+(3) 设计和选择发电厂和电力系统主接线。为了比较各种不同方案的接线图, 确定是否需 要采取限制短路电流的措施等,需要进行必要的短路电流计算。
+
+(4) 进行电力系统暂态稳定计算, 研究短路对用户工作的影响等。
+
+在短路电流的实际计算中,为了简化计算,常采用以下一些简化假设。
+
+(1) 电力系统中各电势相角差为零, 即短路时系统中各电源仍保持同步。不考虑由于发生 短路、系统功率分布变化、各发电机转速发生变化而引起发电机的摇摆甚至失步等现象。实际 上, 短路时的电磁变化过程极快, 时间很短。大部分电力网络中, 在出现发电机转速变化等机 械暂态过程时, 电磁暂态过程已完全衰减掉了。
+
+(2) 在电力系统发生短路时, 不计发电机、变压器等元件的磁路饱和, 因此可以应用求解线 性电路的方法 (如叠加原理) 进行网络简化或电量的计算。
+
+(3) 负荷只作近似估计。电力系统负载中, 异步电动机占很大比重, 一般当做恒定电抗; 当 发生负荷反馈现象时, 则看做临时附加电源, 一般只对 $1000 \mathrm{~kW}$ 以上的电动机, 且当短路发生 在电动机端点附近时才考虑负荷反馈的影响。
+
+(4) 忽略高压输电线的电阻和电容, 忽略变压器的电阻和励磁电流 (三相三柱式变压器的 零序等值电路除外), 即发电、输电、变电和用电的元件均用纯电抗表示, 可以避免复数运算。 但当 $R_{\Sigma}>\frac{1}{3} X_{\Sigma}$ 时, 不能忽略。
+
+(5) 所有短路为金属性短路。短路处相与相 (或地)之间的接触往往经过一定的电阻, 通常 称为过渡电阻。金属性短路即不计过渡电阻的影响 (过渡电阻为零)。显然, 欲求出最大可能 的短路电流值, 应以最坏的情况考虑, 即假定在故障点没有任何电阻。以后所讨论的只限于金 属性的短路。
+
+(6)二相系统对称, 除了不对称故障处出现局部的不对称外, 实际的电力系统通常都当做三 相对称的。
+
+经过以上假设,计算所得的短路电流数值稍有偏差, 但能满足工程计算要求。
+
+### 2 简单系统三相短路电流的实用计算方法
+
+## 1. 恒定电势源电路的三相短路分析
+
+如图 4.5-1 所示的三相 $R-L$ 电路发生三相对称短路。假设电路由幅值和频率恒定的三 相对称电势源供电, 且短路前处于稳态。因电路对称, 故只写出一相的电势和电流如下:
+
+$\left\{\begin{array}{l}e=E_{\mathrm{m}} \sin (\omega t+\alpha) \\ i=I_{\mathrm{m}} \sin \left(\omega t+\alpha-\varphi^{\prime}\right)\end{array}\right.$
+
+式中 $I_{\mathrm{m}}=\frac{E_{m}}{\sqrt{\left(R+R^{\prime}\right)^{2}+\omega^{2}\left(L+L^{\prime}\right)^{2}}}$;
+
+$\varphi^{\prime}=\arctan \frac{\omega\left(L+L^{\prime}\right)}{R+R^{\prime}} 。$
+
+短路后电路被分成两个独立的部分, 右 边的电路为无源的短接电路。电流将从短
+
+设短路在 $t=0$ 时刻发生, 短路后左侧电路仍然是对称的, 其一相的微分方程式为
+
+$$
+R i+L \frac{\mathrm{d} i}{\mathrm{~d} t}=E_{\mathrm{m}} \sin (\omega t+\alpha)
+$$
+
+此方程的解为短路的全电流
+
+$$
+i=i_{\mathrm{p}}+i_{\mathrm{ap}}=I_{\mathrm{pm}} \sin (\omega t+\alpha-\varphi)+C \mathrm{e}^{\left(-t / \tau_{\mathrm{a}}\right)}
+$$
+
+其中: 第一部分是微分方程的特解, 称为短路电流的周期分量 (强制分量), 短路计算主要 计算这一部分, $i_{\mathrm{p}}=I_{\mathrm{pm}} \sin (\omega t+\alpha-\varphi)$, 其中 $I_{\mathrm{pm}}=\frac{E_{\mathrm{m}}}{\sqrt{R^{2}+(\omega L)^{2}}}$ 是短路电流周期分量的幅值, $\varphi$ $=\arctan \left(\frac{\omega L}{R}\right)$ 是电路的阻抗角, $\alpha$ 是电源电势的初始角;
+
+第二部分是微分方程的齐次方程的通解, 称为短路电流的非周期电流 (自由分量), $i_{\mathrm{ap}}=$ $C \mathrm{e}^{p t}=C \mathrm{e}^{-L / T_{\mathrm{a}}}$, 其中 $p=-R / L, T_{\mathrm{a}}=-1 / p=L / R$ 是时间常数, $C$ 是积分常数, 即非周期电流的 起始值 $i_{\text {ap0 }}$ 。 根据电路开闭定律, 电感中的电流不能突变, 短路前瞬间的电流 $i_{[0]}$ 应该等于短路发生后 瞬间的电流 $i_{0}$ 。即 $I_{\mathrm{m}} \sin \left(\alpha-\varphi^{\prime}\right)=I_{\mathrm{pm}} \sin (\alpha-\varphi)+C$, 由此求得
+
+则短路全电流为
+
+$$
+C=i_{\mathrm{ap} 0}=I_{\mathrm{m}} \sin \left(\alpha-\varphi^{\prime}\right)-I_{\mathrm{pm}} \sin (\alpha-\varphi)
+$$
+
+$$
+i=I_{\mathrm{pm}} \sin (\omega t+\alpha-\varphi)+\left[I_{\mathrm{m}} \sin \left(\alpha-\varphi^{\prime}\right)-I_{\mathrm{pm}} \sin (\alpha-\varphi)\right] \mathrm{e}^{-\nu / T_{\mathrm{s}}}
+$$
+
+用 $\alpha-120^{\circ}$ 或 $\alpha+120^{\circ}$ 代替 $\alpha$, 可以得到 $\mathrm{b}$ 相和 $\mathrm{c}$ 相的短路电流算式。
+
+## 2. 简单系统三相短路电流的实用计算方法
+
+## 1)三相短路电流计算的原理和方法
+
+## (1) 叠加原理
+
+根据短路计算的基本假设,系统各元件参数恒定,故在计算过程中可应用叠加原理。设短 路点为 $f$, 并看成零电势电源点, 根据叠加原理: 网络中每一处的电流应等于各个电势源分别单 独作用时所产生的电流的代数和。假定短路电流以流出为正, 对于故障点, 短路电流
+
+$$
+i_{f}=\sum_{\substack{j=1 \\ j \neq f}}^{n} \frac{E_{j}}{Z_{i j}}
+$$
+
+短路点输入阻抗
+
+$$
+Z_{f f}=1 / \sum_{\substack{j=1 \\ j \neq j}}^{n} \frac{1}{Z_{j f}}
+$$
+
+$Z_{j j}$ 为 $j f$ 之间的转移阻抗。
+
+(2) 网络的等值变换
+
+等值变换化简网络是简单电力系统短路计算的一个最基本的方法。等值变换的要求是网 络末被变换部分的状态 (电压和电流分布) 应保持不变。除了阻抗支路的串联和并联外,还包 括无源网络的星网变换和基于戴维南定理的有源网等值变换。
+
+(1)星网变换。如图 4.5-2 所示, 利用星网变换消去星形网络中的节点 1 , 变为以节点 2,3, $\cdots, n$ 为顶点的网形电路。等值条件为保持变换前后保留节点 $(2,3, \cdots, n)$ 的电压不变, 从网络 外部流向这些节点的电流也保持不变。根据基尔霍夫定律及等值条件可求出变换后网络中节 点 $i j$ 间支路的导纳计算公式: $y_{i j}^{\prime}=y_{i 1} y_{j 1} / Y_{\Sigma}, Y_{\Sigma}=\sum_{k=2}^{n} y_{k 1}$ ．若用阻抗表示则有: $z_{i j}^{\prime}=1 / y_{i j}^{\prime}=$ $z_{i 1} z_{i 1} \sum_{i}^{n} \frac{1}{z_{k 1}}$, 式中, $z_{k 1}=1 / y_{k 1}$ 。
+
+(2)有源网络的等值变换。由戴维南定理, 与外部电路相连的有源网可以用一个具有电势 $E_{\mathrm{eq}}$ 和阻抗 $Z_{\mathrm{eq}}$ 的等值有源支路来代替 (图 4.5-3)。等值电源的电势 $E_{\mathrm{eq}}$ 等于外部电路断开 (即 $\dot{I}=0$ 时的开路电压 $U_{(0)}$), 等值阻抗 $Z_{\text {eq }}$ 等于所有电源电势都为零时从外部看进去的阻抗。
+
+对于由 $m$ 个并联的有源支路构成的有源网 (图 4.5-4), 其等值参数为
+
+$$
+\left\{\begin{array}{l}
+Z_{\text {eq }}=-\frac{U}{I}=\frac{1}{\sum_{i=1}^{m} 1 / Z_{i}} \\
+E_{\text {eq }}=U_{(0)}=Z_{\text {eq }} \sum_{i=1}^{m} E_{i} / Z_{i}
+\end{array}\right.
+$$
+
+【例 4.5-1】图 4.5-5( $\mathrm{a})$ 所示网络中, $\mathrm{a}, \mathrm{b}$ 和 $\mathrm{c}$ 为电源点, $\mathrm{f}$ 为短路点。试通过网络变换求 得短路点的输入阻抗。
+
+解:网络变换计算输入阻抗
+
+(1) 星网变换。把 $Z_{2} 、 Z_{4}$ 和 $Z_{5}$ 组成的星形电路化为三角形电路, 得
+
+$$
+Z_{8}=Z_{2}+Z_{4}+Z_{2} Z_{4} / Z_{5}, Z_{9}=Z_{2}+Z_{5}+Z_{2} Z_{5} / Z_{4}, Z_{10}=Z_{4}+Z_{5}+Z_{4} Z_{5} / Z_{2}
+$$
+
+(2) 将 $Z_{8}$ 和 $Z_{9}$ 支路在节点 $\mathrm{b}$ 分开, 分开后每个支路电势都为 $E_{2}$, 然后 $Z_{8}$ 和 $Z_{1}$ 合并, $Z_{9}$ 和 $Z_{3}$ 合并得
+
+$$
+\begin{aligned}
+& Z_{11}=\frac{Z_{1} Z_{8}}{Z_{1}+Z_{8}}, E_{4}=\frac{E_{1} Z_{8}+E_{2} Z_{1}}{Z_{1}+Z_{8}} \\
+& Z_{12}=\frac{Z_{3} Z_{9}}{Z_{3}+Z_{9}}, E_{5}=\frac{E_{2} Z_{3}+E_{3} Z_{9}}{Z_{3}+Z_{9}}
+\end{aligned}
+$$
+
+(3) 化 $Z_{6} 、 Z_{7}$ 和 $Z_{10}$ 组成的三角形电路为星形电路, 得
+
+$$
+Z_{13}=\frac{Z_{7} Z_{10}}{Z_{6}+Z_{7}+Z_{10}}, Z_{14}=\frac{Z_{6} Z_{10}}{Z_{6}+Z_{7}+Z_{10}}, Z_{15}=\frac{Z_{6} Z_{7}}{Z_{6}+Z_{7}+Z_{10}}
+$$
+
+(4) 合并阻抗为 $Z_{11}+Z_{13}$ 、电势为 $E_{4}$ 和阻抗为 $Z_{12}+Z_{14}$ 、电势为 $E_{5}$ 的支路
+
+$$
+E_{\Sigma}=\frac{E_{4}\left(Z_{12}+Z_{14}\right)+E_{5}\left(Z_{11}+Z_{13}\right)}{Z_{11}+Z_{12}+Z_{13}+Z_{14}}, Z_{16}=\frac{\left(Z_{12}+Z_{14}\right)\left(Z_{11}+Z_{13}\right)}{Z_{11}+Z_{12}+Z_{13}+Z_{14}}
+$$
+
+最后得短路点输入阻抗
+
+短路电流
+
+$$
+Z_{f f}=Z_{15}+Z_{16}
+$$
+
+$$
+i_{f}=E_{\Sigma} / Z_{f f}
+$$
+
+(3) 电流分布系数
+
+(1)电流分布系数的概念,包括电源点电流分布系数和支路电流分布系数。
+
+电源点电流分布系数: 在发生短路的网络中, 第 $i$ 个电源送到短路点的电流 $I_{i}$ 与短路电流
+
+$i_{f}$ 之比称为第 $i$ 个电源的电流分布系数, 记为 $c_{i}$ 设所有电源电势相等, 则 $c_{i}=\frac{i_{i}}{I_{f}}=\frac{E / Z_{i f}}{E / Z_{f}}=$ $\frac{Z_{\text {ff }}}{Z_{i j}}$, 即等于短路点的输入阻抗与该电源对短路点的转移阻抗之比。所有电源点的电流分布系 数之和等于 1 , 即
+
+$$
+\sum_{\substack{i=1 \\ i \neq f}}^{n} c_{i}=\sum_{\substack{i=1 \\ i \neq f}}^{n} \frac{i_{i}}{I_{f}}=\sum_{i=1}^{n} \frac{Z_{f f}}{Z_{i f}}=1
+$$
+
+支路电流分布系数:网络中的支路也有电流分布系数, 等于各个支路电流除以短路电流。 分布系数实际上代表电流, 并且符合节点电流定律 (图 4.5-6)。短路点电流分布系数等于 1 。
+
+(2)电流分布系数的确定。在比较简单的网络中通常使用单位电流法, 在图 4.5-7 中, 令 $I_{1}$ $=1$, 依次可得
+
+$U_{\mathrm{a}}=Z_{1} \dot{I}_{1}=Z_{1}, \dot{I}_{2}=\dot{U}_{\mathrm{a}} / Z_{2}, \dot{I}_{4}=\dot{I}_{1}+\dot{I}_{2}$
+
+$U_{\mathrm{b}}=U_{\mathrm{a}}+Z_{4} i_{4}, i_{3}=U_{\mathrm{b}} / Z_{3}, i_{f}=\dot{I}_{4}+\dot{I}_{3} \quad E=U_{\mathrm{b}}+Z_{5} i_{f}$
+
+由此可以计算出
+
+$$
+Z_{f}=E / i_{f}, c_{1}=i_{1} / i_{f}, c_{2}=i_{2} / i_{f}, c_{3}=i_{3} / i_{f}
+$$
+
+$$
+r_{1}+c_{2}=c_{1}, Z_{1}=Z_{g} / c_{1}, Z_{2 f}=Z_{g /} / c_{2}, Z_{3 f}=Z_{\not g} / c_{3}
+$$
+
+【例 4.5-2】例 4.5-1 所示网络及其参数, 求各电源点电流分布系数及其对短路点的转移 阻抗。
+
+解:按照同网络变换相反的顺序求取电流分布系数。
+
+(1) 短路点的电流分布系数: $c_{f}=1$
+
+$Z_{16}$ 中的电流将按照与阻抗成反比的原则分配到原来的两条支路中, 于是得
+
+$$
+c_{4}=\frac{Z_{16}}{Z_{12}+Z_{14}} c_{f}, c_{5}=\frac{Z_{16}}{Z_{11}+Z_{13}} c_{f} \quad\left(c_{4}+c_{5}=c_{f}\right)
+$$
+
+(2) 同理, $c_{4}$ 和 $c_{5}$ 也按同样原则分配到原来的两条支路,于是可得
+
+$$
+\begin{aligned}
+& c_{1}=\frac{Z_{11}}{Z_{8}} c_{4}, c_{8}=\frac{Z_{11}}{Z_{1}} c_{4} \quad\left(c_{1}+c_{8}=c_{4}\right) \\
+& c_{3}=\frac{Z_{12}}{Z_{9}} c_{5}, c_{9}=\frac{Z_{12}}{Z_{3}} c_{5} \quad\left(c_{3}+c_{9}=c_{5}\right)
+\end{aligned}
+$$
+
+电源点 $b$ 的电流分布系数
+
+$$
+c_{2}=c_{8}+c_{9}
+$$
+
+(3) 各电源点对短路点转移阻抗
+
+故短路电流
+
+$$
+Z_{\text {af }}=Z_{f f} / c_{1}, Z_{\mathrm{bf}}=Z_{f f} / c_{2}, Z_{\mathrm{cf}}=Z_{f f} / c_{3}
+$$
+
+$$
+I_{f}=\frac{E_{1}}{Z_{\text {a } f}}+\frac{E_{2}}{Z_{\text {b }}}+\frac{E_{3}}{Z_{\text {cf }}}
+$$
+
+1) 短路电流周期分量的实用计算
+
+电力系统三相短路计算主要是短路电流周期分量的计算, 在给定电源电势时, 短路电流周 期分量的计算只是一个求解稳态正弦交流电路的问题。短路电流周期分量 (基频分量) 的初 值就是起始次暂态电流, 将所有元件用其次暂态参数代表, 可同计算稳态电流一样计算次暂态 电流。静止元件的次暂态参数与其稳态参数相同;旋转电机的次暂态参数则不同。
+
+(1) 同步机 (包括同步电动机和调相机)
+
+突然短路瞬间,其次暂态电势不突变。其次暂态电势计算公式为
+
+$$
+E_{0}^{\prime \prime} \approx U_{[0]}+X^{\prime \prime} I_{[0]} \sin \varphi_{[0]}
+$$
+
+$U_{[0]} 、 I_{[0] 、} 、 \varphi_{[0]}$ 分别为同步发电机短路前瞬间的端电压、电流和功率因数角。实用计算中, 汽轮发电机和有阻尼凸极发电机的次暂态电抗可以取为 $X^{\prime \prime}=X_{d}^{\prime \prime}$ 。
+
+【例 4.5-3】 发电机短路前额定满载运行, $U_{[0]}=1, I_{[0]}=1, \sin \varphi_{[0]}=0.53, X^{\prime \prime}=0.13 \sim$ 0.20 , 求 $E_{0}^{\prime \prime}$ 。
+
+$$
+\text { 解: } E_{0}^{n}=U_{[0]}+X^{n} I_{[0]} \sin \varphi_{[0]}=1+(0.13 \sim 0.20) \times 1 \times 0.53=1.07 \sim 1.11
+$$
+
+不能确定发电机短路前运行参数时, 可近似取 $E_{0}^{\prime \prime}=1.05 \sim 1.11$, 不计负载时可取 $E_{0}^{\prime \prime}=1$ 。
+
+(2) 异步电动机
+
+根据短路瞬间转子绕组磁链守恒原则, 异步电动机可以用与转子绕组的总磁链成正比的 次暂态电势以及相应的次暂态电抗来代表。异步电动机次暂态电抗的标幺值 $X^{\prime \prime}=1 / I_{\mathrm{st}}, I_{\mathrm{st}}$ 是 异步电动机启动电流的标幺值 (以额定电流为基准),一般为 $4 \sim 7$, 因此近似地可取 $X^{n}=0.2$ 。
+
+其次暂态电势的近似计算公式为
+
+$$
+E_{0}^{\prime \prime} \approx U_{[0]}-X^{\prime \prime} I_{[0]} \sin \varphi_{[0]}
+$$
+
+$U_{[0]} 、 I_{[0]}$ 和 $\varphi_{[0]}$ 分别为短路前异步电动机的端电压、电流和功率因数角。可见异步电动机的 次暂态电势 $E_{0}^{\prime \prime}$ 要低于正常情况的端电压。短路后, 只有电动机端的残余电压小于 $E_{0}^{\prime \prime}$ 时, 电动 机才会暂时地作为电源向系统供给一部分短路电流。
+
+## (3) 综合负荷
+
+在实用计算中, 只对故障点附近能显著地供给短路电流的大型电动机计算次暂态电抗和 次暂态电势。其他电动机看做系统中负荷节点综合负荷的一部分。短路瞬间综合负荷近似地 用一个含次暂态电势和次暂态电抗的等值支路来表示。以额定运行参数为基准,综合负荷的 电势和电抗的标幺值约为 $E^{\prime \prime}=0.8$ 和 $X^{\prime \prime}=0.35$ 。
+
+## 3 ) 短路电流周期分量的计算步骤
+
+短路电流周期分量是幅值不变的正弦波,其计算步骤如下。
+
+(1)选取功率基值 $S_{\mathrm{B}}$, 电压基值 $U_{\mathrm{B}}=U_{\mathrm{av}}$ ( $U_{\mathrm{av}}$ 为电网平均额定电压) ; 计算各元件阻抗标么 值, 绘出等值电路图。
+
+发电机、调相机: $X=X_{d}^{\prime \prime} \frac{S_{\mathrm{B}}}{S_{\mathrm{G}}}, S_{\mathrm{G}}$ 为发电机额定容量。
+
+变压器: $X=\frac{U_{\mathrm{s}} \% S_{\mathrm{B}}}{100 S_{\mathrm{N}}}, U_{\mathrm{s}} \%$ 为变压器短路电压百分数; $S_{\mathrm{N}}$ 为变压器额定容量。
+
+电抗器: $X=\frac{X_{\mathrm{k}} \%}{100} \frac{I_{\mathrm{B}} U_{\mathrm{N}}}{\sqrt{3} I_{\mathrm{N}} U_{\mathrm{B}}}, X_{\mathrm{k}} \%$ 为电抗器电抗百分数; $U_{\mathrm{N}}, I_{\mathrm{N}}$ 为电抗器额定电压、电流。
+
+负荷: $X=0.35 \times \frac{S_{\mathrm{B}}}{S_{\mathrm{I}}}, S_{\mathrm{I}}$ 为负荷容量。
+
+线路: $X=x l \frac{S_{\mathrm{B}}}{U_{\mathrm{R}}^{2}}, x$ 为单位公里电抗值; $l$ 为线路长度。
+
+(2)化简等值电路, 求出电源至短路点 $f$ 的总阻抗 $X_{\Sigma}$ 。
+
+(3) 计算 $f$ 点三相短路电流周期分量初值及其他待求量, 短路电流基准值 $I_{\mathrm{B}}=\frac{S_{\mathrm{B}}}{\sqrt{3} U_{\mathrm{av}}}$ 。
+
+【例 4.5-4】计算图 4.5-18 (a) 所示电力系统在 $\mathrm{f}$ 点发生三相短路时的起始次暂态电流。 系统各元件参数如下。发电机 G:60 MVA, $X_{d}^{\prime \prime}=0.12$; 调相机 SC: 5 MVA, $X_{d}^{\prime \prime}=0.2$ 。变压器 $\mathrm{T}-1: 31.5 \mathrm{MVA}, U_{\mathrm{s}} \%=10.5 ; \mathrm{T}-2: 20 \mathrm{MVA}, U_{\mathrm{q}} \%=10.5 ; \mathrm{T}-3: 7.5 \mathrm{MVA}, U_{\mathrm{s}} \%=10.5$ 。线路 $\mathrm{L}-1: 60 \mathrm{~km} ; \mathrm{L}-2: 20 \mathrm{~km} ; \mathrm{L}-3: 10 \mathrm{~km}$ 。各线路电抗均为 $0.4 \Omega / \mathrm{km}_{\text {。 }}$ 负荷 $\mathrm{LD}-1: 30 \mathrm{MVA}$; LD-2:18 MVA;LD-3:6 MVA。
+
+解: 将全部负荷计人, 以额定标么电抗为 0.35 、电势为 0.8 的电源表示。
+
+(1) 选取 $S_{\mathrm{B}}=100 \mathrm{MVA}$ 和 $U_{\mathrm{B}}=U_{\mathrm{av}}$, 计算等值网络 (图 4.5-8(b)) 各电抗标幺值 发电机 $\mathrm{G} \quad X_{1}=0.12 \times \frac{100}{60}=0.2$
+
+调相机 SC $X_{2}=0.2 \times \frac{100}{5}=4$
+
+负荷 $\mathrm{LD}-1 X_{3}=0.35 \times \frac{100}{30}=1.17$ 负荷 $\mathrm{LD}-2 \quad X_{4}=0.35 \times \frac{100}{18}=1.95$
+
+负荷 $\mathrm{LD}-3 \quad X_{5}=0.35 \times \frac{100}{6}=5.83$
+
+变压器 $\mathrm{T}-1 \quad X_{6}=0.105 \times \frac{100}{31.5}=0.33$
+
+变压器 $\mathrm{T}-2 \quad X_{7}=0.105 \times \frac{100}{20}=0.53$
+
+变压器 $\mathrm{T}-3 \quad X_{\mathrm{B}}=0.105 \times \frac{100}{7.5}=1.4$
+
+线路 $\mathrm{L}-1 \quad X_{9}=0.4 \times 60 \times \frac{100}{115^{2}}=0.18$
+
+线路 $\mathrm{L}-2 \quad X_{10}=0.4 \times 20 \times \frac{100}{115^{2}}=0.06$
+
+线路 L-3 $X_{11}=0.4 \times 10 \times \frac{100}{115^{2}}=0.03$
+
+取发电机的次暂态电势 $E_{1}=1.08$ 。调相机按短路前额定满载运行, 可得
+
+$$
+E_{2}=U+X_{d}^{\prime \prime} I=1+0.2 \times 1=1.2
+$$
+
+(2) 进行网络化简
+
+$$
+\begin{aligned}
+& X_{12}=\left(X_{1} / / X_{3}\right)+X_{6}+X_{9}=\frac{0.2 \times 1.17}{0.2+1.17}+0.33+0.18=0.68 \\
+& X_{13}=\left(X_{2} / / X_{4}\right)+X_{7}+X_{10}=\frac{4 \times 1.95}{4+1.95}+0.53+0.66=1.9 \\
+& X_{14}=\left(X_{12} / / X_{13}\right)+X_{11}+X_{8}=\frac{0.68 \times 1.9}{0.68+1.9}+0.03+1.4=1.93
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+& E_{6}=\frac{E_{1} X_{3}+E_{3} X_{1}}{X_{1}+X_{3}}=\frac{1.08 \times 1.17+0.8 \times 0.2}{0.2+1.17}=1.04 \\
+& E_{7}=\frac{E_{2} X_{4}+E_{4} X_{2}}{X_{2}+X_{4}}=\frac{1.2 \times 1.95+0.8 \times 4}{4+1.95}=0.93 \\
+& E_{8}=\frac{E_{6} X_{13}+E_{7} X_{12}}{X_{12}+X_{13}}=\frac{1.04 \times 1.9+0.93 \times 0.68}{0.68+1.9}=1.01
+\end{aligned}
+$$
+
+(3) 起始次暂态电流的计算
+
+由变压器 $\mathrm{T}-3$ 供给的
+
+$$
+I^{\prime \prime}=\frac{E_{8}}{X_{14}}=\frac{1.01}{1.93}=0.523
+$$
+
+由负荷 $\mathrm{LD}-3$ 供给的
+
+$$
+I_{1,1, \cdots 3}^{\prime \prime}=\frac{E_{5}}{X_{5}}=\frac{0.8}{5.83}=0.137
+$$
+
+短路处的基准电流
+
+$$
+I_{\mathrm{R}}=\frac{100}{\sqrt{3} \times 6.3}=9.16 \mathrm{kA}
+$$
+
+短路电流实际值
+
+$$
+I_{f}=\left(I^{\prime \prime}+I_{\mathrm{l} . \mathrm{D}-3}^{\prime \prime}\right) I_{\mathrm{B}}=(0.523+0.137) \times 9.16=6.05 \mathrm{kA}
+$$
+
+### 3 短路容量的概念
+
+短路容量也称短路功率, 等于短路电流有效值同短路处的正常工作电压 (一般用平均额 定电压) 的乘积, 即
+
+$$
+S_{t}=\sqrt{3} U_{\mathrm{av}} I_{t}
+$$
+
+其标幺值表示为
+
+$$
+S_{* t}=\frac{\sqrt{3} U_{\mathrm{av}} I_{t}}{\sqrt{3} U_{\mathrm{B}} I_{\mathrm{B}}}=\frac{I_{t}}{I_{\mathrm{B}}}=I_{* t}
+$$
+
+上式表明: 当基准电压等于正常工作电压时,短路功率的标幺值与短路电流的标幺值相 等。利用这一关系, 可直接由短路电流求取短路功率的有名值, 即 $S_{t}=I_{*} S_{\mathrm{B}}$ 。
+
+短路容量主要用来检验开关的切断能力。把短路容量定义为短路电流和工作电压的乘 积, 是因为一方面开关要能切断这样大的电流, 另一方面, 在开关断流时其触头应能经受住工 作电压的作用。在短路的实用计算中,通常只用周期分量电流的初始有效值计算短路功率。
+
+### 4 冲击电流、最大有效值电流的定义和关系
+
+## 1. 短路冲击电流
+
+短路电流计算应求出最大短路电流值, 以确定电器设备容量或额定参数。短路电流最大 可能的瞬时值称为短路冲击电流, 记为 $i_{\mathrm{im}}$ 。
+
+当电路的参数已知时,短路电流的周期分量的幅值是恒定的,而短路电流的非周期分量是 按指数规律单调衰减的直流, 因此, 非周期电流的初值越大, 暂态过程中短路全电流的最大瞬 时值也就越大。
+
+短路电流各分量之间的关系可用相量图 4.5-9 表示。图中旋转相量 $E_{\mathrm{m}} 、 i_{\mathrm{m}}$ 和 $i_{\mathrm{pm}}$ 分别代 表电源电势、短路前电流和短路后周期电流。图示为 $\mathrm{t}=0$ 时刻的情况, $I_{\mathrm{m}}$ 在时间轴上的投影 为短路前电流的瞬时值: $I_{\mathrm{m}} \sin \left(\alpha-\varphi^{\prime}\right)=i_{[0]}, I_{\mathrm{pm}}$ 的投影为短路后周期电流的瞬时值: $I_{\mathrm{pm}} \sin (\alpha$ $-\varphi)=i_{\mathrm{p} 0}$ 。一般 $i_{\mathrm{p} 0} \neq i_{[0]}$ 。为保持电感中电流在短路后不发生突变, 电路中必须产生一个非 周期自由电流, 其初始值为 $i_{[0]}$ 和 $i_{\mathrm{p} 0}$ 之差。在相量图中, 短路发生瞬间相量差 $i_{\mathrm{m}}-i_{\mathrm{pm}}$ 在时间轴 上的投影就等于非周期电流的初始值 $I_{\mathrm{ap} 0}$ 。由此可见, 非周期电流初值的大小与短路发生时刻 有关。即与短路发生时刻电源电势的初始相角 (合闸角) $\alpha$ 有关。当相量差 $i_{m}-i_{\mathrm{pm}}$ 与时间轴 平行时, $i_{\mathrm{ap} 0}$ 值最大: 当它与时间轴垂直时, $i_{\mathrm{ap} 0}=0$ 。同样, 对另外两相也可作类似分析。由于各 相短路电流非周期分量不对称, 故非周期分量最大初始值或零值只可能在一相出现。
+
+最大可能值的条件
+
+由以上分析可知, 非周期电流最大初值的条件为:
+
+(1)相量差 $i_{\mathrm{m}}-i_{\mathrm{pm}}$ 取最大可能值;
+
+(2)相量差 $i_{\mathrm{m}}-i_{\mathrm{pm}}$ 在 $t=0$ 时与时间轴平行。
+
+在感性电路中, 符合上述条件的情况是: 电路原来处于空载状态, 断路恰好发生在短路周 期电流取幅值的时刻 (图 4.5-10)。一般短路回路的感抗比电阻大得多 ( $\omega L>R$ ), 可以近似 地认为 $\varphi \approx 90^{\circ}$, 则上述情况相当于短路发生在电源电势刚好过零值, 即 $\alpha=0$ 的时候。将 $I_{\mathrm{m}}=$ $0, \varphi=90^{\circ}$ 和 $\alpha=0$ 代人短路全电流计算公式便得
+
+$$
+i=-I_{\mathrm{pm}} \cos \omega t+I_{\mathrm{pm}} \mathrm{e}^{-t / T_{\mathrm{s}}}
+$$
+
+短路电流的最大瞬时值出现在短路发生后大约半个周期。若 $f=50 \mathrm{~Hz}$, 这个时间约为短 路发生后 $0.01 \mathrm{~s}$ 。由此可得冲击电流的算式如下:
+
+$$
+i_{\mathrm{im}}=I_{\mathrm{pm}}+I_{\mathrm{pm}} \mathrm{e}^{-0.01 / T_{\mathrm{a}}}=\left[1+\mathrm{e}^{-0.01 / T_{\mathrm{a}}}\right] I_{\mathrm{pm}}=k_{\mathrm{im}} I_{\mathrm{pm}}
+$$
+
+时间常数 $T_{\mathrm{a}}$ 的数值由零变为无限大时, 冲击系数的变化范围是 $1 \leqslant k_{\mathrm{im}} \leqslant 2$ 。在实用计算中, 当 短路发生在发电机电压母线时, 取 $k_{\mathrm{im}}=1.9$; 短路发生在发电厂高压侧母线时, 取 $k_{\mathrm{im}}=1.85$; 短路发生在其他地点时, 取 $k_{\text {im }}=1.8$ 。
+
+## 2. 最大有效值电流
+
+## (1) 短路电流的有效值
+
+在短路过程中, 任一时刻 $t$ 的短路电流有效值 $I$ 是指以时刻 $t$ 为中心的一个周期内瞬时 电流的均方根值, 即
+
+$$
+I_{t}=\sqrt{\frac{1}{T} \int_{t-T / 2}^{t+T / 2} i_{t}^{2} \mathrm{~d} t}=\sqrt{\frac{1}{T} \int_{t-T / 2}^{t+T / 2}\left(i_{\mathrm{p} t}+i_{\mathrm{apt}}\right)^{2} \mathrm{~d} t}
+$$
+
+式中, $i_{、} 、 i_{\mathrm{pu}}$ 和 $i_{\mathrm{ap}}$ 分别为 $t$ 时刻短路电流、周期分量和非周期分量瞬时值。
+
+在电力系统中, 短路电流周期分量的幅值, 只当由无限大功率电源供电时才是恒定的, 而 在一般的情况下则是衰减的。用上式计算是十分复杂的。为了简化计算, 通常假定: 非周期电 流在以时间 $t$ 为中心的一个周期内恒定不变,因而它在时刻 $t$ 的有效值就等于它的瞬时值, 即 $I_{\mathrm{apt}}=i_{\mathrm{apt}}$; 对于周期电流, 也认为它在所计算的周期内是幅值恒定的,其数值即等于由周期电流 包络线所确定的 $t$ 时刻的幅值。因此, $t$ 时刻的周期电流有效值应为
+
+$$
+I_{\mathrm{pt}}=\frac{I_{\mathrm{pm} t}}{\sqrt{2}}
+$$
+
+根据以上假定条件, 有
+
+$$
+I_{t}=\sqrt{I_{\mathrm{p} t}^{2}+I_{\mathrm{ap} t}^{2}}
+$$
+
+(2) 最大有效值电流
+
+短路电流的最大有效值出现在短路后的第一个周期。在最不利的情况下发生短路时, $i_{\mathrm{ap} 0}$ $=I_{\mathrm{pm}}$, 而第一个周期的中心 $t=0.01 \mathrm{~s}$, 此时非周期分量的有效值为
+
+$$
+I_{\mathrm{ap}}=I_{\mathrm{pm}} \mathrm{e}^{-0.01 / T_{\mathrm{a}}}=\left(k_{\mathrm{im}}-1\right) I_{\mathrm{pm}}
+$$
+
+由这些关系得到短路电流最大有效值的计算公式:
+
+$$
+I_{\mathrm{im}}=\sqrt{I_{\mathrm{p}}^{2}+\left[\left(k_{\mathrm{im}}-1\right) \sqrt{2} I_{\mathrm{p}}\right]^{2}}=I_{\mathrm{p}} \sqrt{1+2\left(k_{\mathrm{im}}-1\right)^{2}}
+$$
+
+冲击系数 $k_{\mathrm{im}}=1.9$ 时, $I_{\mathrm{im}}=1.62 I_{\mathrm{p}} ; k_{\mathrm{im}}=1.8$ 时, $I_{\mathrm{im}}=1.51 I_{\mathrm{p}}$ 。
+
+### 5 同步发电机、变压器、输电线的正、负、零序等值电路
+
+## 1. 对称分五法
+
+## 1) 不对称三相相量的分解
+
+在三相电路中, 对于任一组不对称的三相相量, 可以分解为三组对称的相量:
+
+$$
+F_{\mathrm{a}}=F_{\mathrm{a} 1}+F_{\mathrm{a} 2}+F_{\mathrm{ab}}, F_{\mathrm{b}}=F_{\mathrm{b} 1}+F_{\mathrm{b} 2}+F_{\mathrm{b} 0}, F_{\mathrm{c}}=F_{\mathrm{cl}}+F_{\mathrm{c} 2}+F_{\mathrm{c} 0}
+$$
+
+三相量的三组对称分量如图 4. 5-11 所示。
+
+(1)正序分量: 三相正序分量大小相等,彼此相位互差 $120^{\circ}$, 正序分量的相序与正常对称运 行下的相序相同,正序电流在电机内产生正转磁场。
+
+(2)负序分量:三相负序分量大小相等,彼此相位互差 $120^{\circ}$, 负序分量的相序与正常对称运 行下的相序相反, 负序电流在电机内产生反转磁场。
+
+(3)零序分量: 三相零序分量大小相等、相位相同, 零序电流在电机内产生漏磁通,其合成磁
+
+## 场为零。
+
+将一组不对称的三相量分解为三组对称分量, 类似于派克变换, 也是一种坐标变换 (线性 变换）。当选择 $\mathrm{a}$ 相作为基准相时，三相相量与其对称分量之间的关系 (以电流为例)如下:
+
+$$
+\left[\begin{array}{c}
+\dot{I}_{\mathrm{a} 1} \\
+\dot{I}_{\mathrm{a} 2} \\
+\dot{I}_{\mathrm{a} 0}
+\end{array}\right]=\frac{1}{3}\left[\begin{array}{ccc}
+1 & a & a^{2} \\
+1 & a^{2} & a \\
+1 & 1 & 1
+\end{array}\right]\left[\begin{array}{c}
+\dot{I}_{\mathrm{a}} \\
+\dot{I}_{\mathrm{b}} \\
+\dot{I}_{\mathrm{c}}
+\end{array}\right]
+$$
+
+式中, 算子 $a=\mathrm{e}^{\mathrm{j} 120^{\circ}}, a^{2}=\mathrm{e}^{\mathrm{j} 240^{\circ}}$, 且 $1+a+a^{2}=0, a^{3}=1 ; i_{\mathrm{al}} 、 i_{\mathrm{a} 2} 、 i_{\mathrm{as}}$ 分别为 $\mathrm{a}$ 相电流的正序、负序、 零序分量,并且有
+
+$$
+\left\{\begin{array}{l}
+\dot{I}_{\mathrm{b} 1}=a^{2} \dot{I}_{\mathrm{a} 1}, \dot{I}_{\mathrm{c} 1}=a \dot{I}_{\mathrm{a} 1} \\
+\dot{I}_{\mathrm{b} 2}=a \dot{I}_{\mathrm{a} 2}, \dot{I}_{\mathrm{c} 2}=a^{2} \dot{I}_{\mathrm{a} 2}, \\
+\dot{I}_{\mathrm{b} 0}=\dot{I}_{\mathrm{c} 0}=\dot{I}_{\mathrm{a} 0}
+\end{array}\right.
+$$
+
+写成矩阵形式为
+
+$$
+\boldsymbol{I}_{120}=\boldsymbol{S} \boldsymbol{I}_{\mathrm{abe}}
+$$
+
+其中 $S=\frac{1}{3}\left[\begin{array}{ccc}1 & a & a^{2} \\ 1 & a^{2} & a \\ 1 & 1 & 1\end{array}\right]$ 称为对称分量变换矩阵。当已知三相不对称相量时, 可用上式求得各 序对称分量。已知各序对称分量时,也可以利用反变换求出三相不对称的相量, 即
+
+$$
+I_{\text {ahre }}=S^{-1} I_{120}
+$$
+
+其中 $S^{-1}=\left[\begin{array}{ccc}1 & 1 & 1 \\ a^{2} & a & 1 \\ a & a^{2} & 1\end{array}\right]$ 称为对称分量反变换矩阵。
+
+【例 4.5-5】已知 $I_{\mathrm{a} 1}=5, I_{\mathrm{a} 2}=-\mathrm{j} 5, I_{\mathrm{a} 0}=-1$, 试求 $\mathrm{a} 、 \mathrm{~b} 、 \mathrm{c}$ 三相的电流。
+
+解: $I_{\mathrm{a}}=I_{\mathrm{a} 1}+I_{\mathrm{a} 2}+I_{\mathrm{a} 0}=5-\mathrm{j} 5-1=6.403 \angle-51.3^{\circ}$
+
+$$
+\begin{aligned}
+I_{\mathrm{b}} & =a^{2} I_{\mathrm{a} 1}+a I_{\mathrm{a} 2}+I_{\mathrm{a} 0}=\left(-\frac{1}{2}-\mathrm{j} \frac{\sqrt{3}}{2}\right) 5+\left(-\frac{1}{2}+\mathrm{j} \frac{\sqrt{3}}{2}\right) \cdot(-\mathrm{j} 5)-1 \\
+& =-2.5-\mathrm{j} 4.33+\mathrm{j} 2.5+4.33-1=2.009 \angle-65.6^{\circ} \\
+I_{\mathrm{c}} & =a I_{\mathrm{a} 1}+a^{2} I_{\mathrm{a} 2}+I_{\mathrm{a} 0}=\left(-\frac{1}{2}+\mathrm{j} \frac{\sqrt{3}}{2}\right) 5+\left(-\frac{1}{2}-\mathrm{j} \frac{\sqrt{3}}{2}\right) \cdot(-\mathrm{j} 5)-1 \\
+& =-2.5+\mathrm{j} 4.33+\mathrm{j} 2.5-4.33-1=10.390 \angle 138.9^{\circ}
+\end{aligned}
+$$
+
+## 2) 序阻抗的概念
+
+所谓元件的序阻抗, 是指元件的三相参数对称时, 元件两端某一序的电压降与通过该元件 同一序电流的比值, 即
+
+$$
+\left\{\begin{array}{l}
+Z_{1}=\Delta U_{\mathrm{al}} / i_{\mathrm{al}} \\
+Z_{2}=\Delta U_{\mathrm{a2}} / i_{\mathrm{a} 2} \\
+Z_{0}=\Delta U_{\mathrm{a} 0} / i_{\mathrm{a} 0}
+\end{array}\right.
+$$
+
+## $Z_{1} 、 Z_{2}$ 和 $Z_{0}$ 分别称为该元件的正序阻抗、负序阻抗和零序阻抗。
+
+以一个静止三相电路元件为例, 如图 4.5-12 所示, 各相自阻抗分别为 $Z_{\mathrm{aa}} 、 Z_{\mathrm{bb}}$ 和 $Z_{\mathrm{cc}}$; 相间 互阻抗为 $Z_{\mathrm{ab}}=Z_{\mathrm{ba}} 、 Z_{\mathrm{bc}}=Z_{\mathrm{cb}}$ 和 $Z_{\mathrm{ac}}=Z_{\mathrm{ca}}$ 。当元件通过三相不对称电流时, 元件各相电压降为
+
+$$
+Z_{\mathrm{sc}}=\left[\begin{array}{ccc}
+Z_{\mathrm{s}}-Z_{\mathrm{m}} & 0 & 0 \\
+0 & Z_{\mathrm{s}}-Z_{\mathrm{m}} & 0 \\
+0 & 0 & Z_{\mathrm{s}}+2 Z_{\mathrm{m}}
+\end{array}\right]=\left[\begin{array}{ccc}
+Z_{1} & 0 & 0 \\
+0 & Z_{2} & 0 \\
+0 & 0 & Z_{0}
+\end{array}\right]
+$$
+
+为一个对角线矩阵。
+
+$$
+\left[\begin{array}{c}
+\Delta U_{\mathrm{a}} \\
+\Delta U_{\mathrm{b}} \\
+\Delta U_{\mathrm{c}}
+\end{array}\right]=\left[\begin{array}{ccc}
+Z_{\mathrm{aa}} & Z_{\mathrm{ab}} & Z_{\mathrm{ac}} \\
+Z_{\mathrm{ab}} & Z_{\mathrm{bb}} & Z_{\mathrm{bcc}} \\
+Z_{\mathrm{bcc}} & Z_{\mathrm{bc}} & Z_{\mathrm{cc}}
+\end{array}\right]\left[\begin{array}{c}
+i_{\mathrm{a}} \\
+i_{\mathrm{b}} \\
+i_{\mathrm{c}}
+\end{array}\right] \text { 或 } \Delta U_{\mathrm{abc}}=\boldsymbol{Z} \boldsymbol{I}_{\mathrm{abc}}
+$$
+
+变成对称分量:
+
+$$
+\Delta U_{120}=S Z S^{-1} I_{120}=Z_{s i n} I_{120}
+$$
+
+式中 $Z_{\mathrm{sc}}=S Z \boldsymbol{S}^{-1}$ 称为序阻抗矩阵。
+
+当元件结构参数完全对称时, 即 $Z_{\mathrm{aa}}=Z_{\mathrm{bb}}=Z_{\mathrm{cc}}=Z_{\mathrm{s}}$, $Z_{\mathrm{ab}}=Z_{\mathrm{bc}}=Z_{\mathrm{ac}}=Z_{\mathrm{m}}$ 时, 则
+
+## 2. 同步发电机、变压器、铪电线的正、负、零序等值电路
+
+电力系统的元件分为静止元件和旋转元件两大类。对于静止元件,例如变压器和输电线 等, 当它们分别加以正序和负序电压时, 二相的电磁关系是相同的,因而正序阻抗和负序阻抗 是相同的。变压器的零序阻抗与其结构及绕组连接方式有关。输电线路的零序阻抗则不同于 正、负序阻抗。对于旋转元件,例如发电机和电动机, 由于各序电流流过电机时引起不同的电 磁过程,所以在旋转元件中,正序、负序和零序阻抗三者互不相等。
+
+1) 同步发电机正、负、零序等值电路
+
+同步发电机在正常对称运行时, 只有正序电势和正序电流, 此时的电机参数就是正序参 数。例如, $X_{d} 、 X_{q} 、 X^{\prime}{ }_{d} 、 X^{\prime \prime}{ }_{d} 、 X^{\prime \prime}{ }_{q}$ 等均属于正序电抗。
+
+发电机定子绕组中通以负序电流时, 产生与转子旋转方向相反的旋转磁场, 对转子的相对 转速为同步转速的两倍,它交替地与转子纵轴和横轴重合,因此表现出来的负序电抗应该是 $X_{. i}^{\prime}$ 刑 $X_{q}$ (无阻尼绕组电机) 或 $X_{d}^{\prime \prime}$ 和 $X_{q}^{\prime \prime}$ (有阳尼绕组电机) 的某-一平均值。
+
+实际上, 在发生不对称短路时, 由于发电机纵横轴的不对称, 定、转子绕组无论是在稳态还 是在暂态过程中, 都将出现一系列高次谐波电流,这就使对发电机序参数的分析变得复杂。为 了使发电机负序电抗具有确定的意义, 取发电机负序端电压的基频分量与负序电流的基频分 量的比值作为计算电力系统基频短路电流时发电机的负序阻抗。
+
+电力系统短路故障一般发生在线路上,所以在短路的实用计算中,同步电机的负序电抗可 以认为与短路种类无关, 取为 $X_{d}^{\prime \prime}$ 和 $X_{q}^{\prime \prime}$ 的算术平均值, 即
+
+$$
+X_{2}=\frac{1}{2}\left(X_{d}^{\prime \prime}+X_{q}^{\prime \prime}\right)
+$$
+
+另外, 对于无阻尼绕组凸极机取为 $X_{d}^{\prime}$ 和 $X_{q}$ 的几何平均值, 即
+
+$$
+X_{2}=\sqrt{X_{d}^{\prime} X_{q}}
+$$
+
+对汽轮发电机及有阻尼绕组水轮发电机, 取
+
+$$
+X_{2}=1.22 X_{d}^{\prime \prime}
+$$
+
+对于无阻尼绕组的发电机, 取
+
+$$
+X_{2}=1.45 X_{d}^{\prime \prime}
+$$
+
+当发电机定子绕组通过基频零序电流时, 它们在气隙中的合成磁势为零, 所以发电机的零 序电抗仅由定子线圈的等值漏磁通确定。零序电流所产生的漏磁通与正序、负序漏磁通不同, 它们的差别视绕组的结构形式而定。发电机零序电抗的变化范围大致是
+
+$$
+X_{0}=(0.15 \sim 0.6) X_{d}^{\prime \prime}
+$$
+
+2) 变压器的正、负、零序等值电路
+
+变压器的等值电路表征了一相原、副绕组的电磁关系。不论变压器通过哪一序的电流, 都 不会改变一相原、副绕组间的电磁关系,因此, 变压器的正序、负序和零序等值电路的形状相 同,图 4.5-13 为不计绕组电阻和铁芯损耗时变压器零序等值电路。
+
+(a) 双绕组变压器 (b) 三绕组变压器
+
+(1) 变压器等值电路参数
+
+(1)变压器各绕组的电阻, 与所通过的电流序别无关, 因此, 变压器的正序、负序和零序的等 值电阻相等。
+
+(2)变压器的漏抗反映了原、副绕组间磁耦合的紧密情况。漏磁通的路径与所通电流的序 别无关, 因此, 变压器的正序、负序和零序的等值漏抗也相等。
+
+(3)变压器的励磁电抗, 取决于主磁通路径的磁导。当变压器通以负序电流时, 主磁通的路 径与通以正序电流时完全相同。因此负序励磁电抗和正序的相同。
+
+(4)变压器的零序励磁电抗与变压器的铁芯结构有关。三个单相变压器组成的二相变压器 组和三相四柱式 (或五柱) 变压器,零序励磁电抗与正序的相等, 以上两种变压器, 在短路计算 中都可以认为 $X_{m 0} \approx \infty$ 。三相三柱式变压器, 零序励磁电抗比正序励磁电抗小得多, 在短路计 算中视为有限值, 大致是 $X_{\mathrm{m} 0}=0.3 \sim 1.0$ 。
+
+由以上可知,变压器正、负序等值电路及其参数完全相同。
+
+(2) 变压器的零序等值电路与外电路的连接
+
+变压器的零序等值电路与外电路的连接取决于零序电流的流通路径, 与变压器三相绕组 连接形式及中性点是否接地有关,包括以下两个方面。
+
+(1)零序电压施加在变压器三角形侧和不接地星形侧, 无论另一侧绕组接线方式如何, 变压 器中都没有零序电流流过。
+
+(2)零序电压施加在变压器接地星形一侧时, 大小相等、方向相同的零序电流由三相绕组经 中性点流人大地, 构成回路。另一侧的电流流通情况视该侧绕组的接线方式而定。具体可由 图 4.5-14 的开关电路表示。上述各点及开关电路也完全适用于三绕组变压器。
+
+在 I 绕组侧施加零序电源时,各种连接方式的变压器零序电抗如下。 (1)双绕组变压器
+
+$\mathrm{Y}_{0} / \Delta$ 连接: $X_{0}=X_{1}+X_{\mathrm{a}} / / X_{\mathrm{n} 0} \approx X_{1}+X_{\mathrm{n}}$ (图 4.5-15(a))
+
+$\mathrm{Y}_{0} / \mathrm{Y}_{0}$ 连接: 若负载侧接成 $\mathrm{Y}$ 形: $X_{0}=X_{\mathrm{I}}+X_{\mathrm{m} 0}($ 图 4.5-15(b))
+
+若负载侧接成 $Y_{0}$ 形: $X_{0}=X_{\mathrm{I}}+X_{\mathrm{mo}} / /\left(X_{\mathrm{II}}+X_{0}^{\prime}\right)$ (图 4.5-15(c))
+
+$\mathrm{Y}_{0} / \mathrm{Y}$ 连接: $X_{0}=X_{\mathrm{I}}+X_{\mathrm{m} 0}$ (图 4.5-15(d))
+
+$Y_{0} / \Delta$ 连接 $\left(Y_{0}\right.$ 侧中性点经 $X_{n}$ 接地) : $X_{0}=X_{1}+X_{\text {II }}+3 X_{n}$ (图 4.5-15(e))
+
+(2)三绕组变压器
+
+$\mathrm{Y}_{0} / \Delta \mathrm{Y}$ 连接: $X_{0}=X_{\mathrm{I}}+X_{\mathrm{I}}$
+
+$\mathrm{Y}_{0} / \Delta / \Delta$ 连接: $X_{0}=X_{\mathrm{I}}+X_{\mathrm{n}} / / X_{\mathrm{II}}=X_{1}+\frac{X_{\mathrm{II}} X_{\text {II }}}{X_{\mathrm{II}}+X_{\text {II }}}$
+
+$\mathrm{Y}_{0} / \Delta \mathrm{Y}_{0}$ 连接的三绕组变压器零序电抗视 III 绕组外接负荷中性点是否接地而定。
+
+## 3) 输电线的正、负、零序等值电路
+
+输电线是静止元件, 其正、负序阻抗及等值电路完全相同。输电线的零序电抗与平行线的 回路数以及有无架空地线和地线的导电性能等因素有关。由于零序电流在三相线路中同方 向, 互感很大,因而零序电抗要比正序电抗大。零序电流是经过大地及架空地线返回的, 所以 架空地线会对三相导线产生屏蔽作用,使零序磁链减少,因而使零序电抗减小。
+
+输电线路的正序电抗: $X_{1}=x_{1} l$, 其中: $x_{1}$ 为单位长度正序电抗, $l$ 为线路长度。
+
+在短路电流近似计算中, 输电线的零序电抗可以用表 4.5-2 的数据计算。
+
+表 4.5-2 输电线的各序单位长度电抗值
+
+| 线路种类 | 电扰值 $(\boldsymbol{\Omega} / \mathbf{k m})$ |  |
+| :---: | :---: | :---: |
+|  | $x_{1}=x_{2}$ | $x_{0}$ |
+| 单回架空线路 (无地线) | 0.4 | 3. $5 x_{1}$ |
+| 单回架空线路 (有钢质架空地线) | 0.4 | 3. $0 x_{1}$ |
+| 单回架空线路 (有导电良好的架空地线) | 0.4 | 2. $0 x_{1}$ |
+| 双回架空线路 (无地线) | 0.4 (每一回) | 5. $5 x_{1}$ |
+| 双回架空线路 (有钢质架空地线) | 0.4 (每一回) | 4. $7 x_{1}$ |
+| 双回架空线路 (有导电良好的架空地线) | 0.4 (每一回) | 3. $0 x_{1}$ |
+| 6 10 kV 电缆线路 | 0.08 | 4. $6 x_{1}$ |
+| $35 \mathrm{kV}$ 电匴线路 | 0.12 | 4. $6 x$ |
+
+4.5.6 简单电网的正、负、零序网络的制定方法
+
+应用对称分量法分析计算不对称故障时, 首先必须建立电力系统的各序网络。其基本原 则是: 根据电力系统的接线图、中性点接地情况等原始条件, 在故障点分别施加各序电势, 从故 障点开始, 逐步查明各序电流流通的情况。凡是某一序电流能流通的元件, 都必须包含在该序 网络中, 并用相应的序参数和等值电路表示。
+
+## 1. 正序网络的制定方法
+
+正序网络与计算对称短路时所用的等值网络相同。除中性点接地阻抗、空载线路和空载 变压器外,电力系统各元件均应包括在正序网络中, 并且用相应的正序参数和等值电路表示。 例如图 4.5-16(a) 所示系统的正序网络 (图 4.5-16(b)) 不包括空载的线路 L-3 和变压器 T3。正序网络的电源包括所有的发电机和调相机，以及个别的必须用等值电源支路表示的综合 负荷, 此外必须在短路点引人代替故障条件的不对称电势源中的正序分量。
+
+正序网络中的短路点用 $f_{1}$ 表示, 零电位点用 $o_{1}$ 表示。从 $f_{1} o_{1}$ 即故障端口看正序网络, 它是 一个有源网络,可以用戴维南定理简化成图 4.5-16(c) 的形式。
+
+## 2. 负序网络的制定方法
+
+负序电流能流通的元件与正序电流的相同, 但所有电源的负序电势为零。因此, 将正序网 络中各元件的参数都用负序参数代替, 令电源电势等于零, 并在短路点引入代替故障条件的不 对称电势源中的负序分量, 便得到负序网络, 如图 4.5-16(d) 所示。
+
+负序网络中的短路点用 $f_{2}$ 表示, 零电位点用 $o_{2}$ 表示。从 $f_{2} o_{2}$ 即故障端口看负序网络, 它是 一个无源网络,化简后的负序网络示于图 4. 5-16(e)。
+
+## 3. 零序网络的制定方法
+
+在短路点施加代表故障边界条件的零序电势时, 由于三相零序电流大小及相位相同, 它们
+
+(a) 电力系统接线阁 (b)、(c) 正序网络 (d)、(e)负序网络
+
+必须经过大地 (或架空地线、电缆包皮等) 才能构成通路, 而且电流的流通与变压器的中性点 接地情况及变压器的接法有密切的关系。图 4.5-17(a) 给出了电力系统三线接线图及零序电 流流通方向 (箭头方向), 相应的零序网络如图 4. 5-17(b) 所示。
+
+比较正、负和零序网络可以看到, 虽然线路 $\mathrm{L}-4$ 和变压器 $\mathrm{T}-4$ 以及负荷 $\mathrm{LD}$ 均包含在 正、负序网络中, 但因变压器 T-4 中性点未接地, 不能流通零序电流, 所以它们不包括在零序 网络中。相反, 线路 $\mathrm{L}-3$ 和变压器 T-3 因为空载不能流通正 (负) 序电流, 而不包括在正 (负) 序网络中。但变压器 $\mathrm{T}-3$ 中性点接地, 故 $\mathrm{L}-3$ 和 $\mathrm{T}-3$ 能流通零序电流, 所以它们包含 在零序网络中。从故障端口 $f_{0} o_{0}$ 看零序网络, 也是一个无源网络。化简后的零序网络示于图 4. 5-17(c)。
+
+【例 4.5-6】图 4.5-18(a) 所示输电系统, 在 $f$ 点发生接地短路, 试绘出各序网络, 并计算 电源的组合电势和各序组合电抗。系统参数如下:
+
+发电机: $S_{\mathrm{N}}=120 \mathrm{MVA}, U_{\mathrm{N}}=10.5 \mathrm{kV}, E_{1}=1.67, X_{1}=0.9, X_{2}=0.45$;
+
+变压器 $\mathrm{T}-1: S_{\mathrm{N}}=60 \mathrm{MVA}, U_{\mathrm{s}} \%=10.5, k_{\mathrm{T} 1}=10.5 / 115$;
+
+$\mathrm{T}-2: S_{\mathrm{N}}=60 \mathrm{MVA}, U_{\mathrm{8}} \%=10.5, k_{\mathrm{T} 2}=115 / 6.3$;
+
+线路每回路: $l=105 \mathrm{~km}, x_{1}=0.4 \Omega / \mathrm{km}, x_{0}=3 x_{1}$;
+
+负荷 LD-1: $S_{\mathrm{N}}=60 \mathrm{MVA}, X_{1}=1.2, X_{2}=0.35$;
+
+负载 $\mathrm{LD}-2: S_{\mathrm{N}}=40 \mathrm{MVA}, X_{1}=1.2, X_{2}=0.35$ 。
+
+解: (1) 参数标幺值的计算
+
+(a) 零序电流的通路 (b)、(c) 零序网络
+
+选取基准功率 $S_{\mathrm{B}}=120 \mathrm{MVA}$ 和基准电压 $U_{\mathrm{B}}=U_{\mathrm{av}}$, 计算出各元件的各序电抗的标幺值, 计 算过程从略,结果标于各序网络图中。
+
+(2)制定各序网络
+
+正序和负序网络包含所有元件 (图 4.5-18 (b)、(c)), 因零序电流仅在线路 L 和变压器 $\mathrm{T}-1$ 中流通,所以零序网络只包含这两个元件 (图 4.5-18(d))。
+
+(3) 进行网络化简求正序组合电势和各序组合电抗 正序和负序网络的化简过程示于图 4. 5-19。
+
+对于正序网络, 先将支路 1 和 5 并联得支路 7 , 它的电势和电抗分别为
+
+$$
+\begin{aligned}
+& E_{7}=\frac{E_{1} X_{5}}{X_{1}+X_{5}}=\frac{1.67 \times 2.4}{0.9+2.4}=1.22 \\
+& X_{7}=\frac{X_{1} X_{5}}{X_{1}+X_{5}}=\frac{0.9 \times 2.4}{0.9+2.4}=0.66
+\end{aligned}
+$$
+
+将支路 7、2 和 4 相串联得支路 9 , 其电抗和电势分别为
+
+$$
+\begin{aligned}
+& X_{9}=X_{7}+X_{2}+X_{4}=0.66+0.21+0.19=1.06 \\
+& E_{9}=E_{7}=1.22
+\end{aligned}
+$$
+
+将支路 3 和 6 串联得支路 8 , 其电抗为
+
+$$
+X_{8}=X_{3}+X_{6}=0.21+3.6=3.81
+$$
+
+将支路 8 和 9 并联得组合电势和组合电抗分别为
+
+$$
+E_{\Sigma}=\frac{E_{9} X_{8}}{X_{8}+X_{9}}=\frac{1.22 \times 3.81}{3.81+1.06}=0.95
+$$
+
+$$
+X_{1 \Sigma}=\frac{X_{8} X_{9}}{X_{8}+X_{9}}=\frac{3.81 \times 1.06}{3.81+1.06}=0.83
+$$
+
+对于负序网络
+
+$$
+\begin{aligned}
+& X_{7}=\frac{X_{1} X_{5}}{X_{1}+X_{5}}=\frac{0.45 \times 0.7}{0.45+0.7}=0.27 \\
+& X_{9}=X_{7}+X_{2}+X_{4}=0.27+0.21+0.19=0.67 \\
+& X_{8}=X_{3}+X_{6}=0.21+1.05=1.26 \\
+& X_{2 \Sigma}=\frac{X_{8} X_{9}}{X_{8}+X_{9}}=\frac{1.26 \times 0.67}{1.26+0.67}=0.44
+\end{aligned}
+$$
+
+对于零序网络
+
+$$
+X_{0 \Sigma}=X_{2}+X_{4}=0.21+0.57=0.78
+$$
+
+4.5.7 不对称短路的故障边界条件和相应的复合序网
+
+## 1. 单相接地短路
+
+(1) 单相短路故障边界条件
+
+如图 4.5-20 所示, 单相接地短路的三个边界条件为
+
+$$
+U_{\mathrm{a}}=0, \dot{I}_{\mathrm{b}}=0, \dot{I}_{\mathrm{c}}=0
+$$
+
+用对称分量表示为
+
+$$
+\left\{\begin{array}{l}
+U_{\mathrm{a} 1}+\dot{U}_{\mathrm{a} 2}+\dot{U}_{\mathrm{w} 0}=0 \\
+a^{2} \dot{I}_{\mathrm{a} 1}+a \dot{I}_{\mathrm{a} 2}+\dot{I}_{\mathrm{a} 0}=0 \\
+a \dot{I}_{\mathrm{a} 1}+a^{2} \dot{I}_{\mathrm{a} 2}+\dot{I}_{\mathrm{a} 0}=0
+\end{array}\right.
+$$
+
+整理后得
+
+$$
+\left\{\begin{array}{l}
+\dot{U}_{\mathrm{a} 1}+\dot{U}_{\mathrm{a} 2}+\dot{U}_{\mathrm{ao}}=0 \\
+\dot{I}_{\mathrm{a} 1}=\dot{I}_{\mathrm{a} 2}=\dot{I}_{\mathrm{a} 0}
+\end{array}\right.
+$$
+
+## (2) 单相短路复合序网
+
+根据故障处各序量之间的关系, 将各序网络在故障端口连接起 来所构成的网络称为复合序网。根据单相短路的边界条件得到如图 4. 5-21 所示的复合序网。
+
+联立求解电压方程和边界条件可求出各序分量。也可以直接应 用复合序网计算得
+
+$$
+I_{\mathrm{f}}^{(1)}=i_{\mathrm{a}}=i_{\mathrm{a} 1}+i_{\mathrm{a} 2}+i_{\mathrm{a} 0}=3 i_{\mathrm{a} 1}
+$$
+
+短路点非故障相的对地电压
+
+$$
+\begin{aligned}
+& \dot{I}_{\mathrm{a} 1}=\frac{E_{\Sigma}}{\mathrm{j}\left(X_{1 \Sigma}+X_{2 \Sigma}+X_{0 \Sigma}\right)} \\
+& \left\{\begin{array}{l}
+\dot{I}_{\mathrm{a} 2}=\dot{I}_{\mathrm{a} 0}=\dot{I}_{\mathrm{a} 1} \\
+U_{\mathrm{a} 1}=E_{\Sigma}-\mathrm{j} X_{1 \Sigma} \dot{I}_{\mathrm{a} 1}=\mathrm{j}\left(X_{2 \Sigma}+X_{0 \Sigma}\right) \dot{I}_{\mathrm{a} 1} \\
+\dot{U}_{\mathrm{a} 2}=-\mathrm{j} X_{2 \Sigma} \dot{I}_{\mathrm{a} 1} \\
+U_{\mathrm{a} a}=-\mathrm{j} X_{0 \Sigma} \dot{I}_{\mathrm{al}}
+\end{array}\right.
+\end{aligned}
+$$
+
+利用对称分量的合成算式可得短路点故障相电流
+
+$$
+\left\{\begin{aligned}
+\dot{U}_{\mathrm{b}}= & a^{2} \dot{U}_{\mathrm{a} 1}+a U_{\mathrm{a} 2}+U_{\mathrm{a} 0}=\mathrm{j}\left[\left(a^{2}-a\right) X_{2 \Sigma}+\left(a^{2}-1\right) X_{0 \Sigma}\right] \dot{I}_{\mathrm{a} 1} \\
+& =\frac{\sqrt{3}}{2}\left[\left(2 X_{2 \Sigma}+X_{0 \Sigma}\right)-\mathrm{j} \sqrt{3} X_{0 \Sigma}\right] \dot{I}_{\mathrm{a} 1} \\
+U_{\mathrm{c}}= & a U_{\mathrm{a} 1}+a^{2} \dot{U}_{\mathrm{a} 2}+U_{\mathrm{a} 0}=\mathrm{j}\left[\left(a-a^{2}\right) X_{2 \Sigma}+(a-1) X_{0 \Sigma}\right] I_{\mathrm{a} 1} \\
+= & \frac{\sqrt{3}}{2}\left[-\left(2 X_{2 \Sigma}+X_{0 \Sigma}\right)-\mathrm{j} \sqrt{3} X_{0 \Sigma}\right] \dot{I}_{\mathrm{al}}
+\end{aligned}\right.
+$$
+
+2. 两相 ( $b, c$ 相) 短路
+
+(1) 两相短路的边界条件
+
+如图 4. 5-22 所示, 两相短路的边界条件为
+
+$$
+i_{\mathrm{a}}=0, \dot{I}_{\mathrm{b}}+\dot{I}_{\mathrm{c}}=0, \dot{U}_{\mathrm{b}}=\dot{U}_{\mathrm{c}}
+$$
+
+用对称分量表示为
+
+$$
+\left\{\begin{array}{l}
+\dot{I}_{\mathrm{a} 1}+\dot{I}_{\mathrm{a} 2}+\dot{I}_{\mathrm{a} 0}=0 \\
+a^{2} \dot{I}_{\mathrm{a} 1}+a \dot{I}_{\mathrm{a} 2}+\dot{I}_{\mathrm{a} 0}+a \dot{I}_{\mathrm{a} 1}+a^{2} \dot{I}_{\mathrm{a} 2}+\dot{I}_{\mathrm{a} 0}=0 \\
+a^{2} U_{\mathrm{a} 1}+a \dot{U}_{\mathrm{a} 2}+U_{\mathrm{a} 0}=a \dot{U}_{\mathrm{a} 1}+a^{2} \dot{U}_{\mathrm{a} 2}+\dot{U}_{\mathrm{a} 0}
+\end{array}\right.
+$$
+
+整理后得
+
+$$
+\left\{\begin{array}{l}
+\dot{I}_{\mathrm{a} 0}=0 \\
+\dot{I}_{\mathrm{a} 1}+\dot{I}_{\mathrm{a} 2}=0 \\
+\dot{U}_{\mathrm{a} 1}=\dot{U}_{\mathrm{a} 2}
+\end{array}\right.
+$$
+
+(2) 两相短路的复合序网
+
+根据故障处边界条件得到两相短路的复合序网，如图 4.5-23 所示。
+
+利用此复合序网可以求出
+
+$$
+\begin{aligned}
+& \dot{I}_{\mathrm{a} 1}=\frac{E_{\Sigma}}{\mathrm{j}\left(X_{1 \Sigma}+X_{2 \Sigma}\right)} \\
+& \left\{\begin{array}{l}
+\dot{I}_{\mathrm{a} 0}=0 \\
+\dot{I}_{\mathrm{a} 2}=-\dot{I}_{\mathrm{a} 1} \\
+U_{\mathrm{a} 1}=\dot{U}_{\mathrm{a} 2}=-\mathrm{j} X_{2 \Sigma} \dot{I}_{\mathrm{a} 2}=\mathrm{j} X_{2 \Sigma} \dot{I}_{\mathrm{at}}
+\end{array}\right.
+\end{aligned}
+$$
+
+故障点相电流
+
+$$
+\left\{\begin{array}{l}
+\dot{I}_{\mathrm{b}}=a^{2} \dot{I}_{\mathrm{a} 1}+a \dot{I}_{\mathrm{a} 2}+\dot{I}_{\mathrm{a} 0}=-\mathrm{j} \sqrt{3} \dot{I}_{\mathrm{al}} \\
+\dot{I}_{\mathrm{c}}=-\dot{I}_{\mathrm{b}}=\mathrm{j} \sqrt{3} \dot{I}_{\mathrm{a} 1}
+\end{array}\right.
+$$
+
+其绝对值
+
+$$
+I_{f}^{(2)}=I_{\mathrm{b}}=I_{\mathrm{c}}=\sqrt{3} I_{\mathrm{a} 1}
+$$
+
+短路点各相对地电压
+
+$$
+\left\{\begin{array}{l}
+U_{\mathrm{a}}=U_{\mathrm{a} 1}+U_{\mathrm{a} 2}+U_{\mathrm{a} 0}=2 U_{\mathrm{a} 1}=\mathrm{j} 2 X_{2 \Sigma} I_{\mathrm{al}} \\
+\dot{U}_{\mathrm{b}}=a^{2} U_{\mathrm{a} 1}+a \dot{U}_{\mathrm{a} 2}+\dot{U}_{\mathrm{a} 0}=-U_{\mathrm{a} 1}=-\frac{1}{2} U_{\mathrm{a}} \\
+U_{\mathrm{c}}=U_{\mathrm{b}}=-U_{\mathrm{a} 1}=-\frac{1}{2} U_{\mathrm{a}}
+\end{array}\right.
+$$
+
+可见, 两相短路电流为正序电流的 $\sqrt{3}$ 倍; 短路点非故障相电压为正序电压的 2 倍, 而故障 相电压只有非故障相电压的一半且方向相反。
+
+## 3. 两相接地短路
+
+(1) 两相接地短路的边界条件
+
+如图 4. 5-24 所示,两相短路接地时的三个边界条件为
+
+$$
+i_{\mathrm{a}}=0, U_{\mathrm{b}}=0, U_{\mathrm{c}}=0,
+$$
+
+用对称分量表示并经整理后得到
+
+$$
+\left\{\begin{array}{l}
+\dot{I}_{\mathrm{a} 1}+\dot{I}_{\mathrm{a} 2}+\dot{I}_{\mathrm{a} 0}=0 \\
+\dot{U}_{\mathrm{a} 1}=\dot{U}_{\mathrm{a} 2}=U_{\mathrm{a} 0}
+\end{array}\right.
+$$
+
+(2) 两相接地短路的复合序网
+
+路接地
+
+根据故障处边界条件得到两相短路接地的复合序网,如图 4.5-25 所示。
+
+由图可得
+
+$$
+\begin{aligned}
+& i_{\mathrm{a} 1}=\frac{E_{\Sigma}}{\mathrm{j}\left(X_{1 \Sigma}+X_{2 \Sigma} / / X_{0 \Sigma}\right)} \\
+& \left\{\begin{array}{l}
+i_{\mathrm{a} 2}=-\frac{X_{0 \Sigma}}{X_{2 \Sigma}+X_{0 \Sigma}} i_{\mathrm{al}} \\
+i_{\mathrm{a} 0}=-\frac{X_{2 \Sigma}}{X_{2 \Sigma}+X_{0 \Sigma}} i_{\mathrm{al}} \\
+U_{\mathrm{a} 1}=U_{\mathrm{a} 2}=U_{\mathrm{a} 0}=\mathrm{j} \frac{X_{2 \Sigma} X_{0 \Sigma}}{X_{2 \Sigma}+X_{0 \Sigma}} i_{\mathrm{a} 1}
+\end{array}\right.
+\end{aligned}
+$$
+
+故障点相电流
+
+$$
+\left\{\begin{aligned}
+i_{\mathrm{b}} & =a^{2} \dot{I}_{\mathrm{a} 1}+a \dot{I}_{\mathrm{a} 2}+\dot{I}_{\mathrm{a} 0}=\left(a^{2}-\frac{X_{2 \Sigma}+a X_{0 \Sigma}}{X_{2 \Sigma}}+X_{0 \Sigma}\right) i_{\mathrm{al}} \\
+& =\frac{-3 X_{2 \Sigma}-\mathrm{j} \sqrt{3}\left(X_{2 \Sigma}+2 X_{0 \Sigma}\right)}{2\left(X_{2 \Sigma}+X_{0 \Sigma}\right)} \\
+i_{\mathrm{c}} & =a I_{\mathrm{a} 1}+a^{2} \dot{I}_{\mathrm{a} 2}+\dot{I}_{\mathrm{a} 0}=\left(a-\frac{X_{2 \Sigma}+a^{2} X_{0 \Sigma}}{X_{2 \Sigma}+X_{0 \Sigma}}\right) i_{\mathrm{al}} \\
+& =\frac{-3 X_{2 \Sigma}+\mathrm{j} \sqrt{3}\left(X_{2 \Sigma}+2 X_{0 \Sigma}\right)}{2\left(X_{2 \Sigma}+X_{0 \Sigma}\right)}
+\end{aligned}\right.
+$$
+
+故障相电流绝对值
+
+非故障相电压
+
+$$
+I_{f}^{(1,1)}=I_{\mathrm{b}}=I_{\mathrm{c}}=\sqrt{3} \sqrt{1-\frac{X_{2 \Sigma} X_{0 \Sigma}}{\left(X_{2 \Sigma}+X_{0 \Sigma}\right)^{2}}} I_{\mathrm{al}}
+$$
+
+$$
+U_{\mathrm{a}}=3 \dot{U}_{\mathrm{a} 1}=\mathrm{j} \frac{3 X_{2 \Sigma} X_{0 \Sigma}}{X_{2 \Sigma}+X_{0 \Sigma}} i_{\mathrm{al}}
+$$
+
+## 4. 正序等效定则
+
+由以上所得的三种简单不对称短路时短路电流正序分量的算式可以统一写成
+
+$$
+\dot{I}_{\mathrm{al}}^{(n)}=\frac{E_{\Sigma}}{\mathrm{j}\left(X_{1 \Sigma}+X_{\Delta}^{(n)}\right)}
+$$
+
+式中, $X_{\Delta}^{(n)}$ 表示附加电抗, 其值随短路的类型不同而不同, 上角标 $(n)$ 代表短路类型。
+
+上式表明: 在简单不对称短路的情况下,短路点电流的正序分量, 与在短路点每一相中加 人附加电抗 $X_{\Delta}^{(n)}$ 而发生三相短路时的电流相等。这个概念称为正序等效定则。
+
+此外, 从短路点故障相电流的算式可以看出, 短路电流的绝对值与它的正序分量的绝对值 成正比, 即 $I_{f}^{(n)}=m^{(n)} I_{\mathrm{al}}^{(n)}$, 式中, $m^{(n)}$ 是比例系数, 其值视短路类型而异。各种简单短路时的 $X_{\Delta}^{(n)}$ 和 $m^{(n)}$ 值列于表 4.5-3 中。
+
+表 4.5-3 简单短路时的 $X_{\Delta}^{(n)}$ 和 $m^{(n)}$
+
+| 短路类型 $f^{(n)}$ | $X_{\Delta}^{(n)}$ | $m^{(n)}$ |
+| :---: | :---: | :---: |
+| 三相短路 $f^{(3)}$ | 0 | 1 |
+| 两相短路接地 $f^{(1,1)}$ | $X_{2 \Sigma} X_{0 \Sigma}$ | $\sqrt{3} \sqrt{1-\frac{X_{2 \Sigma} X_{0 \Sigma}}{\left(X_{2 \Sigma}+X_{0 \Sigma}\right)^{2}}}$ |
+| 两相短路 $f^{(2)}$ | $\bar{X}_{2 \Sigma}+X_{0 \Sigma}$ | $\sqrt{3}$ |
+| 单相短路 $f^{(1)}$ | $X_{2 \Sigma}$ | 3 |
+
+由以上所有讨论可以得到一个结论: 简单不对称短路电流的计算, 归根结底, 不外乎先求 出系统对短路点的负序和零序输入阻抗 $X_{2 \Sigma}$ 和 $X_{0 \Sigma}$, 再根据短路的不同类型组成附加电抗 $X_{\Delta}^{(n)}$, 将它接人短路点, 然后就像计算二相短路一样, 算出短路点的正序电流。所以, 前面讲过 的三相短路电流的各种计算方法也适用于不对称短路。
+
+【例 4.5-7】对例 4. 5-6 的输电系统, 试计算 $f$ 点发生各种不对称短路时的短路电流。
+
+解: 在例 4. 5-6 的计算基础上,再计算出各种不对称短路时的附加电抗 $X_{\Delta}^{(n)}$ 和 $m^{(n)}$ 值, 即 能确定短路电流。115 kV 侧的基准电流
+
+$$
+I_{\mathrm{B}}=\frac{120}{\sqrt{3} \times 115}=0.6 \mathrm{kA}
+$$
+
+对于单相短路
+
+$$
+\begin{aligned}
+& X_{\Delta}^{(1)}=X_{2 \Sigma}+X_{0 \Sigma}=0.44+0.78=1.22 \\
+& m^{(1)}=3
+\end{aligned}
+$$
+
+则
+
+$$
+\begin{aligned}
+& l_{\mathrm{a} 1}^{(1)}=\frac{E_{\Sigma}}{\left(X_{1 \Sigma}+X_{\Delta}^{(1)}\right)} I_{\mathrm{B}}=\frac{0.95}{0.83+1.22} \times 0.6=0.28 \mathrm{kA} \\
+& I_{f}^{(1)}=m^{(1)} I_{\mathrm{a} 1}^{(1)}=3 \times 0.28=0.84 \mathrm{kA}
+\end{aligned}
+$$
+
+对于两相短路
+
+$$
+\begin{aligned}
+& X_{\Delta}^{(2)}=X_{2 \Sigma}=0.44 \\
+& m^{(2)}=\sqrt{3} \\
+& I_{a 1}^{(2)}=\frac{E_{\Sigma}}{X_{1 \Sigma}+X_{\Delta}^{(2)}} I_{\mathrm{B}}=\frac{0.95}{0.83+0.44} \times 0.6=0.45 \mathrm{kA} \\
+& I_{f}^{(2)}=m^{(2)} I_{\mathrm{al}}^{(2)}=\sqrt{3} \times 0.45=0.78 \mathrm{kA}
+\end{aligned}
+$$
+
+对于两相短路接地
+
+$$
+\begin{aligned}
+X_{\Delta}^{(1,1)} & =X_{2 \Sigma} / / X_{0 \Sigma}=0.44 / / 0.78=0.28 \\
+m^{(1,1)} & =\sqrt{3} \sqrt{1-\left[X_{2 \Sigma} X_{0 \Sigma} /\left(X_{2 \Sigma}+X_{0 \Sigma}\right)^{2}\right]} \\
+& =\sqrt{3} \sqrt{1-\left[0.44 \times 0.78 /(0.44+0.78)^{2}\right]}=1.52 \\
+I_{\mathrm{a}}^{(1,1)} & =\frac{E_{\Sigma}}{\left(X_{1 \Sigma}+X_{\Delta}^{(1.1)}\right)} I_{\mathrm{B}}=\frac{0.95}{0.83+0.28} \times 0.6=0.51 \mathrm{kA} \\
+I_{f}^{(1,1)} & =m^{(1,1)} I_{\mathrm{a} 1}^{(1,1)}=1.52 \times 0.51 \mathrm{kA}=0.78 \mathrm{kA}
+\end{aligned}
+$$
+
+### 8 不对称短路的电流、电压计算
+
+电力系统发生故障后, 如果要求出网络中某些支路电流和节点电压, 须先求出电流和电压 的各序分量在网络中的分布。然后, 将相应的各对称分量合成以求得相电流和相电压。对于 给定的短路点, 负序和零序网络中各支路的电流分布系数都是确定的。在短路点发生各种不 对称短路时,在短路过程的任一时间,都可应用这些分布系数计算网络中的电流分布。
+
+网络中某一节点的各序电压等于短路点的各序电压加上该点与短路点间的同一序电流产 生的电压降。例如某节点 $h$ 在正序、负序和零序网络中, 分别经电抗 $X_{1} 、 X_{2}$ 和 $X_{0}$ 与短路点 $f$ 相 联,此时该点的各序电压分别为
+
+$$
+\left\{\begin{array}{l}
+\dot{U}_{\mathrm{h} 1}=\dot{U}_{\Omega}+\mathrm{j} X_{1} \dot{I}_{1} \\
+\dot{U}_{\mathrm{h} 2}=U_{\Omega}+\mathrm{j} X_{2} \dot{I}_{2} \\
+\dot{U}_{\mathrm{h} 0}=\dot{U}_{\Omega}+\mathrm{j} X_{0} \dot{I}_{0}
+\end{array}\right.
+$$
+
+式中, $i_{1} 、 i_{2}$ 和 $i_{0}$ 是从 $h$ 点流向 $f$ 点的各序分量电流。
+
+由于 $\mathrm{j} X_{2} \dot{I}_{2}$ 与 $U_{\Omega}$ 符号相反, $\mathrm{j} X_{0} \dot{I}_{0}$ 与 $U_{\rho}$ 符号相反, 网络中 $\mathrm{h}$ 点或者其他节点的负序电压和 零序电压都比短路点的要低。离短路点愈远, 节点的负序和零序电压就愈低。在电源点负序 电压等于零。而零序电压一般在未到电源点时就已经降至零值了。
+
+为说明各序电压的分布情况, 图 4.5-26 画出了某一简 单网络在发生各种不对称短路时各序电压的分布情况。
+
+从图中可以看出, 电源点的正序电压最高, 随着对短路 点的接近, 正序电压降逐渐降低, 到短路点即等于短路处的 正序电压。短路点的负序和零序电压最高。电源点的负序 电压为零。由于变压器是 $Y_{0} / \Delta$ 接法, 所以零序电压在变 压器二角形一侧的出线端已经降为零了。
+
+网络中各点电压的不对称程度主要由负序分量决定。 负序分量越大, 电压越不对称。比较图 4.5-26 中的各个图 形可以看出,单相短路时电压的不对称程度要比其他类型 的不对称短路时小些。不管发生何种不对称短路, 短路点 的电压最不对称, 电压的不对称程度将随着与短路点距离 的增大而逐渐减弱。
+
+计算时需要注意的是, 上述求网络中各序电流和电压 分布的方法, 只对于短路点有直接电气联系的部分网络,才
+
+(a) 两相短路 (b) 单相短路 (c) 两相短路接地 可获得各序量间正确的相位关系。在由变压器联系的两段电路中, 由于变压器绕组的连接方 式, 变压器一侧的各序电流和电压对另一侧可能有相位移动, 并且正序分量和负序分量的相位 移动还可能不同。
+
+### 9电流、电压对称分量经过 $\mathrm{Y} / \Delta-11$ 变压器后的相位变换
+
+## 1. 对称分量经过变压器后的相位变换
+
+电压、电流的对称分量经过变压器后,可能会发生相位移动。相位移动的方向、大小取决 于变压器绕组的连接组别。
+
+变压器两侧相电压的正序和负序分量存在以 下关系：
+
+$$
+\left\{\begin{array}{l}
+\dot{U}_{\mathrm{a} 1}=\dot{U}_{\mathrm{A} 1} \mathrm{e}^{\mathrm{j} 30^{\circ}} \\
+\dot{U}_{\mathrm{a} 2}=\dot{U}_{\mathrm{A} 2} \mathrm{e}^{-\mathrm{j} 30^{\circ}}
+\end{array}\right.
+$$
+
+电流也有类似情况, $\Delta$ 侧的正序线电流超前 $\mathrm{Y}$ 侧的正序线电流 $30^{\circ}, \Delta$ 侧的负序线电流则落后于 $\mathrm{Y}$ 侧的正序线电流 $30^{\circ}$, 如图 4. 5-28 所示。
+
+变压器两侧线电流的正序和负序分量存在以 下关系:
+
+$$
+\left\{\begin{array}{l}
+\dot{I}_{\mathrm{a} 1}=\dot{I}_{\mathrm{A} 1} \mathrm{e}^{\mathrm{j} 30^{\circ}} \\
+\dot{I}_{\mathrm{a} 2}=\dot{I}_{\mathrm{A} 2} \mathrm{e}^{-\mathrm{j} 30^{\circ}}
+\end{array}\right.
+$$
+
+由以上可见,经过 $Y / \Delta-11$ 接法的变压器, 由星形侧到三角形侧时,正序系统逆时针方向 转过 $30^{\circ}$, 负序系统顺时针方向转过 $30^{\circ}$; 反之, 由三角形侧到星形侧时, 正序系统顺时针方向 转过 $30^{\circ}$, 负序系统逆时针方向转过 $30^{\circ}$ 。
+
+## 2. 负序分量变号原则
+
+当已知星形侧的序电流 $I_{A 1} 、 I_{A 2}$ 时, 三角侧的各相电流分别为
+
+$$
+\begin{aligned}
+& \dot{I}_{\mathrm{a}}=\dot{I}_{\mathrm{a} 1}+\dot{I}_{\mathrm{a} 2}=\dot{I}_{\mathrm{A} 1} \mathrm{e}^{\mathrm{j} 30^{\circ}}+\dot{I}_{\mathrm{A} 2} \mathrm{e}^{-\mathrm{j} 30^{\circ}}=-\mathrm{j}\left[a \dot{I}_{\mathrm{A} 1}+a^{2}\left(-\dot{I}_{\mathrm{A} 2}\right)\right] \\
+& \dot{I}_{b}=a^{2} \dot{I}_{\mathrm{a} 1}+a \dot{I}_{\mathrm{a} 2}=a^{2} \dot{I}_{\mathrm{A} 1} \mathrm{e}^{330^{\circ}}+a I_{\mathrm{A} 2} \mathrm{e}^{-\mathrm{j} 30^{\circ}}=-\mathrm{j}\left[\dot{I}_{\mathrm{A} 1}+\left(-\dot{I}_{\mathrm{A} 2}\right)\right] \\
+& \dot{I}_{C}=a \dot{I}_{\mathrm{a} 1}+a^{2} \dot{I}_{\mathrm{a} 2}=a \dot{I}_{\mathrm{A} 1} \mathrm{e}^{\mathrm{j} 30^{\circ}}+a^{2} \dot{I}_{\mathrm{A} 2} \mathrm{e}^{-\mathrm{j} 30^{\circ}}=-\mathrm{j}\left[a^{2} \dot{I}_{\mathrm{A} 1}+a\left(-i_{\mathrm{A} 2}\right)\right]
+\end{aligned}
+$$
+
+从上式可以看出, 如果不计变压器原、副方电流间的相位关系,略去上式中右端的系数 $-\mathrm{j}$, 并改选 $\mathrm{b}$ 相作为二角侧的基准相, 则只要将负序分量改变符号, 就可以直接按对称分量反 变换公式得到用座形侧的对称分量合成三角侧的各相电流 (电压)。这个原则称为 $Y / \Delta$ 接法 变压器的负序分量变号原则。
+
+## 6 变压器
+
+### 1 三相组式变压器及三相芯式变压器结构特点
+
+二相组式变压器和三相芯式变压器是三相变压器的两种结构形式。由三个独立的单相变 压器组成的二相变压器叫三相组式变压器, 也叫三相变压器组, 它的结构特点是各相的磁路系 统为独立的, 彼此无关联。三相芯式变压器的结构特点是三相的磁路连在一起, 每相磁通都以 另外两相的磁路作为自己的回路。图 4.6-1 中, 图 (a) 是三相组式变压器的磁路系统, 图 (b) 是三相芯式变压器的磁路系统。
+
+(a) 三相组式变压器的磁路系统 (b) 三相芯式变压器的磁路系统
+
+三相芯式变压器具有消耗材料少,价格便宜,占地面积小,维护简单等优点而应用最广泛。 但在大容量的巨型变压器中, 为了便于运输及减少备用容量, 常常采用二相组式变压器。
+
+### 2 变压器的额定值
+
+根据变压器的设计和试验数据规定值运行称为变压器的额定运行, 对应于额定运行情况 的各种量称为变压器的额定值。每台变压器的额定值都标明在铭牌上, 固定在变压器的油箱 上。额定值主要如下。
+
+(1)额定容量 $S_{\mathrm{N}}$, 单位为 VA 或 $\mathrm{kVA}$ 。额定容量是变压器的额定视在功率, 通常设计的一次 绕组与二次绕组的额定容量相等, 即 $S_{\mathrm{N}}=S_{1 \mathrm{~N}}=S_{2 \mathrm{~N}}$ 。对三相变压器, $S_{\mathrm{N}}$ 是指三相总容量。
+
+(2)额定电压 $U_{1 \mathrm{~N}} / U_{2 \mathrm{~N}}$, 单位为 $\mathrm{V}$ 或 $\mathrm{kV} 。 U_{1 \mathrm{~N}} 、 U_{2 \mathrm{~N}}$ 分别为一次绕组和二次绕组的额定电压。 对三相变压器, 额定电压指线电压。
+
+(3)额定电流 $I_{1 \mathrm{~N}} / I_{2 \mathrm{~N}}$, 单位为 $\mathrm{A}_{\circ} I_{1 \mathrm{~N}} 、 I_{2 \mathrm{~N}}$ 分别为一次绕组与二次绕组的额定电流。对三相 变压器, 额定电流指线电流。
+
+(4)额定频率 $f$, 单位为 $\mathrm{Hz}_{\text {。 }}$ 我国规定标准工业频率为 $50 \mathrm{~Hz}$ 。
+
+(5)相数。 (6)绕组连接图与连接组标号。
+
+(7)漏阻抗标幺值或阻抗电压 $U_{\mathbf{k}}$ 。
+
+此外, 还有效率、温升、总重量等。
+
+【例 4. 6-1】有一台单相变压器, 额定容量 $S_{\mathrm{N}}=4.6 \mathrm{kVA}$, 额定电压 $U_{1 \mathrm{~N}} / U_{2 \mathrm{~N}}=380 / 115 \mathrm{~V}$, 求一、二次侧的额定电流是多少?
+
+解 : 对单相变压器
+
+$$
+S_{\mathrm{N}}=U_{1 \mathrm{~N}} I_{1 \mathrm{~N}}=U_{2 \mathrm{~N}} I_{2 \mathrm{~N}}
+$$
+
+则一次侧额定电流
+
+$$
+I_{\mathrm{IN}}=\frac{S_{\mathrm{N}}}{U_{1 \mathrm{~N}}}=\frac{4.6 \times 10^{3}}{380}=12.1 \mathrm{~A}
+$$
+
+二次侧称 电流
+
+$$
+I_{2 \mathrm{~N}}=\frac{S_{\mathrm{N}}}{U_{2 \mathrm{~N}}}=\frac{4.6 \times 10^{3}}{115}=40 \mathrm{~A}
+$$
+
+【例 4.6-2】 有一台三相变压器, 额定容量 $S_{\mathrm{N}}=50 \mathrm{kVA}$, 额定电压 $U_{1 \mathrm{~N}} / U_{2 \mathrm{~N}}=10 / 0.4 \mathrm{kV}$, 求一、二次侧的额定电流是多少?
+
+解: 对三相变厌器
+
+$$
+S_{\mathrm{N}}=\sqrt{3} U_{1 \mathrm{~N}} I_{1 \mathrm{~N}}=\sqrt{3} U_{2 \mathrm{~N}} I_{2 \mathrm{~N}}
+$$
+
+则一次侧额定电流
+
+二次侧额定电流
+
+$$
+I_{\mathrm{iN}}=\frac{S_{\mathrm{N}}}{\sqrt{3} U_{\mathrm{IN}}}=\frac{50}{\sqrt{3} \times 10}=2.89 \mathrm{~A}
+$$
+
+$$
+I_{2 \mathrm{~N}}=\frac{S_{\mathrm{N}}}{\sqrt{3} U_{2 \mathrm{~N}}}=\frac{50}{\sqrt{3} \times 0.4}=72.17 \mathrm{~A}
+$$
+
+4.6.3 变压器的变比和参数的测定方法
+
+## 1. 变压器的变比
+
+$$
+\begin{aligned}
+& E_{1}=4.44 f N_{1} \phi_{\mathrm{m}} \\
+& E_{2}=4.44 f N_{2} \phi_{\mathrm{m}}
+\end{aligned}
+$$
+
+式中 $N_{1}$-一次绕组的匝数;
+
+$\mathrm{N}_{2}$ 一二次绕组的匝数;
+
+$\phi_{\mathrm{m}}$ - 一主磁通的幅值。
+
+在变压器中, 一次侧电动势 $E_{1}$ 与二次侧电动势 $E_{2}$ 之比称为变压器的变比, 用 $k$ 表示, 即
+
+$$
+k=\frac{E_{1}}{E_{2}}=\frac{4.44 f N_{1} \phi_{\mathrm{m}}}{4.44 f N_{2} \phi_{\mathrm{m}}}=\frac{N_{1}}{N_{2}}
+$$
+
+即变压器的变比也等于一次绕组与二次绕组的匝数之比。
+
+也可近似地采用空载运行时一、二次侧电压之比作为变压器的变比, 即
+
+$$
+k=\frac{U_{1}}{U_{20}}
+$$
+
+变压器空载时, 一次侧加额定电压 $U_{1 \mathrm{~N}}$ 时, 二次侧的空载电压 $U_{20}$ 就定为二次侧的额定电 压 $U_{2 \mathrm{~N}}$, 所以变比也可写成
+
+$$
+k=\frac{U_{1 \mathrm{~N}}}{U_{2 \mathrm{~N}}}
+$$
+
+## 2. 变压器参数的测定方法
+
+变压器的参数可通过空载试验与短路试验求得。
+
+(1) 变压器的空载试验
+
+从空载试验可求得变压器的变比 $k$ 、空载损耗 $P_{0}$ 和励磁阻抗 $Z_{\mathrm{m}}$ 。图 4.6-3 是变压器空载 试验的线路图, 图 (a) 是单相变压器, 图 (b) 是三相变压器。
+
+(a) 单相变压器 (b) 三相变压器
+
+以单相变压器为例, 空载试验时, 一次侧加上额定电压 $U_{1 \mathrm{~N}}$, 二次侧开路, 测量空载电流 $I_{0}$ 、空载损耗 $P_{0}$ 及二次侧空载电压 $U_{20}$ (即额定电压 $U_{2 N}$ )。根据测量的数据计算出变压器的 参数:
+
+变比 $k=\frac{U_{1 \mathrm{~N}}}{U_{20}}$
+
+阻抗 $\left|Z_{0}\right|=\frac{U_{1 \mathrm{~N}}}{I_{0}}$
+
+电阻 $R_{0}=\frac{P_{0}}{I_{0}^{2}}$
+
+由空载试验时的等效电路图 4.6-4 可知
+
+$$
+\begin{aligned}
+& Z_{0}=Z_{1}+Z_{\mathrm{m}} \\
+& R_{0}=R_{1}+R_{\mathrm{m}}
+\end{aligned}
+$$
+
+式中 $R_{1}$-一次绕组的电阻;
+
+$R_{\mathrm{m}}$ 一变压器的励磁电阻;
+
+$Z_{1}=R_{1}+\mathrm{j} X_{1}$ 一一次绕组的漏阻抗;
+
+由于 $R_{\mathrm{t}} \ll R_{\mathrm{m}}, Z_{1} \ll Z_{\mathrm{m}}$, 则近似认为励磁电阻
+
+$$
+R_{\mathrm{m}} \approx R_{0}=\frac{P_{0}}{I_{0}^{2}}
+$$
+
+励磁阻抗
+
+$$
+\left|Z_{\mathrm{m}}\right| \approx\left|Z_{0}\right|=\frac{U_{1 \mathrm{~N}}}{I_{0}}
+$$
+
+励磁电抗
+
+$$
+X_{\mathrm{m}}=\sqrt{\left|Z_{\mathrm{m}}\right|^{2}-R_{\mathrm{m}}^{2}}
+$$
+
+对三相变压器, 试验测量的电压、电流都是线值, 要根据绕组连接方式先换算成相值。对 三相空载电流不等时取其三相平均值作为励磁电流。测量的空载损耗也是三相的, 除以 3 , 取 一相的功率, 这样, 就与单相变压器一样了, 按上面的办法计算出每相的变比及参数值。
+
+为了方便,空载试验一般都在低压侧加电源。
+
+## (2) 变压器的短路试验
+
+从短路试验可测得变压器的短路阻抗和阻抗电压。图 4.6-5 是变压器短路试验的线路 图, 图 (a) 是单相变压器,图 (b) 是三相变压器。
+
+(a) 单相变压器 $\quad$ (b) 三. 相变压器
+
+以单相变压器为例, 短路试验时测量电压 $U_{\mathrm{k}}$ 、电流 $I_{\mathrm{k}}$ 和损耗 $P_{\mathrm{k}}$, 就可计算变压器的短路 阻抗
+
+短路电阻
+
+$$
+\left|Z_{\mathrm{k}}\right|=\frac{U_{\mathrm{k}}}{I_{\mathrm{k}}}
+$$
+
+短路电抗
+
+$$
+R_{\mathrm{k}}=\frac{P_{\mathrm{k}}}{I_{\mathrm{k}}^{2}}
+$$
+
+$$
+X_{\mathrm{k}}=\sqrt{\left|Z_{\mathrm{k}}\right|^{2}-R_{\mathrm{k}}^{2}}
+$$
+
+按照技术标准规定, 在计算变压器的性能时, 对绕组的电阻要换算到 $75^{\circ} \mathrm{C}$ 时数值 (对 $\mathrm{A}$ 、 $E 、 B$ 级绝缘而言。而对 $F 、 H$ 级绝缘为 $115^{\circ} \mathrm{C}$ )。
+
+对铜线变压器换算公式为
+
+$$
+R_{\mathrm{k} 75 \mathrm{C}}=R_{\mathrm{k} \theta} \frac{234.5+75}{234.5+\theta}
+$$
+
+式中 $\theta$ 为试验时的室温。 $75^{\circ} \mathrm{C}$ 时的短路阻抗为
+
+$$
+\left|Z_{\mathrm{k} 75 \mathrm{C}}\right|=\sqrt{R_{\mathrm{k} 75 \%}^{2}+X_{\mathrm{k}}^{2}}
+$$
+
+阻抗电压 $U_{\mathrm{k}}$ 就是变压器短路阻抗 $\left|Z_{\mathrm{k} 75 \mathrm{r}}\right|$ 与一次侧额定电流 $I_{\mathrm{IN}}$ 的乘积, 用一次侧额定电 压 $U_{1 N}$ 的百分数表示的数据, 即
+
+$$
+U_{\mathrm{k}}=\frac{I_{1 \mathrm{~N}}\left|Z_{\mathrm{k} 75 \mathrm{C}}\right|}{U_{\mathrm{IN}}} \times 100(\%)
+$$
+
+由式(4.6-6) 计算出的阻抗电压 $U_{k}$, 便是标在铭牌上的阻抗电压 $U_{k}$ 。
+
+由于一般电力变压器的短路阻抗很小, 进行短路试验时应在降低电压下进行, 以免电流过 大损伤变压器。为了便于测量, 短路试验通常将高压绕组接电源, 低压绕组接短路。
+
+【例 4.6-3】 有一台单相变压器, 额定容量 $S_{\mathrm{N}}=20000 \mathrm{kVA}$, 额定电压 $U_{\mathrm{IN}} / U_{2 \mathrm{~N}}=127 / 11$ $\mathrm{kV}$, 空载和短路试验数据如表 4.6-1 所示, 环境温度为 $25^{\circ} \mathrm{C}$, 求:
+
+(1) 折算到高压边的各参数;
+
+(2) 计算阻抗电压 $U_{k}$;
+
+(3) 设折算后的高、低压绕组的电阻和漏抗分别相等, 画出变压器的 $\mathrm{T}$ 形等效电路。
+
+表 4. 6-1
+
+| 试验名称 | 电压 $/ \mathrm{kV}$ | 电流 $/ \mathrm{A}$ | 功率 $/ \mathrm{kW}$ | 备注 |
+| :---: | :---: | :---: | :---: | :---: |
+| 空载试检 | 11 | 45.4 | 47 | 电压加在低压边 |
+| 短路试验 | 9.24 | 157.5 | 129 | 电压加在高压边 |
+
+解:变压器的变比
+
+$$
+k=\frac{U_{1 \mathrm{~N}}}{U_{2 \mathrm{~N}}}=\frac{127}{11}=11.55
+$$
+
+(1) 折算到高压边的各参数
+
+由空载试验数据可求得折算到高压边的励磁参数分别为
+
+励磁阻抗 $\left|Z_{\mathrm{m}}\right|=k^{2} \frac{U_{0}}{I_{0}}=11.55^{2} \frac{11 \times 10^{3}}{45.4}=32322 \Omega$
+
+励磁电阻 $R_{m}=k^{2} \frac{P_{0}}{I_{0}^{2}}=11.55^{2} \frac{47 \times 10^{3}}{45.4^{2}}=3042 \Omega$
+
+励磁电抗 $X_{\mathrm{m}}=\sqrt{\left|Z_{m}\right|^{2}-R_{m}^{2}}=\sqrt{32322^{2}-3042^{2}}=32178 \Omega$
+
+(2) 计算阻抗电压 $U_{k}$
+
+由短路试验数据求得折算到高压边的短路参数分别为
+
+短路阻抗 $\left|Z_{\mathrm{k} 25 \%}\right|=\frac{U_{\mathrm{k}}}{I_{\mathrm{k}}}=\frac{9.24 \times 10^{3}}{157.5}=58.7 \Omega$
+
+短路电阻 $R_{\mathrm{k} 25^{\circ} \mathrm{C}}=\frac{P_{\mathrm{k}}}{I_{\mathrm{k}}^{2}}=\frac{129 \times 10^{3}}{157.5^{2}}=5.2 \Omega$
+
+短路电抗 $X_{\mathrm{k}}=\sqrt{\left|Z_{\mathrm{k} 25 \mathrm{C}}\right|^{2}-R_{\mathrm{k}}^{2}}=\sqrt{58.7^{2}-5.2^{2}}=58.5 \Omega$
+
+已知室温 $\theta=25^{\circ} \mathrm{C}$, 折算到 $75^{\circ} \mathrm{C}$ 短路参数为 短路电阻 $R_{\mathrm{k} 75 \mathrm{C}}=R_{\mathrm{k} \theta} \frac{234.5+75}{234.5+\theta}=5.2 \times \frac{234.5+75}{234.5+25}=6.2 \Omega$
+
+短路阻抗 $\left|Z_{\mathrm{k} 75 \mathrm{q}}\right|=\sqrt{R_{\mathrm{k} 75 \mathrm{C}}^{2}+X_{\mathrm{k}}^{2}}=\sqrt{6.2^{2}+58.5^{2}}=58.8 \Omega$
+
+阻抗电压 $U_{\mathrm{k}}=\frac{I_{1 \mathrm{~N}}\left|Z_{\mathrm{k} 75 \mathrm{C}}\right|}{U_{1 \mathrm{~N}}} \times 100 \%=\frac{157.5 \times 58.8}{127 \times 10^{3}} \times 100 \%=7.3 \%$
+
+高压边额定电流
+
+$$
+I_{1 \mathrm{~N}}=\frac{S_{\mathrm{N}}}{U_{1 \mathrm{~N}}}=\frac{20000}{127}=157.5 \mathrm{~A}
+$$
+
+(3) 变压器的 $\mathrm{T}$ 形等效电路
+
+依题设 $R_{1}=R_{2}^{\prime}=\frac{R_{\mathrm{k}}}{2}=\frac{6.2}{2}=3.1 \Omega$
+
+$$
+X_{1}=X_{2}^{\prime}=\frac{X_{\mathrm{k}}}{2}=\frac{58.5}{2}=29.3 \Omega
+$$
+
+$\mathrm{T}$ 形等效电路如图 4.6-6 所示。
+
+### 4 变压器的工作原理
+
+变压器的主要部分就是两个绕组套在一个 共同的铁芯上,这两个绕组的匝数不同,互相绝 缘, 它们之间只有磁的耦合, 如图 4.6-7 变压器 原理示意图。这两个绕组中一个接到交流电源 上,称为一次绕组。另一个接负载, 称为二次绕 组。一次绕组接电源后, 在电源电压 $u_{1}$ 的作用
+
+交变磁通 $\phi$, 其交变频率与电源电压 $u_{1}$ 的频率一样。由于 $\phi$ 同时交链一、二次绕组, 根据电磁 感应定律, 交变磁通便在一、二次绕组中感应出交变电动势 $e_{1}$ 和 $e_{2}$ 。 $e_{1}$ 与 $e_{2}$ 的频率与 $u_{1}$ 的频 辛- - 样。二次绕组有了电动势, 便可向负载供电, 供给负载的电流为 $i_{2}$, 负载端电压为 $u_{2}$, 这样 便实现了能量传递。在不计变压器的铁芯损耗及一、二次绕组电阻和漏磁通的情况下, 一、二 次绕组问路中的电动势与电压相平衡,用有效值表示为
+
+$$
+U_{1}=E_{1}, E_{2}=U_{2}
+$$
+
+无论一次绕组还是二次绕组,其每匝线圈所交链的磁通相同,因此每匝线圈感应的电动势 相等。由于两绕组的匝数不同, 所感应的电动势 $E_{1}$ 与 $E_{2}$ 的数值也就不同, 因此负载端电压 $U_{2}$ 与电源电压 $U_{1}$ 的数值也就不同, 从而实现了电压的变换。只要改变一、二次绕组的匝数之 比, 就可达到改变负载端电压的目的。综上所述, 变压器的基本工作原理就是利用电磁感应作 用,把一种电压的交流电能转变成频率相同的另一种电压的交流电能。
+
+### 5 变压器的电势平衡方程式及各量含义
+
+变压器的基本方程式、等效电路和相量图是分析变压器问题的三种方法, 三者是完全一致 的,而基本方程式是基础。
+
+## 1. 变压器的基本方程式
+
+变压器负载运行吋的情况如图 4. 6-8 所示。由变压器的丁. 作原理知道, 二次侧在电动势 $E_{2}$ 的作用下向负载送出电流 $\dot{I}_{2}$, 负载端电压为 $U_{2}$ 。二次绕组流过电流 $I_{2}$ 建立磁动势 $F_{2}=N_{2} \dot{I}_{2}$, 由 $F_{2}$ 所产生的磁通, 其中一部分只交链二次绕组 本身,称为二次绕组的漏磁通，用 $\dot{\phi}_{\mathrm{S} 2}$ 表示。 $\dot{\phi}_{\mathrm{S} 2}$ 在 二次绕组中感应漏磁电动势 $E_{\mathrm{S} 2}$ 。
+
+一次绕组在电源电压 $U_{1}$ 的作用下流过电流 $i_{1}$, 建立一次侧磁动势 $F_{1}=N_{1} i_{1}$, 由 $F_{1}$ 产生的磁 通,其中一部分只交链一次绕组本身,称为一次绕
+
+在负载情况下铁芯中的主磁通 $\dot{\phi}_{\mathrm{m}}$ 是由 $F_{1}$ 与 $F_{2}$ 共同建立的, 二者之和称为励磁磁动势, 用 $F_{\mathrm{m}}$ 表示, 即
+
+$$
+F_{1}+F_{2}=F_{\mathrm{m}}
+$$
+
+式(4.6-7) 称为变压器的磁动势平衡方程式。
+
+当变压器空载时, $i_{2}=0, F_{2}=0$, 则
+
+$$
+F_{1}=F_{\mathrm{m}}
+$$
+
+即空载情况下的励磁磁动势 $F_{\mathrm{m}}$ 仅由一次绕组来建立。此时流过一次绕组的电流称为励磁电 流, 用 $i_{\mathrm{m}}$ 来表示, 即
+
+$$
+F_{\mathrm{m}}=N_{\mathrm{l}} i_{\mathrm{m}}
+$$
+
+这样, 磁动势平衡方程式也可写成
+
+$$
+\begin{aligned}
+& N_{1} \dot{I}_{1}+N_{2} \dot{I}_{2}=N_{1} \dot{I}_{\mathrm{m}} \\
+& \dot{I}_{1}+\frac{N_{2}}{N_{1}} \dot{I}_{2}=\dot{I}_{\mathrm{m}}
+\end{aligned}
+$$
+
+由式 (4. 6-3) 知道, 变比 $k=\frac{N_{1}}{N_{2}}$, 则
+
+$$
+i_{1}+\frac{i_{2}}{k}=i_{\mathrm{m}}
+$$
+
+## 式(4.6-9) 是用电流形式表示的磁动势平衡方程式。
+
+主磁通 $\dot{\phi}_{\mathrm{m}}$ 在一、二次绕组中感应电动势 $E_{1}$ 及 $E_{2}$ 。一次绕组的电阻为 $R_{1}$, 流过电流 $i_{1}$ 产 生电压降 $I_{1} R_{1}$ 。二次绕组的电阻为 $R_{2}$, 流过电流 $I_{2}$ 后产生电压降 $I_{2} R_{2}$ 。根据基尔霍夫定律, 由图 4. 6-8 便可列出变压器的方程式:
+
+$$
+\left.\begin{array}{l}
+U_{1}=-\left(E_{1}+E_{\mathrm{S} 1}\right)+I_{1} R_{1} \\
+U_{2}=E_{2}+E_{\mathrm{S} 2}-I_{2} R_{2} \\
+I_{1}+\frac{I_{2}}{k}=I_{\mathrm{m}} \\
+U_{2}=I_{2} Z_{1}
+\end{array}\right\}
+$$
+
+漏磁电动势 $E_{\mathrm{S} 1}$ 是由漏磁通 $\dot{\phi}_{\mathrm{S}}$ 感应的, 并且滞后 $\dot{\phi}_{\mathrm{S} 1}$ 为 $90^{\circ}$ 。而 $\phi_{\mathrm{S} 1}$ 与一次侧电流 $I_{1}$ 成正 比, 因此
+
+写成等式为
+
+$$
+E_{\mathrm{S} 1} \propto \phi_{\mathrm{S} 1} \propto I_{1}
+$$
+
+$$
+E_{\mathrm{S} 1}=X_{1} I_{1}
+$$
+
+或
+
+$$
+E_{\mathrm{s} 1}=-\mathrm{j} I_{1} X_{1}
+$$
+
+式中比例常数 $X_{1}$ 称为一次绕组的漏电抗,简称一次漏抗。漏磁电动势用漏抗压降来表示后, 漏磁通对电路的影响就可用电路的参数 (电抗) 来表示, 这样, 就把电磁耦合问题转化为电路 问题来研究,使问题得到简化。
+
+$$
+E_{\mathrm{5} 2}=X_{2} I_{2}
+$$
+
+或
+
+$$
+E_{\mathrm{S} 2}=-\mathrm{j} I_{2} X_{2}
+$$
+
+式中 $X_{2}$ 称为二次绕组的漏电抗, 简称二次漏抗。 $X_{1}$ 与 $X_{2}$ 都是常数, 它们不受磁路饱和与否 的影响。
+
+由励磁电流 $i_{\mathrm{m}}$ 建立主磁通 $\dot{\phi_{\mathrm{m}}}$, 由 $\dot{\phi_{\mathrm{m}}}$ 感应电动势 $E_{1}$ 。对于 $E_{1}$ 也可引人一个电路参数来 表示。但考虑到主磁通在铁芯中引起损耗,故不能单纯地引人一个电抗, 而应引人一个阻抗 $Z_{\mathrm{m}}$ 把 $E_{1}$ 与 $i_{\mathrm{m}}$ 联系起来, 这样电动势 $E_{1}$ 的作用可看做是电流 $I_{\mathrm{m}}$ 流过 $Z_{\mathrm{m}}$ 产生的阻抗压降, 即
+
+$$
+E_{1}=I_{\mathrm{m}}\left|Z_{\mathrm{m}}\right|
+$$
+
+因为电压是指电位降, 而电动势是指电位升, 二者相位相反, 故用相量表示时为
+
+$$
+E_{1}=-i_{\mathrm{m}} Z_{\mathrm{m}}
+$$
+
+式中 $Z_{\mathrm{m}}=R_{\mathrm{m}}+\mathrm{j} X_{\mathrm{m}}$ 一一变压器的励磁阻抗;
+
+$R_{\mathrm{m}}$-一变压器的励磁电阻, 是对应于铁耗的等效电组;
+
+$X_{\mathrm{m}}$ 一一励磁电抗, 它反映主磁通对电路的影响所转化成的电路的参数。
+
+励磁阻抗 $Z_{\mathrm{m}}$ 受铁芯饱和的影响而不是常数, 随电压的变化而变化。当电源电压一定时, $Z_{\mathrm{m}}$ 也就一定。
+
+综上所述,将磁通对电路的影响转化为电路的参数来表示后, 负载时变压器的基本方程式 可写成下列形式:
+
+$$
+\left.\begin{array}{l}
+\dot{U}_{1}=-\left(E_{1}+E_{\mathrm{S} 1}\right)+i_{1} R_{1}=-E_{1}+\mathrm{j} I_{1} X_{1}+i_{1} R_{1}=-E_{1}+I_{1} Z_{1} \\
+\dot{U}_{2}=E_{2}+E_{\mathrm{S} 2}-\dot{I}_{2} R_{2}=E_{2}-\mathrm{j} I_{2} X_{2}-i_{2} R_{2}=E_{2}-\dot{I}_{2} Z_{2} \\
+\dot{I}_{1}+\frac{i_{2}}{k}=\dot{I}_{\mathrm{m}} \\
+E_{1}=-i_{\mathrm{m}} Z_{\mathrm{m}} \\
+U_{2}=I_{2} Z_{\mathrm{L}}
+\end{array}\right\}
+$$
+
+式中 $Z_{1}=R_{1}+\mathrm{j} X_{1}$ 一一次绕组的漏阻抗;
+
+$Z_{2}=R_{2}+\mathrm{j} X_{2}$ 一一次绕组的漏阻抗。
+
+直接应用方程组 (4.6-15) 对变压器进行定量计算很繁杂。为计算方便, 引人折算法, 即把 二次绕组的匝数变换成一次绕组的匝数而不改变其电磁本质。这样折算后, 二次侧各物理量 的数值称为二次侧折算到一次侧的折算值, 用原来二次侧各物理量的符号加上一个“'”来表 示。经折算后, 方程组 (4.6-15) 便成为
+
+$$
+\left.\begin{array}{l}
+U_{1}=-E_{1}+\dot{I}_{1} Z_{1} \\
+\dot{U}_{2}^{\prime}=E_{2}^{\prime}-\dot{I}_{2}^{\prime} Z_{2}^{\prime} \\
+i_{1}+\dot{I}_{2}^{\prime}=I_{\mathrm{m}} \\
+E_{1}=E_{2}^{\prime} \\
+E_{1}=-i_{\mathrm{m}} Z_{\mathrm{m}} \\
+\dot{U}_{2}^{\prime}=I_{2}^{\prime} Z_{\mathrm{I}}^{\prime}
+\end{array}\right\}
+$$
+
+方程组 (4.6-16) 是对变压器进行定量计算时实际所用的方程式。
+
+## 2. 等效电路
+
+所谓等效电路就是把基本方程组 (4.6-16) 所表示的电磁关系用电路的形式表示出来。有 了等效电路, 就很容易用一个等效阻抗接在电网上来代替整个变压器及其所带负载, 因此, 给 分析计算带来很大方便。
+
+## (1) T 形等效电路
+
+(2) 简化等效电路
+
+### 6 变压器的电压调整率
+
+当变压器一次绕组接额定电压, 二次绕组开路时的电压 $U_{20}$ 就是二次侧额定电压 $U_{2 \mathrm{~N}}$ 。变 压器带上负载后, 二次侧电压变为 $U_{2}$ 。二次侧端电压随负载变化的程度, 用电压调整率 $\Delta U \%$ 来表示。
+
+$\Delta U \%$ 的定义: 一次侧加额定电压, 负载功率因数一定, 二次侧空载电压与负载时电压之差 $\left(U_{20}-U_{2}\right)$ 用二次侧额定压 $U_{2 \mathrm{~N}}$ 的百分数来表示, 即
+
+$$
+\Delta U \%=\frac{U_{20}-U_{2}}{U_{2 \mathrm{~N}}} \times 100 \%=\frac{U_{2 \mathrm{~N}}-U_{2}}{U_{2 \mathrm{~N}}} \times 100 \%=\frac{U_{1 \mathrm{~N}}-U_{2}^{\prime}}{U_{1 \mathrm{~N}}} \times 100 \%
+$$
+
+电压调整率 $\Delta U \%$ 与变压器的参数、负载大小及性质有关。用参数表示的计算式, 可用变 压器的简化等效电路对应的相量图导出。计算式为
+
+$$
+\Delta U \%=\beta\left(\frac{I_{1 \mathrm{~N}} R_{\mathrm{k} 7 \mathrm{q}} \cos \varphi_{2}+I_{1 \mathrm{~N}} X_{\mathrm{k}} \sin \varphi_{2}}{U_{1 \mathrm{~N}}}\right) \times 100 \%
+$$
+
+式中 $\beta=\frac{I_{1}}{I_{1 N}}$ 负载系数;
+
+$$
+\cos \varphi_{2} \text { 一负载功率因数。 }
+$$
+
+电压调整率是变压器的一个重要运行性能指标, 标志着变压器输出电压的稳定程度。
+
+【例 4.6-4】有一台单相变压器, 额定容量为 $20000 \mathrm{kVA}$, 额定电压 $U_{\mathrm{IN}} / U_{2 \mathrm{~N}}=127 / 11$ $\mathrm{kV}_{\text {。 }}$ 已知折算到高压边的短路参数为 $R_{\mathrm{k} 75 \mathrm{C}}=6.2 \Omega, X_{\mathrm{k}}=58.5 \Omega$ 。当变压器在额定情况下运 行, 负载功率因数 $\cos \varphi_{2}=0.8$ 时, 求它的电压调整率是多少?
+
+解:变压器的一次侧额定电流
+
+$$
+I_{1 \mathrm{~N}}=\frac{S_{\mathrm{N}}}{U_{1 \mathrm{~N}}}=\frac{20000}{127}=157.5 \mathrm{~A}
+$$
+
+额定运行时负载系数 $\beta=1$ 。当 $\cos \varphi_{2}=0.8$ 时, $\sin \varphi_{2}=\sqrt{1-\cos ^{2} \varphi_{2}}=\sqrt{1-0.8^{2}}=0.6$ 。
+
+将以上数据代人式(4.6-18) 得
+
+$$
+\begin{aligned}
+\Delta U \% & =\beta\left(\frac{I_{1 \mathrm{~N}} R_{\mathrm{k} 75 \mathrm{C}} \cos \varphi_{2}+I_{1 \mathrm{~N}} X_{\mathrm{k}} \sin \varphi_{2}}{U_{1 \mathrm{~N}}}\right) \times 100 \% \\
+& =1 \times \frac{157.5 \times 6.2 \times 0.8+157.5 \times 58.5 \times 0.6}{127 \times 10^{3}} \times 100 \%=4.97 \%
+\end{aligned}
+$$
+
+### 7 变压器的空载合闸电流
+
+变压器空载合闸时可能会出现很大的冲击电 流, 而冲击电流的出现是和变压器磁通的建立密切 联系在一起的。图 4.6-11 是变压器空载合闸时的 示意图。
+
+设电网电压 $u_{1}$ 按正弦规律变化。二次绕组开 路。合闸时一次侧回路的电压方程式为
+
+$$
+u_{1}=\sqrt{2} U_{1} \sin \left(\omega t+\alpha_{0}\right)=i_{0} R_{1}+N_{1} \frac{\mathrm{d} \phi_{\mathrm{t}}}{\mathrm{d} t}
+$$
+
+式中 $\alpha_{0}$ 一合闸时电压 $u_{1}$ 的初相角;
+
+$\phi_{1}$ 一一一一次绕组交链的总磁通,包括主磁通和漏磁通。
+
+由于电阻压降 $i_{0} R_{1}$ 很小, 在分析过渡过程的初始阶段可以忽略不计, 则式(4.6-19)变为
+
+$$
+\begin{aligned}
+& N_{1} \frac{\mathrm{d} \phi_{1}}{\mathrm{~d} t}=\sqrt{2} U_{1} \sin \left(\omega t+\alpha_{0}\right) \\
+& \mathrm{d} \phi_{1}=\frac{\sqrt{2} U_{1}}{N_{1}} \sin \left(\omega t+\alpha_{0}\right) \cdot \mathrm{d} t
+\end{aligned}
+$$
+
+积分后得
+
+$$
+\phi_{\mathrm{t}}=-\frac{\sqrt{2} U_{1}}{\omega N_{\mathrm{t}}} \cos \left(\omega t+\alpha_{0}\right)+C=-\phi_{\mathrm{m}} \cos \left(\omega t+\alpha_{0}\right)+C
+$$
+
+式中 $C$ - - 待定积分常数;
+
+$$
+\phi_{\mathrm{m}}=\frac{\sqrt{2} U_{1}}{\omega N_{1}} \approx \frac{\sqrt{2} E_{1}}{\omega N_{1}} \text { 一稳态磁通的幅值。 }
+$$
+
+积分常数 $C$ 可根据初始条件决定。
+
+设合闸前铁芯中无剩磁, 即 $t=0$ 时, $\phi_{\mathrm{t}}=0$ 。代人式 (4.6-21) 得
+
+$$
+\begin{aligned}
+& 0=-\phi_{\mathrm{m}} \cos \alpha_{0}+C \\
+& C=\phi_{\mathrm{m}} \cos \alpha_{0}
+\end{aligned}
+$$
+
+将式(4.6-22) 代人式(4.6-21) 得空载合闸时与一次绕组交链的总磁通
+
+$$
+\phi_{1}=-\phi_{\mathrm{m}}\left[\cos \left(\omega t+\alpha_{0}\right)-\cos \alpha_{0}\right]
+$$
+
+下。
+
+由式(4.6-23) 看出, 合闸时磁通的大小与电压 $u_{1}$ 的初相角 $\alpha_{0}$ 有关, 分两种情况讨论如
+
+（1）当电压 $u_{1}$ 的初相角 $\alpha_{0}=\frac{\pi}{2}$ 时合闸
+
+当 $\alpha_{0}=\frac{\pi}{2}$ 时, 由式 $(4.6-23)$ 得
+
+$$
+\phi_{\mathrm{t}}=-\phi_{\mathrm{m}} \cos \left(\omega t+\frac{\pi}{2}\right)=\phi_{\mathrm{m}} \sin \omega t
+$$
+
+式(4.6-24) 表明, 此时一合闸就建立了稳态磁通, 即磁通的建 立没有过渡过程而立刻进入稳态,于是建立该磁通的合闸电流 也就没有过渡过程就达到了稳态空载电流, 如图 4. 6-12 所 示。
+
+(2) 当 $\boldsymbol{\alpha}_{0}=\mathbf{0}$ 时合闸
+
+当 $\alpha_{0}=0$ 时, 由式 (4.6-23) 得
+
+$$
+\phi_{\mathrm{t}}=\phi_{\mathrm{m}}(1-\cos \omega t)=\phi_{\mathrm{m}}-\phi_{\mathrm{m}} \cos \omega t=\phi_{\mathrm{t}}^{\prime \prime}+\phi_{\mathrm{t}}^{\prime}
+$$
+
+式中 $\phi_{\mathrm{t}}^{\prime \prime}=\phi_{\mathrm{m}}$ 一磁通的暂态分量,也叫自由分量。
+
+空载合闸时磁通 $\phi_{1}$ 变化曲线
+
+$\phi_{\mathrm{t}}^{\prime}=-\phi_{\mathrm{m}} \cos \omega t$ - 磁通的稳态分量。
+
+在考虑 $\phi_{1}^{\prime \prime}$ 时, 因忽略了电阻 $R_{1}$, 所以没有衰减。如果考虑 $R_{1}$ 的影响后, 则
+
+$$
+\begin{gathered}
+\phi_{1}^{\prime \prime}=\phi_{\mathrm{m}} \mathrm{e}^{-\frac{t}{T}} \\
+\text { 式中 } T=\frac{L_{1}}{R_{1}} \text { 空载合闸电流衰减的时间常数; } \\
+L_{1}-\text { 一次绕组的自感系数。 }
+\end{gathered}
+$$
+
+$$
+\phi_{1 \max }=2 \phi_{m}
+$$
+
+由于过渡过程中磁通 $\phi_{\mathrm{t}}$ 可达稳态磁通幅值 $\phi_{\mathrm{m}}$ 的 2 倍, 加 上铁芯饱和的影响, 则合闸电流可达正常空载电流的 $50 \sim 80$ 倍, 达到额定电流的 $5 \sim 8$ 倍。这 样大的电流对变压器本身没有多大的危害, 但当它衰减较慢时可能引起变压器保护装置的跳 闸。一般小容量变压器衰减较快, 约几个周期即达稳定状态。大型变压器衰减慢, 有的甚至延 续 20 秒。为使合闸电流加速衰减, 可在变压器的一次侧串联一个电阻, 合闸后将电阻切除。
+
+### 8 变压器的效率
+
+变压器的效率
+
+$$
+\eta=\frac{P_{2}}{P_{1}} \times 100 \%
+$$
+
+式中 $P_{2}$ 二 二次绕组输出的有功功率;
+
+$P_{1}$ 一一次绕组输入的有功功率。
+
+$P_{1}=P_{2}+P_{\mathrm{Cu}}+P_{\mathrm{Fe}}$
+
+式中 $P_{\mathrm{Cu}}$ 一变压器的总铜耗;
+
+$P_{\mathrm{Fe}}$ 一一变压器的总铁耗。
+
+于是式(4.6-27) 可以写成
+
+$$
+\eta=\frac{P_{2}}{P_{1}} \times 100 \%=\frac{P_{2}}{P_{2}+P_{\mathrm{Cu}}+P_{\mathrm{Fe}}} \times 100 \%=\left(1-\frac{P_{\mathrm{Cu}}+P_{\mathrm{Fe}}}{P_{2}+P_{\mathrm{Cu}}+P_{\mathrm{Fe}}}\right) \times 100 \%
+$$
+
+为了方便计算, 对式 (4.6-28) 在实际应用时作一些假定,但误差都不超过 $0.5 \%$ 。
+
+假定 1 : 计算输出功率 $P_{2}$ 时忽略二次侧电压的变化, 即认为 $U_{2}=U_{2 \mathrm{~N}}$, 则 $P_{2}$ 的计算如下。 对单相变压器
+
+$$
+P_{2}=U_{2} I_{2} \cos \varphi_{2}=U_{2 \mathrm{~N}} \beta I_{2 \mathrm{~N}} \cos \varphi_{2}=\beta S_{\mathrm{N}} \cos \varphi_{2}
+$$
+
+对二相变压器
+
+$$
+P_{2}=\sqrt{3} U_{2 \mathrm{~N}} \beta I_{2 \mathrm{~N}} \cos \varphi_{2}=\beta S_{\mathrm{N}} \cos \varphi_{2}
+$$
+
+式中 $\beta=\frac{I_{2}}{I_{2 \mathrm{~N}}}$ 一负载系数。
+
+假定 2 : 变压器负载时的铁耗 $P_{\mathrm{Fe}}$ 等于额定电压下的空载损耗 $P_{0}$ 。空载损耗主要是铁耗, 并且它是与负载大小和性质无关的常数, 即
+
+$$
+P_{\mathrm{Fe}}=P_{0}=\text { 常数 }
+$$
+
+假定 3 : 额定电流下的短路损耗 $P_{\mathrm{kN}}$ 等于负载情况下额定电流时的铜耗 $P_{\mathrm{CuN}}$, 即 $P_{\mathrm{CuN}}=$ $P_{\mathrm{kN}}$, 这是忽略了励磁电流对铜耗的影响。当电流不是额定值时, 铜耗 $P_{\mathrm{Cu}}$ 则用负载系数来考 虑, 即
+
+$$
+P_{\mathrm{Cu}}=\beta^{2} P_{\mathrm{CuN}}=\beta^{2} P_{\mathrm{kN}}
+$$
+
+经上述假定后,效率计算公式为
+
+$$
+\eta=\left(1-\frac{\beta^{2} P_{\mathrm{kN}}+P_{0}}{\beta S_{\mathrm{N}} \cos \varphi_{2}+\beta^{2} P_{\mathrm{kN}}+P_{0}}\right) \times 100 \%
+$$
+
+式 (4.6-29) 便是计算变压器效率的实用公式。
+
+在负载性质一定的情况下 ( $\cos \varphi_{2}=$ 常数), 效率 $\eta$ 仅随 $\beta$ 变化。对式 (4.6-29) 取 $\frac{\mathrm{d} \eta}{\mathrm{d} \beta}=0$, 就可求得出现最高效率 $\eta_{\max }$ 时的负载系数 $\beta_{\mathrm{m}}$ 。经计算得出
+
+$$
+\beta_{\mathrm{m}}^{2} P_{\mathrm{kN}}=P_{0}
+$$
+
+或
+
+$$
+\beta_{\mathrm{m}}=\sqrt{\frac{P_{0}}{P_{\mathrm{kN}}}}
+$$
+
+即最高效率出现在铁耗与铜耗相等时。铜耗随负载而变化, 铁耗是常数,所以最高效率出现在 可变损耗等于不变损耗时。
+
+【例 4. 6-5】一台三相变压器的额定值为: $S_{\mathrm{N}}=1800 \mathrm{kVA}, U_{1 \mathrm{~N}} / U_{2 \mathrm{~N}}=6.3 / 3.15 \mathrm{kV}$, 空载 损耗 $P_{0}=6.6 \mathrm{~kW}$, 短路损耗 $P_{\mathrm{kN}}=21.2 \mathrm{~kW}$ 。求:
+
+(1) 当负载电流 $I_{2}=I_{2 \mathrm{~N}}$, 功率因数 $\cos \varphi_{2}=0.8$ 时变压器的效率;
+
+(2) 效率最大时的负载系数 $\beta_{\mathrm{m}}$ 。
+
+解: (1) $I_{2}=I_{2 \mathrm{~N}}$ 时, 负载系数 $\beta=1$, 则
+
+$$
+\begin{aligned}
+\eta & =\left(1-\frac{\beta^{2} P_{\mathrm{kN}}+P_{0}}{\beta S_{\mathrm{N}} \cos \varphi_{2}+\beta^{2} P_{\mathrm{kN}}+P_{0}}\right) \times 100 \% \\
+& =\left(1-\frac{21.2+6.6}{1800 \times 0.8+21.2+6.6}\right) \times 100 \%=98.1 \%
+\end{aligned}
+$$
+
+(2) 由式 (4.6-30) 知
+
+$$
+\hat{\beta}_{\mathrm{m}}=\sqrt{\frac{P_{0}}{P_{\mathrm{kN}}}}=\sqrt{\frac{6.6}{21.2}}=0.56
+$$
+
+即出现最高效率时的负载系数为 0.56 。
+
+### 9 三相变压器连接组和铁芯结构对谐波电流、谐波磁通的影响
+
+## 1. $Y / Y$ 连接的三相变压器
+
+对 $Y / Y$ 连接的三相变压器, 由于一次绕组采用 $\mathrm{Y}$ 形连接, 三次谐波电流不能流通, 于是空 载电流波形接近正弦形。在磁路饱和的情况下, 接近正弦形的空载电流所产生的主磁通波形 为一平顶波。平顶波的主磁通中除基波磁通外, 还含有三次谐波磁通 (更高次谐波磁通因数 值很小而忽略不计)。三次谐波磁通的影响与三相变压器的磁路系统有关。下面分两种情况 讨论。
+
+## (1) 三相组式变压器
+
+三相组式变压器的三相磁路各自独立, 彼此无关, 如图 4. 6-1 (a) 所示, 因此三次谐波磁通 也沿着主磁通的路径闭合。由于铁芯磁路的磁阻很小, 故三次谐波的磁通很大, 由它所感应的 三次谐波相电动势也就很大, 其幅值可达电动势基波幅值的 45\% 60\%, 结果使相电动势的 波形严重畸变, 幅值升高很多, 对变压器的绝缘材料构成很大的威胁, 因此这种磁路结构的电 力变压器不采用 $\mathrm{Y} / \mathrm{Y}$ 连接方式。
+
+但在三相的线电动势中，三次谐波电动势互相抵消，因此线电动势的波形仍为正弦形。
+
+(2) 三相芯式变压器
+
+三相芯式变压器的三相磁路彼此互相联系, 如图 4.6-1(b) 所示, 因此三次谐波磁通由于 彼此同相位、同大小而不能沿铁芯闭合, 只能出铁芯, 经过绕组、油、油箱壁等结构部件再回到 铁芯成闭路。由于该磁路的磁阻很大, 故三次谐波磁通很小, 因此主磁通仍接近正弦形, 相电 动势也就接近正弦形。故三相芯式变压器可以采用 $\mathrm{Y} / \mathrm{Y}$ 连接。
+
+由于三次谐波磁通经过油箱壁等部件, 引起附加损耗, 降低变压器的效率, 故对容量较大、 电压较高的三相芯式变压器, 也不宜采用 $\mathrm{Y} / \mathrm{Y}$ 连接。
+
+## 2. $\Delta Y$ 和 $Y / \Delta$ 连接的三相变压器
+
+当三相变压器采用 $\Delta \mathrm{Y}$ 连接时,一次侧空载电流中的三次谐波分量可以流通, 于是主磁 通是正弦形, 由它感应的相电动势 $e_{1}$ 和 $e_{2}$ 也是正弦形。 当二相变压器采用 $\mathrm{Y} / \Delta$ 连接时, 一次侧空载电流中的三次谐波分量不能流通, 因此主磁 通中和--.二次侧相电动势中都出现三次谐波相电动势 (三相同相位同大小), 便在二次侧三 角形的闭合问路内产生三次谐波电流和三次谐波磁动势, 但一次侧没有相应的三次谐波电流 和磁动势与之平衡, 因此, 二次侧的三次谐波电流便成为励磁性质的电流。由变压器的磁动势 平衡方程 $F_{1}+F_{2}=F_{\mathrm{m}}$ 可知, 作用在铁芯中的励磁磁动势为一、二次侧磁动势之和, 因此可认 为在 $Y / \Delta$ 连接中, 一次侧提供基波分量的励磁电流和励磁磁动势, 二次侧提供二次谐波分量 的励磁电流和励磁磁动势, 合成的励磁磁动势其效果与 $\Delta / \mathrm{Y}$ 连接相同, 于是主磁通和相电动 势的波形也就接近正弦形。故 $\mathrm{Y} / \Delta$ 连接被广泛应用。
+
+#### 0 三相变压器连接组别的判断方法
+
+电力用的二相变压器, 国家规定的五种标准连接组别是 $\mathrm{Y} / \mathrm{Y}_{0}-0, Y / \Delta-11, \mathrm{Y}_{0} / \Delta-11$, $\mathrm{Y}_{0} / \mathrm{Y}-0$ 和 $\mathrm{Y} / \mathrm{Y}-0$, 而最常用的是前面三种。
+
+根据变压器并联运行的要求, 连接组别不同是绝对不允许的, 因此判断变压器连接组别是 变压器试检中必要的一项。
+
+## 1. 三相变压器的极性测定
+
+(1) 测定相间极性
+
+$$
+U_{\mathrm{BC}}=U_{\mathrm{Br}}-U_{\mathrm{CZ}}
+$$
+
+则标记正确。若
+
+$$
+U_{\mathrm{BC}}=B_{\mathrm{BY}}+U_{\mathrm{C} . \mathrm{P}}
+$$
+
+则标记错误, 应把 $B$ 相 (或 $C$ 相) 的端点标记换为 $Y 、 B$ (或 $Z 、 C$ )。
+
+用同样方法, 在 B 相加低电压, 决定 A、C 相间极性。测定二相高压绕组相互间极性后, 把 它们的首末端正式标记。
+
+(2) 测定一、二次侧极性
+
+$$
+U_{\mathrm{Aa}}=U_{\mathrm{AX}}-U_{\mathrm{ax}}
+$$
+
+则 $U_{\mathrm{Ax}}$ 与 $U_{\mathrm{ax}}$ 同相, $\mathrm{A}$ 与 $\mathrm{a}$ 端点极性正确。若
+
+$$
+U_{\mathrm{Aa}}=U_{\mathrm{Ax}}+U_{\mathrm{ax}}
+$$
+
+则 $U_{\mathrm{Ax}}$ 与 $U_{\mathrm{ax}}$ 相位相反, $\mathrm{A}$ 与 $\mathrm{a}$ 端点极性相反。
+
+用同样方法判别 B、C 两相一、二次侧极性。测定后, 按国家标准规定, 将低压绕组各相首 末端作正式标记。
+
+## 2. 测定连接组
+
+(1) $Y / Y-0$ 连接组
+
+按图 4.6-16 接线, 将三相变压器接成 $\mathrm{Y} / \mathrm{Y}-0$ 连接组, 将 $\mathrm{A} 、 \mathrm{a}$ 两点用导线连接, 然后在高
+
+压侧加低电压 (约 $250 \mathrm{~V}$ ), 测量以下电压: $U_{\mathrm{AB}} 、 U_{\mathrm{ab}} 、 U_{\mathrm{Bb}} 、 U_{\mathrm{Cc}} 、 U_{\mathrm{Bc}}$ 。
+
+$$
+\left.\begin{array}{l}
+U_{\mathrm{Bb}}=U_{\mathrm{Cc}}=(K-1) U_{\mathrm{ab}} \\
+U_{\mathrm{Bc}}=U_{\mathrm{al}} \sqrt{K^{2}-K+1}
+\end{array}\right\}
+$$
+
+式中 $K=\frac{U_{\mathrm{AB}}}{U_{\mathrm{ab}}}$ 一线电压比。
+
+若实测电压 $U_{\mathrm{Bb}} 、 U_{\mathrm{Cc}} 、 U_{\mathrm{Br}}$ 与按式 (4.6-31) 计算所得的数值相同, 则表示该变压器的连接组 正确。
+
+(2) $Y / \Delta-11$ 连接组
+
+按图 4.6-17 接线, 将三相变压器接成 $Y / \Delta-11$ 连接组, 将 $A 、 a$ 两点用导线连接, 然后在 高压侧加低电压 (约 $250 \mathrm{~V}$ ), 测量以下电压: $U_{\mathrm{Bb}} U_{\mathrm{Cc}} U_{\mathrm{Bc}} U_{\mathrm{AB}}$ 及 $U_{\mathrm{ab}}$ 。
+
+$$
+\left.\begin{array}{l}
+U_{\mathrm{Bb}}=U_{\mathrm{Cc}}=U_{\mathrm{ab}} \sqrt{K^{2}-\sqrt{3} K+1} \\
+U_{\mathrm{Bc}}=U_{\mathrm{ab}} \sqrt{K^{2}-\sqrt{3} K+1}
+\end{array}\right\}
+$$
+
+若实测电压 $U_{\mathrm{Bb}} 、 U_{\mathrm{Cc}} 、 U_{\mathrm{Bc}}$ 与用式(4.6-32) 计算所得的数值相同, 则表示该变压器的连接组 正确。
+
+#### 1变压器的绝缘系统、冷却方式及允许温升
+
+## 1. 变压器的绝诼系统
+
+电力变压器分为干式和油浸式两种。干式变压器是用环氧树脂作为干式绝缘材料。它是 将变压器用环氧树脂真空浇注成为一个整体后置于空气中。由于环氧树脂的绝缘性能好, 而 热等级高, 目前在 $35 \mathrm{kV}$ 以下电压等级的配电系统中广泛应用。
+
+油浸式变压器是用变压器油灌满油箱, 将铁芯与绕组装配在一起后放人油箱内, 使铁芯与 绕组全部浸在变压器油中。
+
+变压器油是一种矿物油, 它比空气具有较高的介电强度, 因此高、低压绕组之间的绝缘以 及绕组与铁芯及油箱壁之间的绝缘, 都借助变压器油来实现。绕组本身的绝缘, 一般采用 $\mathrm{A}$ 级绝缘材料,而绕组出线端经绝缘套管与外界相联。 为了防止过电压对变压器绝缘的危害, 对大型高压电力变压器的高压绕组, 现在广泛采用 纠结式绕组。这种绕组可显著增加各线饼之间的等效电容,有利于改善过电压的分布波形,有 效地防止了过电压对绕组绝缘的危害。目前 $110 \mathrm{kV}$ 电压等级以上的变压器中,广泛采用这种 绕组。
+
+## 2. 变压器的冷却方式
+
+干式变压器是用空气作为冷却介质, 将变压器中产生的热量带走, 以保证变压器各部件的 温升不超过允许的数值。
+
+油浸式变压器是用变压器油作为冷却介质。它又分为三种形式。
+
+## (1) 油浸自冷式
+
+通过油受热后的对流作用,将变压器的绕组及铁芯中产生的热量传到油箱壁和油管表面， 再散发到周围空气中。为了增加散热面积,变压器油箱的四周焊装有一定数量的散热管,变压 器运行时它内部的热油由散热管上部流出, 经散热冷却后, 从管的下部进入油箱,如此周而复 始地循环流动, 从而实现变压器散热的目的。
+
+(2) 油浸风冷式
+
+油浸风冷式是在油浸自冷式的基础上,另加风扇给油箱壁和油管吹风,以加强散热作用。
+
+(3) 强迫油循环式
+
+强迫油循环式是用油每将变压器中的热油抽到变压器外面的冷却器中, 将油冷却后再送 人变压器中。冷却器可以用循环水冷却或强迫风冷却。
+
+## 3. 变压器的允许温升
+
+变压器各部分的允许温升取决于绝缘材料。我国油浸电力变压器一般采用 $\mathrm{A}$ 级绝缘材 料,最高允许温度为 $105^{\circ} \mathrm{C}$, 高于 $105^{\circ} \mathrm{C}$ 时绝缘材料就迅速老化, 造成运行事故, 使变压器遭到 损坏。根据我国电力变压器规定的标准, 周围冷却空气的最高温度定为 $40^{\circ} \mathrm{C}$ 。按照变压器正 常使用年限为 $20 \sim 30$ 年, 则油浸电力变压器温升限度绕组 (包括自然油循环和强迫油循环) 为 $65^{\circ} \mathrm{C}$, 铁芯表面为 $75^{\circ} \mathrm{C}$, 与变压器油接触的构件表面 (非导电部分) 为 $80^{\circ} \mathrm{C}$, 油面为 $55^{\circ} \mathrm{C}$ 。
+
+## 7 感应电动机
+
+## 7 .1 感应电动机的种类及主要结构
+
+## 1. 感应电动机的种类
+
+感应电动机的种类很多,从不同的角度看可分成不同的类型。按定子相数分,有单相的、 两相的和三相的感应电动机。按转子结构分,有绕线型的和鼠笼型的。鼠笼型的又分为单鼠 笼型、双鼠笼型和深槽型感应电动机。
+
+## 2. 感应电动机的主要结构
+
+1) 感应电动机的定子
+
+感应电动机的定子由定子铁芯、定子绕组和机座三部分构成。
+
+(1) 定子铁芯
+
+定子铁芯用 $0.5 \mathrm{~mm}$ 厚的电工硅钢片叠成, 内圆冲槽, 槽内放定子绕组。定子铁芯的作用
+
+1一轴 2-弹黄片 3-轴承 4一端盖 5一定子绕组 6一机座 7一定子铁芯 8一转子铁芯 9-吊环 10一出线盒 11-风罩 12-风扇 13-轴承内盖
+
+是作为电机磁路的一部分和放置定子绕组。
+
+(2) 定子绕组
+
+定子绕组是电机的电路部分, 其主要作用是感应电动势, 通过电流以实现机电能量转换。 定子绕组一般用高强度漆包线绕成线圈, 放置在定子铁芯槽内。定子绕组在槽内的布置又分 为单层和双层两种。定子绕组在槽内部分与铁芯之间必须可靠地绝缘。
+
+对大、中型容量的感应电动机, 定子三相绕组常采用 Y 形连接, 只有三根引出线。小容量 感应电动机常把定子二.相绕组的六根出线头都引出来,根据需要可接成 $\mathrm{Y}$ 形或 $\Delta$ 形。
+
+(3) 机座
+
+机座的作用主要是固定和支撑铁芯,因此要求有足够的机械强度和刚度。中、小型感应电 动机一一般采用铸铁机座。对封闭式感应电动机，在机座外面有散热片，以增加散热面积。对大 容量感应电动机, 机座一般用钢板焊成。
+
+2) 感应电动机的转子
+
+感应电动机的转子由转子铁芯、转子绕组和转轴等组成。
+
+(1) 转子铁芯
+
+转子铁芯也是作为电机中磁路的一部分, 也用 $0.5 \mathrm{~mm}$ 厚的电工硅钢片叠成, 铁芯外圆冲 槽, 槽内放置转子绕组。
+
+(2) 转子绕组
+
+转子绕组的作用是感应电动势、流过电流和产生电磁转矩。转子绕组分鼠笼型和绕线型 两种。
+
+(1) 鼠笼型绕组。这种绕组结构是在每个转子铁芯槽中插人一根导条, 导条在伸出铁芯两 端的槽口处,用两个端环分别把所有导条的两端都连接起来,构成一个白行闭合的短路绕组。 如果去掉铁芯,整个绕组的外形就像一个“鼠笼”, 所以叫鼠笼型绕组,如图 4.7-2 所示。鼠笼 型绕组的导条与端环的材料可用铜或铝。用铜时,将导条与端环焊接起来。用铝时,是采用铸
+
+造的办法, 将导条、端环及端环上的风叶一起铸出。对于中、小型感应电动机, 一般都采用铸铝 转子。
+
+(2)绕线型转子。绕线型转子的绕组和定子绕组相似, 是用绝缘导线嵌于转子铁芯槽内, 连 接成 Y 形接法的三相对称绕组, 然后把三个出线端分别接到转子轴上的三个滑环, 再通过电 刷把电流引出来。
+
+## 7 .2 三相感应电动机的额定值、转差率概念、基本方程式、等值电路及转矩
+
+## 1. 三相感应电动机的额定值
+
+感应电动机的额定值刻印在每台电机的铭牌上。主要有下列内容。
+
+(1) 额定功率 $P_{\mathrm{N}}$, 是指电动机在额定运行时, 由轴端输出的机械功率, 单位 $\mathrm{kW}$ 。
+
+(2)额定电压 $U_{\mathrm{N}}$, 是指电动机额定运行时加在定子绕组上的线电压, 单位 $\mathrm{V}_{\text {。 }}$
+
+(3)额定电流 $I_{\mathrm{N}}$, 是指电动机在定子绕组上加额定电压、轴端输出额定功率时, 定子绕组中 的线电流, 单位 $\mathrm{A}$ 。
+
+(4) 额定频率 $f$, 我国规定电网频率为 $50 \mathrm{~Hz}_{\text {。 }}$
+
+(5)额定转速 $n_{\mathrm{N}}$, 是指电动机定子边加额定频率的额定电压, 且轴端输出额定功率时转子 的转速, 单位 $\mathrm{r} / \mathrm{min}^{\circ}$
+
+(6)额定功率因数 $\cos \varphi_{\mathrm{N}}$, 是指电动机在额定负载时定子边的功率因数。
+
+此外，铭牌上还标明定子绕组的连接法、绝缘等级等。
+
+## 2. 感应电动机的转差率
+
+当二相感应电动机的定子接至对称的二相电源时,便在定子绕组中流过三相对称电流, 所 建立的二相合成磁动势是一个旋转磁势, 它在气隙中所产生的磁场是一个旋转磁场。旋转磁 场的转速用 $n_{1}$ 表示, 其大小决定于电网的频率 $f$ 和定子绕组的极对数 $p$, 即
+
+$$
+n_{1}=\frac{60 f}{p}(\mathrm{r} / \mathrm{min})
+$$
+
+## $n_{1}$ 称为感应电动机的同步转速。
+
+当转子加速到 $n=n_{1}$ 时, 转子便与气隙旋转磁场相对静止。没有了相对运动, 转子绕组中 也就不再感应电动势, 电流和电磁转矩也就等于零, 这样转子就不可能继续转动下去。但是, 只要 $n<n_{1}$, 转子绕组与气隙旋转磁场之间有相对运动, 转子绕组里就会有电流, 也就有电磁 转矩作用在转子上, 转子就会转动起来。所以感应电动机运行时,转子的转速 $n$ 不可能达到同 步转速 $n_{1}$, 而总是小于 $n_{1}$ 。
+
+把电动机的同步转速 $n$ ，和转子转速 $n$ 二者之差与同步转速 $n_{\mathrm{r}}$ 的比值称为转差率, 用 $S$ 表示, 即
+
+$$
+S=\frac{n_{1}-n}{n_{1}}
+$$
+
+转差率 $S$ 是感应电动机的一个重要物理量,在分析电动机运行时经常用到。一般情况下,感应 电动机从空载到额定运行的范围内转速变化不大,因此转差率的变化也就不大。空载时转速 $n$ 非常接近同步转速 $n_{1}$, 此时的转差率 $S$ 在 $0.5 \%$ 以下, 而在额定运行时的转差率 $S_{\mathrm{N}}$ 也在 $5 \%$ 以下, 即 $n_{\mathrm{N}}$ 也只是略小于 $n_{1}$ 。
+
+【例 4.7-1】一台三相感应电动机的额定频率 $f=50 \mathrm{~Hz}$, 额定转速 $n_{\mathrm{N}}=970 \mathrm{r} / \mathrm{min}$, 求该电 机的额定转差率 $S_{\mathrm{N}}$ 是多少?
+
+解: 由式 (4.7-1) 可知: $n_{1}=\frac{60 f}{p}$ 。因为我国电网频率 $f=50 \mathrm{~Hz}$, 所以同步转速 $n_{1}=\frac{60 \times 50}{p}$ $=\frac{3000}{p}(\mathrm{r} / \mathrm{min})$ 。当
+
+极对数 $p=1$ 时, $n_{1}=3000 \mathrm{r} / \mathrm{min}$
+
+极对数 $p=2$ 时, $n_{1}=1500 \mathrm{r} / \mathrm{min}$
+
+极对数 $p=3$ 时, $n_{1}=1000 \mathrm{r} / \mathrm{min}$
+
+极对数 $p=4$ 时, $n_{1}=750 \mathrm{r} / \mathrm{min}$
+
+已知电动机的额定转速 $n_{\mathrm{N}}$ 略小于同步转速 $n_{1}$, 所以该电动机的同步转速 $n_{1}=1000 \mathrm{r} / \mathrm{min}$, 电 机的极对数 $p=3$, 额定转差率
+
+$$
+S_{\mathrm{N}}=\frac{n_{1}-n_{\mathrm{N}}}{n_{1}}=\frac{1000-970}{1000}=0.03
+$$
+
+## 3. 感应电动机的基本方程式、等值电路、功率和电磁转矩
+
+## 1)感应电动机的基本方程式与等值电路
+
+由于感应电动机和变压器在电磁感应的本质上是相似的, 因此可仿照研究变压器的方法 来导出感应电动机的基本方程式和等值电路, 即先将转子边各物理量折算到定子一边, 折算后 的各个量都在原来符号的右上角加“'”来表示, 由此得出折算后三相感应电动机转子旋转时的 基本方程式:
+
+$$
+\begin{aligned}
+& U_{1}=-E_{1}+\dot{I}_{1}\left(R_{1}+\mathrm{j} X_{1}\right)=-E_{1}+I_{1} Z_{1} \\
+& E_{1}=-I_{\mathrm{m}}\left(R_{\mathrm{m}}+\mathrm{j} X_{\mathrm{m}}\right)=-i_{\mathrm{m}} Z_{\mathrm{m}} \\
+& E_{1}=E_{2}^{\prime} \\
+& E_{2}^{\prime}=\dot{I}_{2}^{\prime}\left(\frac{R_{2}^{\prime}}{S}+\mathrm{j} X_{2}^{\prime}\right)=\dot{I}_{2}^{\prime} Z_{2}^{\prime}+\dot{I}_{2}^{\prime} \frac{1-S_{1}}{S} R_{2}^{\prime} \\
+& I_{1}+\dot{I}_{2}^{\prime}=I_{\mathrm{m}}
+\end{aligned}
+$$
+
+式中 $U_{1} 、 E_{1} 、 I_{1}$ 一定子绕组的相电压、相电动势和相电流; $Z_{1}$ 一一定子漏阻抗;
+
+$Z_{\mathrm{m}}=R_{\mathrm{m}}+\mathrm{j} X_{\mathrm{m}}$ 一一感应电动机的励磁阻抗;
+
+$R_{\mathrm{m}}$ 一一励磁电阻, 是代表铁耗的一个等值电阻;
+
+$X_{\mathrm{m}}$ 一一励磁电抗, 是代表主磁通对电路的影响所转化为电路的一个参数;
+
+$I_{\mathrm{m}}$ 一一励磁电流;
+
+$E_{2}^{\prime}$ 一一折算后转子绕组的相电动势;
+
+$I_{2}^{\prime}$ 一一折算后转子绕组的相电流;
+
+$Z_{2}^{\prime}=R_{2}^{\prime}+\mathrm{j} X_{2}^{\prime}$ 一一折算后转子绕组的漏阻抗;
+
+$R_{2}^{\prime}$ 一一折算后转子绕组的电阻;
+
+$X_{2}^{\prime}$ 一一折算后转子绕组的漏电抗。
+
+式(4.7-3) (a) 是定子边电压方程式。式(4.7-3) (b) 是励磁支路的电压降。式(4.7-3) (d) 是转子边电动势平衡方程式。式(4.7-3) (e) 是感应电动机的磁动势平衡方程式用电流的 形式来表示。
+
+根据以上基本方程式, 就可画出三相感应电动机的等 值电路图, 如图 4.7-4 所示。
+
+2)三相感应电动机的功率和电磁转矩
+
+(1) 功率关系
+
+当三相感应电动机以转速 $n$ 稳定运行时, 从电源输入 到定子边的有功功率为 $P_{1}$, 则
+
+$$
+P_{1}=3 U_{1} I_{1} \cos \varphi_{1}
+$$
+
+式中 $\cos \varphi_{1}$ 一定子边的功率因数。
+
+功率 $P_{1}$ 的一部分消耗于定子绕组电阻 $R_{1}$ 上, 称为定子铜耗, 用 $P_{\mathrm{Cul}}$ 表示, 即
+
+$$
+P_{\mathrm{Cul}}=3 I_{1}^{2} R_{1}
+$$
+
+另有一部分消耗于电机的铁芯中, 称为电机的铁耗, 用 $P_{\mathrm{Fe}}$ 表示, 即
+
+$$
+P_{\mathrm{re}}=3 I_{\mathrm{m}}^{2} R_{\mathrm{m}}
+$$
+
+扣除这两部分损耗之后, 剩下的功率便是通过气隙旋转磁场, 利用电磁感应作用传递到转子上 的功率, 称为电磁功率, 用 $P_{M}$ 表示, 则电磁功率 $P_{M}$ 与输入功率 $P_{1}$ 的关系为
+
+$$
+P_{\mathrm{M}}=P_{1}-P_{\mathrm{Cul}}-P_{\mathrm{Fe}}
+$$
+
+在功率传递过程中, 转子电阻 $R_{2}^{\prime}$ 消耗一部分功率, 称为转子铜耗, 用 $P_{\mathrm{Cu} 2}$ 表示, 即
+
+$$
+P_{\mathrm{Cu} 2}=3 I_{2}^{\prime 2} R_{2}^{\prime}
+$$
+
+电磁功率 $P_{\mathrm{M}}$ 减去转子铜耗 $P_{\mathrm{Cu} 2}$ 之后, 便是产生于转子上的总机械功率 $P_{\mathrm{Mec}}$, 则总机械功率 $P_{\text {Mer }}$ 与电磁功率 $P_{\mathrm{M}}$ 的关系为
+
+$$
+P_{\mathrm{Mec}}=P_{\mathrm{M}}-P_{\mathrm{Cu}}
+$$
+
+电动机在运行时, 由于轴承、风扇等产生摩擦阻转矩, 也要消耗一部分功率, 称为机械损 耗, 用 $P_{\text {mex }}$ 表示。除上述各部分损耗外, 由于定子、转子铁芯开有齿槽和定子、转子磁动势中含 有高次谐波磁动势等影响,还要产生一些损耗,称为附加损耗,用 $P_{\mathrm{ad}}$ 表示。
+
+总机械功率 $P_{\mathrm{Mec}}$ 减去机械损耗 $P_{\mathrm{mee}}$ 和附加损耗 $P_{\mathrm{ad}}$ 之后, 才是转轴上真正输出的机械功 率, 称为电动机的输出功率, 用 $P_{2}$ 表示。则输出功率 $P_{2}$ 与总机械功率 $P_{\text {Mec }}$ 之间的关系为
+
+$$
+P_{2}=P_{\text {Mec }}-P_{\text {mec }}-P_{\text {ad }}
+$$
+
+转轴上输出功率 $P_{2}$ 与电动机从电源输入的功率 $P_{1}$ 之间的关系为
+
+$$
+P_{2}=P_{1}-P_{\mathrm{Cut}}-P_{\mathrm{re}}-P_{\mathrm{Cu} 2}-P_{\text {mex }}-P_{\text {ad }}
+$$
+
+以上各功率之间的关系, 可用功率流程图表示出来, 如 图 4.7-5 所示。
+
+式(4.7-5) 至式 (4.7-8), 便是感应电动机的功率 平衡方程式。
+
+从图 4. 7-4 等值电路上看, 定子铜耗 $P_{\mathrm{Cul}}=3 I_{1}^{2} R_{1}$, 铁耗 $P_{\mathrm{Fe}}=3 I_{\mathrm{m}}^{2} R_{\mathrm{m}}$, 输入电路的总功率 $P_{1}$ 减去 $P_{\mathrm{Cul}}$ 和
+
+$$
+P_{1}-P_{\mathrm{Cul}}-P_{\mathrm{Fe}}=3 I_{2}^{\prime 2} \frac{R_{2}^{\prime}}{S}
+$$
+
+当定子绕组的相数用 $m_{1}$ 表示后,则
+
+$$
+P_{1}-P_{\text {Cul }}-P_{\mathrm{Fe}_{\mathrm{c}}}=m_{1} I_{2}^{\prime 2} \frac{R_{2}^{\prime}}{S}
+$$
+
+由式(4.7-5) 知道 $P_{\mathrm{M}}=P_{1}-P_{\mathrm{Cul}}-P_{\mathrm{Fe}}$, 所以传递到转子上的电磁功率 $P_{\mathrm{M}}$ 等于转子回路 中全部电阻上的损耗, 即
+
+$$
+P_{\mathrm{M}}=m_{1} I_{2}^{\prime 2} \frac{R_{2}^{\prime}}{S}=m_{1} I_{2}^{\prime 2} R_{2}^{\prime}+m_{1} I_{2}^{\prime 2} \frac{1-S}{S} R_{2}^{\prime}=P_{\mathrm{Cu} 2}+m_{1} I_{2}^{2} \frac{1-S^{\prime}}{S} R_{2}^{\prime}
+$$
+
+式(4.7-9) 可以写成
+
+$$
+m_{1} I_{2}^{\prime 2} \frac{1-S}{S} R_{2}^{\prime}=P_{\mathrm{M}}-P_{\mathrm{Cu} 2}
+$$
+
+由式(4.7-6) 可知 $P_{\mathrm{Mec}}=P_{\mathrm{M}}-P_{\mathrm{Cu} 2}$ 所以从等值电路上看总机械功率
+
+$$
+P_{\text {Mec }}=m_{1} I_{2}^{\prime 2} \frac{1-S}{S} R_{2}^{\prime}
+$$
+
+由式(4.7-9) 可知
+
+$$
+P_{\mathrm{M}}=m_{1} I_{2}^{\prime 2} \frac{R_{2}^{\prime}}{S}
+$$
+
+则
+
+$$
+S P_{\mathrm{M}}=m_{1} I_{2}^{\prime 2} R_{2}^{\prime}=P_{\mathrm{Cu} 2}
+$$
+
+所以
+
+$$
+P_{\mathrm{Cu} 2}=S P_{\mathrm{M}}
+$$
+
+由式(4.7-10) 可知
+
+$$
+P_{\mathrm{Mer}}=\frac{m_{1} I_{2}^{\prime 2} R_{2}^{\prime}}{S}(1-S)=\frac{P_{\mathrm{Cu}^{2}}}{S}(1-S)
+$$
+
+则
+
+$$
+P_{\text {Mer }}=P_{\mathrm{M}}(1-S)
+$$
+
+从等值电路上看; 电磁功率 $P_{M}$ 也可表示为
+
+$$
+P_{\mathrm{M}}=m_{1} E_{2}^{\prime} I_{2}^{\prime} \cos \varphi_{2}
+$$
+
+式中 $\cos \varphi_{2}$ 一转子电路的功率因数。
+
+## (2) 电磁转矩
+
+旋转体的机械功率等于作用在旋转体上的转矩与它的机械角速度的乘积。在感应电动机 中, 总机械功率 $P_{\mathrm{Mex}}$ 就等于电磁转矩 $T$ 乘以转子的机械角速度 $\Omega$, 即
+
+$$
+P_{\text {Mer }}=T \Omega
+$$
+
+若转子转速为 $n$, 则机械角速度
+
+$$
+\Omega=\frac{2 \pi n}{60}
+$$
+
+同步转速为 $n_{1}$, 则同步机械角速度
+
+$$
+\Omega_{1}=\frac{2 \pi n_{1}}{60}
+$$
+
+由此得出
+
+$$
+\frac{n}{n_{1}}=\frac{\Omega}{\Omega_{1}}
+$$
+
+已知电角速度 $\omega=2 \pi f$, 则同步机珹角速度 $\Omega_{1}$ 与电角速度 $\omega$ 之间关系为
+
+$$
+\Omega_{1}=\frac{\omega}{p}=\frac{2 \pi f}{p}
+$$
+
+由式 (4.7-2) 知 $S=\frac{n_{1}-n}{n_{1}}$, 则 $n=n_{1}(1-S)$, 用角速度代替转速后得到
+
+$$
+\Omega=\Omega_{1}(1-S)
+$$
+
+则
+
+$$
+\frac{\Omega}{\Omega_{1}}=1-S
+$$
+
+由式(4.7-12)得到
+
+$$
+\frac{P_{\text {Mec }}}{P_{M}}=1-S
+$$
+
+将式(4.7-15) 代人得
+
+$$
+\frac{P_{\text {Mex }}}{P_{\mathrm{M}}}=\frac{\Omega}{\Omega_{1}}, \frac{P_{\text {Mex }}}{\Omega}=\frac{P_{\mathrm{M}}}{\Omega_{1}}
+$$
+
+由式 (4.7-14) 知电磁转矩
+
+$$
+T=\frac{P_{M \text { ac: }}}{\Omega}
+$$
+
+所以
+
+$$
+T=\frac{P_{\mathrm{Mec}}}{\Omega}=\frac{P_{\mathrm{M}}}{\Omega_{1}}
+$$
+
+将式(4.7-13)代人式(4.7-16)得
+
+$$
+T=\frac{P_{\mathrm{M}}}{\Omega_{1}}=\frac{m_{1} E_{2}^{\prime} I_{2}^{\prime} \cos \varphi_{2}}{\frac{2 \pi f}{p}}
+$$
+
+折算后转子电动势
+
+$$
+E_{2}^{\prime}=\sqrt{2} \pi f N_{1} k_{\mathrm{dpl}} \phi_{\mathrm{m}}
+$$
+
+式中 $N_{1}$ 一一定子每相绕组的串联匝数;
+
+$k_{\mathrm{dp1}}$ 一一定子的基波绕组系数;
+
+$\phi_{\mathrm{m}}$ 一一电动机的主磁通幅值。
+
+将 $E_{2}^{\prime}$ 的表达式代人式(4.7-17) 并经整理后得
+
+$$
+T=C_{T} \phi_{\mathrm{m}} I_{2}^{\prime} \cos \varphi_{2}
+$$
+
+式(4.7-18) 也称为电磁转矩的物理表达式, 该式表明了电磁转矩产生的物理原因。
+
+电磁转矩表达式也可从等值电路中导出。图 4.7-4 等值电路中, 由于励磁阻抗比定子、转 子的漏阻抗大得多, 因此去掉励磁支路后对计算出的转子电流 $I_{2}^{\prime}$ 的影响很小, 则得出
+
+$$
+I_{2}^{\prime}=\frac{U_{1}}{\sqrt{\left(R_{1}+\frac{R_{2}^{\prime}}{S}\right)^{2}+\left(X_{1}+X_{2}^{\prime}\right)^{2}}}
+$$
+
+由式(4.7-9) 可知
+
+$$
+P_{\mathrm{M}}=m_{1} I_{2}^{\prime 2} \frac{R_{2}^{\prime}}{S}
+$$
+
+已知电磁转矩
+
+$$
+T=\frac{P_{\mathrm{M}}}{\Omega_{1}}
+$$
+
+将式(4.7-9) 及式(4.7-19) 代人得
+
+或
+
+$$
+\left.T=\frac{m_{1} p U_{1}^{2} \frac{R_{2}^{\prime}}{S}}{2 \pi f\left[\left(R_{1}+\frac{R_{2}^{\prime}}{S}\right)^{2}+\left(X_{1}+X_{2}^{\prime}\right)^{2}\right]}\right)
+$$
+
+$$
+\left.T=\frac{m_{1}}{\Omega_{1}} \cdot \frac{U_{1}^{2} \frac{R_{2}^{\prime}}{S}}{\left(R_{1}+\frac{R_{2}^{\prime}}{S}\right)^{2}+\left(X_{1}+X_{2}^{\prime}\right)^{2}}\right\}
+$$
+
+式(4.7-20)称为电磁转矩的参数表达式,该式表明了阻抗参数对电磁转矩的影响。
+
+由式(4.7-7) 可知
+
+$$
+P_{\text {Mec }}=P_{2}+\left(P_{\text {mee }}+P_{\text {ad }}\right)
+$$
+
+两端除以机械角速度 $\Omega$ 得
+
+$$
+\frac{P_{\text {Mer }}}{\Omega}=\frac{P_{2}}{\Omega}+\frac{P_{\text {mex }}+P_{\text {ad }}}{\Omega}
+$$
+
+得到
+
+$$
+T=T_{2}+T_{0}
+$$
+
+式(4.7-21) 便是三相感应电动机以转速 $n$ 稳定运行时的转矩平衡方程式。电磁转矩
+
+$$
+T=\frac{P_{\mathrm{Mec}}}{\Omega}=\frac{P_{\mathrm{M}}}{\Omega_{1}}
+$$
+
+负载转矩
+
+$$
+T_{2}=\frac{P_{2}}{\Omega}
+$$
+
+空载转矩
+
+$$
+T_{0}=\frac{P_{\text {mer }}+P_{\text {ad }}}{\Omega}
+$$
+
+【例 4.7-2】一台二相感应电动机运行时输入功率 $P_{1}=60 \mathrm{~kW}$, 定子铜耗及铁耗为 $\left(P_{\mathrm{Cu}}\right.$ $\left.+P_{\mathrm{Fe}}\right)=1 \mathrm{~kW}$, 转差率 $S=0.03$, 求该电动机的电磁功率 $P_{\mathrm{M}}$ 、总机械功率 $P_{\mathrm{Mec}}$ 和转子铜耗 $P_{\mathrm{Cu} 2}$ 。
+
+解: 电磁功率为
+
+总机械功率为
+
+$$
+P_{\mathrm{M}}=P_{1}-\left(P_{\mathrm{Cu}}+P_{\mathrm{Fe}}\right)=60-1=59 \mathrm{~kW}
+$$
+
+转子铜耗为
+
+$$
+P_{\text {Mec }}=P_{\mathrm{M}}(1-S)=59(1-0.03)=57.23 \mathrm{~kW}
+$$
+
+$$
+P_{\mathrm{Cu} 2}=S P_{\mathrm{M}}=0.03 \times 59=1.77 \mathrm{~kW}
+$$
+
+或
+
+$$
+P_{\text {cu2 }}=P_{\mathrm{M}}-P_{\text {Mer }}=59-57.23=1.77 \mathrm{~kW}
+$$
+
+【例 4.7-3】一台三相感应电动机, 额定运行时输入功率 $P_{1}=3.6 \mathrm{~kW}$, 转子铜耗 $P_{\mathrm{Cu} 2}=$ $0.1 \mathrm{~kW}$, 机械损耗和附加损耗 $\left(P_{\mathrm{mec}}+P_{\mathrm{ad}}\right)=0.1 \mathrm{~kW}$, 额定转差率 $S_{\mathrm{N}}=0.03$, 求该电动机的电 磁功率 $P_{\mathrm{M}}$ 、定子总损耗 $\left(P_{\mathrm{CuI}}+P_{\mathrm{Fe}}\right)$ 和输出功率 $P_{2}$ 。
+
+解: 电磁功率为
+
+$$
+P_{\mathrm{M}}=\frac{P_{\mathrm{Cu} 2}}{S_{\mathrm{N}}}=\frac{0.1}{0.03}=3.33 \mathrm{~kW}
+$$
+
+定子总损耗为
+
+$$
+P_{\mathrm{Cul}}+P_{\mathrm{Fe}}=P_{1}-P_{\mathrm{M}}=3.6-3.33=0.27 \mathrm{~kW}
+$$
+
+输计功率为
+
+$$
+P_{2}=P_{\mathrm{M}}-P_{\mathrm{Cu} 2}-\left(P_{\text {mec }}+P_{\text {ad }}\right)=3.33-0.1-0.1=3.13 \mathrm{~kW}
+$$
+
+【例 4. 7-4】一台四极三相感应电动机的数据为: $P_{\mathrm{N}}=17 \mathrm{~kW}, f=50 \mathrm{~Hz}$, 额定运行时的定 子铜耗 $P_{\mathrm{Cul}}=0.7 \mathrm{~kW}$, 铁耗 $P_{\mathrm{Fe}}=0.45 \mathrm{~kW}$, 转子铜耗 $P_{\mathrm{Cu} 2}=0.5 \mathrm{~kW}$, 机械损耗和附加损耗 $\left(P_{\mathrm{mec}}\right.$ $\left.+P_{\mathrm{adi}}\right)=0.35 \mathrm{~kW}$, 求该电动机额定运行时的:
+
+(1) 额定转速 $n_{\mathrm{N}}$;
+
+(2) 额定负载转矩 $T_{\mathrm{N}}$;
+
+(3) 空载转矩 $T_{0}$;
+
+(4) 电磁转矩 $T_{\text {。 }}$
+
+解: (1) 电磁功率为 转差率
+
+$$
+P_{\mathrm{M}}=P_{2}+P_{\mathrm{Cu} 2}+P_{\mathrm{mec}}+P_{\mathrm{ad}}=17+0.5+0.35=17.85 \mathrm{~kW}
+$$
+
+$$
+S_{\mathrm{N}}=\frac{P_{\mathrm{Cu} 2}}{P_{\mathrm{M}}}=\frac{0.5}{17.85}=0.028
+$$
+
+已知该电机的极对数 $p=\frac{4}{2}=2$, 所以该电机的同步转速为
+
+$$
+n_{1}=\frac{60 f}{p}=\frac{60 \times 50}{2}=1500 \mathrm{r} / \mathrm{min}
+$$
+
+该电机的额定转速为
+
+$$
+n_{\mathrm{N}}=(1-S) n_{1}=(1-0.028) 1500=1458 \mathrm{r} / \mathrm{min}
+$$
+
+(2) 负载转矩为
+
+$$
+T_{Z}=\frac{P_{Z}}{\Omega}
+$$
+
+额定运行时为
+
+$$
+T_{\mathrm{N}}=\frac{P_{\mathrm{N}} \times 10^{3}}{\Omega_{\mathrm{N}}}=\frac{P_{\mathrm{N}} \times 10^{3}}{\frac{2 \pi n_{\mathrm{N}}}{60}}=9550 \frac{P_{\mathrm{N}}}{n_{\mathrm{N}}}=9550 \times \frac{17}{1458}=111.35 \mathrm{~N} \cdot \mathrm{m}
+$$
+
+(3) 空载转矩为
+
+$$
+T_{0}=\frac{\left(P_{\text {mec }}+P_{\text {ad }}\right) 10^{3}}{\Omega}=9550 \times \frac{P_{\text {mec }}+P_{\text {ad }}}{n_{\mathrm{N}}}=9550 \times \frac{0.35}{1458}=2.29 \mathrm{~N} \cdot \mathrm{m}
+$$
+
+(4) 电磁转矩为
+
+$$
+T=T_{2}+T_{0}=T_{\mathrm{N}}+T_{0}=111.35+2.29=113.64 \mathrm{~N} \cdot \mathrm{m}
+$$
+
+【例 4.7-5】一台三相感应电动机的额定数据为: $P_{\mathrm{N}}=7.5 \mathrm{~kW}, f=50 \mathrm{~Hz}, n_{\mathrm{N}}=960 \mathrm{r} / \mathrm{min}$, 额定运行时的定子铜耗 $P_{\mathrm{Cut}}=474 \mathrm{~W}$, 铁耗 $P_{\mathrm{ret}}=231 \mathrm{~W}$, 机械损耗 $P_{\text {mec }}=45 \mathrm{~W}$, 附加损耗 $P_{\mathrm{ad}}=$ $38 \mathrm{~W}$, 求该电机额定运行时的转差率 $S_{\mathrm{N}}$ 、转子铜耗 $P_{\mathrm{Cu} 2}$ 和输入功率 $P_{1}$ 。
+
+解 : (1) 转差率
+
+已知 $n_{\mathrm{N}}=960 \mathrm{r} / \mathrm{min}$, 同步转速 $n_{1}=1000$, 则
+
+$$
+S_{\mathrm{N}}=\frac{n_{1}-n_{\mathrm{N}}}{n_{1}}=\frac{1000-960}{1000}=0.04
+$$
+
+(2) 转子铜耗
+
+总机械功率
+
+$$
+P_{\text {Mec }}=P_{2}+P_{\text {mec }}+P_{\text {ad }}=7.5+0.045+0.038=7.538 \mathrm{~kW}
+$$
+
+电磁功率
+
+$$
+P_{\mathrm{M}}=\frac{P_{\text {Mec }}}{1-S}=\frac{7.583}{1-0.04}=7.899 \mathrm{~kW}
+$$
+
+转子铜耗
+
+$$
+P_{\mathrm{Cu} 2}=P_{\mathrm{M}}-P_{\text {Me: }}=7.899-7.583=0.316 \mathrm{~kW}
+$$
+
+(3) 输入功率
+
+$$
+P_{1}=P_{\mathrm{M}}+P_{\mathrm{Cul}}+P_{\mathrm{Fe}}=7.899+0.474+0.231=8.604 \mathrm{~kW}
+$$
+
+4.7 .3 感应电动机的三种运行状态及其判断方法
+
+感应电动机的三种运行状态是电动机运行状态、发电机运行状态和电磁制动运行状态。
+
+## 1. 电动机运行状态
+
+感应电动机的定子边接电源后, 便在气隙中产生旋转磁场, 以同步转速 $n_{1}$ 旋转。通过电 磁感应作用, 便产生电磁转矩作用在转子上, 转子便在电磁转矩的作用下转动起来, 转速为 $n$, 转向与 $n_{1}$ 的转向相同, 这样就可以从转轴上向外输出机械功率。此时电机便是从定子边输入 电能, 从转子边输出机械能, 感应电动机的这种运行状态, 称为电动机运行状态。
+
+作为电动机运行状态时, 一定要满足 $0<n<n_{1}$ 或者 $0<S<1$ 的条件。
+
+## 2. 发电机运行状态
+
+如果用原动机拖动感应电动机的转子, 沿着原来电动机运行状态时的方向加速, 当转子转 速 $n$ 高于同步转速 $n_{1}$, 即 $n>n_{1}$ 时, 气隙旋转磁场切割转子导条的方向与电动机运行状态时相 反了, 导条中的感应电势和电流的方向以及产生的电磁转矩的方向也反了, 这种情况下, 电磁 转矩对原动机来说是一个制动转矩, 要保持电动机转子继续转动, 原动机必须给电动机输入机 械功率。另一方面, 由于转子电流方向的改变, 也引起定子电流方向的改变, 于是定子边不再 从电网输入电功率, 而是变为向电网输出电功率。这样, 感应电动机的运行状态是从转子边输 人机械功率, 从定子边输出电功率。这种把机械能转变为电能的运行状态, 称为感应电动机的 发电机运行状态。
+
+作为发电机运行状态时,一定要满足 $n>n_{1}$ 或 $S<0$ 的条件。
+
+## 3. 电磁制动运行状态
+
+如果用外加转矩拖动感应电动机的转子, 逆着原来电动机运行状态时的方向转动, 则转子 中的感应电动势和电流的方向仍然与原来电动机运行状态时的一样, 作用在转子上的电磁转 矩的方向也就与原来电动机运行状态时的一样, 但是, 与转子的转向相反了, 亦即与外加转矩 的方向相反了, 此时电磁转矩成为制动转矩。为了克服这个制动转矩, 维持转子的继续转动, 外加转矩必须对转子供给机械功率。这样, 感应电动机从定子边输入电功率, 从转子边输入机 械功率。感应电动机的这种运行状态称为电磁制动运行状态。
+
+作为电磁制动运行状态时,一定要满足 $n<0$ 或 $S>1$ 的条件。
+
+## 7 .4 感应电动机的工作特性
+
+感应电动机的工作特性是指在额定电压、额定频率运行的情况下, 电动机的转速 $n$ 、定子 电流 $I_{1}$ 、功率因数 $\cos \varphi_{1}$ 、电磁转矩 $T$ 和效率 $\eta$ 与输出功率 $P_{2}$ 的关系, 即 $U_{1}=U_{\mathrm{N}}, f=50 \mathrm{~Hz}$ 时
+
+$$
+n=f\left(P_{2}\right), I_{1}=f\left(P_{2}\right), \cos \varphi_{1}=f\left(P_{2}\right), T=f\left(P_{2}\right), \eta=f\left(P_{2}\right)
+$$
+
+的工作特性 试验求出的工作特性曲线如图 4.7-6 所示。对各特性曲线的分析如 下。
+
+## 1. 转速特性
+
+由图 4.7-6 可知, 电动机从空载到满载的范围内, 转速 $n$ 随负载 $P_{2}$ 的增加而稍微下降, 即转速变化不大, 转速特性 $n=f\left(P_{2}\right)$ 是一条稍 微向下倾斜的曲线。
+
+由式(4.7-11) 可知, 转差率 $S=\frac{P_{\mathrm{Cu} 2}}{P_{\mathrm{M}}}$ 。当空载运行时, $P_{2}=0$, 此时 $I_{2} \approx 0, P_{\mathrm{Cu} 2} \approx 0$, 所以 $S \approx 0, n \approx n_{1}$ 。当负载增大时, $I_{2}$ 增大, $P_{\mathrm{Cu} 2}$ 增大, 使 $S$ 增大。但为了保证电 动机有较高的效率, 在一般感应电动机中转子铜耗是很小的, 额定负载时的转差率一般为 $S_{\mathrm{N}}$ $=0.01 \sim 0.05$, 即 $n=(0.99 \sim 0.95) n_{1}$, 与同步转速很接近, 因此 $n=f\left(P_{2}\right)$ 是一条稍微下倾的 曲线。
+
+## 2. 定子电流特性
+
+由图 4. 7-6 看出, 定子电流特性 $I_{1}=f\left(P_{2}\right)$ 曲线, 是 $I_{1}$ 随负载 $P_{2}$ 的增加而近似正比例增 加。由式 (4.7-3) (e) 可知, 定子电流 $\dot{I}_{1}=I_{\mathrm{m}}+\left(-\dot{I}_{2}^{\prime}\right)$, 空载时, $I_{2}^{\prime} \approx 0, I_{1} \approx I_{\mathrm{m}}$ 。随着负载增大, 转子电流 $I_{2}^{\prime}$ 增大, 定子电流 $I_{1}$ 也随之增大。
+
+## 3. 功率因数特性
+
+从图 4.7-4 感应电动机的等值电路看出, 对电源而言, 感应电动机相当于一个感性阻抗, 其功率因数总是滞后的。空载时, 定子电流基本上是励磁电流, 主要用于无功励磁, 所以功率 因数很低, 约为 $\cos \varphi_{0}=0.1 \sim 0.2$ 之间。当负载增加时, 转子电流的有功分量增加, 定子电流 的有功分量随之增加, 致使功率因数逐渐提高。在接近额定负载时, 功率因数达到最大。当超 过额定值时, 由于转速降低, $S$ 增大, 转子电流中的无功分量增大, 因而又使定子功率因数下 降。功率因数特性 $\cos \varphi_{1}=f\left(P_{2}\right)$ 曲线如图 4.7-6 所示。
+
+## 4. 电磁转矩特性
+
+感应电动机在稳定运行时, 轴端输出的转矩 $T_{2}=\frac{P_{2}}{\Omega}=9.55 \frac{P_{2}}{n}$, 由于从空载到满载范围内 转速 $n$ 变化很小,因此 $T_{2}=f\left(P_{2}\right)$ 曲线近似为一直线。
+
+感应电动机的转矩平衡方程式为
+
+$$
+T=T_{2}+T_{0}
+$$
+
+空载转矩 $T_{0}$ 可以认为基本不变, 所以电磁转矩特性 $T=f\left(P_{2}\right)$ 近似为一条直线, 如图 4.7-6 所 示。
+
+## 5. 效率特性
+
+根据效率的定义, 感应电动机的效率为输出功率 $P_{2}$ 与输入功率 $P_{1}$ 之比, 用百分数表示, 即
+
+$$
+\eta=\frac{P_{2}}{P_{1}} \times 100 \%=\left(1-\frac{\sum P}{P_{1}}\right) \times 100 \%
+$$
+
+式中 $\sum P$ 为感应电动机的总损耗。由式(4.7-8) 可知
+
+$$
+\sum P=P_{\mathrm{Cul}}+P_{\mathrm{Fe}}+P_{\mathrm{Cu} 2}+P_{\mathrm{mer}}+P_{\mathrm{ad}}
+$$
+
+从空载到满载范围内, 电动机的铁耗 $P_{\mathrm{Fe}}$ 和机械损耗 $P_{\mathrm{mec}}$ 变化很小, 可以看做是不变损耗, 而定子、转子铜耗 $P_{\mathrm{Cul}} 、 P_{\mathrm{Cu} 2}$ 和附加损耗 $P_{\mathrm{ad}}$ 是随负载变化的, 是可变损耗。
+
+空载时, $P_{2}=0, \eta=0$ 。当输出功率 $P_{2}$ 增加时, 可变损耗增加较慢, 所以效率上升很快。 当负载增加到不变损耗 $\left(P_{\mathrm{mec}}+P_{\mathrm{Fe}}\right)$ 等于可变损耗 $\left(P_{\mathrm{Cul}}+P_{\mathrm{Cu} 2}+P_{\mathrm{ad}}\right)$ 时, 效率达到最大值。若 输出功率 $P_{2}$ 继续增加, 引起定子、转子铜耗增加很快, 效率就反而下降。效率曲线 $\eta=f\left(P_{2}\right)$ 如图 4.7-6 所示。
+
+【例 4.7-6】一台三相感应电动机运行时输入功率 $P_{1}=8.6 \mathrm{~kW}$, 定子铜耗 $P_{\mathrm{Cu}}=425 \mathrm{~W}$, 铁耗 $P_{\mathrm{re}}=210 \mathrm{~W}$, 机械损耗与附加损耗之和 $\left(P_{\mathrm{mec}}+P_{\mathrm{ad}}\right)=135 \mathrm{~W}$, 转差率 $S=0.034$, 求该电动 机的效率。
+
+解: 电磁功率
+
+$$
+P_{\mathrm{M}}=P_{1}-P_{\mathrm{Cul}}-P_{\mathrm{Fe}}=8.6-0.425-0.21=7.965 \mathrm{~kW}
+$$
+
+转子铜耗
+
+$$
+P_{\mathrm{Cu} 2}=S P_{\mathrm{M}}=0.034 \times 7.965=0.271 \mathrm{~kW}
+$$
+
+总损耗
+
+$$
+\sum P=P_{\mathrm{Cul}}+P_{\mathrm{re}}+P_{\mathrm{Cu} 2}+P_{\mathrm{mec}}+P_{\mathrm{ad}}=0.425+0.21+0.271+0.135=1.041 \mathrm{~kW}
+$$
+
+效率
+
+$$
+\eta=\left(1-\frac{\sum P}{P_{1}}\right) \times 100 \%=\left(1-\frac{1.041}{8.6}\right) \times 100 \%=87.9 \%
+$$
+
+## 7 .5 感应电动机的启动特性
+
+当感应电动机接电源后, 电机从静止状态开始转动, 然后升速到稳定运行的转速, 这个过 程叫启动过程, 简称为启动。
+
+感应电动机的启动性能主要包括下列几项。
+
+(1)启动电流倍数 $I_{\mathrm{st}} / I_{1 \mathrm{~N}}$ 。 $I_{\mathrm{st}}$ 为启动时定子电流。
+
+(2)启动转矩倍数 $T_{\mathrm{st}} / T_{\mathrm{N} 。} T_{\mathrm{st}}$ 为启动时电动机的转矩。
+
+(3)启动时间。希望启动时间短, 以提高劳动生产率。
+
+(4)启动过程中的能量损耗。对经常启动的电动机, 能量损耗大会使电机的温升增高, 危害 绕组的绝缘。
+
+(5)启动设备的简单性和可靠性。启动设备简单,可降低设备成本和便于维护。
+
+启动性能中最重要的是启动电流倍数和启动转矩倍数对其要求如下。
+
+感应电动机启动时, 启动电流很大, 启动转矩却不大, 这可由图 4.7-4 等值电路上看出。 正常运行时电动机的转差率很小, 一般 $S_{\mathrm{N}}=0.01 \sim 0.05$, 所以电阻 $\frac{1-S_{1}}{S} R_{2}^{\prime}$ 数值很大, 从而限制 了定子、转子电流的数值。而转子边的功率因数角 $\varphi_{2}=\arctan \frac{X^{\prime}{ }^{\prime}}{\frac{R_{2}^{\prime}}{S}}$ 数值很小, 使功率因数 $\cos \varphi_{2}$ 数值大, 电磁转矩 $T=C_{r} \phi_{\mathrm{m}} I^{\prime}{ }_{2} \cos \varphi_{2}$ 也就大。但起动时 $S=1$, 电阻 $\frac{1-S}{S} R^{\prime}{ }_{2}=0$ 。由于转子漏阻 抗 $Z_{2}^{\prime}{ }_{2}=R^{\prime}{ }_{2}+\mathrm{j} X^{\prime}{ }_{2} \ll Z_{\mathrm{m}}=R_{\mathrm{m}}+\mathrm{j} X_{\mathrm{m}}$, 所以可忽略励磁支路的影响, 则启动电流
+
+$$
+I_{\mathrm{at}}=\frac{U_{1}}{\sqrt{\left(R_{1}+R_{2}^{\prime}\right)^{2}+\left(X_{1}+X_{2}^{\prime}\right)^{2}}}
+$$
+
+由于定子、转子漏阻抗很小, 致使启动电流很大, 远远超过额定电流。而此时转子边的功率因 数角 $\varphi_{2}=\arctan \frac{X_{2}^{\prime}}{R_{2}^{\prime}}$ 数值很大, $\cos \varphi_{2}$ 很小, 使启动转矩也就小了。
+
+对鼠笼型电动机, 启动电流倍数和启动转矩倍数国家都有规定的标准要求, 一般
+
+$$
+\begin{aligned}
+& \frac{I_{\mathrm{st}}}{I_{\mathrm{IN}}}=4 \sim 7 \text { (不允许超过此数值) } \\
+& \frac{T_{\mathrm{st}}}{T_{\mathrm{N}}}=1 \sim 2 \text { (不允许小于此数值) }
+\end{aligned}
+$$
+
+## 7 .6 感应电动机常用的启动方法
+
+鼠笼型与绕线型感应电动机的启动方法不同, 分别讨论。
+
+## 1. 閶笼型转子电动机的启动方法
+
+鼠笼型转子电动机的启动方法有直接启动和降压启动两种。
+
+1) 直接启动
+
+直接启动, 就是不需要专门的启动设备, 直接把电动机的定子绕组接到额定电压的电源 上。这种方法只有在供电变压器的容量较大、电动机的容量较小时才可采用。一般而言, 容量 在 $7.5 \mathrm{~kW}$ 以下的小容量电动机都可直接启动。
+
+直接启动不需要专门的启动设备是其最大的优点。
+
+## 2)降压启动
+
+对电动机容量较大而供电变压器的容量又相对较小时, 为降低启动电流, 需要采用降压启 动。常用的降压启动方法有下列四种。
+
+(1) $\mathrm{Y}-\Delta$ 启动法
+
+$Y--\Delta$ 启动适用于额定运行时定子绕组为 $\Delta$ 连接的电动机。启动时定子绕组先作 $Y$ 形连 接, 待转速增加到接近额定转速时再改换为 $\Delta$ 形连接。采用这种启动方法启动时, 可使每相 定子绕组所承受的电压降低到电源电压的 $\frac{1}{\sqrt{3}}$, 启动的线电流为直接启动时的 $\frac{1}{3}$, 但启动转矩也 减小到直接启动时的 $\frac{1}{3}$ 。所以这种启动方法只能用在空载或轻载启动的场合。
+
+(2)定子边串接电抗器启动
+
+这种启动方法是在电机开始启动时在定子边串接电抗器以降低其端电压, 到转速接近额 定转速时再将它切除。采用这种方法启动, 电动机的启动电流按其端电压的比例降低, 而其启 动转矩则按其端电压平方的比例降低。电抗降压启动法常用于高压电动机。
+
+(3) 自耦变压器启动法
+
+这种方法是在电动机开始启动时, 利用自耦变压器降低定子绕组的端电压, 当电动机的转 速接近额定转速时, 即切除自耦变压器而将电动机直接接电源。采用自耦变压器启动, 电动机 的启动电流与启动转矩都按其端电压平方的比例下降。与串接电抗器启动比较, 这种方法的 优点是电动机在同样降低的端电压下, 电源供电电流可较小。这种启动方法多用于大、中型电 动机。
+
+## (4) 延边三角形 $(A)$ 启动法
+
+这种启动法适用于额定运行时定子绕组为 $\Delta$ 连接的电动机。启动时定子绕组先作人形 连接, 待转速增加到接近额定转速时再换接为 $\Delta$ 连接。
+
+作延边三角形连接的定子绕组, 每相绕组要各有一个中间抽头, 以将定子绕组的一部分连 接成 Y 形接法。根据不同的要求, 可以采用不同的抽头比例, 也就改变了人连接的相电压。 由于入连接的相电压比 $\mathrm{Y}-\Delta$ 连接法启动时的 $\mathrm{Y}$ 连接的相电压要高, 因此它的启动转矩较 $\mathrm{Y}-\Delta$ 连接启动时要大。
+
+由于延边三角形启动法可获得较大的启动转矩, 因此可以重载启动。但其缺点是定子绕 组接线比较复杂。
+
+## 2. 绕线型转子电动机的启动方法
+
+绕线型转子电动机启动时, 采用的方法是在其转子回路中接人变阻器, 以达到减小启动电 流、提高启动转矩的目的。在启动过程中, 随着电动机转速的上升, 逐渐减小变阻器的阻值, 待 转速增加到接近额定转速时, 将变阻器切除。常用的变阻器有启动变阻器和频敏变阻器两种。
+
+(1) 启动变阻器启动法
+
+这种启动方法是将可调节的三相变阻器接在转子回路中, 随转速升高而逐渐切除电阻。 由式(4.7-19) 和式(4.7-20) 可知, 启动时 $S=1$, 当转子电阻增大后, 可使启动电流降低而启动 转矩增大, 因而获得好的启动性能。这种启动方法多用在要求启动转矩大的场合, 如起重机、 球磨机等。
+
+(2) 频敏变阻器启动法
+
+频敏变阻器的结构相当于一个铁芯损耗特别大的三相电抗器, 而它在电动机启动过程中 的作用, 相当于一个随转速升高而自动逐渐切除电阻的变阻器, 因此采用频敏变阻器启动, 不 需要经过分级切除电阻就可把电动机平稳地启动起来, 因而获得广泛应用。
+
+4.7 .7 感应电动机常用的调速方法
+
+感应电动机的转速表达式为
+
+$$
+n=(1-S) n_{1}=(1-S) \frac{60 f}{p}
+$$
+
+由式(4.7-23) 可知, 要想改变感应电动机的转速可采用三种方法, 即变极调速、变频调速和改 变转差率调速。
+
+## 1. 变极调速
+
+采用变极调速时是通过改变定子绕组的线圈之间连接,使电动机的极对数 $p$ 改变, 从而改 变了电动机的同步转速 $n$, 来实现电机转速的改变。
+
+## 2. 变频调速
+
+由式(4.7-23)看出, 当电源频率 $f$ 改变时, 电动机的同步转速 $n_{1}$ 随频率成正比地变化, 于 是电动机的转速 $n$ 也随之改变。
+
+变频调速时希望气隙主磁通保持不变,为此, 在调速过程中应保持电压与频率成正比地变 化。
+
+## 3. 改变转差率调速
+
+在电动机稳定运行的情况下, 当负载转矩不变时, 由电磁转矩 $T$ 的表达式 (4.7-20) 可知, 当频率 $f$ 和极对数 $p$ 不变时, 转差率 $S$ 是下列各物理量的函数, 即
+
+$$
+S=f\left(U_{1}, R_{1}, X_{1}, R_{2}^{\prime}, X_{2}^{\prime}\right)
+$$
+
+因此改变转差率可有许多方法,常用的方法有下列几种。
+
+(1) 改变定子端电压 $U_{1}$
+
+可用调压器改变定子端电压, 或者在定子边串人电阻或电抗器也可实现端电压 $U_{1}$ 的改 变。随着定子端电压的改变,转差率 $S$ 也就随之改变,因而也就获得不同的转速。
+
+(2) 改变转子电阻 $R_{2}^{\prime}$
+
+这种调速方法是在绕线型转子电路中串接变阻器来实现, 当改变变阻器的电阻时, 转差率 $S$ 也就随之改变, 从而达到调速的目的。
+
+(3) 串级调速
+
+串级调速是在绕线型转子电动机上, 利用晶闸管装置, 将转子电路内的转差功率 $S P_{M}$ 经 整流和逆变后, 使转子中部分功率反馈到电网上去。调节晶闸管的逆变角来控制反馈能量即 可实现电动机的调速。
+
+转子串电阻调速的方法, 是将一部分电磁功率消耗在串人的电阻上, 使输出功率减少来达 到调速的目的。串级调速方法是将转子电路中消耗的部分功率反馈到电网上去来实现调速, 因而串级调速的经济性能好,但设备费用高。
+
+## 7 .8 转子电阻对感应电动机转动性能的影响
+
+式(4.7-20) 给出了电磁转矩 $T$ 与电压 $U_{1}$ 、频率 $f$ 、参数 $R_{1} 、 X_{1} 、 R_{2}^{\prime}$ 、 $X_{2}^{\prime}$ 及转差率 $S$ 的关系, 当电压、频率及参数不变, 电磁转矩只随转差率 改变时, 就得到感应电动机的转矩一转差率曲线 $T=f(S)$ 。图 4.7-7 给 出了当感应电动机运行在电动机状态时的 $T=f(S)$ 。由图上看出, 在 0 $<S<1$ 或 $0<n<n_{1}$ 的范围内电磁转矩有一个最大值 $T_{\mathrm{m}}$ 存在。下面就 $T=f(S)$ 曲线上的几个运行点略作讨论。
+
+机的 $T-S$ 曲线
+
+## 1. 对 $T=f(S)$ 曲线上几个运行点的讨论
+
+(1) 启动运行点 $\mathrm{A}$
+
+在 $A$ 点, $n=0, S=1$, 是电动机开始启动时状态。 $A$ 点对应的转矩便是启动转矩 $T_{\mathrm{st}}$, 由式 (4. 7-20)得出
+
+$$
+T_{\mathrm{st}}=\frac{m_{1}}{\Omega_{1}} \cdot \frac{U_{1}^{2} R_{2}^{\prime}}{\left(R_{1}+R_{2}^{\prime}\right)^{2}+\left(X_{1}+X_{2}^{\prime}\right)^{2}}
+$$
+
+(2) 最大转矩点 $\mathrm{B}$
+
+随着转差率的变化, 在 $B$ 点出现电磁转矩的最大值 $T_{\mathrm{m}}$, 对应于 $T_{\mathrm{m}}$ 的转差率 $S_{\mathrm{m}}$ 称为临界 转差率。用数学上求极值的方法可求出 $S_{\mathrm{m}}$ 的表达式, 即对式 (4.7-20) 取 $\frac{\mathrm{d} T}{\mathrm{~d} S}=0$, 得出
+
+$$
+S_{\mathrm{m}}= \pm \frac{R_{2}^{\prime}}{\sqrt{R_{1}^{2}+\left(X_{1}+X_{2}^{\prime}\right)^{2}}}
+$$
+
+式中“+”号对应于电动机运行状态。“-”号, 对应于发电机运行状态。
+
+下面讨论电动机运行状态的情况, 即取
+
+$$
+S_{\mathrm{m}}=\frac{R_{2}^{\prime}}{\sqrt{R_{1}^{2}+\left(X_{1}+X_{2}^{\prime}\right)^{2}}}
+$$
+
+将式(4.7-25)代人式(4.7-20)得
+
+$$
+T_{\mathrm{m}}=\frac{m_{1}}{\Omega_{1}} \cdot \frac{U_{1}^{2}}{2\left[R_{1}+\sqrt{R_{1}^{2}+\left(X_{1}+X_{2}^{\prime}\right)^{2}}\right]}
+$$
+
+似取为
+
+在感应电动机中,一般 $R_{1} \ll\left(X_{1}+X^{\prime}{ }_{2}\right)$ 。当忽略 $R_{1}$ 时, 对式 (4.7-25) 和式 (4.7-26) 可近
+
+$$
+\begin{aligned}
+& S_{\mathrm{m}}=\frac{R_{2}^{\prime}}{X_{1}+X_{2}^{\prime}} \\
+& T_{\mathrm{m}}=\frac{m_{1} U_{1}^{2}}{2 \Omega_{1}\left(X_{1}+X_{2}^{\prime}\right)}
+\end{aligned}
+$$
+
+即临界转差率 $S_{\mathrm{m}}$ 与转子电阻 $R_{2}^{\prime}$ 成正比, 而最大电磁转矩 $T_{\mathrm{m}}$ 与转子电阻 $R_{2}^{\prime}$ 无关。
+
+最大电磁转矩对电动机来说具有重要意义。当电动机运行时, 若负载短时突然增大, 随后 又恢复正常负载, 则只要总制动转矩 $\left(T_{2}+T_{0}\right)$ 不大于最大电磁转矩, 电动机仍能稳定运行; 但 若大于最大电磁转矩, 则电动机将会停下来。由此可见, 最大电磁转矩越大, 电动机的过载能 力就越强, 因此把最大电磁转矩 $T_{\mathrm{m}}$ 与额定转矩 $T_{\mathrm{N}}$ 之比称为电动机的过载能力 (也叫最大转 矩倍数)，用 $k_{\mathrm{m}}$ 表示, 即
+
+$$
+k_{\mathrm{m}}=\frac{T_{\mathrm{m}}}{T_{\mathrm{N}}}
+$$
+
+过载能力是感应电动机的重要性能指标之一。对此, 国家标准规定, 对一般感应电动机而言, $k_{\mathrm{m}}=1.8 \sim 2.5$ 。对起重、冶金机械用的感应电动机, $k_{\mathrm{m}}=2.7 \sim 3.7$ 。
+
+为满足用户的需要, 对三相感应电动机的通用系列产品, 国家规定了一些性能指标, 共有 五项，即效率、功率因数、启动转矩倍数、启动电流倍数和过载能力, 对此要加以注意。
+
+(3) 额定运行点 $C$
+
+在 $C$ 点, 电动机运行在额定状态, $T=T_{\mathrm{N}}, n=n_{\mathrm{N}}, S=S_{\mathrm{N}}$ 。
+
+(4) 同步转速点 $D$
+
+在 $D$ 点, $n=n_{1}, S=0, T=0$, 因此电动机本身是不能在同步转速点运行的, 这只是一种理 论上的分析。当电动机空载运行时, 转速 $n$ 是非常接近同步转速 $n_{1}$ 的。
+
+## 2. 转子电阻对电动机转动性能的影响
+
+由式(4.7-27) 和式 (4.7-28) 可知, 电动机的最大电磁转矩 $T_{\mathrm{m}}$ 与 转子电阻 $R_{2}^{\prime}$ 无关, 而产生最大转矩的临界转差率 $S_{\mathrm{m}}$ 则与转子电阻 $R_{2}^{\prime}$ 成正比例的变化。根据这一性质, 当增大转子电阻时, $S_{\mathrm{m}}$ 增大, $T_{\mathrm{m}}$ 数值不变, 但引起 $T-S$ 曲线的改变, 使启动转矩 $T_{\mathrm{st}}$ 增大, 如图 4.7-8 所示, 转子电阻 $R_{21}^{\prime}<R_{22}^{\prime}<R_{23}^{\prime}$, 临界转差率 $S_{\mathrm{m} 1}<S_{\mathrm{m} 2}<S_{\mathrm{m} 3}$, 图中 $S_{\mathrm{m} 3}$ $=1$, 则 $T_{\mathrm{s} 13}=T_{\mathrm{m}}$ 。启动转矩 $T_{\mathrm{s} 1}<T_{\mathrm{s} 2}<T_{\mathrm{s} 13}$, 而最大转矩 $T_{\mathrm{m}}$ 不变。这
+
+对鼠笼型电动机, 由于转子电路中不能串人外接电阻, 为改善启动性能, 常在转子铁芯结 构上采取措施, 利用不同转速时转子电流频率变化而引起有效电阻及漏抗的变化来满足要求。
+
+从图 4.7-8 看出, 增大转子电路中的电阻, $T-S$ 曲线向下移动。如果负载转矩不变, 在转 子串人不同的电阻时, 其转差率不一样, 串人电阻大, 转差率相应增大, 转速降低, 从而可实现 调速。因此在起重设备中广泛应用这种方法进行调速。
+
+在负载转矩不变的情况下, 当转子串入电阻后, 根据转矩平衡关系, 电磁转矩也不变, 电磁 功率 $P_{\mathrm{M}}=T \Omega_{1}$ 也就不变。
+
+由式(4.7-18) 可知
+
+$$
+T=C_{T} \phi_{\mathrm{m}} I_{2}^{\prime} \cos \varphi_{2}
+$$
+
+在电源电压 $U_{1}$ 一定时, 主磁通 $\phi_{\mathrm{m}}$ 也一定。在转子串人电阻后仍保持转子电流不变, 因此功 率因数 $\cos \phi_{2}$ 也就不变。
+
+设原来转子电阻为 $R_{2}^{\prime}$, 电流为 $I_{2 \mathrm{~N}}^{\prime}$, 转差率为 $S_{\mathrm{N}}$, 则
+
+$$
+I_{2 \mathrm{~N}}^{\prime}=\frac{E_{2}^{\prime}}{\sqrt{\left(\frac{R_{2}^{\prime}}{S_{\mathrm{N}}}\right)^{2}+X_{2}^{\prime 2}}}
+$$
+
+转子串人电阻 $R_{\mathrm{S}}^{\prime}$ 后, 转差率变为 $S$, 电流仍为 $I_{2 \mathrm{~N}}^{\prime}$, 则 由此得到
+
+$$
+I_{2 \mathrm{~N}}^{\prime}=\frac{E_{2}^{\prime}}{\sqrt{\left(\frac{R_{2}^{\prime}+R_{S}^{\prime}}{S}\right)^{2}+X_{2}^{\prime 2}}}=\frac{E_{2}^{\prime}}{\sqrt{\left(\frac{R_{2}^{\prime}}{S_{\mathrm{N}}}\right)^{2}+X_{2}^{\prime 2}}}
+$$
+
+$$
+\frac{R_{2}^{\prime}+R_{S}^{\prime}}{S}=\frac{R_{2}^{\prime}}{S_{\mathrm{N}}}
+$$
+
+式(4.7-30) 也可用转子电阻的实际值表示, 即
+
+$$
+\frac{R_{2}+R_{S}}{S}=\frac{R_{2}}{S_{\mathrm{N}}}
+$$
+
+式(4.7-30) 或式(4.7-31) 是转子串电阻调速时, 在负载转矩不变的条件下所应满足的关系 式。
+
+式(4.7-31)也可写成
+
+$$
+R_{S}=\left(\frac{S}{S_{\mathrm{N}}}-1\right) R_{2}
+$$
+
+直接应用式 (4.7-32) 计算转子串人的电阻 $R_{S}$ 更为方便。
+
+式 (4.7-20) 表示了在电压 $U_{1}$ 、频率 $f$ 及阻抗等参数一定时, 感应电动机的电磁转矩 $T$ 与转 差率 $S$ 之间的函数关系 $T=f(S)$, 称为感应电动机的机械特性, 简称 $T-S$ 曲线。图 4.7-7 便是 $T-S$ 曲线的变化图形。画图时, 习惯上把转速 $n$ 画在纵坐标上,电磁转矩 $T$ 画在横坐标上, 图 4.7-7 便是按习惯画出的图形。
+
+对应于式(4.7-20)的机械特性方程式称为机械特性的参数表达式。在分析阻抗参数变化 对机械特性的影响时应用式(4.7-20)很方便。
+
+感应电动机的阻抗参数须经试验测出, 在产品样本中是不给出的。实际应用中, 为了利用 产品样本提供的数据来得到 $T-S$ 曲线, 便推导出了机械特性的另外一种表达式一一实用表 达式, 即
+
+$$
+T=\frac{2 T_{\mathrm{m}}}{\frac{S}{S_{\mathrm{m}}}+\frac{S_{\mathrm{m}}}{S}}
+$$
+
+在实用表达式 (4.7-33) 中, 最大电磁转矩 $T_{\mathrm{m}}$ 及临界转差率 $S_{\mathrm{m}}$ 可按产品样本提供的数据求出, 这样能很方便地求得 $T-S$ 曲线。
+
+当电动机在额定负载范围内运行时, 即 $0<S<S_{\mathrm{N}}$ 范围内, $\frac{S}{S_{\mathrm{m}}} \ll \frac{S_{\mathrm{m}}}{S}$, 可将 $\frac{S}{S_{\mathrm{m}}}$ 忽略, 则式 (4.733 ) 变为
+
+$$
+T=\frac{2 T_{\mathrm{m}}}{S_{\mathrm{m}}} S
+$$
+
+由式(4.7-34) 可知, $T$ 与 $S$ 成正比, 即 $T=f(S)$ 是一条直线。式(4.7-34) 称为机械特性的 近似表达式。
+
+应用实用表达式对启动、调速及制动的问题计算应串人绕线转子中的电阻时, 先根据电动 机产品样本中数据计算出固有机械特性的 $S_{\mathrm{m}}$, 再用实用表达式计算出人为机械特性的 $S_{\mathrm{m}}^{\prime}$, 然 后根据下列关系, 即可计算出串入电阻 $R_{\mathrm{j}}$ 的数值。由 得
+
+$$
+\frac{S_{\mathrm{m}}^{\prime}}{S_{\mathrm{m}}}=\frac{R_{2}^{\prime}+R_{\mathrm{j}}^{\prime}}{R_{2}^{\prime}}=\frac{R_{2}+R_{\mathrm{j}}}{R_{2}}
+$$
+
+$$
+R_{\mathrm{j}}=\left(\frac{S_{\mathrm{m}}^{\prime}}{S_{\mathrm{m}}}-1\right) R_{2}
+$$
+
+由于机械特性的实用表达式很简单, 使用也方便, 因此获得广泛的应用。
+
+【例 4.7-7】一台三相 6 级感应电动机, 定子绕组 $Y$ 形连接, 额定电压 $U_{\mathrm{N}}=380 \mathrm{~V}$, 额定 频率 $f=50 \mathrm{~Hz}$, 额定转速 $n_{\mathrm{N}}=957 \mathrm{r} / \mathrm{min}$, 定子电阻及漏抗为 $R_{1}=2.08 \Omega, X_{1}=3.12 \Omega$, 转子电 阻及漏抗的折算值为 $R_{2}^{\prime}=1.53 \Omega, X_{2}^{\prime}=4.25 \Omega$, 求:
+
+(1) 过载能力 $k_{\mathrm{m}}$;
+
+(2) 产生最大电磁转矩时的转速;
+
+(3) 启动转矩倍数及启动电流值。
+
+解: 该电动机的同步转速
+
+$$
+n_{1}=\frac{60 f}{p}=\frac{60 \times 50}{3}=1000 \mathrm{r} / \mathrm{min}
+$$
+
+额定转差率
+
+$$
+S_{\mathrm{N}}=\frac{n_{1}-n_{\mathrm{N}}}{n_{1}}=\frac{1000-957}{1000}=0.043
+$$
+
+定子绕组的额定相电压
+
+$$
+U_{1}=\frac{U_{\mathrm{N}}}{\sqrt{3}}=\frac{380}{\sqrt{3}}=220 \mathrm{~V}
+$$
+
+(1) 过载能力
+
+$$
+k_{\mathrm{m}}=\frac{T_{\mathrm{m}}}{T_{\mathrm{N}}}
+$$
+
+由式(4.7-20) 知, 当 $S=S_{\mathrm{N}}$ 时, $T=T_{\mathrm{N}}$ 。所以
+
+$$
+\begin{aligned}
+T_{\mathrm{N}} & =\frac{m_{1} P U_{1}^{2} \frac{R_{2}^{\prime}}{S_{\mathrm{N}}}}{2 \pi f\left[\left(R_{1}+\frac{R_{2}^{\prime}}{S_{\mathrm{N}}}\right)^{2}+\left(X_{1}+X_{2}^{\prime}\right)^{2}\right]} \\
+& =\frac{3 \times 3 \times 220^{2} \times \frac{1.53}{0.043}}{2 \pi \times 50\left[\left(2.08+\frac{1.53}{0.043}\right)^{2}+(3.12+4.25)^{2}\right]} \\
+& =33.5 \mathrm{~N} \cdot \mathrm{m}
+\end{aligned}
+$$
+
+由式(4.7-28) 知
+
+所以
+
+$$
+T_{\mathrm{m}}=\frac{m_{1} U_{1}^{2}}{2 \Omega_{1}\left(X_{1}+X_{2}^{\prime}\right)}=\frac{m_{1} P U_{1}^{2}}{4 \pi f\left(X_{1}+X_{2}^{\prime}\right)}
+$$
+
+$$
+T_{m}=\frac{3 \times 3 \times 220^{2}}{4 \pi \times 50(3.12+4.25)}=94.1 \mathrm{~N} \cdot \mathrm{m}
+$$
+
+则过载能力
+
+$$
+k_{\mathrm{m}}=\frac{T_{\mathrm{m}}}{T_{\mathrm{N}}}=\frac{94.1}{33.5}=2.8
+$$
+
+(2) 产生最大电磁转矩时的转速
+
+$$
+n_{\mathrm{m}}=\left(1-S_{\mathrm{m}}\right) n_{1}
+$$
+
+由式 (4.7-27) 知, 临界转差率
+
+$$
+S_{\mathrm{m}}=\frac{R_{2}^{\prime}}{X_{1}+X_{2}^{\prime}}=\frac{1.53}{3.12+4.25}=0.21
+$$
+
+则 $n_{\mathrm{m}}=(1-0.21) 1000=790 \mathrm{r} / \mathrm{min}$
+
+(3) 启动转矩倍数
+
+$$
+\frac{T_{\mathrm{st}}}{T_{\mathrm{N}}}=k_{\mathrm{st}}
+$$
+
+由式(4.7-20) 知, 当 $S=1$ 时, $T=T_{\mathrm{st}}$, 所以
+
+$$
+\begin{aligned}
+T_{\mathrm{s} 1} & =\frac{m_{1} P U_{1}^{2} R_{2}^{\prime}}{2 \pi f\left[\left(R_{1}+\frac{R_{2}^{\prime}}{1}\right)^{2}+\left(X_{1}+X_{2}^{\prime}\right)^{2}\right]}=\frac{3 \times 3 \times 220^{2} \times 1.53}{2 \pi \times 50\left[(2.08+1.53)^{2}+(3.12+4.25)^{2}\right]} \\
+& =31.5 \mathrm{~N} \cdot \mathrm{m}
+\end{aligned}
+$$
+
+则
+
+$$
+k_{\mathrm{st}}=\frac{T_{\mathrm{st}}}{T_{\mathrm{N}}}=\frac{31.5}{33.5}=0.94
+$$
+
+启动电流数值由式 (4.7-22) 可知
+
+$$
+I_{\mathrm{st}}=\frac{U_{1}}{\sqrt{\left(R_{1}+R_{2}^{\prime}\right)^{2}+\left(X_{1}+X_{2}^{\prime}\right)^{2}}}=\frac{220}{\sqrt{(2.08+1.53)^{2}+(3.12+4.25)^{2}}}=26.8 \mathrm{~A}
+$$
+
+【例 4.7-8】一台二相 4 级感应电动机, 额定频率 $f=50 \mathrm{~Hz}$, 额定转速 $n_{\mathrm{N}}=1485 \mathrm{r} / \mathrm{min}$, 转子实际电阻 $R_{2}=0.02 \Omega$, 电机运行在额定状态。在负载转矩不变的情况下, 欲使电机转速 降为 $1050 \mathrm{r} / \mathrm{min}$, 求在转子电路中应串人的电阻值。
+
+解: 电机的同步转速
+
+$$
+n_{1}=\frac{60 f}{p}=\frac{60 \times 50}{2}=1500 \mathrm{r} / \mathrm{min}
+$$
+
+额定运行时的转差率
+
+$$
+S_{\mathrm{N}}=\frac{n_{1}-n_{\mathrm{N}}}{n_{1}}=\frac{1500-1485}{1500}=0.01
+$$
+
+转子串人电阻 $R_{S}$ 后的转速为 $1050 \mathrm{r} / \mathrm{min}$, 则转差率
+
+$$
+S=\frac{1500-1050}{1500}=0.3
+$$
+
+由式(4.7-32) 可知
+
+$$
+R_{S}=\left(\frac{S}{S_{\mathrm{N}}}-1\right) R_{2}=\left(\frac{0.3}{0.01}-1\right) 0.02=0.58 \Omega
+$$
+
+【例 4.7-9】一台 4 极的三相感应电动机用于起重机上, 额定数据为: $P_{\mathrm{N}}=40 \mathrm{~kW}, n_{\mathrm{N}}=$ $1470 \mathrm{r} / \mathrm{min}, R_{2}=0.08 \Omega$, 过载倍数 $k_{\mathrm{m}}=2.6$, 应用机械特性实用表达式的直线方程式求: (1) 要求启动转矩 $T_{\mathrm{s} 1}=2 T_{\mathrm{N}}$ 时, 转子电路中串人的电阻 $R_{\mathrm{j} 1}$;
+
+(2) 若启动电阻 $R_{\mathrm{j} 1}$ 不切除, 当负载转矩为 $0.8 T_{\mathrm{N}}$, 电机的稳定转速;
+
+(3) 用倒拉反接制动将 $0.8 T_{\mathrm{N}}$ 的负载下放, 若下放的稳定转速为 $600 \mathrm{r} / \mathrm{min}$ 时, 转子串人 的电阻 $R_{\mathrm{j} 2}$;
+
+(4) 在固有机械特性上利用回馈制动方式将 $0.8 T_{\mathrm{N}}$ 的负载下放,其稳定下放的转速。 解 : (1) 求 $R_{\mathrm{j} 1}$
+
+额定运行时
+
+$$
+\begin{aligned}
+& S_{\mathrm{N}}=\frac{n_{1}-n_{\mathrm{N}}}{n_{1}}=\frac{1500-1470}{1500}=0.02 \\
+& T_{\mathrm{N}}=\frac{2 T_{\mathrm{m}}}{S_{\mathrm{m}}} S_{\mathrm{N}} \\
+& S_{\mathrm{m}}=\frac{2 T_{\mathrm{m}}}{T_{\mathrm{N}}} S_{\mathrm{N}}=2 k_{\mathrm{m}} S_{\mathrm{N}}=2 \times 2.6 \times 0.02=0.104
+\end{aligned}
+$$
+
+启动时
+
+$$
+\begin{aligned}
+& T_{\mathrm{st}}=2 T_{\mathrm{N}}, S_{\mathrm{st}}=1, \text { 串入电阻 } R_{\mathrm{j} 1} \text { 后的临界转差率为 } S_{\mathrm{m}}^{\prime} \text { 。 } \\
+& T_{\mathrm{st}}=\frac{2 T_{\mathrm{m}}}{S_{\mathrm{m}}^{\prime}} S_{\mathrm{st}} \\
+& 2 T_{\mathrm{N}}=\frac{2 T_{\mathrm{m}}}{S_{\mathrm{m}}^{\prime}} \times 1 \\
+& S_{\mathrm{m}}^{\prime}=\frac{2 T_{\mathrm{m}}}{2 T_{\mathrm{N}}}=k_{\mathrm{m}}=2.6 \\
+& R_{\mathrm{j} 1}=\left(\frac{S_{\mathrm{m}}^{\prime}}{S_{\mathrm{m}}}-1\right) R_{2}=\left(\frac{2.6}{0.104}-1\right) \times 0.08=1.92 \Omega
+\end{aligned}
+$$
+
+(2) 已知对应 $R_{\mathrm{j} 1}=1.92 \Omega$ 的 $S_{\mathrm{m}}^{\prime}=2.6$, 设 $T=0.8 T_{\mathrm{N}}$ 时的转差率为 $S^{\prime}$, 则
+
+$$
+\begin{aligned}
+& T=\frac{2 T_{\mathrm{m}}}{S_{\mathrm{m}}^{\prime}} S^{\prime} \\
+& S^{\prime}=\frac{T S_{\mathrm{m}}^{\prime}}{2 T_{\mathrm{m}}}=\frac{0.8 T_{\mathrm{N}} \times 2.6}{2 T_{\mathrm{m}}}=0.4
+\end{aligned}
+$$
+
+转速为
+
+$$
+n=\left(1-S^{\prime}\right) n_{1}=(1-0.4) \times 1500=900 \mathrm{r} / \mathrm{min}
+$$
+
+(3) 倒拉反接制动就是转速反向的反接制动。当下放转速 $n=-600 \mathrm{r} / \mathrm{min}$ 时, 转差率
+
+$$
+S^{\prime}=\frac{n_{1}-n}{n_{1}}=\frac{1500-(-600)}{1500}=1.4
+$$
+
+已知 $T=0.8 T_{\mathrm{N}}$ 。而对应于 $S^{\prime}$ 的临界转差率为 $S_{\mathrm{m}}^{\prime}$, 则
+
+$$
+\begin{aligned}
+& T=\frac{2 T_{\mathrm{m}}}{S_{\mathrm{m}}^{\prime}} S^{\prime} \\
+& S_{\mathrm{m}}^{\prime}=\frac{2 T_{\mathrm{m}}}{T} S^{\prime}=\frac{2 T_{\mathrm{m}}}{0.8 T_{\mathrm{N}}} \times 1.4=\frac{2 k_{\mathrm{m}}}{0.8} \times 1.4=\frac{2 \times 2.6}{0.8} \times 1.4=9.1
+\end{aligned}
+$$
+
+转子串人电阻
+
+$$
+R_{\mathrm{j} 2}=\left(\frac{S_{\mathrm{m}}^{\prime}}{S_{\mathrm{m}}}-1\right) R_{2}=\left(\frac{9.1}{0.104}-1\right) 0.08=6.92 \Omega
+$$
+
+(4) 在固有机械特性上, 用回馈制动方式下放转矩为 $0.8 T_{\mathrm{N}}$ 的重物, 则 $S_{\mathrm{in}}=-0.104, T=$ $0.8 T_{\mathrm{N}}$ 。而
+
+$$
+\begin{aligned}
+T & =\frac{2 T_{\mathrm{m}}}{S_{\mathrm{m}}} S^{\prime} \\
+S^{\prime} & =\frac{T S_{\mathrm{m}}}{2 T_{\mathrm{m}}}=\frac{0.8 T_{\mathrm{N}}(-0.104)}{2 T_{\mathrm{m}}} \\
+& =\frac{0.8(-0.104)}{2 k_{\mathrm{m}}}=\frac{-0.0832}{2 \times 2.6}=-0.016
+\end{aligned}
+$$
+
+稳定下放转速
+
+$$
+n=\left(1-S^{\prime}\right) n_{\mathrm{I}}=(1+0.016)(-1500)=-1524 \mathrm{r} / \mathrm{min}
+$$
+
+【例 4.7-10】如例 4.7-9 所述。负载转矩为 $0.8 T_{\mathrm{N}}$, 要使电动机进人倒拉反接制动, 转子 至少需要串入的电阻是多少?
+
+解: 设需要串人的电阻为 $R_{\mathrm{j}}$ 。当 $T=0.8 T_{\mathrm{N}}, S=1$, 电机停转, 则
+
+$$
+\begin{aligned}
+& T=\frac{2 T_{\mathrm{m}}}{S_{\mathrm{m}}^{\prime}} S \\
+& 0.8 T_{\mathrm{N}}=\frac{2 k_{\mathrm{m}} T_{\mathrm{N}}}{S_{\mathrm{m}}^{\prime}} \times 1 \\
+& S_{\mathrm{m}}^{\prime}=\frac{2 \times 2.6}{0.8}=6.5 \\
+& R_{\mathrm{j}}=\left(\frac{S_{\mathrm{m}}^{\prime}}{S_{\mathrm{m}}}-1\right) R_{2}=\left(\frac{6.5}{0.104}-1\right) \times 0.08=4.92 \Omega
+\end{aligned}
+$$
+
+要使电动机进人倒拉反接制动, 转子每相串人的电阻至少应大于 $4.92 \Omega$ 。
+
+## 7 .9 电机的发热过程、绝缘系统、允许温升及其确定和冷却方式
+
+## 1. 电机中常用的绝缘材料及其耐热等级
+
+电机中常用的绝缘材料按其耐热等级分为 $A 、 E 、 B 、 F 、 H$ 五个等级。
+
+(1)A 级: 为经过浸渍或者使用时浸于油的棉纱、丝、纸等有机材料或其组合物。一般漆包 线也属 $\mathrm{A}$ 级。最高容许工作温度为 $105^{\circ} \mathrm{C}$ 。
+
+(2) $\mathrm{E}$ 级: 为聚酯树脂、环氧树脂等制成的绝缘薄膜。高强度漆包线也属这一类。最高容许 工作温度为 $120^{\circ} \mathrm{C}$ 。
+
+(3)B 级: 为云母、石棉、玻璃丝等无机物与有机漆作为粘合物制成的材料或其组合物。最 高容许T作温度为 $130^{\circ} \mathrm{C}$ 。
+
+(4) F 级: 为云母、石棉、玻璃丝等无机物与树脂漆作为粘合物制成的材料或其组合物。最 高容许.T.作温度为 $155^{\circ} \mathrm{C}$ 。
+
+(5) H 级: 为云母、石棉、玻璃丝等无机物与硅有机漆作为粘合物制成的材料。最高容许 $T$. 作温度为 $180^{\circ} \mathrm{C}$ 。
+
+## 2. 感应电动机的绝缘系统
+
+绕组是电机的关键部件之一, 电机运行的可靠性和使用年限很大程度上取决于绕组绝缘。 感应电动机的绕组绝缘包括沛间、相间、槽绝缘 (对地绝缘) 和端部等各个部位的绝缘。为了 充分发挥绝缘材料的特性, 提高经济合理性, 对电机不同的绝缘部位选用不同的绝缘结构。一 般而言, 小型电机的线圈用高强度漆包线绕成, 槽绝缘用聚酯薄膜绝缘纸复合簿构成, 属 $\mathrm{E}$ 级 绝缘。对大、中型电机选用 B 级绝缘。对于轧钢、冶金等特殊场合使用的电机, 采用 F 或 $\mathrm{H}$ 级 绝缘。
+
+## 3. 电机的温升及温升限度
+
+(1) 电机的温升
+
+电机运行时, 电机中的损耗转变为热量, 使电机各部分的温度升高, 将高于周围介质的温 度。电机某部分的温度 $\theta$ 与电机周围冷却介质的温度 $\theta_{\mathrm{a}}$ 之差称为该部分的温升, 用 $\tau$ 表示 （即 $\tau=\theta-\theta_{\mathrm{a}}$ ）。国家标准规定, 电机周围冷却空气的最高温度为 $40^{\circ} \mathrm{C}$, 即 $\theta_{\mathrm{a}}=40^{\circ} \mathrm{C}$ 。但绝缘 材料的最热点与其平均温度之间有差异。根据经验, 该温度差定为: $A 、 E$ 级绝缘为 $5^{\circ} \mathrm{C}, \mathrm{B} 、 F$ 级绝缘为 $10^{\circ} \mathrm{C}, \mathrm{H}$ 级绝缘为 $15^{\circ} \mathrm{C}$ 。
+
+(2) 温升限度
+
+所谓温升限度, 就是国家标准规定的允许温升, 用 $\tau_{\mathrm{m}}$ 表示。电机运行时各部分的温升不 能超过温升限度, 即 $\tau<\tau_{\mathrm{m}}$ 。
+
+对电机各部分实际测量的温度是平均温度, 因此温升限度 $\tau_{m}$ 的计算式为
+
+$\tau_{\mathrm{m}}=$ 绝缘材料的最高容许. . 作温度 $-40-$ 温度差
+
+如 $\mathrm{E}$ 级绝缘的温升限度
+
+$$
+\tau_{\mathrm{m}}=120-40-5=75^{\circ} \mathrm{C}
+$$
+
+$\mathrm{B}$ 级绝缘的温升限度
+
+$$
+\tau_{\mathrm{m}}=130-40-10=80^{\circ} \mathrm{C}
+$$
+
+## 4. 电机的发热过程
+
+电机中由损耗产生的热量, 先从内部由传导作用传到部件的表面, 然后再通过对流和辐射 作用传到周周冷却介质中。以定子绕组为例, 槽内由绕组铜耗所产生的热量, 由传导作用从铜 线通过绝缘传到铁芯, 再由铁芯传到电枢表面, 然后从电枢表面借对流和辐射作用散到周围气 体中。
+
+虽然电机是由许多物理性质不同的部件组成，内部的发热和传导关系也很复杂，但实验证 明, 可以将它作为一个均质等温体来研究其发热过程。所谓均质等温体是指该物体各点温度 都相问, 而且表面各点的散热能力也相同。
+
+设物体发热过程的某一瞬间,物体表面对周围介质的温升为 $\tau$, 经过一微小时间 $\mathrm{d} t$ 后, 温 升增加了 $\mathrm{d} \tau$ 度。如果每单位时间内物体中产生的热量为 $Q$, 根据能量守恒定律可知, 在 $\mathrm{d} t$ 时 间内物体产生的热量 $Q \mathrm{~d} t$ 应等于此时从表面散走的热量与提高物体本身温度所需的热量之 和。
+
+实验表明,每单位时间从表面散到周闱气体中的热量 $Q_{S}$ 与散热的表面积 $S$ 和表面对周围 气体的温升 $\tau$ 成正比, 即
+
+$$
+Q_{S}=\lambda S_{\tau}
+$$
+
+式中 $\lambda$ 一表面散热系数, 即当温升为 $1^{\circ} \mathrm{C}$ 时, 每单位时间内从单位表面积上通过对流和辐 射而散走的热量, $\mathrm{J} /\left(\mathrm{s} \cdot \mathrm{m}^{2} \cdot \mathrm{K}\right)$ 或 $\mathrm{W} /\left(\mathrm{m}^{2} \cdot \mathrm{K}\right)$ 。
+
+设物体的质量为 $M$, 比热为 $C$, 则温度升高 $\mathrm{d} \tau$ 时物体本身所吸收的热量
+
+$$
+Q=C M \mathrm{~d} \tau
+$$
+
+式中 $M-$-物体的质量, $\mathrm{kg}$; $C$ 一一物体的比热, $\mathrm{J} /(\mathrm{kg} \cdot \mathrm{K})$ 。
+
+根据能量守恒定律, 可写出电机的热平衡方程式为
+
+$$
+Q \mathrm{~d} t=\lambda S \tau \mathrm{d} t+C M \mathrm{~d} \tau
+$$
+
+将式(4.7-36) 两端除以 $\mathrm{d} t$ 后得
+
+$$
+Q=\lambda S \tau+C M \frac{\mathrm{d} \tau}{\mathrm{d} t}
+$$
+
+当电机达到稳定温度状态时, 即电机产生的热量全部散到周围介质中去, 电机本身不再吸收热 量, 电机的温升达到一个稳定的数值 $\tau_{\text {w }}$ 时, 则 $\frac{\mathrm{d} \tau}{\mathrm{d} t}=0$ 。由式(4.7-37) 得到稳定温升
+
+$$
+\tau_{\mathrm{w}}=\frac{Q}{\lambda S}
+$$
+
+由式(4.7-38)看出，电机的稳定温升仅由每单位时间内所产生的热量 $Q$ 、散热表面积 $S$ 和表面 散热系数 $\lambda$ 所决定,而与电机的质量、比热和原来的温度无关。
+
+求解式(4.7-37) 可得
+
+$$
+\tau=\frac{Q}{\lambda S}\left(1-\mathrm{e}^{-\frac{t}{T}}\right)+\tau_{0} \mathrm{e}^{-\frac{t}{T}}=\tau_{\mathrm{W}}\left(1-\mathrm{e}^{-\frac{t}{T}}\right)+\tau_{0} \mathrm{e}^{-\frac{l}{T}}
+$$
+
+式中 $\tau_{0}$ 一电机的初始温升, 即当 $t=0$ 时电机的温升;
+
+$T$-一发热时间常数,也叫温升上升的时间常数, $\mathrm{s}$,
+
+$$
+T=\frac{C M}{\lambda S}
+$$
+
+如果电机从冷态开始发热, 即 $t=0$ 时, $\tau_{0}=0$, 则式 (4.7-39) 为
+
+$$
+\tau=\tau_{\mathrm{W}}\left(1-\mathrm{e}^{-\frac{1}{T}}\right)
+$$
+
+电机运行时, 只要它的稳定温升不超过国家标准规定的温升限度, 电 机便可连续. 作而不会过热。
+
+由式(4.7-38) 可知,电机的稳定温升 $\tau_{\text {w }}$ 与单位时间内的发热量 $Q$
+
+## 5. 电机的冷却方式
+
+电机的冷却方式分为外部冷却和内部冷却两大类。
+
+(1) 外部冷却方式
+
+外部冷却时, 冷却介质只与电机的铁芯、绕组端部和机壳的外表面接触。热量要从内部传 导到这些部位,然后再散给冷却介质。
+
+外部冷却时,冷却介质大多用空气。外部冷却可分二种形式。
+
+(1)自然冷却式:这种电机不装任何专门的冷却装置, 只靠空气在电机中的自然流通来冷 却。仅用于容量在几百瓦以下的小电机中。 (2)白扇冷式:这种电机的转子上装有风扇用以鼓风,使冷却空气进人电机并经过发热部件 的表面而将热量带走。
+
+(3)他扇冷式:这种电机的冷却空气由专门的鼓风机通过管道供给,因而又叫管道通风式。 其特点是根据负载大小来调节鼓风机的转速, 以控制供给电机的风量, 从而减小低负载时的通 风损耗。
+
+(2) 内部冷却方式
+
+内部冷却时, 冷却介质多用氢气或水。绕组用空心导线绕成。冷却介质进人空心导线, 直 接将绕组导体的热量吸收并将它带走。因此内部冷却的效果要比外部冷却好得多, 它的应用 促进了现代巨型电机的发展,提高了单机容量。但内部冷却方式使电机的结构很复杂。
+
+4.7 .10 感应电动机拖动的形式及各自的特点
+
+感应电动机拖动的形式总起来可分为两种状态, 即电动状态和制动状态。
+
+1. 电动状态
+
+所谓电动状态, 就是 4.7.3 节中所讲的电动机运行状态。在该运行状态下, 电机从定子边 输入电能, 从转子边输出机械能。
+
+的 $T-S$ 曲线
+
+作为电动状态的特点是电机的电磁转矩 $T$ 的方向与电机转速 $n$ 的方向相同, 即 $T$ 与 $n$ 方向相同。转差率数值范围为 $0<S<1$, 电机 运行在第一象限或第三象限。如图 4.7-10 所示, 在第一象限运行时 称为正向电动状态, 在第三象限运行时称为反向电动状态。
+
+## 2. 制动状态
+
+所谓制动状态是指电机产生的电磁转矩的方向与转子的旋转方 向相反,所以制动状态运行的特点是 $T$ 与 $n$ 的方向相反, 电机运行在 第二象限或第四象限。制动状态又分为三种情况, 不同的制动状态, 转差率的数值范围也不同。分述如下。
+
+(1) 回馈制动
+
+所谓回馈制动, 就是 4.7.3 节中所讲的发电机运行状态。在该运行状态下, 电机从转子边 输入机械功率, 从定子边输出电功率。在回馈制动运行时, 电机的转速一定要高于同步转速, 转差率 $S$ 一定是负值, 即 $S<0$ 。
+
+由正向电动状态进人回馈制动时, 电机运行在第二象限。如电车下坡时, 由于重力作用使 转子加速, 当转速 $n$ 超过同步转速 $n_{1}$ 时电机便进入回馈制动状态, 运行在第二象限。
+
+由反向电动状态进人回馈制动时, 电机运行在第四象限。
+
+回馈制动方式只能起到限制电机转速的作用, 而不能使电机停转。
+
+(2)反接制动
+
+所谓反接制动, 就是 4.7.3 节中所讲的电磁制动运行状态。在该运行状态下, 电机从转子 边输入机械功率, 从定子边输入电功率, 所有这些输入的功率都变成电机内部的损耗而以热能 的形式散掉。
+
+反接制动时,一定是转子逆着气隙旋转磁场而转动, 因此其转差率的数值一定是大于 1 , 即 $S>1$ 。
+
+由正向电动状态进人反接制动, 电机运行在第四象限。这种情况在用于起重设备的电动 机中较为常见。当起重设备把吊起的重物下放时, 便在转子电路中串人足够大的电阻, 改变了 电动机的 $T-S$ 曲线, 使电机进人第四象限运行, 电机便运行在反接制动状态了。
+
+由反向电动状态进人反接制动运行, 电机便运行在第二象限。
+
+反接制动还可以通过改变定子边的相序, 使旋转磁场反向旋转, 从而使电机产生的电磁转 矩的方向与转速的方向相反来实现。这种情况在经常需要正、反转的设备中较为常见。
+
+反接制动既可用于电机的限速,也可用于电机的停转。
+
+(3) 能耗制动
+
+感应电动机能耗制动的原理是: 将电动机从交流电源断开后, 立即将直流电源加在定子绕 组上, 于是在气隙中产生一个静止磁场, 此时便在做惯性运动的转子绕组中感应电动势和产生 电流，因而消耗转子的动能而产生制动作用。能耗制动通常用于要求电动机迅速停转的情况。
+
+4.7 .11 感应电动机的运行及维护工作要点
+
+## 1. 感应电动机的运行工作要点
+
+对于一般感应电动机的正常运行工作, 要按照国家标准规定的《电机基本技术要求》来进 行,其工作要点主要有三条。
+
+(1) 电源条件
+
+电源的电压、频率和相数应与电动机铭牌数据相符。供电电压应为实际正弦波形与实际 对称系统。电压与其额定值的偏差不超过 $\pm 5 \%$; 频率与其额定值的偏差不超过 $\pm 1 \%$ 。
+
+(2) 环境条件
+
+电机运行地点的环境温度、海拔高度必须符合技术条件的规定,其防护能力必须与其工作 场所的周围环境条件相适应。
+
+(3) 负载条件
+
+电动机的性能应与启动、制动、不同定额的负载以及变速或调速等负载条件相适应, 使用 时应保持其负载不超越电动机的规定能力。
+
+## 2. 感应电动机的维护工作要点
+
+感应电动机的维护.T作分为以下两个部分。
+
+(1) 启动前的检查
+
+主要的检查项目有:
+
+(1)检查电动机和启动设备的接地装置是否良好完整, 接线是否正确, 接触是否良好, 电动 机铭牌所标的电压、频率应与电源电压、频率相等;
+
+(2)对新安装或长期停用的电动机,使用前应检查电动机定子、转子绕组各相之间和绕组对 地的绝缘电阻;
+
+(3)对绕线型转子电动机, 应检查集电环上的电刷及电刷提升机构是否处于正常工作状态; (4)检查轴承是否有润滑油。
+
+此外,合闸后如发现不转或启动很慢、声音不正常, 必须立即停电检查。
+
+(2) 正常运行中的维护
+
+(1)电动机运行时应经常注意监视各部分的温升情况,不应超过温升限度。
+
+(2)监视电源电压、频率的变化和电压的不平衡度。
+
+(3)监视电动机的负载电流, 不应超过铭牌上所规定的额定电流值。
+
+(4)注意电动机的气味、振动和噪声。在闻到焦味或发现不正常的振动或碰擦声、特大的嗡 嗡声或其他杂声时应立即停电检查。 (5)经常检查轴承发热、漏油情况,定期更换润滑油。
+
+(6)对绕线型转子电动机，应检查电刷与集电环间的接触、电刷磨损以及火花情况，如火花 严重, 必须及时处理。
+
+(7)注意保持电动机内部的清洁, 不允许有水滴、油污以及杂物等落人电动机内部。电动机 的进风口与出风口必须保持畅通无阻。
+
+## 8 同步电机
+
+### 1 同步电机的额定值
+
+同步电机的额定值主要有以下内容。
+
+(1) 额定容量 $S_{\mathrm{N}}$ 或额定功率 $P_{\mathrm{N}}$
+
+对同步发电机而言, 额定容量 $S_{\mathrm{N}}$ 是指出线端的额定视在功率, 单位为 $\mathrm{kVA}$ 或 MVA。额定 功率 $P_{\mathrm{N}}$ 是指发电机输出的额定有功功率, 单位为 $\mathrm{kW}$ 或 $\mathrm{MW}$ 。
+
+对电动机而言, $P_{\mathrm{N}}$ 是指轴上输出的有效机械功率, 单位为 $\mathrm{kW}$ 或 $M W$ 。
+
+(2) 额定电压 $U_{\mathrm{N}}$
+
+额定电压是指在额定运行时电机定子三相的线电压, 单位为 $\mathrm{V}$ 或 $\mathrm{kV}$ 。
+
+(3) 额定电流 $I_{\mathrm{N}}$
+
+额定电压是指电机在额定运行时流过定子的线电流，单位为 $\mathrm{A}$ 。
+
+(4) 额定功率因数 $\cos \varphi_{\mathrm{N}}$
+
+额定功率因数即电机在额定运行时的功率因数。
+
+(5) 额定效率 $\eta_{\mathrm{N}}$
+
+额定效率即电机额定运行时的效率。
+
+此外, 铭牌上还列出电机的额定频率 $f_{\mathrm{N}}$ 、额定转速 $n_{\mathrm{N}}$ 、额定励磁电流 $I_{\mathrm{N}}$ 和额定励磁电压
+
+【例 4.8-1】一台汽轮发电机的额定功率 $P_{\mathrm{N}}=200 \mathrm{MW}$, 额定电压 $U_{\mathrm{N}}=15.75 \mathrm{kV}$, 功率因 数 $\cos \varphi_{N}=0.85$ (滞后) , Y 形接法, 求发电机在额定运行时:
+
+(1) 定子电流;
+
+(2) 能输出的有功功率;
+
+(3) 能输出的无功功率。
+
+解: (1) 定子额定电流
+
+$$
+I_{\mathrm{N}}=\frac{P_{\mathrm{N}}}{\sqrt{3} U_{\mathrm{N}} \cos \varphi_{\mathrm{N}}}=\frac{200 \times 10^{3}}{\sqrt{3} \times 15.75 \times 0.85}=8625.5 \mathrm{~A}
+$$
+
+(2) 能输出的有功功率
+
+$$
+P_{\mathrm{N}}=200 \mathrm{MW}
+$$
+
+(3) 能输出的无功功率
+
+电机的额定视在功率
+
+$$
+S_{\mathrm{N}}=\frac{P_{\mathrm{N}}}{\cos \varphi_{\mathrm{N}}}=\frac{200}{0.85}=235.3 \mathrm{MVA}
+$$
+
+$$
+\begin{aligned}
+& \sin \varphi_{\mathrm{N}}=\sqrt{1-\cos ^{2} \varphi_{\mathrm{N}}}=\sqrt{1-0.85^{2}}=0.53 \\
+& Q_{\mathrm{N}}=S_{\mathrm{N}} \sin \varphi_{\mathrm{N}}=235.3 \times 0.53=124.7 \mathrm{Mvar}
+\end{aligned}
+$$
+
+## 8 .2 同步电机的电枢反应
+
+同步电机在空载运行时, 电机中只有一个以同步转速旋转的转子磁动势, 即励磁磁动势, 它所建立的励磁磁场在电枢绕组中感应出对称的三相电动势, 每相电动势为 $E_{0}$, 称为空载电 动势或励磁电动势。当定子接上对称负载后, 三相绕组中流过对称的电枢电流 $I$, 建立电枢磁 动势 $F_{\mathrm{a}}$, 它也以同步转速旋转。电枢磁动势与励磁磁动势相对静止而互相作用, 形成负载时 的合成磁动势 $F_{\delta}$, 并建立负载时的气隙合成磁场。气隙合成磁场与励磁磁场相比较, 无论在 位置及大小上都发生了变化。这种电枢磁动势对励磁磁场的影响称为电枢反应。电枢反应对 励磁磁场的不同作用, 称为电枢反应的性质, 它取决于空载电动势 $E_{0}$ 和电枢电流 $I$ 之间的相 位差 $\psi 。 \psi$ 角称为内功率因数角, 用时空相矢图进行讨论如下。
+
+## 1. 当 $\psi=0^{\circ}$, 即 $i$ 与 $\dot{E}_{0}$ 同相时的电枢反应
+
+电枢磁动势的矢量 $F_{\mathrm{a}}$ 与产生它的相量 $I$ 重合。合成磁动势
+
+$$
+F_{\delta}=F_{\mathrm{f}}+F_{\mathrm{a}}
+$$
+
+$\psi=0^{\circ}$ 时电枢反应
+
+由图 4.8-1 看出, 在 $\psi=0^{\circ}$ 的情况下, 合成磁动势 $F_{\delta}$ 不与励磁 磁动势 $F_{\mathrm{f}}$ 重合, 而是产生一个角位移。在数值上 $F_{\delta}>F_{\mathrm{f}}$, 由 $F_{\delta}$ 所建立的气隙合成磁场也发生 同样的变化。
+
+当电枢磁动势 $F_{\mathrm{a}}$ 处在交轴上时所产生的电枢反应叫交轴电枢反应, 则交轴电枢反应的作 用是使气隙合成磁场轴线不与励磁磁场轴线重合,并且幅值也增大。
+
+## 2. 当 $\psi=90^{\circ}$, 即 $i$ 滞后 $\dot{E}_{0}$ 为 $90^{\circ}$ 时的电枢反应
+
+$$
+F_{8}=F_{\mathrm{f}}+F_{\mathrm{a}}
+$$
+
+## 数值关系为
+
+$$
+F_{\mathrm{\delta}}=F_{\mathrm{f}}-F_{\mathrm{a}}
+$$
+
+即电枢磁动势 $F_{\mathrm{a}}$ 对励磁磁动势 $F_{\mathrm{f}}$ 起着去磁作用, 使合成磁 动势 $F_{\delta}$ 的数值减小。这种电枢反应称为直轴去磁电枢反应。
+
+## 3. 当 $\psi=-90^{\circ}$, 即 $i$ 越前 $\dot{E}_{0}$ 为 $90^{\circ}$ 时的电枢反应
+
+$$
+F_{\delta}=F_{\mathrm{r}}+F_{\mathrm{a}}
+$$
+
+使合成磁动势 $F_{\delta}$ 增大。这种电枢反应称为直轴增磁电枢反应。
+
+$\psi=-90^{\circ}$ 时的
+
+电枢反应
+
+## 4. 当 $0^{\circ}<\psi<90^{\circ}$, 即 $I$ 滞后 $\dot{E}_{0}$ 为任意一个角度 $\psi$ 时的电枢反应
+
+$$
+F_{\delta}=F_{\mathrm{f}}+F_{\mathrm{a}}
+$$
+
+$F_{8}$ 滞后 $F_{\mathrm{r}}$ 一个 $\theta$ 角度。
+
+可将电枢磁动势 $F_{\mathrm{a}}$ 沿直轴和交轴分解为两个分量 $F_{\mathrm{ad}}$ 和 $F_{\mathrm{aq}}$, 即
+
+$$
+F_{\mathrm{a}}=F_{\text {ad }}+F_{\text {a }}
+$$
+
+式中 $F_{\text {ad }}=F_{\mathrm{a}} \sin \psi$
+
+$F_{\mathrm{a} q}=F_{\mathrm{a}} \cos \psi$
+
+将电流 $i$ 也沿 $d$ 轴和 $q$ 轴分解为两个分量 $i_{d}$ 和 $i_{q}$, 即
+
+$$
+\dot{I}=i_{d}+i_{q}
+$$
+
+式中 $I_{d}=I \sin \psi$
+
+$$
+I_{q}=I \cos \psi
+$$
+
+$0^{\circ}<\psi<90^{\circ}$ 时的电枢反应
+
+这样, 直轴电枢磁动势 $F_{\text {ad }}$ 是由二相绕组的直轴分量电流 $I_{d}$ 所建立。
+
+直轴电枢磁动势 $F_{a d}$ 产生直轴去磁电枢反应。交轴电枢磁动势 $F_{a q}$ 是由三相绕组的交轴分量电 流 $i_{q}$ 所建立, 交轴电枢磁动势 $F_{\mathrm{aq}}$ 产生交轴电枢反应。
+
+### 3 同步电机的电枢反应电抗和同步电抗
+
+## 1. 电枢反应电抗
+
+以隐极同步电机为例, 当定子三相绕组通过三相电流时所建立的三相合成磁动势称为电 枢磁动势 $F_{\mathrm{a}}$, 由 $F_{\mathrm{a}}$ 产生的电枢反应磁通 $\phi_{\mathrm{a}}$ 在定子各相绕组中感应出电枢反应电动势 $E_{\mathrm{a}}$ 。在 不考虑磁路饱和的情况下, $E_{\mathrm{a}}$ 与电枢电流 $I$ 成正比, 而相位上 $E_{\mathrm{a}}$ 滞后 $i$ 为 $90^{\circ}$, 写成等式为
+
+$$
+E_{\mathrm{a}}=I X_{\mathrm{a}}
+$$
+
+用复数形式表示为
+
+$$
+E_{\mathrm{a}}=-\mathrm{j} I X_{\mathrm{a}}
+$$
+
+比例常数 $X_{\mathrm{a}}$ 便称为电枢反应电抗。
+
+电枢反应电抗 $X_{\mathrm{a}}$ 是与电枢反应磁通 $\phi_{\mathrm{a}}$ 相对应的电抗, 而 $\phi_{\mathrm{a}}$ 是由:相电枢绕组的合成磁 动势 $F_{\mathrm{a}}$ 产生的, 因此 $X_{\mathrm{a}}$ 综合地反映了电枢反应磁通 $\phi_{\mathrm{a}}$ 对电枢一相绕组所产生的影响而转化 为电路的一个参数。电枢反应电抗越大, 电枢反应电动势就越大, 因此电枢反应电抗的大小反 映了电枢反应的强弱。
+
+由于电枢反应磁通路径主要是铁芯, 其磁路可能饱和或者不饱和, 因此电枢反应电抗也有 饱和值与不饱和值之分。
+
+对凸极同步电机, 由于气隙不均匀, 极弧下气隙小, 两极之间气隙大, 同一电枢磁动势作用 在不同位置时电枢反应便不一样, 电枢反应磁场波形复杂, 给计算带来很大困难。为解决这个 难题, 现在普遍采用布朗代尔 (Blondel) 提出的 “双反应理论” 来分析凸极电机的问题。该理论 的基础是磁路不饱和采用的叠加原理，即把电枢磁动势 $F_{\mathrm{a}}$ 沿 $d$ 轴和 $q$ 轴分解成直轴分量 $F_{\mathrm{a} d}$ 和交轴分量 $F_{\mathrm{aq}}$, 然后分别求出它们的电枢反应, 最后把它们的效果叠加起来。下面应用双反 应理论来分析凸极同步电机的问题。
+
+先将电枢电流 $i$ 沿 $d$ 轴和 $q$ 轴分解为直轴分量 $i_{d}$ 和交轴分量 $i_{4}$ 。由直轴分量 $i_{d}$ 系统建立 直轴电枢磁动势 $F_{a d}$, 产生直轴电枢反应磁通 $\phi_{a d}$, 在定子每相绕组中感应直轴电枢反应电动势 $E_{a d} \circ E_{a d}$ 与 $I_{d}$ 成正比, 而相位上 $E_{\mathrm{ad}}$ 滞后 $\dot{I}_{d}$ 为 $90^{\circ}$, 写成等式为
+
+$$
+E_{\mathrm{ad}}=X_{\mathrm{ad}} I_{d}
+$$
+
+复数形式为
+
+$$
+E_{\mathrm{ad}}=-\mathrm{j} I_{d} X_{\mathrm{ad}}
+$$
+
+式中比例常数 $X_{\mathrm{ad}}$ 称为直轴电枢反应电抗。由于 $X_{\mathrm{ad}}$ 是对应于直轴电枢反应磁通 $\phi_{\mathrm{ad}}$ 的电抗, 因 此 $X_{\mathrm{ad}}$ 综合地反映了 $\phi_{\mathrm{ad}}$ 对电枢一相绕组所产生的影响而转化为电路的一个参数。
+
+同理, 由交轴分量 $I_{q}$ 系统建立交轴电枢磁动势 $F_{\mathrm{aq}}$, 产生交轴电枢反应磁通 $\dot{\phi}_{\mathrm{aq}}$, 在定子每 相绕组中感应交轴电枢反应电动势 $E_{\mathrm{aq}} \circ E_{\mathrm{aq}}$ 与 $i_{q}$ 成正比, 而相位上 $E_{\mathrm{aq}}$ 滞后 $i_{q}$ 为 $90^{\circ}$, 写成等 式为
+
+复数形式为
+
+$$
+E_{\text {aq }}=X_{\text {aq }} I_{q}
+$$
+
+$$
+E_{\mathrm{aq}}=-\mathrm{j} I_{q} X_{\mathrm{aq}}
+$$
+
+比例常数 $X_{\mathrm{aq}}$ 称为交轴电枢反应电抗。 $X_{\mathrm{aq}}$ 对应于交轴电枢反应磁通 $\phi_{\mathrm{aq}}$, 它综合地反映了 $\phi_{\mathrm{aq}}$ 对电枢一相绕组所产生的影响而转化为电路的一个参数。
+
+由于电机的直轴气隙小, 因此 $X_{\mathrm{ad}}>X_{\mathrm{aq}}$ 。
+
+## 2. 漏电抗与同步电抗
+
+(1) 漏电抗
+
+当同步电机的定子绕组流过电流 $I$ 时所产生的磁通,有一部分只交链定子绕组本身而不 进人转子, 这部分磁通称为定子漏磁通 $\phi_{\mathrm{s}}$, 它在定子每相绕组内感应漏磁电动势 $E_{\mathrm{s}}, E_{\mathrm{s}}$ 与 $i$ 成 正比, 相位上滞后 $I$ 为 $90^{\circ}$, 写成等式为
+
+## 复数形式为
+
+$$
+E_{\mathrm{s}}=X_{\mathrm{s}} I
+$$
+
+$$
+E_{\mathrm{s}}=-\mathrm{j} I X_{\mathrm{s}}
+$$
+
+比例常数 $X_{\mathrm{s}}$ 称为同步电机的漏电抗, 它反映了 $\phi_{\mathrm{s}}$ 对电枢一相绕组的影响而转化为电路的一 个参数。就数值而言, 漏电抗小于电枢反应电抗。
+
+(3) 隐极同步电机的同步电抗
+
+电机的同步电抗等于漏电抗和电枢反应电抗之和, 由于隐极同步电机的气隙均匀, 所以它 的直轴电枢反应电抗 $X_{\mathrm{ad}}$ 与交轴电枢反应电抗 $X_{\mathrm{aq}}$ 相等, 都等于电枢反应电抗 $X_{\mathrm{a}}$, 即
+
+$$
+X_{\mathrm{ad}}=X_{\mathrm{aq}}=X_{\mathrm{a}}
+$$
+
+所以隐极同步电机的同步电抗
+
+$$
+X_{\mathrm{c}}=X_{\mathrm{s}}+X_{\mathrm{a}}
+$$
+
+(3) 凸极同步电机的同步电抗
+
+由于凸极同步电机的气隙不均匀,应用双反应理论来分析, 它分为直轴与交轴两个电枢反 应电抗, 因此它也就有直轴和交轴两个同步电抗, 即直轴同步电抗
+
+$$
+X_{d}=X_{\mathrm{s}}+X_{\mathrm{a} d}
+$$
+
+交轴同步电抗
+
+$$
+X_{q}=X_{s}+X_{a q}
+$$
+
+并且 $X_{d}>X_{q}$ 。 因为同步电抗等于电枢漏电抗与电枢反应电抗之和, 因此同步电抗是代表由电枢电流引 起的电枢旋转磁场和电枢漏磁场的一个综合参数。
+
+## 3. 同步电机的电动势平衡方程式
+
+当知道同步电抗后, 根据电路定律, 对电枢某一相而言, 就可写出同步电机的电动势平衡 方程式。对发电机和电动机分述如下。
+
+(1) 隐极同步发电机的电动势平衡方程式
+
+$$
+E_{0}=\dot{U}+\dot{I r}_{\mathrm{a}}+\mathrm{j} I X_{c}
+$$
+
+式中 $U$-一电枢一相绕组的端电压, $\mathrm{V}$ 。
+
+$r_{\mathrm{a}}$ 一电枢一相绕组的电阻, $\Omega$ 。
+
+$$
+E_{0}=U+\mathrm{j} I X
+$$
+
+对应于式 (4.8-7) 的相量图和等效电路如图 4.8-5 所示。由 相量图看出, $i$ 与 $U$ 之间相位差 $\varphi$ 是功率因数角 $; i$ 与 $E_{0}$ 之间 相位差 $\psi$ 是内功率因数角; $U$ 与 $E_{0}$ 之间的相位差 $\theta$ 称为功率 角, 简称功角。三者之间的关系为
+
+$$
+\psi=\theta+\varphi
+$$
+
+(2) 凸极同步发电机的电动势平衡方程式
+
+忽略电枢电阻 $r_{\mathrm{a}}$ 后, 电动势平衡方程式为
+
+$$
+E_{0}=\dot{U}+\mathrm{j} I_{d} X_{d}+\mathrm{j} \dot{I}_{q} X_{q}
+$$
+
+式中 $i_{d} 、 i_{q}$ 分别按式(4.8-1) 和式(4.8-2) 计算。
+
+对应于式 (4.8-9) 的相量图为图 4.8-6 所示。 由图中可导出
+
+$$
+\tan \psi=\frac{I X_{q}+U \sin \varphi}{U \cos \varphi}
+$$
+
+(3) 隐极同步电动机的电动势平衡方程式 忽略电枢电阻 $r_{\mathrm{a}}$ 后, 电动势平衡方程式为
+
+$$
+\dot{U}=E_{0}+\mathrm{j} I X_{c}
+$$
+
+式中 $U$ 一一加在电枢端的电源电压, $\mathrm{V}$ 。
+
+对应于式 (4.8-10) 的相量图为图 4.8-7(a) 所示。等效电路为图 4.8-7(b) 所示。
+
+(4) 凸极同步电动机的电动势平衡方程式 忽略电枢电阻 $r_{\mathrm{a}}$ 后, 电动势平衡方程式为
+
+$$
+U=E_{0}+\mathrm{j} I_{d} X_{d}+\mathrm{j} I_{q} X_{q}
+$$
+
+对应于式(4.8-11) 的相量图为图 4. 8-8 所示。
+
+由图中可导出
+
+$$
+\tan \psi=\frac{I X_{q}+U \sin \varphi}{U \cos \varphi}
+$$
+
+【例 4.8-2】同步发电机在正常运行时气隙磁场在电枢绕组和励磁绕组中是否感应电动
+
+(a) 相量图 (b) 等效电路
+
+势, 为什么?
+
+答: 在正常运行时,气隙磁场是以同步转速旋转而幅值大小恒定的旋转磁场, 它与电枢绕 组有相对运动, 故在电枢绕组内会感应电动势。而它与励磁绕组同速同方向旋转, 即相对静 止, 它不会在励磁绕组内感应电动势。又由于是恒定磁场, 尽管它与励磁绕组交链, 由 $e=-N \frac{\mathrm{d} \phi}{\mathrm{d} t}$ 可知, 它也不会在励磁绕组内感应电动势。
+
+【例 4.8-3】隐极同步发电机的直轴电枢反应电抗与交轴电枢反应电抗和漏电抗的大小 关系是怎样的?
+
+答: 在隐极同步电机中, 由于气隙均匀, 其 $X_{\mathrm{ad}}=X_{\mathrm{aq}}=X_{\mathrm{a}}$ 。而 $X_{\mathrm{a}}>X_{\mathrm{s}}$ 。
+
+【例 4.8-4】凸极同步发电机中的直轴电枢反应电抗与交轴电枢反应电抗和漏电抗的大 小关系是怎样的?
+
+答: 凸极同步电机中气隙不均匀, 直轴气隙小, 交轴气隙大, 因此 $X_{\mathrm{ad}}>X_{\mathrm{aq}}$ 。但不论 $X_{\mathrm{ad}}$ 还 是 $X_{\mathrm{aq}}$, 电枢反应电抗都大于漏电抗, 所以 $X_{\mathrm{ad}}>X_{\mathrm{aq}}>X_{\mathrm{s}}$ 。
+
+【例 4.8-5】一台汽轮发电机的额定数据为: $P_{\mathrm{N}}=400 \mathrm{~kW}, U_{\mathrm{N}}=6.3 \mathrm{kV}, \cos \varphi_{\mathrm{N}}=0.8$ (滞 后), $\mathrm{Y}$ 接法, 同步电抗 $X_{\mathrm{c}}=79.4 \Omega$, 电枢电阻 $r_{\mathrm{a}}=0$, 求额定负载时发电机的空载电动势 $E_{0}$ 和 内功率因数角 $\psi$ 。
+
+解: 额定相电压
+
+$$
+U_{\mathrm{N}_{\phi}}=\frac{U_{\mathrm{N}}}{\sqrt{3}}=\frac{6300}{\sqrt{3}}=3637 \mathrm{~V}
+$$
+
+额定相电流
+
+$$
+I_{\mathrm{N}}=\frac{P_{\mathrm{N}}}{\sqrt{3} U_{\mathrm{N}} \cos \varphi_{\mathrm{N}}}=\frac{400}{\sqrt{3} \times 6.3 \times 0.8}=45.8 \mathrm{~A}
+$$
+
+额定功率因数角
+
+$$
+\varphi_{\mathrm{N}}=\arccos 0.8=36.9^{\circ}
+$$
+
+以 $i$ 为参考相量, 即
+
+$$
+i=I \angle 0=45.8 \angle 0^{\circ} \mathrm{A}
+$$
+
+对
+
+空载相电动势
+
+$$
+U=U \not 36.9^{\circ}=3637 \not 36.9^{\circ} \mathrm{V}
+$$
+
+$$
+E_{0}=U_{\mathrm{N} \phi}+\mathrm{j} I_{\mathrm{N}} X_{\mathrm{c}}
+$$
+
+$E_{0}$ 与 $I$ 之间的相位差便是内功率因数角 $\psi$, 即
+
+$$
+E_{0} \angle \psi=3637 \not 36.9^{\circ}+\mathrm{j} 45.8 \times 79.4=6506 \not 63.4^{\circ}
+$$
+
+得
+
+$$
+E_{0}=6506 \mathrm{~V}
+$$
+
+$\psi=63.4^{\circ}$
+
+【例 4. 8-6】一台水轮发电机的额定数据为: $P=60 \mathrm{MW}, U_{\mathrm{N}}=13.8 \mathrm{kV}, \cos \varphi_{\mathrm{N}}=0.85$ (滞 后), $X_{d}=2.7 \Omega, X_{q}=1.89 \Omega$, 电枢电阻 $r_{\mathrm{a}}=0, \mathrm{Y}$ 接法。当额定运行时发电机的内功率因数角 为 $\psi_{\mathrm{N}}=55.4^{\circ}$, 求发电机的空载电动势 $E_{0}$ 。
+
+解: 额定相电压
+
+$$
+U_{\mathrm{N} \phi}=\frac{U_{\mathrm{N}}}{\sqrt{3}}=\frac{13800}{\sqrt{3}}=7967.4 \mathrm{~V}
+$$
+
+额定电流
+
+$$
+I_{\mathrm{N}}=\frac{P_{\mathrm{N}}}{\sqrt{3} U_{\mathrm{N}} \cos \varphi_{\mathrm{N}}}=\frac{60 \times 10^{6}}{\sqrt{3} \times 13800 \times 0.85}=2953.2 \mathrm{~A}
+$$
+
+额定功率因数角
+
+功角
+
+$$
+\varphi_{\mathrm{N}}=\arccos 0.85=31.8^{\circ}
+$$
+
+$$
+\theta_{N}=\psi_{N}-\varphi_{N}=55.4^{\circ}-31.8^{\circ}=23.6^{\circ}
+$$
+
+直轴分量电流
+
+$$
+I_{d}=I_{\mathrm{N}} \sin \psi_{\mathrm{N}}=2953.2 \times \sin 55.4^{\circ}=2431 \mathrm{~A}
+$$
+
+交轴分量电流
+
+$$
+I_{q}=I_{\mathrm{N}} \cos \psi_{\mathrm{N}}=2953.2 \cos 55.4^{\circ}=1677 \mathrm{~A}
+$$
+
+以空载电动势 $E_{0}$ 为参考相量, 即 $E_{0}=E_{0} \angle 0^{\circ}$, 则
+
+$$
+\begin{aligned}
+E_{0} & =U_{\mathrm{N}_{\phi}}+\mathrm{j} I_{t} X_{d}+\mathrm{j} I_{q} X_{q} \\
+E_{0} & =U_{\mathrm{N} \phi} L-\theta_{\mathrm{N}}+\mathrm{j} I_{d} \angle-90^{\circ} \times 2.7+\mathrm{j} I_{q} \angle 0^{\circ} \times 1.89 \\
+& =7967.4 \angle-23.6^{\circ}+\mathrm{j} 2431 \angle-90^{\circ} \times 2.7+\mathrm{j} 1677 \times 1.89=13864.7-\mathrm{j} 20.17 \mathrm{~V} \\
+E_{0} & =13864.5 \mathrm{~V}
+\end{aligned}
+$$
+
+## 8 .4 同步发电机并入电网的条件和方法
+
+## 1. 同步发电机并入电网的条件
+
+为了提高供电质量, 同步发电机都是并人电网运行。并人电网时需要满足四个条件:
+
+(1)发电机的频率和电网频率相同;
+
+(2)发电机和电网的电压波形相同;
+
+(3)发电机和电网电压大小及相位要相同;
+
+(4.)发电机和电网的相序要相同。
+
+若第(1)条不满足, 发电机端电压与电网电压之间有相对运动, 将产生数值一直在变化的环 流,引起发电机的功率振荡。
+
+如果波形不同,高次谐波分量将在电机和电网内产生高次谐波环流，增加运行时的损耗， 使电机温升增高, 效率降低。
+
+如果频率和波形都一致, 但电压在大小和相位上不等, 将在发电机和电网之间产生一一个环 流, 其最大时可达 $(20 \sim 30) I_{N}$, 这样大的冲击电流, 会使电机遭到损坏。
+
+如果前面二个条件都符合了, 但相序不同, 更是绝对不允许并网的。因为相序不同, 在发 电机和电网之间存在巨大的电位差而产生无法消除的环流,危害着电机的安全运行。
+
+综上所述,四个条件都应满足。一般情况下,第(2)条可由设计和制造自动满足。而发电机 的转向和相序在出厂前也都标定, 只要接线时不出错, 这一条也自动满足。于是只要注意第(1) 和第(3)条就行了。
+
+## 2. 同步发电机并入电网的方法
+
+同步发电机并人电网的方法有准同步法和自同步法两种。
+
+(1) 准同步法
+
+准同步法就是准确同步法, 即操作人员利用同步指示器监测, 将待并发电机调整到上述并 网的条件后才并人电网。此法对并网条件要求严格,并网时间长,但对电机的冲击电流小。
+
+（2）自同步法
+
+该法是将待并发电机的励磁绕组先不加励磁, 而是经一电阻短路, 然后调节发电机的转速 到接近同步转速时即并人电网, 接着加上励磁, 利用定子、转子间的电磁力, 自动牵人同步。这 种方法操作简单,并网迅速, 但是冲击电流较大。
+
+【例 4.8-7】同步发电机并人电网的准同步法和自同法有何区别?
+
+答: 二者的根本区别在于加励磁的先后上。准同步法是先励后并, 即先将发电机加励磁, 后调节其转速和电压, 当满足并网条件后并网。自同步法是先并后励, 即发电机先不加励磁, 而是先校验好发电机的相序后启动发电机，把转速调到接近同步转速后即投人电网并立即加 励磁, 发电机便自动牵人同步。
+
+【例 4.8-8】并网的四个条件中,哪些条件可允许一些偏差、哪些条件必须绝对遵守?
+
+答:并网的四个条件中,前三个条件都允许有一定的偏差。如频率允许 $0.2 \% \sim 0.5 \%$ 的 偏差, 电压大小允许有 $10 \%$ 的偏差, 电压相位也允许有 $10 \%$ 的偏差。而相序要相同的条件是 必须绝对遵守而不允许有偏差的。
+
+### 5 同步发电机的有功功率及无功功率的调节方法
+
+## 1. 同步发电机的有功功率调节
+
+调节同步发电机的有功功率是通过调节原动机对发电机的输入功率来实现, 具体来说, 要 调节有功功率输出, 对于汽轮发电机, 须调节汽轮机汽门的开度; 对于水轮机来说, 须调节水轮 机水门的开度。
+
+当发电机是单机运行时, 则根据需要进行调节。对并人电网的发电机, 是根据电网的调度 进行调节。调节过程中, 发电机有功功率的变化是按照发电机的功角特性来变化的。输出功 率大, 功角 $\theta$ 就增大; 输出功率小, 功角 $\theta$ 就减小, 但功角的变化不能超过允许的数值。为保证 发电机运行的可靠性,提出了发电机静态过载倍数(静态过载能力) 的要求。
+
+在发电机并于无穷大电网, 电压 $U$ 一定, 忽略电枢绕组电阻和不计磁路饱和的情况下, 经 推导得出同步发电机的有功功率功角特性表达式如下。
+
+(1) 凸极同步发电机
+
+$$
+P_{\mathrm{M}}=\frac{m U E_{0}}{X_{d}} \sin \theta+\frac{m U^{2}}{2}\left(\frac{1}{X_{q}}-\frac{1}{X_{d}}\right) \sin 2 \theta=P_{M}^{\prime}+P_{M}^{\prime \prime}
+$$
+
+式中 $P_{M}^{\prime}=\frac{m U E_{0}}{X_{d}} \sin \theta$ 一基本电磁功率;
+
+$P_{M}^{\prime \prime}=\frac{m U^{2}}{2}\left(\frac{1}{X_{q}}-\frac{1}{X_{d}}\right) \sin 2 \theta$ 一附加电磁功率, 与励磁无关而决定于转子凸极式结构;
+
+$m$ 一相数, 对三相同步发电机, $m=3$ 。
+
+电磁功率 $P_{M}$ 随功角 $\theta$ 变化的图形 $P_{M}=f(\theta)$ 如图 4. 8-9 所示。数 值上 $P_{M}^{\prime} \gg P_{M}^{\prime \prime}$ 。
+
+(2) 隐极同步发电机
+
+隐极同步发电机的 $X_{d}=X_{q}=X_{\mathrm{c}}$, 将此条件代人式(4.8-12) 得功角 特性表达式为
+
+$$
+P_{\mathrm{M}}=\frac{m U E_{0}}{X_{\mathrm{c}}} \sin \theta
+$$
+
+电磁功率 $P_{\mathrm{M}}$ 随功角 $\theta$ 变化的图形如图 4.8-10 所示。
+
+由式(4.8-13) 可知, 同步发电机的电磁功率 $P_{\mathrm{M}}$ 随角 $\theta$ 按正弦函 数规律变化, 输出功率大, 角 $\theta$ 就增大。当 $\theta=90^{\circ}$ 时, $P_{\mathrm{M}}$ 达最大值 $P_{\text {Mmax }}$, 这是发电机输出功率的极限, 当超过这个极限后, 将导致发电 机的失步, 因此 $P_{M \max }$ 称为发电机静态稳定极限。实际运行中, 为了供 电的可靠性, 要使极限功率 $P_{\text {Mmax }}$ 比额定功率 $P_{\mathrm{N}}$ 大一定的倍数, 称为 静态过载倍数或静态过载能力, 用 $k_{\mathrm{M}}$ 表示, 即
+
+$$
+k_{\mathrm{M}}=\frac{P_{\mathrm{Mmax}}}{P_{\mathrm{N}}}=\frac{\frac{m U E_{0}}{X_{\mathrm{c}}}}{\frac{m U E_{0}}{X_{\mathrm{c}}} \sin \theta_{\mathrm{N}}}=\frac{1}{\sin \theta_{\mathrm{N}}}
+$$
+
+一般要求 $k_{\mathrm{M}}>1.7$ 。同步发电机额定运行时的功角 $\theta_{\mathrm{N}}$ 一般为 $25^{\circ} \sim 35^{\circ}$ 。
+
+## 2. 同步发电机无功功率的调节
+
+调节同步发电机的无功功率, 是通过调节发电机的励磁电流来实现的。在调节励磁电流 $I_{\mathrm{f}}$ 过程中, 发电机的有功功率将保持不变, 而电枢电流 $I$ 和功率因数 $\cos \varphi$ 都随之改变。由于 $I$ 和 $I_{\mathrm{f}}$ 的变化涉及电枢绕组和励磁绕组的温度、 $\cos \varphi$ 的滞后或越前以及运行的稳定性等问题, 为便于控制发电机的运行情况, 往往把 $I$ 和 $I$, 之间关系描绘成曲线来研究其相依关系, 因曲线 形状像英文字母的 V,故称 V 形曲线。
+
+在保持发电机输出的有功功率 $P_{2}$ 一定的情况下, $I=f\left(I_{\mathrm{f}}\right)$ 的关系曲线为 $\mathrm{V}$ 形曲线。对应不同的 $P_{2}$, 可得到不同的 $\mathrm{V}$ 形 曲线, 由此可得出一组 $V$ 形曲线, 如图 4. 8-11 所示。图中给出 了 $P_{2}=P_{\mathrm{N}}, P_{2}=0.5 P_{\mathrm{N}}$ 和 $P_{2}=0$ 时三种情况下的 $\mathrm{V}$ 形曲线。
+
+由图 4.8-11 得出如下结论。
+
+(1)每一条 V 形曲线都有一个最低点, 该点表示 $\cos \varphi=1$, 即电枢电流 $I$ 只有有功的电流, 因此 $I$ 最小。对应此时的励磁 电流称为正常励磁。将各曲线最低点连接起来得到一条 $\cos \varphi$ $=1$ 的曲线 (图中虚线所示), 在此基础上, 当增大 $I_{\mathrm{f}}$ 时, $I$ 也增大, 此时发电机既发出有功功 率, 也发出滞后的无功功率, 此时的励磁电流称为过励。如果从正常励磁开始减小励磁电流, 电枢电流 $I$ 也随之增大, 则此时发电机既发出有功功率, 也发出越前的无功功率, 此时的励磁 电流称为欠励。
+
+(2)在同一个励磁电流下, 有功功率越大, 电枢电流就越大, $\mathrm{V}$ 形曲线就越高。
+
+(3)越过励, 电枢电流越大; 越欠励, 电枢电流也越大。过励, 受发热条件的限制; 欠励, 既受 发热条件限制,也受不稳定条件的限制。
+
+【例 4.8-9】什么是 V 形曲线? 什么叫正常励磁?
+
+答: 保持发电机输出的有功功率 $P_{2}$ 不变时, 电枢电流 $I$ 与励磁电流 $I_{\mathrm{f}}$ 之间的变化关系 $I=f\left(I_{f}\right)$ 曲线形似 $\mathrm{V}$ 字,故称 $\mathrm{V}$ 形曲线。
+
+当 $P_{2} \neq 0, \cos \varphi=1$ 时的励磁状态称为正常励磁。
+
+【例 4.8-10】并联于无穷大电网的同步发电机, 欲提高其静态稳定性能应采取什么措 施?
+
+答:应当采取两种措施, 即:
+
+（1）增大励磁电流, 使励磁电动势 $E_{0}$ 增大;
+
+(2) 减小输出功率,使功角 $\theta$ 减小。
+
+【例 4.8-11】一台 $Q F Q S-200-2$ 汽轮发电机, $U_{\mathrm{N}}=15.75 \mathrm{kV}, \mathrm{Y}$ 接线, $\cos \varphi_{\mathrm{N}}=0.85$ (滞 后), $X_{\mathrm{c}}=2 \Omega$, 不计电枢绕组电阻。发电机并于无穷大电网运行, 当供给 $90 \%$ 额定电流、 $\cos \varphi$ $=0.85$ (滞后)、每相励磁电动势 $E_{0}=21.74 \mathrm{kV}$ 时, 求输出的有功功率 $P_{2}$ 、无功功率 $Q$ 及功角 $\theta$ 各是多少?
+
+解: (1) 输出的有功功率 $P_{2}$
+
+已知发电机的额定功率 $P_{\mathrm{N}}=200 \mathrm{MW}, P_{\mathrm{N}}=\sqrt{3} U_{\mathrm{N}} I_{\mathrm{N}} \cos \varphi_{\mathrm{N}}$, 则
+
+$$
+I_{\mathrm{N}}=\frac{P_{\mathrm{N}}}{\sqrt{3} U_{\mathrm{N}} \cos \varphi_{\mathrm{N}}}=\frac{200 \times 10^{3}}{\sqrt{3} \times 15.75 \times 0.85}=8625.5 \mathrm{~A}
+$$
+
+当输出电流 $I=0.9 I_{\mathrm{N}}$ 时的输出功率
+
+$$
+P_{2}=\sqrt{3} U_{\mathrm{N}} \times 0.9 I_{\mathrm{N}} \cos \varphi_{\mathrm{N}}=0.9 P_{\mathrm{N}}=180 \mathrm{MW}
+$$
+
+(2) 输出的无功功率 $Q$
+
+$$
+Q=\frac{P_{2}}{\cos \varphi} \sin \varphi
+$$
+
+当 $\cos \varphi=0.85$ 时, $\sin \varphi=\sqrt{1-0.85^{2}}=0.53$, 则
+
+$$
+Q=\frac{180}{0.85} \times 0.53=112.23 \mathrm{Mvar}
+$$
+
+(3) 功角 $\theta$
+
+得
+
+对同步发电机, 当忽略定子绕组电阻后, 输出功率 $P_{2}$ 便等于电磁功率 $P_{\mathrm{M}}$ 。由式(4.8-13)
+
+$$
+\begin{aligned}
+& P_{2}=P_{\mathrm{M}}=\frac{m U E_{0}}{X_{\mathrm{c}}} \sin \theta \\
+& 180=\frac{3 \times \frac{15.75}{\sqrt{3}} \times 21.74}{2} \sin \theta
+\end{aligned}
+$$
+
+$\sin \theta=0.61$
+
+$\theta=37.3^{\circ}$
+
+【例 4.8-12】一台汽轮发电机并于无穷大电网, 额定负载时功角 $\theta_{\mathrm{N}}=20^{\circ}$ 。因故障电网 电压降为 $0.6 U_{\mathrm{N}}$, 为使功角 $\theta$ 不超过 $25^{\circ}$, 问应加大励磁使 $E_{0}$ 上升为原来的多少倍?
+
+解: 故障后发电机输出功率不变, 设故障后的励磁电动势为 $E_{0}^{\prime}$, 由式 (4.8-12) 得
+
+$$
+\begin{aligned}
+& \frac{m U_{\mathrm{N}} E_{0}}{X_{r}} \sin 20^{\circ}=\frac{m 0.6 U_{\mathrm{N}} E_{0}^{\prime}}{X_{\mathrm{c}}} \sin 25^{\circ} \\
+& E_{0}^{\prime}=\frac{E_{0} \times 0.342}{0.6 \times 0.423} \\
+& E_{0}^{\prime}=1.35 E_{0}
+\end{aligned}
+$$
+
+4.8 .6 同步电动机的运行特性
+
+同步电动机的运行特性包括工作特性、转速特性和启动特性二个方面。
+
+## 1. 同步电动机的工作特性
+
+同步电动机的工作特性包括两个方面的问题,即表示有功功率调节的功角特性和无功功 率调节的 V 形曲线。
+
+(1) 有功功率功角特性
+
+功角特性是表示同步电动机在电压一定、励磁电流一定、不计磁路饱和和忽略电枢绕组电 阻的情况下, 当负载变化时, 电动机的电磁功率 $P_{M}$ 与功角 $\theta$ 之间的变化关系 $P_{M}=f(\theta)$ 。经推 导得出功角特性表达式为
+
+$$
+P_{\mathrm{M}}=\frac{m U E_{0}}{X_{d}} \sin \theta+\frac{m U^{2}}{2}\left(\frac{1}{X_{q}}-\frac{1}{X_{d}}\right) \sin 2 \theta=P_{M}^{\prime}+P_{M}^{\prime \prime}
+$$
+
+式中 $m$ - 相数, 对三相同步电动机 $m=3$;
+
+$$
+\begin{aligned}
+& P_{M}^{\prime}=\frac{m U E_{0}}{X_{d}} \sin \theta \text {-电磁功率的基本分量; } \\
+& P_{M}^{\prime \prime}=\frac{m U^{2}}{2}\left(\frac{1}{X_{q}}-\frac{1}{X_{d}}\right) \sin 2 \theta \text { 一电磁功率的附加分量。 }
+\end{aligned}
+$$
+
+由 $P^{\prime \prime}$ 表达式看出, $P_{M}^{\prime \prime}$ 的大小与励磁无关, 而决定于转子结构。只要是凸极式电机, $X_{d} \neq$ $X_{q}, P_{M}^{\prime \prime}$ 便存在。
+
+式 (4.8-15) 是凸极同步电动机功角特性的表达式, $P_{\mathrm{M}}=f(\theta)$ 曲线如图 4.8-12 所示。
+
+隐极同步电动机, 由于 $X_{d}=X_{q}$, 则 $P_{M}^{\prime \prime}=0$, 所以隐极同步电动机的功角特性表达式为
+
+$$
+P_{M}=\frac{m U E_{0}}{X_{\mathrm{c}}} \sin \theta
+$$
+
+$P_{M}=f(\theta)$ 曲线如图 4.8-13 所示。
+
+由式 (4.8-16) 可知, 同步电动机的电磁功率随角 $\theta$ 按正弦函数规律变化, 电磁功率的大小 取决于角 $\theta$, 故称 $\theta$ 为功角。
+
+由图 4. 8-13 看出, 在 $0^{\circ}<\theta<90^{\circ}$ 范围内, $P_{\mathrm{M}}$ 随 $\theta$ 的增大而增大; 在 $90^{\circ}<\theta<180^{\circ}$ 范围内, $P_{\mathrm{M}}$ 随 $\theta$ 的增大而减小。在 $\theta=90^{\circ}$ 时出现最大电磁功率 $P_{\text {Mmax }}$, 即
+
+$$
+P_{\text {Mmax }}=\frac{m U E_{0}}{X_{i}}
+$$
+
+以上分析看出, 虽然理论上功角特性可以在 $\theta=0^{\circ} \sim 180^{\circ}$ 半个正弦波范围内运行, 然而实 际上只能在 $\theta=0^{\circ} \sim 90^{\circ}$ 这个范围内稳定运行, 而在 $\theta=90^{\circ} \sim 180^{\circ}$ 范围内是不能稳定运行的。 当输出功率达到 $P_{\text {M max }}$ 时便是同步电动机稳定运行的极限。在实际运行中, 为了运行的可靠 性, 电动机的额定运行点应当离稳定极限有一定的距离, 使电动机的最大电磁功率 $P_{\text {M max }}$ 保持 着比额定功率 $P_{\mathrm{N}}$ 大一定的倍数, 这个倍数称为过载倍数或过载能力, 用 $k_{\mathrm{M}}$ 表示, 即
+
+$$
+k_{\mathrm{M}}=\frac{P_{\mathrm{M} \max }}{P_{\mathrm{N}}}=\frac{\frac{m U E_{0}}{X_{\mathrm{c}}}}{\frac{m U E}{X_{\mathrm{c}}} \sin \theta_{\mathrm{N}}}=\frac{1}{\sin \theta_{\mathrm{N}}}
+$$
+
+一般 $k_{\mathrm{M}}=2 \sim 3$, 则 $\theta_{\mathrm{N}}=30^{\circ} \sim 20^{\circ}$ 。
+
+对凸极同步电动机, 由于电磁功率的附加分量 $P^{\prime \prime}{ }_{\mathrm{M}}$ 数值都不大, 影响比较小, 因此式 (4.817) 同样适用于凸极同步电动机。
+
+功角 $\theta$ 有着双重的物理意义: 它既是时间相位角, 也是空间相位角。时间相位上, 它表示 电压相量 $U$ 与励磁电动势 $E_{0}$ 之间的夹角; 空间相位上, 它表示定子等效磁极轴线与转子磁极 轴线之间的夹角。作为电动机运行时，一定是定子等效磁极在前面，拖着转子磁极同步旋转， 输出功率的大小就反映在功角 $\theta$ 的大小上。
+
+所谓定子等效磁极是一个假想的磁极, 它是代表励磁磁通 $\phi_{0}$ 、电枢反应磁通 $\phi_{\mathrm{a}}$ 和电枢漏 磁通 $\phi_{\mathrm{s}}$ 三者之和的综合磁通所对应的定子等效磁极。
+
+## (2) V 形曲线
+
+与同步发电机相似,同步电动机的 $\mathrm{V}$ 形曲线也是表示电动机的 无功功率调节情况。在输出的有功功率 $P_{2}$ 不变的条件下, 调节电 动机的励磁电流 $I_{\mathrm{r}}$, 电枢电流 $I$ 随之改变, 二者的变化关系便是一个 $\mathrm{V}$ 形曲线,如图 4.8-14 所示。电枢电流变化的同时, 功率因数 $\cos \varphi$ 也随之改变, $\mathrm{V}$ 形曲线的最低点是 $\cos \varphi=1$ 的点, 此点上电枢电流 $I$ 全部为有功电流, 即电动机只从电网吸取有功电流。此时的励磁电 流称为正常励磁。在此基础上增大 $I_{\mathrm{f}}, I$ 也随之增大, 此时电动机既
+
+改变励磁可以调节电动机的功率因数,这是同步电动机的可贵之处。电网上的负载主要 是具有感性的无功功率负载, 而同步电动机工作在过励状态下, 是从电网吸取电容性无功功 率, 因而可改善电网的功率因数。一般同步电动机的额定功率因数 $\cos \varphi_{\mathrm{N}}=1 \sim 0.8$ (越前)。
+
+## 2. 转速特性和启动方法
+
+(1) 转速特性
+
+同步电动机的转速是恒定的同步转速,是不可调节的,因此也就无所谓转速特性的问题。
+
+(2) 启动方法
+
+同步电动机只有在同步转速运行时才能产生恒定的电磁转矩, 而同步电动机在启动过程 中是处于非同步运行状态, 不能产生恒定的电磁转矩, 因此同步电动机不能自启动, 必须另外 采取启动措施。现在广泛采用的启动方法就是异步启动法。所谓异步启动法,是在同步电动 机磁极的极靴上装置鼠笼型绕组称为启动绕组, 启动时靠启动绕组产生的电磁转矩作为异步 电动机启动。为了励磁绕组的安全, 启动时先把励磁绕组经过一个电阻接成闭路,然后按照异 步电动机的启动方法来启动电动机。待转速上升到接近同步转速时, 将励磁绕组换接到励磁 电源上,便可借助产生的同步转矩将转子牵入同步而完成启动过程。
+
+【例 4.8-13】试述功角 $\theta$ 的双重物理意义。
+
+答: 功角 $\theta$ 的双重物理意义是:
+
+(1)时间相位角,电压 $U$ 与励磁电动势 $E_{0}$ 之间夹角;
+
+(2)空间相位角,定子等效磁极轴线与转子磁极轴线之间的夹角。
+
+【例 4.8-14】一台同步电动机的定子电流滞后电压。在负载不变的情况下不断增加其 励磁电流, 电动机的功率因数将如何变化?
+
+答: 由电动机的 $\mathrm{V}$ 形曲线 $I=f\left(I_{\mathrm{f}}\right)$ 可知, 当励磁电流不断增加时, 滞后的功率因数的数值 先增大,增大到 1 后再变为越前并减小。
+
+【例 4.8-15】一台同步电动机运行在额定状态, 其功角 $\theta_{N}=30^{\circ}$ 。今因电网故障, 它的端 电压及频率都下降了 $10 \%$ 。若负载不变时它的功角是多少?
+
+解: 故障时,端电压及频率都下降了 $10 \%$,因此 $U, f 、 X_{\mathrm{c}} 、 E_{0}$ 及转速 $n$ 都下降 $10 \%$ 。设下降 后的冬数值为: $U^{\prime}=0.9 U_{\mathrm{N}}, E_{0}^{\prime}=0.9 E_{0}, X_{c}^{\prime}=0.9 X_{\mathrm{c}}$, 功角为 $\theta^{\prime}$ 。根据式 (4.8-16) 有
+
+$$
+P_{\mathrm{M}}=\frac{m U E_{0}}{X_{\mathrm{c}}} \sin \theta=\text { 常数 }
+$$
+
+则
+
+$$
+\begin{aligned}
+& \frac{m U_{\mathrm{N}} E_{0}}{X_{\mathrm{c}}} \sin \theta_{\mathrm{N}}=\frac{m U^{\prime} E_{0}^{\prime}}{X_{\mathrm{c}}^{\prime}} \sin \theta^{\prime} \\
+& \sin \theta^{\prime}=\frac{U_{\mathrm{N}} E_{0} X_{\mathrm{c}}^{\prime}}{U^{\prime} E_{0}^{\prime} X_{\mathrm{c}}} \sin \theta_{\mathrm{N}}=\frac{U_{\mathrm{N}} E_{0} \times 0.9 X_{\mathrm{c}}}{0.9 U_{\mathrm{N}} \times 0.9 E_{0} X_{\mathrm{c}}} \sin 30^{\circ}=0.556 \\
+& \theta^{\prime}=33.75^{\circ}
+\end{aligned}
+$$
+
+【例 4.8-16】一台同步电动机, $U_{\mathrm{N}}=220 \mathrm{~V}, X_{\mathrm{c}}=1.27 \Omega$, 输入功率 $P_{1}=33 \mathrm{~kW}$, 功角 $\theta=$ $30^{\circ}$, 忽略定子电阻, $\mathrm{Y}$ 接线。求空载相电动势 $E_{0}$ 是多少?
+
+解: 当忽略定子电阻后, 电动机的输入功率 $P_{1}$ 等于电磁功率 $P_{\mathrm{M}}$, 即 $P_{\mathrm{M}}=P_{1}=33 \mathrm{~kW}$ 。 由式(4.8-16) 得
+
+$$
+P_{\mathrm{M}}=\frac{m U E_{0}}{X_{\mathrm{c}}} \sin \theta
+$$
+
+$$
+E_{0}=\frac{P_{\mathrm{M}} X_{\mathrm{c}}}{m U \sin \theta}=\frac{33 \times 10^{3} \times 1.27}{3 \times \frac{220}{\sqrt{3}} \times \sin 30^{\circ}}=220 \mathrm{~V}
+$$
+
+【例 4.8-17】某企业电源电压为 $6 \mathrm{kV}$, 内部使用了多台异步电动机, 其总输出功率为 $1500 \mathrm{~kW}$, 平均效率为 $70 \%$, 功率因数为 0.8 (滞后)。企业新增一台 $400 \mathrm{~kW}$ 的设备, 计划采 用运行于过励状态的同步电动机拖动, 并补偿企业的功率因数到 1 , 求: (1) 同步电动机的容量 为多大? (2) 同步电动机的功率因数为多少?
+
+解 : (1) 企业输入总有功功率
+
+$$
+P=\frac{1500}{0.7}=2142.86 \mathrm{~kW}
+$$
+
+输入总视在功率
+
+$$
+S=\frac{P}{\cos \varphi}=\frac{2142.86}{0.8}=2678.575 \mathrm{kVA}
+$$
+
+输入总无功功率
+
+$$
+Q=S \cdot \sin \varphi=S \sqrt{1-\cos ^{2} \varphi}=2678.575 \times \sqrt{1-0.8^{2}}=1607.15 \mathrm{kvar}
+$$
+
+总的功率因数补偿到 1 , 新增同步电动机的容量为
+
+$$
+S_{\mathrm{D}}=\sqrt{400^{2}+1607.15^{2}}=1656.18 \mathrm{kVA}
+$$
+
+(2) 该同步电动机的功率 $P_{\mathrm{D}}=400 \mathrm{~kW}$, 则
+
+$$
+\cos \varphi_{\mathrm{D}}=\frac{P_{\mathrm{v}}}{S_{\mathrm{D}}}=\frac{400}{1656.18}=0.242 \text { (越前) }
+$$
+
+## 8 .7 同步发电机的绝缘系统、温升要求和冷却方式
+
+## 1. 同步发电机的绝缘系统
+
+电机的绝缘主要是绕组的绝缘。对定子绕组和转子绕组分述如下。
+
+## (1) 定子绕组绝缘
+
+定子绕组绝缘主要有匝间、层间、对地 (槽绝缘) 及连接线和引出线的绝缘。
+
+匝间绝缘,根据不同的电压等级,采用聚酯漆包双玻璃丝包线或聚酰亚胺薄膜包双玻璃丝 包线。
+
+层间绝缘用玻璃布板做成的层间垫条来实现。
+
+对地绝缘和连接线及引出线绝缘,一般采用环氧玻璃粉云母多胶带。对高压定子绕组, 在 通风槽口及端部出槽口处, 还要进行防电晕和防电腐蚀的处理。一般常用的耐热等级为 $B$ 级。
+
+(2) 转子绕组绝缘
+
+转子绕组绝缘主要有匝间绝缘、对地绝缘和引出线绝缘。
+
+匝间绝缘一般为导线本身的双玻璃丝包线或环氧玻璃坏布。
+
+对地绝缘用环氧玻璃坏布和醇酸云母板构成。
+
+引出线绝缘常用黄玻璃漆布管。
+
+2. 同步发电机的温升要求
+
+同步发电机的温升要求, 以 $\mathrm{B}$ 级绝缘为例。
+
+定子绕组温升限度为 $80{ }^{\circ} \mathrm{C}$, 用电阻法测量。 励磁绕组温升限度为 $80^{\circ} \mathrm{C}$, 用电阻法测量。
+
+铁芯温升限度为 $80^{\circ} \mathrm{C}$, 用温度计法测量。
+
+集电环温升限度为 $80^{\circ} \mathrm{C}$, 用温度计法测量。
+
+## 3. 同步发电机的冷却方式
+
+以汽轮同步发电机为例, 它的冷却系统都是封闭的, 冷却介质都是循环使用的。常用的冷 却介质有空气、氢气和水。
+
+(1) 空气冷却
+
+容量在 $50 \mathrm{MW}$ 以下的同步发电机常用空气冷却。冷空气经风扇送入电机后, 一部分吹拂 转子绕组端部, 另一部分进人定子、转子之间的气隙, 再有一部分吹拂定子绕组和铁芯。这三 路空气分别吸取了一定热量变为热空气, 在气隙处汇合后, 一同经铁芯的风道排出电机, 进人 冷却器进行冷却。被冷却后的空气再用风扇送人电机内循环使用。
+
+根据电机容量和温升要求, 定子风路系统分为径向通风、轴向通风和周向分区径向通风三 种形式。
+
+## (2) 氢气冷却
+
+氢气的散热性能要比空气高得多, 而它的密度又小, 因此采用氢气代替空气, 可大大提高 电机的效率。容量在 $50 \sim 600 \mathrm{MW}$ 的汽轮发电机中, 广泛应用氢气为冷却介质。其中 $50 \sim 100$ MW 的,一般用氢表面冷却。100 250 MW 的一般用转子氢内冷、定子氢表面冷。容量在 200 $\sim 600 \mathrm{MW}$ 的采用定子、转子氢内冷。
+
+## （3）水冷却
+
+水的散热能力远远高于空气和氢气, 因此近年来, 大、中型同步发电机广泛采用水为冷却 介质。有的电机定子采用水内冷, 转子采用氢冷。有的采用定子、转子双水内冷。
+
+定子水路系统是冷水从外部水系统通过管道流至装在定子机座上的进水环, 再分别经绝 缘管流人各个线圈, 吸收热量后再经绝缘水管汇总到装在机座上的出水环, 然后排人电机的外 部水系统进行冷却。
+
+转子水路系统是冷却水先进入装在励磁机侧轴端的进水支座, 然后流入转轴中心孔内, 再 沿几个径向孔流到集水箱, 再经装在集水箱上的进水绝缘管, 沿轴向流人各线圈。冷水吸热 后, 再经出水绝缘管汇总到出水箱, 通过出水箱外缘上的排水孔流到出水支座内, 最后由出水 总管引出。
+
+### 8 同步发电机的励磁系统
+
+同步发电机的励磁系统, 是指同步发电机励磁绕组的供电电源。按供电电源的供电方式, 励磁系统可分为他励系统和自励系统两大类。
+
+他励系统是指由同步发电机本身以外的电源供电的励磁系统。自励系统是由同步发电机 本身供电的励磁系统。励磁系统的分类情况如图 4.8-15 所示。
+
+## 1. 直流电机励磁系统
+
+这种励磁系统是用直流发电机作为供电电源的励磁系统, 如图 4. 8-16 所示。一般采用直 流励磁机 $\mathrm{L}$ 和主发电机 F 同轴, 当发电机转起来后, 励磁机即可发出直流电给主发电机的励 磁绕组 1 供电。图中 2 是励磁机的励磁绕组, $R_{\mathrm{r}}$ 是调节电阻, 通过调节 $R_{\mathrm{f}}$ 来保持同步发电机 的恒压。实际运行中, 一般用自动电压调节器来进行调节。这种励磁方式一般用于水轮发电
+
+机和 $100 \mathrm{MW}$ 以下的汽轮发电机。
+
+## 2. 他励整流器励磁系统
+
+这种励磁系统是用三相交流发电机作为励磁机, 再配置整流 器, 经整流后供给同步发电机励磁。它又分静止整流器的励磁方式 和旋转整流器的励磁方式两种。由于旋转整流器的励磁方式是将 整流器的直流输出直接接到主发电机的励磁绕组上,因而省去了炭
+
+励磁系统
+
+## 3. 自并励系统
+
+这种励磁系统是自励系统中结构简单、造价低廉的一种励磁 系统, 其原理电路图如图 4.8-18 所示。主发电机 1 的励磁由机端 的励磁变压器 2 经晶闸管整流器 3 整流后供给。发电机的励磁 调节由自动励磁调节器 4 改变晶闸管整流器输出来实现。发电 机刚开机时, 由起励装置 5 建立起始电压。
+
+由于发电机励磁仅由机端电压供给, 当发电机或电网发生短
+
+这种励磁系统可用于各级容量的电机, 但以大、中型电机为宜。
+
+## 4. 自复励系统
+
+自并励系统是仅由同步发电机的电压取得能量的自励系统。 自复励系统是由同步发电机的电压和电流两者取得能量的自励系 统。自复励系统中最常用的是相复励。相复励系统的输出电压与 同步电机的电压、电流有关外，还随同步发电机的功率因数而变化。 图 4. 8-19 为相复励的原理接线图。如图所示, 主发电机 1 的出线 端处连接有电流互感器 2 和电压互感器 3 。相复励变压器 5 有两个 输入绕组, 其中一个连接电流互感器的二次侧, 另一个经移相电抗
+
+器 4 连接电压互感器的二次侧。相复励变压器的输出电流经整流器 6 整流后供给发电机的励 磁绕组 7。经移相电抗器调整电流互感器与电压互感器的电流之间相位关系, 就能使相复励 变压器的输出电流, 不仅与定子电流有关, 而且与发电机端电压及功率因数有关。这样, 当发 电机的负载状况发生变化时,相复励系统既能补偿阻抗压降对发电机电压的影响, 也能补偿因 功率因数变化引起的电枢反应对发电机端电压的影响。因此相复励系统这种优越性, 是其他 励磁系统所不能达到的, 因此这种励磁系统获得了广泛的应用。
+
+相复励的接线形式有多种,图 4.8-19 仅是用来说明原理而已。
+
+## 5. 谐波励磁系统
+
+谐波励磁系统实际应用的都是三次谐波励磁系统。在电 机气隙中存在三次谐波磁场。当电机负载变化时,三次谐波磁 场数值也随之变化。在电机主绕组槽的顶部装置着三次谐波 绕组,绕组的输出端接晶闸管整流器, 二次谐波电流经整流后 供给发电机励磁。三次谐波励磁系统的原理线路图如图 4.820 所示。图中 1 为发电机主绕组, 2 为励磁绕组,3 为三次谐波 绕组, 4 为晶闸管整流器, 5 为自动励磁调节器, 6 为电压互感
+
+实际应用中,三次谐波绕组可以是三相的,也可以是单相的。
+
+电机负载时谐波绕组中的感应电动势要比空载时的大, 因此谐波励磁系统具有一定的自 动补偿电枢反应去磁作用的能力。这种励磁方式用于低压小型发电机。
+
+### 9 同步发电机的运行和维护工作要点
+
+以汽轮发电机为例, 同步发电机的运行和维护工作要点是根据国家颁布的《GB755-87 旋转电机基本技术要求》和国家电力公司颁布的《汽轮发电机运行规程》为依据, 重要内容如 下。
+
+(1) 电压的监督
+
+发电机正常运行时, 其电压的变动范围在额定电压的 $\pm 5 \%$ 以内。发电机连续运行时的最 高电压不得大于额定值的 $110 \%$, 最低电压不得低于额定值的 $90 \%$ 。
+
+(2) 频率的监督
+
+发电机正常运行时, 频率变动范围不超过 $\pm 1 \%$ 。
+
+## (3) 功率因数监督
+
+当发电机的电压与频率满足第 1 、第 2 条的规定下, 功率因数为额定值时可保证输出额定 功率。当发电机在运行中功率因数变动时, 应使其定子、转子电流不超过在当时进风温度下所 允许的数值。
+
+（4）负荷的监督
+
+(1)正常运行时, 发电机的定子电流不允许超过额定值。当电压降至额定值的 95\% 99\% 时,定子电流可允许达到额定值的 $105 \%$ 。
+
+(2)二相负荷不对称时, 要满足所规定的发电机承受负序分量电流的数值, 并且定子每相电 流不超过额定值时应能继续运行。
+
+(3)当发生不对称故障时,应满足
+
+$$
+\left(\frac{I_{2}}{I_{N}}\right)^{2} \times t \leqslant 8
+$$
+
+式中 $I_{2}$ 一定子每相的负序电流分量, A；
+
+$t$ 一一故障时间, $\mathrm{s}$ 。
+
+(5) 温度的监督
+
+发电机正常运行时要检查各主要部位的温度,即定子绕组、定子铁芯、转子绕组、集电环、 轴瓦以及发电机进风口冷却介质的温度。各部位的温度都不能超过允许值。
+
+(6)发电机附属设备的检查
+
+附属设备主要有控制盘上的仪表、励磁机、轴承、发电机冷却系统及出线和开关等。检查 的主要内容是: 控制盘上的表针指示位置是否在允许范围内运行; 励磁机的声音是否正常, 滑 环、电刷、刷握情况是否正常,有无冒火、跳动现象; 轴承的绝缘垫、油管是否清洁,有无短路现 象; 冷却系统各部位是否严密、紧固,有无泄漏现象; 发电机的出线及封闭母线各接头螺丝应紧 固,无过热现象,瓷瓶是否清洁无裂纹。
+
+## 9 过电压及绝缘配合
+
+### 1 电力系统过电压的种类
+
+电力系统中的各种绝缘在运行过程中除了长期受到工.作电压的作用外，还会受到各种比 工.作电压高得多的过电压的短时作用。所谓“过电压”通常指电力系统中出现的对绝缘有危 险的电压升高和电位差升高。按照产生根源的不同,可将过电压进行如下分类：
+
+引起厂频电压升高的原因有空载长线的电容效应、不对称短路、甩负荷等。当电路中的电 感、电容和电阻元件都是线性参数 (不随电流、电压而变化), 且电网的电源频率接近回路的自 振频率时, 由于回路中的感抗和容抗相等或接近而相抵消. 问路电流只受到电阻的限制而达到 很大的数值, 在电感元件和电容元件上产生远远超过电源电压的过电压, 此过电压称为线性谐 振过电压。当电感元件带有铁芯时, 一般会出现饱和现象, 这时电感不再是常数, 而是随着电 流或磁通的变化而改变。由于电感的非线性, 回路可能有不只一种稳定工作状态。在一定条 件下, 回路可能从非谐振工作状态变到谐振工作状态, 发生相位反倾现象, 产生铁磁谐振。若 系统中的某些元件 (如发电机) 的电感发生周期性的变化, 再加上不利参数的配合, 电网就有 可能引发参数谐振。操作过电压所指的操作并非狭义的开关倒闸操作, 而应理解为 “电网参 数的突变”,引起操作过电压的原因主要有切断空载线路、空载线路合闹、切断空载变压器、断 续电弧接地等。
+
+在 $220 \mathrm{kV}$ 以下的系统中, 要把雷电过电压限制到比内部过电压还低的水平是不经济的, 因此这些系统中电气设备的绝缘水平主要由雷电过电压所决定。对于超高压系统, 在现有防 雷措施下, 雷电过电压一般不如内部过电压危险性大, 因此系统绝缘水平主要由内部过电压水 平所决定。在严重污秽地区的电网, 设备的绝缘性能因污秽而大大降低, 污问事故在正常工作 电压下时常发生, 因此严重污移地区的电网外绝缘水平主要由系统最大运行电压所决定。
+
+### 2 雷电过电压特性
+
+雷电放电所产生的雷电流高达数十、甚至数百千安, 从而会引起巨大的电磁效应、机械效 应和热效应。从电力工程的角度来看,最值得注意的两个问题是：
+
+(1)雷电放电在电力系统中引起很高的雷电过电压, 造成电力系统绝缘故障和停电事故;
+
+(2)雷电放电所产生的巨大电流, 有可能使被击物体炸毁、燃烧, 使导体熔断或通过电动力 引起机械损坏。
+
+雷电时, 流经被击物体的电流是
+
+$$
+i=\sigma v_{1}, \frac{z_{0}}{z_{0}+z_{\mathrm{j}}}
+$$
+
+$\sigma$ 是雷电先导通道带中的电荷线密度, $v_{1}$, 是主放电的速度, $z_{0}$ 是主放电通道的波阻抗, $z_{\mathrm{j}}$ 是被击物体的集中阻抗。雷电流是指 $z_{\mathrm{j}}=0$ 时流经被击物体的电流。
+
+雷电流幅值概率分布
+
+$$
+\lg P=-\frac{I_{1}}{88}
+$$
+
+式中 $P$ 一一雷电流幅值超过 $I_{\mathrm{I}}$ 的概率;
+
+$I_{1}$ 一一雷电流幅值, $\mathrm{kA}$ 。
+
+雷电波前时间处于 $1 \sim 4 \mu \mathrm{s}$ 的范围内, 平均 $2.6 \mu \mathrm{s}$ 左右。雷电流的波长 (半峰值时间) 处 于 $20 \sim 100 \mu \mathrm{s}$ 的范围内, 多数处于 $40 \mu \mathrm{s}$ 左右。在防雷设计中, 采用 $2.6 / 40 \mu \mathrm{s}$ 的波形。在绝缘 的冲击高压试验中, 把标准雷电冲击电压的波形定为 $1.2 / 50 \mu \mathrm{s}$ 。雷电流的幅值和波前时间决 定了它的波前陡度 $\alpha$, 它也是防雷计算和决定防雷保护措施时的一个重要参数。我国规定 $\alpha=\frac{l}{2.6}(\mathrm{kA} / \mu \mathrm{s})$ 。波前陡度的最大极限值一般可取 $50 \mathrm{kA} / \mu \mathrm{s}$ 左右。
+
+雷电过电压的特点是: 幅值大, 频率高。雷电过电压可分为直接雷击过电压和感应雷击过 电压。
+
+雷直击于带有避雷线线路的情况可分为雷击杆塔塔顶、雷击避雷线档距中央、雷绕过避雷 线击于导线。 产生感应雷击过电压的机理是: 如图 4. 9-1 所示, 在雷云放电的起始阶段, 存在着向大地 发展的先导放电过程, 线路处于雷云与先导通道的电场中, 由于静电感应, 沿导线方向的电场 强度分量 $\boldsymbol{E}_{x}$ 将导线两端与雷云异号的正电荷吸引到靠近先导通道的一段导线上来成为束缚 电荷, 导线上的负电荷则由于 $E_{x}$ 的排斥作用而使其向两端运动, 经线路的泄漏电导和系统的 中性点而流人大地。因为先导通道发展速度不大, 所以导线上电荷的运动也很缓慢, 由此而引 起的导线中的电流很小, 同时由于导线对地泄漏电导的存在, 导线电位将与远离雷云处的导线 电位相同。当雷云对线路附近的地面放电时, 先导通道中的负电荷被迅速中和, 先导通道所产 生的电场迅速降低, 使导线上的束缚正电荷得到释放, 沿导线向两侧运动形成感应雷过电压。 这种由于先导通道中电荷所产生的静电场突然消失而引起的感应过电压称为感应过电压的静 电分量。同时, 雷电通道中的雷电流在通道周围空间建立了强大的磁场, 此磁场的变化也将使 导线感应出很高的电压, 这种由于先导通道中雷电流所产生的磁场变化而引起的感应电压称 为感应过电压的电磁分量。感应过电压的极性与雷电流的极性相反。
+
+### 3接地和接地电阻、接触电压和跨步电压的基本概念
+
+大地是个导体, 当其中没有电流流通时是等位的。如果地表上的金属物体与大地牢固连 接, 在没有电流流通的情况下, 金属物体与大地之间没有电位差, 该物体也就具有了大地的电 位一一零电位, 这就是接地的含义。换刨话说, 接地就是将电气回路中的某一节点通过导体与 大地相连,使该节点与大地保持等电位。
+
+实际上, 大地并不是理想导体, 它具有一定的电阻率, 如果有电流流过, 则大地就不再保持 等电位。被强制流人大地的电流是经过接地导体注人的, 进人大地以后的电流以电流场的形 式向四处扩散, 如图 4.9-2。设士壤电阻率为 $\rho$, 大地中的电流密度为 $\delta$, 则大地中必然呈现相 应的电场分布, 其电场强度 $E=\rho \delta$ 。离电流注人点愈远, 地中电流的密度就愈小, 可以认为在 相当远 (或者叫无穷远) 处的地中电流密度 $\delta$ 已接近零, 电场强度 $E$ 也接近零, 该处的电位为 零电位, 图 4.9-2 中画出了地表面的电位分布情况。把接地点处的电位 $U_{M}$ 与接地电流 $I$ 的比 值定义为该点的接地电阻 $R_{\text {。 }}$ 当接地电流 $I$ 为定值时, 接地电阻 $R$ 愈小, 则电位 $U_{\mathrm{M}}$ 愈低, 反之 则愈高。这就是为什么要力求降低接地电阻的原因。
+
+埋人地中的金属接地体称为接地装置。最简单的接地装置就是单独的金属管、金属板或
+
+金属带。由于金属的电阻率远小于土壤电阻率, 所 以接地体本身的电阻在接地电阻 $R$ 中可以忽略不 计, $R$ 的数值与接地装置的形状、尺寸有关, 当然也 与大地电阻率有关。
+
+为了人身安全, 无论在发、配电还是用电系统中 都将电气设备的金属外壳接地, 这样就可以保证金 属外壳经常固定为地电位,一旦设备绝缘损坏而使 外壳带电时不致有危险的电位升高以避免工作人员 触电身亡。正常情况下接地点没有电流人地, 金属 外壳保持地电位。当设备发生故障而有接地短路电 流流人大地时, 接地点和与它紧密相连的金属导体 的电位都会升高,有可能威胁到人身的安全。
+
+人所站立的地点与接地设备之间的电位差称为 接触电压 (取人手摸设备的 $1.8 \mathrm{~m}$ 处, 人脚离设备地水平距离 $0.8 \mathrm{~m}$ ), 如图 4.9-2 中 $U_{\mathrm{j}}$ 。人的 两脚着地点之间的电位差称为跨步电压 (取跨距为 $0.8 \mathrm{~m}$ ), 如图 4.9-2 中 $U_{\mathrm{k}}$ 。它们都可能有 甚高的数值使通过人体的电流超过危险值 (一般规定为 $10 \mathrm{~mA}$ ), 减小接地电阻或改进接地设 备的结构形状可以降低接触电压和跨步电位。
+
+电力系统中的接地分为三类。
+
+(1).工作接地: 根据电力系统正常运行的需要而设置的接地, 例如三相系统的中性点接地, 双极直流输电系统的中点接地等。它所要求的接地电阻值大约在 $0.5 \sim 10 \Omega$ 的范围内。
+
+(2)保护接地: 为了人身安全而将电气设备的金属外壳等加以接地, 它是在故障条件下才发 挥作用的, 它所要求的接地电阻值处于 $1 \sim 10 \Omega$ 的范围内。
+
+(3)防雷接地: 用来将雷电流顺利泄人地下, 以减少它所引起的过电压, 是防雷保护装置不 可或缺的组成部分, 阻值一般在 $1 \sim 30 \Omega$ 的范围内。
+
+### 4 氧化锌避雷器的基本特性
+
+20 世纪 70 年代出现的金属氧化锌避雷器 (MOA) 是一种全新的避雷器。氧化锌 $(\mathrm{ZnO})$ 掺 以微量的氧化铋、氧化钴、氧化镇等添加剂后制成的蔺片, 具有极其优异的非线性特性。在正 常工作电压的作用下, 其阻值很大 (电阻率高达 $10^{10} \sim 10^{11} \Omega \cdot \mathrm{cm}$ ), 通过的漏电流很小 $(<1 \mathrm{~mA})$, 而在过电压的作用下, 阻值会急剧变小, 其伏安特性可用下式表示: $u=C i^{\alpha}$
+
+其中非线性指数 $\alpha$ 与电流密度有关, 一般只有 $0.01 \sim 0.04$, 即使在大冲击电流 (例如 10 kA)下, $\alpha$ 也不会超过 0.1 , 已接近于理想值 $(\alpha=0)$ 。因此, 用 $\mathrm{ZnO}$ 蔺片制成的避雷器可以省 去串联的火花间隙, 成为无间隙避雷器。不过有些氧化锌避雷器内仍存在间隙, 但不是那种与 工作电阻串联的火花间隙, 而是跨接在部分阔片上的并联间隙 (如图 4.9-3 所示)。正常运行 时, 由 $R_{1}$ 和 $R_{2}$ 共同承担工作电压, 可以将漏电流限制到足够低的数值; 而在遇到冲击放电电 流过大、残压可能超过应有的保护水平时, 并联间隙 $F$ 立即放电、短接 $R_{2}$, 残压将仅由 $R_{1}$ 决 定,解决了大电流下残压过高的问题。
+
+与传统的有串联间隙的 $\mathrm{SiC}$ 避雷器相比, 无间隙 $\mathrm{ZnO}$ 避雷器具有下列一系列优点。
+
+(1)省去了串联火花间隙,结构大大简化, 体积也缩小很多。 (2)保护特性优越。由于没有火花间隙,一旦作用电压开始升 高, 蔺片立即开始吸收过电压的能量, 抑制过电压的发展。没有间 隙的放电时延，因而有良好的陡波响应特性，特别适合于伏秒特性 十分平坦的 $\mathrm{SF}_{6}$ 组合电器和气体绝缘变电所的保护。
+
+(3)无续流, 动作负载轻, 能重复动作实施保护。 $\mathrm{ZnO}$ 避雷器的 续流仅为微安级, 实际上可认为无续流。在雷电或内部过电压作用 下, 只吸收过电压的能量, 而不吸收续流能量, 因而动作负载轻; 再 加上 $\mathrm{ZnO}$ 阅片的通流容量远大于 $\mathrm{SiC}$ 蔺片, 所以 $\mathrm{ZnO}$ 避雷器具有耐 受多重雷击和重复发生的操作过电压的能力。
+
+(4)通流容量大、能制成重载避雷器。 $\mathrm{ZnO}$ 避雷器的通流能力完
+
+的 $\mathrm{ZnO}$ 避雷器原理图 全不受串联间隙被灼伤的制约, 仅与蔺片本身的通流能力有关。
+
+$\mathrm{ZnO}$ 阔片单位面积的通流能力要比 $\mathrm{SiC}$ 阀片大 $4 \sim 4$. 5 倍, 因而可用来对内部过电压进行保 护。还可很容易地采用多阀片柱并联的办法进一步增大通流容量, 制造出用于特殊保护对象 的重载避雷器, 解决长电缆系统、大容量电容器组等的保护问题。
+
+(5)耐污性能好。由于没有串联间隙，因而可避免因瓷套表面不均匀染污使串联火花间隙 放电电压不稳定的问题, 有利于制造耐污型和带电清洗型避雷器。
+
+由于 $\mathrm{ZnO}$ 避雷器具有上述重要优点, 因而发展潜力很大, 是避雷器发展的主要方向, 正在 逐步取代晋通蔺式避雷器和磁吹避雷器。
+
+由于 $\mathrm{ZnO}$ 避雷器没有串联火花间隙, 也就无所谓灭弧电压、冲击放电电压等特性参数, 但 也有自己某些独特的电气特性。
+
+### 5 避雷针、避雷线的保护范围
+
+为使设备免受直接雷击, 通常采用装设避雷针或避雷线的措施, 将雷电吸引到避雷针或避 雷线本身,并安全地将雷电流引人大地。
+
+避雷针一般用于保护发电厂和变电所, 可根据不同情况或装设在配电构架上, 或独立架
+
+## 1. 单支避雷针
+
+其保护范围可按下述方法确定。见图 4.94 , 在高度 $h_{x}$ 水平面上的保护范围的半径 $r_{x}$ 可按 下式计算。
+
+$$
+\begin{aligned}
+\text { 当 } h_{x} & \geqslant \frac{h}{2} \text { 时, } \\
+r_{x} & =\left(h-h_{x}\right) p
+\end{aligned}
+$$
+
+当 $h_{x}<\frac{h}{2}$ 时,
+
+$$
+r_{x}=\left(1.5 h-2 h_{x}\right) p
+$$
+
+式中 $h$ - 避雷针高度, $\mathrm{m}$; $p$ 一高度影响系数, $h \leqslant 30 \mathrm{~m}$ 时, $p=1 ; 30<h \leqslant 120 \mathrm{~m}$ 时, $p=\frac{5.5}{\sqrt{h}}$ 。
+
+## 2. 双支等高避雷针
+
+一般两针间的距离与针高之比 $D / h$ 不宜大于 5 , 其保护范围可按下法确定。见图 4.9-5 (a), 两针外侧的保护范围可按单针计算方法确定,两针间的保护范围应按通过两针顶点及保 护范围上部边缘最低点 $\mathrm{o}$ 的圆弧来确定, $\mathrm{o}$ 点的高度 $h_{\mathrm{o}}=h-\frac{D}{7 p}$ 。两针间高度为 $h_{x}$ 的水平面 上的保护范围的截面见图 4.9-5 (b) , 在 o-o 截面中高度为 $h_{x}$ 水平面上保护范围的一侧宽度 $b_{x}$ $=1.5\left(h_{\mathrm{o}}-h_{x}\right)$, 见图4.9-5 (c)。
+
+$h_{x}$ 水平面
+
+保护范围的戴面
+
+4.9-5 两等高避雷针的保护范围
+
+## 3. 两支不等高避雷针
+
+其保护范围按下法确定。见图 4.9-6, 两针的保护 范围先按单针作出高针 1 的保护范围, 然后经过低针 2 的顶点作水平线与之交于点 3 , 再设点 3 为一假想针的 顶点, 作出两等高针 2 和 3 的保护范围, 图中 $f=\frac{D^{\prime}}{7 p^{\circ}}$ 。两 针外侧的保护范围仍按单针计算。
+
+## 4. 多支等高避雷针
+
+多支等高避电针保护范围按下法确定。三支等高 避雷针的保护范围见图 4.9-7(a), 三针所形成的三角形 $1 、 2 、 3$ 的外侧保护范围分别按两支等 高针的计算方法确定, 如在二角形内被保护物最大高度的水平面上各相邻避雷针间保护范围 的外侧宽度大于零时, 则全部面积即受到保护。四支及以上等高避雷针, 可先将其分成两个或 几个二角形,然后按三支等高针的方法计算, 见图 4.9-7(b)。
+
+## 5. 避雷线 (又称架空地线) 的保护范围
+
+单根避雷线的保护范围见图 4.9-8, 可按下式计算。
+
+当 $h_{x} \geqslant \frac{h}{2}$ 时,
+
+$$
+r_{x}=0.47\left(h-h_{x}\right) p
+$$
+
+当 $h_{x}<\frac{h}{2}$ 时,
+
+$$
+r_{x}=\left(h-1.53 h_{x}\right) p
+$$
+
+式中系数 $p$ 同前。
+
+两根等高平行避雷线的保护范围是:两线外侧的 保护范围应按单线计算, 两线横截面的保护范围可以 通过两线 1,2 点及保护范围上部边缘最低点 $\mathrm{o}$ 的圆 弧所确定, 0 点的高度 $h_{\mathrm{v}}=h-\frac{D}{4 p}$ 。
+
+两不等高避雷线的保护范围可按两不等高避雷 针的保护范围的确定原则求得。
+
+对于避雷针, 可分为独立避雷针和装设在配电装 置构架上的避雷针。从经济观点出发, 当然希望采用 构架避雷针, 因为它既能节省支座的钢材, 又能省去 专用的接地装置, 但是对绝缘水平不高的 $35 \mathrm{kV}$ 以下 的配电装置来说, 雷击构架避雷针时很容易导致绝缘
+
+在 $h_{s}$ 水平面、保护范围的截面
+
+我国规程规定:
+
+(1) $110 \mathrm{kV}$ 及以上的配电装置, 一般将避雷针装载构架上, 但在土壤电阻率 $\rho>1000 \Omega \cdot \mathrm{m}$ 的地区, 仍宜装设独立避雷针, 以免发生反击;
+
+(2) $35 \mathrm{kV}$ 及以下的配电装置应采用独立的避雷针来保护;
+
+(360 kV 的配电装置, 在 $\rho>500 \Omega \cdot \mathrm{m}$ 的地区宜采用独立避雷针, 在 $\rho<500 \Omega \cdot \mathrm{m}$ 的地 区容许采用构架避雷针。
+
+对于独立的避雷针, 除了选择避雷针的支数、高度、装设位置、验算它们的保护范围、应有 的接地电阻、防雷接地装置设计等, 还要验算它对相邻配电装置构架的空气间距离及其接地装 置间地下距离。这是因为如果雷击于独立避雷针上, 但继而仍然反击到配电装置构架或在地 下造成土壤击穿陑与配电装置的接地装置连在一起, 岂不有违选用独立避雷针的初衷?
+
+压降, 在避雷针高度为 $h($ 相邻配电装置构架的高度) 处的对地电压为
+
+$$
+u_{\mathrm{A}}=R_{\mathrm{ch}} i+L_{0} h \frac{\mathrm{d} i}{\mathrm{~d} t}(\mathrm{kV})
+$$
+
+接地装置上的对地电压
+
+$$
+u_{\mathrm{B}}=R_{\mathrm{ch}} i(\mathrm{kV})
+$$
+
+式中 $R_{\mathrm{ch}}$ 一独立避雷针的冲击接地电阻, $\Omega$;
+
+$L_{0}$ ——避雷针单位高度的等值电感, $\mu \mathrm{H} / \mathrm{m}$ 。
+
+如果空气间隙的平均冲击击穿场强为 $E_{1}$ $(\mathrm{kV} / \mathrm{m})$, 为了防止避雷针对构架发生反击, 其空气间 距 $S_{h}$ 应满足
+
+$$
+S_{h} \geqslant \frac{U_{\mathrm{A}}}{E_{1}}(\mathrm{~m})
+$$
+
+与此相似, 如果土壤的平均冲击击穿场强为 $E_{2}(\mathrm{kV} / \mathrm{m})$, 为了防止避雷针接地装置与变电 所接地网之间因土壤击穿而连接在一起,其地下距离 $S_{d}$ 亦应满足
+
+$$
+S_{d} \geqslant \frac{U_{\mathrm{B}}}{E_{1}}(\mathrm{~m})
+$$
+
+雷电流的幅值 $I=100 \mathrm{kA}, L_{0} \approx 1.55 \mu \mathrm{H} / \mathrm{m}, E_{1} \approx 500 \mathrm{kV} / \mathrm{m}, E_{2} \approx 300 \mathrm{kV} / \mathrm{m}$, 平均波前陡度 $\left(\frac{\mathrm{d} i}{\mathrm{~d} t}\right)_{\mathrm{av}} \approx \frac{100}{2.6}=38.5 \mathrm{kA} / \mu \mathrm{s}$ 。因此, 用下面两个公式校核独立避雷针的空气间距 $S_{h}$ 和地中距 离 $S_{d}$, 即
+
+$$
+\begin{aligned}
+& S_{h} \geqslant 0.2 R_{\text {ch }}+0.1 h \\
+& S_{d} \geqslant 0.3 R_{c h}
+\end{aligned}
+$$
+
+在一般情况下, $S_{h}$ 不应小于 $5 \mathrm{~m}, S_{d}$ 不应小于 $3 \mathrm{~m}$ 。
+
+### 0 断路器
+
+断路器又称高压开关, 它不仅可以切断或闭合高压电路中的空载电流和负荷电流, 而且当 系统发生故障时, 通过继电保护装置的作用, 切断过负荷电流和短路电流。它具有相当完善的 灭弧结构和足够的断流能力。断路器有时又简称为“开关”。
+
+### 1 断路器的作用、功能、分类
+
+## 1. 断路器的作用与功能
+
+高压断路器是电力系统中最重要的设备之一, 其最大特点是能断开负荷电流和短路电流。 而隔离开关的主要功能是保证高压电气设备在检修时的安全。
+
+高压断路器是用来在正常情况下接通和断开电路、在故障情况下能迅速开断故障电流的 开关设备。包括:
+
+(1)能切断或闭合高压线路的空载电流;
+
+(2)能切断与闭合高压线路的负荷电流;
+
+(3)能切断与闭合高压线路的故障电流。
+
+断路器最重要的任务就是熄灭电弧, 因此各种断路器都有不同结构的灭弧装置, 灭弧装置
+
+## 与灭弧介质在很大程度上决定了断路器的性能。
+
+## 2. 断路器的分类
+
+高压断路器主要分为多油断路器、少油断路器、六氟化硫断路器、真空断路器、压缩空气断 路器等。各种断路器具有不同的特点,见表 4.10-1。
+
+表 4. 10-1 高压断路器分类与主要特点
+
+| 类型 | 结构特点 | 技术特点 | 运行维护特点 |
+| :---: | :---: | :---: | :---: |
+| 多油断路器 | $\begin{array}{l}\text { 以油作为灭弧介质和绝缘介质; } \\ \text { 结构简单,制造方便; 体积大, 用油 } \\ \text { 多 }\end{array}$ | $\begin{array}{l}\text { 额定电流较小; 开断速度较慢; } \\ \text { 开断小电流时间较长; 油多, 易发 } \\ \text { 生火灰 }\end{array}$ | 运行维护简单,运行可靠 |
+| 少油断路器 | $\begin{array}{l}\text { 油仅作为灭现介质, 油量少; 结 } \\ \text { 构简单,制造方便; 积木式结构,可 } \\ \text { 用于各电压等级 }\end{array}$ | $\begin{array}{l}\text { 开断电流大, 全开断时间短, 可 } \\ \text { 开断空载长线 }\end{array}$ | $\begin{array}{l}\text { 运行经验丰富,易于维护, } \\ \text { 油易劣化 }\end{array}$ |
+| SF6 断路器 | $\begin{array}{l}\text { 以 SF6 作为灭柘介质; 体积小, } \\ \text { 重量轻; 工艺要求严格; 断口开距 } \\ \text { 小 }\end{array}$ | $\begin{array}{l}\text { 额定电流和开断电流可以做得 } \\ \text { 很大; 开断性能优异, 适用于各种 } \\ \text { 工况 }\end{array}$ | $\begin{array}{l}\text { 运行稳定,可靠性高;维扩 } \\ \text { 工作量小 }\end{array}$ |
+| 真空断路器 | $\begin{array}{l}\text { 以真空作为绝缘和灭弧介质; 体 } \\ \text { 积小,重量轻;灭砆室工艺要求高 }\end{array}$ | $\begin{array}{l}\text { 可连续多次操作, 开断性能好; } \\ \text { 动作时间短 }\end{array}$ | 运行维护简单, 可靠性高 |
+| 空气断路器 | $\begin{array}{l}\text { 以压缩空气作为灭泒介质及操 } \\ \text { 作动力; 结构复杂,工艺要求高 }\end{array}$ | $\begin{array}{l}\text { 开断性能好, 动作时间短; 额定 } \\ \text { 电流和开断电流可以做得很大 }\end{array}$ | $\begin{array}{l}\text { 维护工作量小,需要压缩 } \\ \text { 空气设备,噪声大 }\end{array}$ |
+| GIS | $\begin{array}{l}\text { 将除变压器以外的一次设备统 } \\ \text {-封装,以 } \mathrm{SF} 6 \text { 作为灭弧介介质; } \mathrm{T} \text {. } \\ \text { 艺要求产格 }\end{array}$ | 开断性能优异 | $\begin{array}{l}\text { 占地小, 可靠性高,检修居 } \\ \text { 期长 }\end{array}$ |
+
+(1) 多油断路器
+
+实现筒单、价格便宜，但由于用油量大、体积大、检修工作量大且易发生爆炸和火灾现象， 般情况下已不采用。
+
+多油式断路器是以绝缘油为灭弧介质及主要绝缘介质的高压断路器, 其结构简单, 工艺要 求低,但体积大,用钢材和绝缘油都比较多,在电压较高时尤其如此,所以已经基本被少油式断 路器和六氟化硫断路器所代替。
+
+(2) 少油断路器
+
+用油少, 油箱结构小而坚固, 具有节省材料、防爆防火等特点。少油断路器使用安全, 使配 电装置大大简化,体积小,便于运输, 目前被大量采用。
+
+少油断路器结构简单, 使用历史长, 运行经验丰富, 目前在电力系统中仍处于主导地位。 我国生产的 $20 \mathrm{kV}$ 以下的少油断路器为屋内式, $35 \mathrm{kV}$ 及以上为屋外式。
+
+(3) SF6 断路器
+
+电气性能好, 断口电压可较高。设备的操作维护和检修都很方便, 检修周期长, 且开断性 能好, 占地面积小, 特别是发展 SF6 全封闭组合电器可大大减少变电所的占地面积。SF6 断路 器广泛应用于 20 世纪 90 年代, 目前我国已成功生产和研制了 $220 \mathrm{kV} 、 330 \mathrm{kV} 、 500 \mathrm{kV}$ 的 SF6 断路器。 一般来说,SF6 断路器主要由三部分组成: 三个垂直瓷瓶单元, 每一单元有一个气吹式灭 弧室; 弹簧操作机构及其单箱控制设备; 一个支架及支持结构。每个灭弧室通过与三.灭弧室 共连的管子填充 SF6 气体。
+
+由于 SF6 绝缘介质本身的优良性能,使得 SF6 断路器也获得众多优良特性。
+
+(1)断口电压高。220 kV SF6 断路器只需要单个断口, 因而结构简单, 制造、安装、调试、运 行均方便。
+
+(2)允许断路次数多,检修周期长。灭弧过程中分解的 SF6 气体, 很快便自行复原, 在严格 控制水分的情况下, 生成物没有腐蚀性, 因此, 开断短路电流后气体绝缘强度不下降, 因而检修 周期很长。
+
+(3)开断性能良好。SF6 断路器开断电流大, 灭弧时间短, 无严重的截流现象, 而且开断容 性电流时不产生重燃。
+
+(4)不易着火,运行更安全。
+
+(5)占地少。与其他类型断路器相比, 体积小, 占地少, 特别是 SF6 全封闭组合电器, 占地特 别少,适合于人口密集地区。
+
+(6)价格高。由于 SF6 本身成本较贵,且厂艺要求高,因此价格较高。
+
+该断路器具有优越的开断能力; 它将 SF6 气体与大地隔开, 具有可靠的绝缘能力; 弹簧操 作机构不需压缩空气, 检修工作大大减少, 不排放气体, 操作噪音极低, 可在居民区采用这种断 路器; 另外它结构极为简单, 重量较轻, 具有优良的抗震能力。但它对结构的密封性、元件加工 精度及 SF6 气体质量的要求很高, 因而造价较高, 维护较困难。
+
+(4) 真空断路器
+
+以真空作为绝缘和灭弧介质, 体积小, 重量轻, 但对于灭弧室工艺和材料的要求高。可连 续多次操作, 开断性能好, 动作时间短, 且运行维护简单, 可靠性高, 适用于配电系统操作多的 特点, 在 $35 \mathrm{kV}$ 及以下系统得到广泛使用。
+
+真空具有很强的绝缘特性。真空间隙在较小的距离间隙 $(2 \sim 3 \mathrm{~mm}$ ) 情况下, 有比高压力 空二梨 SF6 气体高的绝缘特性, 这就是真空断路器的触头开距一般不大的原因。
+
+电极材料对击穿电压的影响主要表现在材料的机械强度 (抗拉强度) 和金属材料的熔点 上。抗拉强度和熔点越高, 电极在真空下的绝缘强度越高。
+
+真空电弧与气体电弧放电现象有很大的差别, 气体的游离现象不是产生真空电弧的主要 因素, 真空电弧放电是在触头电极蒸发出来的金属蒸气中形成的。同时, 开断电流的大小不 同, 电弧表现的特点也不同。一般把它分为小电流真空电弧和大电流真空电弧。
+
+真空断路器利用高真空中电流过零点时, 等离子体迅速扩散而熄灭电弧, 完成切断电流的 日的。
+
+(5) 空气断路器
+
+空气断路器也叫压缩空气断路器。利用预先贮存的压缩空气来灭弧。压缩空气不仅作为 灭弧和绝缘介质, 而且还作为传动的动力。由于新鲜的压缩空气流除了可以带走弧隙中热量, 降低弧隙温度, 还能直接带走弧隙中的游离带电质点, 补充新鲜气体介质, 使去游离大大加强, 弧隙介质强度迅速恢复, 所以空气断路器断流容量大, 灭弧时间短, 而且快速自动重合闸时断 流容量不降低。但是空气断路器也有有色金属消耗量大、需要装设压缩空气系统等辅助设备 和价格较贵等缺点。 空气断路器断路能力大, 动作时间快, 尺寸小, 重量轻, 无火灾危险, 但结构复杂, 价格贵, 需要装设压缩空气系统等, 主要用于 $110 \mathrm{kV}$ 及以上对电气参数和断路时间有较高要求的系统 中, 以及大型发电机出口需要很大额定电流与开断电路的场合。在我国, 通常用于 $110 \mathrm{kV}$ 及 以上的大容量电力系统中。目前已基本上被 SF6 断路器所取代。
+
+- (6) SF6 全封闭组合电器(简称 G1S)
+
+GIS 国际与.称为“气体绝缘变电站”, 国内称为封闭式组合电器。它是将变电站中除变压 器以外的一次设备, 包括断路器、隔离开关、接地开关、电流互感器、电压互感器、避雷器、母线、 进出线套管或电缆终端,按系统布置进行优化设计并有机地组合成一整体。
+
+其主要优点是占地面积小, 占用空间少, 运行可靠性高, 检修周期长, 不受外界环境条件的 影响, 抗震能力强等。主要缺点是价格昂贵。目前已得到越来越多的应用, 主要用于110 $500 \mathrm{kV}$ 系统。
+
+### 2 断路器的主要性能与参数的含义
+
+(1) 额定电压 $U_{\mathrm{N}}$
+
+额定电压是断路器长期工作的标准电压。由于电力系统工作电压允许有一定的波动, 因 此断路器还规定了最高工作电压。对于 $3 \sim 220 \mathrm{kV}$ 断路器, 最高工作电压比额定工作电压高 $15 \%$, 对 $330 \mathrm{kV}$ 及以上电压, 则高 $10 \%$, 见表 4. 10-2 所示。
+
+表 4. 10-2 断路器额定电压与最高工作电压
+
+| 额定电压 $/ \mathrm{kV}$ | 3 | 6 | 10 | 35 | 110 | 220 | 330 | 500 | 750 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $\begin{array}{c}\text { 最高.T.作电压 } \\ / \mathrm{kV}\end{array}$ | 3.5 | 6.9 | 11.5 | 40.5 | 126 | 252 | 363 | 550 | 825 |
+
+选择断路器时, 应首先选择其额定电压。
+
+(2) 额定电流 $I_{\mathrm{N}}$
+
+额定电流是指断路器允许的长期工作电流。我同规定的额定电流为 $200 \mathrm{~A}, 400 \mathrm{~A}, 630 \mathrm{~A}$, $1000 \mathrm{~A}, 1600 \mathrm{~A}, 2000 \mathrm{~A}, 3150 \mathrm{~A}, 4000 \mathrm{~A}, 5000 \mathrm{~A}, 6300 \mathrm{~A}, 8000 \mathrm{~A}, 12500 \mathrm{~A}, 16000 \mathrm{~A}$, $20000 \mathrm{~A}$ 。
+
+(3) 额定开断电流 $I_{\mathrm{hrN}}$
+
+额定电压下断路器能够开断的最大电路电流, 称为额定开断电流。
+
+我国规定额定开断电流为 $1.6 \mathrm{kA}, 3.15 \mathrm{kA}, 6.3 \mathrm{kA}, 8 \mathrm{kA}, 10 \mathrm{kA}, 12.5 \mathrm{kA}, 16 \mathrm{kA}, 20 \mathrm{kA}$, $25 \mathrm{kA}, 31.5 \mathrm{kA}, 40 \mathrm{kA}, 50 \mathrm{kA}, 63 \mathrm{kA}, 80 \mathrm{kA}, 100 \mathrm{kA}$ 。
+
+(4) 额定开断容量 $S_{\mathrm{brN}}$
+
+额定开断容量, 用于表征断路器的开断能力。 $S_{\mathrm{brN}}=\sqrt{3} U_{\mathrm{N}} I_{\mathrm{brN}}$ 。
+
+(3) 额定关合电流 $I_{\mathrm{m}}$
+
+当断路器合到已经短路的系统时, 合闸的过程中就会发生短路故障。这种故障叫“预伏 故障”。设备检修后，如果忘记拆除接地线，这时断路器进行合闸操作，就会出现预伏故障。 断路器合到预伏故障上时, 动、静触头间还差几个毫米没有接触, 就会击穿该间隙, 发生短路, 强大的短路电流, 会给断路器关合造成阻力。如果断路器关合能力不够, 就可能出现触头弹 跳、熔化、烧结甚至断路器爆炸的现象。额定关合电流
+
+$$
+I_{\mathrm{mc}:}=2.55 I_{\mathrm{brN}}
+$$
+
+断路器的关合能力与操动机构密切相关。
+
+(6) 额定热稳定电流 $I_{\text {, }}$
+
+短路时, 断路器短时间内流过很大的短路电流, 各个流过短路电流的部件会发热, 如果温 度超过一定值, 其机械强度就下降, 在电动力作用下可能发生损坏。一般规定 $2 \mathrm{~s}$ 时间内能够 承受的电流有效值为额定热稳定电流，单位 $\mathrm{kA}$ 。
+
+(7) 额定动稳定电流 $i_{\mathrm{am}}$
+
+额定动稳定电流是指在额定状态下, 断路器所能承受的峰值短路电流。规定 $i_{\mathrm{am}}=I_{\mathrm{mm}}$ 。如 果实际峰值电流超过此值,可能导致断路器通电部件、绝缘支撑件等的变形损坏。
+
+(8) 分闸时间
+
+全开断时间包括周有分闸时间和燃弧时间。固有分闸时间是指接到分闸命令开始到各相 触头都分离的时间间隔。燃弧时间指某一相起弧开始到所有相电弧全部熄灭位置的时间间 隔。
+
+分闸时间是断路器的关键性参数之一。
+
+(9) 自动重合闸时间
+
+架空输电线路的短路故障,绝大多数是雷害、鸟害等暂时性故障,这类故障,短路电流切断 后,故障原因迅速消除,如果在开断短路后,再次合闸, 系统可以继续供电, 极大提高了电力系 统的供电可靠性。这就是重合闸。因此,架空输电线路基本都装有自动重合闸装置。自动重 合闸的操作如下：
+
+临时性故障一断路器跳闸一延时一断路器合闸 其中,延时是从电弧熄灭到电路重新接通的时间，称为无电流间隔时间，一般为 $0.3 \sim 0.5 \mathrm{~s}$ 。 一般来说,现在电力系统较以前更加强健，倾向于选择较长的无电流间隔时间。间隔时间长， 给电弧通道更长时间恢复绝缘强度,则重合成功率可提高, 同时断路器第二次开断容量恢复更 有保证。
+
+如果是永久性故障,如输电线路倒杆等,操作为:
+
+故障一断路器跳闸一延时一断路器合闸一断路器跳闸
+
+有时,自动重合不成功,隔一个较长的时间段后,再手动合闸送电,称为“强送电”。强送 电时间间隔一般选择为 $180 \mathrm{~s}$ 。强送电成功可以提高系统供电可靠性。
+
+4.10.3 断路器常用的熄弧方法
+
+高压断路器之所以能够接通与断开大的负荷电流与短路电流, 是因为其特有的熄灭电弧 的能力。要了解断路器的熄弧原理,有必要先简单了解电弧的形成。
+
+## 1. 电弧的形成
+
+高压开关电器断开电路时, 开关电器中动、静触头分离瞬间,触头间就会形成电弧。只有 熄灭电弧，电路才真正断开。电弧的形成主要取决于游离过程与去游离过程。
+
+(1) 游离过程
+
+电弧的产生与维持是触头间绝缘介质的中性质点被游离的结果。电弧实际上是一种气体 放电现象, 电弧中的电流主要是自由电子的流动造成的。电弧形成以后, 由于电弧温度可达 $5000{ }^{\circ} \mathrm{C}$ 以上, 质点相互高速碰撞, 可能产生游离, 这个过程称为热游离。热游离成为维持电 弧稳定燃烧的主要因素。
+
+(2) 去游离过程
+
+游离的同时, 还存在着相反的过程, 即去游离过程。去游离主要包括复合过程和扩散过 程。复合是指带正电的正离子与带负电的负离子之间相互结合, 中和成不带电的粒子的过程。 在电场强度较低的区域, 更容易发生复合。扩散是指带电质点特别是自由电子从电弧内部逸 出到周围的过程。扩散主要是由于电弧中的带电离子浓度比周围高、电弧温度比周围高造成 的。
+
+电弧中游离与去游离的竞争, 决定了电弧的状态。如果游离过程大于去游离过程, 电弧就 不断发展。如果去游离过程大于游离过程, 电弧最终会熄灭。如果游离过程与去游离过程维 持平衡, 电弧就稳定燃烧。
+
+## 2. 交流电弧的熄灭过程
+
+电力系统开关电器中的电弧, 绝大部分是交流电弧。交流电弧的电流有自然过零点。交 流电弧总在电流过零点附近灭弧。
+
+交流电弧具有动态的伏安特性, 如图 4. 10-1 所 示。这是由于电弧的热惯性造成的。电弧在电流 过零点以后很短的时间内, 电弧温度较低, 电阻较 大。电弧电阻很大, 有利于熄弧。电弧的熄灭, 取 决于交流电弧在电流过零点附近短时间内弧隙介 质强度的恢复与弧隙电压的恢复这两个过程的竞 争。
+
+(1) 弧隙介质强度的恢复
+
+电流接近过零点时, 电弧温度开始急剧下降, 到电流过零后的一个很短的时间内, 电弧温度降低
+
+(2) 弧隙电压强度的恢复
+
+电流过零后, 加在弧隙上的电压有一个恢复过程。电压的恢复可以是振荡的, 也可以是非 振荡的缓慢上升, 主要取决于外部电路。电压恢复速度是电弧能否重燃的关键因素。显然, 振 荡的恢复电压具有更大的电压恢复速度。如果外部电路有足够大的阻尼, 电压的恢复就变成 非振荡恢复, 从而有利于电弧的熄灭。
+
+如果电流过零点以后, 弧隙介质的绝缘恢复速度始终大于电压的恢复速度, 则电流不再重 燃, 电弧才真正熄灭。否则, 电弧将继续燃烧, 直到满足电弧熄灭条件。
+
+## 3. 高压断路器中常用的熄弧方法
+
+交流电弧的熄灭有很多种方法, 现代高压开关电器中主要采用如下方法。
+
+(1) 高强度介质
+
+电弧的熄灭，很大程度上取决于触头间绝缘介质的类型。 (1)油介质。绝缘油在电弧高温作用下, 分解出大量气体, 其中氢气占 $70 \% \sim 80 \%$ 。氢气 的灭弧能力是空气的 7.5 倍。因此, 绝缘油曾经是用得最多的开关电器绝缘介质, 现在仍然得 到广泛应用。
+
+(2)六氟化硫气体。六而化硫(SF6)气体是强负电性气体, 具有很强的俘获自由电子的能 力。而自由电子是电弧形成与发展的最主要因素, 大量自由电子的减少有利于电弧的熄灭。 因此, 六氟化硫气体绝缘介质具有极强的灭弧能力, 其灭弧能力大约是空气 100 倍。六氧化硫 断路器现在已经取代油断路器成为最主要的超高压断路器。
+
+(3)高真空。真空中分子浓度很低, 碰撞游离和热游离均很难发生, 因而高真空具有很高的 绝缘强度。真空断路器已广泛应用于配电系统。
+
+(4)高气压。高气压下, 碰撞很容易发生, 而频繁的碰撞, 不利于自由电子积聚能量, 低能量 碰撞很难造成游离, 因而不利于电弧的产生与发展。空气压力为 $20 \sim 30$ 大气压的压缩空气断 路器具有优良的开断性能。
+
+(2) 吹弧
+
+利用气体或油, 以高速吹向电弧, 带走大量带电粒子, 强烈的冷却, 不但使热游离难以进 行, 而且有利于带电粒子的复合。吹弧方法已用于几乎每一台高压断路器中, 而且发展出横 吹、纵吹、环吹以及几种方法的各种组合。
+
+(1)横吹灭弧方式。在分闸时,动、静触头分开产生电弧, 其热量将油汽化并分解, 使灭弧室 中的压力急剧增高, 这时气垫受压缩储存压力。当动触头运动, 喷口打开时, 高压力将油和气 自喷口喷出,横向 (水平) 吹电弧, 使电弧拉长、冷却而熄灭,这种灭弧方式称为横吹灭弧方式。
+
+(2)纵吹灭弧方式。纵吹灭弧方式是指断路器在分闸时, 动、静触头间高压力的油和气沿垂 直方向吹弧,使电弧拉长、冷却而熄灭。
+
+少油断路器结构与灭弧方式如图 4. 10-2 所示。灭弧室是油断路器的关键部件, 主要构件 是一个高强度玻璃钢筒，它能承受很高的压力，从而保证了在开断短路电流时不会发生爆炸。 灭弧室内叠放六片同样形式的隔弧板, 每片中心开孔, 让动触头导电杆通过。灭弧室装在瓷套 筒内, 其内部充满油。静触头为插座式, 位于灭弧室之上。在开断短路电流时, 由于电弧分解 油产生气体, 在灭弧室内产生很大压力, 油和气从中心孔向上喷出, 将电弧吹灭 (属于纵吹方 式)。
+
+电压较低时,一个断口就可以可靠熄灭电弧。电压很高时,一个断口就不够了, 这时候, 可 以把两个或多个断口串连起来,对几个串连的电弧同时进行熄弧,可以熄灭更高的电压。双断 口与 4 断口断路器在电力系统里都有应用。图 4. 10-2 所示为双断口断路器。
+
+(4) 快速分闸
+
+高速分离电弧, 使电弧迅速拉长、冷却, 有利于降低电弧温度, 为灭弧创造条件。现代高压 断路器,典型分闸时间为 $20 \sim 40 \mathrm{~ms}$ 。
+
+4.10.4 断路器的运行和维护工作要点
+
+1. 断路器的运行
+
+(1) 对设备的要求
+
+(1)断路器基本性能参数必须满足装设地点的运行工况并留有适当裕度, 而且应标有基本 参数等内容的制造厂铭牌。
+
+(2)断路器的分、合闸就地指示器应易于工作人员观察且指示正确。
+
+(3)每台断路器都应有运行编号和设备名称。
+
+(4)断路器接地金属外壳应有明显的接地标志,接地线的截面积要符号安全规程要求,并且 接触良好。
+
+(5)断路器外露相的带电部分应有明显的相位油漆标示。
+
+(6)断路器机构箱应有防漏雨、防尘、防潮、防小动物进入及通风措施, 液压与气压机构应有 加热装置。
+
+(7)断路器及附属设备应按照技术规范的规定运行,正常运行时,不应超过规定的允许值。
+
+(2) 断路器的操作
+
+除紧急情况外，断路器、隔离刀闸及接地刀闸的操作必须填写操作票或命令卡。必须得到 值长的许可才能进行系统电源网络开关操作。检修、调试人员在未得到值班负责人或值长许 可时,禁止操作、传动检修的开关。
+
+断路器及隔离刀闸的操作应当由操作人、监护人在主控室或就地进行操作,在正常情况 下,有远方控制的设备应在远方进行操作。
+
+紧急情况下,值班人员可先处理事故,然后立即向值长和相关领导汇报事故情况及处理结 果。
+
+在开关操作指令发出及接收时,发令者和接令人双方应互通姓名及操作时间。所有的操 作命令应由双方互相核对确认无误后执行。
+
+在任何情况下,所有的开关操作都必须做好记录。
+
+操作中应同时监视有关电压、电流、功率等表计的指示及红绿灯的变化。
+
+(3) 监护人、操作人进行操作的程序
+
+对照模拟盘预演,在实际操作前验证操作票所列内容的正确性及合理性。
+
+操作前,操作人、监护人应认真研究操作的顺序并考虑其对电网及电气系统产生的影响。 如有疑问, 应与值长或值班负责人进行分析, 询问清楚, 确认无误后再执行。
+
+操作按操作票顺序执行,不能有任何不合理的延误。监护人必须监护整个操作过程,任何 操作不能失去监护。
+
+如果监护人、操作人因各种原因不能执行操作 (如开关失灵等原因), 应立即汇报值班负 责人、值长, 经同意暂停操作, 并在操作票中注明原因, 取消操作, 联系有关人员处理。当处理 T.作完成后再向值长申请重新操作。
+
+操作人、监护人应带好操作票或命令卡, 严格执行操作方法, 操作完成后, 应进行检查无误 后, 在操作票或命令卡上做好标记。
+
+在控制室操作盘或就地操作盘进行接地开关的操作后，应就地确认其分、合闸实际状态。
+
+在控制室操作盘或就地操作盘进行断路器或开关操作后, 应确认其位置、状态。通过观察 一些相关的指示, 如指示设备状态的不同颜色的灯光, 模拟盘上的信号灯, 电压表、电流表、功 率表的读数等现象来判断是否为合理的运行方式。
+
+有关操作任务完成后, 监护人、操作人应立即向值班负责人或值长汇报操作执行情况及时 间, 并进行详细检查。
+
+在确认操作完成时,监护人、操作人应向值班负责人汇报其姓名和操作任务及操作完成时 间, 值班负责人向值长汇报操作完成时间及内容。值长向调度汇报其姓名及操作时间、内容, 调度、值长双方重复核对, 以避免发生错误。
+
+高压断路器、刀闸操作时, 值班员必须精神高度集中, 保证操作准确无误。
+
+## 2. 断路器的维护
+
+(1) 运行中的检查项目
+
+(1)设备各部清洁、无杂物, 瓷瓶、套管无裂纹及闪络痕迹。
+
+(2)各部接合面螺丝紧固,接触良好, 无发热、变色。
+
+(3)充油设备油色、油位正常, 无渗漏油。
+
+(4)设备各部无放电迹象。
+
+(5)各开关位置指示器指示正常。
+
+(6)配电柜门关好。
+
+(7)常设遮拦、标示牌、设备标志完好。
+
+(8)电流互感器、电压互感器、避雷器、阻波器运行良好, 无异常声响。
+
+(2)油开关切断故障电流后，应检查其喷油和油位、油色情况。
+
+(10合理改变系统运行方式限制和减少系统短路电流, 对遮断容量不足的开关必须限制、调 整、改造、更换。
+
+(2) 断路器的投运检查
+
+(1)新装或大修的断路器，投运前必须验收合格。
+
+(2)断路器投运前应收回所属系统、设备的检修工作票 (首次投运应有可投运的质量检查 报告), 拆除临时安全措施, 恢复常设遮拦和标示牌, 拉开所属系统接地刀闸 (拆除接地线)。
+
+(3)投运设备各部位清洁、无杂物、无接地、无短路，各接头牢固，接触良好。
+
+(4)闭锁装置良好, 防误闭锁装置能正常使用。
+
+(5)开关操动机构良好, 无漏油, 无卡涩, 油压、气压正常。
+
+(6)开关的灭弧介质参数如油位、气压等合格, 油色正常。
+
+(7)保护及自动装置投人正确。
+
+(8)开关 (刀闸) 的拉、合闸试验正常。
+
+(9)不论任何情况, 在进行各种开关操作前, 监护人、操作人应检查要操作的设备正常。 (3) 下列情况，禁止将设备投入运行
+
+(1)无主保护设备。
+
+(2)电气试验不合格设备。
+
+(3)开关机构拒绝跳闸的设备。
+
+(4)开关事故跳闸次数超过规定值,油质碳化或喷油严重。
+
+(5)主保护动作,未查明原因,未消除故障。
+
+(4) 断路器的验收
+
+(1)审核断路器的调试记录。
+
+(2)检查断路器的外观,包括油位及密封情况,瓷质部分及接地应完好,各部分无渗漏油等。
+
+(3)机构的二次线接头应紧固,接线正确,绝缘良好; 接触器无卡涩, 接触良好; 辅助断路器 打开距离合适,动作接触无问题。
+
+(4)液压机构应无渗油现象, 各管路接头均紧固, 各微动断路器动作正确无问题, 预充压力 符合标准。
+
+(5)手动合闸不卡劲、抗劲,电动分合动作正确，保护信号灯指示正确。
+
+(6)记录验收中发现的问题及缺陷, 上报有关部门。
+
+(5)高压断路器大修项目
+
+(1)本体分解。
+
+(2)灭弧、导电、绝缘部分解体检修。
+
+(3)控制传动部分解体检修。
+
+(4)操动机构解体检修。
+
+(5)其他附件解体检修。
+
+(6)组装、调试。
+
+(7)绝缘油处理。
+
+(8)电气试验及机构特性试验。
+
+(9)整体清扫、除锈涂漆。
+
+(10现场清理,验收移交。
+
+(6)高压断路器检修前的准备工作
+
+(1)根据运行、试验发现的缺陷及上次检修后的情况确定重点检修项目，编制检修计划。
+
+(2)讨论检修项目、进度、需消除缺陷的内容以及有关安全注意事项。
+
+(3)制定技术措施,准备有关检修资料及记录表格和检修报告等。
+
+(4)准备检修时必需的工. 具、材料、测试仪器和备品备件及施工电源。
+
+(5)按部颁《电业安全工作规程》规定, 办理工.作票许可手续, 做好现场检修安全措施, 完成 检修开工手续。
+
+(7) 断路器大修后,需要进行的试验
+
+(1)绝缘电阻测量。
+
+(2)介质损失角测量。
+
+(3)泄漏电流测量。
+
+(4)交流耐压试验。
+
+(5)接触电阻测量。 (6)均压电容值测量。
+
+(7)油耐压试验。
+
+(8)油化验和油色谱分析。
+
+(8)高压断路器装油量过多或过少对断路器的影响
+
+(1)油断路器在断开或合闸时产生电弧, 在电弧高温作用下, 周围的油被迅速分解汽化, 产 生很高的压力, 如油量过多而电弧尚未切断, 气体继续产生, 可能发生严重喷油或油箱因受高 压力而爆炸。
+
+(2)如油量不足, 在灭弧时,灭弧时间加长甚至难以熄弧, 含有大量氢气、甲烷、乙炔和油蒸 气的混合气体泄人油面上空并与该空间的空气混合, 比例达到一定数值时也能引起断路器爆 炸。
+
+(9) 维护运行中的 SF6 断路器应注意的事项
+
+(1)检修人员必须掌握 SF6 介质和 SF6 设备的基础理论知识和有关技术规程。
+
+(2)必须配备专职的断路器和化学监督人员,配备必要的仪器设备和防护用品。
+
+(3)密度继电器逆止蔺在拆装时, 有可能导致逆止闵受到侧向力而受损, 降低逆止作用。
+
+(4)补气时,新气必须经过检测和分析,合格后才可使用,充气前所有管路必须冲洗干净。
+
+(5)检测人员进行检漏时,所测部位必须无感应电压, 否则必须接地。对 SF6 气体可能有沉 积的部位进行检漏时, 必须先用风扇吹后进行。对一些难以确定漏气部位的断路器, 可用塑料 布将怀疑部件包扎起来, 待 SF6 气体沉积下来以后再进行检测。
+
+(10) 油断路器检修后应达到的工艺标准
+
+(1)金属油箱没有渗漏油、变形, 焊琏处无砂眼,油箱内壁无锈蚀,衬板及衬筒完整无受潮。
+
+(2)油箱放油弣无漏油、渗油。
+
+(3)非金属油箱的铸口法兰不应有渗油,箱体完好无裂纹,无起层现象。
+
+(4)油位计油位清晰、不渗油。
+
+(5)油气分离器和防爆装置等部件性能完整。
+
+(11) 定期小修和大修
+
+断路器在没有开断故障电流的情况下, 也要定期进行小修和大修, 因为存在下列情况:
+
+(1)断路器在正常的运行中, 存在着断路器机构轴销的磨损;
+
+(2)润滑条件变坏;
+
+(3)密封部位及承压部件的劣化;
+
+(4) 导电部件损耗;
+
+(5)灭弧室的脏污;
+
+(6)瓷绝缘的污秽等情况，
+
+所以要进行定期检修, 以保证断路器的主要电气性能及机珹性能符合规定值的要求。
+
+3. 断路器的异常
+
+(1) 断路器合不上闸的处理
+
+(1)首先根据表计摆动和保护动作情况, 判断是否因一次回路故障引起。
+
+(2)检查控制、动力电源是否良好。
+
+(3)检查合闸时间是否过短。
+
+(4)检查断路器是否出现了闭锁合闸的因素。 (5)检查断路器的机构是否卡涩。
+
+(6)检查是否为直流操作电压过低。
+
+(7)检查断路器的联锁装置投人是否正确。
+
+(8)检查断路器的储能是否良好。
+
+(9)检查断路器的合闸逻辑条件是否满足。
+
+(10)检查继电保护装置是否复归。
+
+(2) 断路器断不开的处理
+
+在事故情况下, 断路器跳不开时, 应手动拉开事故设备的断路器, 如果手动拉不开时, 则应 拉开上一级断路器。
+
+正常操作时,可以进行如下检查。
+
+(1)操作电源是否良好;
+
+(2)操作电压是否过低;
+
+(3)储能是否良好,机构有无卡涩;
+
+(4)断路器有无闭锁跳闸的因素;
+
+(5)断路器的拉闸逻辑条件是否满足;
+
+(6)经过上述检查仍然不能排除故障, 则应手动就地打跳断路器, 但应注意断路器有闭锁掉 闸的因素存在时严禁打跳。
+
+### 1 互感器
+
+互感器由电流互感器 $(\mathrm{CT})$ 、电压互感器 (PT) 组成。互感器是交流电路中一次系统和二 次系统间的联络元件,它们统属于特种变压器,所以其工作原理与变压器基本相同。
+
+电压互感器一次绕组并接于一次系统。电压互感器相当于一个副边开路的变压器。它们 的二次负载变化都不会影响一次系统的相应电压。
+
+电流互感器一次绕组串接于一次系统。电流互感器相当于一个副边短路的变压器。它们 的二次负载变化都不会影响一次系统的相应电流。
+
+互感器的作用如下。
+
+(1) 将一次回路的高电压、大电流转为二次回路的标准低电压 (通常为 $100 \mathrm{~V}$ )、小电流(5 $\mathrm{A} 、 1 \mathrm{~A}$ 或 $0.5 \mathrm{~A})$, 可使测量仪表和保护装置标准化,使二次设备结构轻巧,价格便宜。
+
+(2)使二次回路可采用低电压控制电缆,且使屏内布线简单,安装方便,可实现远方控制和 测量。
+
+(3)使二次回路不受一次回路限制,接线灵活,维护、调试方便。
+
+(4)使二次与一次高压部分隔离,且二次可设接地点, 确保二次设备和人身安全。
+
+电压互感器按其绝缘结构形式可分为干式、浇注式、充气式、油浸式等几种; 根据相数可分 为单相和三相; 根据绕组数可分为双绕组和三绕组。
+
+4.11 .1 电流、电压互感器的工作原理、接线形式及负载要求
+
+## 1. 电流互感器的工作原理
+
+电力系统中广泛采用的是电磁式电流互感器 (以下简称电流互感器), 它的工作原理和变 压器相似。电流互感器的原理接线如图 4.11-1 所示。
+
+电流互感器的特点是:
+
+(1)一次线圈串联在电路中, 并且匝数很少, 因 此,一次线圈中的电流完全取决于被测电路的负 荷电流, 而与二次电流无关;
+
+(2)电流互感器二次线圈所接仪表和继电器的 电流线圈阻抗都很小, 所以正常情况下, 电流互感 器在近于短路状态下运行。
+
+电流互感器一、二次额定电流之比, 称为电流 互感器的额定互感比: $K_{\mathrm{n}}=I_{1 \mathrm{n}} / I_{2 \mathrm{n}}$
+
+因为一次线圈额定电流 $I_{1 \mathrm{n}}$ 己标准化, 二次线 圈额定电流 $I_{2 n}$ 统一为 $5(1$ 或 0.5$) \mathrm{A}$, 所以电流互 感器额定互感比亦已标准化。 $K_{n}$ 还可以近似地 表示为互感器一、二次线圈的匝数比, 即 $K_{\mathrm{n}} \approx K_{\mathrm{N}}$ $=N_{1} / N_{2}$, 式中 $N_{1} 、 N_{2}$ 为一、二次线圈的匝数。
+
+## 2. 电流互感器的接线形式
+
+电流互感器的二次侧接测量仪表、继电器以及各种自动装置的电流线圈。
+
+(b).
+
+图 (a) 所示接线,常用于对称三相负荷电流测量, 只测量一相电流。
+
+图 (b) 所示接线为星形接线,可测量三相电流,监视每相负荷不对称的情况。
+
+图 (c) 所示为不完全星形接线, 只测量 A、C 两相电流。
+
+## 3. 电流互感器的负载要求
+
+电流互感器不能开路,且只能接很小的二次负载阻抗。电流互感器的负载包括二次侧所 接仪器仪表的阻抗和连接电缆的阻抗。
+
+如果电流互感器的二次负载阻抗超过了其容许的二次负载阻抗, 电流互感器的准确度就 会下降。电流互感器二次负载阻抗的大小对互感器的准确度有很大影响, 这是因为, 如果电流 互感器的二次负载阻抗增加得很多,超出了所容许的二次负载阻抗时, 励磁电流的数值就会大 大增加，而使铁芯进人饱和状态，在这种情况下，一次电流的很大一部分将用来提供励磁电流， 从而使互感器的误差大为增加, 其准确度就随之下降了。
+
+## 4. 电压互感器的工作原理
+
+电磁式电压互感器的工作原理和变压器相同。图 4.11-3 为电磁式电压互感器原理接线 图。电压互感器的特点是:
+
+(1)容量很小,类似一台小容量变压器; (2)二次侧负荷比较恒定,所接测量仪表和继 电器的电压线圈阻抗很大, 因此在正常运行时, 电压互感器接近于空载状态。
+
+电压互感器的一、二次线圈额定电压之比, 称为电压互感器的额定电压比。即
+
+$$
+K_{\mathrm{n}}=U_{\mathrm{in}} / U_{2 \mathrm{n}}
+$$
+
+其中一次线圈额定电压 $U_{\mathrm{ln}}$ 是电网的额定电压, 且已标准化 (如 $10 \mathrm{kV}, 35 \mathrm{kV}, 110 \mathrm{kV}, 220 \mathrm{kV}$, $330 \mathrm{kV}, 500 \mathrm{kV}$ 等), 二次电压 $U_{2 \mathrm{n}}$ 则统一定为 100 (或 $100 / \sqrt{3}) \mathrm{V}$, 所以 $K_{\mathrm{n}}$ 也标准化。
+
+## 5. 电压互感器的接线形式
+
+电压互感器的二次侧接测量仪表、继电器以
+
+图 (a) 所示为单相接线, 用于测量线电压。也可接成电压互感器一次侧一相对地的形式, 测量一相电压。
+
+图 (b) 所示接线为两相式接线, 称为不完全星形接线, 或 $V-V$ 接线。用于测量各相间电 压,但不能测量相对地电压。广泛用于 $20 \mathrm{kV}$ 及以上中性点不接地或经消弧线圈接地的系统 中。
+
+图 (c) 为星形接线, 可测量三相电压。图 (c)下半部分的第三绕组为开口三角接线, 用于 测量零序电压。广泛用于 $3 \sim 220 \mathrm{kV}$ 系统中。 $3 \sim 35 \mathrm{kV}$ 电压互感器, - - 般经隔离开关与熔断器接人电网。110 kV 及以上电压互感器, 由于互感器可靠性较高, 且高压熔断器制造困难, 价格昂贵, 因此电压互感器经隔离开关直接 接人电网。
+
+## 6. 电压互感器的负载要求
+
+电压互感器二次侧不能短路。
+
+如果电压互感器的二次负载超过其容许的二次负载范围, 则电压互感器的准确度就会下 降。
+
+电压互感器的负载一般要求在额定负载容量的 $25 \% \sim 100 \%$ 范围内, 过大或过小, 互感器 误差都将增大。
+
+4.11 .2 电流、电压互感器在电网中的配置原则与接线形式
+
+1. 电流互感器在电网中的配置原则与接线形式
+
+电流互感器的配置要求如下。
+
+(1)电流互感器的配置应尽量避免主保护出现死区。保护接人互感器二次绕组的位置, 应 避免当一至保护停用而被保护的主设备继续运行时, 互感器内部发生故障时保护存在死区。
+
+(2)电流互感器的配置应能可靠保护系统的各种类型故障, 一般情况下, 在中性点有效接地 的电网中, 应配置二相电流互感器; 在非有效接地的电网中, 根据保护装置的性能, 为保证两不 同点发生两相接地故障时, 能有 $2 / 3$ 机会只切除一个故障元件, 提高供电可靠性, 可配置二相 或二相电流互感。
+
+(3)为可靠地保护主设备的各个部位,一般情况下, 每个主设备至少配置 1 组电流互感器。 在能够实现可靠保护的前提下, 应尽量减少互感器的数量, 必要时, 应增加互感器二次绕组的 数量。
+
+(4)互感器二次绕组的数量及其技术特性应满足继电保护、自动装置和测量仪表、电能计量 装置的要求。
+
+在发电机问路的二相电路内, 都应装设电流互感器, 如图 4.11-5 所示。如果发电机中性 点有引计线, 则在中性点引出线上装一组电流互感器 $1 \mathrm{LH}$, 供发电机纵差动保护和过电流保护 使用。电流互感器 $2 \mathrm{LH}$ 中的一组供电给测量仪表, 另一组则供电给发电机的励磁装置, 3LH 用于发电机的纵差动保护和发电机电压母线的差动保护(当有发电机电压母线并没有专用的 母线差动保护时)。当发电机每相绕组具有两个并联分支时, 在两并联分支绕组的中性点连 线上应当装设电流互感器 $0 \mathrm{LH}$,用于发电机的横差动保护。
+
+在发电机电压馈出线回路、分段断路器和母线断路器问路内, 通常只在两相中装设电流互 感器。
+
+在升压变压器的三相电路内应全部装设电流互感器。图 4.11-5 的左图为其配置图, 其中 $5 \mathrm{LH}$ 供变压器差动保护和发电机母线差动保护; 6LH 则用于测量仪表和变压器的过电流保护; $7 \mathrm{LH}$ 有四组二次绕组 (电压为 $110 \mathrm{kV}$ 者一般为三组), 分别用于变压器的差动保护和高压母 线差动保护等。
+
+2. 电压互感器在电网中的配置原则与接线形式
+
+电压互感器的配置应满足继电保护、自动装置、测量仪表和计量装置的要求。一般在下述 地点应设置电压互感器：
+
+(1)发电厂、变电所的每段母线上;
+
+(2)发电机的出线端部;
+
+(3)需要检测电压的同期点;
+
+(4)在继电保护、自动装置和计量装置需要时, 在进、出线的外侧;
+
+(5)多绕组电压互感器不能满足要求或实施困难时,应按用途装设独立的电压互感器;
+
+(6) $35 \mathrm{kV}$ 及以下电压等级的变配电所, 要分别设置单独保护、测量用电压互感器和单独的 计量用电压互感器。
+
+在每一发电机电路内装 2 - 3 套电压互感器。其中一套由一只二相五柱或三只带辅助绕 组的单相电压互感器构成, 接线为 $Y / Y / \Delta$ 。其中一组星形接线的二次绕组供给测量仪表、继 电保护和同期装置等使用; 而接成开口三角形的二次绕组则用来供给已启动而未并人系统的 发电机的绝缘监视装置。另外 $1 \sim 2$ 套电压互感器专供发电机的自动调节励磁装置。若采用 电磁型自动调节励磁装置时, 一般由三只单相电压互感器组成, 并将一次绕组接成三角形, 以 获得较大的输出功率。
+
+发电机电压母线的每一分段或每一组扩大单元上各装设一套由三相五柱或三只带辅助绕 组的单相电压互感器构成的接线为 $Y / Y / \Delta$ 的电压互感器, 用来供电给发电机电压母线及引出 线的测量仪表、继电保护和发电机电压系统的交流绝缘监视装置, 并供电给发电机出口断路器 或分段断路器等的同期装置等。
+
+在 $35 \mathrm{kV}$ 及以上电压母线的每一分段上, 装设有三只单相三绕组电压互感器构成的 $\mathrm{Y} / \mathrm{Y} /$ $\Delta$ 接线的电压互感器, 以便供电给电站与系统的同期、引出线和母线等测量仪表以及继电保护 使用。在小接地电流系统母线上,利用其接成开口三角形的二次辅助绕组 (额定电压 100/3 V) 作为该系统的绝缘监视; 在大接地电流系统母线上, 此二次辅助绕组 (额定电压 $100 \mathrm{~V}$ ) 用 于该系统的单相接地保护。
+
+当需要利用线路断路器实现电站与系统同期并列操作或其他用途 (如小接地电流系统的 单相接地故障的检查, 线路自动重合闸装置的无电压检定等) 时, 在线路断路器的外侧还应装 设必要的电压互感器或电压抽取装置。
+
+### 1 .3 各种形式互感器的构造及性能特点
+
+电流互感器的种类很多,根据安装地点可分为户内式和户外式; 根据安装方式可分为穿墙 式、支持式和套管式; 根据绝缘结构可分为干式、浇注式和油浸式; 根据原边绕组的结构形式可 分为单沛式和多匝式等。
+
+## 1. 电磁式电流互感器的构造及性能特点
+
+常用的电流互感器也是按电磁感应原理制成的。其原边绕组串 接于一次电路中, 副边绕组与测量仪表和继电器的电流线圈串联, 副 边绕组的电流按一定的变比反应原边电路的电流, 电流互感器的原 副绕组之间无电的联系。电流互感器的副绕组也必须有一点接地。 串接在副边绕组里的负载阻抗都很小, 所以电流互感器在正常运行 时接近于短路状态。
+
+电磁式电流互感器副边绕组在运行中绝对不允许开路, 为此, 在 电流互感器的二次回路中不允许装设熔断器。当需要将正在运行中 的电流互感器副边回路中仪表设备断开或退出时, 必须将电流互感 器的副边短接, 保证不致开路。
+
+电流互感器二次开路后, 二次线圈产生很高的电动势, 威胁人身 和设备安全, 且造成铁芯强烈过热, 烧损电流互感器。因为电流互感 器二次闭合时,一次磁化力 $I_{1} W_{1}$ 大部分被 $I_{2} W_{2}$ 所补偿,故二次线圈 电压很小。如果二次开路 $I_{2}=0$, 则 $I_{1} W_{1}$ 都用来做激磁用, 使二次线 圈产生数千伏电动势, 造成人身触电事故和仪表保护装置、电流互感 器二次线圈的绝缘损坏。另一方面, 一次绕组磁化力使铁芯磁通密 度增大, 造成铁芯过热, 最终烧坏互感器, 所以不允许电流互感器二 次开路。
+
+电磁式电流互感器性能稳定, 误差较小, 在电力系统中广泛应用。
+
+## 2. 电磁式电压互感器的构造及性能特点
+
+电磁式电压互感器, 由于误差小、动态性能好, 在 $20 \mathrm{kV}$ 及以下系统中广泛应用。
+
+电磁式电压互感器相当于空载运行的变压器, 二次侧不允许断路。否则, 二次线圈会产生 很大的短路电流, 烧损电压互感器线圈, 以至引起一、二次击穿, 使有关保护误动作, 仪表无指 示。因为电压互感器本身阻抗很小,一次侧是恒压电源, 如果二次短路后, 在恒压电源作用下 二次线圈中会产生很大短路电流, 烧损互感器, 使绝缘损害,一、二次击穿。失掉电压互感器会 使有关距离保护和与电压有关的保护误动作, 仪表无指示, 影响系统安全, 所以电压互感器二 次不能短路。 图 4.11-8 是一个浇注式的电压互感器结构图。
+
+## 3. 电容式电压互感器的构造及性能特点
+
+随着电压等级提高, 电磁式电压互感器的体积、成本等快速提 高, 为解决此问题, 发展出了电容式电压互感器。
+
+电容式电压互感器的基本结构是依靠电容分压。图 4.11-10 是 一个电容式电压互感器的结构图。
+
+电容式电压互感器具有结构简单、重量轻、体积小、成本低等特 点,但误差较大, 容量较小, 动态特性较差。
+
+### 2 直流电机
+
+## 12.1 直流电机的分类
+
+直流电机可按其防护形式、用途、容量大小和励磁方式等进行 分类。
+
+## 1. 按防护形式分类
+
+电机的防护形式主要有下列几种。
+
+(1) 开启式
+
+这种电机的机壳结构对转动和带电部分没有专门的保护。
+
+(2) 防护式
+
+这种电机的转动和带电部分有必要的机械保护, 以防止意外的 接触,但不显著妨碍电机的通风。其中又分为如下几种。
+
+(1)网呫式,是用铁丝网或多孔金属薄板遮盖电机的通风口。
+
+(2)防滴式,能防止垂直下落的液体或固体直接进人电机内部。
+
+(3)防浅式,能防止来自与铅垂线成 $100^{\circ}$ 角以内的任何方向的液体或固体进人电机内部。
+
+(3) 封闭式
+
+这种电机机壳结构能够防护来自任何方向的液体、固体及尘埃进人电机内部, 能够阻止机 壳内外的空气自由交换,但并不要求完全密封。 (4) 防水式
+
+电机机壳的结构能够阻止具有一定压力的水进入电机内部。
+
+（5）潜水式
+
+电机在规定的水压下能长期在水中运行。
+
+(6) 隔爆式
+
+电机机壳的结构足以阻止电机内部的气体燃烧爆炸传递到电机的外部, 以免引起电机外 部的气体燃烧爆炸。
+
+2. 按用途分类
+
+按直流电机的用途可分为发电机和电动机两大类。无论发电机或电动机又可分为一般用 途和专门用途两类。
+
+(1) 一般用途
+
+我国生产的一般用途的直流电机系列有两种。
+
+(1) Z 系列 , 系一般用途的直流电动机系列。
+
+(2)ZF 系列, 系一般用途的直流发电机系列。
+
+(2)专门用途
+
+专门用途的直流电机种类繁多, 有如下几种。
+
+(1)ZZJ 系列, 系冶金起重用直流电动机。
+
+(2)ZQ 系列, 系直流牵引用电动机。
+
+(3)ZF-H 系列, 系船用直流发电机。
+
+(4)F 系列, 系汽车用发电机。
+
+(5)ZA 系列, 系防爆安全型直流电动机等。
+
+3. 按容量大小分类
+
+一般以直流电机的额定功率和额定转速来划分直流电机的大小。以电动机为例有下列几 种。
+
+(1)小型直流电动机。转速 $1500 \mathrm{r} / \mathrm{min}$, 功率为 $200 \mathrm{~kW}$ 及以下的。
+
+(2)中型直流电动机。转速 $1500 \mathrm{r} / \mathrm{min}$, 功率为 $200 \mathrm{~kW}$ 以上的, 到转速 $1000 \mathrm{r} / \mathrm{min}$, 功率 为 $1250 \mathrm{~kW}$ 及以下的。
+
+(3)大型直流电动机。转速 $1000 \mathrm{r} / \mathrm{min}$ 及以下, 功率为 $1250 \mathrm{~kW}$ 以上的。
+
+4. 按励磁方式分类
+
+直流电机的励磁方式分为他励、并励、串励、复励四种，而永磁电机可看成是他励方式。
+
+### 2 .2 直流电机的励磁方式
+
+直流电机的励磁方式是指对励磁绕组的供电方式,分为四种。
+
+(1) 他励方式
+
+这种励磁方式是励磁绕组与电枢绕组之间没有连接关系, 励磁电流由另外的直流电源供 电。
+
+(2) 并励方式
+
+这种励磁方式是励磁绕组与电枢绕组并联, 励磁绕组两端的电压就是电枢电路两端的电 压。 (3) 串励方式
+
+这种励磁方式是励磁绕组与电枢绕组串联, 这种直流电机的励磁电流就是电枢电流。
+
+(4) 复励方式
+
+这种直流电机的主磁极上装有两个励磁绕组,一个与电枢电路并联称为并励绕组, 另一个 与电枢电路串联称为串励绕组。
+
+直流电动机的励磁方式接线图为图 4.12-1 所示。
+
+(a) 他励 (b) 并励 (c) 串励 (d) 复励
+
+直流发电机和直流电动机的励磁方式不同, 其特性不同, 应用场合也不同。一般说来, 他 励发电机的电压变化率小, 电压调节范围大, 适用于实验室设备及要求调压范围大的大型电 机, 如发电机一电动机组。
+
+并励发电机不需要其他电源励磁, 使用方便, 广泛用于供电线路较短而不需要补偿线路压 降的电源, 如同步电机的励磁机、蓄电池的充电电源等。
+
+复励发电机用途广泛, 因为可通过调节其串励部分以满足不同负载的要求。 等。
+
+并励电动机有硬的机械特性, 适用于要求硬机械特性的场合, 如切削机床、轧钢机、造纸机
+
+串励电动机具有软的机械特性, 过载能力大, 起动转矩大, 适用于电力机车、无轨电车、起 重机、卷扬机和电梯等。
+
+复励电动机的起动转矩大, 机械特性硬, 又无空载飞速的危险, 因此广泛用于冲床、创床、 吊车、电梯、船用甲板机械等。
+
+### 3 直流电动机及直流发电机的工作原理
+
+## 1. 直流电动机的工作原理
+
+为了对电动机的运行情况进行定量的计算, 需要将电动机负载时的电磁过程以及所表现 出的特性, 用方程式的形式表示出来,这些方程式便是直流电动机的基本方程式。它包括: 表 征其内部电磁过程的电动势平衡方程式, 这是电气系统的平衡方程式; 表征其机电过程的转矩 平衡方程式, 这是机械系统的平衡方程式; 表征机电能量转换时能量平衡关系的功率平衡方程 式,这是能量平衡关系的方程式。
+
+(1) 电动势平衡方程式
+
+如图 4. 12-2 所示, 当转子转动后, 电枢绕组的导体在磁场中 旋转, 就要切割磁场线感应电动势 $e_{\mathrm{a}}$, 其方向用“右手定则”确定, 如图中虚线所示。作为电动机运行时, 电枢绕组中感应的电动势 的方向与电枢电流的方向相反, 这个电动势起着阻碍电流通过的 作用, 对这种电动势称反电动势, 其作用相当于一个电压降。电枢 绕组总的感应电动势称为电枢电动势, 用 $E_{\mathrm{a}}$ 表示, 如图 4. 12-3 所
+
+$$
+U=E_{\mathrm{a}}+I_{\mathrm{a}} r_{\mathrm{a}}+2 \Delta U
+$$
+
+式中 $U$ 一一加在电机接线端的电压, 即电源电压, $\mathrm{V}$;
+
+$E_{\mathrm{a}}$ 一一电枢电动势, $\mathrm{V}$;
+
+$I_{\mathrm{a}}$-一电枢电流, 即流过电枢绕组的总电流, $\mathrm{A}$;
+
+$r_{\mathrm{a}}$ 一一电枢绕组电阻, $\Omega$;
+
+$2 \Delta U$ 一一正、负电刷总接触压降, 对石墨电刷, $2 \Delta U=2 \mathrm{~V}$ 。
+
+为了计算方便, 引人电阻 $R_{\mathrm{a}}=r_{\mathrm{a}}+\frac{2 \Delta U}{I_{\mathrm{a}}}, R_{\mathrm{a}}$ 称为电枢回路电阻。则电动势平衡方程式为
+
+$$
+U=E_{\mathrm{a}}+I_{\mathrm{a}} R_{\mathrm{a}}
+$$
+
+励磁回路的电压平衡方程式为
+
+$$
+U=I_{\mathrm{f}} R_{\mathrm{f}}
+$$
+
+式中 $I_{\mathrm{r}}$ 一一励磁电流, $\mathrm{A}$;
+
+$R_{\mathrm{r}}$ 一一励磁回路总电阻, $\Omega$ 。
+
+对并励电动机, 输入电动机的电流 $I$ 等于电枢电流 $I_{\mathrm{a}}$ 与励磁电流 $I_{\mathrm{f}}$ 之和, 即
+
+$$
+I=I_{\mathrm{a}}+I_{\mathrm{f}}
+$$
+
+(2) 转矩平衡方程式
+
+对一个旋转的机械系统来说, 使系统运动的转矩叫拖动转矩, 阻碍系统运动的转矩叫制动 转矩。根据力学定律, 任何瞬间拖动转矩总是与制动转矩相平衡, 即
+
+拖动转矩 $=$ 制动转矩
+
+在电力拖动系统中, 电动机产生的电磁转矩 $T$ 是使系统运动的转矩, 是拖动转矩, 而负载 转矩 $T_{2}$ 是阻碍系统运动的转矩, 是制动转矩。此外, 电机中的摩擦损耗和铁芯损耗等也引起 制动性质的转矩 $T_{0}$, 称为空载转矩。这样, 电动机在稳定运行时的转矩平衡方程式为
+
+$$
+T=T_{2}+T_{0}
+$$
+
+式中 $T$ 一一电动机产生的电磁转矩, $\mathrm{N} \cdot \mathrm{m}$;
+
+$T_{2}$ 一负载转矩, 即电动机轴上输出的转矩, 额定运行时为额定转矩 $T_{\mathrm{N}}, \mathrm{N} \cdot \mathrm{m}$;
+
+$T_{0}$ 一一空载转矩, $\mathrm{N} \cdot \mathrm{m}_{\text {。 }}$
+
+只要电机转动起来 $T_{0}$ 就存在, 与负载大小无关。
+
+(3) 功率平衡方程式
+
+如图 4.12-3 所示, 输入电动机的功率
+
+$$
+P_{1}=U I=U\left(I_{\mathrm{a}}+I_{\mathrm{f}}\right)=U I_{\mathrm{a}}+U I_{\mathrm{f}}=U I_{\mathrm{a}}+p_{\text {Cuf }}
+$$
+
+式中 $P_{\text {Cuf }}=U I_{\mathrm{f}}=I_{\mathrm{f}}^{2} R_{\mathrm{f}}$ 一励磁损耗, 是消耗在励磁回路中的功率。
+
+由式(4.12-1) 知 $U=E_{\mathrm{a}}+I_{\mathrm{a}} r_{\mathrm{a}}+2 \Delta U$, 则
+
+$$
+U I_{\mathrm{a}}=\left(E_{\mathrm{a}}+I_{\mathrm{a}} r_{\mathrm{a}}+2 \Delta U\right) I_{\mathrm{a}}=E_{\mathrm{a}} I_{\mathrm{a}}+I_{\mathrm{a}}^{2} r_{\mathrm{a}}+2 \Delta U I_{\mathrm{a}}=P_{\mathrm{M}}+P_{\mathrm{Cua}}+P_{\mathrm{c}}
+$$
+
+式中 $P_{\mathrm{M}}=E_{\mathrm{a}} I_{\mathrm{a}}$ 一一电磁功率, 这是电动机将电功率转换为机械功率的部分;
+
+$P_{\text {Cua }}=I_{\mathrm{a}}^{2} r_{\mathrm{a}}$ 一一电枢铜耗, 是消耗在电枢绕组电阻 $r_{\mathrm{a}}$ 上的功率;
+
+$P_{\mathrm{c}}=2 \Delta U I_{\mathrm{a}}$ 一一电刷接触损耗, 是消耗在电刷与换向器接触电阻中的功率。
+
+则
+
+$$
+P_{1}=P_{\mathrm{M}}+P_{\mathrm{CuF}}+P_{\mathrm{Cua}}+P_{\mathrm{c}}
+$$
+
+电磁功率 $P_{\mathrm{M}}$ 是电功率转换为机械功率的部分, 从电气系统看 $P_{\mathrm{M}}=E_{\mathrm{a}} I_{\mathrm{a}}$, 从机械系统看 $P_{\mathrm{M}}=T \Omega$, 则
+
+$$
+P_{\mathrm{M}}=E_{\mathrm{a}} I_{\mathrm{a}}=T \Omega
+$$
+
+式中 $\Omega=\frac{2 \pi n}{60}$ 对应于转速 $n$ 的角速度, $\mathrm{rad} / \mathrm{s}_{\mathrm{o}}$
+
+由式(4.12-5) 知 $T=T_{2}+T_{0}$, 代人式(4.12-8) 得
+
+$$
+P_{\mathrm{M}}=\left(T_{2}+T_{0}\right) \Omega=T_{2} \Omega+T_{0} \Omega=P_{2}+P_{0}=P_{2}+P_{\text {mec }}+P_{\mathrm{Fe}}
+$$
+
+式中 $P_{2}=T_{2} \Omega$ 一从电动机轴上输出的机械功率, 称为输出功率或负载功率, 额定运行时的 输出功率 $P_{\mathrm{N}}$ 便是电动机的额定功率, $P_{\mathrm{N}}=T_{\mathrm{N}} \Omega_{\mathrm{N}}$;
+
+$P_{0}=P_{\mathrm{mec}}+P_{\mathrm{Fe}}$ 一电动机的空载损耗, 它等于机械损耗 $P_{\mathrm{mec}}$ 和铁芯损耗 $P_{\mathrm{Fe}}$ 之和。
+
+由以上关系可得出电动机的输入功率 $P_{1}$ 与输出功率 $P_{2}$ 之间关系为
+
+$$
+P_{1}=P_{2}+\sum P
+$$
+
+式中 $\Sigma P=P_{\mathrm{Cuf}}+P_{\mathrm{Cus}}+P_{\mathrm{c}}+P_{\mathrm{Fe}}+P_{\mathrm{mec}}$ 一电机总损耗。
+
+并励直流电动机的功率流程图如图 4.12-4 所示。
+
+## 2. 直流发电机的工作原理
+
+逆时针方向旋转。电枢绕组导体切割气隙磁场而感应电动 势, 应用“右手定则”可定出电动势的方向。以图中所示的 导体 $\mathrm{a}$ 为例, 在图示瞬间处在 $N$ 极下, 导体中感应的电动势 $\boldsymbol{e}_{\mathrm{a}}$ 的方向为 $\odot$, 转半圈至 $\mathrm{S}$ 极下面后为 $\oplus$, 再转半圈又处于 $\mathrm{N}$ 极下时又变为 $\odot$, 由此可知电枢绕组内感应的是交变电 动势, 经换向器和电刷的作用后, 电刷 $\mathrm{A}$ 恒与处在 $\mathrm{N}$ 极下 的所有导体相连, 电刷 B 恒与处在 $\mathrm{S}$ 极下的所有导体相连。 这样由电刷 $\mathrm{A}$ 引出的电动势方向恒为 $\odot$, 定为正敞 $(+)$, 由电刷 $\mathrm{B}$ 引出的电动势方向恒为 $\oplus$, 定为负极 $(-)$ 。当 $\mathrm{A}$ 、 $\mathrm{B}$ 电刷间的电路接通后, 就有直流电能从电机向外送出, 这 样, 电机从转子边输入机械能, 从电枢端送出直流电能, 这就是直流发电机的工作原理。
+
+由上所述可知, 作为发电机T.作时, 电枢电流 $I_{\mathrm{a}}$ 与电枢电动势 $E_{\mathrm{a}}$ 的方向相同。电枢绕组 导体通过电流后与气隙磁场相作用产生电磁力 $\vec{F}$, 方向如图 4. 12-5 所示, 由该电磁力产生的 电磁转矩 $T$ 与原动机输入转矩 $T_{1}$ 的方向正相反。只有当原动机的输入转矩 $T_{1}$ 克服发电机的 电磁转矩 $T$ 及各种损耗引起的制动性质转矩 $T_{0}$ 后, 电枢才能以稳定转速旋转, 而原动机克服 电磁转矩所作的机械功率就是转换为发电机电枢电路中的电磁功率。
+
+对发电机的运行情况进行定量的计算, 也需要掌握直流发电机在稳定运行时的电动势、转 矩和功率这三种基本方程式。
+
+(1) 电动势平衡方程式
+
+$$
+E_{\mathrm{a}}=U+I_{\mathrm{a}} R_{\mathrm{a}}
+$$
+
+由式(4.12-11) 看出, 作为发电机运行时, 一定是 $E_{\mathrm{a}}>U_{\text {。 }}$ 式中端电 压
+
+$$
+U=I R_{1}
+$$
+
+励磁回路中
+
+$$
+U=I_{\mathrm{f}} R_{\mathrm{f}}
+$$
+
+电枢电流
+
+$$
+I_{\mathrm{a}}=I+I_{\mathrm{f}}
+$$
+
+(2) 转短平衡方程式
+
+由上述直流发电机的工作原理可知发电机的转矩平衡方程式为
+
+$$
+T_{\mathrm{l}}=T+T_{0}
+$$
+
+式中 $T_{1}$ 一原动机输入转矩, $\mathrm{N} \cdot \mathrm{m}$;
+
+$T$-一发电机的电磁转矩, $\mathrm{N} \cdot \mathrm{m}$;
+
+$T_{0}$ - - 空载转矩 (对应于空载损耗 $\left(P_{\text {nex }}+P_{\mathrm{Fe}}\right.$ ) 的阻转矩), $\mathrm{N} \cdot \mathrm{m}_{\mathrm{o}}$
+
+(3) 功率平衡方程式
+
+发电机以稳定转速 $n$ 运行, 相应的角速度 $\Omega=\frac{2 \pi n}{60}$ 。将式 (4.12-12) 两端都乘以角速度 $\Omega$ 得
+
+$$
+T_{1} \Omega=T \Omega+T_{0} \Omega
+$$
+
+而 $T_{1} \Omega=P_{1}$ 一发电机的输入功率;
+
+$T \Omega=P_{\mathrm{M}}=E_{\mathrm{a}} I_{\mathrm{a}}$ 一发电机的电磁功率;
+
+$T_{0} \Omega=P_{0}=P_{\mathrm{mer}}+P_{\mathrm{rc}}$ 一发电机的空载损耗。
+
+从而得
+
+$$
+P_{1}=P_{\mathrm{M}}+P_{\mathrm{mer}}+P_{\mathrm{re}}
+$$
+
+由式(4.12-11) 可知
+
+$$
+E_{\mathrm{a}}=U+I_{\mathrm{a}} R_{\mathrm{a}}=U+I_{\mathrm{a}} r_{\mathrm{a}}+2 \Delta U
+$$
+
+则
+
+$$
+\begin{aligned}
+P_{\mathrm{M}} & =E_{\mathrm{a}} I_{\mathrm{a}}=\left(U+I_{\mathrm{a}} r_{\mathrm{a}}+2 \Delta U\right) I_{\mathrm{a}} \\
+& =U I_{\mathrm{a}}+I_{\mathrm{a}}^{2} r_{\mathrm{a}}+2 \Delta U I_{\mathrm{a}} \\
+& =U\left(I+I_{\mathrm{f}}\right)+P_{C \mathrm{Cua}}+P_{\mathrm{c}} \\
+& =U I+U I_{\mathrm{c}}+P_{\mathrm{Cua}}+P_{\mathrm{c}} \\
+& =P_{2}+P_{\text {Cul }}+P_{\text {Cua }}+P_{\mathrm{c}}
+\end{aligned}
+$$
+
+式中 $P_{2}=U I$ 一一负载功率, 即发电机输出的电功率 (额定运行时的输出功率就是发电机的 额定功率 $P_{\mathrm{N}}$, 端电压为 $U_{\mathrm{N}}$, 额定电流为 $I_{\mathrm{N}}$, 即 $\left.P_{\mathrm{N}}=U_{\mathrm{N}} I_{\mathrm{N}}\right)$;
+
+$P_{\text {C.II }}=U I_{\mathrm{r}}=I_{\mathrm{f}}^{2} R_{\mathrm{f}}$ 一一励磁损耗;
+
+$P_{\text {Cua }}=I_{a}^{2} r_{\text {a }}$ - 电枢铜耗;
+
+$P_{c}=2 \Delta U I_{\mathrm{a}}$ 一电刷接触损耗。
+
+由以上关系可得出发电机的输入功率 $P_{1}$ 与输出功率 $P_{2}$ 之间的关系为
+
+$$
+P_{1}=P_{2}+\sum P
+$$
+
+式中 $\Sigma P=P_{\text {mer }}+P_{\mathrm{Fe}}+P_{\mathrm{Cur}}+P_{\mathrm{Cua}}+P_{\mathrm{c}}$ 一发电机的总损耗。
+
+并励直流发电机的功率流程图如图 4.12-7 所示。 此外，电枢电动势 $E_{\mathrm{a}}$ 的表达式为
+
+$$
+E_{\mathrm{a}}=C_{e} \phi n
+$$
+
+的电机, 它是一个常数);
+
+$$
+\phi \text {-一每极磁通, Wb; }
+$$
+
+$n$ 一一电机转速, $\mathrm{r} / \mathrm{min}$ 。
+
+式(4.12-16)对发电机和电动机都适用。
+
+电磁转矩 $T$ 的表达式为
+
+$$
+T=C_{r} \phi I_{\mathrm{a}}
+$$
+
+式中 $C_{T}$ 一转矩常数 (与电机结构有关, 对已制成的电机, 它是一个常数),
+
+$$
+C_{\tau}=9.55 C_{e}
+$$
+
+$\phi$ - - 每极磁通, Wb;
+
+$I$ - 一电枢电流, A。
+
+式(4.12-17) 对发电机和电动机都适用。
+
+【例 4.12-1】一台直流电动机的额定数据为: $P_{\mathrm{N}}=15 \mathrm{~kW}, U_{\mathrm{N}}=110 \mathrm{~V}, n_{\mathrm{N}}=1500 \mathrm{r} / \mathrm{min}$, $\eta_{\mathrm{N}}=85 \%$, 求其输入功率 $P_{1}$ 、额定转矩 $T_{\mathrm{N}}$ 及额定电流 $I_{\mathrm{N}}$ 各是多少? 解: 输入功率 $P_{1}=\frac{P_{\mathrm{N}}}{\eta_{\mathrm{N}}}=\frac{15}{0.85}=17.65 \mathrm{~kW}$
+
+额定电流 $I_{\mathrm{N}}=\frac{P_{1}}{U_{\mathrm{N}}}=\frac{17.65 \times 10^{3}}{110}=160.5 \mathrm{~A}$
+
+额定转矩 $T_{\mathrm{N}}=\frac{P_{\mathrm{N}}}{\Omega_{\mathrm{N}}}=\frac{P_{\mathrm{N}} \times 10^{3}}{\frac{2 \pi n_{\mathrm{N}}}{60}}=9550 \frac{P_{\mathrm{N}}}{n_{\mathrm{N}}}=9550 \times \frac{15}{1500}=95.5 \mathrm{~N} \cdot \mathrm{m}$
+
+【例 4. 12-2】一台直流发电机的额定数据为: $P_{\mathrm{N}}=20 \mathrm{~kW}, U_{\mathrm{N}}=115 \mathrm{~V}, n_{\mathrm{N}}=1500 \mathrm{r} / \mathrm{min}$, $\eta_{\mathrm{N}}=0.8$, 求其输入功率 $P_{1}$ 、输入转矩 $T_{1}$ 及额定电流 $I_{\mathrm{N}}$ 各是多少?
+
+解: 输入功率 $P_{1}=\frac{P_{\mathrm{N}}}{\eta_{\mathrm{N}}}=\frac{20}{0.8}=25 \mathrm{~kW}$
+
+输入转矩 $T_{1}=9550 \frac{P_{1}}{n_{\mathrm{N}}}=9550 \times \frac{25}{1500}=159.2 \mathrm{~N} \cdot \mathrm{m}$
+
+额定电流 $I_{\mathrm{N}}=\frac{P_{\mathrm{N}}}{U_{\mathrm{N}}}=\frac{20 \times 10^{3}}{115}=173.9 \mathrm{~A}$
+
+【例 4. 12-3】直流电机的电枢电动势与哪些因素有关? 若一台直流发电机的电枢电动 势为 $230 \mathrm{~V}$, 试求下列情况下的电动势数值: (1) 磁通减小 $10 \%$; (2) 转速增加 $20 \%$ (磁通不 变);(3) 磁通减小 $10 \%$, 同时转速增加 $20 \%$ 。
+
+解: 直流电机的电枢电动势大小与电机结构、每极磁通和转速有关。 $E_{\mathrm{a}}=C_{e} \phi n=230 \mathrm{~V}$
+
+(1) 磁通减小 $10 \%$, 即 $\phi^{\prime}=0.9 \phi$
+
+电动势 $E_{\mathrm{a}}^{\prime}=C_{\mathrm{c}} \phi^{\prime} n=C_{e}(0.9 \phi) n=0.9 C_{e} \phi n=0.9 \times 230=207 \mathrm{~V}$
+
+(2) 转速增加 $20 \%$, 即 $n^{\prime}=1.2 n$
+
+电动势 $E_{\mathrm{a}}^{\prime}=C_{e} \phi n^{\prime}=C_{e} \phi(1.2 n)=1.2 C_{e} \phi n=1.2 \times 230=276 \mathrm{~V}$
+
+(3) 当 $\phi^{\prime}=0.9 \phi, n^{\prime}=1.2 n$ 时
+
+电动势 $E_{\mathrm{a}}^{\prime}=C_{e} \phi^{\prime} n^{\prime}=C_{\mathrm{e}}(0.9 \phi)(1.2 n)=0.9 \times 1.2 C_{\mathrm{e}} \phi n=0.9 \times 1.2 \times 230=248.4 \mathrm{~V}$
+
+【例 4.12-4】一台并励直流发电机, 额定功率 $P_{\mathrm{N}}=10 \mathrm{~kW}$, 额定电压 $U_{\mathrm{N}}=230 \mathrm{~V}$, 额定转 速 $n_{\mathrm{N}}=1450 \mathrm{r} / \mathrm{min}$, 电枢回路电阻 $R_{\mathrm{a}}=0.5 \Omega$, 励磁绕组电阻 $R_{\mathrm{f}}=215 \Omega$, 铁耗 $P_{\mathrm{Fe}}=442 \mathrm{~W}$, 机 械损耗 $P_{\text {mec }}=104 \mathrm{~W}$, 求:
+
+(1) 额定负载时的电磁功率 $P_{\mathrm{M}}$ 和电磁转矩 $T$;
+
+(2) 额定负载时的效率 $\eta_{\mathrm{N}}$ 。
+
+解: (1) 发电机的额定电流
+
+$$
+I_{\mathrm{N}}=\frac{P_{\mathrm{N}}}{U_{\mathrm{N}}}=\frac{10 \times 10^{3}}{230}=43.5 \mathrm{~A}
+$$
+
+励磁电流
+
+$$
+I_{\mathrm{r}}=\frac{U_{\mathrm{N}}}{R_{\mathrm{f}}}=\frac{230}{215}=1.07 \mathrm{~A}
+$$
+
+额定运行时的电枢电流
+
+$$
+I_{\mathrm{aN}}=I_{\mathrm{N}}+I_{\mathrm{f}}=43.5+1.07=44.57 \mathrm{~A}
+$$
+
+电枢铜耗 $P_{\mathrm{Cua}}$ 与电枢接触损耗 $P_{\mathrm{c}}$ 之和为 励磁损耗
+
+$$
+P_{\mathrm{Cua}}+P_{\mathrm{c}}=I_{\mathrm{aN}}^{2} R_{\mathrm{a}}=44.57^{2} \times 0.5=993.24 \mathrm{~W}
+$$
+
+$$
+P_{\text {Cur }}=U_{\mathrm{N}} I_{\mathrm{f}}=230 \times 1.07=246.1 \mathrm{~W}
+$$
+
+额定运行时的电磁功率
+
+$$
+P_{\mathrm{M}}=P_{\mathrm{N}}+P_{\mathrm{CuI}}+P_{\mathrm{Cua}}+P_{\mathrm{c}}=10+0.2461+0.99324=11.239 \mathrm{~kW}
+$$
+
+电磁转矩
+
+$$
+T=9550 \times \frac{P_{\mathrm{M}}}{n_{\mathrm{N}}}=9550 \times \frac{11.239}{1450}=74 \mathrm{~N} \cdot \mathrm{m}
+$$
+
+(2) 额定负载时的效率
+
+$$
+\eta_{\mathrm{N}}=\frac{P_{2}}{P_{1}}=\frac{P_{\mathrm{N}}}{P_{\mathrm{N}}+\sum P}=\frac{P_{\mathrm{N}}}{P_{\mathrm{M}}+P_{\mathrm{Fe}}+P_{\text {mec }}}=\frac{10}{11.239+0.442+0.104}=0.8485
+$$
+
+【例 4. 12-5】一台并励直流电动机, 额定电压 $U_{\mathrm{N}}=220 \mathrm{~V}$, 额定电枢电流 $I_{\mathrm{aN}}=75 \mathrm{~A}$, 额定 转速 $n_{\mathrm{N}}=1000 \mathrm{r} / \mathrm{min}$, 电枢回路电阻 $R_{\mathrm{a}}=0.26 \Omega$, 励磁回路电阻 $R_{\mathrm{f}}=91 \Omega$, 铁耗 $P_{\mathrm{Fe}}=600 \mathrm{~W}$, 机械损耗 $P_{\text {mec }}=198 \mathrm{~W}$, 求: (1) 额定运行时的输出转矩 $T_{\mathrm{N}} ;(2)$ 额定效率 $\eta_{\mathrm{N}}$ 。
+
+解: (1) 额定运行时的励磁电流
+
+$$
+I_{\mathrm{iN}}=\frac{U_{\mathrm{N}}}{R_{\mathrm{f}}}=\frac{220}{91}=2.42 \mathrm{~A}
+$$
+
+励磁损耗
+
+$$
+P_{\text {Cuf }}=I_{\text {fN }}^{2} R_{\mathrm{f}}=2.42^{2} \times 91=532.93 \mathrm{~W}
+$$
+
+电枢铜耗 $P_{\mathrm{Cus}}$ 与电刷接触损耗 $P_{\mathrm{c}}$ 之和为
+
+$$
+P_{\text {Cua }}+P_{\mathrm{c}}=I_{\mathrm{aN}}^{2} R_{\mathrm{a}}=75^{2} \times 0.26=1462.5 \mathrm{~W}
+$$
+
+电机的总损耗
+
+$$
+\sum P=P_{\mathrm{Cur}}+P_{\mathrm{Cua}}+P_{\mathrm{c}}+P_{\mathrm{Fe}}+P_{\mathrm{mec}}=0.53293+1.4625+0.6+0.198=2.79343 \mathrm{~kW}
+$$
+
+电机的额定电流
+
+$$
+I_{\mathrm{N}}=I_{\mathrm{aN}}+I_{\mathrm{N}}=75+2.42=77.42 \mathrm{~A}
+$$
+
+输入功率
+
+$$
+P_{1}=U_{\mathrm{N}} I_{\mathrm{N}}=220 \times 77.42=17032.4 \mathrm{~W}
+$$
+
+额定输出功率
+
+$$
+P_{\mathrm{N}}=P_{1}-\sum P=17.0324-2.79343=14.24 \mathrm{~kW}
+$$
+
+额定输出转矩
+
+$$
+T_{\mathrm{N}}=9550 \frac{P_{\mathrm{N}}}{n_{\mathrm{N}}}=9550 \times \frac{14.24}{1000}=136 \mathrm{~N} \cdot \mathrm{m}
+$$
+
+(2) 额定效率
+
+$$
+\eta_{\mathrm{N}}=\frac{P_{\mathrm{N}}}{P_{1}}=\frac{14.24}{17.0324}=0.836
+$$
+
+### 4 并励直流发电机建立稳定电压的条件
+
+并励直流发电机的自励条件有 4 条。
+
+(1)电机有剩磁。如果电机没有剩磁, 便没有剩磁电压, 则建立电压初期所需的励磁电流不 可能产生,自励无从开始 $\mathrm{c}$ (2)励磁绕组与电枢绕组的连接和电枢旋转方向必须正确配合, 以使励磁电流产生的磁场 方向与剩磁方向一致。
+
+(3)励磁回路的总电阻应小于与电机额定转速相对应的临界电阻, 以使场阻线与电机的磁 化曲线有交点, 该交点就是电枢电动势的稳定点。
+
+(4)电机磁路饱和。电机磁路饱和才能使场阻线与电机磁化曲线有交点。
+
+这 4 个条件中,第(4)条一般在电机制造中已经满足了,因此在电机的使用中,一般只提供 前面 3 个条件便可以了。
+
+### 5 直流电动机的机械特性
+
+直流电动机的机械特性是指电压 $U$ 为常数, 电枢问路和励磁回路的电阻不变的情况下, 电动机的转速 $n$ 和电磁转矩 $T$ 之间的关系 $n=f(T)$ 称为机械特性。直流电动机的励磁方式不 同，它们的机械特性也不同，分述如下。
+
+## 1. 他励和并励直流电动机的机械特性
+
+由式 (4.12-2) 知直流电动机的电动势平衡方程式为: $U=E_{\mathrm{a}}+I_{\mathrm{a}} R_{\mathrm{a}}$, 将式 (4.12-16) 电枢电 动势 $E_{\mathrm{a}}=C_{e} \phi n$ 表达式和式 (4.12-17) 电磁转矩 $T=C_{r} \phi I_{\mathrm{a}}$ 表达式代人整理得
+
+$$
+\begin{aligned}
+n & =\frac{U-I_{\mathrm{a}} R}{C_{e} \phi} \\
+& =\frac{U}{C_{e} \phi}-\frac{I_{\mathrm{a}} R}{C_{e} \phi} \\
+& =\frac{U}{C_{e} \phi}-\frac{R}{C_{e} C_{T} \phi^{2}} T \\
+& =n_{0}-\alpha T
+\end{aligned}
+$$
+
+式中 $R=R_{\mathrm{a}}+R_{\mathrm{j}}$ 一电枢电路中总电阻, 它等于电枢回路内电阻 $R_{\mathrm{a}}$ 与电枢外接电阻 $R_{\mathrm{j}}$ 之和;
+
+$n_{0}=\frac{U}{C_{e} \phi}$ 一理想空载转速, $\mathrm{r} / \mathrm{min}$;
+
+$\alpha=\frac{R_{\mathrm{a}}+R_{\mathrm{j}}}{C_{\mathrm{e}} C_{T} \phi^{2}}$ 一机械特性的斜率。
+
+式(4.12-19) 为他励和并励直流电动机的机械特性方程式, 它表示 $n=f(T)$ 的变化关系, 是一条直线。
+
+由式 (4.12-19) 知, 机械特性随着 $U 、 \phi$ 和 $R$ 的改变而改变, 当 $U=U_{\mathrm{N}} 、 I_{\mathrm{f}}=I_{\mathrm{fN}}$ 和 $R_{\mathrm{j}}=0$ 时的 机械特性称为电动机的固有机械特性。将改变 $U 、 I_{\mathrm{f}} 、 R_{\mathrm{j}}$ 三者之中的任一参数所得的机械特性 称为人为机械特性。
+
+对他励和并励电动机的固有机械特性中, 斜率 $\alpha=\frac{R_{\mathrm{a}}}{C_{e} C_{T} \phi^{2}}$ 项的 $R_{\mathrm{a}} \ll C_{e} C_{r} \phi^{2}$, 即 $\alpha$ 很小, 这表示当电动机负载增加时转速下降很少, 这种机械特性称为硬特性。他励和并励电动机的 固有机械特性都属硬特性。
+
+当在电枢电路中串人不同的外接电阻 $R_{\mathrm{j}}$ 后, 便得一组人为机械特性。随着 $R_{\mathrm{j}}$ 的增大, 斜 率 $\alpha$ 增大, 则转速随负载的增加而下降较多, 即机械特性变软, 如图 4.12-8 所示。
+
+对于他励电动机, 当改变端电压 $U$ 时励磁电流不受影响, 这时可保持 $I_{\mathrm{f}}=I_{\mathrm{fN}}=$ 常数, 而改 变端电压 $U$ 来获得不同的人为机械特性。由式(4.12-19) 可知, $U$ 变, $n_{0}$ 随之变, 但特性的斜
+
+率 $\alpha$ 保持不变。一般他励电动机的电压向低于额定电压的方向改变, 因此人为机械特性是几 根平行线, 它们低于固有特性 1 , 又与周有特性相平行, 如图 4.12-9 所示。由图看出, 他励电动 机改变电压时, 人为机械特性的硬度并不改变。
+
+‥-般直流电动机在额定运行时, 电机磁路已基本饱和,因 此改变磁通时的人为机械特性, 是向低于额定磁通 $\phi_{\mathrm{N}}$ 的方向 改变磁通来获得。实际上是在励磁回路中串人调节电阻,通 过调节电阻来减小励磁电流达到减弱磁通的目的。由式 (4.12-19) 可知, 当减弱磁通 $\phi$ 时, 理想空载转速 $n_{0}$ 将增大。 他励和并励电动机减弱磁通时的人为机械特性如图 4. 12-10 所示。图中直线 1 是 $\phi_{1}=\phi_{\mathrm{N}}$ 时机械特性。直线 2 是 $\phi_{2}<\phi_{\mathrm{N}}$ 时的特性, 直线 3 是 $\phi_{3}<\phi_{2}$ 时的特性。由此看出, 减弱磁通 的人为机械特性变软。
+
+## 2. 串励电动机的机械特性
+
+在串励电动机中, 励磁电流 $I_{\mathrm{f}}$ 就是电枢电流, 即 $I_{\mathrm{r}}=I_{\mathrm{a}}$ 。
+
+$$
+\phi=C_{\phi} I_{\mathrm{a}}
+$$
+
+式中 $C_{\phi}$ 一比例常数。
+
+电磁转矩 $T$ 的表达式可写成
+
+$$
+T=C_{r} \phi I_{\mathrm{a}}=C_{T} C_{\phi} I_{\mathrm{a}}^{2}
+$$
+
+则
+
+$$
+I_{\mathrm{a}}=\sqrt{\frac{T}{C_{T} C_{\phi}}}
+$$
+
+将式(4.12-20) 及式(4.12-21) 式代人式(4.12-19) 整理得
+
+$$
+n=C_{1} \frac{U}{\sqrt{T}}-C_{2}\left(R_{\mathrm{a}}+R_{\mathrm{j}}\right)
+$$
+
+式中 $C_{1}=\frac{1}{C_{e}} \sqrt{\frac{C_{T}}{C_{\phi}}}$ 一常数;
+
+$$
+C_{2}=\frac{1}{C_{e} C_{\phi}} \text { 常数。 }
+$$
+
+式(4.12-22)便是串励电动机的机械特性方程式。由该式可 知, 当磁路不饱和时, 串励电动机的机械特性 $n=f(T)$ 是一条 双曲线, 如图 4.12-11 所示。由图看出, 当负载增大时, 电机 的转速迅速下降, 这种机械特性属于软特性, 即串励电动机的 机械特性属软特性。
+
+图中曲线 1 是电动机的固有机械特性, 曲线 2 是电枢电 路串入外接电阻 $R_{\mathrm{j}}$ 时的人为机械特性。当负载减小时, 电机 的转速将迅速升高。当电枢电流 $I_{a} \rightarrow 0$ 时, 理论上转速 $n \rightarrow$ $\infty$, 这种现象称为“飞速” 现象。飞速现象会对电机和人身安全带来极大危害, 这是不允许的。 因此, 串励电动机不能在空载或负载很小的情况下运行。
+
+### 2 .6 直流电动机稳定运行的条件
+
+电动机和被它拖动的生产机械组成电力拖动机组,若使该机组能够稳定运行,必须使电动 机的机械特性 $n=f(T)$ 与生产机械的阻转矩特性 $n=f\left(T_{\mathrm{c}}\right)$ 之间能够配合得当。所谓机组稳定 运行, 是指机组原来运行于某一转速, 由于受到外界短时的扰动 (例如电网电压或负载发生暂 时的波动)而使转速发生变化, 当外界扰动消失后, 机组能恢复到原来的转速运行, 就称机组 能稳定运行,否则就是不稳定运行。
+
+机组稳定运行时, 既要满足电动机的机械特性, 又要满足负载的阻转矩特性,能够同时满 足这两个特性的运行点, 只能是二特性的交点,所以机组稳定运行的必要条件是两种特性有交 点,如图 4. 12-12 所示。
+
+但两种特性有交点仅是稳定运行必要条件,还不够充分。下面讨论稳定运行的充分条件。
+
+$$
+\frac{\Delta T}{\Delta n}<\frac{\Delta T_{6}}{\Delta n}
+$$
+
+或
+
+$$
+\frac{\mathrm{d} T}{\mathrm{~d} n}<\frac{\mathrm{d} T_{0}}{\mathrm{~d} n}
+$$
+
+时机组才能稳定运行,这便是机组稳定运行的充分条件。
+
+由上讨论可知, 若要确定机组是否能稳定运行时, 既要知道电动机的机械特性, 也要知道 负载的阻转矩特性才可以。
+
+生产机械不同, 它的阻转矩 $T_{\mathrm{c}}$ 情况也不同，也就有不同的阻转矩特性 $n=f\left(T_{\mathrm{c}}\right)$ 。以常见 的恒转矩负载特性为例, 恒转矩负载特性是指负载转矩 $T_{r}$ 与转速 $n$ 无关的特性, 即当转速变 化时, 负载转矩 $T_{\mathrm{c}}$ 保持常数。恒转矩负载特性又分反抗性的和位能性的两种。
+
+反抗性负载转矩特性的特点是负载转矩 $T_{c}$ 的方向总是与转速 $n$ 的方向相反, 负载转矩特 性 $n=f\left(T_{\mathrm{c}}\right)$ 在第一、第三象限内, 如图 4.12-13 所示。属于这一类的负载有轧钢机、机床的平 移机构等。
+
+位能性负载转矩特性的特点是负载转矩 $T_{\mathrm{r}}$ 具有固定的方向, 不随转速 $n$ 的方向改变而改 变, 其负载转矩特性 $n=f\left(T_{\mathrm{c}}\right)$ 在第一、第四象限, 如图 4.12-14 所示。位能性恒转矩负载是由 拖动系统中某些具有位能的部件造成的, 如起重设备中的重物就属于这类负载, 因为不论重物 的提升或下放,负载转矩 $T_{\mathrm{c}}$ 的方向始终不变。
+
+另一类常见的负载就是通风机负载。通风机负载的转矩 $T_{\mathrm{c}}$ 与转速 $n$ 之间基本上按平方 关系变化,即 $T_{c}=K n^{2}$ 。 $K$ 为比例常数。其负载特性是抛物线, 如图 4.12-15 所示。通风机的 负载转矩是反抗性的, 即 $T_{\mathrm{c}}$ 的方向总与 $n$ 的方向相反,特性曲线在第一、第二象限。属于此类 型负载的除通风机外,还有水原、油洜等。
+
+### 7 直流电动机的启动、调速及制动方法
+
+## 1. 直流电动机的启动
+
+电动机接电源后, 电机从静止状态升速一直到达稳定转速的过程称为电动机的启动过程, 简称为启动。对直流电动机启动的基本要求是：
+
+(1)有足够大的启动转矩;
+
+(2)启动电流限制在允许范围内;
+
+(3)启动时间要短,符合生产技术要求;
+
+(4)启动设备简单、经济、可靠。
+
+常用的启动方法有：
+
+(1)直接启动;
+
+(2)电枢电路串变阻器启动;
+
+(3)降压启动。
+
+在任何一种启动方法中, 最根本的原则是确保足够大的启动转矩和限制启动电流。
+
+(1) 直接启动
+
+所谓直接启动, 是指不用任何启动设备, 把静止的电动机直接投人到额定电压的电网上启 动。
+
+由于直接启动时启动电流大, 电网受到电流冲击, 使电机的换向恶化。因此直接启动只适 用于功率不大于 $4 \mathrm{~kW}$, 启动电流不超过额定电流的 $6 \sim 8$ 倍的电动机。
+
+这种启动方法的优点是不用启动设备,操作简单。
+
+(2) 电枢电路串变阻器启动
+
+这种启动方法是在电枢电路中串人可变电阻 (称为启动电阻), 以限制启动电流。随转速 上升逐步切除电阻。只要使启动电阻的各分段电阻配置得当,便能在启动过程中把电流限制 在允许的范围之内而较迅速地完成启动。
+
+这种启动方法广泛应用于各种中小型直流电动机中。但这种启动方法能量消耗大, 不适 用于经常启动的和大中型电机。
+
+(3) 降压启动
+
+用降低电源电压的方法进行启动, 这种启动方法需要有单独的电源供电。降压启动时启 动电流随电枢电压的降低程度而正比地减小。在启动过程中, 为使电动机的磁场保持最大并 且不受电源电压的影响, 故电动机应采用他励方式。电动机启动后, 随着转速的上升而相应提 高电压, 直到启动结束。
+
+这种启动方法启动过程中能量消耗少,启动平滑,但需专用电源设备,多用于要求经常启 动的、大中型的直流电动机。
+
+## 2. 直流电动机的调速
+
+直流电动机具有良好的调速性能, 可在宽广范围内平滑而经济地调速。直流电动机的调 速方法有二种:
+
+(1)调节励磁电流调速，即调节电动机的磁通调速;
+
+(2)调节电枢端电压调速;
+
+(3)调节电枢电路中的电阻调速。
+
+各种调速方法分述如下。 (1) 调节励磁电流调速
+
+这种调速方法是在保持电动机端电压一定的情况下减小励磁电流而使磁通减少时, 转速 即相应升高。在他励和并励电动机中, 是用调节励磁回路中的调节电阻来进行。在串励电动 机中, 不能在串励回路中串接电阻来改变励磁电流, 而是采用与串励绕组并联的电阻来把电流 分路, 从而改变电动机的励磁电流实现调速。
+
+这种调速方法消耗功率少, 可以平滑调速, 而且操作方便。但只能在额定转速以上调速, 因此调速范围不大。
+
+(2) 调节电枢端电压调速
+
+在保持励磁电流不变的情况下, 改变电枢端电压即可改变电动机的转速。这种调速方法 适用于他励电动机, 并且电枢端电压是从额定电压向下调节。由于该调速方法能在宽广的范 围内平滑调速, 而且低速时机械特性的斜率不变, 稳定性能好, 因此广泛用于要求调速范围大 的场合。其主要缺点是需要专门的调压电源, 设备投资大。
+
+(3) 调节电枢回路中的电阻调速
+
+在电源电压一定的情况下., 当电枢电路中串人电阻后, 电枢电流流过电阻而产生压降, 致 使电枢端电压降低。当改变串人的电阻数值时就可改变电枢端电压的大小, 从而实现电动机 转速的改变。因此, 这种调速方法实际上也属于调节电枢端电压调速的方法。这种调速方法 使电动机的机械特性变软, 调速范围不大, 而且能量损耗较大, 使电动机的效率降低, 因此只用 于一些要求调速指标不高、调速范围不大的场合, 如无轨电车等。其主要优点是设备简单, 操 作方便。
+
+【例 4. 12-6】一台并励直流电动机的额定数据为: $P_{\mathrm{N}}=15 \mathrm{~kW}, U_{\mathrm{N}}=220 \mathrm{~V}, \eta_{\mathrm{N}}=85.3 \%$, 电枢回路电阻 $R_{\mathrm{a}}=0.2 \Omega$, 励磁回路电阻 $R_{\mathrm{f}}=44 \Omega$, 试求: (1) 直接启动时, 启动电流为额定电 流的多少倍? (2) 欲使启动电流限制为额定电流的 1.5 倍, 启动变阻器电阻应为多少?
+
+解: (1) 直接启动时 $n=0, E_{\mathrm{a}}=0$, 启动电流
+
+$$
+I_{\mathrm{st}}=\frac{U_{\mathrm{N}}}{R_{\mathrm{a}}}+I_{\mathrm{f}}=\frac{220}{0.2}+\frac{220}{44}=1105 \mathrm{~A}
+$$
+
+额定电流
+
+$$
+\begin{aligned}
+& I_{\mathrm{N}}=\frac{P_{1}}{U_{\mathrm{N}}}=\frac{P_{\mathrm{N}} \times 10^{3}}{\eta_{\mathrm{N}} U_{\mathrm{N}}}=\frac{15 \times 10^{3}}{0.853 \times 220}=80 \mathrm{~A} \\
+& \frac{I_{\text {st }}}{I_{\mathrm{N}}}=\frac{1105}{80}=13.8
+\end{aligned}
+$$
+
+(2) 变阻器电阻为 $R_{\mathrm{j}}$, 则
+
+$$
+\begin{aligned}
+& 1.5 I_{\mathrm{N}}=\frac{U_{\mathrm{N}}}{R_{\mathrm{a}}+R_{\mathrm{j}}}+I_{\mathrm{f}} \\
+& R_{\mathrm{j}}=\frac{U_{\mathrm{N}}}{1.5 I_{\mathrm{N}}-I_{\mathrm{f}}}-R_{\mathrm{a}}=\frac{220}{1.5 \times 80-5}-0.2=1.7 \Omega
+\end{aligned}
+$$
+
+【例 4. 12-7】一台并励电动机的铭牌数据如下: $P_{\mathrm{N}}=96 \mathrm{~kW}, U_{\mathrm{N}}=440 \mathrm{~V}, I_{\mathrm{N}}=255 \mathrm{~A}, I_{\mathrm{NN}}=$ $5 \mathrm{~A}, n_{\mathrm{N}}=500 \mathrm{r} / \mathrm{min}, R_{\mathrm{a}}=0.08 \Omega$, 求:
+
+(1) 额定运行时的输出转矩 $T_{\mathrm{N}}$ 和电磁转矩 $T$;
+
+(2) 理想空载转速 $n$; (3) 在负载转矩不变的情况下, 当电枢电路中串人 $0.1 \Omega$ 电阻后的稳定转速 $n$ 。
+
+解: (1) $T_{\mathrm{N}}=9550 \frac{P_{\mathrm{N}}}{n_{\mathrm{N}}}=9550 \times \frac{96}{500}=1833.6 \mathrm{~N} \cdot \mathrm{m}$
+
+额定运行时的电磁功率
+
+$$
+\begin{aligned}
+P_{\mathrm{M}} & =P_{1}-P_{\text {Cuf }}-\left(P_{\text {Cua }}+P_{\mathrm{c}}\right) \\
+& =U_{\mathrm{N}} I_{\mathrm{N}}-U_{\mathrm{N}} I_{\mathrm{fN}}-I_{\mathrm{aN}}^{2} R_{\mathrm{a}}=440 \times 255-440 \times 5-(255-5)^{2} \times 0.08=105 \mathrm{~kW} \\
+T & =9550 \frac{P_{\mathrm{M}}}{n_{\mathrm{N}}}=9550 \times \frac{105}{500}=2005.5 \mathrm{~N} \cdot \mathrm{m}
+\end{aligned}
+$$
+
+(2) 额定运行时电动势平衡方程式
+
+$$
+\begin{aligned}
+& U_{\mathrm{N}}=E_{\mathrm{a}}+I_{\mathrm{aN}} R_{\mathrm{a}} \\
+& E_{\mathrm{a}}=C_{\mathrm{e}} \phi n_{\mathrm{N}}
+\end{aligned}
+$$
+
+代入得
+
+$$
+C_{e} \phi=\frac{U_{\mathrm{N}}-I_{\mathrm{aN}} R_{\mathrm{a}}}{n_{\mathrm{N}}}=\frac{440-(255-5) \times 0.08}{500}=0.84
+$$
+
+理想空载转速
+
+$$
+n_{0}=\frac{U_{\mathrm{N}}}{C_{e} \phi}=\frac{440}{0.84}=523.8 \mathrm{r} / \mathrm{min}
+$$
+
+(3) 负载不变, 电枢电流 $I_{\mathrm{aN}}$ 不变
+
+当串人电阻 $R_{\mathrm{j}}=0.1 \Omega$ 后的转速
+
+$$
+n=\frac{E_{\mathrm{a}}}{C_{\mathrm{e}} \phi}=\frac{U_{\mathrm{N}}-I_{\mathrm{aN}}\left(R_{\mathrm{a}}+R_{\mathrm{j}}\right)}{C_{e} \phi}=\frac{440-(255-5)(0.08+0.1)}{0.84}=470 \mathrm{r} / \mathrm{min}
+$$
+
+## 3. 直流电动机的制动方法
+
+在电力拖动机组中, 为了满足生产技术的要求或者为了安全, 往往需要将电动机迅速停 转、迅速减速或限制其转速过高而要对电动机进行制动。制动的方法很多, 这里所说的制动方 法是利用电动机本身产生的电磁转矩来进行制动,这种制动方法有三种, 即能耗制动、反接制 动和回馈制动, 分述如下。
+
+1) 能耗制动
+
+能耗制动的特点是电压 $U=0$, 电枢电路的总电阻 $R=R_{\mathrm{a}}+R_{\mathrm{I}}$, 代人式 (4.12-19) 得能耗制 动机械特性方程式为
+
+$$
+n=-\frac{R_{\mathrm{a}}+R_{\mathrm{L}}}{C_{\mathrm{c}} C_{T} \phi^{2}} T
+$$
+
+由式(4.12-23) 可见, $n$ 为正时, $T$ 为负; $n=0$ 时, $T=0$, 所以机械特性位于第二象限, 是一
+
+(a) 电动状态 (b) 能耗制动
+
+条过坐标原点的直线, 直线的斜率 $\alpha=\frac{R_{\mathrm{a}}+R_{\mathrm{I}}}{C_{e} C_{r} \phi^{2}}$, 如图 4.1217 所示。图中 $A$ 点是制动前的运行点, 转速为 $n_{1}$ 。 $B$ 点是 开始制动时的运行点, 该点转速也是 $n_{1}$, 制动转矩为 $-T_{1}$ 。在制动转矩作用下, 电机减速, $工$. 作点沿特性线下 降, 直到 $n=0$, 机组停车。
+
+能耗制动操作简便, 既适用于使机组停转, 也可用于限 制转速过高。
+
+## 2)反接制动
+
+反接制动可用两种方法实现, 一种是转速反向的反接 制动, 另一种是电枢反接的反接制动。
+
+(1) 转速反向的反接制动
+
+（a）电动状态运行 (b) 反接制动状态运行
+
+转速反向的反接制动运行在第四象限的 $F D$ 段上。 $D$ 点是电动机的 $n=f(T)$ 与负载的 $n$ $=f\left(T_{\mathrm{r}}\right)$ 的交点, 是稳定运行点, 即将重物 $G$ 以稳定的转速 $n_{D}$ 下放。
+
+转速反向的反接制动机械特性方程式为
+
+$$
+n=n_{0}-\frac{R_{\mathrm{a}}+R_{\mathrm{j}}}{C_{\mathrm{e}} C_{T} \phi^{2}} T
+$$
+
+由式 (4.12-24) 看出, 它与电动状态下的人为机械特性 (式 (4.12-19)) 是完全一样的。
+
+(2) 电枢反接的反接制动
+
+当下放重物 $G$ 时, 采用的方法是突然打开开关 $\mathrm{K}$, 并立即闭合开关 $\mathrm{F}$, 将电枢两端通过外 串电阻 $R_{\mathrm{j}}$ 反接到电源上, 这时加在电枢两端的电压为负 $U$, 与原来电动状态运行时的反电动 势 $E_{\mathrm{a}}$ 同方向, 因而使电枢电流 $I_{\mathrm{a}}$ 反向, 电磁转矩 $T$ 也随之反向, 与转速 $n$ 的方向相反, 电机便 处于制动运行状态。这种制动运行状态是因电枢反接所致, 故称为电枢反接的反接制动。其 机械特性方程式为
+
+$$
+n=\frac{-U}{C_{e} \phi}-\frac{R_{\mathrm{a}}+R_{\mathrm{j}}}{C_{\mathrm{e}} C_{T} \phi^{2}} T=-n_{0}-\frac{R_{\mathrm{a}}+R_{\mathrm{j}}}{C_{\mathrm{e}} C_{\tau} \phi^{2}} T
+$$
+
+反接制动的制动效果较好, 但能量消耗较大, 并且用此法使机组停转时, 当 $n=0$ 时应及时 断开电源。此法常用于要求迅速停转或反转的场合。
+
+## 3) 回馈制动
+
+直流电动机原来在电动状态下运行, 此时在保持电枢端电压和励磁电流不变的情况下, 在 电动机轴上加一个外加转矩, 拖动电机沿着原来的转向加速, 则随着转速 $n$ 的升高, 电动机的 反电动势 $E_{\mathrm{a}}$ 升高, 使电枢电流 $I_{\mathrm{a}}$ 下降, 电磁转矩 $T$ 也下降。当转速 $n$ 等于理想空载转速 $n_{0}$; 即 $n=n_{0}$ 时, 则 $E_{\mathrm{a}}=U, I_{\mathrm{a}}=0, T=0$, 电源不再向电机输入电功率。当继续加速至 $n>n_{0}$, 则电 枢电动势 $E_{\mathrm{a}}$ 便大于端电压 $U$, 即 $E_{\mathrm{a}}>U$, 此时电机便在电动势的作用下向电源输送电流, 即电 枢电流的方向反了, 使电磁转矩的方向也就与转速 $n$ 的方向反了, 电机便运行在制动状态。这 种制动运行状态是电机作为发电机运行而向电源回馈电能所致,故称为回馈制动。回馈制动 时, 一定满足 $|n|>\left|n_{0}\right|$ 的条件。
+
+电机在回馈制动运行时的电路与电动状态运行时的电路是一样的, 只是当 $|n|>\left|n_{0}\right|$ 时便 进人回馈制动运行状态。
+
+对于位能性负载拖动电动机反转时, 当反向转速 $(-n)$ 大于反向的理想空载转速 $\left(-n_{0}\right)$ 时, 即 $|-n|>\left|-n_{0}\right|$, 电机便进入回馈制动运行, 如图 4. 12-21 直线 $B F K D$ 在第四象限的 $K D$ 段上, $T$ 为正, $n$ 为负,而且 $|-n|>\left|-n_{0}\right|$, 故 $K D$ 段为回馈制动运行的区段,其机械特性方程 式也就是式(4.12-25)。
+
+$D$ 点是电动机的 $n=f(T)$ 与位能性负载 $n=f\left(T_{\mathrm{c}}\right)$ 的交点, 是稳定运行点, 重物将以稳定转 速 $n_{D}$ 下放。
+
+问馈制动只能用于限制机组转速过分升高而不能使机组停转。
+
+【例 4. 12-8】一台用于起重设备的他励直流电动机, 额定数据为: $P_{\mathrm{N}}=29 \mathrm{~kW}, U_{\mathrm{N}}=440$ $\mathrm{V}, I_{\mathrm{N}}=76 \mathrm{~A}, n_{\mathrm{N}}=1000 \mathrm{r} / \mathrm{min}$, 电枢回路电阻 $R_{\mathrm{a}}=0.377 \Omega$, 不计空载损耗 $P_{0}\left(=P_{\mathrm{Fe}}+P_{\mathrm{mec}}\right)$, 求:
+
+(1) 电动机以 $n=500 \mathrm{r} / \mathrm{min}$ 吊起 $T_{\mathrm{c}}=0.8 T_{\mathrm{N}}$ 的负载时电枢回路中外串电阻 $R_{\mathrm{j} 1}$ 。
+
+(2) 用能耗制动将 $500 \mathrm{r} / \mathrm{min}$ 电机停转, 并使起始制动转矩不超过 $2 T_{\mathrm{N}}$ 时电枢回路中外串 电阻 $R_{\mathrm{j} 2}$ 。
+
+(3) 用能耗制动方法使 $0.8 T_{\mathrm{N}}$ 的负载以 $500 \mathrm{r} / \mathrm{min}$ 的转速下放时电枢回路中外串电阻 $R_{\mathrm{j} 3}$ 。
+
+(4) 用转速反向的反接制动使 $0.8 T_{\mathrm{N}}$ 的负载以 $500 \mathrm{r} / \mathrm{min}$ 转速下放时电枢回路中外串电 阻 $R_{\mathrm{j} 4}$ 。
+
+(5) 用电枢反接的反接制动, 并在电枢回路中外串电阻 $R_{\mathrm{j} 5}=3.5 \Omega$, 将 $0.8 T_{\mathrm{N}}$ 的负载下放 时的稳定下放转速。
+
+解: 不计空载损耗, 则 $T=T_{\mathrm{N}}=C_{T} \phi I_{\mathrm{N}}$, 当 $T_{c}=0.8 T_{\mathrm{N}}$ 时, $I_{\mathrm{a}}=0.8 I_{\mathrm{N}}=0.8 \times 76=60.8 \mathrm{~A}$
+
+(1) 求 $R_{\mathrm{j} 1}$
+
+$$
+\begin{aligned}
+& C_{e} \phi=\frac{U_{\mathrm{N}}-I_{\mathrm{N}} R_{\mathrm{a}}}{n_{\mathrm{N}}}=\frac{440-76 \times 0.377}{1000}=0.411 \\
+& R_{\mathrm{j} 1}=\frac{U_{\mathrm{N}}-C_{e} \phi n}{I_{\mathrm{a}}}-R_{\mathrm{a}}=\frac{440-0.411 \times 500}{60.8}-0.377=3.48 \Omega
+\end{aligned}
+$$
+
+(2) 求 $R_{\mathrm{j} 2}$
+
+起始制动转矩
+
+$$
+\begin{aligned}
+& T_{\mathrm{B}}=2 T_{\mathrm{N}} \\
+& I_{\mathrm{a}}=-2 I_{\mathrm{N}}=-2 \times 76=-152 \mathrm{~A} \\
+& R_{\mathrm{j} 2}=\frac{-C_{\mathrm{e}} \phi n}{I_{\mathrm{a}}}-R_{\mathrm{a}}=\frac{-0.411 \times 500}{-2 \times 76}-0.377=1 \Omega
+\end{aligned}
+$$
+
+(3) 求 $R_{\mathrm{j}, 3}$
+
+用能耗制动方法下放重物, 则 $n=-500 \mathrm{r} / \mathrm{min}, I_{\mathrm{a}}=0.8 I_{\mathrm{N}}=60.8 \mathrm{~A}$
+
+$$
+R_{\mathrm{j} 3}=\frac{-C_{\mathrm{e}} \phi n}{I_{\mathrm{a}}}-R_{\mathrm{a}}=\frac{-0.411(-500)}{60.8}-0.377=3 \Omega
+$$
+
+(4) 求 $R_{\mathrm{j} 4}$
+
+用转速反问的反接制动方法下放重物, 则 $n=-500 \mathrm{r} / \mathrm{min}, I_{\mathrm{a}}=0.8 I_{\mathrm{N}}=60.8 \mathrm{~A}$
+
+$$
+R_{\mathrm{j} 4}=\frac{U_{\mathrm{N}}-C_{\mathrm{e}} \phi n}{I_{\mathrm{a}}}-R_{\mathrm{a}}=\frac{440-0.411(-500)}{60.8}-0.377=10.24 \Omega
+$$
+
+(5) 该题下放重物所用方法是先用电枢反接的反接制动将电机停转, 然后用回馈制动方 式下放重物, 则 $U=-U_{\mathrm{N}}=-440 \mathrm{~V}, I_{\mathrm{a}}=60.8 \mathrm{~A}$, 外串电阻 $R_{\mathrm{j} s}=3.5 \Omega$, 稳定下放转速
+
+$$
+n=\frac{U-I_{\mathrm{d}}\left(R_{\mathrm{a}}+R_{\mathrm{jS}}\right)}{C_{e} \phi}=\frac{-440-60.8(0.377+3.5)}{0.411}=-1644 \mathrm{r} / \mathrm{min}
+$$
+
+## 13 电乞主接线
+
+4.13.1电气主接线的主要形式及对电气主接线的基本要求
+
+## 1. 对电气主接线的基本要求
+
+对电气主接线的基本要求概括说应包括可靠性、灵活性、经济性和可扩展性四个方面。
+
+## (1) 可靠性
+
+保证供电可靠是电气主接线的最基本要求。主接线的可靠性不是绝对的。由于不同系统 对于运行可靠性的要求有较大差别, 因而在分析电气主接线的可靠性时,要考虑发电厂和变电 所在系统中的地位和作用、用户的负荷性质和类别、设备制造水平及运行经验等诸多因素。
+
+## (2) 灭活性
+
+电气主接线应能适应各种运行状态, 并能灵活进行运行方式的转换,具体包括以下几点:
+
+(1)操作的方便性;
+
+(2)调度的方便性;
+
+(3)扩建的方便性。
+
+(3) 经济性
+
+设计应在满足可靠性和淡活性的前提下做到经济合理：
+
+(1)节省一次投资；
+
+(2)少地涌积少;
+
+(3)电能损耗少。
+
+(4) 可扩性
+
+包括电气上和上地上,都要留有扩展的余地。
+
+## 2. 电气主接线的主要形式
+
+电气主接线的主要形式按有无 $\Gamma$. 作母线划分为两类。
+
+(1)有汇流母线接线形式。包括单母线形式、双母线形式、3/2 接线形式、4/3 接线形式、变 压器母线组接线, 以及相关的分段、旁路派生形式等。一般特点: 接线清晰, 运行方便, 易于安 装扩建; 但配电装置占地面积大, 使用断路器等设备较多。一般适用于有较多出线的场合。
+
+(2)无汇流母线接线形式。包括单元接线、桥形接线、角形接线等。一般特点: 使用开关设 备少,占地面积少;但运行不灵活,不易扩建。适用于出线少、不再发展的场合。
+
+1)有汇流母线形式
+
+(1) 单母线形式
+
+具有一条工作母线,所有进出线通过断路器、隔离开 关组合连接至该母线上并列运行。各进 (出) 线电源 (负 荷) 应尽可能均衡分布在母线上(如图 4.13-1 所示)。
+
+其具有带汇流母线接线形式的一般特点,但有如下 主要缺点:
+
+(1)可靠性差, 因只有一条工作母线, 在进行母线检修 或母线隔离开关检修时整条母线 (即全厂) 停电;
+
+(2)调度不灵活, 各进出线只能并列运行, 一般会有线
+
+单母线接线一般仅用于出线回路少、无重要负荷的小型发电厂、终端站中。
+
+针对单母线运行方式中的上述两个主要缺点, 派 生出单母线分段接线(如图 4.13-2 所示)。通过分段 断路器进行分段, 可以有效提高供电可靠性和灵活 性。当一段母线故障时, 分段断路器自动隔离故障 段,保证正常母线T.作; 对重要用户分别从不同分段 处取用电源, 不同分段同时故障 (或检修) 几率极低可 以不予考虑。
+
+母线一般分 $2 \sim 3$ 段。
+
+单母线分段广泛应用于中小容量的发电厂、变电 所低压侧系统。
+
+## (2) 双母线形式
+
+具有互. 为备用的两组母线, 每问进出线通过一台 断路器和列列的两组隔离开关分别与两组母线连接 (如图 4. 13-3 所示)。其特点如下。
+
+(1)供电可靠。通过两组母线隔离开关的倒换操作可以轮流检修一组母线而不致使供电中 断; 检修任 -母线隔离开关时只需断开此隔离开关所属的一条回路和与该开关相连的一组母 线, 不影响其他问路供电。
+
+(2)调度灵活。母线可以有一主一备、分列、并列等运行方式。
+
+双母接线及派生的双母分段接线 (如图 4.13-4 所示)广泛应用于发电厂的机压配电装置, 以及 $220 \sim 500 \mathrm{kV}$ 变电站中。
+
+## (3)旁路母线
+
+为了检修出线断路器时不致中断该出线问路供电, 可增设旁路母线, 如图 4.13-5 与图 4. 13-6 所示。注意在投人旁路母线前应先通过旁路断路器对旁路母线充电, 待与. I. 作母线等电 位后才可以投入旁路隔离开关将出线转移到旁路母线上(为防止投人旁路隔离开关时由于线
+
+路突发故障而使旁路隔离开关投入故障线路, 常在旁路母线充电完毕后, 短时断开旁路断路器 再投人旁路隔离开关)。
+
+## (4) $3 / 2$ 接线形式
+
+每两回进出线通过 3 台断路器构成一串连接至两组母线上(如图 4. 13-7 所示)。运行时两组母线和同一串的 3 台断路器都投人工作, 形成多环路运行, 具有很高的可靠性。特点为:
+
+(1)任一设备故障或检修时都不会中断供电,甚至两组母线同时故 障的极端情况下仍不影响供电;
+
+(2)方式的转换通过操作断路器完成, 隔离开关仅在检修时作为隔 离带电设备使用,因而可以有效减少误操作几率。
+
+此接线方式通常注意两原则:
+
+(1)电源线宜与负荷线配对成串, 以减少穿越功率并防止在极端情 况下两条电源回路或两条负荷回路同时被切除;
+
+(2)电源或负荷等同名回路宜分别接人不同母线形成交叉供电形式,可具有更高的可靠性。 $3 / 2$ 接线通常在高压、超高压系统 $(330 \sim 500 \mathrm{kV})$ 中,进出线回数较多,需要较高的供电可靠性 时应用。
+
+## (5) $4 / 3$ 接线形式
+
+类似于 $3 / 2$ 接线, 每 3 回进出线通过 4 台断路器构成一串连接至两组母线上。与 $3 / 2$ 接 线相比,可以节省投资但可靠性有所降低,布置比较复杂。 (6) 变压器母线组接线
+
+进出线通过 2 台断路器或 $3 / 2$ 方式分别接到 2 组母线上, 变压器通 过隔离开关直接接到母线上 (如图 4.13-8 所示)。由于变压器属高可靠 设备, 因而直接接入母线对母线运行不产生明显影响。这种接线调度灵 活, 接线简便,运行可靠, 在国外大容量配电系统中常见。
+
+(1) 单元接线
+
+发电机、变压器直接构成一个独立单元对外供电 (如图 4. 13-9 所 示), 是无母线接线中最简单的形式,也是大型机组广为采用的接线形式, 结构简单清哳, 并可有效降低短路电流。
+
+(2) 桥形接线
+
+母线形式
+
+当有 2 台变压器和 2 条线路时, 常采用桥形接线。根据桥联断路器安装位置的不同可以 分为内桥与外桥形式 (如图 4.13-10 所示)。内桥接线适用于外部系统频繁切换的场合, 而外 桥接线则适用于内部变压器经常切换的场合。当外部系统有穿越功率流过时, 也常采用外桥 式接线。
+
+## (3) 角形接线
+
+角形接线断路器接成环形回路, 电源支路与出线支路都接在 2 台断 路器之间 (如图 4.13-11 所示), 角形接线的断路器数等于角数也等于进 出线回路数总和。特点: 可靠性高, 任一设备故障不影响供电; 但是由于 设备可能会运行在开环与合环两种方式下, 其中流过电流会有较大差别。 一般为 $3 \sim 5$ 角。
+
+### 2 各种主接线中主要电气设备的作用和配置原则
+
+在高压系统中, 载流回路的开合会产生较强电弧, 影响系统正常运 行。作为断路设备,断路器与隔离开关在工作中存在较大不同: 断路器具 接线 有灭弧能力而隔离开关不具灭弧能力。因而在进行载流回路开合时需严 格按照断路器先开后合、隔离开关先合后开的次序进行, 其原则为仅允许 通过断路器的操作改变回路的运行状态 (由空载到载流或由载流到空载)。而隔离开关仅作 为隔离设备, 以提供明显断口隔离外部带电系统。在配置时, 一般按照隔离开关一断路器一隔 离开关的组合方式进行布置。
+
+### 3 各电压等级电气主接线限制短路电流的方法
+
+系统中常采用以下方式限制短路电流。
+
+(1) 采用适当的主接线形式
+
+采用计算阻抗较大的接线方式,如采用无汇流母线的接线方式等。
+
+(2) 采用适当的运行方式
+
+双母或母线分段接线时,采用分列运行方式; 双回线路并联供电时, 在负荷允许条件下采 用单回线路运行、另一线路备用的方式; 环网接线系统在负荷允许条件下在穿越功率最小处解 环等。
+
+(3) 采用限流电抗器
+
+一般电缆出线回路需加装出线电抗器, 可有效降低线路短路时的短路电流, 并能抬高母线 短路后残压, 防止故障扩大 (架空线一般自身阻抗较大, 常不需安装出线电抗器); 母线分段处 加装母线电抗器, 可提高系统计算阻抗, 对母线短路及出线短路均有限流作用。
+
+(4) 采用低压分裂绕组变压器
+
+发电机容量较大时,采用低压分裂绕组变压器组成扩大单元式接线, 以限制短路电流。低 压分裂绕组变压器有两个特点:一是两个低压分裂绕组之间有较大短路阻抗; 二是每一分裂绕 组与高压绕组之间的短路阻抗较小且相等。由此可以有效限制其中一个分裂绕组低压侧短路 时对另一侧的影响。
+
+### 4 电气设备选择
+
+### 1 电气设备选择和校验的基本原则和方法
+
+电气设备选择的一般条件:
+
+(1)按正常工作方式选择电气设备;
+
+(2)按短路方式进行设备的校验。
+
+1. 按正常工作方式选择电气设备
+
+(1) 选择额定电压
+
+电气设备最高耐压不得低于父装位置的最大可能须作电压。一般电气设备的最高耐压为 其额定电压的 $1.1 \sim 1.15$ 倍, 而系统的电压波动一般在额定的 $\pm 10 \%$ 以内, 由此只需使电气设 备的额定电压 $U_{\mathrm{N}}$ 不低于安装位置的系统额定电压 $U_{\mathrm{Ns}}$ 。
+
+(2) 选择额定电流
+
+电气设备的额定电流应不小于在各种合理运行方式下流过设备的最大持续工作电流。其 中需要考虑满足在各种可能的运行方式下流过设备的电流: 发电机、变压器回路的最大可能工 作电流为其额定电流的 1.05 倍; 变压器有过载可能时, 回路最大工作电流按变压器最大过载 能力 (1.3 2 倍额定负荷能力) 选取; 母联回路一般取为母线上最大一台发电机或变压器的最 大工作电流; 母线分段回路按照所联母线上最大一台发电机故障时为保障母线负荷所需的最 大穿越功率选取; 出线回路除了考虑正常负荷方式外, 还要考虑故障时从其余回路转移过来的 负荷。
+
+(3) 考虑环境条件的影响
+
+当电气设备安装地点的环境条件,如海拔、温度、污秽等超过一般使用条件时,应采取措施 进行设备调整。如高海拔地区采用高原型设备或更高耐压设备, 环境温度高的场合会降低设 备的最高允许载流,污秽地区需采用防污型设备等。
+
+## 2. 按短路方式进行设备的校验
+
+(1) 短路热稳定校验
+
+短路电流通过电气设备时,各部件温度或发热效应不得超过允许值。条件为
+
+$$
+I_{\mathrm{t}}^{2} t \geqslant Q_{\mathrm{k}}
+$$
+
+式中 $Q_{\mathrm{k}}$ 一短路电流热效应;
+
+$I_{1}, t$ 一一设备允许通过的热稳定电流和时间。
+
+(2) 短路动稳定校验
+
+设备有承受短路电流机械效应的能力。条件为
+
+$$
+i_{\mathrm{es}} \geqslant i_{\mathrm{sh}} \text { 或 } I_{\mathrm{es}} \geqslant I_{\mathrm{sh}}
+$$
+
+式中 $i_{\text {es }} 、 I_{\text {es }}$ - 设备允许通过的动稳定电流幅值与有效值;
+
+$i_{\mathrm{sh}} 、 I_{\mathrm{sh}}$ 一一短路冲击电流幅值与有效值。
+
+(3) 短路计算条件
+
+(1)容量和接线。按最大系统设计容量和可能出现最大短路电流的正常接线方式。
+
+(2)短路种类。一般按三相短路考虑。
+
+(3)计算短路点。系统中不同短路点位置对同一设备的影响不同,因而需选择使设备处于 最严重情况的短路点进行校验。对于线性网络,一般短路点与设备电气距离越小, 对设备影响 越大。
+
+(4) 短路计算时间
+
+按可能造成最严重后果的短路时间来考虑, 如: 对于设备热稳定校验, 按主保护拒动、后备 保护切除短路的时间考虑 (燃弧时间长, 发热量大) ; 对于设备开断能力校验, 按主保护切除短 路的动作时间考虑 (短路电流衰减量小)。
+
+### 2 硬母线的选择和校验
+
+从导体选型、截面、电晕电压、热稳定、动稳定、共振等几个方面进行选择校验。
+
+## 1. 导体选型
+
+(1) 材质
+
+一般选用铝或铝合金材料，铜导体只用在持续工作电流大或环境条件恶劣的场合。
+
+(2) 截面形状
+
+矩形导体一般用于 $35 \mathrm{kV}$ 及以下、电流在 $4000 \mathrm{~A}$ 及以下的装置中; 槽形导体一般用于 $4000 \sim 8000 \mathrm{~A}$ 装置中; 管形导体一般用于 $8000 \mathrm{~A}$ 以上的大电流母线。
+
+2. 导体截面选择
+
+从长期发热允许电流或经济电流密度两个方面综合选择。
+
+(1) 导体长期发热允许电流选择
+
+$$
+I_{\max } \leqslant K I_{\mathrm{al}}
+$$
+
+式中 $I_{\text {max }}$ 一导体回路最大持续工作电流;
+
+$I_{\mathrm{al}}$ 一一额定环境温度 $\left(\theta_{0}=25^{\circ} \mathrm{C}\right)$ 时导体允许电流;
+
+$K$ 一与实际环境温度和海拔有关的综合修正系数。 一般取 $K=\sqrt{\frac{\theta_{\mathrm{al}}-\theta}{\theta_{\mathrm{al}}-\theta_{0}}}$, 其中 $\theta_{\mathrm{al}} 、 \theta$ 分别为导体长期发热允许最高温度和导体安装地点实际 环境温度。
+
+## (2) 经济电流密度选择
+
+对应不同种类的导体和不同的最大负荷, 利用小时数有个年计算费用最低的电流密度, 称 为经济电流密度 $J$ 。由此导线的经济截面 $S_{J}=\frac{I_{\max }}{J}$ 。
+
+对年负荷利用小时数大 ( $5000 \mathrm{~h}$ 以上), 传输容量大, 长度在 $20 \mathrm{~m}$ 以上的导体, 其截面一 般按经济电流密度选择, 并按长期发热允许电流校验; 配电装置汇流母线通常在正常运行方式 下传输容量不大, 可按长期发热允许电流选择。
+
+## 3. 电晕电压校验
+
+对 $110 \mathrm{kV}$ 及以上裸导体, 按晴天不发生全面电晕条件校验, 即
+
+$$
+U_{\mathrm{cr}} \geqslant U_{\max }
+$$
+
+式中 $U_{\mathrm{rr}}-$ - 导体电晕临界电压;
+
+$$
+U_{\text {max }} \text { 一一导体安装位置最高工作电压。 }
+$$
+
+## 4. 热稳定校验
+
+计及集肤效应系数 $K_{\mathrm{f}}$ 的影响, 进行热稳定校验时导体截面
+
+$$
+S \geqslant \sqrt{\frac{Q_{\mathrm{k}} \overline{K_{\mathrm{f}}}}{A_{\mathrm{h}}-A_{\mathrm{w}}}}
+$$
+
+式中 $Q_{k}$ - 短路电流热效应;
+
+$$
+\sqrt{A_{\mathrm{h}}-A_{\mathrm{w}}} \text { - 热稳定系数。 }
+$$
+
+## 5. 动稳定校验
+
+(1) 单条矩形导体应力计算
+
+导体最大相间计算应力
+
+$$
+\sigma_{\mathrm{ph}}=\frac{M}{W}=\frac{f_{\mathrm{ph}} L^{2}}{10 W}
+$$
+
+式中 $f_{\mathrm{ph}}$ 单位长度导体上所受相间电动力;
+
+$L-$ 导体支柱绝缘子之间的跨距;
+
+$M$ 一 导体所受最大弯距, 对多跨距匀载荷梁取 $M=f_{\mathrm{ph}} L^{2} / 10$, 跨距数为 2 时取 $M=$ $f_{\mathrm{ph}} L^{2} / 8$;
+
+$W$ — 导体对垂直干作用力方向轴的截面系数, 在三相系统平行布置时, 对于长边为 $h$ 、短边为 $b$ 的矩形导体, 当长边呈水平布置、每相为单条时, $W$ 取值为 $b h^{2} / 6$, 当 长边呈垂直布置、每相为单条时, $W$ 取值为 $b^{2} h / 6$ 。
+
+导体最大相间应力 $\sigma_{\mathrm{ph}}$ 应小于导体材料允许应力 $\sigma_{\mathrm{al}}$, 即 $\sigma_{\mathrm{ph}} \leqslant \sigma_{\mathrm{al}}$, 由此满足动稳定要求的 绝缘于间的最大允许跨距 $L_{\text {max }}=\sqrt{\frac{10 \sigma_{\mathrm{al}} w}{f_{\mathrm{ph}}}}$ 。 $L_{\text {max }}$ 是根据材料最大允许应力确定的,通常矩形导 体平放时为避免因自重而过分弯曲,所选跨距一般不超过 $1.5 \sim 2 \mathrm{~m}_{\text {。 }}$
+
+(2) 多条矩形导体应力计算
+
+同相母线由多条矩形导体组成时, 母线中最大机械应力由相间应力 $\sigma_{\mathrm{ph}}$ 和同相条间应力 $\sigma_{\mathrm{b}}$ 叠加而成, 母线满足动稳定的条件为 $\sigma_{\mathrm{ph}}+\sigma_{\mathrm{b}} \leqslant \sigma_{\mathrm{al}}$ 。其中, 相间应力 $\sigma_{\mathrm{ph}}$ 计算与单条导体的 计算方式相同,仅 $W$ 换为多条组合导体的截面系数。条间应力
+
+$$
+\sigma_{\mathrm{b}}=\frac{M_{\mathrm{b}}}{W}=\frac{f_{\mathrm{b}} L_{\mathrm{b}}^{2}}{12 W}=\frac{f_{\mathrm{b}} L_{\mathrm{b}}^{2}}{2 b^{2} h}
+$$
+
+式中 $M_{\mathrm{b}}$ - 边条导体所受弯距,按两端固定的匀载荷梁计算, $M_{\mathrm{b}}=f_{\mathrm{b}} L_{\mathrm{b}}^{2} / 12$;
+
+$W-$ 导体对垂直于条间作用力的截面系数, $W=b^{2} h / 6$;
+
+$L_{\mathrm{b}}$ - 条间衬垫跨距;
+
+$f_{\mathrm{b}}$ — 单位长度导体上所受条间作用力。
+
+条间作用力 $f_{\mathrm{b}}$ 可分别按以下情况进行计算:
+
+同相由双条导体组成时,可认为相电流在两条中平均分配,条间作用力
+
+$$
+f_{\mathrm{b}}=2 K_{12}\left(0.5 i_{\mathrm{sh}}\right)^{2} \frac{1}{2 b} \times 10^{-7}=2.5 K_{12} i_{\mathrm{sh}}^{2} \frac{1}{b} \times 10^{-8}
+$$
+
+其中 $K_{12}$ 为条 $1 、 2$ 间的截面形状系数。
+
+同相由三条导体组成时，可认为中间条通过 $20 \%$ 相电流，两侧条各通过 $40 \%$ ，当条间中心 距为 $2 b$ 时, 受力最大的边条作用力
+
+$$
+f_{\mathrm{b}}=f_{\mathrm{bl}-2}+f_{\mathrm{b} 1-3}=8\left(K_{12}+K_{13}\right) i_{\mathrm{sh}}^{2} \frac{1}{b} \times 10^{-9}
+$$
+
+其中 $K_{13}$ 为条 1,3 间的截面形状系数。
+
+(3) 槽形导体应力计算
+
+双槽形导体应力的计算方法与矩形导体相同。当三相导体呈垂直布置时, 导体截面系数 $W=2 W_{X}$; 当三相导体呈水平布置时, 导体截面系数 $W=2 W_{Y}\left(W_{X} 、 W_{Y}\right.$ 分别为单槽导体对 $X$ 轴 和 $Y$ 轴的截面系数)。
+
+双槽形导体间作用力可写为
+
+$$
+f_{\mathrm{b}}=2\left(0.5 i_{\mathrm{sh}}\right)^{2} \times 10^{-7} \frac{1}{h}=5 \times 10^{-8} i_{\mathrm{sh}}^{2} \frac{1}{h}
+$$
+
+条间应力
+
+$$
+\sigma_{\mathrm{b}}=\frac{f_{\mathrm{b}} L_{\mathrm{b}}^{2}}{12 W_{Y}}=4.16 \frac{i_{\mathrm{sh}}^{2} L_{\mathrm{b}}^{2}}{h W_{Y}} \times 10^{-9}
+$$
+
+## 6. 共振校验
+
+重要回路 (如发电机、变压器回路及汇流母线等) 的导体应进行共振校验。当已知导体材 料、形状、布置方式和应避开的自振频率 (一般为 $30 \sim 160 \mathrm{~Hz}$ ) 时, 导体不发生共振的最大绝缘 子跨距
+
+$$
+L_{\max }=\sqrt{\frac{N_{\mathrm{f}}}{f_{1}} \sqrt{\frac{E I}{m}}}
+$$
+
+式中 $E-$ 导体材料弹性模量;
+
+$I$ —导体截面惯性距;
+
+$\boldsymbol{m}$ 一导体单位长度质量;
+
+$N_{f}-$ 频率系数;
+
+$f_{1}$ 一导体一阶固有频率。
+

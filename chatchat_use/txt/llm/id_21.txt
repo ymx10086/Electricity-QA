@@ -1,0 +1,19 @@
+<p>4.1  可以查看自动构建任务，无需提交，以评论形式评论至仓库PR中)</p>
+<p>4.2  手动提交install.yaml</p>
+<p>需要加入以下参数</p>
+<p>mount_repo_addr: 构建后的包所在仓库地址</p>
+<p>mount_repo_name: 仓库分支</p>
+<p>srpm_name: 构建好的rpm包,去除.rpm</p>
+<pre><code>suite: install-rpm
+category: functional
+install-rpm:
+rpm_name: xxxx
+os: openeuler
+os_version: 22.03-LTS
+testbox: vm-2p8g
+arch: aarch64
+#testbox: dc-8g
+#docker_image: openeuler:22.03-LTS
+mount_repo_addr: https://api.compass-ci.openeuler.org:20018/rpm/testing/openeuler-22.03-LTS/compatible/c7/aarch64
+mount_repo_name: compatible/c7
+</code></pre>

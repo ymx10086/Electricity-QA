@@ -1,0 +1,26 @@
+<p><code>submit rpmbuild.yaml (rpmbuild.yaml是包构建任务的配置参数文件)</code></p>
+<pre><code># 测试用例名称
+suite: rpmbuild
+# 测试用例 ~/lkp-test/tests/rpmbuild
+rpmbuild:
+# 远程仓库源码包地址
+upstream_repo: https://gitee.com/src-oepkgs/nginx
+# 构建后的包仓库位置，都将放置在contrib/$sig仓库中
+custom_repo_name: contrib/virtual
+
+# 测试机为虚拟机时:
+testbox: vm-2p8g
+arch:
+- aarch64
+- x86_64
+os: openeuler
+# 这个参数由源码文件合入的仓库分支决定
+os_version: $upstream_branch
+
+# 测试机为容器时:
+# testbox: dc-8g
+# arch:
+#  - aarch64
+#  - x86_64
+# docker_image: $upstream_branch
+</code></pre>

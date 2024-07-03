@@ -1,0 +1,3 @@
+<p>在<a href="https://search.oepkgs.net/">https://search.oepkgs.net/</a>
+查询软件包在软件所中的仓库存放位置之后，点开软件包的详情页，按照安装指引便可下载使用软件包。</p>
+

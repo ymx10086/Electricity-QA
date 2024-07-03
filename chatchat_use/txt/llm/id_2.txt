@@ -1,0 +1,12 @@
+<blockquote>
+<p><strong>1. 初始化RPM编译环境</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>2. 在openEuler上进行编译构建</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>3. 在openEuler上进行兼容性测试</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>4. 使用src-oepkgs社区构建工程</strong></p>
+</blockquote>

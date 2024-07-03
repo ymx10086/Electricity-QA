@@ -1,0 +1,2 @@
+<p><a href="https://search.oepkgs.net/">https://search.oepkgs.net/</a>
+可在此查询引入到软件所的软件包</p>

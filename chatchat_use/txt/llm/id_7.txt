@@ -1,0 +1,13 @@
+<p>build.dev.oepkgs.net 构建总体流程</p>
+<blockquote>
+<p><strong>1. 创建个人软件包仓库</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>2. 创建并提交构建任务</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>3. 查看并分析构建日志</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>4. 在个人仓库中下载使用软件包</strong></p>
+</blockquote>

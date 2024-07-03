@@ -1,0 +1,2 @@
+<p>将软件包的spec文件以及~/rpmbuild/SOURCE目录下面的源码文件存放在src-oepkgs仓库中</p>
+<p>建仓流程详见<a href="https://gitee.com/openeuler/oec-application/blob/master/doc/software-compatibility/rpm%E6%9E%84%E5%BB%BA%E4%BB%A5%E5%8F%8A%E5%BB%BA%E4%BB%93%E6%B5%81%E7%A8%8B.md">rpm包构建及建仓流程</a>)</p>

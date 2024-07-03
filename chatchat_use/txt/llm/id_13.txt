@@ -1,0 +1,36 @@
+</blockquote>
+<ul>
+<li>extras 仓库管控</li>
+</ul>
+<p>| 分支名 | 解释 |
+|---|---|
+| master | 用于管控 oepkgs 主仓 openEuler-20.03-LTS-SP1/extras 下软件包的引入 |
+| openEuler-20.03-LTS-SP1 | 用于管控 oepkgs 主仓 openEuler-20.03-LTS-SP1/extras 下软件包的引入 |
+| openEuler-20.03-LTS-SP3 | 用于管控 oepkgs 主仓 openEuler-20.03-LTS-SP3/extras 下软件包的引入 |
+| openEuler-22.03-LTS | 用于管控 oepkgs 主仓 openEuler-22.03-LTS/extras 下软件包的引入 |</p>
+<ul>
+<li>compatible 仓库管控：</li>
+</ul>
+<p>| 分支名 | 解释 |
+|---|---|
+| compatible_c7_openEuler-20.03-LTS-SP3 | 用于管控 oepkgs compatible 仓 openEuler-20.03-LTS-SP3/compatible/c7 下软件包的引入 |
+| compatible_c8_openEuler-20.03-LTS-SP3 | 用于管控 oepkgs compatible 仓 openEuler-20.03-LTS-SP3/compatible/c8 下软件包的引入 |
+| compatible_f35_openEuler-20.03-LTS-SP3 | 用于管控 oepkgs compatible 仓 openEuler-20.03-LTS-SP3/compatible/f35 下软件包的引入 |</p>
+<ul>
+<li>contrib 仓库管控：</li>
+</ul>
+<p>| 分支名 | 解释 |
+|---|---|
+| contrib_bigdata_openEuler-20.03-LTS-SP3 | 用于管控 oepkgs contrib 仓 openEuler-20.03-LTS-SP3/contrib/bigdata 下软件包的引入 |
+| contrib_bigdata_openEuler-20.03-LTS-SP1 | 用于管控 oepkgs contrib 仓 openEuler-20.03-LTS-SP1/contrib/bigdata 下软件包的引入 |
+| contrib_virtual_openEuler-20.03-LTS-SP3 | 用于管控 oepkgs contrib 仓 openEuler-20.03-LTS-SP3/contrib/virtual 下软件包的引入 |
+| contrib_basic-system_openEuler-20.03-LTS-SP3 | 用于管控 oepkgs contrib 仓 openEuler-20.03-LTS-SP3/contrib/basic-system 下软件包的引入 |</p>
+<ul>
+<li>contrib multi_version 仓库管控（openstack 有 Queens、Rocky、Wallaby 等多版本的软件包引入）</li>
+</ul>
+<p>| 分支名 | 解释 |
+|---|---|
+| Muti-Version_openstack-wallaby_openEuler-20.03-LTS-SP3 | 用于管控 oepkgs contrib 仓 openEuler-20.03-LTS-SP3/contrib/openstack/wallaby 下软件包的引入 |
+| Muti-Version_openstack-rocky_openEuler-20.03-LTS-SP3 | 用于管控 oepkgs contrib 仓 openEuler-20.03-LTS-SP3/contrib/openstack/rocky 下软件包的引入 |
+| Muti-Version_openstack-queens_openEuler-20.03-LTS-SP3 | 用于管控 oepkgs contrib 仓 openEuler-20.03-LTS-SP3/contrib/openstack/queens 下软件包的引入 |</p>
+

@@ -1,0 +1,11 @@
+<p>完成步骤一之后，5分钟内会生成 https://gitee.com/src-oepkgs/nginx 仓库，通过PR往这个仓库中补充源码文件：</p>
+<p>分别是可用于支撑生成rpm包的nginx.spec文件、软件包源码包nginx-2.12.0.tar.bz2，详见：https://gitee.com/src-oepkgs/nginx</p>
+<p>提了PR之后，在5~30分钟时间内，会进行PR门禁构建测试，PR会评论出PR构建结果，建议在<strong>Build_Result</strong>显示为<strong>SUCCESS</strong>之后合入PR</p>
+<p><img src="./dist/prtestimage.png" alt="输入图片说明" /></p>
+<p>前面配置文件oepkgs-management/sig/virtual/sig-info.yaml中指定的maintanier，可通过在PR下面评论/lgtm及/approve合入PR</p>
+<p><img src="./dist/maintainerimage.png" alt="输入图片说明" /></p>
+<p>PR合入之后会在合入的commit下面给出构建测试结果，以及安装测试结果，以及软件包上传到目标内部测试仓库<strong>testing_repo</strong>中,如果测试结果成功，第二天会更新至<strong>oepkgs_reop</strong>中(注：oepkgs仓库每日零点定时更新，测试结果中只是给出预计要存放的oepkgs仓库地址)：</p>
+<p><img src="./dist/commit1image.png" alt="输入图片说明" />
+<img src="./dist/commit2image.png" alt="输入图片说明" />
+<img src="./dist/testrtimage.png" alt="输入图片说明" />
+<img src="./dist/testrt2image.png" alt="输入图片说明" /></p>

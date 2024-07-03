@@ -1,0 +1,7 @@
+<p>通过提交构建任务，编译构建出软件包，并发布到上一步骤创建的仓库中。
+<img src="./software-compatibility/dist/buildtask.png" alt="输入图片说明" /></p>
+<p><img src="./software-compatibility/dist/scmimage.png" alt="输入图片说明" /></p>
+<p><img src="./software-compatibility/dist/4809d51ea1fcd29129f3f73f8fac4b4.jpg" alt="输入图片说明" /></p>
+<p><img src="./software-compatibility/dist/b4da14ad48842ecaa429dad591a014b.png" alt="输入图片说明" /></p>
+<p><img src="./software-compatibility/dist/89c38ee450c7fe1ad3a33b27d34ad55.png" alt="输入图片说明" /></p>
+<p><img src="./software-compatibility/dist/8d91fc9db3681d3b367febf82cb83ee.png" alt="输入图片说明" /></p>

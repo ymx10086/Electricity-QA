@@ -1,0 +1,3 @@
+<p>在rpm包构建之前，我们可以先选择一个已有的软件包仓库地址或新增一个软件包仓库地址去存放我们待构建的软件包。
+切换到构建页面，选择 RPM构建  ---&gt; 仓库管理 ---&gt; 新增仓库</p>
+<p><img src="./software-compatibility/dist/storageimage.png" alt="输入图片说明" /></p>

@@ -1,0 +1,8 @@
+<p>执行命令，测试软件包的安装、卸载</p>
+<pre><code>yum localinstall ~/rpmbuild/RPMS/x86_64/*
+yum remove *
+</code></pre>
+<p>执行命令，测试软件包的服务启停</p>
+<pre><code>systemctl start *
+systemctl stop *
+</code></pre>

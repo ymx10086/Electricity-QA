@@ -1,0 +1,11 @@
+<p>执行命令，安装软件包的依赖包</p>
+<pre><code># yum-builddep -y ~/rpmbuild/SPECS/*.spec
+yum-builddep -y ~/rpmbuild/SPECS/nginx.spec
+</code></pre>
+<p>执行命令，对软件包进行编译构建</p>
+<pre><code># rpmbuild -ba ~/rpmbuild/SPECS/*.spec
+rpmbuild -ba ~/rpmbuild/SPECS/nginx.spec
+</code></pre>
+<p>编译构建通过就会在 ~/rpmbuild/RPMS/ 目录下面生成 rpm包</p>
+<pre><code>ls ~/rpmbuild/RPMS/*
+</code></pre>

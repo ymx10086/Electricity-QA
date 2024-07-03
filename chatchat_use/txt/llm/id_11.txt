@@ -1,0 +1,15 @@
+<blockquote>
+</blockquote>
+<ul>
+<li>
+<ol>
+<li>软件包引入master保护分支，通过对应sig组maintainer或者对应源码仓committer review、approve即可。</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>软件包引入到oepkgs其他保护分支，需根据valid_release_branch，通过对应sig组的maintainer或者对应源码仓committer review、approve即可。</li>
+</ol>
+</li>
+</ul>
+<blockquote>

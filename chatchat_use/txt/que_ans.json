@@ -1,0 +1,140 @@
+{
+    "que_ans": [
+        {
+            "id": 0,
+            "question": "example question",
+            "answer": "id_0.txt"
+        },
+        {
+            "id": 1,
+            "question": "背景介绍",
+            "answer": "id_1.txt"
+        },
+        {
+            "id": 2,
+            "question": "开源软件引入oepkgs主仓总体流程",
+            "answer": "id_2.txt"
+        },
+        {
+            "id": 3,
+            "question": "初始化RPM编译环境",
+            "answer": "id_3.txt"
+        },
+        {
+            "id": 4,
+            "question": "在openEuler上进行编译构建",
+            "answer": "id_4.txt"
+        },
+        {
+            "id": 5,
+            "question": "在openEuler上进行兼容性测试",
+            "answer": "id_5.txt"
+        },
+        {
+            "id": 6,
+            "question": "使用src-oepkgs构建工程完成软件包上传",
+            "answer": "id_6.txt"
+        },
+        {
+            "id": 7,
+            "question": "开源软件引入oepkgs个人仓总体流程",
+            "answer": "id_7.txt"
+        },
+        {
+            "id": 8,
+            "question": "创建个人软件包仓库",
+            "answer": "id_8.txt"
+        },
+        {
+            "id": 9,
+            "question": "新建个构建任务",
+            "answer": "id_9.txt"
+        },
+        {
+            "id": 10,
+            "question": "查看构建日志",
+            "answer": "id_10.txt"
+        },
+        {
+            "id": 11,
+            "question": "oepkgs社区软件包引入各版本分支原则",
+            "answer": "id_11.txt"
+        },
+        {
+            "id": 12,
+            "question": "oepkgs仓库",
+            "answer": "id_12.txt"
+        },
+        {
+            "id": 13,
+            "question": "valid_release_branch",
+            "answer": "id_13.txt"
+        },
+        {
+            "id": 14,
+            "question": "构建rpm包流程",
+            "answer": "id_14.txt"
+        },
+        {
+            "id": 15,
+            "question": "基于PR，创建仓库",
+            "answer": "id_15.txt"
+        },
+        {
+            "id": 16,
+            "question": "补充源码文件",
+            "answer": "id_16.txt"
+        },
+        {
+            "id": 17,
+            "question": "基于webhook，自动触发构建任务原理",
+            "answer": "id_17.txt"
+        },
+        {
+            "id": 18,
+            "question": "webhook自动提交构建rpm包构建任务",
+            "answer": "id_18.txt"
+        },
+        {
+            "id": 19,
+            "question": "查看日志判断是否构建成功",
+            "answer": "id_19.txt"
+        },
+        {
+            "id": 20,
+            "question": "rpmbuild脚本",
+            "answer": "id_20.txt"
+        },
+        {
+            "id": 21,
+            "question": "测试构建的包能否正常安装",
+            "answer": "id_21.txt"
+        },
+        {
+            "id": 22,
+            "question": "处理自动构建失败的包",
+            "answer": "id_22.txt"
+        },
+        {
+            "id": 23,
+            "question": "QA",
+            "answer": "id_23.txt"
+        },
+        {
+            "id": 24,
+            "question": "如何提PR进行建仓",
+            "answer": "id_24.txt"
+        },
+        {
+            "id": 25,
+            "question": "如何查询软件包位置",
+            "answer": "id_25.txt"
+        },
+        {
+            "id": 26,
+            "question": "如何下载使用仓库中的软件包",
+            "answer": "id_26.txt"
+        }
+    ],
+    "count": 27
+}

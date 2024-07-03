@@ -1,0 +1,16 @@
+</blockquote>
+<ul>
+<li>
+<p>extras
+oepkgs主仓，仓库中的软件包大部分取自其他仓库，以保证用户只需要添加这一个仓库，便能获取到其他所有仓库中大部分的软件包，受限于软件包多版本现状，无法覆盖所有的软件包，一部分extras仓库中无法获取的软件包，可到其他仓库中查找</p>
+</li>
+<li>
+<p>compatible
+通过拉取来自其他 Linux 发行版仓库中的源码包，在 openEuler 上重新编译构建，并在 openEuler 上通过了安装测试的软件包，compatible 仓库中 c6，c7，c8，f33，f34，f35，f36，rawhide 分别表示软件源码包来源是 centos6，centos7，centos8，fedora33，fedora34，fedora35，fedora36，fedora-rawhide，不同来源可以用来区分软件包的版本号，来源是 centos8 的软件包一般而言能拿到较高版本的软件包</p>
+</li>
+<li>
+<p>contrib
+来自许多开发者贡献的软件包，contrib 仓库下以软件包类别划分出仓库名，显然，bigdata 仓库中是大数据场景下需要应用的软件包。</p>
+</li>
+</ul>
+<blockquote>

@@ -1,0 +1,4 @@
+<p>在submit rpmbuild.yaml 时，测试用例<strong>rpmbuild</strong>会去引用脚本
+<code>https://gitee.com/wu_fengguang/lkp-tests/blob/master/tests/rpmbuild</code></p>
+<p>该脚本会通过rpmbuild.yaml提供的信息进行<code>rpmbuild -ba *.spec</code>。</p>
+<p>如果构建成功，则通过upload_rpm_pkg函数先将测试机上打好的软件包放入<code>/srv/rpm/upload</code>,再通过update_repo_mq处理上传的软件包。处理完的包会先放入/srv/rpm/testing中，每天零点定时更新到/srv/rpm/pub中,也就是https://repo.oepkgs.net/openEuler/rpm/仓库中</p>

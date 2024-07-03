@@ -1,0 +1,77 @@
+<p>在<a href="https://gitee.com/oepkgs/oepkgs-management">oepkgs-management</a>仓库提PR(如何提PR，详见文档最后的<a href="##QA">QA</a>)，填写两个配置文件，PR合入之后，创仓机器人ci-robot会在<a href="https://gitee.com/src-oepkgs">src-oepkgs</a>下面自动创建仓库。</p>
+<blockquote>
+<p><strong>说明:</strong></p>
+<ul>
+<li>oepkgs仓库将软件包按照领域、类别划分，不同领域及类别的软件包由<strong>不同的sig组</strong>进行维护</li>
+</ul>
+</blockquote>
+<p>oepkgs-management仓库中的两个配置文件(以nginx为例)：</p>
+<pre><code># 在oepkgs-management仓库sig目录下面创建虚拟化领域的sig组
+# 创建oepkgs-management/sig/virtual/sig-info.yaml文件
+oepkgs-management/sig/virtual/sig-info.yaml:
+
+# sig组名称，一般跟软件包领域相关
+name: virtual
+description: &quot;To support the field of virtual&quot;
+mailing_list: NA
+meeting_url: NA
+mature_level: startup
+# sig组的管理者
+maintainers:
+- gitee_id: lipingEmmaSiguyi
+name: Ping Li
+orgnization: Huawei
+email: liping136@huawei.com
+# 该sig组管理的仓库
+repositories:
+- repo:
+- src-oepkgs/nginx
+committers:
+- gitee_id: lipingEmmaSiguyi
+name: Ping Li
+email: liping136@huawei.com
+</code></pre>
+<blockquote>
+<p><strong>说明:</strong></p>
+<ul>
+<li>开源软件引入<strong>oepkgs已有sig组</strong>，提交申请创仓PR，可基于对应sig组的sig-info.yaml文件进行修改，不强制要求开源软件引入oepkgs仓，需要新建sig组</li>
+</ul>
+</blockquote>
+<p>sig-info.yaml 字段解释:</p>
+<p>| 字段 | 解释 | 是否必填 |
+|---|---|---|
+| name | sig组名称，一般跟软件包领域相关 | √ |
+| description | 对该sig的描述 | √ |
+| mailing_list | sig组的订阅邮箱地址 | × |
+| meeting_url | sig组会议链接 | × |
+| maintainers | sig组的管理者，负责该sig组下源码仓pr的检视与合入 | √ |
+| repositories | sig组下面的源码仓 | √ |
+| committers | sig组下面某些源码仓的committers，负责对应仓库PR的检视与合入 | √ |</p>
+<pre><code># 在oepkgs-management/sig/virtual下面创建src-oepkgs/仓库名称首字母/仓库名称.yaml
+# ci-robot将依据这个文件进行自动建仓
+oepkgs-management/sig/virtual/src-oepkgs/n/nginx.yaml:
+
+# 仓库名称
+name: nginx
+description: &quot;nginx is a generic and open source processor emulator which achieves a good emulation speed by using dynamic translation&quot;
+# 上游仓库地址
+upstream: https://github.com/nginx/nginx.git
+# 仓库分支
+branches:
+- name: master
+type: protected
+- name: openEuler-20.03-LTS-SP3
+type: protected
+create_from: master
+- name: openEuler-22.03-LTS
+type: protected
+create_from: master
+type: public
+</code></pre>
+<p>仓库配置文件字段解释：</p>
+<p>| 字段 | 解释 | 是否必填 |
+|---|---|---|
+| name | 包名（源码仓名） | √ |
+| description | 对软件包的描述 | √ |
+| upstream | 软件包上游仓库地址 | √ |
+| branches | 仓库分支，oepkgs镜像源分支管理详见：<a href="./oepkgs%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86.md">oepkgs分支管理文档</a> | √ |</p>
